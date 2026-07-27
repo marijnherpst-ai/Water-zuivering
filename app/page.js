@@ -27,7 +27,7 @@ export default function HomePage() {
             <a href="#product" className="hover:text-ink transition-colors">Producten</a>
             <a href="#hoe-het-werkt" className="hover:text-ink transition-colors">Hoe het werkt</a>
             <a href="#faq" className="hover:text-ink transition-colors">FAQ</a>
-            <a href="#contact" className="hover:text-ink transition-colors">Contact</a>
+            <a href="/contact" className="hover:text-ink transition-colors">Contact</a>
           </div>
           <a href="/aanmelden" className="cursor-pointer inline-flex items-center rounded-full bg-amber px-5 py-2.5 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">
             Offerte aanvragen
@@ -528,8 +528,10 @@ export default function HomePage() {
           <div>
             <p className="font-display font-bold text-sm">Contact</p>
             <ul className="mt-3 space-y-2 text-sm text-dim">
-              <li><a href="#contact" className="hover:text-ink transition-colors">Offerte aanvragen</a></li>
-              <li>info@aquapuur.nl</li>
+              <li><a href="/contact" className="hover:text-ink transition-colors">Contactgegevens &amp; locatie</a></li>
+              <li><a href="mailto:info@water-zuivering.nl" className="hover:text-ink transition-colors">info@water-zuivering.nl</a></li>
+              <li>Veldkersweg 16, 3053 JR Rotterdam</li>
+              <li>KVK 83174044</li>
             </ul>
           </div>
           <div>
@@ -541,7 +543,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="border-t border-edge">
-          <div className="max-w-7xl mx-auto px-6 py-6 text-xs text-dim">&copy; 2026 AquaPuur. Alle rechten voorbehouden.</div>
+          <div className="max-w-7xl mx-auto px-6 py-6 text-xs text-dim">&copy; 2026 Jd services B.V. (AquaPuur). Alle rechten voorbehouden.</div>
         </div>
       </footer>
 

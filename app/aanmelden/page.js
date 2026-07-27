@@ -262,7 +262,7 @@ export default function AanmeldenPage() {
 
       <footer className="border-t border-edge bg-surface">
         <div className="max-w-2xl mx-auto px-6 py-8 text-center text-sm text-dim">
-          &copy; 2026 AquaPuur. Alle rechten voorbehouden.
+          &copy; 2026 Jd services B.V. (AquaPuur). Alle rechten voorbehouden.
         </div>
       </footer>
     </>
