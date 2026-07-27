@@ -90,19 +90,46 @@ export default function HomePage() {
 
         {/* TRUST BAR */}
         <section className="relative border-y border-edge bg-surface">
-          <div className="max-w-7xl mx-auto px-6 py-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-center">
-            <div>
-              <div className="flex items-center gap-1 justify-center text-amber" aria-hidden="true">★★★★★</div>
-              <p className="mt-1 text-xs font-semibold text-dim">Beoordeeld door onze klanten</p>
+          <div className="max-w-7xl mx-auto px-6 py-10">
+            <div className="grid grid-cols-2 lg:grid-cols-5 gap-y-8 gap-x-6 lg:divide-x lg:divide-edge">
+              <div className="flex items-center gap-3 lg:justify-center lg:px-4">
+                <span className="flex items-center justify-center w-10 h-10 rounded-xl bg-amber/12 text-amber-dark shrink-0">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.8.8-5 4.6 1.4 6.7L12 16.9 5.9 20.3l1.4-6.7-5-4.6 6.8-.8L12 2z" /></svg>
+                </span>
+                <div className="text-left">
+                  <div className="flex items-center gap-0.5 text-amber text-xs" aria-hidden="true">★★★★★</div>
+                  <p className="mt-0.5 text-xs font-semibold text-dim">Beoordeeld door klanten</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3 lg:justify-center lg:px-4">
+                <span className="flex items-center justify-center w-10 h-10 rounded-xl bg-amber/12 text-amber-dark shrink-0">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" /></svg>
+                </span>
+                <p className="text-sm font-semibold text-ink text-left">Jarenlange ervaring in waterfiltratie</p>
+              </div>
+
+              <div className="flex items-center gap-3 lg:justify-center lg:px-4">
+                <span className="flex items-center justify-center w-10 h-10 rounded-xl bg-amber/12 text-amber-dark shrink-0">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 4l6 6-9 9-6-3 9-12z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" /><path d="M4 20l3-3" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" /></svg>
+                </span>
+                <p className="text-sm font-semibold text-ink text-left">Nederlandse service &amp; installatie</p>
+              </div>
+
+              <div className="flex items-center gap-3 lg:justify-center lg:px-4">
+                <span className="flex items-center justify-center w-10 h-10 rounded-xl bg-amber/12 text-amber-dark shrink-0">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C12 2 5 10.5 5 15a7 7 0 0014 0c0-4.5-7-13-7-13z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" /></svg>
+                </span>
+                <p className="text-sm font-semibold text-ink text-left">Hoogwaardige 3-traps filtratie</p>
+              </div>
+
+              <div className="flex items-center gap-3 lg:justify-center lg:px-4 col-span-2 lg:col-span-1">
+                <span className="flex items-center justify-center w-10 h-10 rounded-xl bg-amber/12 text-amber-dark shrink-0">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /><circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.7" /></svg>
+                </span>
+                <p className="text-sm font-semibold text-ink text-left">Professionele montage inbegrepen</p>
+              </div>
             </div>
-            <div className="h-8 w-px bg-edge hidden sm:block" />
-            <p className="text-sm font-semibold text-dim">Jarenlange ervaring in waterfiltratie</p>
-            <div className="h-8 w-px bg-edge hidden sm:block" />
-            <p className="text-sm font-semibold text-dim">Nederlandse service &amp; installatie</p>
-            <div className="h-8 w-px bg-edge hidden sm:block" />
-            <p className="text-sm font-semibold text-dim">Hoogwaardige 3-traps filtratie</p>
-            <div className="h-8 w-px bg-edge hidden sm:block" />
-            <p className="text-sm font-semibold text-dim">Professionele montage inbegrepen</p>
           </div>
         </section>
 
