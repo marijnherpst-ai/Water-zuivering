@@ -30,9 +30,9 @@ export async function submitContactForm(formData) {
 }
 
 export async function submitAanmeldenForm(data) {
-  const { keukenblad, kastje_leeg, quooker, bron, naam, email, postcode, huisnummer } = data;
+  const { keukenblad, kastje_leeg, quooker, bron, naam, telefoon, email, postcode, huisnummer } = data;
 
-  if (!keukenblad || !kastje_leeg || !quooker || !bron || !naam || !email || !postcode || !huisnummer) {
+  if (!keukenblad || !kastje_leeg || !quooker || !bron || !naam || !telefoon || !email || !postcode || !huisnummer) {
     return { success: false, error: 'Vul alle verplichte velden in.' };
   }
 
@@ -43,6 +43,7 @@ export async function submitAanmeldenForm(data) {
     quooker,
     bron,
     naam,
+    telefoon,
     email,
     postcode,
     huisnummer,

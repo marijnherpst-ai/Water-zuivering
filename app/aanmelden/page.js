@@ -46,6 +46,7 @@ export default function AanmeldenPage() {
       quooker: formData.get('quooker'),
       bron: formData.get('bron'),
       naam: formData.get('naam'),
+      telefoon: formData.get('telefoon'),
       email: formData.get('email'),
       postcode: formData.get('postcode'),
       huisnummer: formData.get('huisnummer'),
@@ -189,6 +190,12 @@ export default function AanmeldenPage() {
                   <input id="naam" name="naam" type="text" autoComplete="name" required
                     className="w-full rounded-lg border border-edge bg-surface px-4 py-3 text-sm text-ink placeholder:text-dim/60 focus:outline-none focus:ring-2 focus:ring-amber transition-colors"
                     placeholder="Jouw naam" />
+                </div>
+                <div>
+                  <label htmlFor="telefoon" className="block text-xs font-semibold text-dim mb-1.5">Telefoonnummer</label>
+                  <input id="telefoon" name="telefoon" type="tel" autoComplete="tel" required
+                    className="w-full rounded-lg border border-edge bg-surface px-4 py-3 text-sm text-ink placeholder:text-dim/60 focus:outline-none focus:ring-2 focus:ring-amber transition-colors"
+                    placeholder="06 12345678" />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-xs font-semibold text-dim mb-1.5">E-mailadres</label>
