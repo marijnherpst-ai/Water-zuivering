@@ -2,6 +2,7 @@ import Image from 'next/image';
 import RevealObserver from '@/components/RevealObserver';
 import Calculator from '@/components/Calculator';
 import ContactForm from '@/components/ContactForm';
+import SubstanceSlideshow from '@/components/SubstanceSlideshow';
 
 export default function HomePage() {
   return (
@@ -261,6 +262,18 @@ export default function HomePage() {
                 <p className="mt-1.5 text-sm text-ink/70">Direct beschikbaar, op elk moment.</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* WAAROM EEN WATERZUIVERAAR */}
+        <section className="relative bg-surface border-y border-edge overflow-hidden">
+          <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
+            <div className="max-w-2xl mx-auto text-center">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Waterkwaliteit</span>
+              <h2 className="mt-3 font-display text-3xl md:text-4xl font-extrabold tracking-tight">Waarom kiezen voor een waterzuiveraar?</h2>
+              <p className="mt-4 text-dim text-lg">Kraanwater in Nederland is veilig, maar bevat soms sporen van stoffen die u liever niet binnenkrijgt. Klik door om te zien wat een AquaPuur-systeem eruit filtert.</p>
+            </div>
+            <SubstanceSlideshow />
           </div>
         </section>
 
