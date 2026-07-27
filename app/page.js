@@ -45,10 +45,10 @@ export default function HomePage() {
                 Premium waterfiltratie voor thuis
               </span>
               <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] tracking-tight">
-                Zuiver drinkwater.<br />Rechtstreeks uit<br />jouw eigen kraan<span className="text-amber-dark">.</span>
+                Zuiver drinkwater.<br />Rechtstreeks uit<br />uw eigen kraan<span className="text-amber-dark">.</span>
               </h1>
               <p className="mt-6 text-lg text-dim max-w-lg">
-                Geniet iedere dag van heerlijk gefilterd water zonder flessen, plastic afval of onnodige kosten. Compact geïnstalleerd in je keukenkastje.
+                Geniet iedere dag van heerlijk gefilterd water zonder flessen, plastic afval of onnodige kosten. Compact geïnstalleerd in uw keukenkastje.
               </p>
               <div className="mt-9 flex flex-wrap items-center gap-4">
                 <a href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-xl shadow-amber/25">
@@ -217,7 +217,44 @@ export default function HomePage() {
               </div>
             </div>
 
-            <p className="mt-12 lg:mt-16 text-center text-xs text-dim/70">Genoemde prijzen zijn indicatief. De definitieve prijs voor jouw situatie ontvang je in een vrijblijvende offerte.</p>
+            <p className="mt-12 lg:mt-16 text-center text-xs text-dim/70">Genoemde prijzen zijn indicatief. De definitieve prijs voor uw situatie ontvangt u in een vrijblijvende offerte.</p>
+          </div>
+        </section>
+
+        {/* EEN KRAAN IN PLAATS VAN TWEE */}
+        <section className="relative bg-surface border-y border-edge overflow-hidden">
+          <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+            <div className="max-w-2xl mx-auto text-center">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">3-weg kraan</span>
+              <h2 className="mt-3 font-display text-3xl md:text-4xl font-extrabold tracking-tight">Eén kraan in plaats van twee</h2>
+              <p className="mt-4 text-dim text-lg">Een losse kraan voor gefilterd water betekent extra gaten in het aanrecht en meer rommel. Met een 3-weg kraan combineert u alles in één strak ontwerp.</p>
+            </div>
+
+            <div className="mt-14 grid md:grid-cols-2 gap-6 lg:gap-8">
+              <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3]">
+                <img src="/assets/img/twee-kranen.jpg" alt="Twee losse kranen op het aanrecht" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
+                <span className="absolute bottom-5 left-5 inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-4 py-1.5 text-xs font-bold text-ink">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" /></svg>
+                  2 kranen — extra gedoe
+                </span>
+              </div>
+              <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] ring-2 ring-amber">
+                <img src="/assets/img/een-kraan.jpg" alt="Eén elegante 3-weg kraan" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
+                <span className="absolute bottom-5 left-5 inline-flex items-center gap-2 rounded-full bg-amber px-4 py-1.5 text-xs font-bold text-ink">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                  1 kraan — alles-in-één
+                </span>
+              </div>
+            </div>
+
+            <div className="mt-10 text-center">
+              <a href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">
+                Vraag vrijblijvend een offerte aan
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </a>
+            </div>
           </div>
         </section>
 
