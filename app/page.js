@@ -13,6 +13,9 @@ export default function HomePage() {
 
       {/* NAV */}
       <header className="sticky top-0 z-50 glass">
+        <div className="bg-ink text-white text-center text-xs sm:text-sm font-semibold py-2 px-6">
+          Nu tijdelijk <span className="text-amber font-bold">€250 korting</span> bij aanvraag van een offerte
+        </div>
         <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="#top" className="flex items-center gap-2.5 font-display font-extrabold text-lg tracking-tight">
             <span className="flex items-center justify-center w-8 h-8 rounded-full bg-ink">
@@ -159,9 +162,7 @@ export default function HomePage() {
                   <li className="flex items-center gap-2.5 text-dim"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Vakkundig meegeïnstalleerd</li>
                 </ul>
                 <div className="mt-auto pt-6">
-                  <p className="text-xs text-dim">Richtprijs</p>
-                  <p className="font-display text-2xl font-extrabold">vanaf € 249</p>
-                  <a href="/aanmelden" className="cursor-pointer mt-5 flex items-center justify-center gap-2 rounded-full border-2 border-ink px-6 py-3 text-sm font-bold text-ink hover:bg-bg transition-colors">
+                  <a href="/aanmelden" className="cursor-pointer flex items-center justify-center gap-2 rounded-full border-2 border-ink px-6 py-3 text-sm font-bold text-ink hover:bg-bg transition-colors">
                     Meer informatie
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   </a>
@@ -183,9 +184,7 @@ export default function HomePage() {
                   <li className="flex items-center gap-2.5 text-white/70"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#EDA71B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Inclusief professionele installatie</li>
                 </ul>
                 <div className="mt-auto pt-6">
-                  <p className="text-xs text-white/50">Richtprijs</p>
-                  <p className="font-display text-2xl font-extrabold text-amber">vanaf € 1.499</p>
-                  <a href="/aanmelden" className="cursor-pointer mt-5 flex items-center justify-center gap-2 rounded-full bg-amber px-6 py-3 text-sm font-bold text-ink hover:bg-white transition-colors">
+                  <a href="/aanmelden" className="cursor-pointer flex items-center justify-center gap-2 rounded-full bg-amber px-6 py-3 text-sm font-bold text-ink hover:bg-white transition-colors">
                     Vraag offerte aan
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   </a>
@@ -207,9 +206,7 @@ export default function HomePage() {
                   <li className="flex items-center gap-2.5 text-dim"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Ronder smaakprofiel</li>
                 </ul>
                 <div className="mt-auto pt-6">
-                  <p className="text-xs text-dim">Richtprijs</p>
-                  <p className="font-display text-2xl font-extrabold">vanaf € 89</p>
-                  <a href="/aanmelden" className="cursor-pointer mt-5 flex items-center justify-center gap-2 rounded-full border-2 border-ink px-6 py-3 text-sm font-bold text-ink hover:bg-bg transition-colors">
+                  <a href="/aanmelden" className="cursor-pointer flex items-center justify-center gap-2 rounded-full border-2 border-ink px-6 py-3 text-sm font-bold text-ink hover:bg-bg transition-colors">
                     Meer informatie
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   </a>
@@ -217,7 +214,17 @@ export default function HomePage() {
               </div>
             </div>
 
-            <p className="mt-12 lg:mt-16 text-center text-xs text-dim/70">Genoemde prijzen zijn indicatief. De definitieve prijs voor uw situatie ontvangt u in een vrijblijvende offerte.</p>
+            <div className="mt-12 lg:mt-16 flex justify-center">
+              <div className="flex items-center gap-4 w-full max-w-2xl rounded-2xl bg-ink text-white px-8 py-5 shadow-lg">
+                <span className="flex items-center justify-center w-11 h-11 rounded-xl bg-amber text-ink shrink-0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19L19 5M8 9a2.5 2.5 0 100-5 2.5 2.5 0 000 5zm8 10a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                </span>
+                <div className="text-left">
+                  <p className="font-display font-extrabold text-lg leading-tight">Nu tijdelijk <span className="text-amber">€250 korting</span></p>
+                  <p className="text-xs text-white/60 mt-0.5">Bij aanvraag van een offerte — voor beperkte tijd geldig.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
