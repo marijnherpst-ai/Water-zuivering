@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Header from '@/components/Header';
+import MobileStickyCta from '@/components/MobileStickyCta';
 import RevealObserver from '@/components/RevealObserver';
 import Calculator from '@/components/Calculator';
 import ContactForm from '@/components/ContactForm';
@@ -17,7 +18,7 @@ export default function HomePage() {
 
       <main id="top">
         {/* HERO */}
-        <section className="relative overflow-hidden min-h-[92vh] flex items-center">
+        <section id="hero" className="relative overflow-hidden min-h-[92vh] flex items-center">
           <div className="glow drift w-[560px] h-[560px] bg-amber/20 -top-40 -left-40" />
           <div className="glow drift2 w-[460px] h-[460px] bg-amber/10 bottom-0 -right-32" />
 
@@ -528,11 +529,7 @@ export default function HomePage() {
       </footer>
 
       {/* MOBILE STICKY CTA */}
-      <div className="md:hidden fixed bottom-0 inset-x-0 z-40 glass px-4 py-3">
-        <a href="/aanmelden" className="cursor-pointer flex items-center justify-center gap-2 rounded-full bg-amber px-5 py-3 text-sm font-bold text-ink shadow-lg">
-          Offerte aanvragen
-        </a>
-      </div>
+      <MobileStickyCta />
     </>
   );
 }
