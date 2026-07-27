@@ -1,3 +1,4 @@
+import Header from '@/components/Header';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata = {
@@ -9,28 +10,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
-      <header className="sticky top-0 z-50 glass">
-        <div className="bg-ink text-white text-center text-xs sm:text-sm font-semibold py-2 px-6">
-          Nu tijdelijk <span className="text-amber font-bold">€250 korting</span> bij aanvraag van een offerte
-        </div>
-        <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-2.5 font-display font-extrabold text-lg tracking-tight">
-            <span className="flex items-center justify-center w-8 h-8 rounded-full bg-ink">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C12 2 5 10.5 5 15a7 7 0 0014 0c0-4.5-7-13-7-13z" fill="#EDA71B" /></svg>
-            </span>
-            Water-zuivering
-          </a>
-          <div className="hidden lg:flex items-center gap-7 text-sm font-semibold text-dim">
-            <a href="/#product" className="hover:text-ink transition-colors">Producten</a>
-            <a href="/#hoe-het-werkt" className="hover:text-ink transition-colors">Hoe het werkt</a>
-            <a href="/#faq" className="hover:text-ink transition-colors">FAQ</a>
-            <a href="/contact" className="text-ink">Contact</a>
-          </div>
-          <a href="/aanmelden" className="cursor-pointer inline-flex items-center rounded-full bg-amber px-5 py-2.5 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">
-            Offerte aanvragen
-          </a>
-        </nav>
-      </header>
+      <Header />
 
       <main>
         <section className="relative">
