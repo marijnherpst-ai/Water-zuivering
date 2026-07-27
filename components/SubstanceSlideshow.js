@@ -81,7 +81,7 @@ export default function SubstanceSlideshow() {
   }
 
   return (
-    <div className="mt-14 rounded-3xl card p-8 sm:p-10">
+    <div className="rounded-3xl card p-8 sm:p-10">
       <div className="grid md:grid-cols-[auto_1fr] gap-8 items-center">
         <span className="mx-auto md:mx-0 flex items-center justify-center w-16 h-16 rounded-2xl bg-amber/12 text-amber-dark shrink-0">
           {active.icon}
