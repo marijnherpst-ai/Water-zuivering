@@ -22,7 +22,6 @@ export default function HomePage() {
           <div className="hidden lg:flex items-center gap-7 text-sm font-semibold text-dim">
             <a href="#product" className="hover:text-ink transition-colors">Producten</a>
             <a href="#hoe-het-werkt" className="hover:text-ink transition-colors">Hoe het werkt</a>
-            <a href="#vergelijking" className="hover:text-ink transition-colors">Vergelijking</a>
             <a href="#faq" className="hover:text-ink transition-colors">FAQ</a>
             <a href="#contact" className="hover:text-ink transition-colors">Contact</a>
           </div>
@@ -292,61 +291,6 @@ export default function HomePage() {
                 <p className="mt-4 font-display font-bold text-lg">Uitstekende klantenservice</p>
                 <p className="mt-1.5 text-sm text-dim">Persoonlijk bereikbaar voor al uw vragen.</p>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* VERGELIJKING */}
-        <section id="vergelijking" className="relative">
-          <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
-            <div className="max-w-2xl mx-auto text-center">
-              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vergelijking</span>
-              <h2 className="mt-3 font-display text-3xl md:text-4xl font-extrabold tracking-tight">Kraanwater, flessenwater of AquaPuur?</h2>
-            </div>
-
-            <div className="mt-12 overflow-x-auto">
-              <table className="w-full min-w-[560px] border-collapse text-sm">
-                <thead>
-                  <tr>
-                    <th className="text-left p-4" />
-                    <th className="p-4 text-center font-display font-bold text-dim">Kraanwater</th>
-                    <th className="p-4 text-center font-display font-bold text-dim">Flessenwater</th>
-                    <th className="p-4 text-center rounded-t-2xl bg-ink text-white font-display font-bold">AquaPuur</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-t border-edge">
-                    <th className="text-left p-4 font-semibold">Smaak &amp; geur</th>
-                    <td className="p-4 text-center text-dim">Wisselend</td>
-                    <td className="p-4 text-center text-dim">Neutraal</td>
-                    <td className="p-4 text-center bg-amber/5 font-semibold">Fris &amp; puur</td>
-                  </tr>
-                  <tr className="border-t border-edge">
-                    <th className="text-left p-4 font-semibold">Kosten per jaar</th>
-                    <td className="p-4 text-center text-dim">Laag</td>
-                    <td className="p-4 text-center text-dim">Hoog</td>
-                    <td className="p-4 text-center bg-amber/5 font-semibold">Laag</td>
-                  </tr>
-                  <tr className="border-t border-edge">
-                    <th className="text-left p-4 font-semibold">Milieu-impact</th>
-                    <td className="p-4 text-center"><svg className="inline" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg></td>
-                    <td className="p-4 text-center text-dim/40"><svg className="inline" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2" /></svg></td>
-                    <td className="p-4 text-center bg-amber/5"><svg className="inline" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg></td>
-                  </tr>
-                  <tr className="border-t border-edge">
-                    <th className="text-left p-4 font-semibold">Gemak</th>
-                    <td className="p-4 text-center"><svg className="inline" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg></td>
-                    <td className="p-4 text-center text-dim/40"><svg className="inline" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2" /></svg></td>
-                    <td className="p-4 text-center bg-amber/5"><svg className="inline" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg></td>
-                  </tr>
-                  <tr className="border-t border-edge">
-                    <th className="text-left p-4 font-semibold">Extra filtratie</th>
-                    <td className="p-4 text-center text-dim/40"><svg className="inline" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2" /></svg></td>
-                    <td className="p-4 text-center text-dim/40"><svg className="inline" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2" /></svg></td>
-                    <td className="p-4 text-center bg-amber/5 rounded-b-2xl"><svg className="inline" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg></td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
         </section>
