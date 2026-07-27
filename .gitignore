@@ -1,1 +1,11 @@
 .claude/
+.agents/
+skills-lock.json
+
+# Next.js
+/node_modules
+/.next/
+/out/
+
+# Env
+.env*.local
