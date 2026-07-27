@@ -21,7 +21,7 @@ export default function HomePage() {
             <span className="flex items-center justify-center w-8 h-8 rounded-full bg-ink">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C12 2 5 10.5 5 15a7 7 0 0014 0c0-4.5-7-13-7-13z" fill="#EDA71B" /></svg>
             </span>
-            AquaPuur
+            Water-zuivering
           </a>
           <div className="hidden lg:flex items-center gap-7 text-sm font-semibold text-dim">
             <a href="#product" className="hover:text-ink transition-colors">Producten</a>
@@ -72,7 +72,7 @@ export default function HomePage() {
             <div className="relative reveal">
               <div className="absolute -inset-6 rounded-[3rem] bg-gradient-to-br from-amber/25 via-amber/5 to-transparent -rotate-3" />
               <div className="relative rounded-[2.5rem] overflow-hidden border border-edge shadow-2xl aspect-[4/5]">
-                <Image src="/assets/img/countertop.png" alt="AquaPuur premium waterzuiveraar op een keukenblad" fill className="object-cover" />
+                <Image src="/assets/img/countertop.png" alt="Water-zuivering premium waterzuiveraar op een keukenblad" fill className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/20 via-transparent to-transparent" />
               </div>
               <div className="hidden sm:flex items-center gap-2 absolute -top-5 right-6 rounded-full glass shadow-lg px-4 py-2.5">
@@ -152,13 +152,13 @@ export default function HomePage() {
                 <span className="self-start inline-block rounded-full bg-amber/12 text-amber-dark text-[11px] font-bold uppercase tracking-wide px-3 py-1">Accessoire</span>
                 <div className="relative mt-6 rounded-2xl bg-bg aspect-[4/3] flex items-center justify-center p-6 overflow-hidden">
                   <div className="glow w-40 h-40 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
-                  <img src="/assets/img/3-weg-kraan.png" alt="AquaPuur 3-weg kraan" className="relative max-h-full w-auto object-contain" />
+                  <img src="/assets/img/3-weg-kraan.png" alt="Water-zuivering 3-weg kraan" className="relative max-h-full w-auto object-contain" />
                 </div>
                 <h3 className="mt-6 font-display text-xl font-extrabold tracking-tight">3-weg kraan</h3>
                 <p className="mt-2 text-sm text-dim">Eén elegante kraan voor gefilterd, gewoon en gemineraliseerd water.</p>
                 <ul className="mt-5 space-y-2.5 text-sm">
                   <li className="flex items-center gap-2.5 text-dim"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Drie waterstromen uit één kraan</li>
-                  <li className="flex items-center gap-2.5 text-dim"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Compatibel met elk AquaPuur-systeem</li>
+                  <li className="flex items-center gap-2.5 text-dim"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Compatibel met elk Water-zuivering systeem</li>
                   <li className="flex items-center gap-2.5 text-dim"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Vakkundig meegeïnstalleerd</li>
                 </ul>
                 <div className="mt-auto pt-6">
@@ -174,10 +174,10 @@ export default function HomePage() {
                 <span className="absolute -top-3 left-8 rounded-full bg-amber text-ink text-[11px] font-bold uppercase tracking-wide px-3 py-1 shadow-lg shadow-amber/30">Meest gekozen</span>
                 <span className="self-start inline-block rounded-full bg-white/10 text-amber text-[11px] font-bold uppercase tracking-wide px-3 py-1">Hoofdsysteem</span>
                 <div className="relative mt-6 rounded-2xl aspect-[4/3] overflow-hidden">
-                  <img src="/assets/img/cabinet-install.png" alt="AquaPuur Osmosewatersysteem, past smal in een standaard keukenkastje" className="absolute inset-0 w-full h-full object-cover" />
+                  <img src="/assets/img/cabinet-install.png" alt="Water-zuivering Osmosewatersysteem, past smal in een standaard keukenkastje" className="absolute inset-0 w-full h-full object-cover" />
                 </div>
                 <h3 className="mt-6 font-display text-xl font-extrabold tracking-tight">Osmosewatersysteem</h3>
-                <p className="mt-2 text-sm text-white/60">3-traps filtersysteem — PPC, RO en GAC. De basis van elk AquaPuur-huishouden.</p>
+                <p className="mt-2 text-sm text-white/60">3-traps filtersysteem — PPC, RO en GAC. De basis van elk Water-zuivering huishouden.</p>
                 <ul className="mt-5 space-y-2.5 text-sm">
                   <li className="flex items-center gap-2.5 text-white/70"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#EDA71B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Zuivert tot 99% van onzuiverheden</li>
                   <li className="flex items-center gap-2.5 text-white/70"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#EDA71B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Compact geplaatst onder het aanrecht</li>
@@ -196,7 +196,7 @@ export default function HomePage() {
                 <span className="self-start inline-block rounded-full bg-amber/12 text-amber-dark text-[11px] font-bold uppercase tracking-wide px-3 py-1">Accessoire</span>
                 <div className="relative mt-6 rounded-2xl bg-bg aspect-[4/3] flex items-center justify-center p-6 overflow-hidden">
                   <div className="glow w-40 h-40 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
-                  <img src="/assets/img/mineraalfilter.jpg" alt="AquaPuur Mineraalfilter" className="relative max-h-full w-auto object-contain rounded-lg" />
+                  <img src="/assets/img/mineraalfilter.jpg" alt="Water-zuivering Mineraalfilter" className="relative max-h-full w-auto object-contain rounded-lg" />
                 </div>
                 <h3 className="mt-6 font-display text-xl font-extrabold tracking-tight">Mineraalfilter</h3>
                 <p className="mt-2 text-sm text-dim">Voegt calcium en magnesium terug toe voor een voller smaakprofiel.</p>
@@ -267,7 +267,7 @@ export default function HomePage() {
 
         {/* HOE HET WERKT: SFEERBEELD */}
         <section id="hoe-het-werkt" className="relative overflow-hidden">
-          <img src="/assets/img/cabinet-install.png" alt="AquaPuur geïnstalleerd, sfeerbeeld" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="/assets/img/cabinet-install.png" alt="Water-zuivering geïnstalleerd, sfeerbeeld" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-ink/85 via-ink/80 to-ink/90" />
           <div className="relative max-w-7xl mx-auto px-6 py-24 md:py-32 text-white">
             <div className="max-w-2xl mx-auto text-center">
@@ -314,7 +314,7 @@ export default function HomePage() {
             <div className="max-w-2xl mx-auto text-center">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Waterkwaliteit</span>
               <h2 className="mt-3 font-display text-3xl md:text-4xl font-extrabold tracking-tight">Waarom kiezen voor een waterzuiveraar?</h2>
-              <p className="mt-4 text-dim text-lg">Kraanwater in Nederland is veilig, maar bevat soms sporen van stoffen die u liever niet binnenkrijgt. Klik door om te zien wat een AquaPuur-systeem eruit filtert.</p>
+              <p className="mt-4 text-dim text-lg">Kraanwater in Nederland is veilig, maar bevat soms sporen van stoffen die u liever niet binnenkrijgt. Klik door om te zien wat een Water-zuivering systeem eruit filtert.</p>
             </div>
 
             <div className="mt-14 grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
@@ -376,7 +376,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="reveal relative rounded-3xl overflow-hidden min-h-[220px]">
-                <img src="/assets/img/klantenservice.jpg" alt="AquaPuur klantenservice medewerker" className="absolute inset-0 w-full h-full object-cover" />
+                <img src="/assets/img/klantenservice.jpg" alt="Water-zuivering klantenservice medewerker" className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent" />
                 <div className="relative h-full flex flex-col justify-end p-7 text-white">
                   <p className="font-display font-bold text-lg">Uitstekende klantenservice</p>
@@ -513,7 +513,7 @@ export default function HomePage() {
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-ink">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C12 2 5 10.5 5 15a7 7 0 0014 0c0-4.5-7-13-7-13z" fill="#EDA71B" /></svg>
               </span>
-              AquaPuur
+              Water-zuivering
             </a>
             <p className="mt-3 text-sm text-dim">Premium waterfiltratie voor onder uw keukenkraan.</p>
           </div>
@@ -543,7 +543,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="border-t border-edge">
-          <div className="max-w-7xl mx-auto px-6 py-6 text-xs text-dim">&copy; 2026 Jd services B.V. (AquaPuur). Alle rechten voorbehouden.</div>
+          <div className="max-w-7xl mx-auto px-6 py-6 text-xs text-dim">&copy; 2026 Jd services B.V. (Water-zuivering). Alle rechten voorbehouden.</div>
         </div>
       </footer>
 

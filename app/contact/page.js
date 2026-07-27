@@ -1,9 +1,9 @@
 import ContactForm from '@/components/ContactForm';
 
 export const metadata = {
-  title: 'Contact — AquaPuur',
+  title: 'Contact — Water-zuivering',
   description:
-    'Neem contact op met AquaPuur (Jd services B.V.), Veldkersweg 16, 3053 JR Rotterdam. KVK 83174044.',
+    'Neem contact op met Water-zuivering (Jd services B.V.), Veldkersweg 16, 3053 JR Rotterdam. KVK 83174044.',
 };
 
 export default function ContactPage() {
@@ -18,7 +18,7 @@ export default function ContactPage() {
             <span className="flex items-center justify-center w-8 h-8 rounded-full bg-ink">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C12 2 5 10.5 5 15a7 7 0 0014 0c0-4.5-7-13-7-13z" fill="#EDA71B" /></svg>
             </span>
-            AquaPuur
+            Water-zuivering
           </a>
           <div className="hidden lg:flex items-center gap-7 text-sm font-semibold text-dim">
             <a href="/#product" className="hover:text-ink transition-colors">Producten</a>
@@ -93,7 +93,7 @@ export default function ContactPage() {
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-ink">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C12 2 5 10.5 5 15a7 7 0 0014 0c0-4.5-7-13-7-13z" fill="#EDA71B" /></svg>
               </span>
-              AquaPuur
+              Water-zuivering
             </a>
             <p className="mt-3 text-sm text-dim">Premium waterfiltratie voor onder uw keukenkraan.</p>
           </div>
@@ -122,7 +122,7 @@ export default function ContactPage() {
           </div>
         </div>
         <div className="border-t border-edge">
-          <div className="max-w-7xl mx-auto px-6 py-6 text-xs text-dim">&copy; 2026 Jd services B.V. (AquaPuur). Alle rechten voorbehouden.</div>
+          <div className="max-w-7xl mx-auto px-6 py-6 text-xs text-dim">&copy; 2026 Jd services B.V. (Water-zuivering). Alle rechten voorbehouden.</div>
         </div>
       </footer>
 

@@ -71,7 +71,7 @@ export default function AanmeldenPage() {
             <span className="flex items-center justify-center w-8 h-8 rounded-full bg-ink">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C12 2 5 10.5 5 15a7 7 0 0014 0c0-4.5-7-13-7-13z" fill="#EDA71B" /></svg>
             </span>
-            AquaPuur
+            Water-zuivering
           </a>
           <a href="/" className="text-sm font-semibold text-dim hover:text-ink transition-colors">← Terug naar site</a>
         </div>
@@ -262,7 +262,7 @@ export default function AanmeldenPage() {
 
       <footer className="border-t border-edge bg-surface">
         <div className="max-w-2xl mx-auto px-6 py-8 text-center text-sm text-dim">
-          &copy; 2026 Jd services B.V. (AquaPuur). Alle rechten voorbehouden.
+          &copy; 2026 Jd services B.V. (Water-zuivering). Alle rechten voorbehouden.
         </div>
       </footer>
     </>

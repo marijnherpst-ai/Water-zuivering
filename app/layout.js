@@ -16,9 +16,9 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: 'AquaPuur — Premium waterzuiveraar voor onder uw keukenkraan',
+  title: 'Water-zuivering — Premium waterzuiveraar voor onder uw keukenkraan',
   description:
-    'Zuiver drinkwater rechtstreeks uit uw eigen kraan. AquaPuur verwijdert chloor, PFAS, medicijnresten, microplastics, lood en meer. Vraag een gratis offerte aan voor uw waterfilter onder het aanrecht.',
+    'Zuiver drinkwater rechtstreeks uit uw eigen kraan. Water-zuivering verwijdert chloor, PFAS, medicijnresten, microplastics, lood en meer. Vraag een gratis offerte aan voor uw waterfilter onder het aanrecht.',
   keywords:
     'waterzuiveraar, waterfilter, drinkwater filter, waterfilter keuken, gefilterd drinkwater, waterfilter onder aanrecht, drinkwater zuiveren, waterzuiveringssysteem, waterfilter kraan, gezond drinkwater',
 };
