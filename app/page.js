@@ -172,9 +172,8 @@ export default function HomePage() {
               <div className="reveal relative rounded-[2rem] bg-ink text-white p-8 flex flex-col lg:-translate-y-5 shadow-2xl shadow-ink/25 lg:scale-[1.03] z-10">
                 <span className="absolute -top-3 left-8 rounded-full bg-amber text-ink text-[11px] font-bold uppercase tracking-wide px-3 py-1 shadow-lg shadow-amber/30">Meest gekozen</span>
                 <span className="self-start inline-block rounded-full bg-white/10 text-amber text-[11px] font-bold uppercase tracking-wide px-3 py-1">Hoofdsysteem</span>
-                <div className="relative mt-6 rounded-2xl bg-white/5 aspect-[4/3] flex items-center justify-center p-6 overflow-hidden">
-                  <div className="glow w-48 h-48 bg-amber/25" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
-                  <img src="/assets/img/product-cutout.png" alt="AquaPuur Osmosewatersysteem" className="relative w-36 md:w-40 h-auto" />
+                <div className="relative mt-6 rounded-2xl aspect-[4/3] overflow-hidden">
+                  <img src="/assets/img/cabinet-install.png" alt="AquaPuur Osmosewatersysteem, past smal in een standaard keukenkastje" className="absolute inset-0 w-full h-full object-cover" />
                 </div>
                 <h3 className="mt-6 font-display text-xl font-extrabold tracking-tight">Osmosewatersysteem</h3>
                 <p className="mt-2 text-sm text-white/60">3-traps filtersysteem — PPC, RO en GAC. De basis van elk AquaPuur-huishouden.</p>
