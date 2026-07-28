@@ -53,7 +53,7 @@ export default function HomePage() {
             <div className="relative reveal">
               <div className="absolute -inset-6 rounded-[3rem] bg-gradient-to-br from-amber/25 via-amber/5 to-transparent -rotate-3" />
               <div className="relative rounded-[2.5rem] overflow-hidden border border-edge shadow-2xl aspect-[4/5]">
-                <Image src="/assets/img/countertop.png" alt="Water-zuivering premium waterzuiveraar op een keukenblad" fill className="object-cover" />
+                <Image src="/assets/img/countertop.png" alt="Water-zuivering premium waterzuiveraar op een keukenblad" fill priority className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/20 via-transparent to-transparent" />
               </div>
               <div className="hidden sm:flex items-center gap-2 absolute -top-5 right-6 rounded-full glass shadow-lg px-4 py-2.5">
@@ -129,7 +129,7 @@ export default function HomePage() {
 
             <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 lg:items-stretch">
               {/* Kaart 1: 3-weg kraan */}
-              <div className="reveal relative rounded-[2rem] card p-8 flex flex-col">
+              <a href="/aanmelden" className="group reveal cursor-pointer relative rounded-[2rem] card p-8 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all">
                 <span className="self-start inline-block rounded-full bg-amber/12 text-amber-dark text-[11px] font-bold uppercase tracking-wide px-3 py-1">Accessoire</span>
                 <div className="relative mt-6 rounded-2xl bg-bg aspect-[4/3] flex items-center justify-center p-6 overflow-hidden">
                   <div className="glow w-40 h-40 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
@@ -143,15 +143,15 @@ export default function HomePage() {
                   <li className="flex items-center gap-2.5 text-dim"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Vakkundig meegeïnstalleerd</li>
                 </ul>
                 <div className="mt-auto pt-6">
-                  <a href="/aanmelden" className="cursor-pointer flex items-center justify-center gap-2 rounded-full border-2 border-ink px-6 py-3 text-sm font-bold text-ink hover:bg-bg transition-colors">
+                  <span className="flex items-center justify-center gap-2 rounded-full border-2 border-ink px-6 py-3 text-sm font-bold text-ink group-hover:bg-bg transition-colors">
                     Meer informatie
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                  </a>
+                  </span>
                 </div>
-              </div>
+              </a>
 
               {/* Kaart 2: Osmosewatersysteem (uitgelicht) */}
-              <div className="reveal relative rounded-[2rem] bg-ink text-white p-8 flex flex-col lg:-translate-y-5 shadow-2xl shadow-ink/25 lg:scale-[1.03] z-10">
+              <a href="/aanmelden" className="group reveal cursor-pointer relative rounded-[2rem] bg-ink text-white p-8 flex flex-col lg:-translate-y-5 shadow-2xl shadow-ink/25 lg:scale-[1.03] z-10 hover:shadow-amber/20 transition-shadow">
                 <span className="absolute -top-3 left-8 rounded-full bg-amber text-ink text-[11px] font-bold uppercase tracking-wide px-3 py-1 shadow-lg shadow-amber/30">Meest gekozen</span>
                 <span className="self-start inline-block rounded-full bg-white/10 text-amber text-[11px] font-bold uppercase tracking-wide px-3 py-1">Hoofdsysteem</span>
                 <div className="relative mt-6 rounded-2xl aspect-[4/3] overflow-hidden">
@@ -165,15 +165,15 @@ export default function HomePage() {
                   <li className="flex items-center gap-2.5 text-white/70"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#EDA71B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Inclusief professionele installatie</li>
                 </ul>
                 <div className="mt-auto pt-6">
-                  <a href="/aanmelden" className="cursor-pointer flex items-center justify-center gap-2 rounded-full bg-amber px-6 py-3 text-sm font-bold text-ink hover:bg-white transition-colors">
+                  <span className="flex items-center justify-center gap-2 rounded-full bg-amber px-6 py-3 text-sm font-bold text-ink group-hover:bg-white transition-colors">
                     Vraag offerte aan
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                  </a>
+                  </span>
                 </div>
-              </div>
+              </a>
 
               {/* Kaart 3: Mineraalfilter */}
-              <div className="reveal relative rounded-[2rem] card p-8 flex flex-col">
+              <a href="/aanmelden" className="group reveal cursor-pointer relative rounded-[2rem] card p-8 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all">
                 <span className="self-start inline-block rounded-full bg-amber/12 text-amber-dark text-[11px] font-bold uppercase tracking-wide px-3 py-1">Accessoire</span>
                 <div className="relative mt-6 rounded-2xl bg-bg aspect-[4/3] flex items-center justify-center p-6 overflow-hidden">
                   <div className="glow w-40 h-40 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
@@ -187,12 +187,12 @@ export default function HomePage() {
                   <li className="flex items-center gap-2.5 text-dim"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Ronder smaakprofiel</li>
                 </ul>
                 <div className="mt-auto pt-6">
-                  <a href="/aanmelden" className="cursor-pointer flex items-center justify-center gap-2 rounded-full border-2 border-ink px-6 py-3 text-sm font-bold text-ink hover:bg-bg transition-colors">
+                  <span className="flex items-center justify-center gap-2 rounded-full border-2 border-ink px-6 py-3 text-sm font-bold text-ink group-hover:bg-bg transition-colors">
                     Meer informatie
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                  </a>
+                  </span>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div className="mt-12 lg:mt-16 flex justify-center">
