@@ -381,40 +381,46 @@ export default function HomePage() {
         </section>
 
         {/* INSTALLATIE */}
-        <section className="relative bg-surface border-y border-edge">
-          <div className="max-w-7xl mx-auto px-6 py-20 md:py-28">
+        <section className="relative bg-gradient-to-b from-amber/10 via-surface to-surface border-y border-edge overflow-hidden">
+          <div className="glow w-[420px] h-[420px] bg-amber/15 -top-20 -right-20" />
+          <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-28">
             <div className="max-w-2xl mx-auto text-center">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Installatie</span>
               <h2 className="mt-3 font-display text-3xl md:text-4xl font-extrabold tracking-tight">Zo eenvoudig gaat het</h2>
+              <p className="mt-4 text-dim text-lg">Van eerste contact tot zuiver water uit de kraan — in vier duidelijke stappen, meestal binnen één dag geregeld.</p>
             </div>
             <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="reveal text-center">
+              <div className="reveal rounded-3xl card p-6 text-center">
                 <div className="mx-auto flex items-center justify-center w-16 h-16 rounded-2xl bg-amber/12 text-amber-dark">
                   <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2" stroke="currentColor" strokeWidth="1.7" /><path d="M4 9h16M8 3v4M16 3v4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" /></svg>
                 </div>
-                <p className="mt-4 font-display font-bold">1. Afspraak</p>
-                <p className="mt-1.5 text-sm text-dim">Plan een moment dat u uitkomt.</p>
+                <p className="mt-5 font-display font-bold text-lg">1. Afspraak</p>
+                <p className="mt-2 text-sm text-dim">Plan telefonisch of online een moment dat u uitkomt. U ontvangt vooraf een duidelijke tijdsindicatie, zodat u niet hoeft te wachten.</p>
+                <p className="mt-4 text-xs font-bold text-amber-dark uppercase tracking-wide">± 5 minuten</p>
               </div>
-              <div className="reveal text-center">
+              <div className="reveal rounded-3xl card p-6 text-center">
                 <div className="mx-auto flex items-center justify-center w-16 h-16 rounded-2xl bg-amber/12 text-amber-dark">
                   <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 4l6 6-9 9-6-3 9-12z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" /><path d="M4 20l3-3" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" /></svg>
                 </div>
-                <p className="mt-4 font-display font-bold">2. Installatie</p>
-                <p className="mt-1.5 text-sm text-dim">Vakkundig geplaatst door een monteur.</p>
+                <p className="mt-5 font-display font-bold text-lg">2. Installatie</p>
+                <p className="mt-2 text-sm text-dim">Een vakkundige monteur plaatst het systeem onder uw aanrecht, sluit alles netjes aan en houdt rekening met uw keukeninrichting.</p>
+                <p className="mt-4 text-xs font-bold text-amber-dark uppercase tracking-wide">± 1-2 uur</p>
               </div>
-              <div className="reveal text-center">
+              <div className="reveal rounded-3xl card p-6 text-center">
                 <div className="mx-auto flex items-center justify-center w-16 h-16 rounded-2xl bg-amber/12 text-amber-dark">
                   <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /><circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.7" /></svg>
                 </div>
-                <p className="mt-4 font-display font-bold">3. Controle</p>
-                <p className="mt-1.5 text-sm text-dim">Werking en aansluitingen gecheckt.</p>
+                <p className="mt-5 font-display font-bold text-lg">3. Controle</p>
+                <p className="mt-2 text-sm text-dim">Voor we vertrekken testen we de waterdruk, alle aansluitingen en elke filtertrap afzonderlijk, zodat alles aantoonbaar goed werkt.</p>
+                <p className="mt-4 text-xs font-bold text-amber-dark uppercase tracking-wide">± 15 minuten</p>
               </div>
-              <div className="reveal text-center">
+              <div className="reveal rounded-3xl bg-ink text-white p-6 text-center">
                 <div className="mx-auto flex items-center justify-center w-16 h-16 rounded-2xl bg-amber text-ink">
                   <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C12 2 5 10.5 5 15a7 7 0 0014 0c0-4.5-7-13-7-13z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /></svg>
                 </div>
-                <p className="mt-4 font-display font-bold">4. Genieten</p>
-                <p className="mt-1.5 text-sm text-dim">Direct puur water uit uw kraan.</p>
+                <p className="mt-5 font-display font-bold text-lg">4. Genieten</p>
+                <p className="mt-2 text-sm text-white/60">Vanaf dat moment heeft u dagelijks toegang tot zuiver, gefilterd water — rechtstreeks uit uw kraan, zonder verdere moeite.</p>
+                <p className="mt-4 text-xs font-bold text-amber uppercase tracking-wide">Vanaf nu</p>
               </div>
             </div>
           </div>
