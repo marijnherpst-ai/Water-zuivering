@@ -23,7 +23,7 @@ export default function ReviewForm() {
     startTransition(async () => {
       const result = await submitReview(formData);
       if (result.success) {
-        setStatus({ ok: true, message: 'Bedankt voor je review! Deze verschijnt na controle op de site.' });
+        setStatus({ ok: true, message: 'Bedankt voor je review! Ververs de pagina om hem te zien.' });
         formEl.reset();
         setRating(0);
       } else {

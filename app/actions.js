@@ -45,7 +45,7 @@ export async function submitReview(formData) {
     city,
     rating,
     review_text,
-    approved: false,
+    approved: true,
   });
 
   if (error) {
