@@ -274,8 +274,8 @@ export default async function HomePage() {
               <p className="mt-4 text-dim text-lg">Een losse kraan voor gefilterd water betekent extra gaten in het aanrecht en meer rommel. Met een 3-weg kraan combineert u alles in één strak ontwerp.</p>
             </div>
 
-            <div className="mt-14 grid md:grid-cols-2 gap-6 lg:gap-8">
-              <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3]">
+            <div className="mt-14 grid md:grid-cols-5 gap-6 lg:gap-8 items-center">
+              <div className="md:col-span-2 relative rounded-[2rem] overflow-hidden aspect-[4/3] grayscale opacity-60">
                 <img src="/assets/img/twee-kranen.jpg" alt="Twee losse kranen op het aanrecht" className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
                 <span className="absolute bottom-5 left-5 inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-4 py-1.5 text-xs font-bold text-ink">
@@ -283,9 +283,12 @@ export default async function HomePage() {
                   2 kranen — extra gedoe
                 </span>
               </div>
-              <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] ring-2 ring-amber">
+              <div className="md:col-span-3 relative rounded-[2rem] overflow-hidden aspect-[4/3] ring-4 ring-amber shadow-2xl shadow-amber/25 md:scale-[1.05] z-10">
                 <img src="/assets/img/een-kraan.jpg" alt="Eén elegante 3-weg kraan" className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
+                <span className="absolute top-5 left-5 inline-flex items-center gap-1.5 rounded-full bg-amber px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-ink">
+                  Beste keuze
+                </span>
                 <span className="absolute bottom-5 left-5 inline-flex items-center gap-2 rounded-full bg-amber px-4 py-1.5 text-xs font-bold text-ink">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   1 kraan — alles-in-één
