@@ -170,7 +170,7 @@ export default function UitlegPage() {
                 <p className="mt-1 text-xs text-dim">stroomverbruik</p>
               </div>
               <div className="text-center lg:px-2">
-                <p className="font-display text-2xl font-extrabold text-amber-dark">1 jaar</p>
+                <p className="font-display text-2xl font-extrabold text-amber-dark">10 jaar</p>
                 <p className="mt-1 text-xs text-dim">garantie</p>
               </div>
               <div className="text-center lg:px-2">
