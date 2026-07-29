@@ -29,6 +29,32 @@ export async function submitContactForm(formData) {
   return { success: true };
 }
 
+export async function submitReview(formData) {
+  const name = formData.get('name')?.toString().trim();
+  const city = formData.get('city')?.toString().trim() || null;
+  const rating = Number(formData.get('rating'));
+  const review_text = formData.get('review_text')?.toString().trim();
+
+  if (!name || !review_text || !rating || rating < 1 || rating > 5) {
+    return { success: false, error: 'Vul een naam, beoordeling en review in.' };
+  }
+
+  const supabase = await createClient();
+  const { error } = await supabase.from('reviews').insert({
+    name,
+    city,
+    rating,
+    review_text,
+    approved: false,
+  });
+
+  if (error) {
+    return { success: false, error: 'Er ging iets mis bij het versturen. Probeer het opnieuw.' };
+  }
+
+  return { success: true };
+}
+
 export async function submitAanmeldenForm(data) {
   const { keukenblad, kastje_leeg, quooker, bron, naam, telefoon, email, postcode, huisnummer } = data;
 
