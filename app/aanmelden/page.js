@@ -57,6 +57,9 @@ export default function AanmeldenPage() {
       if (result.success) {
         setSubmitError(null);
         setStep(4);
+        if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+          window.fbq('track', 'Lead');
+        }
       } else {
         setSubmitError(result.error);
       }

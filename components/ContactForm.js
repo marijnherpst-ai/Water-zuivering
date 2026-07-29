@@ -16,6 +16,9 @@ export default function ContactForm() {
       if (result.success) {
         setStatus({ ok: true, message: 'Bedankt! We nemen zo snel mogelijk contact met u op.' });
         formEl.reset();
+        if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+          window.fbq('track', 'Lead');
+        }
       } else {
         setStatus({ ok: false, message: result.error });
       }
