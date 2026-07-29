@@ -7,7 +7,7 @@ export default function Calculator() {
   const [glazen, setGlazen] = useState(6);
 
   const litersPerJaar = personen * glazen * 0.25 * 365;
-  const besparing = Math.round(litersPerJaar * (0.6 - 0.05));
+  const besparing = Math.round(litersPerJaar * (0.79 - 0.05));
 
   return (
     <div className="mt-12 rounded-3xl card p-8 sm:p-10 grid md:grid-cols-2 gap-10 items-center">
@@ -42,7 +42,7 @@ export default function Calculator() {
             className="w-full accent-amber"
           />
         </div>
-        <p className="text-xs text-dim/70">Uitgangspunten: 250 ml per glas, €0,60 per liter flessenwater, circa €0,05 per liter gefilterd kraanwater (incl. filters). Indicatief — werkelijke besparing verschilt per huishouden.</p>
+        <p className="text-xs text-dim/70">Uitgangspunten: 250 ml per glas, €0,79 per liter flessenwater (o.b.v. 1,5L Spa Blauw à €1,19), circa €0,05 per liter gefilterd kraanwater (incl. filters). Indicatief — werkelijke besparing verschilt per huishouden.</p>
       </div>
       <div className="rounded-2xl bg-ink text-white p-8 text-center">
         <p className="text-sm font-semibold text-white/60">Geschatte besparing per jaar</p>
