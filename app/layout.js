@@ -1,4 +1,5 @@
 import { Inter, Outfit } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 
 const inter = Inter({
@@ -26,7 +27,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="nl" className={`${inter.variable} ${outfit.variable}`}>
-      <body className="bg-bg text-ink font-sans antialiased">{children}</body>
+      <body className="bg-bg text-ink font-sans antialiased">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
