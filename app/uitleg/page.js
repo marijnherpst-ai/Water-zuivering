@@ -28,8 +28,8 @@ export default function UitlegPage() {
             </div>
             <div className="relative">
               <div className="absolute -inset-6 rounded-[3rem] bg-gradient-to-br from-amber/20 via-amber/5 to-transparent -rotate-3" />
-              <div className="relative rounded-[2rem] card p-10 flex items-center justify-center bg-white">
-                <Image src="/assets/img/systeem-slim-105mm.png" alt="Het Water-zuivering systeem" width={165} height={630} className="h-[360px] md:h-[440px] w-auto" />
+              <div className="relative rounded-[2rem] overflow-hidden border border-edge aspect-[4/5]">
+                <Image src="/assets/img/cabinet-install.png" alt="Het Water-zuivering systeem geïnstalleerd in het keukenkastje" fill className="object-cover" />
               </div>
               <div className="hidden sm:flex items-center gap-3 absolute -bottom-6 -left-6 rounded-2xl card shadow-xl px-5 py-4 bg-white">
                 <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-amber/15 text-amber-dark">
