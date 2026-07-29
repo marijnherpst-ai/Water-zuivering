@@ -7,6 +7,8 @@ export const metadata = {
   description: 'Lees ervaringen van klanten van Water-zuivering en laat zelf een review achter.',
 };
 
+export const dynamic = 'force-dynamic';
+
 function Stars({ rating }) {
   return (
     <div className="flex items-center gap-0.5" aria-label={`${rating} van de 5 sterren`}>
