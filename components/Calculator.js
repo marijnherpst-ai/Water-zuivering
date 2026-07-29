@@ -104,7 +104,7 @@ export default function Calculator() {
       </div>
       <div className="rounded-2xl bg-ink text-white p-8 text-center">
         <p className="text-sm font-semibold text-white/60">Geschatte besparing per jaar</p>
-        <p className="mt-2 font-display text-5xl font-extrabold text-amber">€ {besparing.toLocaleString('nl-NL')}</p>
+        <p className="mt-2 font-display text-6xl font-extrabold text-emerald-400">€ {besparing.toLocaleString('nl-NL')}</p>
         <p className="mt-3 text-sm text-white/60">ten opzichte van {brand.name}</p>
         <a href="/aanmelden" className="cursor-pointer mt-6 inline-flex items-center gap-2 rounded-full bg-amber px-6 py-3 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors">
           Start met besparen
