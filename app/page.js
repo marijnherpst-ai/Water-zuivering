@@ -32,6 +32,16 @@ export default async function HomePage() {
 
   const topReviews = reviews || [];
 
+  const { data: ratingStats } = await supabase
+    .from('reviews')
+    .select('rating')
+    .eq('approved', true);
+
+  const reviewCount = ratingStats?.length || 0;
+  const avgRating = reviewCount > 0
+    ? (ratingStats.reduce((sum, r) => sum + r.rating, 0) / reviewCount).toFixed(1)
+    : null;
+
   return (
     <>
       <RevealObserver />
@@ -107,8 +117,13 @@ export default async function HomePage() {
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.8.8-5 4.6 1.4 6.7L12 16.9 5.9 20.3l1.4-6.7-5-4.6 6.8-.8L12 2z" /></svg>
                 </span>
                 <div className="text-left">
-                  <div className="flex items-center gap-0.5 text-amber text-xs" aria-hidden="true">★★★★★</div>
-                  <p className="mt-0.5 text-xs font-semibold text-dim">Beoordeeld door klanten</p>
+                  <div className="flex items-center gap-1.5">
+                    <span className="flex items-center gap-0.5 text-amber text-xs" aria-hidden="true">★★★★★</span>
+                    {avgRating && <span className="text-xs font-bold text-ink">{avgRating}</span>}
+                  </div>
+                  <p className="mt-0.5 text-xs font-semibold text-dim">
+                    {reviewCount > 0 ? `Op basis van ${reviewCount} reviews` : 'Beoordeeld door klanten'}
+                  </p>
                 </div>
               </div>
 
