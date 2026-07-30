@@ -3,7 +3,7 @@ import { Inter, Outfit } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 
-const META_PIXEL_ID = '104845368764840669';
+const META_PIXEL_ID = '120245392880880669';
 
 const inter = Inter({
   subsets: ['latin'],
