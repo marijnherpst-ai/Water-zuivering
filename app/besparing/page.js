@@ -18,8 +18,8 @@ export default function BesparingPage() {
           <div className="relative max-w-5xl mx-auto px-6 py-16 md:py-24">
             <div className="max-w-2xl mx-auto text-center">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kostenbesparing</span>
-              <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">Bereken hoeveel je bespaart</h1>
-              <p className="mt-5 text-dim text-lg">Flessenwater is duurder dan je denkt. Vul hieronder in wat jij normaal drinkt en zie in één oogopslag wat een waterzuiveraar je oplevert.</p>
+              <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">Bereken hier hoeveel euro je kunt besparen met een waterzuiveraar</h1>
+              <p className="mt-5 text-dim text-lg">Flessenwater is duurder dan je denkt. In drie korte stappen bereken je precies wat de aanschaf van een waterzuiveraar oplevert.</p>
             </div>
             <Calculator />
           </div>
