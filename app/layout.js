@@ -1,6 +1,6 @@
 import Script from 'next/script';
 import { Inter, Outfit } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 
 const META_PIXEL_ID = '901866625752558';

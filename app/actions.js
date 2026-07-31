@@ -81,3 +81,30 @@ export async function submitAanmeldenForm(data) {
 
   return { success: true };
 }
+
+export async function submitBesparingLead(data) {
+  const { naam, email, telefoon, postcode, huisnummer, watermerk, personen, glazen, besparing } = data;
+
+  if (!naam || !email || !telefoon || !postcode || !huisnummer || !watermerk || !personen || !glazen || besparing == null) {
+    return { success: false, error: 'Vul alle verplichte velden in.' };
+  }
+
+  const supabase = await createClient();
+  const { error } = await supabase.from('besparing_leads').insert({
+    naam,
+    email,
+    telefoon,
+    postcode,
+    huisnummer,
+    watermerk,
+    personen,
+    glazen,
+    besparing_per_jaar: besparing,
+  });
+
+  if (error) {
+    return { success: false, error: 'Er ging iets mis bij het versturen. Probeer het opnieuw.' };
+  }
+
+  return { success: true };
+}
