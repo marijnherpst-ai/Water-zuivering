@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import MobileStickyCta from '@/components/MobileStickyCta';
 import RevealObserver from '@/components/RevealObserver';
@@ -70,10 +71,10 @@ export default async function HomePage() {
                 Geniet iedere dag van heerlijk gefilterd water zonder flessen, plastic afval of onnodige kosten. Compact geïnstalleerd in uw keukenkastje.
               </p>
               <div className="mt-9 flex flex-wrap items-center gap-4">
-                <a href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-xl shadow-amber/25">
+                <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-xl shadow-amber/25">
                   Vraag vrijblijvend een offerte aan
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                </a>
+                </Link>
                 <a href="#hoe-het-werkt" className="cursor-pointer inline-flex items-center gap-2 rounded-full card px-7 py-4 text-sm font-bold text-ink hover:border-ink/20 transition-colors">
                   Bekijk hoe het werkt
                 </a>
@@ -169,7 +170,7 @@ export default async function HomePage() {
 
             <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 lg:items-stretch">
               {/* Kaart 1: 3-weg kraan */}
-              <a href="/aanmelden" className="group reveal cursor-pointer relative rounded-[2rem] card p-8 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all">
+              <Link href="/aanmelden" className="group reveal cursor-pointer relative rounded-[2rem] card p-8 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all">
                 <span className="self-start inline-block rounded-full bg-amber/12 text-amber-dark text-[11px] font-bold uppercase tracking-wide px-3 py-1">Accessoire</span>
                 <div className="relative mt-6 rounded-2xl bg-bg aspect-[4/3] flex items-center justify-center p-6 overflow-hidden">
                   <div className="glow w-40 h-40 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
@@ -188,10 +189,10 @@ export default async function HomePage() {
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   </span>
                 </div>
-              </a>
+              </Link>
 
               {/* Kaart 2: Osmosewatersysteem (uitgelicht) */}
-              <a href="/aanmelden" className="group reveal cursor-pointer relative rounded-[2rem] bg-ink text-white p-8 flex flex-col lg:-translate-y-5 shadow-2xl shadow-ink/25 lg:scale-[1.03] z-10 hover:shadow-amber/20 transition-shadow">
+              <Link href="/aanmelden" className="group reveal cursor-pointer relative rounded-[2rem] bg-ink text-white p-8 flex flex-col lg:-translate-y-5 shadow-2xl shadow-ink/25 lg:scale-[1.03] z-10 hover:shadow-amber/20 transition-shadow">
                 <span className="absolute -top-3 left-8 rounded-full bg-amber text-ink text-[11px] font-bold uppercase tracking-wide px-3 py-1 shadow-lg shadow-amber/30">Meest gekozen</span>
                 <span className="self-start inline-block rounded-full bg-white/10 text-amber text-[11px] font-bold uppercase tracking-wide px-3 py-1">Hoofdsysteem</span>
                 <div className="relative mt-6 rounded-2xl aspect-[4/3] overflow-hidden">
@@ -210,10 +211,10 @@ export default async function HomePage() {
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   </span>
                 </div>
-              </a>
+              </Link>
 
               {/* Kaart 3: Mineraalfilter */}
-              <a href="/aanmelden" className="group reveal cursor-pointer relative rounded-[2rem] card p-8 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all">
+              <Link href="/aanmelden" className="group reveal cursor-pointer relative rounded-[2rem] card p-8 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all">
                 <span className="self-start inline-block rounded-full bg-amber/12 text-amber-dark text-[11px] font-bold uppercase tracking-wide px-3 py-1">Accessoire</span>
                 <div className="relative mt-6 rounded-2xl bg-bg aspect-[4/3] flex items-center justify-center p-6 overflow-hidden">
                   <div className="glow w-40 h-40 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
@@ -232,7 +233,7 @@ export default async function HomePage() {
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   </span>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="mt-12 lg:mt-16 flex justify-center">
@@ -258,10 +259,10 @@ export default async function HomePage() {
                   <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Ervaringen</span>
                   <h2 className="mt-2 font-display text-xl md:text-2xl font-extrabold tracking-tight">Wat klanten van ons vinden</h2>
                 </div>
-                <a href="/reviews" className="cursor-pointer hidden sm:inline-flex items-center gap-1.5 text-sm font-bold text-ink hover:text-amber-dark transition-colors shrink-0">
+                <Link href="/reviews" className="cursor-pointer hidden sm:inline-flex items-center gap-1.5 text-sm font-bold text-ink hover:text-amber-dark transition-colors shrink-0">
                   Alle reviews
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                </a>
+                </Link>
               </div>
               <div className="grid sm:grid-cols-3 gap-5">
                 {topReviews.map((review) => (
@@ -272,10 +273,10 @@ export default async function HomePage() {
                   </div>
                 ))}
               </div>
-              <a href="/reviews" className="cursor-pointer sm:hidden mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-ink">
+              <Link href="/reviews" className="cursor-pointer sm:hidden mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-ink">
                 Alle reviews
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-              </a>
+              </Link>
             </div>
           </section>
         )}
@@ -312,10 +313,10 @@ export default async function HomePage() {
             </div>
 
             <div className="mt-10 text-center">
-              <a href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">
+              <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">
                 Vraag vrijblijvend een offerte aan
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -361,10 +362,10 @@ export default async function HomePage() {
               </div>
             </div>
             <div className="mt-10 text-center">
-              <a href="/uitleg" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-6 py-3 text-sm font-bold text-ink hover:bg-white transition-colors">
+              <Link href="/uitleg" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-6 py-3 text-sm font-bold text-ink hover:bg-white transition-colors">
                 Meer uitleg: filters vervangen, installatie & meer
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -595,7 +596,7 @@ export default async function HomePage() {
           <div>
             <p className="font-display font-bold text-sm">Contact</p>
             <ul className="mt-3 space-y-2 text-sm text-dim">
-              <li><a href="/contact" className="hover:text-ink transition-colors">Contactgegevens &amp; locatie</a></li>
+              <li><Link href="/contact" className="hover:text-ink transition-colors">Contactgegevens &amp; locatie</Link></li>
               <li><a href="mailto:info@water-zuivering.nl" className="hover:text-ink transition-colors">info@water-zuivering.nl</a></li>
               <li>Veldkersweg 16, 3053 JR Rotterdam</li>
               <li>KVK 83174044</li>

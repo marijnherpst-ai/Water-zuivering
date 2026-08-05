@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Header from '@/components/Header';
 
 export const metadata = {
@@ -69,7 +70,7 @@ export default function GarantiePage() {
                 </div>
               </div>
             </div>
-            <p className="mt-8 text-center text-xs text-dim/70">Verbruiksartikelen zoals filters vallen niet onder de garantie — die vervang je periodiek zelf, zie <a href="/uitleg" className="underline hover:text-ink">de uitleg</a> hierover.</p>
+            <p className="mt-8 text-center text-xs text-dim/70">Verbruiksartikelen zoals filters vallen niet onder de garantie — die vervang je periodiek zelf, zie <Link href="/uitleg" className="underline hover:text-ink">de uitleg</Link> hierover.</p>
           </div>
         </section>
 
@@ -84,7 +85,7 @@ export default function GarantiePage() {
               <div className="relative">
                 <span className="font-display text-5xl font-extrabold text-amber/25">01</span>
                 <p className="mt-2 font-display font-bold text-lg">Neem contact op</p>
-                <p className="mt-2 text-sm text-dim">Meld het probleem via <a href="/contact" className="underline hover:text-ink">het contactformulier</a> of telefonisch.</p>
+                <p className="mt-2 text-sm text-dim">Meld het probleem via <Link href="/contact" className="underline hover:text-ink">het contactformulier</Link> of telefonisch.</p>
               </div>
               <div className="relative sm:border-x sm:border-edge sm:px-6">
                 <span className="font-display text-5xl font-extrabold text-amber/25">02</span>
@@ -107,10 +108,10 @@ export default function GarantiePage() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber">Zekerheid inbegrepen</span>
             <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">10 jaar zorgeloos zuiver water</h2>
             <p className="mt-4 text-white/70">Vraag een vrijblijvende offerte aan en profiteer direct van onze 10 jaar garantie.</p>
-            <a href="/aanmelden" className="cursor-pointer mt-8 inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-xl shadow-amber/25">
+            <Link href="/aanmelden" className="cursor-pointer mt-8 inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-xl shadow-amber/25">
               Vraag vrijblijvend een offerte aan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-            </a>
+            </Link>
           </div>
         </section>
       </main>

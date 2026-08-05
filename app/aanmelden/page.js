@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useState, useTransition } from 'react';
+import Link from 'next/link';
 import { submitAanmeldenForm } from '@/app/actions';
 
 const TOTAL_STEPS = 3;
@@ -70,13 +71,13 @@ export default function AanmeldenPage() {
     <>
       <header className="border-b border-edge">
         <div className="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-2.5 font-display font-extrabold text-lg tracking-tight">
+          <Link href="/" className="flex items-center gap-2.5 font-display font-extrabold text-lg tracking-tight">
             <span className="flex items-center justify-center w-8 h-8 rounded-full bg-ink">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C12 2 5 10.5 5 15a7 7 0 0014 0c0-4.5-7-13-7-13z" fill="#EDA71B" /></svg>
             </span>
             Water-zuivering
-          </a>
-          <a href="/" className="text-sm font-semibold text-dim hover:text-ink transition-colors">← Terug naar site</a>
+          </Link>
+          <Link href="/" className="text-sm font-semibold text-dim hover:text-ink transition-colors">← Terug naar site</Link>
         </div>
       </header>
 
@@ -234,9 +235,9 @@ export default function AanmeldenPage() {
               </span>
               <p className="mt-5 font-display font-bold text-xl">Bedankt voor je aanvraag!</p>
               <p className="mt-2 text-sm text-dim max-w-sm mx-auto">We nemen binnen één werkdag contact met je op met een gratis, vrijblijvend advies voor jouw keuken.</p>
-              <a href="/" className="cursor-pointer mt-6 inline-flex items-center justify-center gap-2 rounded-full border-2 border-ink px-6 py-3 text-sm font-bold text-ink hover:bg-surface transition-colors">
+              <Link href="/" className="cursor-pointer mt-6 inline-flex items-center justify-center gap-2 rounded-full border-2 border-ink px-6 py-3 text-sm font-bold text-ink hover:bg-surface transition-colors">
                 Terug naar de website
-              </a>
+              </Link>
             </div>
 
             {/* Navigatie */}

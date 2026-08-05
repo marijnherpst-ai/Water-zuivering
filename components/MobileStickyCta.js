@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export default function MobileStickyCta() {
   const [visible, setVisible] = useState(false);
@@ -23,9 +24,9 @@ export default function MobileStickyCta() {
     <div
       className={`md:hidden fixed bottom-0 inset-x-0 z-40 glass px-4 py-3 transition-transform duration-300 ${visible ? 'translate-y-0' : 'translate-y-full'}`}
     >
-      <a href="/aanmelden" className="cursor-pointer flex items-center justify-center gap-2 rounded-full bg-amber px-5 py-3 text-sm font-bold text-ink shadow-lg">
+      <Link href="/aanmelden" className="cursor-pointer flex items-center justify-center gap-2 rounded-full bg-amber px-5 py-3 text-sm font-bold text-ink shadow-lg">
         Offerte aanvragen
-      </a>
+      </Link>
     </div>
   );
 }

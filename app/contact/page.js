@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Header from '@/components/Header';
 import ContactForm from '@/components/ContactForm';
 
@@ -69,20 +70,20 @@ export default function ContactPage() {
       <footer className="bg-surface border-t border-edge">
         <div className="max-w-7xl mx-auto px-6 py-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <a href="/" className="flex items-center gap-2.5 font-display font-extrabold text-lg tracking-tight">
+            <Link href="/" className="flex items-center gap-2.5 font-display font-extrabold text-lg tracking-tight">
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-ink">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C12 2 5 10.5 5 15a7 7 0 0014 0c0-4.5-7-13-7-13z" fill="#EDA71B" /></svg>
               </span>
               Water-zuivering
-            </a>
+            </Link>
             <p className="mt-3 text-sm text-dim">Premium waterfiltratie voor onder uw keukenkraan.</p>
           </div>
           <div>
             <p className="font-display font-bold text-sm">Navigatie</p>
             <ul className="mt-3 space-y-2 text-sm text-dim">
-              <li><a href="/#product" className="hover:text-ink transition-colors">Producten</a></li>
-              <li><a href="/#hoe-het-werkt" className="hover:text-ink transition-colors">Hoe het werkt</a></li>
-              <li><a href="/#faq" className="hover:text-ink transition-colors">FAQ</a></li>
+              <li><Link href="/#product" className="hover:text-ink transition-colors">Producten</Link></li>
+              <li><Link href="/#hoe-het-werkt" className="hover:text-ink transition-colors">Hoe het werkt</Link></li>
+              <li><Link href="/#faq" className="hover:text-ink transition-colors">FAQ</Link></li>
             </ul>
           </div>
           <div>
@@ -107,9 +108,9 @@ export default function ContactPage() {
       </footer>
 
       <div className="md:hidden fixed bottom-0 inset-x-0 z-40 glass px-4 py-3">
-        <a href="/aanmelden" className="cursor-pointer flex items-center justify-center gap-2 rounded-full bg-amber px-5 py-3 text-sm font-bold text-ink shadow-lg">
+        <Link href="/aanmelden" className="cursor-pointer flex items-center justify-center gap-2 rounded-full bg-amber px-5 py-3 text-sm font-bold text-ink shadow-lg">
           Offerte aanvragen
-        </a>
+        </Link>
       </div>
     </>
   );
