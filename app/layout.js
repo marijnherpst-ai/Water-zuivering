@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 
 const META_PIXEL_ID = '901866625752558';
+const CLARITY_PROJECT_ID = 'xxlly23zof';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -33,6 +34,15 @@ export default function RootLayout({ children }) {
       <body className="bg-bg text-ink font-sans antialiased">
         {children}
         <Analytics />
+        <Script id="ms-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "${CLARITY_PROJECT_ID}");
+          `}
+        </Script>
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
