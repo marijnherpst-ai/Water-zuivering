@@ -10,6 +10,8 @@ export default function sitemap() {
     { path: '/garantie', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/reviews', priority: 0.6, changeFrequency: 'weekly' },
     { path: '/contact', priority: 0.6, changeFrequency: 'monthly' },
+    { path: '/kennisbank', priority: 0.5, changeFrequency: 'weekly' },
+    { path: '/kennisbank/wat-is-osmosewater', priority: 0.5, changeFrequency: 'monthly' },
   ];
 
   return routes.map((route) => ({

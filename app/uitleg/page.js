@@ -142,6 +142,7 @@ export default function UitlegPage() {
                 </li>
               </ol>
               <p className="mt-5 text-sm text-dim">Een filter gaat gemiddeld <strong className="text-ink">36 maanden</strong> mee, of tot <strong className="text-ink">6.000 liter</strong> water. Het display op het apparaat laat je precies zien wanneer het tijd is om te vervangen.</p>
+              <p className="mt-5 text-sm text-dim">Benieuwd wat osmosewater precies is en waarom het zo zuiver is? Lees onze <Link href="/kennisbank/wat-is-osmosewater" className="underline hover:text-ink">uitleg in de kennisbank</Link>.</p>
             </div>
           </div>
         </section>
