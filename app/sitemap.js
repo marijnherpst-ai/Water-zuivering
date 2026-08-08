@@ -12,6 +12,16 @@ export default function sitemap() {
     { path: '/contact', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/kennisbank', priority: 0.5, changeFrequency: 'weekly' },
     { path: '/kennisbank/wat-is-osmosewater', priority: 0.5, changeFrequency: 'monthly' },
+    { path: '/kennisbank/waterontharder-vs-waterzuiveraar', priority: 0.5, changeFrequency: 'monthly' },
+    { path: '/kennisbank/is-kraanwater-veilig', priority: 0.5, changeFrequency: 'monthly' },
+    { path: '/kennisbank/wat-kost-een-waterzuiveringssysteem', priority: 0.5, changeFrequency: 'monthly' },
+    { path: '/kennisbank/waterfilter-vervangen-hoe-vaak', priority: 0.5, changeFrequency: 'monthly' },
+    { path: '/kennisbank/pfas-in-kraanwater', priority: 0.5, changeFrequency: 'monthly' },
+    { path: '/kennisbank/kraanwater-vs-flessenwater', priority: 0.5, changeFrequency: 'monthly' },
+    { path: '/kennisbank/waterfilter-onder-de-gootsteen', priority: 0.5, changeFrequency: 'monthly' },
+    { path: '/kennisbank/kalkaanslag-in-huis', priority: 0.5, changeFrequency: 'monthly' },
+    { path: '/kennisbank/3-weg-kraan-uitleg', priority: 0.5, changeFrequency: 'monthly' },
+    { path: '/kennisbank/waterzuiveraar-installeren', priority: 0.5, changeFrequency: 'monthly' },
   ];
 
   return routes.map((route) => ({
