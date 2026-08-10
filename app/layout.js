@@ -6,6 +6,7 @@ import './globals.css';
 const META_PIXEL_ID = '901866625752558';
 const CLARITY_PROJECT_ID = 'xxlly23zof';
 const GA_MEASUREMENT_ID = 'G-K7V64C0DH8';
+const GOOGLE_ADS_ID = 'AW-18325767412';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${GA_MEASUREMENT_ID}');
+            gtag('config', '${GOOGLE_ADS_ID}');
           `}
         </Script>
         <Script id="ms-clarity" strategy="afterInteractive">

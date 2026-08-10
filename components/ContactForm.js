@@ -19,6 +19,9 @@ export default function ContactForm() {
         if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
           window.fbq('track', 'Lead');
         }
+        if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', { event_category: 'contact' });
+        }
       } else {
         setStatus({ ok: false, message: result.error });
       }

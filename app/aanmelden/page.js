@@ -61,6 +61,9 @@ export default function AanmeldenPage() {
         if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
           window.fbq('track', 'Lead');
         }
+        if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', { event_category: 'aanmelden' });
+        }
       } else {
         setSubmitError(result.error);
       }
