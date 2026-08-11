@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import CountdownTimer from './CountdownTimer';
 
 const PRODUCT_LINKS = [
   { href: '/#product', label: 'Alle producten' },
@@ -38,6 +39,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 glass">
       <div className="bg-ink text-white text-center text-xs sm:text-sm font-semibold py-2 px-6">
         Nu tijdelijk <span className="text-amber font-bold">€250 korting</span> bij aanvraag van een offerte
+        <CountdownTimer />
       </div>
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5 font-display font-extrabold text-lg tracking-tight">
