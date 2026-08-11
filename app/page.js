@@ -168,7 +168,7 @@ export default async function HomePage() {
 
             <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 lg:items-stretch">
               {/* Kaart 1: 3-weg kraan */}
-              <Link href="/aanmelden" className="group reveal cursor-pointer relative rounded-[2rem] card p-8 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all">
+              <Link href="/3-weg-kraan" className="group reveal cursor-pointer relative rounded-[2rem] card p-8 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all">
                 <span className="self-start inline-block rounded-full bg-amber/12 text-amber-dark text-[11px] font-bold uppercase tracking-wide px-3 py-1">Accessoire</span>
                 <div className="relative mt-6 rounded-2xl bg-bg aspect-[4/3] flex items-center justify-center p-6 overflow-hidden">
                   <div className="glow w-40 h-40 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
