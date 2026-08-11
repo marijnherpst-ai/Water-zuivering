@@ -1,6 +1,7 @@
 import Script from 'next/script';
 import { Inter, Outfit } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
+import WhatsAppButton from '@/components/WhatsAppButton';
 import './globals.css';
 
 const META_PIXEL_ID = '901866625752558';
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
     <html lang="nl" className={`${inter.variable} ${outfit.variable}`}>
       <body className="bg-bg text-ink font-sans antialiased">
         {children}
+        <WhatsAppButton />
         <Analytics />
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
