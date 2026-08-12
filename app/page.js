@@ -603,7 +603,8 @@ export default async function HomePage() {
           <div>
             <p className="font-display font-bold text-sm">Juridisch</p>
             <ul className="mt-3 space-y-2 text-sm text-dim">
-              <li><a href="#" className="hover:text-ink transition-colors">Privacybeleid</a></li>
+              <li><Link href="/privacybeleid" className="hover:text-ink transition-colors">Privacybeleid</Link></li>
+              <li><Link href="/cookiebeleid" className="hover:text-ink transition-colors">Cookiebeleid</Link></li>
               <li><Link href="/algemene-voorwaarden" className="hover:text-ink transition-colors">Algemene voorwaarden</Link></li>
             </ul>
           </div>

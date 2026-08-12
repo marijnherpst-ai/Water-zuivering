@@ -1,13 +1,8 @@
-import Script from 'next/script';
 import { Inter, Outfit } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import CookieConsent from '@/components/CookieConsent';
 import './globals.css';
-
-const META_PIXEL_ID = '901866625752558';
-const CLARITY_PROJECT_ID = 'xxlly23zof';
-const GA_MEASUREMENT_ID = 'G-K7V64C0DH8';
-const GOOGLE_ADS_ID = 'AW-18325767412';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -38,49 +33,7 @@ export default function RootLayout({ children }) {
         {children}
         <WhatsAppButton />
         <Analytics />
-        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}');
-            gtag('config', '${GOOGLE_ADS_ID}');
-          `}
-        </Script>
-        <Script id="ms-clarity" strategy="afterInteractive">
-          {`
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "${CLARITY_PROJECT_ID}");
-          `}
-        </Script>
-        <Script id="meta-pixel" strategy="afterInteractive">
-          {`
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '${META_PIXEL_ID}');
-            fbq('track', 'PageView');
-          `}
-        </Script>
-        <noscript>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            height="1"
-            width="1"
-            style={{ display: 'none' }}
-            src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
-            alt=""
-          />
-        </noscript>
+        <CookieConsent />
       </body>
     </html>
   );

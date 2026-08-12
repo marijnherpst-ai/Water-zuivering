@@ -24,6 +24,8 @@ export default function sitemap() {
     { path: '/kennisbank/3-weg-kraan-uitleg', priority: 0.5, changeFrequency: 'monthly' },
     { path: '/kennisbank/waterzuiveraar-installeren', priority: 0.5, changeFrequency: 'monthly' },
     { path: '/algemene-voorwaarden', priority: 0.3, changeFrequency: 'yearly' },
+    { path: '/privacybeleid', priority: 0.3, changeFrequency: 'yearly' },
+    { path: '/cookiebeleid', priority: 0.3, changeFrequency: 'yearly' },
   ];
 
   return routes.map((route) => ({
