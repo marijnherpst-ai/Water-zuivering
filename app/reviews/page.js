@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import ReviewForm from '@/components/ReviewForm';
 import { createClient } from '@/lib/supabase/server';
 
@@ -83,9 +84,7 @@ export default async function ReviewsPage() {
         </section>
       </main>
 
-      <footer className="bg-surface border-t border-edge">
-        <div className="max-w-7xl mx-auto px-6 py-6 text-xs text-dim text-center">&copy; 2026 Jd services B.V. (Water-zuivering). Alle rechten voorbehouden.</div>
-      </footer>
+      <Footer />
     </>
   );
 }

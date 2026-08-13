@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 
 export const metadata = {
@@ -83,9 +84,7 @@ export default function Page() {
         </section>
       </main>
 
-      <footer className="bg-surface border-t border-edge">
-        <div className="max-w-7xl mx-auto px-6 py-6 text-xs text-dim text-center">&copy; 2026 Jd services B.V. (Water-zuivering). Alle rechten voorbehouden.</div>
-      </footer>
+      <Footer />
     </>
   );
 }

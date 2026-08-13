@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'Privacyverklaring — Water-zuivering',
@@ -102,9 +103,7 @@ export default function PrivacybeleidPage() {
         </section>
       </main>
 
-      <footer className="bg-surface border-t border-edge">
-        <div className="max-w-7xl mx-auto px-6 py-6 text-xs text-dim text-center">&copy; 2026 Jd services B.V. (Water-zuivering). Alle rechten voorbehouden.</div>
-      </footer>
+      <Footer />
     </>
   );
 }
