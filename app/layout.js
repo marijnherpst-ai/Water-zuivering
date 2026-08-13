@@ -38,6 +38,7 @@ export default function RootLayout({ children }) {
           src="https://consent.cookiebot.com/uc.js"
           data-cbid={COOKIEBOT_ID}
           data-blockingmode="auto"
+          data-culture="nl"
           strategy="beforeInteractive"
         />
         {children}
