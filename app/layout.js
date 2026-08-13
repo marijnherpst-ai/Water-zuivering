@@ -1,8 +1,11 @@
+import Script from 'next/script';
 import { Inter, Outfit } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import WhatsAppButton from '@/components/WhatsAppButton';
-import CookieConsent from '@/components/CookieConsent';
+import TrackingScripts from '@/components/TrackingScripts';
 import './globals.css';
+
+const COOKIEBOT_ID = '2400c0e3-dc57-47af-ad98-2bf32c9804f7';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -30,10 +33,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="nl" className={`${inter.variable} ${outfit.variable}`}>
       <body className="bg-bg text-ink font-sans antialiased">
+        <Script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid={COOKIEBOT_ID}
+          data-blockingmode="auto"
+          strategy="beforeInteractive"
+        />
         {children}
         <WhatsAppButton />
         <Analytics />
-        <CookieConsent />
+        <TrackingScripts />
       </body>
     </html>
   );
