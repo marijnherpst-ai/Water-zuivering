@@ -22,11 +22,8 @@ const DROPDOWNS = [
 ];
 
 const NAV_LINKS = [
-  { href: '/kennisbank', label: 'Kennisbank' },
   { href: '/besparing', label: 'Besparing' },
-  { href: '/garantie', label: 'Garantie' },
   { href: '/reviews', label: 'Reviews' },
-  { href: '/#faq', label: 'FAQ' },
   { href: '/contact', label: 'Contact' },
 ];
 
