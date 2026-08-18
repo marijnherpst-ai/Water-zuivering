@@ -4,13 +4,24 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import CountdownTimer from './CountdownTimer';
 
-const PRODUCT_LINKS = [
-  { href: '/#product', label: 'Alle producten' },
-  { href: '/3-weg-kraan', label: '3-weg kraan' },
+const DROPDOWNS = [
+  {
+    label: 'Producten',
+    links: [
+      { href: '/#product', label: 'Alle producten' },
+      { href: '/3-weg-kraan', label: '3-weg kraan' },
+    ],
+  },
+  {
+    label: 'Specificaties',
+    links: [
+      { href: '/uitleg', label: 'Specificaties' },
+      { href: '/handleiding', label: 'Handleiding' },
+    ],
+  },
 ];
 
 const NAV_LINKS = [
-  { href: '/uitleg', label: 'Specificaties' },
   { href: '/kennisbank', label: 'Kennisbank' },
   { href: '/besparing', label: 'Besparing' },
   { href: '/garantie', label: 'Garantie' },
@@ -21,19 +32,19 @@ const NAV_LINKS = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const [productsOpen, setProductsOpen] = useState(false);
-  const productsRef = useRef(null);
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const navRef = useRef(null);
 
   useEffect(() => {
-    if (!productsOpen) return;
+    if (openDropdown === null) return;
     function onClickOutside(e) {
-      if (productsRef.current && !productsRef.current.contains(e.target)) {
-        setProductsOpen(false);
+      if (navRef.current && !navRef.current.contains(e.target)) {
+        setOpenDropdown(null);
       }
     }
     document.addEventListener('mousedown', onClickOutside);
     return () => document.removeEventListener('mousedown', onClickOutside);
-  }, [productsOpen]);
+  }, [openDropdown]);
 
   return (
     <header className="sticky top-0 z-50 glass">
@@ -48,32 +59,34 @@ export default function Header() {
           </span>
           Water-zuivering
         </Link>
-        <div className="hidden lg:flex items-center gap-7 text-sm font-semibold text-dim">
-          <div className="relative" ref={productsRef}>
-            <button
-              type="button"
-              onClick={() => setProductsOpen((v) => !v)}
-              aria-expanded={productsOpen}
-              className="cursor-pointer flex items-center gap-1.5 hover:text-ink transition-colors"
-            >
-              Producten
-              <svg className={`transition-transform ${productsOpen ? 'rotate-180' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-            </button>
-            {productsOpen && (
-              <div className="absolute top-full left-0 mt-3 w-56 rounded-2xl card p-2 shadow-xl">
-                {PRODUCT_LINKS.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setProductsOpen(false)}
-                    className="block rounded-xl px-3.5 py-2.5 text-sm font-semibold text-ink hover:bg-bg transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
+        <div className="hidden lg:flex items-center gap-7 text-sm font-semibold text-dim" ref={navRef}>
+          {DROPDOWNS.map((dropdown) => (
+            <div className="relative" key={dropdown.label}>
+              <button
+                type="button"
+                onClick={() => setOpenDropdown((v) => (v === dropdown.label ? null : dropdown.label))}
+                aria-expanded={openDropdown === dropdown.label}
+                className="cursor-pointer flex items-center gap-1.5 hover:text-ink transition-colors"
+              >
+                {dropdown.label}
+                <svg className={`transition-transform ${openDropdown === dropdown.label ? 'rotate-180' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </button>
+              {openDropdown === dropdown.label && (
+                <div className="absolute top-full left-0 mt-3 w-56 rounded-2xl card p-2 shadow-xl">
+                  {dropdown.links.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setOpenDropdown(null)}
+                      className="block rounded-xl px-3.5 py-2.5 text-sm font-semibold text-ink hover:bg-bg transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
           {NAV_LINKS.map((link) => (
             <Link key={link.href} href={link.href} className="hover:text-ink transition-colors">{link.label}</Link>
           ))}
@@ -101,18 +114,22 @@ export default function Header() {
       {open && (
         <div className="lg:hidden border-t border-edge bg-surface px-6 py-4">
           <div className="flex flex-col gap-1">
-            <p className="px-3 pt-2 pb-1 text-xs font-bold uppercase tracking-wide text-dim">Producten</p>
-            {PRODUCT_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-2.5 pl-6 text-sm font-semibold text-ink hover:bg-bg transition-colors"
-              >
-                {link.label}
-              </Link>
+            {DROPDOWNS.map((dropdown) => (
+              <div key={dropdown.label}>
+                <p className="px-3 pt-2 pb-1 text-xs font-bold uppercase tracking-wide text-dim">{dropdown.label}</p>
+                {dropdown.links.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className="rounded-lg px-3 py-2.5 pl-6 text-sm font-semibold text-ink hover:bg-bg transition-colors block"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+                <div className="my-1 border-t border-edge" />
+              </div>
             ))}
-            <div className="my-1 border-t border-edge" />
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}

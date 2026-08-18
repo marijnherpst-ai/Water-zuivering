@@ -87,7 +87,7 @@ export default function UitlegPage() {
             <div className="order-1 lg:order-2">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Ontwerp</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Klein maar krachtig</h2>
-              <p className="mt-4 text-dim">Het systeem is maar 10,5 cm breed (420 x 105 x 430 mm) — smaller dan de meeste keukenladen. Past dus zo goed als altijd onder je aanrecht.</p>
+              <p className="mt-4 text-dim">Het systeem is maar 10,5 cm breed (105 x 420 x 430 mm, b × d × h) — smaller dan de meeste keukenladen. Past dus zo goed als altijd onder je aanrecht.</p>
               <p className="mt-4 text-dim">Er hoeft ook geen los waterreservoir bij. Het systeem maakt zuiver water op het moment dat jij de kraan opendraait.</p>
             </div>
           </div>
@@ -157,11 +157,11 @@ export default function UitlegPage() {
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-6 gap-y-8 lg:divide-x lg:divide-edge">
               <div className="text-center lg:px-2">
-                <p className="font-display text-2xl font-extrabold text-amber-dark">± 3.000L</p>
-                <p className="mt-1 text-xs text-dim">per dag</p>
+                <p className="font-display text-2xl font-extrabold text-amber-dark">4.000L</p>
+                <p className="mt-1 text-xs text-dim">totale capaciteit</p>
               </div>
               <div className="text-center lg:px-2">
-                <p className="font-display text-2xl font-extrabold text-amber-dark">2L/min</p>
+                <p className="font-display text-2xl font-extrabold text-amber-dark">1,58L/min</p>
                 <p className="mt-1 text-xs text-dim">uit de kraan</p>
               </div>
               <div className="text-center lg:px-2">
@@ -169,7 +169,7 @@ export default function UitlegPage() {
                 <p className="mt-1 text-xs text-dim">fluisterstil</p>
               </div>
               <div className="text-center lg:px-2">
-                <p className="font-display text-2xl font-extrabold text-amber-dark">&lt;60 W</p>
+                <p className="font-display text-2xl font-extrabold text-amber-dark">96 W</p>
                 <p className="mt-1 text-xs text-dim">stroomverbruik</p>
               </div>
               <div className="text-center lg:px-2">
