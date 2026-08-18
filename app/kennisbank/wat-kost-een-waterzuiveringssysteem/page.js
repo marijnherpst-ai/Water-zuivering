@@ -47,7 +47,7 @@ export default function Page() {
               <div className="rounded-2xl card p-6">
                 <span className="font-display text-3xl font-extrabold text-amber/40">3</span>
                 <p className="mt-3 font-display font-bold">Onderhoud</p>
-                <p className="mt-2 text-sm text-dim">Om de circa 36 maanden een nieuw filter — de enige terugkerende kostenpost, en die is beperkt.</p>
+                <p className="mt-2 text-sm text-dim">Om de 12 tot 24 maanden een nieuw filter (afhankelijk van het type) — de enige terugkerende kostenpost, en die is beperkt.</p>
               </div>
             </div>
           </div>

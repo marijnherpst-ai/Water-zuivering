@@ -198,7 +198,7 @@ export default async function HomePage() {
                   <img src="/assets/img/cabinet-install.png" alt="Water-zuivering Osmosewatersysteem, past smal in een standaard keukenkastje" className="absolute inset-0 w-full h-full object-cover" />
                 </div>
                 <h3 className="mt-6 font-display text-xl font-extrabold tracking-tight">Osmosewatersysteem</h3>
-                <p className="mt-2 text-sm text-white/60">3-traps filtersysteem — PPC, RO en GAC. De basis van elk Water-zuivering huishouden.</p>
+                <p className="mt-2 text-sm text-white/60">3-traps filtersysteem — PPC, RO en CTO. De basis van elk Water-zuivering huishouden.</p>
                 <ul className="mt-5 space-y-2.5 text-sm">
                   <li className="flex items-center gap-2.5 text-white/70"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#EDA71B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Zuivert tot 99% van onzuiverheden</li>
                   <li className="flex items-center gap-2.5 text-white/70"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#EDA71B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Compact geplaatst onder het aanrecht</li>

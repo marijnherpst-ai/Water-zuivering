@@ -34,7 +34,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Het vuistregel-antwoord</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Bij de meeste moderne systemen — waaronder dat van Water-zuivering — gaat een filter gemiddeld <strong className="text-ink">36 maanden</strong> mee, of tot <strong className="text-ink">6.000 liter</strong> verwerkt water, wat het eerst komt. Dat verschilt per situatie: een groot huishouden dat veel water verbruikt, vervangt het filter dus eerder dan de gemiddelde termijn.
+              Dat hangt af van welk filter je bedoelt — een Water-zuivering systeem heeft er drie, elk met een eigen levensduur: het <strong className="text-ink">PPC-filter</strong> (voorfilter) en het <strong className="text-ink">CTO-filter</strong> (nafilter) gaan gemiddeld <strong className="text-ink">12 maanden</strong> mee, het <strong className="text-ink">RO-filter</strong> (het hart van het systeem) gemiddeld <strong className="text-ink">24 maanden</strong>. Dat verschilt per situatie: een groot huishouden dat veel water verbruikt, vervangt filters dus eerder dan de gemiddelde termijn.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Bij goede systemen hoef je dit niet zelf bij te houden: een display op het apparaat laat precies zien wanneer het tijd is.

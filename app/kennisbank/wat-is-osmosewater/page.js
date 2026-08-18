@@ -88,7 +88,7 @@ export default function WatIsOsmosewaterPage() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat kost osmosewater?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Jerrycans of flessenwater kopen loopt in de kosten al snel op — al helemaal voor een heel huishouden, jaar na jaar. Een eigen systeem onder je kraan kost eenmalig de installatie, en daarna alleen af en toe een nieuw filter (gemiddeld elke 36 maanden).
+              Jerrycans of flessenwater kopen loopt in de kosten al snel op — al helemaal voor een heel huishouden, jaar na jaar. Een eigen systeem onder je kraan kost eenmalig de installatie, en daarna alleen af en toe een nieuw filter (gemiddeld elke 12 tot 24 maanden, afhankelijk van het filter).
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Benieuwd wat jij concreet zou besparen, vergeleken met wat je nu aan flessenwater uitgeeft? Reken het in een minuut uit:
