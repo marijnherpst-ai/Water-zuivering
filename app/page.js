@@ -191,7 +191,7 @@ export default async function HomePage() {
               </Link>
 
               {/* Kaart 2: Osmosewatersysteem (uitgelicht) */}
-              <Link href="/aanmelden" className="group reveal cursor-pointer relative rounded-[2rem] bg-ink text-white p-8 flex flex-col lg:-translate-y-5 shadow-2xl shadow-ink/25 lg:scale-[1.03] z-10 hover:shadow-amber/20 transition-shadow">
+              <Link href="/osmosesysteem" className="group reveal cursor-pointer relative rounded-[2rem] bg-ink text-white p-8 flex flex-col lg:-translate-y-5 shadow-2xl shadow-ink/25 lg:scale-[1.03] z-10 hover:shadow-amber/20 transition-shadow">
                 <span className="absolute -top-3 left-8 rounded-full bg-amber text-ink text-[11px] font-bold uppercase tracking-wide px-3 py-1 shadow-lg shadow-amber/30">Meest gekozen</span>
                 <span className="self-start inline-block rounded-full bg-white/10 text-amber text-[11px] font-bold uppercase tracking-wide px-3 py-1">Hoofdsysteem</span>
                 <div className="relative mt-6 rounded-2xl aspect-[4/3] overflow-hidden">
@@ -206,7 +206,7 @@ export default async function HomePage() {
                 </ul>
                 <div className="mt-auto pt-6">
                   <span className="flex items-center justify-center gap-2 rounded-full bg-amber px-6 py-3 text-sm font-bold text-ink group-hover:bg-white transition-colors">
-                    Vraag offerte aan
+                    Meer informatie
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   </span>
                 </div>

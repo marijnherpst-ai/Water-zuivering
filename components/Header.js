@@ -9,6 +9,7 @@ const DROPDOWNS = [
     label: 'Producten',
     links: [
       { href: '/#product', label: 'Alle producten' },
+      { href: '/osmosesysteem', label: 'Osmosewatersysteem' },
       { href: '/3-weg-kraan', label: '3-weg kraan' },
     ],
   },
