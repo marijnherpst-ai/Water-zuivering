@@ -18,6 +18,7 @@ export default function Footer() {
           <ul className="mt-3 space-y-2 text-sm text-dim">
             <li><Link href="/#product" className="hover:text-ink transition-colors">Producten</Link></li>
             <li><Link href="/kennisbank" className="hover:text-ink transition-colors">Kennisbank</Link></li>
+            <li><Link href="/handleiding" className="hover:text-ink transition-colors">Handleiding</Link></li>
             <li><Link href="/#faq" className="hover:text-ink transition-colors">FAQ</Link></li>
           </ul>
         </div>

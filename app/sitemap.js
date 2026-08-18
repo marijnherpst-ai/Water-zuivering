@@ -8,6 +8,7 @@ export default function sitemap() {
     { path: '/besparing', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/uitleg', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/garantie', priority: 0.6, changeFrequency: 'monthly' },
+    { path: '/handleiding', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/reviews', priority: 0.6, changeFrequency: 'weekly' },
     { path: '/contact', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/3-weg-kraan', priority: 0.6, changeFrequency: 'monthly' },

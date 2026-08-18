@@ -71,7 +71,7 @@ export default function GarantiePage() {
                 </div>
               </div>
             </div>
-            <p className="mt-8 text-center text-xs text-dim/70">Verbruiksartikelen zoals filters vallen niet onder de garantie — die vervang je periodiek zelf, zie <Link href="/uitleg" className="underline hover:text-ink">de uitleg</Link> hierover.</p>
+            <p className="mt-8 text-center text-xs text-dim/70">Verbruiksartikelen zoals filters vallen niet onder de garantie — die vervang je periodiek zelf, zie de <Link href="/handleiding" className="underline hover:text-ink">handleiding</Link> hierover.</p>
           </div>
         </section>
 
