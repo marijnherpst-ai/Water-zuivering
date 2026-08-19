@@ -115,8 +115,9 @@ export async function submitGiveawayEntry(formData) {
   const email = formData.get('email')?.toString().trim();
   const postcode = formData.get('postcode')?.toString().trim();
   const huisnummer = formData.get('huisnummer')?.toString().trim();
+  const telefoon = formData.get('telefoon')?.toString().trim();
 
-  if (!voornaam || !achternaam || !email || !postcode || !huisnummer) {
+  if (!voornaam || !achternaam || !email || !postcode || !huisnummer || !telefoon) {
     return { success: false, error: 'Vul alle velden in.' };
   }
 
@@ -127,6 +128,7 @@ export async function submitGiveawayEntry(formData) {
     email,
     postcode,
     huisnummer,
+    telefoon,
   });
 
   if (error) {

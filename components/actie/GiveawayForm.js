@@ -110,6 +110,18 @@ export default function GiveawayForm({ closed = false }) {
             />
           </div>
         </div>
+        <div>
+          <label htmlFor="telefoon" className="block text-xs font-semibold text-dim mb-1.5">Telefoonnummer</label>
+          <input
+            id="telefoon"
+            name="telefoon"
+            type="tel"
+            autoComplete="tel"
+            required
+            className="w-full rounded-lg border border-edge bg-bg px-4 py-3 text-sm text-ink placeholder:text-dim/60 focus:outline-none focus:ring-2 focus:ring-amber transition-colors"
+            placeholder="06 12345678"
+          />
+        </div>
       </div>
 
       <button
