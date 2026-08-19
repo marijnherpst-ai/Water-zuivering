@@ -108,3 +108,30 @@ export async function submitBesparingLead(data) {
 
   return { success: true };
 }
+
+export async function submitGiveawayEntry(formData) {
+  const voornaam = formData.get('voornaam')?.toString().trim();
+  const achternaam = formData.get('achternaam')?.toString().trim();
+  const email = formData.get('email')?.toString().trim();
+  const postcode = formData.get('postcode')?.toString().trim();
+  const huisnummer = formData.get('huisnummer')?.toString().trim();
+
+  if (!voornaam || !achternaam || !email || !postcode || !huisnummer) {
+    return { success: false, error: 'Vul alle velden in.' };
+  }
+
+  const supabase = await createClient();
+  const { error } = await supabase.from('giveaway_entries').insert({
+    voornaam,
+    achternaam,
+    email,
+    postcode,
+    huisnummer,
+  });
+
+  if (error) {
+    return { success: false, error: 'Er ging iets mis bij het versturen. Probeer het opnieuw.' };
+  }
+
+  return { success: true };
+}
