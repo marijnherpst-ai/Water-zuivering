@@ -54,19 +54,27 @@ export default async function HomePage() {
       <main id="top">
         {/* HERO */}
         <section id="hero" className="relative overflow-hidden min-h-[92vh] flex items-center">
-          <div className="glow drift w-[560px] h-[560px] bg-amber/20 -top-40 -left-40" />
-          <div className="glow drift2 w-[460px] h-[460px] bg-amber/10 bottom-0 -right-32" />
+          <Image
+            src="/assets/img/hero-vrouw-water.webp"
+            alt="Vrouw geniet van een glas vers, gefilterd water rechtstreeks uit de kraan"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-[62%_center]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/55 to-ink/10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
 
-          <div className="relative max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <span className="inline-flex items-center gap-2 rounded-full card px-3.5 py-1.5 text-xs font-semibold text-amber-dark">
+          <div className="relative max-w-7xl mx-auto px-6 py-20 w-full">
+            <div className="max-w-xl">
+              <span className="inline-flex items-center gap-2 rounded-full glass px-3.5 py-1.5 text-xs font-semibold text-amber">
                 <span className="w-1.5 h-1.5 rounded-full bg-amber pulse" />
                 Premium waterfiltratie voor thuis
               </span>
-              <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] tracking-tight">
-                Zuiver drinkwater.<br />Rechtstreeks uit<br />uw eigen kraan<span className="text-amber-dark">.</span>
+              <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] tracking-tight text-white">
+                Zuiver drinkwater.<br />Rechtstreeks uit<br />uw eigen kraan<span className="text-amber">.</span>
               </h1>
-              <p className="mt-6 text-lg text-dim max-w-lg">
+              <p className="mt-6 text-lg text-white/80 max-w-lg">
                 Geniet iedere dag van heerlijk gefilterd water zonder flessen, plastic afval of onnodige kosten. Compact geïnstalleerd in uw keukenkastje.
               </p>
               <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -74,35 +82,14 @@ export default async function HomePage() {
                   Vraag vrijblijvend een offerte aan
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </Link>
-                <a href="#hoe-het-werkt" className="cursor-pointer inline-flex items-center gap-2 rounded-full card px-7 py-4 text-sm font-bold text-ink hover:border-ink/20 transition-colors">
+                <a href="#hoe-het-werkt" className="cursor-pointer inline-flex items-center gap-2 rounded-full glass px-7 py-4 text-sm font-bold text-white hover:bg-white/20 transition-colors">
                   Bekijk hoe het werkt
                 </a>
               </div>
-              <div className="mt-10 flex flex-wrap gap-x-8 gap-y-2 text-sm text-dim">
-                <span className="inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Vakkundige installatie</span>
-                <span className="inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Nederlandse service</span>
-                <span className="inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>10 jaar garantie</span>
-              </div>
-            </div>
-
-            <div className="relative reveal">
-              <div className="absolute -inset-6 rounded-[3rem] bg-gradient-to-br from-amber/25 via-amber/5 to-transparent -rotate-3" />
-              <div className="relative rounded-[2.5rem] overflow-hidden border border-edge shadow-2xl aspect-[4/5]">
-                <Image src="/assets/img/countertop.png" alt="Water-zuivering premium waterzuiveraar op een keukenblad" fill priority className="object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/20 via-transparent to-transparent" />
-              </div>
-              <div className="hidden sm:flex items-center gap-2 absolute -top-5 right-6 rounded-full glass shadow-lg px-4 py-2.5">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="#EDA71B" aria-hidden="true"><path d="M12 2l2.9 6.2 6.8.8-5 4.6 1.4 6.7L12 16.9 5.9 20.3l1.4-6.7-5-4.6 6.8-.8L12 2z" /></svg>
-                <span className="text-xs font-bold">Premium kwaliteit</span>
-              </div>
-              <div className="hidden sm:flex items-center gap-3 absolute -bottom-6 -left-6 rounded-2xl card shadow-xl px-5 py-4">
-                <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-amber/15 text-amber-dark">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                </span>
-                <div>
-                  <p className="text-lg font-display font-extrabold leading-none">3-traps</p>
-                  <p className="text-xs text-dim mt-1 max-w-[9rem]">Compact filtersysteem onder het aanrecht</p>
-                </div>
+              <div className="mt-10 flex flex-wrap gap-x-8 gap-y-2 text-sm text-white/80">
+                <span className="inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="#EDA71B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Vakkundige installatie</span>
+                <span className="inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="#EDA71B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Nederlandse service</span>
+                <span className="inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="#EDA71B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>10 jaar garantie</span>
               </div>
             </div>
           </div>
