@@ -26,7 +26,7 @@ export default function Page() {
               Past het in jouw kastje?
             </h1>
             <p className="mt-4 text-dim text-lg">
-              Zet het apparaat op ware grootte in je eigen keuken — live met je camera, of met een foto.
+              Zet het apparaat op ware grootte naast je kastje — met een foto, of live met je camera.
             </p>
           </div>
         </section>

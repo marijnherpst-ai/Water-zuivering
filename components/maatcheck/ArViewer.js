@@ -74,8 +74,14 @@ export default function ArViewer() {
       <div className="p-5 sm:p-6 border-t border-edge">
         <div className="flex flex-col items-center text-center gap-2">
           <p className="font-display font-bold">Op ware grootte: 10,5 × 42 × 43 cm</p>
-          <p className="text-sm text-dim max-w-sm">Tik op "Open camera" → richt je telefoon op de vloer van je kastje → tik nogmaals om het apparaat neer te zetten.</p>
+          <p className="text-sm text-dim max-w-sm">Tik op "Open camera" → richt je telefoon op de vloer of het aanrecht → tik om het apparaat neer te zetten.</p>
         </div>
+
+        <div className="mt-4 rounded-2xl bg-bg px-4 py-3.5 flex items-start gap-2.5 text-left max-w-sm mx-auto">
+          <svg className="shrink-0 mt-0.5 text-amber-dark" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 8v5M12 16h.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /><circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.7" /></svg>
+          <p className="text-xs text-dim">Je camera heeft licht en herkenbare vlakken nodig om te weten waar hij is. Doe daarom eerst het kastdeurtje open en het licht aan — richten in een donker, leeg kastje werkt niet betrouwbaar.</p>
+        </div>
+
         <div className="mt-5 flex justify-center">
           <div className="inline-flex items-center rounded-full bg-bg p-1 border border-edge shrink-0">
             {Object.entries(ORIENTATIONS).map(([key, o]) => (
