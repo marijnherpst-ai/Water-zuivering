@@ -289,12 +289,12 @@ export default async function Page() {
                 <p className="text-xs font-bold uppercase tracking-widest text-dim">Zonder Water-zuivering</p>
                 <ul className="mt-7 space-y-5">
                   {[
-                    'Kalkaanslag en een minder frisse smaak',
-                    'Gesjouw met flessen water of een log kastje',
-                    'Zelf klussen, met risico op lekkages',
-                    'Ingewikkeld onderhoud en dure servicebeurten',
-                    'Brommende, luidruchtige apparaten',
-                    'Onzekerheid over garantie en service',
+                    'Kalkaanslag en een minder frisse smaak uit de kraan',
+                    'Sporen van PFAS, medicijnresten en microplastics in je kraanwater',
+                    'Eindeloos sjouwen met flessen water of literpakken',
+                    'Bergen plastic afval van lege flessen',
+                    'Zelf uitzoeken en installeren van een geschikt systeem',
+                    'Geen idee hoe zuiver het water is dat je drinkt',
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3.5">
                       <span className="shrink-0 mt-0.5 flex items-center justify-center w-6 h-6 rounded-full bg-edge/70 text-dim">
