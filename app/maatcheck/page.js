@@ -35,6 +35,11 @@ export default function Page() {
         <section className="relative bg-surface border-y border-edge overflow-hidden">
           <div className="max-w-3xl mx-auto px-6 py-10 md:py-16">
             <MaatcheckPicker />
+
+            <div className="mt-8 rounded-2xl bg-bg px-5 py-4 flex items-start gap-3 max-w-xl mx-auto">
+              <svg className="shrink-0 mt-0.5 text-amber-dark" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 8v5M12 16h.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /><circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.7" /></svg>
+              <p className="text-xs text-dim">Deze 3D-weergave is AI-gegenereerd en blijft dat ook — leuk voor een snelle indicatie, maar de werkelijke maten kunnen net iets afwijken. Twijfel je of het echt past? Onze monteur meet het bij de offerteaanvraag altijd nauwkeurig na.</p>
+            </div>
           </div>
         </section>
 
