@@ -3,6 +3,13 @@
 import { useState, useTransition } from 'react';
 import { submitBesparingLead } from '@/app/actions';
 
+// Jaarlijkse onderhoudskosten van het Water-zuivering systeem: PPC- en
+// CTO-filter (elk €49,99, ieder jaar) + RO-filter (€69,99, elke 2 jaar).
+const FILTER_KOSTEN_PPC = 49.99;
+const FILTER_KOSTEN_CTO = 49.99;
+const FILTER_KOSTEN_RO = 69.99;
+const FILTER_KOSTEN_PER_JAAR = FILTER_KOSTEN_PPC + FILTER_KOSTEN_CTO + FILTER_KOSTEN_RO / 2;
+
 const WATER_BRANDS = [
   { name: 'Spa Blauw', pricePerLiter: 0.79 },
   { name: 'Spa Reine', pricePerLiter: 0.72 },
@@ -29,7 +36,8 @@ export default function Calculator() {
 
   const activeBrand = brand || WATER_BRANDS[0];
   const litersPerJaar = personen * glazen * 0.25 * 365;
-  const besparing = Math.round(litersPerJaar * (activeBrand.pricePerLiter - 0.05));
+  const flessenwaterKosten = litersPerJaar * activeBrand.pricePerLiter;
+  const besparing = Math.max(0, Math.round(flessenwaterKosten - FILTER_KOSTEN_PER_JAAR));
 
   function selectBrand(b) {
     setBrand(b);
@@ -145,7 +153,23 @@ export default function Calculator() {
         <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Jouw resultaat</span>
         <p className="mt-3 text-dim">Op basis van {personen} {personen === 1 ? 'persoon' : 'personen'}, {glazen} glazen per dag en {activeBrand.name}:</p>
         <p className="mt-4 font-display text-6xl sm:text-7xl font-extrabold text-emerald-500">€ {besparing.toLocaleString('nl-NL')}</p>
-        <p className="mt-2 text-dim">geschatte besparing per jaar</p>
+        <p className="mt-2 text-dim">geschatte besparing per jaar, na aftrek van filteronderhoud</p>
+
+        <div className="mt-8 max-w-xs mx-auto rounded-2xl bg-bg p-5 text-left text-sm space-y-2">
+          <div className="flex items-center justify-between">
+            <span className="text-dim">Kosten flessenwater</span>
+            <span className="font-semibold text-ink">€ {Math.round(flessenwaterKosten).toLocaleString('nl-NL')}</span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-dim">Onderhoud filters</span>
+            <span className="font-semibold text-ink">− € {Math.round(FILTER_KOSTEN_PER_JAAR).toLocaleString('nl-NL')}</span>
+          </div>
+          <div className="pt-2 border-t border-edge flex items-center justify-between">
+            <span className="font-bold text-ink">Jouw besparing</span>
+            <span className="font-bold text-emerald-600">€ {besparing.toLocaleString('nl-NL')}</span>
+          </div>
+        </div>
+
         <button type="button" onClick={() => setStep(5)} className="cursor-pointer mt-8 inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors">
           Begin met besparen
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
