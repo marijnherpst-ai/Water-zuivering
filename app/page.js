@@ -67,7 +67,7 @@ export default async function HomePage() {
 
           <div className="relative max-w-7xl mx-auto px-6 py-20 w-full">
             <div className="max-w-xl">
-              <span className="inline-flex items-center gap-2 rounded-full glass px-3.5 py-1.5 text-xs font-semibold text-amber">
+              <span className="inline-flex items-center gap-2 rounded-full glass px-3.5 py-1.5 text-xs font-semibold text-ink">
                 <span className="w-1.5 h-1.5 rounded-full bg-amber pulse" />
                 Premium waterfiltratie voor thuis
               </span>
