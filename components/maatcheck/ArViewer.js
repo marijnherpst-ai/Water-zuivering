@@ -11,6 +11,9 @@ export default function ArViewer() {
   const [ready, setReady] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [orientation, setOrientation] = useState('staand');
+  const [arStatus, setArStatus] = useState('not-presenting');
+  const [arTracking, setArTracking] = useState('tracking');
+  const [showPlacedHint, setShowPlacedHint] = useState(false);
   const viewerRef = useRef(null);
 
   useEffect(() => {
@@ -38,6 +41,38 @@ export default function ArViewer() {
     }
   }, [orientation, loaded]);
 
+  // Live stap-tekst tijdens een WebXR AR-sessie: model-viewer rendert zijn
+  // eigen lichte-DOM-kinderen als overlay bovenop het camerabeeld (de
+  // 'dom-overlay' functie van WebXR), dus deze tekst is daadwerkelijk
+  // zichtbaar terwijl iemand met de camera aan het scannen/plaatsen is.
+  // (Alleen van toepassing als de browser WebXR AR ondersteunt — anders
+  // valt model-viewer terug op Scene Viewer, dat buiten onze pagina om
+  // draait en dus zijn eigen, niet-aanpasbare hints toont.)
+  useEffect(() => {
+    const el = viewerRef.current;
+    if (!el) return;
+    let hideTimer;
+    const onArStatus = (e) => {
+      const status = e.detail.status;
+      setArStatus(status);
+      clearTimeout(hideTimer);
+      if (status === 'object-placed') {
+        setShowPlacedHint(true);
+        hideTimer = setTimeout(() => setShowPlacedHint(false), 6000);
+      } else {
+        setShowPlacedHint(false);
+      }
+    };
+    const onArTracking = (e) => setArTracking(e.detail.status);
+    el.addEventListener('ar-status', onArStatus);
+    el.addEventListener('ar-tracking', onArTracking);
+    return () => {
+      el.removeEventListener('ar-status', onArStatus);
+      el.removeEventListener('ar-tracking', onArTracking);
+      clearTimeout(hideTimer);
+    };
+  }, [ready]);
+
   return (
     <div className="rounded-[2rem] card overflow-hidden">
       <div className="relative aspect-square sm:aspect-[16/10] bg-bg">
@@ -48,7 +83,7 @@ export default function ArViewer() {
             src="/assets/3d/osmosesysteem.glb"
             alt="3D-model van het Water-zuivering osmosewatersysteem, op ware grootte"
             ar
-            ar-modes="scene-viewer webxr quick-look"
+            ar-modes="webxr scene-viewer quick-look"
             ar-scale="fixed"
             ar-placement="floor"
             camera-controls
@@ -65,6 +100,24 @@ export default function ArViewer() {
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8a2 2 0 012-2h1.5l1-1.5h7l1 1.5H18a2 2 0 012 2v9a2 2 0 01-2 2H6a2 2 0 01-2-2V8z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /><circle cx="12" cy="13" r="3.2" stroke="currentColor" strokeWidth="1.8" /></svg>
               Open camera
             </button>
+
+            {/* Live overlay tijdens een WebXR AR-sessie */}
+            {arStatus === 'session-started' && (
+              <div className="absolute inset-x-0 top-5 flex justify-center px-4 pointer-events-none">
+                <div className="rounded-2xl bg-ink/90 backdrop-blur text-white text-sm font-semibold px-5 py-3 text-center shadow-xl max-w-xs">
+                  {arTracking === 'not-tracking'
+                    ? 'Beweeg rustiger — ik ben de plek even kwijt'
+                    : 'Houd je telefoon stil, tot het apparaat verschijnt…'}
+                </div>
+              </div>
+            )}
+            {showPlacedHint && (
+              <div className="absolute inset-x-0 top-5 flex justify-center px-4 pointer-events-none">
+                <div className="rounded-2xl bg-amber text-ink text-sm font-bold px-5 py-3 text-center shadow-xl max-w-xs">
+                  Sleep het apparaat met je vinger naar de juiste plek
+                </div>
+              </div>
+            )}
           </model-viewer>
         ) : (
           <div className="w-full h-full flex items-center justify-center text-sm text-dim">3D-model laden…</div>
@@ -74,6 +127,7 @@ export default function ArViewer() {
       <div className="p-5 sm:p-6 border-t border-edge">
         <div className="text-center">
           <p className="font-display font-bold">Op ware grootte: 10,5 × 42 × 43 cm</p>
+          <p className="mt-1 text-xs text-dim">Deze uitleg verschijnt ook live in beeld terwijl je scant.</p>
         </div>
 
         <ol className="mt-4 space-y-3 max-w-sm mx-auto">
