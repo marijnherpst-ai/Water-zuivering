@@ -72,14 +72,28 @@ export default function ArViewer() {
       </div>
 
       <div className="p-5 sm:p-6 border-t border-edge">
-        <div className="flex flex-col items-center text-center gap-2">
+        <div className="text-center">
           <p className="font-display font-bold">Op ware grootte: 10,5 × 42 × 43 cm</p>
-          <p className="text-sm text-dim max-w-sm">Tik op "Open camera" → richt je telefoon op de vloer of het aanrecht → tik om het apparaat neer te zetten.</p>
         </div>
+
+        <ol className="mt-4 space-y-3 max-w-sm mx-auto">
+          <li className="flex items-start gap-3">
+            <span className="shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-amber text-ink text-xs font-bold">1</span>
+            <span className="text-sm text-dim pt-0.5">Tik op <strong className="text-ink">"Open camera"</strong> en doe het kastdeurtje open met het licht aan.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-amber text-ink text-xs font-bold">2</span>
+            <span className="text-sm text-dim pt-0.5"><strong className="text-ink">Houd je telefoon stil</strong> gericht op je kastje, tot het apparaat in beeld verschijnt.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-amber text-ink text-xs font-bold">3</span>
+            <span className="text-sm text-dim pt-0.5">Tik om het neer te zetten, en <strong className="text-ink">sleep het daarna met je vinger</strong> naar de precieze plek in je kastje.</span>
+          </li>
+        </ol>
 
         <div className="mt-4 rounded-2xl bg-bg px-4 py-3.5 flex items-start gap-2.5 text-left max-w-sm mx-auto">
           <svg className="shrink-0 mt-0.5 text-amber-dark" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 8v5M12 16h.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /><circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.7" /></svg>
-          <p className="text-xs text-dim">Je camera heeft licht en herkenbare vlakken nodig om te weten waar hij is. Doe daarom eerst het kastdeurtje open en het licht aan — richten in een donker, leeg kastje werkt niet betrouwbaar.</p>
+          <p className="text-xs text-dim">Beweegt je camera te snel, dan verliest hij de plek. Ga dan gewoon rustig terug en houd 'm even stil.</p>
         </div>
 
         <div className="mt-5 flex justify-center">
