@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import FotoFitTool from '@/components/maatcheck/FotoFitTool';
+import ArViewer from '@/components/maatcheck/ArViewer';
 
 export const metadata = {
   title: 'Maatcheck — past het systeem in jouw kastje? — Water-zuivering',
@@ -31,9 +32,26 @@ export default function Page() {
           </div>
         </section>
 
-        {/* TOOL */}
+        {/* AR / 3D */}
         <section className="relative bg-surface border-y border-edge overflow-hidden">
           <div className="max-w-3xl mx-auto px-6 py-14 md:py-20">
+            <div className="text-center mb-8">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Live in 3D & AR</span>
+              <h2 className="mt-2 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Zet 'm live in je eigen keuken</h2>
+              <p className="mt-3 text-dim">Op ware grootte, direct via je camera — op Android houd je je telefoon in je kastje en zie je precies hoeveel ruimte het inneemt.</p>
+            </div>
+            <ArViewer />
+          </div>
+        </section>
+
+        {/* TOOL */}
+        <section className="relative overflow-hidden">
+          <div className="max-w-3xl mx-auto px-6 py-14 md:py-20">
+            <div className="text-center mb-8">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Foto-tool</span>
+              <h2 className="mt-2 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Liever met een foto van je kastje?</h2>
+              <p className="mt-3 text-dim">Werkt op elk toestel, geen AR-ondersteuning nodig.</p>
+            </div>
             <FotoFitTool />
           </div>
         </section>
