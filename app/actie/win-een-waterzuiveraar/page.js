@@ -201,22 +201,8 @@ export default async function GiveawayPage() {
           </div>
         </section>
 
-        {/* MAATCHECK */}
-        <section className="relative bg-surface border-y border-edge overflow-hidden">
-          <div className="max-w-3xl mx-auto px-6 py-20 md:py-28">
-            <div className="max-w-2xl mx-auto text-center mb-10 reveal">
-              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Past het bij jou?</span>
-              <h2 className="mt-3 font-display text-3xl md:text-4xl font-extrabold tracking-tight">Bekijk 'm live in je eigen keuken</h2>
-              <p className="mt-4 text-dim text-lg">Zet het apparaat op ware grootte in je kastje — live met je camera, of met een foto.</p>
-            </div>
-            <div className="reveal">
-              <MaatcheckPicker />
-            </div>
-          </div>
-        </section>
-
         {/* BESPARING */}
-        <section className="relative overflow-hidden">
+        <section className="relative bg-surface border-y border-edge overflow-hidden">
           <div className="max-w-3xl mx-auto px-6 py-20 md:py-28">
             <div className="max-w-2xl mx-auto text-center mb-10 reveal">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Reken het uit</span>
@@ -298,6 +284,20 @@ export default async function GiveawayPage() {
               GRATIS MEEDOEN
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </a>
+          </div>
+        </section>
+
+        {/* MAATCHECK */}
+        <section className="relative bg-surface border-y border-edge overflow-hidden">
+          <div className="max-w-3xl mx-auto px-6 py-20 md:py-28">
+            <div className="max-w-2xl mx-auto text-center mb-10 reveal">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Past het bij jou?</span>
+              <h2 className="mt-3 font-display text-3xl md:text-4xl font-extrabold tracking-tight">Bekijk 'm live in je eigen keuken</h2>
+              <p className="mt-4 text-dim text-lg">Zet het apparaat op ware grootte in je kastje — live met je camera, of met een foto.</p>
+            </div>
+            <div className="reveal">
+              <MaatcheckPicker />
+            </div>
           </div>
         </section>
 
