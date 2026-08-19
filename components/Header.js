@@ -18,6 +18,7 @@ const DROPDOWNS = [
     links: [
       { href: '/uitleg', label: 'Specificaties' },
       { href: '/handleiding', label: 'Handleiding' },
+      { href: '/maatcheck', label: 'Maatcheck' },
     ],
   },
 ];

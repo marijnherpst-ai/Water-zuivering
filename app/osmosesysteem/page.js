@@ -183,6 +183,10 @@ export default async function Page() {
               <p className="mt-4 text-dim">Het systeem is maar 10,5 cm breed (105 x 420 x 430 mm, b × d × h) — smaller dan de meeste keukenladen. Past dus zo goed als altijd onder je aanrecht.</p>
               <p className="mt-4 text-dim">Er hoeft ook geen los waterreservoir bij. Het systeem maakt zuiver water op het moment dat jij de kraan opendraait.</p>
               <p className="mt-4 text-dim">Past het niet rechtop in je kastje? Leg 'm gewoon op zijn kant — het bedieningspaneel draait automatisch mee.</p>
+              <Link href="/maatcheck" className="cursor-pointer mt-6 inline-flex items-center gap-2 text-sm font-bold text-ink hover:text-amber-dark transition-colors underline underline-offset-4">
+                Check het met een foto van je eigen kastje
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </Link>
             </div>
             <MaatVergelijker />
           </div>
