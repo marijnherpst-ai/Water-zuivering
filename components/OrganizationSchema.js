@@ -12,6 +12,7 @@ export default function OrganizationSchema() {
     legalName: 'Jd services B.V.',
     url: 'https://www.water-zuivering.nl',
     email: 'info@water-zuivering.nl',
+    telephone: '+31626944877',
     image: 'https://www.water-zuivering.nl/assets/img/hero-vrouw-water.webp',
     logo: 'https://www.water-zuivering.nl/icon.svg',
     identifier: 'KVK 83174044',

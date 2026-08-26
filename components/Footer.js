@@ -27,6 +27,7 @@ export default function Footer() {
           <p className="font-display font-bold text-sm">Contact</p>
           <ul className="mt-3 space-y-2 text-sm text-dim">
             <li><Link href="/contact" className="hover:text-ink transition-colors">Contactgegevens &amp; locatie</Link></li>
+            <li><a href="tel:+31626944877" className="hover:text-ink transition-colors">06 26 94 48 77</a></li>
             <li><a href="mailto:info@water-zuivering.nl" className="hover:text-ink transition-colors">info@water-zuivering.nl</a></li>
             <li>Veldkersweg 16, 3053 JR Rotterdam</li>
             <li>KVK 83174044</li>

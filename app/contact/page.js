@@ -42,6 +42,14 @@ export default function ContactPage() {
                       <dd className="mt-0.5 font-semibold">83174044</dd>
                     </div>
                     <div>
+                      <dt className="text-xs font-semibold text-dim">Telefoon</dt>
+                      <dd className="mt-0.5">
+                        <a href="tel:+31626944877" className="font-semibold text-amber-dark hover:underline">
+                          06 26 94 48 77
+                        </a>
+                      </dd>
+                    </div>
+                    <div>
                       <dt className="text-xs font-semibold text-dim">E-mail</dt>
                       <dd className="mt-0.5">
                         <a href="mailto:info@water-zuivering.nl" className="font-semibold text-amber-dark hover:underline">
