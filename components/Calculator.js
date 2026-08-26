@@ -64,6 +64,12 @@ export default function Calculator() {
       });
       if (result.success) {
         setStep(6);
+        if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+          window.fbq('track', 'Lead');
+        }
+        if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', { event_category: 'besparing' });
+        }
       } else {
         setError(result.error);
       }
