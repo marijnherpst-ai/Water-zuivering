@@ -4,15 +4,28 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import KleurenGallery from '@/components/KleurenGallery';
+import ProductSchema from '@/components/ProductSchema';
+import FaqSchema from '@/components/FaqSchema';
 import { createClient } from '@/lib/supabase/server';
 
 export const dynamic = 'force-dynamic';
 
 export const metadata = {
+  alternates: { canonical: '/3-weg-kraan' },
   title: '3-weg kraan — in 4 kleuren | Water-zuivering',
   description:
     'De 3-weg kraan van Water-zuivering: gefilterd, gewoon en gemineraliseerd water uit één kraan. In 4 afwerkingen, past bij elk systeem.',
 };
+
+// Same questions/answers as the FAQ accordion further down this page — kept
+// here as plain text so the FAQPage schema matches what's rendered. If the
+// accordion copy changes, update this list too.
+const FAQ_ITEMS = [
+  ['Past de 3-weg kraan op elk aanrecht?', 'In de meeste gevallen wel — de kraan past op een standaard boorgat. Tijdens de offerteaanvraag kijken we naar jouw specifieke situatie.'],
+  ['Kan ik de kraan later nog toevoegen aan mijn systeem?', 'Ja, de 3-weg kraan is compatibel met elk Water-zuivering systeem en kan ook achteraf nog worden toegevoegd.'],
+  ['Wordt de kraan samen met het systeem geïnstalleerd?', 'Ja, onze monteur sluit de kraan in één moeite mee aan tijdens de installatie van je osmosesysteem — geen aparte afspraak nodig.'],
+  ['Kost een andere afwerking extra?', 'Dat bespreken we graag tijdens je offerteaanvraag — vraag het gerust mee, dan geven we direct duidelijkheid.'],
+];
 
 const KLEUREN = [
   { name: 'Chroom', image: '/assets/img/3-weg-kraan.png', bg: 'bg-bg' },
@@ -46,6 +59,13 @@ export default async function Page() {
 
   return (
     <>
+      <ProductSchema
+        name="Water-zuivering 3-weg kraan"
+        description="Eén elegante kraan voor gefilterd, gewoon en gemineraliseerd water. Compatibel met elk Water-zuivering systeem, in 4 afwerkingen, vakkundig meegeïnstalleerd."
+        image="https://www.water-zuivering.nl/assets/img/3-weg-kraan.png"
+        url="https://www.water-zuivering.nl/3-weg-kraan"
+      />
+      <FaqSchema items={FAQ_ITEMS} />
       <RevealObserver />
       <Header />
 
@@ -77,7 +97,7 @@ export default async function Page() {
             <div className="relative">
               <div className="absolute -inset-6 rounded-[3rem] bg-gradient-to-br from-amber/25 via-amber/5 to-transparent -rotate-3" />
               <div className="relative rounded-[2.5rem] overflow-hidden border border-edge shadow-2xl aspect-[4/5] bg-bg flex items-center justify-center p-10">
-                <img src="/assets/img/3-weg-kraan.png" alt="Water-zuivering 3-weg kraan in chroom" className="relative max-h-full w-auto object-contain" />
+                <Image src="/assets/img/3-weg-kraan.png" alt="Water-zuivering 3-weg kraan in chroom" fill sizes="(min-width: 1024px) 45vw, 90vw" className="object-contain" />
               </div>
               <div className="hidden sm:flex items-center gap-2 absolute -top-5 right-6 rounded-full glass shadow-lg px-4 py-2.5">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="#EDA71B" aria-hidden="true"><path d="M12 2l2.9 6.2 6.8.8-5 4.6 1.4 6.7L12 16.9 5.9 20.3l1.4-6.7-5-4.6 6.8-.8L12 2z" /></svg>
@@ -171,7 +191,7 @@ export default async function Page() {
 
             <div className="mt-14 grid md:grid-cols-5 gap-6 lg:gap-8 items-center">
               <div className="md:col-span-2 relative rounded-[2rem] overflow-hidden aspect-[4/3] grayscale opacity-60">
-                <img src="/assets/img/twee-kranen.jpg" alt="Twee losse kranen op het aanrecht" className="absolute inset-0 w-full h-full object-cover" />
+                <Image src="/assets/img/twee-kranen.jpg" alt="Twee losse kranen op het aanrecht" fill sizes="(min-width: 768px) 40vw, 90vw" className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
                 <span className="absolute bottom-5 left-5 inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-4 py-1.5 text-xs font-bold text-ink">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" /></svg>
@@ -179,7 +199,7 @@ export default async function Page() {
                 </span>
               </div>
               <div className="md:col-span-3 relative rounded-[2rem] overflow-hidden aspect-[4/3] ring-4 ring-amber shadow-2xl shadow-amber/25 md:scale-[1.05] z-10">
-                <img src="/assets/img/een-kraan.jpg" alt="Eén elegante 3-weg kraan" className="absolute inset-0 w-full h-full object-cover" />
+                <Image src="/assets/img/een-kraan.jpg" alt="Eén elegante 3-weg kraan" fill sizes="(min-width: 768px) 60vw, 90vw" className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
                 <span className="absolute top-5 left-5 inline-flex items-center gap-1.5 rounded-full bg-amber px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-ink">
                   Beste keuze
@@ -206,7 +226,7 @@ export default async function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-[2rem] overflow-hidden border border-edge bg-white aspect-[4/5] flex items-center justify-center p-10">
-                <img src="/assets/img/3-weg-kraan-kleuren/geborsteld-staal.jpg" alt="Water-zuivering 3-weg kraan in geborsteld staal" className="max-h-full w-auto object-contain" />
+                <Image src="/assets/img/3-weg-kraan-kleuren/geborsteld-staal.jpg" alt="Water-zuivering 3-weg kraan in geborsteld staal" fill sizes="(min-width: 1024px) 45vw, 90vw" className="object-contain" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -271,7 +291,7 @@ export default async function Page() {
                 <span className="absolute -top-3 left-8 rounded-full bg-amber text-ink text-[11px] font-bold uppercase tracking-wide px-3 py-1 shadow-lg shadow-amber/30">Meest gekozen</span>
                 <span className="self-start inline-block rounded-full bg-white/10 text-amber text-[11px] font-bold uppercase tracking-wide px-3 py-1">Hoofdsysteem</span>
                 <div className="relative mt-6 rounded-2xl aspect-[4/3] overflow-hidden">
-                  <img src="/assets/img/cabinet-install.png" alt="Water-zuivering Osmosewatersysteem, past smal in een standaard keukenkastje" className="absolute inset-0 w-full h-full object-cover" />
+                  <Image src="/assets/img/cabinet-install.png" alt="Water-zuivering Osmosewatersysteem, past smal in een standaard keukenkastje" fill sizes="(min-width: 1024px) 33vw, 90vw" className="object-cover" />
                 </div>
                 <h3 className="mt-6 font-display text-xl font-extrabold tracking-tight">Osmosewatersysteem</h3>
                 <p className="mt-2 text-sm text-white/60">3-traps filtersysteem — PPC, RO en CTO. De basis van elk Water-zuivering huishouden.</p>
@@ -292,7 +312,7 @@ export default async function Page() {
                 <span className="self-start inline-block rounded-full bg-amber/12 text-amber-dark text-[11px] font-bold uppercase tracking-wide px-3 py-1">Accessoire</span>
                 <div className="relative mt-6 rounded-2xl bg-bg aspect-[4/3] flex items-center justify-center p-6 overflow-hidden">
                   <div className="glow w-40 h-40 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
-                  <img src="/assets/img/mineraalfilter.jpg" alt="Water-zuivering Mineraalfilter" className="relative max-h-full w-auto object-contain rounded-lg" />
+                  <Image src="/assets/img/mineraalfilter.jpg" alt="Water-zuivering Mineraalfilter" fill sizes="(min-width: 1024px) 33vw, 90vw" className="object-contain rounded-lg" />
                 </div>
                 <h3 className="mt-6 font-display text-xl font-extrabold tracking-tight">Mineraalfilter</h3>
                 <p className="mt-2 text-sm text-dim">Voegt calcium en magnesium terug toe voor een voller smaakprofiel.</p>

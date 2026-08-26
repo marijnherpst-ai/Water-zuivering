@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 
 export const metadata = {
+  alternates: { canonical: '/handleiding' },
   title: 'Handleiding — Water-zuivering',
   description: 'De handleiding van je waterzuiveraar in gewone taal: installatie, gebruik, filters vervangen en storingen oplossen.',
 };

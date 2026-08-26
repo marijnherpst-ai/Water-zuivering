@@ -8,15 +8,31 @@ import TdsMeter from '@/components/osmose/TdsMeter';
 import WerkingTabs from '@/components/osmose/WerkingTabs';
 import MaatVergelijker from '@/components/osmose/MaatVergelijker';
 import MineraalUitleg from '@/components/osmose/MineraalUitleg';
+import ProductSchema from '@/components/ProductSchema';
+import FaqSchema from '@/components/FaqSchema';
 import { createClient } from '@/lib/supabase/server';
 
 export const dynamic = 'force-dynamic';
 
 export const metadata = {
+  alternates: { canonical: '/osmosesysteem' },
   title: 'Osmosewatersysteem — Water-zuivering',
   description:
     'Ontdek precies hoe het Water-zuivering osmosewatersysteem werkt: 3-traps filtratie, interactieve TDS-meter en volledige uitleg van installatie tot filter vervangen.',
 };
+
+// Same [question, answer] pairs rendered in the FAQ section below — kept here
+// so the on-page accordion and the FAQPage schema can never drift apart.
+const FAQ_ITEMS = [
+  ['Past het systeem onder elk keukenkastje?', 'In de meeste standaardkeukens is voldoende ruimte onder de spoelbak — het systeem is slechts 10,5 cm breed en past staand of liggend. Tijdens de offerteaanvraag kijken we naar jouw specifieke situatie.'],
+  ['Hoe vaak moet ik filters vervangen?', 'Dat verschilt per filter: het PPC- en CTO-filter gaan gemiddeld 12 maanden mee, het RO-filter 24 maanden. Het display op het apparaat laat precies zien wanneer het tijd is — je hoeft dit dus nooit zelf bij te houden.'],
+  ['Wat betekent de TDS-waarde precies?', 'TDS staat voor de hoeveelheid opgeloste deeltjes in het water. Hoe lager de waarde, hoe minder opgeloste deeltjes er nog aanwezig zijn. Hierboven op deze pagina kan je het verschil zelf bekijken met onze interactieve meter.'],
+  ['Heeft het systeem invloed op mijn waterdruk?', 'Nee. Het systeem is ontworpen om de druk op je bestaande kraan niet merkbaar te beïnvloeden.'],
+  ['Kan ik het systeem ook zelf installeren?', 'Ja. Normaal installeert onze eigen monteur alles binnen 1 tot 2 uur, maar kies je ervoor om het zelf te doen, dan krijg je daarvoor €250 korting. In de tab "Installatie" hierboven staat precies hoe dat werkt.'],
+  ['Wat betekenen de E1, E2 en E3 op het display?', 'Dat zijn ingebouwde veiligheidsmeldingen: E1 betekent dat het apparaat 30 minuten onafgebroken heeft gedraaid, E2 wijst op een gedetecteerde lekkage, en E3 betekent dat de waterdruk te laag is. Zie de tab "Dagelijks gebruik" hierboven voor de volledige uitleg.'],
+  ['Kan ik later nog een 3-weg kraan of mineraalfilter toevoegen?', 'Ja, beide accessoires zijn los verkrijgbaar en compatibel met elk Water-zuivering systeem, ook achteraf toe te voegen.'],
+  ['Hoe lang duurt de installatie?', 'De meeste installaties zijn binnen 1 tot 2 uur voltooid door een vakkundige monteur.'],
+];
 
 function Stars({ rating }) {
   return (
@@ -45,6 +61,15 @@ export default async function Page() {
 
   return (
     <>
+      <ProductSchema
+        name="Water-zuivering osmosewatersysteem"
+        description="Osmosewatersysteem met 3-traps filtratie (PPC, RO, CTO) dat chloor, PFAS, medicijnresten en microplastics uit kraanwater verwijdert. Inclusief vakkundige installatie en 10 jaar garantie."
+        image="https://www.water-zuivering.nl/assets/img/countertop.png"
+        url="https://www.water-zuivering.nl/osmosesysteem"
+        rating={avgRating ? avgRating.toFixed(1) : null}
+        reviewCount={reviewCount}
+      />
+      <FaqSchema items={FAQ_ITEMS} />
       <RevealObserver />
       <Header />
 
@@ -418,16 +443,7 @@ export default async function Page() {
               <h2 className="mt-3 font-display text-3xl md:text-4xl font-extrabold tracking-tight">Veelgestelde vragen</h2>
             </div>
             <div className="mt-10 space-y-3">
-              {[
-                ['Past het systeem onder elk keukenkastje?', 'In de meeste standaardkeukens is voldoende ruimte onder de spoelbak — het systeem is slechts 10,5 cm breed en past staand of liggend. Tijdens de offerteaanvraag kijken we naar jouw specifieke situatie.'],
-                ['Hoe vaak moet ik filters vervangen?', 'Dat verschilt per filter: het PPC- en CTO-filter gaan gemiddeld 12 maanden mee, het RO-filter 24 maanden. Het display op het apparaat laat precies zien wanneer het tijd is — je hoeft dit dus nooit zelf bij te houden.'],
-                ['Wat betekent de TDS-waarde precies?', 'TDS staat voor de hoeveelheid opgeloste deeltjes in het water. Hoe lager de waarde, hoe minder opgeloste deeltjes er nog aanwezig zijn. Hierboven op deze pagina kan je het verschil zelf bekijken met onze interactieve meter.'],
-                ['Heeft het systeem invloed op mijn waterdruk?', 'Nee. Het systeem is ontworpen om de druk op je bestaande kraan niet merkbaar te beïnvloeden.'],
-                ['Kan ik het systeem ook zelf installeren?', 'Ja. Normaal installeert onze eigen monteur alles binnen 1 tot 2 uur, maar kies je ervoor om het zelf te doen, dan krijg je daarvoor €250 korting. In de tab "Installatie" hierboven staat precies hoe dat werkt.'],
-                ['Wat betekenen de E1, E2 en E3 op het display?', 'Dat zijn ingebouwde veiligheidsmeldingen: E1 betekent dat het apparaat 30 minuten onafgebroken heeft gedraaid, E2 wijst op een gedetecteerde lekkage, en E3 betekent dat de waterdruk te laag is. Zie de tab "Dagelijks gebruik" hierboven voor de volledige uitleg.'],
-                ['Kan ik later nog een 3-weg kraan of mineraalfilter toevoegen?', 'Ja, beide accessoires zijn los verkrijgbaar en compatibel met elk Water-zuivering systeem, ook achteraf toe te voegen.'],
-                ['Hoe lang duurt de installatie?', 'De meeste installaties zijn binnen 1 tot 2 uur voltooid door een vakkundige monteur.'],
-              ].map(([vraag, antwoord]) => (
+              {FAQ_ITEMS.map(([vraag, antwoord]) => (
                 <details key={vraag} className="group rounded-2xl card p-5">
                   <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-display font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber rounded">
                     {vraag}

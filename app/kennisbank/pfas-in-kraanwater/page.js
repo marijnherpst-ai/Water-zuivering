@@ -3,9 +3,12 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
+import ArticleSchema from '@/components/ArticleSchema';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
-  title: 'PFAS in kraanwater: wat is het en hoe filter je het?',
+  alternates: { canonical: '/kennisbank/pfas-in-kraanwater' },
+  title: 'PFAS in kraanwater: wat is het? — Water-zuivering',
   description:
     'PFAS in kraanwater: wat het is, waar het vandaan komt en hoe je het effectief uit je drinkwater filtert.',
 };
@@ -13,6 +16,19 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <ArticleSchema
+        headline="PFAS in kraanwater: wat is het en hoe filter je het?"
+        description="PFAS in kraanwater: wat het is, waar het vandaan komt en hoe je het effectief uit je drinkwater filtert."
+        image="https://www.water-zuivering.nl/assets/img/kennisbank/pfas-in-kraanwater.png"
+        url="https://www.water-zuivering.nl/kennisbank/pfas-in-kraanwater"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
+          { name: 'Kennisbank', url: 'https://www.water-zuivering.nl/kennisbank' },
+          { name: 'PFAS in kraanwater: wat is het en hoe filter je het?', url: 'https://www.water-zuivering.nl/kennisbank/pfas-in-kraanwater' },
+        ]}
+      />
       <RevealObserver />
       <Header />
 

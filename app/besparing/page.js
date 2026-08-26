@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import Calculator from '@/components/Calculator';
 
 export const metadata = {
+  alternates: { canonical: '/besparing' },
   title: 'Bereken je besparing — Water-zuivering',
   description: 'Bereken hoeveel jij per jaar bespaart door over te stappen van flessenwater naar een Water-zuivering waterzuiveraar.',
 };

@@ -3,9 +3,12 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
+import ArticleSchema from '@/components/ArticleSchema';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
-  title: 'Hoe vaak moet je een waterfilter vervangen?',
+  alternates: { canonical: '/kennisbank/waterfilter-vervangen-hoe-vaak' },
+  title: 'Hoe vaak moet je een waterfilter vervangen? — Water-zuivering',
   description:
     'Hoe vaak een waterfilter vervangen moet worden, waarom, en wat er gebeurt als je het te lang uitstelt. Kort en duidelijk uitgelegd.',
 };
@@ -13,6 +16,19 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <ArticleSchema
+        headline="Hoe vaak moet je een waterfilter vervangen?"
+        description="Hoe vaak een waterfilter vervangen moet worden, waarom, en wat er gebeurt als je het te lang uitstelt. Kort en duidelijk uitgelegd."
+        image="https://www.water-zuivering.nl/assets/img/kennisbank/waterfilter-vervangen-hoe-vaak.png"
+        url="https://www.water-zuivering.nl/kennisbank/waterfilter-vervangen-hoe-vaak"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
+          { name: 'Kennisbank', url: 'https://www.water-zuivering.nl/kennisbank' },
+          { name: 'Hoe vaak moet je een waterfilter vervangen?', url: 'https://www.water-zuivering.nl/kennisbank/waterfilter-vervangen-hoe-vaak' },
+        ]}
+      />
       <RevealObserver />
       <Header />
 

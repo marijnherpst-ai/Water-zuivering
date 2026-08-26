@@ -3,9 +3,12 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
+import ArticleSchema from '@/components/ArticleSchema';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
-  title: 'Wat kost een waterzuiveringssysteem?',
+  alternates: { canonical: '/kennisbank/wat-kost-een-waterzuiveringssysteem' },
+  title: 'Wat kost een waterzuiveringssysteem? — Water-zuivering',
   description:
     'Alle kosten van een waterzuiveringssysteem op een rij: aanschaf, installatie en onderhoud — en wat je ermee bespaart op flessenwater.',
 };
@@ -13,6 +16,19 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <ArticleSchema
+        headline="Wat kost een waterzuiveringssysteem?"
+        description="Alle kosten van een waterzuiveringssysteem op een rij: aanschaf, installatie en onderhoud — en wat je ermee bespaart op flessenwater."
+        image="https://www.water-zuivering.nl/assets/img/kennisbank/wat-kost-een-waterzuiveringssysteem.png"
+        url="https://www.water-zuivering.nl/kennisbank/wat-kost-een-waterzuiveringssysteem"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
+          { name: 'Kennisbank', url: 'https://www.water-zuivering.nl/kennisbank' },
+          { name: 'Wat kost een waterzuiveringssysteem?', url: 'https://www.water-zuivering.nl/kennisbank/wat-kost-een-waterzuiveringssysteem' },
+        ]}
+      />
       <RevealObserver />
       <Header />
 

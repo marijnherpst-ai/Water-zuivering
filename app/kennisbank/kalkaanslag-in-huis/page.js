@@ -3,9 +3,12 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
+import ArticleSchema from '@/components/ArticleSchema';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
-  title: 'Kalkaanslag in huis: oorzaak en oplossing',
+  alternates: { canonical: '/kennisbank/kalkaanslag-in-huis' },
+  title: 'Kalkaanslag in huis: oorzaak en oplossing — Water-zuivering',
   description:
     'Wat veroorzaakt kalkaanslag in huis, welke schade richt het aan, en hoe voorkom je het structureel?',
 };
@@ -13,6 +16,19 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <ArticleSchema
+        headline="Kalkaanslag in huis: oorzaak en oplossing"
+        description="Wat veroorzaakt kalkaanslag in huis, welke schade richt het aan, en hoe voorkom je het structureel?"
+        image="https://www.water-zuivering.nl/assets/img/kennisbank/kalkaanslag-in-huis.png"
+        url="https://www.water-zuivering.nl/kennisbank/kalkaanslag-in-huis"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
+          { name: 'Kennisbank', url: 'https://www.water-zuivering.nl/kennisbank' },
+          { name: 'Kalkaanslag in huis: oorzaak en oplossing', url: 'https://www.water-zuivering.nl/kennisbank/kalkaanslag-in-huis' },
+        ]}
+      />
       <RevealObserver />
       <Header />
 

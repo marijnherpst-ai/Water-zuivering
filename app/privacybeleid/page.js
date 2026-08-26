@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
+  alternates: { canonical: '/privacybeleid' },
   title: 'Privacyverklaring — Water-zuivering',
   description: 'Privacyverklaring van Water-zuivering: welke persoonsgegevens we verwerken, waarom, en welke rechten je hebt.',
 };

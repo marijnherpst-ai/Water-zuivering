@@ -2,9 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ArticleSchema from '@/components/ArticleSchema';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
-  title: 'Wat is osmosewater? Uitleg, gebruik & kosten',
+  alternates: { canonical: '/kennisbank/wat-is-osmosewater' },
+  title: 'Wat is osmosewater? — Water-zuivering',
   description:
     'Osmosewater (RO-water) uitgelegd: wat het is, of je het kan drinken, hoe je het maakt en wat het kost — inclusief de makkelijkste optie voor thuis.',
 };
@@ -12,6 +15,19 @@ export const metadata = {
 export default function WatIsOsmosewaterPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Wat is osmosewater? Uitleg, gebruik & kosten"
+        description="Osmosewater (RO-water) uitgelegd: wat het is, of je het kan drinken, hoe je het maakt en wat het kost — inclusief de makkelijkste optie voor thuis."
+        image="https://www.water-zuivering.nl/assets/img/cabinet-install.png"
+        url="https://www.water-zuivering.nl/kennisbank/wat-is-osmosewater"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
+          { name: 'Kennisbank', url: 'https://www.water-zuivering.nl/kennisbank' },
+          { name: 'Wat is osmosewater? Uitleg, gebruik & kosten', url: 'https://www.water-zuivering.nl/kennisbank/wat-is-osmosewater' },
+        ]}
+      />
       <Header />
 
       <main>

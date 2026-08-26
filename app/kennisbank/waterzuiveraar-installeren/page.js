@@ -3,9 +3,12 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
+import ArticleSchema from '@/components/ArticleSchema';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
-  title: 'Waterzuiveraar laten installeren: hoe gaat dat?',
+  alternates: { canonical: '/kennisbank/waterzuiveraar-installeren' },
+  title: 'Waterzuiveraar laten installeren — Water-zuivering',
   description:
     'Hoe de installatie van een waterzuiveraar in zijn werk gaat: van afspraak tot zuiver water, stap voor stap.',
 };
@@ -13,6 +16,19 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <ArticleSchema
+        headline="Waterzuiveraar laten installeren: hoe gaat dat?"
+        description="Hoe de installatie van een waterzuiveraar in zijn werk gaat: van afspraak tot zuiver water, stap voor stap."
+        image="https://www.water-zuivering.nl/assets/img/kennisbank/waterzuiveraar-installeren.png"
+        url="https://www.water-zuivering.nl/kennisbank/waterzuiveraar-installeren"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
+          { name: 'Kennisbank', url: 'https://www.water-zuivering.nl/kennisbank' },
+          { name: 'Waterzuiveraar laten installeren: hoe gaat dat?', url: 'https://www.water-zuivering.nl/kennisbank/waterzuiveraar-installeren' },
+        ]}
+      />
       <RevealObserver />
       <Header />
 

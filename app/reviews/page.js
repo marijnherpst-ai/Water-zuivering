@@ -4,6 +4,7 @@ import ReviewForm from '@/components/ReviewForm';
 import { createClient } from '@/lib/supabase/server';
 
 export const metadata = {
+  alternates: { canonical: '/reviews' },
   title: 'Reviews — Water-zuivering',
   description: 'Lees ervaringen van klanten van Water-zuivering en laat zelf een review achter.',
 };

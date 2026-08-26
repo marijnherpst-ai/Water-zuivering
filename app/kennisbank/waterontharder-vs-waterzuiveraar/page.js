@@ -3,9 +3,12 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
+import ArticleSchema from '@/components/ArticleSchema';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
-  title: 'Waterontharder of waterzuiveraar: het verschil',
+  alternates: { canonical: '/kennisbank/waterontharder-vs-waterzuiveraar' },
+  title: 'Waterontharder of waterzuiveraar? — Water-zuivering',
   description:
     'Waterontharder of waterzuiveraar — wat is het verschil, en wat heb jij nodig? Simpel uitgelegd, met een duidelijk antwoord voor jouw situatie.',
 };
@@ -13,6 +16,19 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <ArticleSchema
+        headline="Waterontharder of waterzuiveraar: het verschil"
+        description="Waterontharder of waterzuiveraar — wat is het verschil, en wat heb jij nodig? Simpel uitgelegd, met een duidelijk antwoord voor jouw situatie."
+        image="https://www.water-zuivering.nl/assets/img/kennisbank/waterontharder-vs-waterzuiveraar.png"
+        url="https://www.water-zuivering.nl/kennisbank/waterontharder-vs-waterzuiveraar"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
+          { name: 'Kennisbank', url: 'https://www.water-zuivering.nl/kennisbank' },
+          { name: 'Waterontharder of waterzuiveraar: het verschil', url: 'https://www.water-zuivering.nl/kennisbank/waterontharder-vs-waterzuiveraar' },
+        ]}
+      />
       <RevealObserver />
       <Header />
 
