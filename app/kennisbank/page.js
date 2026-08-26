@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 
 export const metadata = {
+  alternates: { canonical: '/kennisbank' },
   title: 'Kennisbank — Water-zuivering',
   description:
     'Alles wat je wilt weten over waterzuivering, osmosewater en drinkwater — in gewone taal uitgelegd.',

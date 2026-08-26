@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function KleurenGallery({ kleuren }) {
   const [openIndex, setOpenIndex] = useState(null);
@@ -39,7 +40,7 @@ export default function KleurenGallery({ kleuren }) {
           >
             <div className={`relative aspect-square flex items-center justify-center p-8 ${kleur.bg}`}>
               <div className="glow w-32 h-32 bg-amber/10" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
-              <img src={kleur.image} alt={`3-weg kraan in ${kleur.name.toLowerCase()}`} className="relative max-h-full w-auto object-contain" />
+              <Image src={kleur.image} alt={`3-weg kraan in ${kleur.name.toLowerCase()}`} fill sizes="(min-width: 1024px) 22vw, 45vw" className="object-contain" />
             </div>
             <p className="px-5 py-4 text-center font-display font-bold">{kleur.name}</p>
           </button>
@@ -71,7 +72,7 @@ export default function KleurenGallery({ kleuren }) {
 
           <div className="relative max-w-lg w-full" onClick={(e) => e.stopPropagation()}>
             <div className={`relative aspect-square rounded-[2rem] overflow-hidden flex items-center justify-center p-12 ${kleuren[openIndex].bg}`}>
-              <img src={kleuren[openIndex].image} alt={`3-weg kraan in ${kleuren[openIndex].name.toLowerCase()}`} className="max-h-full w-auto object-contain" />
+              <Image src={kleuren[openIndex].image} alt={`3-weg kraan in ${kleuren[openIndex].name.toLowerCase()}`} fill sizes="(min-width: 640px) 32rem, 90vw" className="object-contain" />
             </div>
             <p className="mt-5 text-center font-display font-bold text-xl text-white">{kleuren[openIndex].name}</p>
           </div>

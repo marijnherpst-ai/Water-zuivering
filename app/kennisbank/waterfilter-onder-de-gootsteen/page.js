@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 
 export const metadata = {
-  title: 'Waterfilter onder de gootsteen: alles wat je moet weten',
+  alternates: { canonical: '/kennisbank/waterfilter-onder-de-gootsteen' },
+  title: 'Waterfilter onder de gootsteen — Water-zuivering',
   description:
     'Een waterfilter onder de gootsteen: hoe het werkt, wat het kost en waar je op moet letten voor je een keuze maakt.',
 };

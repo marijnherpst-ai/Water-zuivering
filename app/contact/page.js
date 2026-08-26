@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata = {
+  alternates: { canonical: '/contact' },
   title: 'Contact — Water-zuivering',
   description:
     'Neem contact op met Water-zuivering (Jd services B.V.), Veldkersweg 16, 3053 JR Rotterdam. KVK 83174044.',

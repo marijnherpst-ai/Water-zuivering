@@ -4,7 +4,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Wat is osmosewater? Uitleg, gebruik & kosten',
+  alternates: { canonical: '/kennisbank/wat-is-osmosewater' },
+  title: 'Wat is osmosewater? — Water-zuivering',
   description:
     'Osmosewater (RO-water) uitgelegd: wat het is, of je het kan drinken, hoe je het maakt en wat het kost — inclusief de makkelijkste optie voor thuis.',
 };

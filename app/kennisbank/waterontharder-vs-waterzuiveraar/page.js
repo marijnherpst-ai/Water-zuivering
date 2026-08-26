@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 
 export const metadata = {
-  title: 'Waterontharder of waterzuiveraar: het verschil',
+  alternates: { canonical: '/kennisbank/waterontharder-vs-waterzuiveraar' },
+  title: 'Waterontharder of waterzuiveraar? — Water-zuivering',
   description:
     'Waterontharder of waterzuiveraar — wat is het verschil, en wat heb jij nodig? Simpel uitgelegd, met een duidelijk antwoord voor jouw situatie.',
 };

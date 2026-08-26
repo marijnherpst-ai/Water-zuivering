@@ -7,6 +7,7 @@ import RevealObserver from '@/components/RevealObserver';
 import Calculator from '@/components/Calculator';
 import ContactForm from '@/components/ContactForm';
 import SubstanceSlideshow from '@/components/SubstanceSlideshow';
+import RatingSchema from '@/components/RatingSchema';
 import { createClient } from '@/lib/supabase/server';
 
 export const dynamic = 'force-dynamic';
@@ -46,6 +47,7 @@ export default async function HomePage() {
 
   return (
     <>
+      <RatingSchema rating={avgRating} count={reviewCount} />
       <RevealObserver />
 
       {/* NAV */}
@@ -160,7 +162,7 @@ export default async function HomePage() {
                 <span className="self-start inline-block rounded-full bg-amber/12 text-amber-dark text-[11px] font-bold uppercase tracking-wide px-3 py-1">Accessoire</span>
                 <div className="relative mt-6 rounded-2xl bg-bg aspect-[4/3] flex items-center justify-center p-6 overflow-hidden">
                   <div className="glow w-40 h-40 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
-                  <img src="/assets/img/3-weg-kraan.png" alt="Water-zuivering 3-weg kraan" className="relative max-h-full w-auto object-contain" />
+                  <Image src="/assets/img/3-weg-kraan.png" alt="Water-zuivering 3-weg kraan" fill sizes="(min-width: 1024px) 33vw, 90vw" className="object-contain" />
                 </div>
                 <h3 className="mt-6 font-display text-xl font-extrabold tracking-tight">3-weg kraan</h3>
                 <p className="mt-2 text-sm text-dim">Eén elegante kraan voor gefilterd, gewoon en gemineraliseerd water.</p>
@@ -182,7 +184,7 @@ export default async function HomePage() {
                 <span className="absolute -top-3 left-8 rounded-full bg-amber text-ink text-[11px] font-bold uppercase tracking-wide px-3 py-1 shadow-lg shadow-amber/30">Meest gekozen</span>
                 <span className="self-start inline-block rounded-full bg-white/10 text-amber text-[11px] font-bold uppercase tracking-wide px-3 py-1">Hoofdsysteem</span>
                 <div className="relative mt-6 rounded-2xl aspect-[4/3] overflow-hidden">
-                  <img src="/assets/img/cabinet-install.png" alt="Water-zuivering Osmosewatersysteem, past smal in een standaard keukenkastje" className="absolute inset-0 w-full h-full object-cover" />
+                  <Image src="/assets/img/cabinet-install.png" alt="Water-zuivering Osmosewatersysteem, past smal in een standaard keukenkastje" fill sizes="(min-width: 1024px) 33vw, 90vw" className="object-cover" />
                 </div>
                 <h3 className="mt-6 font-display text-xl font-extrabold tracking-tight">Osmosewatersysteem</h3>
                 <p className="mt-2 text-sm text-white/60">3-traps filtersysteem — PPC, RO en CTO. De basis van elk Water-zuivering huishouden.</p>
@@ -204,7 +206,7 @@ export default async function HomePage() {
                 <span className="self-start inline-block rounded-full bg-amber/12 text-amber-dark text-[11px] font-bold uppercase tracking-wide px-3 py-1">Accessoire</span>
                 <div className="relative mt-6 rounded-2xl bg-bg aspect-[4/3] flex items-center justify-center p-6 overflow-hidden">
                   <div className="glow w-40 h-40 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
-                  <img src="/assets/img/mineraalfilter.jpg" alt="Water-zuivering Mineraalfilter" className="relative max-h-full w-auto object-contain rounded-lg" />
+                  <Image src="/assets/img/mineraalfilter.jpg" alt="Water-zuivering Mineraalfilter" fill sizes="(min-width: 1024px) 33vw, 90vw" className="object-contain rounded-lg" />
                 </div>
                 <h3 className="mt-6 font-display text-xl font-extrabold tracking-tight">Mineraalfilter</h3>
                 <p className="mt-2 text-sm text-dim">Voegt calcium en magnesium terug toe voor een voller smaakprofiel.</p>
@@ -278,7 +280,7 @@ export default async function HomePage() {
 
             <div className="mt-14 grid md:grid-cols-5 gap-6 lg:gap-8 items-center">
               <div className="md:col-span-2 relative rounded-[2rem] overflow-hidden aspect-[4/3] grayscale opacity-60">
-                <img src="/assets/img/twee-kranen.jpg" alt="Twee losse kranen op het aanrecht" className="absolute inset-0 w-full h-full object-cover" />
+                <Image src="/assets/img/twee-kranen.jpg" alt="Twee losse kranen op het aanrecht" fill sizes="(min-width: 768px) 40vw, 90vw" className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
                 <span className="absolute bottom-5 left-5 inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-4 py-1.5 text-xs font-bold text-ink">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" /></svg>
@@ -286,7 +288,7 @@ export default async function HomePage() {
                 </span>
               </div>
               <div className="md:col-span-3 relative rounded-[2rem] overflow-hidden aspect-[4/3] ring-4 ring-amber shadow-2xl shadow-amber/25 md:scale-[1.05] z-10">
-                <img src="/assets/img/een-kraan.jpg" alt="Eén elegante 3-weg kraan" className="absolute inset-0 w-full h-full object-cover" />
+                <Image src="/assets/img/een-kraan.jpg" alt="Eén elegante 3-weg kraan" fill sizes="(min-width: 768px) 60vw, 90vw" className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
                 <span className="absolute top-5 left-5 inline-flex items-center gap-1.5 rounded-full bg-amber px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-ink">
                   Beste keuze
@@ -309,7 +311,7 @@ export default async function HomePage() {
 
         {/* HOE HET WERKT: SFEERBEELD */}
         <section id="hoe-het-werkt" className="relative overflow-hidden">
-          <img src="/assets/img/cabinet-install.png" alt="Water-zuivering geïnstalleerd, sfeerbeeld" className="absolute inset-0 w-full h-full object-cover" />
+          <Image src="/assets/img/cabinet-install.png" alt="Water-zuivering geïnstalleerd, sfeerbeeld" fill sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-ink/85 via-ink/80 to-ink/90" />
           <div className="relative max-w-7xl mx-auto px-6 py-24 md:py-32 text-white">
             <div className="max-w-2xl mx-auto text-center">
@@ -367,7 +369,7 @@ export default async function HomePage() {
 
             <div className="mt-14 grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
               <div className="relative order-2 lg:order-1 rounded-[2rem] overflow-hidden aspect-[4/5] lg:aspect-auto lg:self-stretch">
-                <img src="/assets/img/glas-water.webp" alt="Een glas helder, gefilterd water" className="absolute inset-0 w-full h-full object-cover" />
+                <Image src="/assets/img/glas-water.webp" alt="Een glas helder, gefilterd water" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
               <div className="order-1 lg:order-2">
                 <SubstanceSlideshow />
@@ -424,7 +426,7 @@ export default async function HomePage() {
                 </div>
               </div>
               <div className="reveal relative rounded-3xl overflow-hidden min-h-[220px]">
-                <img src="/assets/img/klantenservice.jpg" alt="Water-zuivering klantenservice medewerker" className="absolute inset-0 w-full h-full object-cover" />
+                <Image src="/assets/img/klantenservice.jpg" alt="Water-zuivering klantenservice medewerker" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent" />
                 <div className="relative h-full flex flex-col justify-end p-7 text-white">
                   <p className="font-display font-bold text-lg">Uitstekende klantenservice</p>

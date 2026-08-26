@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 
 export const metadata = {
-  title: 'Waterzuiveraar laten installeren: hoe gaat dat?',
+  alternates: { canonical: '/kennisbank/waterzuiveraar-installeren' },
+  title: 'Waterzuiveraar laten installeren — Water-zuivering',
   description:
     'Hoe de installatie van een waterzuiveraar in zijn werk gaat: van afspraak tot zuiver water, stap voor stap.',
 };

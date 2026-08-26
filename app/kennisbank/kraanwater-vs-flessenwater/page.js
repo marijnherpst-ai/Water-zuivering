@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 
 export const metadata = {
-  title: 'Kraanwater vs. flessenwater: wat is voordeliger?',
+  alternates: { canonical: '/kennisbank/kraanwater-vs-flessenwater' },
+  title: 'Kraanwater vs. flessenwater: wat is voordeliger? — Water-zuivering',
   description:
     'Kraanwater vs. flessenwater vergeleken op kosten, gemak en milieu-impact — met een eerlijke conclusie.',
 };

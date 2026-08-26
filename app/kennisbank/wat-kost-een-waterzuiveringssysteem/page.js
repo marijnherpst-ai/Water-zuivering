@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 
 export const metadata = {
-  title: 'Wat kost een waterzuiveringssysteem?',
+  alternates: { canonical: '/kennisbank/wat-kost-een-waterzuiveringssysteem' },
+  title: 'Wat kost een waterzuiveringssysteem? — Water-zuivering',
   description:
     'Alle kosten van een waterzuiveringssysteem op een rij: aanschaf, installatie en onderhoud — en wat je ermee bespaart op flessenwater.',
 };

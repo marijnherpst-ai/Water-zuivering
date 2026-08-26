@@ -12,6 +12,7 @@ import { createClient } from '@/lib/supabase/server';
 // en staat op noindex — enkel bereikbaar via een directe link (bv. voor een campagne).
 export const dynamic = 'force-dynamic';
 export const metadata = {
+  alternates: { canonical: '/actie/win-een-waterzuiveraar' },
   title: 'Win een gratis waterzuiveraar — Water-zuivering',
   description: 'Doe gratis mee en maak kans op een compleet Water-zuivering osmosewatersysteem.',
   robots: { index: false, follow: false },

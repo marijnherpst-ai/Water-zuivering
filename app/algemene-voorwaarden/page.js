@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
+  alternates: { canonical: '/algemene-voorwaarden' },
   title: 'Algemene voorwaarden — Water-zuivering',
   description: 'Algemene voorwaarden van Water-zuivering B.V.',
 };

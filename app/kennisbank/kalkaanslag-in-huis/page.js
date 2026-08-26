@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 
 export const metadata = {
-  title: 'Kalkaanslag in huis: oorzaak en oplossing',
+  alternates: { canonical: '/kennisbank/kalkaanslag-in-huis' },
+  title: 'Kalkaanslag in huis: oorzaak en oplossing — Water-zuivering',
   description:
     'Wat veroorzaakt kalkaanslag in huis, welke schade richt het aan, en hoe voorkom je het structureel?',
 };

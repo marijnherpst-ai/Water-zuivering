@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
+  alternates: { canonical: '/cookiebeleid' },
   title: 'Cookiebeleid — Water-zuivering',
   description: 'Cookiebeleid van Water-zuivering: welke cookies we gebruiken en hoe je je voorkeur instelt.',
 };

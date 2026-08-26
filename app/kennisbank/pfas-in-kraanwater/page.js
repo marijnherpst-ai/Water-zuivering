@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 
 export const metadata = {
-  title: 'PFAS in kraanwater: wat is het en hoe filter je het?',
+  alternates: { canonical: '/kennisbank/pfas-in-kraanwater' },
+  title: 'PFAS in kraanwater: wat is het? — Water-zuivering',
   description:
     'PFAS in kraanwater: wat het is, waar het vandaan komt en hoe je het effectief uit je drinkwater filtert.',
 };

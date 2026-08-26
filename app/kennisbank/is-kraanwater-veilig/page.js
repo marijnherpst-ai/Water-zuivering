@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 
 export const metadata = {
-  title: 'Is Nederlands kraanwater veilig om te drinken?',
+  alternates: { canonical: '/kennisbank/is-kraanwater-veilig' },
+  title: 'Is Nederlands kraanwater veilig om te drinken? — Water-zuivering',
   description:
     'Is kraanwater in Nederland veilig? Ja, maar met kanttekeningen. Wat erin kan zitten en hoe je dat er eenvoudig uit filtert.',
 };

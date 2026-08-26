@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 
 export const metadata = {
-  title: 'Hoe vaak moet je een waterfilter vervangen?',
+  alternates: { canonical: '/kennisbank/waterfilter-vervangen-hoe-vaak' },
+  title: 'Hoe vaak moet je een waterfilter vervangen? — Water-zuivering',
   description:
     'Hoe vaak een waterfilter vervangen moet worden, waarom, en wat er gebeurt als je het te lang uitstelt. Kort en duidelijk uitgelegd.',
 };

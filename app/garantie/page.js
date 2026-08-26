@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
+  alternates: { canonical: '/garantie' },
   title: '10 jaar garantie — Water-zuivering',
   description: 'Elk Water-zuivering systeem wordt geleverd met 10 jaar garantie. Lees hier wat er precies gedekt is en hoe het werkt.',
 };

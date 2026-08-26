@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 
 export const metadata = {
-  title: 'Wat is een 3-weg kraan en heb je die nodig?',
+  alternates: { canonical: '/kennisbank/3-weg-kraan-uitleg' },
+  title: 'Wat is een 3-weg kraan en heb je die nodig? — Water-zuivering',
   description:
     'Wat een 3-weg kraan precies is, hoe hij werkt en of hij zinvol is bij jouw waterzuiveringssysteem.',
 };
