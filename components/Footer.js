@@ -17,7 +17,6 @@ export default function Footer() {
           <p className="font-display font-bold text-sm">Navigatie</p>
           <ul className="mt-3 space-y-2 text-sm text-dim">
             <li><Link href="/#product" className="hover:text-ink transition-colors">Producten</Link></li>
-            <li><Link href="/waterzuiveraar" className="hover:text-ink transition-colors">Werkgebieden</Link></li>
             <li><Link href="/kennisbank" className="hover:text-ink transition-colors">Kennisbank</Link></li>
             <li><Link href="/handleiding" className="hover:text-ink transition-colors">Handleiding</Link></li>
             <li><Link href="/garantie" className="hover:text-ink transition-colors">Garantie</Link></li>
