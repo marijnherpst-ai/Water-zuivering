@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
+import ArticleSchema from '@/components/ArticleSchema';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/3-weg-kraan-uitleg' },
@@ -14,6 +16,19 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <ArticleSchema
+        headline="Wat is een 3-weg kraan en heb je die nodig?"
+        description="Wat een 3-weg kraan precies is, hoe hij werkt en of hij zinvol is bij jouw waterzuiveringssysteem."
+        image="https://www.water-zuivering.nl/assets/img/kennisbank/3-weg-kraan-uitleg.png"
+        url="https://www.water-zuivering.nl/kennisbank/3-weg-kraan-uitleg"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
+          { name: 'Kennisbank', url: 'https://www.water-zuivering.nl/kennisbank' },
+          { name: 'Wat is een 3-weg kraan en heb je die nodig?', url: 'https://www.water-zuivering.nl/kennisbank/3-weg-kraan-uitleg' },
+        ]}
+      />
       <RevealObserver />
       <Header />
 

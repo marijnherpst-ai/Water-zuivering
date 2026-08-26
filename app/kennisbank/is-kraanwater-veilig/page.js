@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
+import ArticleSchema from '@/components/ArticleSchema';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/is-kraanwater-veilig' },
@@ -14,6 +16,19 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <ArticleSchema
+        headline="Is Nederlands kraanwater veilig om te drinken?"
+        description="Is kraanwater in Nederland veilig? Ja, maar met kanttekeningen. Wat erin kan zitten en hoe je dat er eenvoudig uit filtert."
+        image="https://www.water-zuivering.nl/assets/img/kennisbank/is-kraanwater-veilig.png"
+        url="https://www.water-zuivering.nl/kennisbank/is-kraanwater-veilig"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
+          { name: 'Kennisbank', url: 'https://www.water-zuivering.nl/kennisbank' },
+          { name: 'Is Nederlands kraanwater veilig om te drinken?', url: 'https://www.water-zuivering.nl/kennisbank/is-kraanwater-veilig' },
+        ]}
+      />
       <RevealObserver />
       <Header />
 

@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
+import ArticleSchema from '@/components/ArticleSchema';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/waterfilter-onder-de-gootsteen' },
@@ -14,6 +16,19 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <ArticleSchema
+        headline="Waterfilter onder de gootsteen: alles wat je moet weten"
+        description="Een waterfilter onder de gootsteen: hoe het werkt, wat het kost en waar je op moet letten voor je een keuze maakt."
+        image="https://www.water-zuivering.nl/assets/img/kennisbank/waterfilter-onder-de-gootsteen.png"
+        url="https://www.water-zuivering.nl/kennisbank/waterfilter-onder-de-gootsteen"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
+          { name: 'Kennisbank', url: 'https://www.water-zuivering.nl/kennisbank' },
+          { name: 'Waterfilter onder de gootsteen: alles wat je moet weten', url: 'https://www.water-zuivering.nl/kennisbank/waterfilter-onder-de-gootsteen' },
+        ]}
+      />
       <RevealObserver />
       <Header />
 

@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
+import ArticleSchema from '@/components/ArticleSchema';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/kraanwater-vs-flessenwater' },
@@ -14,6 +16,19 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <ArticleSchema
+        headline="Kraanwater vs. flessenwater: wat is voordeliger?"
+        description="Kraanwater vs. flessenwater vergeleken op kosten, gemak en milieu-impact — met een eerlijke conclusie."
+        image="https://www.water-zuivering.nl/assets/img/kennisbank/kraanwater-vs-flessenwater.png"
+        url="https://www.water-zuivering.nl/kennisbank/kraanwater-vs-flessenwater"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
+          { name: 'Kennisbank', url: 'https://www.water-zuivering.nl/kennisbank' },
+          { name: 'Kraanwater vs. flessenwater: wat is voordeliger?', url: 'https://www.water-zuivering.nl/kennisbank/kraanwater-vs-flessenwater' },
+        ]}
+      />
       <RevealObserver />
       <Header />
 
