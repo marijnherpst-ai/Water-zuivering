@@ -29,8 +29,8 @@ export default function Footer() {
             <li><Link href="/contact" className="hover:text-ink transition-colors">Contactgegevens &amp; locatie</Link></li>
             <li><a href="tel:+31626944877" className="hover:text-ink transition-colors">06 26 94 48 77</a></li>
             <li><a href="mailto:info@water-zuivering.nl" className="hover:text-ink transition-colors">info@water-zuivering.nl</a></li>
-            <li>Veldkersweg 16, 3053 JR Rotterdam</li>
-            <li>KVK 83174044</li>
+            <li>Industrieweg 110, 2651 BD Berkel en Rodenrijs</li>
+            <li>KVK 88718301</li>
           </ul>
         </div>
         <div>
@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-edge">
-        <div className="max-w-7xl mx-auto px-6 py-6 text-xs text-dim">&copy; 2026 Jd services B.V. (Water-zuivering). Alle rechten voorbehouden.</div>
+        <div className="max-w-7xl mx-auto px-6 py-6 text-xs text-dim">&copy; 2026 Water-zuivering. Alle rechten voorbehouden.</div>
       </div>
     </footer>
   );

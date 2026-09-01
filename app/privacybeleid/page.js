@@ -94,7 +94,7 @@ export default function PrivacybeleidPage() {
                 <h2>Contactgegevens</h2>
                 <p>
                   Water-zuivering<br />
-                  Vestigingsadres: Veldkersweg 16, 3053 JR Rotterdam<br />
+                  Vestigingsadres: Industrieweg 110, 2651 BD Berkel en Rodenrijs<br />
                   E-mail: <a href="mailto:info@water-zuivering.nl" className="underline hover:text-ink">info@water-zuivering.nl</a>
                 </p>
               </div>

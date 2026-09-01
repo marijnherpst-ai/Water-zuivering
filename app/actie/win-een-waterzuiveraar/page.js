@@ -332,7 +332,7 @@ export default async function GiveawayPage() {
       {/* Minimale footer */}
       <footer className="bg-surface border-t border-edge">
         <div className="max-w-4xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-dim text-center sm:text-left">
-          <p>&copy; 2026 Jd services B.V. (Water-zuivering) · KVK 83174044 · Veldkersweg 16, 3053 JR Rotterdam</p>
+          <p>&copy; 2026 Water-zuivering · KVK 88718301 · Industrieweg 110, 2651 BD Berkel en Rodenrijs</p>
           <div className="flex items-center gap-5">
             <Link href="/privacybeleid" className="hover:text-ink transition-colors">Privacybeleid</Link>
             <Link href="/algemene-voorwaarden" className="hover:text-ink transition-colors">Voorwaarden</Link>

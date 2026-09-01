@@ -7,7 +7,7 @@ export const metadata = {
   alternates: { canonical: '/contact' },
   title: 'Contact — Water-zuivering',
   description:
-    'Neem contact op met Water-zuivering (Jd services B.V.), Veldkersweg 16, 3053 JR Rotterdam. KVK 83174044.',
+    'Neem contact op met Water-zuivering, Industrieweg 110, 2651 BD Berkel en Rodenrijs. KVK 88718301.',
 };
 
 export default function ContactPage() {
@@ -31,15 +31,15 @@ export default function ContactPage() {
                   <dl className="mt-5 space-y-4 text-sm">
                     <div>
                       <dt className="text-xs font-semibold text-dim">Bedrijfsnaam</dt>
-                      <dd className="mt-0.5 font-semibold">Jd services B.V.</dd>
+                      <dd className="mt-0.5 font-semibold">Water-zuivering</dd>
                     </div>
                     <div>
                       <dt className="text-xs font-semibold text-dim">Adres</dt>
-                      <dd className="mt-0.5 font-semibold">Veldkersweg 16<br />3053 JR Rotterdam</dd>
+                      <dd className="mt-0.5 font-semibold">Industrieweg 110<br />2651 BD Berkel en Rodenrijs</dd>
                     </div>
                     <div>
                       <dt className="text-xs font-semibold text-dim">KVK-nummer</dt>
-                      <dd className="mt-0.5 font-semibold">83174044</dd>
+                      <dd className="mt-0.5 font-semibold">88718301</dd>
                     </div>
                     <div>
                       <dt className="text-xs font-semibold text-dim">Telefoon</dt>
@@ -62,8 +62,8 @@ export default function ContactPage() {
 
                 <div className="mt-6 rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
                   <iframe
-                    title="Locatie Jd services B.V."
-                    src="https://www.google.com/maps?q=Veldkersweg+16,+3053+JR+Rotterdam&output=embed"
+                    title="Locatie Water-zuivering"
+                    src="https://www.google.com/maps?q=Industrieweg+110,+2651+BD+Berkel+en+Rodenrijs&output=embed"
                     className="w-full h-full border-0"
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"

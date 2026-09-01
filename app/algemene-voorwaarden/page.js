@@ -32,7 +32,7 @@ export default function AlgemeneVoorwaardenPage() {
                 <h2>Artikel 1 – Begripsbepalingen</h2>
                 <p>In deze algemene voorwaarden wordt verstaan onder:</p>
                 <ol>
-                  <li>Water-zuivering: Water-zuivering B.V., gevestigd te Veldkersweg 16, 3053 JR Rotterdam, ingeschreven bij de Kamer van Koophandel onder nummer 83174044, btw-identificatienummer [btw-nummer], bereikbaar via telefoonnummer 06 26944877 en e-mailadres info@water-zuivering.nl, hierna te noemen &quot;Water-zuivering&quot;, &quot;wij&quot; of &quot;ons&quot;.</li>
+                  <li>Water-zuivering: Water-zuivering B.V., gevestigd te Industrieweg 110, 2651 BD Berkel en Rodenrijs, ingeschreven bij de Kamer van Koophandel onder nummer 88718301, btw-identificatienummer [btw-nummer], bereikbaar via telefoonnummer 06 26944877 en e-mailadres info@water-zuivering.nl, hierna te noemen &quot;Water-zuivering&quot;, &quot;wij&quot; of &quot;ons&quot;.</li>
                   <li>Klant: de natuurlijke persoon die met Water-zuivering een overeenkomst sluit en die handelt voor doeleinden buiten zijn bedrijfs- of beroepsactiviteit (consument). Water-zuivering richt zich uitsluitend op de consumentenmarkt en sluit geen overeenkomsten met opdrachtgevers die handelen in de uitoefening van een beroep of bedrijf.</li>
                   <li>Product: het door Water-zuivering geleverde waterzuiveringssysteem (waterzuiveraar), inclusief filters, toebehoren en alle bijbehorende onderdelen.</li>
                   <li>Installatie: de aansluiting en installatie van het Product, uitgevoerd door Water-zuivering of door haar ingeschakelde derden, dan wel door de Klant zelf zoals bedoeld in artikel 7.</li>
