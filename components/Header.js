@@ -19,13 +19,12 @@ const DROPDOWNS = [
       { href: '/uitleg', label: 'Specificaties' },
       { href: '/handleiding', label: 'Handleiding' },
       { href: '/maatcheck', label: 'Maatcheck' },
+      { href: '/besparing', label: 'Besparing' },
     ],
   },
 ];
 
 const NAV_LINKS = [
-  { href: '/kennisbank', label: 'Kennisbank' },
-  { href: '/besparing', label: 'Besparing' },
   { href: '/reviews', label: 'Reviews' },
   { href: '/contact', label: 'Contact' },
 ];
