@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import MiniMap from './MiniMap';
 
 const TYPE_LABEL = {
   storing: 'Storing',
@@ -268,14 +269,7 @@ export default function StoringenChecker() {
                               <svg className="transition-transform group-open:rotate-90" width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                             </summary>
                             <div className="mt-2 rounded-xl overflow-hidden border border-edge">
-                              <iframe
-                                title={`Kaart: ${s.titel}`}
-                                width="100%"
-                                height="200"
-                                style={{ border: 0, display: 'block' }}
-                                loading="lazy"
-                                src={`https://www.openstreetmap.org/export/embed.html?bbox=${s.lon - 0.006}%2C${s.lat - 0.004}%2C${s.lon + 0.006}%2C${s.lat + 0.004}&layer=mapnik&marker=${s.lat}%2C${s.lon}`}
-                              />
+                              <MiniMap lat={s.lat} lon={s.lon} label={s.titel} />
                             </div>
                           </details>
                         )}
