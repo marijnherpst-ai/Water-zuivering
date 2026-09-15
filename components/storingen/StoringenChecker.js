@@ -248,10 +248,36 @@ export default function StoringenChecker() {
                         </div>
                         <p className="mt-3 font-display font-bold text-ink">{s.titel}</p>
                         {s.omschrijving && <p className="mt-1.5 text-sm text-dim leading-relaxed">{s.omschrijving}</p>}
-                        {(s.periode || s.start) && (
-                          <p className="mt-2 text-xs font-semibold text-dim">
-                            {s.periode || `${formatDatum(s.start) || ''}${s.eind ? ' – ' + formatDatum(s.eind) : ''}`}
-                          </p>
+                        <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1">
+                          {(s.periode || s.start) && (
+                            <p className="text-xs font-semibold text-dim">
+                              {s.periode || `${formatDatum(s.start) || ''}${s.eind ? ' – ' + formatDatum(s.eind) : ''}`}
+                            </p>
+                          )}
+                          {typeof s.aantalAdressen === 'number' && (
+                            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-dim">
+                              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1V9.5z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" /></svg>
+                              {s.aantalAdressen} {s.aantalAdressen === 1 ? 'adres' : 'adressen'} getroffen
+                            </span>
+                          )}
+                        </div>
+                        {typeof s.lat === 'number' && typeof s.lon === 'number' && (
+                          <details className="mt-3 group">
+                            <summary className="cursor-pointer list-none inline-flex items-center gap-1.5 text-xs font-bold text-amber-dark">
+                              Toon op kaart
+                              <svg className="transition-transform group-open:rotate-90" width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                            </summary>
+                            <div className="mt-2 rounded-xl overflow-hidden border border-edge">
+                              <iframe
+                                title={`Kaart: ${s.titel}`}
+                                width="100%"
+                                height="200"
+                                style={{ border: 0, display: 'block' }}
+                                loading="lazy"
+                                src={`https://www.openstreetmap.org/export/embed.html?bbox=${s.lon - 0.006}%2C${s.lat - 0.004}%2C${s.lon + 0.006}%2C${s.lat + 0.004}&layer=mapnik&marker=${s.lat}%2C${s.lon}`}
+                              />
+                            </div>
+                          </details>
                         )}
                         {TOELICHTING[s.type] && (
                           <div className="mt-3 rounded-xl bg-bg px-4 py-3 flex items-start gap-2.5">
