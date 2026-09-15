@@ -16,6 +16,25 @@ const TYPE_KLEUR = {
   kookadvies: { bg: 'rgba(220, 38, 38, 0.08)', tekst: '#B91C1C' },
 };
 
+// Uitleg wat een melding in de praktijk betekent — los van de (vaak vrij
+// technische) omschrijving die het waterbedrijf zelf meegeeft.
+const TOELICHTING = {
+  storing: 'Je hebt hier mogelijk tijdelijk geen, weinig of troebel water. Dit is een onverwacht probleem (zoals een leidingbreuk) — het waterbedrijf werkt eraan, meestal binnen enkele uren verholpen.',
+  kookadvies: 'Kook je kraanwater minimaal 3 minuten voor je het drinkt, gebruikt om te koken, tanden poetst of er groente/fruit mee wast — ook als het water er normaal uitziet. Dit blijft gelden tot het waterbedrijf aangeeft dat het weer veilig is.',
+  werkzaamheden: 'Dit is vooraf gepland onderhoud aan het leidingnet. Je merkt er mogelijk kort iets van (lagere druk of even geen water), maar dit is geen storing.',
+  onderhoud: 'Routinematig werk aan het net. Meestal merk je hier niets van of hooguit heel kort iets van lagere waterdruk.',
+};
+
+// Vertaalt de vaak cryptische interne statuscodes van waterbedrijven
+// (bijv. Dunea's "VOORBER", "IN UITVOER") naar gewone taal.
+const STATUS_LABEL = {
+  GEREED: 'Afgerond',
+  VOORBER: 'Gepland, nog niet gestart',
+  'IN VOORBER': 'Gepland, nog niet gestart',
+  'IN UITVOER': 'Wordt op dit moment uitgevoerd',
+  OPEN: 'Actief',
+};
+
 function formatDatum(iso) {
   if (!iso) return null;
   try {
@@ -225,7 +244,7 @@ export default function StoringenChecker() {
                           >
                             {TYPE_LABEL[s.type] || s.type}
                           </span>
-                          {s.status && <span className="text-xs font-semibold text-dim">{s.status}</span>}
+                          {s.status && <span className="text-xs font-semibold text-dim">{STATUS_LABEL[s.status] || s.status}</span>}
                         </div>
                         <p className="mt-3 font-display font-bold text-ink">{s.titel}</p>
                         {s.omschrijving && <p className="mt-1.5 text-sm text-dim leading-relaxed">{s.omschrijving}</p>}
@@ -233,6 +252,12 @@ export default function StoringenChecker() {
                           <p className="mt-2 text-xs font-semibold text-dim">
                             {s.periode || `${formatDatum(s.start) || ''}${s.eind ? ' – ' + formatDatum(s.eind) : ''}`}
                           </p>
+                        )}
+                        {TOELICHTING[s.type] && (
+                          <div className="mt-3 rounded-xl bg-bg px-4 py-3 flex items-start gap-2.5">
+                            <svg className="shrink-0 mt-0.5 text-dim" width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 8v5M12 16h.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /><circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.7" /></svg>
+                            <p className="text-xs text-dim leading-relaxed"><strong className="text-ink">Wat betekent dit voor jou?</strong> {TOELICHTING[s.type]}</p>
+                          </div>
                         )}
                       </li>
                     );
