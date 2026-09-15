@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
+import FaqSchema from '@/components/FaqSchema';
 import StoringenChecker from '@/components/storingen/StoringenChecker';
 
 export const metadata = {
@@ -9,6 +10,12 @@ export const metadata = {
   title: 'Storingen check — Water-zuivering',
   description: 'Check met je postcode en huisnummer of er een waterstoring, kookwateradvies of onderhoud is in jouw buurt. Live data van Dunea, PWN, Waternet en Waterbedrijf Groningen.',
 };
+
+const STAPPEN = [
+  ['Vul je postcode of plaats in', 'Met of zonder huisnummer — wat je maar bij de hand hebt.'],
+  ['We checken live bij je waterbedrijf', 'Rechtstreeks bij de bron, geen tussenpartij of verouderde lijst.'],
+  ['Je ziet direct het resultaat', 'Storing, kookadvies of werkzaamheden — of de geruststelling dat alles gewoon werkt.'],
+];
 
 const TYPES = [
   {
@@ -64,24 +71,49 @@ const DEKKING = [
   { regio: 'Limburg', bedrijf: 'WML', status: 'linkout' },
 ];
 
+const FAQ = [
+  ['Hoe actueel is deze informatie?', 'De gegevens worden rechtstreeks en live opgehaald bij het waterbedrijf zelf op het moment dat je zoekt — er staat niets vast in de website. Om de servers van de waterbedrijven niet onnodig te belasten, wordt een resultaat maximaal 10 minuten hergebruikt voor een volgende bezoeker voor hetzelfde gebied, daarna wordt het automatisch ververst.'],
+  ['Waarom is mijn regio niet live gedekt?', 'We laten alleen data zien die we rechtstreeks en op een nette manier bij het waterbedrijf zelf kunnen ophalen. Niet elk waterbedrijf maakt dat publiek toegankelijk — voor die gebieden verwijzen we je automatisch door naar de eigen storingspagina van jouw waterbedrijf.'],
+  ['Kan ik hier ook zelf een storing melden?', 'Nee, deze pagina is alleen om bestaande meldingen te bekijken. Wil je zelf iets melden (bijvoorbeeld een lekkage op straat), neem dan rechtstreeks contact op met je eigen waterbedrijf.'],
+  ['Wat moet ik doen als ik een kookadvies zie?', 'Kook je kraanwater minimaal 3 minuten voor je het drinkt, gebruikt om te koken, tanden poetst of er groente/fruit mee wast. Dit advies blijft gelden totdat je waterbedrijf aangeeft dat het weer veilig is.'],
+  ['Waarom geen dekking via waterstoring.nl?', 'Die site beschermt zichzelf bewust tegen geautomatiseerd ophalen. We halen daarom data alleen op bij bronnen die dat zonder zo’n blokkade toestaan — rechtstreeks bij het waterbedrijf zelf.'],
+];
+
 export default function StoringenPage() {
   return (
     <>
       <RevealObserver />
+      <FaqSchema items={FAQ} />
       <Header />
 
       <main>
         {/* HERO */}
         <section className="relative overflow-hidden">
           <div className="glow w-[480px] h-[480px] bg-amber/15 -top-40 -left-40" />
+          <div className="glow drift2 w-[360px] h-[360px] bg-amber/10 top-10 -right-24" />
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Storingen check</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
               Is er een waterstoring in jouw buurt?
             </h1>
             <p className="mt-5 text-dim text-lg">
-              Vul je postcode en huisnummer in en zie meteen of je waterbedrijf een storing, kookwateradvies of werkzaamheden meldt.
+              Vul je postcode en huisnummer in — of gewoon je plaats — en zie meteen of je waterbedrijf een storing, kookwateradvies of werkzaamheden meldt.
             </p>
+          </div>
+        </section>
+
+        {/* HOE WERKT HET */}
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 pb-10">
+            <div className="grid sm:grid-cols-3 gap-5">
+              {STAPPEN.map(([titel, uitleg], i) => (
+                <div key={titel} className="reveal rounded-2xl card p-5">
+                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-ink text-white text-xs font-bold">{i + 1}</span>
+                  <p className="mt-3 font-display font-bold text-ink text-sm">{titel}</p>
+                  <p className="mt-1.5 text-xs text-dim leading-relaxed">{uitleg}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -99,7 +131,7 @@ export default function StoringenPage() {
             <p className="mt-3 text-dim text-center max-w-xl mx-auto">Waterbedrijven gebruiken verschillende termen — hier lees je in gewone taal wat ze betekenen.</p>
             <div className="mt-10 grid sm:grid-cols-2 gap-5">
               {TYPES.map((t) => (
-                <div key={t.naam} className="rounded-2xl card p-6 flex gap-4">
+                <div key={t.naam} className="reveal rounded-2xl card p-6 flex gap-4">
                   <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-xl" style={{ background: `${t.kleur}1A`, color: t.kleur }}>
                     {t.icoon}
                   </span>
@@ -120,7 +152,7 @@ export default function StoringenPage() {
             <p className="mt-3 text-dim text-center max-w-xl mx-auto">
               We halen deze data rechtstreeks op bij de waterbedrijven zelf — geen tussenpartij. Voor gebieden zonder live koppeling verwijzen we je automatisch door naar de juiste pagina.
             </p>
-            <div className="mt-10 rounded-2xl card overflow-hidden">
+            <div className="mt-10 reveal rounded-2xl card overflow-hidden">
               {DEKKING.map((d, i) => (
                 <div
                   key={d.regio}
@@ -155,13 +187,34 @@ export default function StoringenPage() {
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-center">Wat kun je zelf doen?</h2>
             <div className="mt-10 grid sm:grid-cols-2 gap-x-8 gap-y-6">
               {TIPS.map(([titel, uitleg]) => (
-                <div key={titel} className="flex items-start gap-3">
+                <div key={titel} className="reveal flex items-start gap-3">
                   <svg className="shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   <div>
                     <p className="font-semibold text-ink text-sm">{titel}</p>
                     <p className="mt-1 text-sm text-dim leading-relaxed">{uitleg}</p>
                   </div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-14 md:py-20">
+            <div className="text-center">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgestelde vragen</h2>
+            </div>
+            <div className="mt-10 space-y-3">
+              {FAQ.map(([vraag, antwoord]) => (
+                <details key={vraag} className="reveal group rounded-2xl card p-5">
+                  <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-display font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber rounded">
+                    {vraag}
+                    <svg className="shrink-0 transition-transform group-open:rotate-45 text-amber-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+                  </summary>
+                  <p className="mt-3 text-sm text-dim leading-relaxed">{antwoord}</p>
+                </details>
               ))}
             </div>
           </div>
