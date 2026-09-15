@@ -26,30 +26,47 @@ function formatDatum(iso) {
 }
 
 export default function StoringenChecker() {
+  const [modus, setModus] = useState('adres');
   const [postcode, setPostcode] = useState('');
   const [huisnummer, setHuisnummer] = useState('');
+  const [plaats, setPlaats] = useState('');
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [foutmelding, setFoutmelding] = useState('');
+
+  function wisselModus(nieuweModus) {
+    setModus(nieuweModus);
+    setFoutmelding('');
+    setResult(null);
+  }
 
   async function handleSubmit(e) {
     e.preventDefault();
     setFoutmelding('');
     setResult(null);
 
-    const pcOk = /^[1-9][0-9]{3}\s?[A-Za-z]{2}$/.test(postcode.trim());
-    if (!pcOk || !huisnummer.trim()) {
-      setFoutmelding('Vul een geldige postcode (bijv. 2651 BD) en huisnummer in.');
-      return;
+    let params;
+    if (modus === 'adres') {
+      const pcOk = /^[1-9][0-9]{3}\s?[A-Za-z]{2}$/.test(postcode.trim());
+      if (!pcOk || !huisnummer.trim()) {
+        setFoutmelding('Vul een geldige postcode (bijv. 2651 BD) en huisnummer in.');
+        return;
+      }
+      params = new URLSearchParams({ postcode: postcode.trim(), huisnummer: huisnummer.trim() });
+    } else {
+      if (plaats.trim().length < 2) {
+        setFoutmelding('Vul een plaatsnaam in (bijv. Amsterdam).');
+        return;
+      }
+      params = new URLSearchParams({ plaats: plaats.trim() });
     }
 
     setLoading(true);
     try {
-      const params = new URLSearchParams({ postcode: postcode.trim(), huisnummer: huisnummer.trim() });
       const res = await fetch(`/api/storingen?${params}`);
       const data = await res.json();
       if (!res.ok) {
-        setFoutmelding('Vul een geldige postcode en huisnummer in.');
+        setFoutmelding('Vul een geldige zoekopdracht in.');
       } else {
         setResult(data);
       }
@@ -63,41 +80,87 @@ export default function StoringenChecker() {
   return (
     <div>
       <form onSubmit={handleSubmit} className="rounded-[2rem] card p-6 sm:p-8">
-        <div className="grid sm:grid-cols-[2fr,1fr,auto] gap-3">
-          <div>
-            <label className="block text-xs font-bold uppercase tracking-wide text-dim mb-1.5" htmlFor="postcode">Postcode</label>
-            <input
-              id="postcode"
-              type="text"
-              inputMode="text"
-              placeholder="2651 BD"
-              value={postcode}
-              onChange={(e) => setPostcode(e.target.value)}
-              className="w-full rounded-xl border border-edge px-4 py-3 text-sm font-semibold focus:outline-none focus:border-ink"
-            />
-          </div>
-          <div>
-            <label className="block text-xs font-bold uppercase tracking-wide text-dim mb-1.5" htmlFor="huisnummer">Huisnummer</label>
-            <input
-              id="huisnummer"
-              type="text"
-              inputMode="numeric"
-              placeholder="110"
-              value={huisnummer}
-              onChange={(e) => setHuisnummer(e.target.value)}
-              className="w-full rounded-xl border border-edge px-4 py-3 text-sm font-semibold focus:outline-none focus:border-ink"
-            />
-          </div>
-          <div className="flex items-end">
-            <button
-              type="submit"
-              disabled={loading}
-              className="cursor-pointer w-full sm:w-auto rounded-xl bg-ink text-white px-6 py-3 text-sm font-bold hover:bg-amber hover:text-ink transition-colors disabled:opacity-60 disabled:cursor-wait"
-            >
-              {loading ? 'Zoeken…' : 'Check storingen'}
-            </button>
-          </div>
+        <div className="inline-flex items-center rounded-full bg-bg p-1 border border-edge mb-5">
+          <button
+            type="button"
+            onClick={() => wisselModus('adres')}
+            className={`cursor-pointer rounded-full px-4 py-2 text-xs sm:text-sm font-bold transition-colors ${
+              modus === 'adres' ? 'bg-ink text-white shadow' : 'text-dim hover:text-ink'
+            }`}
+          >
+            Postcode + huisnummer
+          </button>
+          <button
+            type="button"
+            onClick={() => wisselModus('plaats')}
+            className={`cursor-pointer rounded-full px-4 py-2 text-xs sm:text-sm font-bold transition-colors ${
+              modus === 'plaats' ? 'bg-ink text-white shadow' : 'text-dim hover:text-ink'
+            }`}
+          >
+            Alleen plaats
+          </button>
         </div>
+
+        {modus === 'adres' ? (
+          <div className="grid sm:grid-cols-[2fr,1fr,auto] gap-3">
+            <div>
+              <label className="block text-xs font-bold uppercase tracking-wide text-dim mb-1.5" htmlFor="postcode">Postcode</label>
+              <input
+                id="postcode"
+                type="text"
+                inputMode="text"
+                placeholder="2651 BD"
+                value={postcode}
+                onChange={(e) => setPostcode(e.target.value)}
+                className="w-full rounded-xl border border-edge px-4 py-3 text-sm font-semibold focus:outline-none focus:border-ink"
+              />
+            </div>
+            <div>
+              <label className="block text-xs font-bold uppercase tracking-wide text-dim mb-1.5" htmlFor="huisnummer">Huisnummer</label>
+              <input
+                id="huisnummer"
+                type="text"
+                inputMode="numeric"
+                placeholder="110"
+                value={huisnummer}
+                onChange={(e) => setHuisnummer(e.target.value)}
+                className="w-full rounded-xl border border-edge px-4 py-3 text-sm font-semibold focus:outline-none focus:border-ink"
+              />
+            </div>
+            <div className="flex items-end">
+              <button
+                type="submit"
+                disabled={loading}
+                className="cursor-pointer w-full sm:w-auto rounded-xl bg-ink text-white px-6 py-3 text-sm font-bold hover:bg-amber hover:text-ink transition-colors disabled:opacity-60 disabled:cursor-wait"
+              >
+                {loading ? 'Zoeken…' : 'Check storingen'}
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className="grid sm:grid-cols-[2fr,auto] gap-3">
+            <div>
+              <label className="block text-xs font-bold uppercase tracking-wide text-dim mb-1.5" htmlFor="plaats">Plaats</label>
+              <input
+                id="plaats"
+                type="text"
+                placeholder="Amsterdam"
+                value={plaats}
+                onChange={(e) => setPlaats(e.target.value)}
+                className="w-full rounded-xl border border-edge px-4 py-3 text-sm font-semibold focus:outline-none focus:border-ink"
+              />
+            </div>
+            <div className="flex items-end">
+              <button
+                type="submit"
+                disabled={loading}
+                className="cursor-pointer w-full sm:w-auto rounded-xl bg-ink text-white px-6 py-3 text-sm font-bold hover:bg-amber hover:text-ink transition-colors disabled:opacity-60 disabled:cursor-wait"
+              >
+                {loading ? 'Zoeken…' : 'Check storingen'}
+              </button>
+            </div>
+          </div>
+        )}
         {foutmelding && <p className="mt-3 text-sm font-semibold text-red-700">{foutmelding}</p>}
       </form>
 
