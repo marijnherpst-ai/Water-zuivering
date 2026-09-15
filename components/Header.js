@@ -25,6 +25,7 @@ const DROPDOWNS = [
 ];
 
 const NAV_LINKS = [
+  { href: '/storingen', label: 'Storingen' },
   { href: '/reviews', label: 'Reviews' },
   { href: '/contact', label: 'Contact' },
 ];
