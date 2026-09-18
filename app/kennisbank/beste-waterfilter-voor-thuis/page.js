@@ -55,6 +55,13 @@ const CRITERIA = [
   ['Milieu-impact', 'Hoe grondiger en langduriger een filter werkt, hoe minder flessenwater (en dus plastic) je op termijn nodig hebt.'],
 ];
 
+const SITUATIES = [
+  ['Alleenstaand of stel, laag verbruik', 'Een waterfilterkan kan hier volstaan als je vooral de smaak wilt verbeteren en niet veel bijvult.'],
+  ['Gezin met kinderen', 'Constant bijvullen van een kan wordt al snel onpraktisch. Een systeem onder de gootsteen levert onbeperkt zuiver water, zonder dat er iemand aan hoeft te denken.'],
+  ['Huishouden met babyvoeding', 'Voor het bereiden van flesvoeding is grondige filtratie (PFAS, medicijnresten) extra relevant — een osmosesysteem is hier de meest gangbare keuze.'],
+  ['Huurwoning', 'Een kraanfilter is makkelijker weer te verwijderen dan een ingebouwd systeem, al bieden steeds meer aanbieders ook demontabele installaties voor huurders.'],
+];
+
 const FAQ = [
   ['Wat is de beste waterfilter voor thuis?', 'Dat hangt af van wat je belangrijk vindt. Wil je puur de chloorsmaak kwijt en zo min mogelijk uitgeven, dan volstaat een waterfilterkan. Wil je ook PFAS, medicijnresten en microplastics eruit, dan is een waterzuiveraar onder de gootsteen (osmose) de grondigste keuze.'],
   ['Is een waterfilterkan net zo goed als een waterzuiveraar?', 'Nee. Een waterfilterkan filtert vooral chloor en verbetert de smaak, maar houdt PFAS, medicijnresten en microplastics niet of nauwelijks tegen. Een osmosesysteem verwijdert daarvan tot 99%.'],
@@ -62,6 +69,9 @@ const FAQ = [
   ['Moet een waterzuiveraar onder de gootsteen professioneel geïnstalleerd worden?', 'Het kan in principe zelf, maar een vakkundige installatie voorkomt lekkages en zorgt dat de waterdruk goed blijft. De meeste aanbieders regelen dit binnen één dag.'],
   ['Welke beste waterfilter voor thuis verwijdert PFAS?', 'Alleen filters met een omgekeerde-osmose-membraan (0,0001 micron) verwijderen PFAS effectief — een waterfilterkan of eenvoudig kraanfilter houdt dit nauwelijks tegen.'],
   ['Is een beste waterfilter kraan hetzelfde als een waterzuiveraar onder de gootsteen?', 'Nee. Een kraanfilter (opzetstuk) zit zichtbaar op de kraan en filtert minder grondig; een waterzuiveraar onder de gootsteen is een ingebouwd systeem met een veel fijnere filtratie.'],
+  ['Welke waterfilter is het beste voor een gezin met kinderen?', 'Een systeem onder de gootsteen, omdat je dan nooit een kan hoeft bij te vullen en er altijd onbeperkt zuiver water beschikbaar is — ook praktisch voor het bereiden van flesvoeding.'],
+  ['Verschilt de beste waterfilter voor thuis per regio in Nederland?', 'De filtratiebehoefte verschilt niet sterk per regio — alle Nederlandse drinkwaterbedrijven voldoen aan dezelfde landelijke normen. Wel kan de waterhardheid (kalk) regionaal verschillen.'],
+  ['Kan ik zien of er nu een storing of kookadvies geldt in mijn regio?', 'Ja — gebruik onze eigen storingen-check om direct te zien of er in jouw buurt een actuele melding is, los van welk filter je kiest.'],
 ];
 
 function Sterren({ aantal }) {
@@ -214,6 +224,25 @@ export default function BesteWaterfilterVoorThuisPage() {
               </table>
             </div>
             <p className="mt-4 text-xs text-dim">Indicatieve vergelijking op basis van de gangbare werking per filtertype, geen gemeten waarden.</p>
+          </div>
+        </section>
+
+        {/* SITUATIE */}
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Welk type past bij jouw situatie?</h2>
+            <p className="mt-4 text-dim leading-relaxed">De beste waterfilter voor thuis hangt ook af van je huishouden. Een paar veelvoorkomende situaties:</p>
+            <div className="mt-6 grid sm:grid-cols-2 gap-4">
+              {SITUATIES.map(([titel, uitleg]) => (
+                <div key={titel} className="reveal rounded-2xl card p-5">
+                  <p className="font-display font-bold text-ink text-sm">{titel}</p>
+                  <p className="mt-1.5 text-sm text-dim leading-relaxed">{uitleg}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 text-sm text-dim leading-relaxed">
+              Los van welk filter je kiest: bij een onverwacht smaak- of kwaliteitsprobleem is het altijd goed om eerst te checken of er iets speelt bij je waterbedrijf. Gebruik onze <Link href="/storingen" className="underline hover:text-ink">storingen-check</Link> om direct te zien of er een actuele melding is in jouw buurt.
+            </p>
           </div>
         </section>
 

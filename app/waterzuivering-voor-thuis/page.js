@@ -32,11 +32,20 @@ const STAPPEN = [
   ['Nafilter (CTO)', 'Actieve koolstof polijst de laatste smaakjes en geurtjes weg — het resultaat: 99% zuiver water.'],
 ];
 
+const METHODEN = [
+  ['Koken', 'Doodt bacteriën, maar verwijdert geen chloor, PFAS of zware metalen — en kost tijd en energie voor elk glas.'],
+  ['UV-filter', 'Effectief tegen bacteriën en virussen door UV-licht, maar heeft stroom nodig en filtert geen chemische stoffen zoals PFAS.'],
+  ['Zwaartekrachtfilter (gravity)', 'Werkt zonder stroom of wateraansluiting, handig voor noodsituaties, maar met een beperktere doorzet en meer handmatig gedoe dan een vast systeem.'],
+];
+
 const FAQ = [
   ['Is waterzuivering voor thuis in Nederland nodig?', 'Nederlands kraanwater voldoet aan strenge wettelijke normen en is veilig om te drinken. Een waterzuiveraar voor thuis gaat een stap verder: die verwijdert ook sporen van stoffen die niet standaard worden getest of verwijderd, zoals PFAS, medicijnresten en microplastics.'],
   ['Wat kost waterzuivering voor thuis?', 'De aanschafprijs hangt af van het gekozen systeem en de installatie. Vraag een vrijblijvende offerte aan voor een prijs op maat van jouw situatie.'],
   ['Hoeveel onderhoud heeft een waterzuiveringssysteem?', 'De filters gaan afhankelijk van gebruik en waterkwaliteit meestal 6 tot 12 maanden mee. Bij installatie krijg je een concreet vervangingsschema.'],
   ['Past een waterzuiveraar voor thuis onder elk aanrecht?', 'In de meeste standaardkeukens is voldoende ruimte onder de spoelbak. Ons systeem is slechts 10,5 cm breed en past staand of liggend.'],
+  ['Is waterzuivering voor thuis anders dan voor onderweg?', 'Ja. Onderweg kies je meestal voor een compact, draagbaar filter zonder wateraansluiting. Thuis is een vast systeem onder de gootsteen praktischer: onbeperkt zuiver water zonder gedoe met patronen of bijvullen.'],
+  ['Kan waterzuivering voor thuis ook zonder installatie?', 'Er bestaan alternatieven zoals filterkannen of kraanfilters die geen vaste installatie vereisen, maar die filteren minder grondig dan een systeem onder de gootsteen. Lees de vergelijking in ons artikel over de beste waterfilter voor thuis.'],
+  ['Waarom niet gewoon een waterfilterkan gebruiken?', 'Een kan is prima tegen chloorsmaak, maar houdt PFAS, medicijnresten en microplastics niet of nauwelijks tegen — en moet je steeds bijvullen. Een systeem onder de gootsteen filtert grondiger en werkt op de achtergrond mee.'],
 ];
 
 export default function WaterzuiveringVoorThuisPage() {
@@ -161,6 +170,25 @@ export default function WaterzuiveringVoorThuisPage() {
                 <Image src="/assets/img/systeem-slim-105mm.png" alt="Slank waterzuiveringssysteem voor thuis, 10,5 cm breed, geïnstalleerd onder het aanrecht" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-contain p-6 bg-white" />
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* ANDERE METHODEN */}
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waarom niet koken, UV of een zwaartekrachtfilter?</h2>
+            <p className="mt-4 text-dim leading-relaxed">Er bestaan meerdere manieren om water te zuiveren. Voor permanent gebruik thuis is een vast systeem meestal het praktischst — dit is waarom:</p>
+            <div className="mt-6 space-y-4">
+              {METHODEN.map(([titel, uitleg]) => (
+                <div key={titel} className="reveal rounded-2xl card p-5">
+                  <p className="font-display font-bold text-ink text-sm">{titel}</p>
+                  <p className="mt-1.5 text-sm text-dim leading-relaxed">{uitleg}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 text-sm text-dim leading-relaxed">
+              Twijfel je überhaupt of er iets aan de hand is met je kraanwater? Check eerst onze <Link href="/storingen" className="underline hover:text-ink">storingen-check</Link> voor actuele meldingen in jouw buurt, of lees de volledige vergelijking in <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">beste waterfilter voor thuis</Link>.
+            </p>
           </div>
         </section>
 
