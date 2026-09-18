@@ -91,7 +91,7 @@ export default function Page() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Water-zuivering</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Slechts 10,5 cm breed</h2>
               <p className="mt-4 text-dim">Ons systeem is smaller dan de meeste keukenladen en past staand of liggend — zo goed als altijd geregeld, ongeacht hoe je kastje is ingedeeld.</p>
-              <p className="mt-4 text-dim">Alle technische details vind je op onze <Link href="/uitleg" className="underline hover:text-ink">specificatiepagina</Link>.</p>
+              <p className="mt-4 text-dim">Alle technische details vind je op onze <Link href="/uitleg" className="underline hover:text-ink">specificatiepagina</Link>. Twijfel je nog tussen dit type en een waterfilterkan of kraanfilter? Bekijk onze <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">vergelijking van de beste waterfilter voor thuis</Link>.</p>
             </div>
           </div>
         </section>

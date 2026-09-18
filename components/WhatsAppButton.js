@@ -4,7 +4,7 @@ const WHATSAPP_NUMBER = '31626944877';
 const WHATSAPP_MESSAGE = 'Hoi, ik heb een vraag over jullie waterzuiveraar';
 
 export default function WhatsAppButton() {
-  const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+  const href = `https://api.whatsapp.com/send/?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(WHATSAPP_MESSAGE)}&type=phone_number&app_absent=0`;
 
   return (
     <a

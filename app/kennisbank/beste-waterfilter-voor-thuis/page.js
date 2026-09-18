@@ -47,11 +47,21 @@ const TYPES = [
   },
 ];
 
+const CRITERIA = [
+  ['Filtratiediepte', 'Wil je alleen de smaak verbeteren, of ook stoffen als PFAS, medicijnresten en microplastics kwijt? Dit bepaalt het type filter meer dan wat ook.'],
+  ['Onderhoud en gemak', 'Een kan moet je steeds bijvullen en het patroon vaak vervangen. Een ingebouwd systeem draait op de achtergrond mee, met filters die eens per 6-12 maanden aan de beurt zijn.'],
+  ['Kosten op de lange termijn', 'Een lage aanschafprijs kan op termijn duurder uitpakken door vervangingskosten of doorlopend flessenwater. Reken door wat je over 3-5 jaar kwijt bent, niet alleen de instapprijs.'],
+  ['Ruimte in de keuken', 'Een kan of kraanfilter is zichtbaar, een systeem onder de gootsteen blijft volledig uit het zicht — belangrijk als je weinig aanrechtruimte hebt.'],
+  ['Milieu-impact', 'Hoe grondiger en langduriger een filter werkt, hoe minder flessenwater (en dus plastic) je op termijn nodig hebt.'],
+];
+
 const FAQ = [
   ['Wat is de beste waterfilter voor thuis?', 'Dat hangt af van wat je belangrijk vindt. Wil je puur de chloorsmaak kwijt en zo min mogelijk uitgeven, dan volstaat een waterfilterkan. Wil je ook PFAS, medicijnresten en microplastics eruit, dan is een waterzuiveraar onder de gootsteen (osmose) de grondigste keuze.'],
   ['Is een waterfilterkan net zo goed als een waterzuiveraar?', 'Nee. Een waterfilterkan filtert vooral chloor en verbetert de smaak, maar houdt PFAS, medicijnresten en microplastics niet of nauwelijks tegen. Een osmosesysteem verwijdert daarvan tot 99%.'],
   ['Wat kost de beste waterfilter voor thuis?', 'Een waterfilterkan kost enkele tientjes, een kraanfilter meestal onder de honderd euro. Een waterzuiveraar onder de gootsteen kost meer bij aanschaf, maar heeft geen doorlopende kosten voor flessenwater en gaat jarenlang mee.'],
   ['Moet een waterzuiveraar onder de gootsteen professioneel geïnstalleerd worden?', 'Het kan in principe zelf, maar een vakkundige installatie voorkomt lekkages en zorgt dat de waterdruk goed blijft. De meeste aanbieders regelen dit binnen één dag.'],
+  ['Welke beste waterfilter voor thuis verwijdert PFAS?', 'Alleen filters met een omgekeerde-osmose-membraan (0,0001 micron) verwijderen PFAS effectief — een waterfilterkan of eenvoudig kraanfilter houdt dit nauwelijks tegen.'],
+  ['Is een beste waterfilter kraan hetzelfde als een waterzuiveraar onder de gootsteen?', 'Nee. Een kraanfilter (opzetstuk) zit zichtbaar op de kraan en filtert minder grondig; een waterzuiveraar onder de gootsteen is een ingebouwd systeem met een veel fijnere filtratie.'],
 ];
 
 function Sterren({ aantal }) {
@@ -105,8 +115,23 @@ export default function BesteWaterfilterVoorThuisPage() {
         <section className="relative bg-surface border-y border-edge">
           <div className="max-w-4xl mx-auto px-6 py-14 md:py-20">
             <p className="text-dim leading-relaxed">
-              Er bestaat niet één "beste waterfilter voor thuis" die voor iedereen de juiste keuze is — welke het best bij jou past hangt af van hoe grondig je wilt filteren, hoeveel gemak je zoekt en wat je eraan wilt uitgeven. Hieronder zetten we de drie meest gekozen types eerlijk naast elkaar.
+              Er bestaat niet één <strong className="text-ink">beste waterfilter voor thuis</strong> die voor iedereen de juiste keuze is — welke het best bij jou past hangt af van hoe grondig je wilt filteren, hoeveel gemak je zoekt en wat je eraan wilt uitgeven. Hieronder zetten we de drie meest gekozen types eerlijk naast elkaar, en leggen we uit waar je precies op moet letten.
             </p>
+          </div>
+        </section>
+
+        {/* CRITERIA */}
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waar let je op bij het kiezen van een waterfilter voor thuis?</h2>
+            <ol className="mt-6 space-y-4">
+              {CRITERIA.map(([titel, uitleg], i) => (
+                <li key={titel} className="flex items-start gap-3">
+                  <span className="shrink-0 flex items-center justify-center w-7 h-7 rounded-full bg-amber text-ink text-sm font-bold">{i + 1}</span>
+                  <span className="text-dim"><strong className="text-ink">{titel}.</strong> {uitleg}</span>
+                </li>
+              ))}
+            </ol>
           </div>
         </section>
 
@@ -162,15 +187,45 @@ export default function BesteWaterfilterVoorThuisPage() {
           </div>
         </section>
 
-        {/* CONCLUSIE */}
+        {/* DIEPGANG: WAT FILTERT ELK TYPE */}
         <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat filtert elk type nou precies weg?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Nederlands kraanwater voldoet aan strenge wettelijke normen en is veilig om te drinken — daar gaat het bij een waterfilter voor thuis dan ook niet om. Het gaat om sporen van stoffen die niet standaard verwijderd worden: chloor (voor de smaak), kalk, en minder bekende stoffen zoals PFAS, medicijnresten en microplastics. Actuele informatie over de Nederlandse drinkwaterkwaliteit en normen vind je bij het <a href="https://www.rivm.nl/drinkwater" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">RIVM</a>.
+            </p>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-bg">
+                  <tr>
+                    <th className="px-4 py-3 font-display font-bold">Stof</th>
+                    <th className="px-4 py-3 font-display font-bold">Waterfilterkan</th>
+                    <th className="px-4 py-3 font-display font-bold">Kraanfilter</th>
+                    <th className="px-4 py-3 font-display font-bold">Osmosesysteem</th>
+                  </tr>
+                </thead>
+                <tbody className="text-dim">
+                  <tr className="border-t border-edge"><td className="px-4 py-3 font-semibold text-ink">Chloor (smaak)</td><td className="px-4 py-3">Ja</td><td className="px-4 py-3">Ja</td><td className="px-4 py-3">Ja</td></tr>
+                  <tr className="border-t border-edge"><td className="px-4 py-3 font-semibold text-ink">Kalk</td><td className="px-4 py-3">Beperkt</td><td className="px-4 py-3">Beperkt</td><td className="px-4 py-3">Ja</td></tr>
+                  <tr className="border-t border-edge"><td className="px-4 py-3 font-semibold text-ink">PFAS</td><td className="px-4 py-3">Nee</td><td className="px-4 py-3">Beperkt</td><td className="px-4 py-3">Tot 99%</td></tr>
+                  <tr className="border-t border-edge"><td className="px-4 py-3 font-semibold text-ink">Medicijnresten</td><td className="px-4 py-3">Nee</td><td className="px-4 py-3">Nee</td><td className="px-4 py-3">Tot 99%</td></tr>
+                  <tr className="border-t border-edge"><td className="px-4 py-3 font-semibold text-ink">Microplastics</td><td className="px-4 py-3">Nee</td><td className="px-4 py-3">Beperkt</td><td className="px-4 py-3">Tot 99%</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 text-xs text-dim">Indicatieve vergelijking op basis van de gangbare werking per filtertype, geen gemeten waarden.</p>
+          </div>
+        </section>
+
+        {/* CONCLUSIE */}
+        <section className="relative">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Onze conclusie</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Zoek je puur een goedkope oplossing tegen de chloorsmaak, dan is een waterfilterkan een prima start. Wil je écht af van PFAS, medicijnresten en microplastics — en dat zonder gedoe met bijvullen — dan is een waterzuiveraar onder de gootsteen de grondigste en op termijn ook de voordeligste keuze, omdat je nooit meer flessenwater hoeft te kopen.
+              Zoek je puur een goedkope oplossing tegen de chloorsmaak, dan is een waterfilterkan een prima start. Wil je écht af van <strong className="text-ink">PFAS, medicijnresten en microplastics</strong> — en dat zonder gedoe met bijvullen — dan is een <strong className="text-ink">waterzuiveraar onder de gootsteen</strong> de grondigste en op termijn ook de voordeligste keuze, omdat je nooit meer flessenwater hoeft te kopen.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Meer weten over hoe zo'n systeem precies werkt? Lees onze uitleg over <Link href="/waterzuivering-voor-thuis" className="underline hover:text-ink">waterzuivering voor thuis</Link>, of bekijk direct de <Link href="/osmosesysteem" className="underline hover:text-ink">specificaties van ons osmosesysteem</Link>.
+              Kortom: voor de beste waterfilter voor thuis is er geen universeel juiste keuze, alleen de keuze die past bij hoe grondig jij wilt filteren. Twijfel je nog? Lees onze uitleg over <Link href="/waterzuivering-voor-thuis" className="underline hover:text-ink">waterzuivering voor thuis</Link>, of bekijk direct de <Link href="/osmosesysteem" className="underline hover:text-ink">specificaties van ons osmosesysteem</Link>.
             </p>
           </div>
         </section>
