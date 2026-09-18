@@ -19,6 +19,8 @@ export default function Footer() {
             <li><Link href="/#product" className="hover:text-ink transition-colors">Producten</Link></li>
             <li><Link href="/waterzuivering-voor-thuis" className="hover:text-ink transition-colors">Waterzuivering voor thuis</Link></li>
             <li><Link href="/osmose-waterfilter" className="hover:text-ink transition-colors">Osmose waterfilter</Link></li>
+            <li><Link href="/waterfilter-kraan" className="hover:text-ink transition-colors">Waterfilter kraan</Link></li>
+            <li><Link href="/waterfiltersysteem" className="hover:text-ink transition-colors">Waterfiltersysteem</Link></li>
             <li><Link href="/kennisbank" className="hover:text-ink transition-colors">Kennisbank</Link></li>
             <li><Link href="/handleiding" className="hover:text-ink transition-colors">Handleiding</Link></li>
             <li><Link href="/garantie" className="hover:text-ink transition-colors">Garantie</Link></li>
