@@ -169,6 +169,7 @@ export default function WaterzuiveringVoorThuisPage() {
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Slechts 10,5 cm breed</h2>
               <p className="mt-4 text-dim">Compact genoeg om naast je andere spullen in het keukenkastje te passen, staand of liggend. Zo goed als altijd geregeld — ongeacht hoe je kastje is ingedeeld.</p>
               <p className="mt-4 text-dim">Elke liter zuiver water uit je eigen kraan is meteen ook een fles minder in het afval — waterzuivering voor thuis betaalt zichzelf op termijn ook gewoon terug.</p>
+              <p className="mt-4 text-dim">Reken het zelf even na: een gemiddeld huishouden dat overstapt van flessenwater naar waterzuivering voor thuis bespaart al snel enkele honderden euro's per jaar, naast het gemak van nooit meer kratten water hoeven te tillen.</p>
               <Link href="/besparing" className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-amber-dark hover:text-ink transition-colors">
                 Bereken je besparing
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>

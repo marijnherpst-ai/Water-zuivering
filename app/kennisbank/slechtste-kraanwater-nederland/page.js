@@ -9,7 +9,7 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/slechtste-kraanwater-nederland' },
-  title: 'Slechtste kraanwater Nederland? De feiten — Water-zuivering',
+  title: 'Slechtste kraanwater Nederland — Water-zuivering',
   description: 'Bestaat het slechtste kraanwater van Nederland echt, of is het een broodje-aap-verhaal? We zetten de feiten op een rij.',
 };
 
@@ -89,6 +89,9 @@ export default function Page() {
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Twijfel je over de kwaliteit in jouw huis specifiek? Check eerst of er iets aan de hand is via onze <Link href="/storingen" className="underline hover:text-ink">storingen-check</Link>, of lees meer over <Link href="/kennisbank/is-kraanwater-veilig" className="underline hover:text-ink">of Nederlands kraanwater veilig is</Link>.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Kortom: het "slechtste kraanwater van Nederland" is geen erkend fenomeen bij drinkwaterbedrijven of toezichthouders — het is vooral een label dat mensen plakken op een sterke smaak die ze niet gewend zijn. Verhuis je naar een andere regio, dan proef je soms verschil, maar dat zegt niets over hoe veilig het water is.
             </p>
           </div>
         </section>

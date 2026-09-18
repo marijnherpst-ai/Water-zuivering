@@ -9,7 +9,7 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/drinkwaternormen-nederland' },
-  title: 'Drinkwaternormen Nederland: wat wordt getest? — Water-zuivering',
+  title: 'Drinkwaternormen Nederland — Water-zuivering',
   description: 'Nederlandse drinkwaternormen zijn wettelijk vastgelegd in de Drinkwaterwet. Wat wordt er precies gecontroleerd, en wat valt daar niet onder?',
 };
 
@@ -62,7 +62,7 @@ export default function Page() {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Drinkwaternormen in Nederland: wat wordt er gecontroleerd?</h1>
-            <p className="mt-5 text-dim text-lg">De <strong className="text-ink">drinkwaternormen in Nederland</strong> behoren tot de strengste ter wereld. Maar wat houden die normen precies in, en wat controleren ze?</p>
+            <p className="mt-5 text-dim text-lg">De <strong className="text-ink">drinkwaternormen</strong> die <strong className="text-ink">Nederland</strong> hanteert, behoren tot de strengste ter wereld. Maar wat houden die normen precies in, en wat controleren ze? In dit artikel zetten we de Nederlandse drinkwaternormen stap voor stap voor je uiteen.</p>
           </div>
         </section>
 
@@ -91,6 +91,18 @@ export default function Page() {
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Wie liever een extra stap zet, doet dat met een filtersysteem thuis. Lees meer over <Link href="/kennisbank/pfas-in-kraanwater" className="underline hover:text-ink">PFAS in kraanwater</Link> of over <Link href="/waterzuivering-voor-thuis" className="underline hover:text-ink">waterzuivering voor thuis</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat als een norm toch overschreden wordt?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Overschrijdt een meting een grenswaarde uit de drinkwaternormen, dan is het drinkwaterbedrijf verplicht direct te reageren: extra bemonstering, opsporen van de oorzaak, en indien nodig een tijdelijke maatregel zoals een kookadvies voor het getroffen gebied. Zulke situaties zijn zeldzaam en worden altijd gecommuniceerd naar de bewoners in kwestie.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Wil je weten of er op dit moment iets speelt in jouw regio? Gebruik onze <Link href="/storingen" className="underline hover:text-ink">storingen-check</Link> voor actuele meldingen, los van deze algemene uitleg over de drinkwaternormen.
             </p>
           </div>
         </section>

@@ -9,7 +9,7 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/omgekeerde-osmose-filter' },
-  title: 'Omgekeerde osmose filter: hoe werkt het? — Water-zuivering',
+  title: 'Omgekeerde osmose filter — Water-zuivering',
   description: 'Een omgekeerde osmose filter werkt met een membraan van 0,0001 micron. Uitleg hoe het membraan werkt en wat het tegenhoudt.',
 };
 
@@ -90,6 +90,9 @@ export default function Page() {
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Benieuwd hoe dit in een compleet systeem samenkomt? Lees onze uitleg over <Link href="/kennisbank/wat-is-ro-water" className="underline hover:text-ink">RO-water</Link>, of bekijk de <Link href="/uitleg" className="underline hover:text-ink">specificaties van ons systeem</Link>.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Het prijsverschil met een simpel filter zit hem dan ook niet in willekeur — een omgekeerde osmose filter kost meer om te bouwen en installeren juist omdát het membraan zoveel fijner filtert. Voor wie alleen de smaak wil verbeteren is een koolstoffilter genoeg; voor wie ook PFAS, medicijnresten en microplastics kwijt wil, is dit tot nu toe de enige betrouwbare techniek voor thuisgebruik.
             </p>
           </div>
         </section>
