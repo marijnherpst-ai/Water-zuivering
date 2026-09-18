@@ -9,7 +9,7 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 export const metadata = {
   alternates: { canonical: '/waterzuiveraar-drinkwater' },
   title: 'Waterzuiveraar drinkwater — Water-zuivering',
-  description: 'Een waterzuiveraar voor drinkwater verwijdert PFAS, medicijnresten en microplastics uit je kraanwater. Extra zekerheid voor het water dat je gezin drinkt.',
+  description: 'Waterzuiveraar drinkwater: verwijdert PFAS, medicijnresten en microplastics uit je kraanwater. Extra zekerheid voor het water dat je gezin drinkt.',
 };
 
 const STOFFEN = [

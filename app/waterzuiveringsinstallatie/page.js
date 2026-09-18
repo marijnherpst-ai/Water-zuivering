@@ -9,7 +9,7 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 export const metadata = {
   alternates: { canonical: '/waterzuiveringsinstallatie' },
   title: 'Waterzuiveringsinstallatie drinkwater — Water-zuivering',
-  description: 'Een waterzuiveringsinstallatie voor drinkwater vakkundig laten aansluiten: het proces, de kosten en de garantie, stap voor stap uitgelegd.',
+  description: 'Waterzuiveringsinstallatie drinkwater vakkundig laten aansluiten: het proces, de kosten en de garantie, stap voor stap uitgelegd.',
 };
 
 const PROCES = [
@@ -59,7 +59,7 @@ export default function Page() {
                 Een waterzuiveringsinstallatie die in één dag goed staat — en zo blijft
               </h1>
               <p className="mt-5 text-dim text-lg">
-                Van adviesgesprek tot werkende <strong className="text-ink">waterzuiveringsinstallatie voor drinkwater</strong>: bij ons is het geen losse aankoop die je zelf moet uitzoeken, maar een compleet, vakkundig geregeld traject.
+                Van adviesgesprek tot werkende <strong className="text-ink">waterzuiveringsinstallatie drinkwater</strong>: bij ons is het geen losse aankoop die je zelf moet uitzoeken, maar een compleet, vakkundig geregeld traject.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-3.5 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">
