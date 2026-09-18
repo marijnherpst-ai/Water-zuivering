@@ -89,6 +89,13 @@ const ARTICLES = [
     title: 'Waterzuiveraar laten installeren: hoe gaat dat?',
     excerpt: 'Van afspraak tot zuiver water, stap voor stap — meestal binnen één dag geregeld.',
   },
+  {
+    href: '/kennisbank/beste-waterfilter-voor-thuis',
+    image: '/assets/img/glas-water.webp',
+    category: 'Koopgids',
+    title: 'Beste waterfilter voor thuis: vergelijking 2026',
+    excerpt: 'Waterfilterkan, kraanfilter of osmosesysteem — eerlijk vergeleken op filtratie, gemak en kosten.',
+  },
 ];
 
 export default function KennisbankPage() {
