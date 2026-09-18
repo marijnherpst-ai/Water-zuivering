@@ -9,8 +9,8 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/slechtste-kraanwater-nederland' },
-  title: 'Is er "slechtste kraanwater" in Nederland? De feiten — Water-zuivering',
-  description: 'Verschillen regio-kraanwater in Nederland echt zo sterk in kwaliteit? We zetten de feiten op een rij, los van broodje-aap-verhalen.',
+  title: 'Slechtste kraanwater Nederland? De feiten — Water-zuivering',
+  description: 'Bestaat het slechtste kraanwater van Nederland echt, of is het een broodje-aap-verhaal? We zetten de feiten op een rij.',
 };
 
 const OORZAKEN = [
@@ -18,6 +18,12 @@ const OORZAKEN = [
   ['Mineraalgehalte', 'Hoe meer opgeloste mineralen, hoe "voller" het water smaakt — dit is een regionaal bodemkenmerk, geen kwaliteitsverschil.'],
   ['Leidingnet', 'Oudere leidingen kunnen invloed hebben op smaak of kleur (zoals tijdelijk wat troebel water na werkzaamheden), zonder dat dit een veiligheidsrisico is.'],
   ['Lokale meldingen', 'Een incidentele storing of kookwateradvies kan tijdelijk voor onrust zorgen, maar zegt niets over de structurele kwaliteit van een regio.'],
+];
+
+const MYTHES = [
+  ['"Grote steden hebben slechter water"', 'Onterecht — stedelijk water wordt net zo streng getest als landelijk water. Verschillen in smaak komen door de bron, niet door de locatie op zich.'],
+  ['"Ouder huis betekent slechter kraanwater"', 'Gedeeltelijk waar voor de laatste meters: oude binnenleidingen (bijv. lood in zeer oude woningen) kunnen lokaal invloed hebben, ook al is het water bij binnenkomst schoon.'],
+  ['"Kustregio\'s hebben zouter water"', 'Niet direct — drinkwaterbedrijven zuiveren en ontzilten waar nodig voor het bij de kraan komt, ongeacht de regio.'],
 ];
 
 const FAQ = [
@@ -54,14 +60,14 @@ export default function Page() {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Is er "slechtste kraanwater" in Nederland?</h1>
-            <p className="mt-5 text-dim text-lg">Er circuleren regelmatig verhalen over regio's met zogenaamd "slecht" kraanwater. Klopt dat, of is het een fabeltje?</p>
+            <p className="mt-5 text-dim text-lg">Er circuleren regelmatig verhalen over het <strong className="text-ink">slechtste kraanwater van Nederland</strong> — welke regio's dat zouden zijn, en waarom. Klopt dat, of is het een fabeltje?</p>
           </div>
         </section>
 
         <section className="relative bg-surface border-y border-edge overflow-hidden">
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-              <Image src="/assets/img/een-kraan.jpg" alt="Kraanwater uit een gewone Nederlandse keukenkraan" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+              <Image src="/assets/img/een-kraan.jpg" alt="Zogenaamd slechtste kraanwater van Nederland: gewoon kraanwater uit een Nederlandse keukenkraan" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
             <div>
               <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waarom het verschil niet in veiligheid zit</h2>
@@ -102,6 +108,23 @@ export default function Page() {
         </section>
 
         <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Drie hardnekkige mythes over slecht kraanwater</h2>
+            <div className="mt-6 space-y-4">
+              {MYTHES.map(([titel, uitleg]) => (
+                <div key={titel} className="reveal flex items-start gap-3">
+                  <svg className="shrink-0 mt-1" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#5B6472" strokeWidth="2" strokeLinecap="round" /></svg>
+                  <div>
+                    <p className="font-semibold text-ink text-sm">{titel}</p>
+                    <p className="mt-1 text-sm text-dim leading-relaxed">{uitleg}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <div className="text-center">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>

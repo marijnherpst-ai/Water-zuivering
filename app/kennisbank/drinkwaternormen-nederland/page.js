@@ -9,7 +9,7 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/drinkwaternormen-nederland' },
-  title: 'Drinkwaternormen in Nederland: wat wordt er gecontroleerd? — Water-zuivering',
+  title: 'Drinkwaternormen Nederland: wat wordt getest? — Water-zuivering',
   description: 'Nederlandse drinkwaternormen zijn wettelijk vastgelegd in de Drinkwaterwet. Wat wordt er precies gecontroleerd, en wat valt daar niet onder?',
 };
 
@@ -18,6 +18,13 @@ const BETROKKENEN = [
   ['Inspectie Leefomgeving en Transport (ILT)', 'Houdt toezicht op naleving van de Drinkwaterwet en kan ingrijpen bij overtredingen.'],
   ['RIVM', 'Doet onderzoek naar drinkwaterkwaliteit en adviseert over nieuwe of aangepaste normen, bijvoorbeeld voor PFAS.'],
   ['Vewin', 'De brancheorganisatie van de Nederlandse drinkwaterbedrijven, die ook meedenkt over toekomstige regelgeving.'],
+];
+
+const NORMEN = [
+  ['Microbiologisch', 'Grenswaarden voor bacteriën zoals E. coli en enterokokken — kraanwater mag hier vrijwel geheel vrij van zijn.'],
+  ['Chemisch', 'Grenswaarden voor onder meer lood, nitraat, pesticiden en een deel van de PFAS-varianten.'],
+  ['Esthetisch', 'Normen voor smaak, geur, kleur en troebelheid — niet gevaarlijk, maar wel merkbaar voor gebruikers.'],
+  ['Radioactiviteit', 'Beperkte, zeer lage grenswaarden voor van nature voorkomende radioactieve stoffen in grondwater.'],
 ];
 
 const FAQ = [
@@ -55,7 +62,7 @@ export default function Page() {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Drinkwaternormen in Nederland: wat wordt er gecontroleerd?</h1>
-            <p className="mt-5 text-dim text-lg">Nederlands kraanwater behoort tot het best gecontroleerde ter wereld. Maar wat houdt die controle precies in?</p>
+            <p className="mt-5 text-dim text-lg">De <strong className="text-ink">drinkwaternormen in Nederland</strong> behoren tot de strengste ter wereld. Maar wat houden die normen precies in, en wat controleren ze?</p>
           </div>
         </section>
 
@@ -100,6 +107,33 @@ export default function Page() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Vier categorieën drinkwaternormen</h2>
+            <p className="mt-4 text-dim leading-relaxed">De <strong className="text-ink">drinkwaternormen in Nederland</strong> zijn onderverdeeld in categorieën, elk met hun eigen doel:</p>
+            <div className="mt-6 grid sm:grid-cols-2 gap-4">
+              {NORMEN.map(([titel, uitleg]) => (
+                <div key={titel} className="reveal rounded-2xl card p-5">
+                  <p className="font-display font-bold text-ink text-sm">{titel}</p>
+                  <p className="mt-1.5 text-sm text-dim leading-relaxed">{uitleg}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoe verhoudt Nederland zich tot andere EU-landen?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              De Nederlandse <strong className="text-ink">drinkwaternormen</strong> zijn gebaseerd op de Europese Drinkwaterrichtlijn, die voor alle EU-lidstaten een gezamenlijke ondergrens vastlegt. Nederland behoort binnen die richtlijn tot de strengere landen: de nationale grenswaarden liggen op meerdere punten (waaronder bepaalde PFAS-varianten) lager dan het Europese minimum, en de controlefrequentie ligt hoger dan wettelijk verplicht.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Dat betekent niet dat Nederlands kraanwater vrij is van elk spoor van elke stof — het betekent dat wat wél wordt getest, streng wordt bewaakt. Voor stoffen die nog buiten de norm vallen, zoals veel medicijnresten, is eigen filtratie de enige manier om ook die sporen te verwijderen.
+            </p>
           </div>
         </section>
 

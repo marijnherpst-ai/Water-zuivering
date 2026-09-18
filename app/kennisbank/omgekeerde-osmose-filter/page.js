@@ -9,9 +9,15 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/omgekeerde-osmose-filter' },
-  title: 'Omgekeerde osmose filter: hoe werkt het membraan? — Water-zuivering',
-  description: 'Een omgekeerde osmose filter werkt met een membraan van 0,0001 micron. Uitleg over hoe dat membraan werkt en wat het wel en niet tegenhoudt.',
+  title: 'Omgekeerde osmose filter: hoe werkt het? — Water-zuivering',
+  description: 'Een omgekeerde osmose filter werkt met een membraan van 0,0001 micron. Uitleg hoe het membraan werkt en wat het tegenhoudt.',
 };
+
+const SIGNALEN = [
+  ['Water smaakt weer anders', 'Als de smaak terugkeert naar hoe het kraanwater normaal smaakt, is het membraan waarschijnlijk verzadigd en aan vervanging toe.'],
+  ['Duidelijk tragere doorstroming', 'Een verstopt of versleten membraan laat minder water door — check eerst het voorfilter, dat verstopt meestal als eerste.'],
+  ['Ongewoon veel afvalwater', 'Een sterk gestegen afvalwaterratio kan wijzen op een membraan dat aan het einde van zijn levensduur zit.'],
+];
 
 const ONDERDELEN = [
   ['Voorfilter (PPC)', 'Vangt zand, roest en grof vuil op, zodat het membraan zelf niet snel verstopt raakt. Vervanging: elke 6-12 maanden.'],
@@ -55,7 +61,7 @@ export default function Page() {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Omgekeerde osmose filter: hoe werkt het membraan?</h1>
-            <p className="mt-5 text-dim text-lg">Het hart van elk osmosesysteem is één simpel maar krachtig onderdeel: een membraan met microscopisch kleine poriën.</p>
+            <p className="mt-5 text-dim text-lg">Het hart van elke <strong className="text-ink">omgekeerde osmose filter</strong> is één simpel maar krachtig onderdeel: een membraan met microscopisch kleine poriën.</p>
           </div>
         </section>
 
@@ -107,6 +113,24 @@ export default function Page() {
         </section>
 
         <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wanneer is je omgekeerde osmose filter aan vervanging toe?</h2>
+            <p className="mt-4 text-dim leading-relaxed">Naast het vaste vervangingsschema zijn er ook praktische signalen dat je omgekeerde osmose filter aandacht nodig heeft:</p>
+            <div className="mt-6 space-y-4">
+              {SIGNALEN.map(([titel, uitleg]) => (
+                <div key={titel} className="reveal flex items-start gap-3">
+                  <svg className="shrink-0 mt-1" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 8v5M12 16h.01" stroke="#B91C1C" strokeWidth="2" strokeLinecap="round" /><circle cx="12" cy="12" r="9" stroke="#B91C1C" strokeWidth="1.7" /></svg>
+                  <div>
+                    <p className="font-semibold text-ink text-sm">{titel}</p>
+                    <p className="mt-1 text-sm text-dim leading-relaxed">{uitleg}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <div className="text-center">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>

@@ -10,7 +10,7 @@ import FaqSchema from '@/components/FaqSchema';
 export const metadata = {
   alternates: { canonical: '/kennisbank/wat-is-ro-water' },
   title: 'Wat is RO-water en hoe werkt het? — Water-zuivering',
-  description: 'RO-water (reverse osmosis water) is water dat door een omgekeerde-osmose-membraan is gefilterd. Uitleg over hoe het werkt en wat het uit je water haalt.',
+  description: 'RO-water is water gefilterd via omgekeerde osmose. Uitleg over hoe RO-water werkt en wat het uit je kraanwater haalt.',
 };
 
 const STAPPEN = [
@@ -62,14 +62,14 @@ export default function Page() {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Wat is RO-water en hoe werkt het?</h1>
-            <p className="mt-5 text-dim text-lg"><strong className="text-ink">RO-water</strong> — kort voor "reverse osmosis water" — is water dat is gezuiverd via omgekeerde osmose. We leggen uit wat dat precies inhoudt.</p>
+            <p className="mt-5 text-dim text-lg"><strong className="text-ink">RO-water</strong> — kort voor "reverse osmosis water" — is water dat is gezuiverd via omgekeerde osmose. In dit artikel leggen we uit wat <strong className="text-ink">RO-water</strong> precies is, hoe RO-water ontstaat en waar je het voor gebruikt.</p>
           </div>
         </section>
 
         <section className="relative bg-surface border-y border-edge overflow-hidden">
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-              <Image src="/assets/img/filters-closeup.png" alt="RO-membraan en filtertrappen van een reverse osmosis systeem" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+              <Image src="/assets/img/filters-closeup.png" alt="RO-water filtratieproces: het RO-membraan en filtertrappen van dichtbij" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
             <div>
               <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Drie stappen naar RO-water</h2>
@@ -89,10 +89,10 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waarom zou je RO-water willen?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Nederlands kraanwater voldoet aan strenge normen, maar een RO-systeem gaat een stap verder: het membraan is fijn genoeg om ook sporen van PFAS, medicijnresten en microplastics tegen te houden — stoffen die niet standaard uit drinkwater worden gefilterd. Het resultaat is water dat merkbaar zuiverder smaakt, zonder chloorlucht of bijsmaak.
+              Nederlands kraanwater voldoet aan strenge normen, maar <strong className="text-ink">RO-water</strong> gaat een stap verder: het membraan is fijn genoeg om ook sporen van PFAS, medicijnresten en microplastics tegen te houden — stoffen die niet standaard uit drinkwater worden gefilterd. Het resultaat is water dat merkbaar zuiverder smaakt, zonder chloorlucht of bijsmaak.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Thuis komt RO-water uit een compact systeem onder je aanrecht, direct via je eigen kraan — geen aparte machine of wachttijd. Benieuwd hoe dat er in de praktijk uitziet? Bekijk onze <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem-pagina</Link> of lees meer over <Link href="/kennisbank/omgekeerde-osmose-filter" className="underline hover:text-ink">hoe het membraan precies werkt</Link>.
+              Thuis komt <strong className="text-ink">RO-water</strong> uit een compact systeem onder je aanrecht, direct via je eigen kraan — geen aparte machine of wachttijd. Benieuwd hoe dat er in de praktijk uitziet? Bekijk onze <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem-pagina</Link> of lees meer over <Link href="/kennisbank/omgekeerde-osmose-filter" className="underline hover:text-ink">hoe het membraan precies werkt</Link>.
             </p>
           </div>
         </section>
