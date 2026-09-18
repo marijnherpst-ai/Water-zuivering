@@ -10,7 +10,7 @@ export const metadata = {
   alternates: { canonical: '/kennisbank/kraanwater-vs-flessenwater' },
   title: 'Kraanwater vs. flessenwater: wat is beter? — Water-zuivering',
   description:
-    'Kraanwater vs. flessenwater vergeleken op kosten, gemak en milieu-impact — met een eerlijke conclusie.',
+    'Kraanwater vs. flessenwater vergeleken op kosten, smaak, gemak en milieu-impact — met een eerlijke conclusie over wat voor jou het beste werkt.',
 };
 
 export default function Page() {
