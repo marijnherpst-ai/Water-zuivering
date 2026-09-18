@@ -20,10 +20,18 @@ const STAPPEN = [
   ['Instellen en testen', 'De waterhardheid en het regeneratieschema worden ingesteld op basis van jullie waterverbruik.'],
 ];
 
+const PLEKKEN = [
+  ['Meterkast', 'De meest gekozen plek: direct na de watermeter, zodat al het water in huis wordt onthard vanaf één punt.'],
+  ['Kelder of berging', 'Praktisch als je meterkast te klein is, mits er een leiding vanaf de hoofdaansluiting naartoe kan.'],
+  ['Onder de gootsteen', 'Kan, maar dan wordt alleen het water op die ene plek onthard, niet in het hele huis.'],
+];
+
 const FAQ = [
   ['Kan ik een waterontharder zelf aansluiten?', 'Technisch kan het, maar een verkeerde aansluiting kan lekkage of een onjuiste werking veroorzaken — een vakkundige installatie is aan te raden.'],
   ['Heb ik altijd een afvoer nodig om een waterontharder aan te sluiten?', 'Voor een klassieke ionenwisselaar-ontharder wel, vanwege het periodieke doorspoelen tijdens regeneratie.'],
   ['Hoe lang duurt het aansluiten van een waterontharder?', 'Bij een professionele installatie meestal een dagdeel, afhankelijk van de complexiteit van je leidingwerk.'],
+  ['Waar in huis sluit je een waterontharder het best aan?', 'Bij voorkeur direct na de watermeter, zodat het hele huis profiteert van zachter water — niet alleen één kraan.'],
+  ['Wat kost het om een waterontharder te laten aansluiten?', 'De installatiekosten hangen af van de complexiteit van je leidingwerk en of er al een afvoer in de buurt is. Vraag dit na bij een installateur voor een prijs op maat.'],
 ];
 
 export default function Page() {
@@ -81,6 +89,23 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Een ontharder pakt kalk aan, maar niet chloor, PFAS, medicijnresten of microplastics — daarvoor is een apart filtersysteem nodig. Sommige huishoudens combineren beide: eerst een ontharder tegen kalk, daarna een osmosesysteem voor écht zuiver drinkwater. Lees meer over hoe zo'n systeem werkt op onze <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem-pagina</Link>.
             </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waar in huis plaats je hem het best?</h2>
+            <div className="mt-6 space-y-4">
+              {PLEKKEN.map(([titel, uitleg]) => (
+                <div key={titel} className="reveal flex items-start gap-3">
+                  <svg className="shrink-0 mt-1" width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#EDA71B" strokeWidth="1.7" /><path d="M12 7v5l3 3" stroke="#EDA71B" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                  <div>
+                    <p className="font-semibold text-ink text-sm">{titel}</p>
+                    <p className="mt-1 text-sm text-dim leading-relaxed">{uitleg}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

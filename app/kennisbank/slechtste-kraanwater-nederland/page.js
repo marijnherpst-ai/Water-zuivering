@@ -13,10 +13,19 @@ export const metadata = {
   description: 'Verschillen regio-kraanwater in Nederland echt zo sterk in kwaliteit? We zetten de feiten op een rij, los van broodje-aap-verhalen.',
 };
 
+const OORZAKEN = [
+  ['Waterbron', 'Grondwater smaakt doorgaans anders (vaak zachter) dan oppervlaktewater, dat uit rivieren wordt gewonnen en intensiever behandeld moet worden.'],
+  ['Mineraalgehalte', 'Hoe meer opgeloste mineralen, hoe "voller" het water smaakt — dit is een regionaal bodemkenmerk, geen kwaliteitsverschil.'],
+  ['Leidingnet', 'Oudere leidingen kunnen invloed hebben op smaak of kleur (zoals tijdelijk wat troebel water na werkzaamheden), zonder dat dit een veiligheidsrisico is.'],
+  ['Lokale meldingen', 'Een incidentele storing of kookwateradvies kan tijdelijk voor onrust zorgen, maar zegt niets over de structurele kwaliteit van een regio.'],
+];
+
 const FAQ = [
   ['Is er een regio met echt slecht kraanwater in Nederland?', 'Nee, alle Nederlandse drinkwaterbedrijven moeten voldoen aan dezelfde wettelijke normen — er is geen regio waar kraanwater structureel onveilig zou zijn.'],
   ['Waarom smaakt kraanwater dan per regio anders?', 'Smaakverschillen ontstaan vooral door de waterbron (grondwater vs. oppervlaktewater) en de hoeveelheid mineralen, niet door een verschil in veiligheid.'],
   ['Komen incidenten met kraanwater vaak voor?', 'Incidenteel gebeurt er iets (zoals een lokale storing of kookwateradvies), maar dat wordt snel gecommuniceerd en verholpen — het is geen teken van structureel slechte kwaliteit.'],
+  ['Hoe kom ik erachter waarom mijn kraanwater een bepaalde smaak heeft?', 'Je eigen waterbedrijf publiceert meestal informatie over de bron en samenstelling van het water in jouw regio — vaak terug te vinden op hun website.'],
+  ['Is troebel water na werkzaamheden gevaarlijk?', 'Meestal niet — het komt vaak door lucht of ijzerdeeltjes die loskomen tijdens reparaties. Laat de kraan even doorlopen; als het niet wegtrekt, neem dan contact op met je waterbedrijf.'],
 ];
 
 export default function Page() {
@@ -75,6 +84,20 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Twijfel je over de kwaliteit in jouw huis specifiek? Check eerst of er iets aan de hand is via onze <Link href="/storingen" className="underline hover:text-ink">storingen-check</Link>, of lees meer over <Link href="/kennisbank/is-kraanwater-veilig" className="underline hover:text-ink">of Nederlands kraanwater veilig is</Link>.
             </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waar komen de verschillen dan wél vandaan?</h2>
+            <div className="mt-6 grid sm:grid-cols-2 gap-4">
+              {OORZAKEN.map(([titel, uitleg]) => (
+                <div key={titel} className="reveal rounded-2xl card p-5">
+                  <p className="font-display font-bold text-ink text-sm">{titel}</p>
+                  <p className="mt-1.5 text-sm text-dim leading-relaxed">{uitleg}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

@@ -17,6 +17,8 @@ const FAQ = [
   ['Kan ik zelf osmosewater maken zonder apparaat?', 'Nee. Osmose vereist druk en een membraan met microscopisch kleine poriën — dat proces gaat niet zonder een speciaal filtersysteem.'],
   ['Is zelfgemaakt osmosewater net zo zuiver als gekocht water?', 'Met een goed onderhouden systeem thuis is de zuiverheid vergelijkbaar met, en vaak beter dan, veel flessenwater — en je hoeft niets te vervoeren of op te slaan.'],
   ['Hoeveel osmosewater kan ik per dag maken?', 'Een systeem onder het aanrecht levert continu water zolang de kraan open staat — er is geen dagelijkse limiet zoals bij een filterkan.'],
+  ['Kost het maken van osmosewater veel extra water?', 'Er ontstaat wat afvalwater tijdens het proces, dat de opgevangen stoffen wegspoelt. Moderne systemen zijn hier zuiniger in dan oudere generaties.'],
+  ['Kan ik osmosewater maken gebruiken voor mijn aquarium of planten?', 'Ja, dat gebeurt vaak — voor aquaria omdat je dan volledige controle hebt over de waterwaarden, voor planten hangt het af van de plantensoort of dit wenselijk is.'],
 ];
 
 export default function Page() {
@@ -56,7 +58,7 @@ export default function Page() {
             </div>
             <div>
               <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat is er eigenlijk voor nodig?</h2>
-              <p className="mt-4 text-dim leading-relaxed">Osmosewater maken je met een omgekeerde-osmose-systeem: kraanwater wordt onder lichte druk door een membraan met poriën van 0,0001 micron geperst. Bacteriën, zware metalen, PFAS en microplastics blijven achter — er komt alleen zuiver water doorheen.</p>
+              <p className="mt-4 text-dim leading-relaxed">Osmosewater maak je met een omgekeerde-osmose-systeem: kraanwater wordt onder lichte druk door een membraan met poriën van 0,0001 micron geperst. Bacteriën, zware metalen, PFAS en microplastics blijven achter — er komt alleen zuiver water doorheen.</p>
               <p className="mt-4 text-dim leading-relaxed">Thuis betekent dat: een compact systeem onder je aanrecht, aangesloten op de waterleiding. Geen losse machine die je moet bedienen, geen wachten — gewoon de kraan opendraaien.</p>
             </div>
           </div>
@@ -67,6 +69,15 @@ export default function Page() {
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Is het de moeite waard?</h2>
             <p className="mt-4 text-dim leading-relaxed">Vergeleken met flessenwater of een reisfilter is thuis osmosewater maken op termijn goedkoper en gemakkelijker: geen sjouwen, geen plastic, en onbeperkt zuiver water zodra het systeem is aangesloten. De belangrijkste afweging is de eenmalige aanschaf- en installatiekost tegenover wat je nu al uitgeeft aan flessenwater.</p>
             <p className="mt-4 text-dim leading-relaxed">Meer weten over hoe zo'n systeem er precies uitziet? Bekijk onze <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem-pagina</Link> of lees over <Link href="/waterzuivering-voor-thuis" className="underline hover:text-ink">waterzuivering voor thuis</Link>.</p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Zelf maken vs. flessenwater kopen</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Flessenwater kopen betekent elke keer opnieuw betalen, sjouwen en plastic weggooien. Osmosewater maken thuis is een eenmalige investering die zich terugbetaalt: geen wekelijkse boodschap meer, geen lege flessen in de kast, en altijd voorraad zonder eraan te hoeven denken. Reken zelf uit wat dat voor jouw huishouden betekent via onze <Link href="/besparing" className="underline hover:text-ink">besparingscalculator</Link>.
+            </p>
           </div>
         </section>
 

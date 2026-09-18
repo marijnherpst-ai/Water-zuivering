@@ -19,10 +19,19 @@ const STAPPEN = [
   ['Regeneratie', 'Zodra de harskorrels "vol" zitten, spoelt het systeem zichzelf door met een zoutoplossing, zodat het weer klaar is voor de volgende cyclus.'],
 ];
 
+const HARDHEID = [
+  ['Zacht', '0-7 °dH', 'Ontharder meestal niet nodig'],
+  ['Matig hard', '7-14 °dH', 'Grootste deel van Nederland'],
+  ['Hard', '14-21 °dH', 'Ontharder kan merkbaar verschil maken'],
+  ['Zeer hard', '21+ °dH', 'Ontharder sterk aan te raden'],
+];
+
 const FAQ = [
   ['Hoe vaak regenereert een waterontharder?', 'Dat hangt af van je waterverbruik en de hardheid van het water, meestal elke paar dagen, automatisch en meestal in de nacht.'],
   ['Maakt een waterontharder het water zout?', 'Nee, de hoeveelheid natrium die aan het water wordt toegevoegd is minimaal en niet merkbaar in smaak.'],
   ['Is onthard water veilig om te drinken?', 'Ja, al geven sommige mensen de voorkeur aan een aparte onthardingsloze kraan voor drink- en kookwater vanwege de lichte natriumtoename.'],
+  ['Hoe weet ik of mijn water hard is?', 'Je waterbedrijf publiceert de gemiddelde waterhardheid voor jouw regio (uitgedrukt in °dH). Ook kalkaanslag op kranen en in het koffiezetapparaat is een praktische indicator.'],
+  ['Vanaf welke hardheid is een waterontharder de moeite waard?', 'Bij een hardheid boven ongeveer 14 °dH merk je doorgaans duidelijk verschil in kalkaanslag en wasgoed — daaronder is het vooral een kwestie van comfortvoorkeur.'],
 ];
 
 export default function Page() {
@@ -83,6 +92,34 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Meer weten over de voor- en nadelen? Lees ons artikel <Link href="/kennisbank/waterontharder-voor-en-nadelen" className="underline hover:text-ink">waterontharder: voor- en nadelen op een rij</Link>.
             </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoe weet je of je water hard is?</h2>
+            <p className="mt-4 text-dim leading-relaxed">Waterhardheid wordt uitgedrukt in Duitse hardheidsgraden (°dH). Een globaal overzicht:</p>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-bg">
+                  <tr>
+                    <th className="px-4 py-3 font-display font-bold">Categorie</th>
+                    <th className="px-4 py-3 font-display font-bold">Hardheid</th>
+                    <th className="px-4 py-3 font-display font-bold">Advies</th>
+                  </tr>
+                </thead>
+                <tbody className="text-dim">
+                  {HARDHEID.map(([cat, waarde, advies]) => (
+                    <tr key={cat} className="border-t border-edge">
+                      <td className="px-4 py-3 font-semibold text-ink">{cat}</td>
+                      <td className="px-4 py-3">{waarde}</td>
+                      <td className="px-4 py-3">{advies}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 text-xs text-dim">De exacte hardheid verschilt per waterbedrijf en wordt door hen gepubliceerd.</p>
           </div>
         </section>
 

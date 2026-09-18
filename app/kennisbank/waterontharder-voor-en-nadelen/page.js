@@ -27,11 +27,20 @@ const NADELEN = [
   'Vraagt ruimte en een wateraansluiting met afvoer',
 ];
 
+const KOSTEN = [
+  ['Aanschaf', 'Eenmalige kosten voor het apparaat en de installatie, sterk afhankelijk van merk en capaciteit.'],
+  ['Onthardingszout', 'Doorlopende kosten, meestal enkele tientallen euro’s per jaar bij gemiddeld gebruik.'],
+  ['Waterverbruik regeneratie', 'Het periodieke doorspoelen gebruikt wat extra water — bij moderne systemen relatief beperkt.'],
+  ['Onderhoud', 'Meestal beperkt tot af en toe zout bijvullen en een jaarlijkse controle.'],
+];
+
 const FAQ = [
   ['Wat is het belangrijkste nadeel van een waterontharder?', 'Een waterontharder lost alleen kalk op — het heeft geen effect op chloor, PFAS, medicijnresten of microplastics in je drinkwater.'],
   ['Is een waterontharder de moeite waard ondanks de nadelen?', 'In gebieden met hard water wegen de voordelen (minder kalkaanslag, langere levensduur van apparaten) voor veel huishoudens op tegen het onderhoud en de zoutkosten.'],
   ['Kan ik een waterontharder combineren met een waterzuiveraar?', 'Ja, dat gebeurt vaak. De ontharder pakt de kalk aan, terwijl een osmosesysteem daarna nog PFAS, medicijnresten en microplastics uit je drinkwater filtert.'],
   ['Heeft een waterontharder ook voordelen voor de gezondheid?', 'Direct niet — het effect zit vooral in comfort (huid, haar, wasgoed) en het voorkomen van kalkschade aan apparatuur, niet in drinkwaterkwaliteit.'],
+  ['Wat kost een waterontharder op jaarbasis?', 'Naast de eenmalige aanschaf reken je vooral op de kosten van onthardingszout — meestal enkele tientallen euro’s per jaar, afhankelijk van waterverbruik en waterhardheid.'],
+  ['Zijn er goedkopere alternatieven voor een klassieke waterontharder?', 'Magnetische of elektronische systemen zijn goedkoper in aanschaf en onderhoud, maar verwijderen de kalk niet echt — ze veranderen alleen de kristalstructuur. Lees meer in ons artikel over waterontharders zonder afvoer.'],
 ];
 
 export default function Page() {
@@ -97,6 +106,21 @@ export default function Page() {
             <p className="mt-6 text-dim leading-relaxed">
               Het belangrijkste om te onthouden: een waterontharder en een waterzuiveraar lossen verschillende problemen op. Wil je ook van chloor, PFAS, medicijnresten en microplastics af, dan heb je naast (of in plaats van) een ontharder een filtersysteem nodig. Lees het volledige verschil in ons artikel <Link href="/kennisbank/waterontharder-vs-waterzuiveraar" className="underline hover:text-ink">waterontharder of waterzuiveraar</Link>.
             </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat kost een waterontharder in de praktijk?</h2>
+            <p className="mt-4 text-dim leading-relaxed">Naast de nadelen die we hierboven noemden, is het goed om de kosten concreet te maken. Vier kostenposten om rekening mee te houden:</p>
+            <div className="mt-6 grid sm:grid-cols-2 gap-4">
+              {KOSTEN.map(([titel, uitleg]) => (
+                <div key={titel} className="reveal rounded-2xl card p-5">
+                  <p className="font-display font-bold text-ink text-sm">{titel}</p>
+                  <p className="mt-1.5 text-sm text-dim leading-relaxed">{uitleg}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

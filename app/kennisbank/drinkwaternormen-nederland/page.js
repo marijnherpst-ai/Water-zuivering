@@ -13,11 +13,20 @@ export const metadata = {
   description: 'Nederlandse drinkwaternormen zijn wettelijk vastgelegd in de Drinkwaterwet. Wat wordt er precies gecontroleerd, en wat valt daar niet onder?',
 };
 
+const BETROKKENEN = [
+  ['Drinkwaterbedrijven', 'Voeren de wettelijk verplichte testen uit, op meerdere plekken in het leidingnet, en rapporteren de resultaten.'],
+  ['Inspectie Leefomgeving en Transport (ILT)', 'Houdt toezicht op naleving van de Drinkwaterwet en kan ingrijpen bij overtredingen.'],
+  ['RIVM', 'Doet onderzoek naar drinkwaterkwaliteit en adviseert over nieuwe of aangepaste normen, bijvoorbeeld voor PFAS.'],
+  ['Vewin', 'De brancheorganisatie van de Nederlandse drinkwaterbedrijven, die ook meedenkt over toekomstige regelgeving.'],
+];
+
 const FAQ = [
   ['Wie controleert de drinkwaternormen in Nederland?', 'Drinkwaterbedrijven zijn wettelijk verplicht regelmatig te testen op honderden parameters, onder toezicht van de Inspectie Leefomgeving en Transport (ILT).'],
   ['Vallen PFAS onder de drinkwaternormen?', 'Er gelden voor een deel van de PFAS-stoffen inmiddels grenswaarden, maar niet voor alle varianten — en de norm ligt hoger dan wat sommige mensen wenselijk vinden voor langdurige blootstelling.'],
   ['Zijn medicijnresten opgenomen in de normen?', 'Nee, voor de meeste medicijnresten en microplastics bestaan (nog) geen wettelijke grenswaarden in drinkwater, ook al worden ze soms wel in sporen aangetroffen.'],
   ['Betekent voldoen aan de norm dat water perfect zuiver is?', 'Het betekent dat het water veilig is volgens de huidige wetenschappelijke inzichten — niet dat er helemaal geen sporen van stoffen meer in zitten.'],
+  ['Hoe vaak wordt kraanwater in Nederland getest?', 'Drinkwaterbedrijven testen doorlopend, met een frequentie die afhangt van het type parameter — sommige stoffen worden dagelijks gecontroleerd, andere periodiek.'],
+  ['Worden de testresultaten openbaar gemaakt?', 'Ja, drinkwaterbedrijven publiceren jaarlijkse kwaliteitsrapportages, vaak ook regionaal uitgesplitst.'],
 ];
 
 export default function Page() {
@@ -76,6 +85,21 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Wie liever een extra stap zet, doet dat met een filtersysteem thuis. Lees meer over <Link href="/kennisbank/pfas-in-kraanwater" className="underline hover:text-ink">PFAS in kraanwater</Link> of over <Link href="/waterzuivering-voor-thuis" className="underline hover:text-ink">waterzuivering voor thuis</Link>.
             </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wie is er verantwoordelijk?</h2>
+            <p className="mt-4 text-dim leading-relaxed">Meerdere partijen zijn betrokken bij het bewaken van de drinkwaterkwaliteit in Nederland:</p>
+            <div className="mt-6 grid sm:grid-cols-2 gap-4">
+              {BETROKKENEN.map(([titel, uitleg]) => (
+                <div key={titel} className="reveal rounded-2xl card p-5">
+                  <p className="font-display font-bold text-ink text-sm">{titel}</p>
+                  <p className="mt-1.5 text-sm text-dim leading-relaxed">{uitleg}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

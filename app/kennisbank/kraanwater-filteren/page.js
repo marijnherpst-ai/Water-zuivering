@@ -19,10 +19,19 @@ const OPTIES = [
   ['Waterzuiveraar onder de gootsteen (osmose)', 'De grondigste manier om kraanwater te filteren: verwijdert tot 99% van chloor, PFAS, medicijnresten en microplastics.'],
 ];
 
+const SIGNALEN = [
+  ['Chloorlucht of -smaak', 'Meestal volstaat een simpel koolstoffilter (kan, kraanfilter of het nafilter van een osmosesysteem) om dit merkbaar te verminderen.'],
+  ['Witte aanslag op kranen en in het koffiezetapparaat', 'Dit wijst op kalk — een waterontharder pakt dit aan, filteren alleen doet dit niet of nauwelijks.'],
+  ['Zorgen over PFAS of medicijnresten', 'Alleen een omgekeerde-osmose-membraan filtert deze stoffen effectief uit je kraanwater.'],
+  ['Troebel water na werkzaamheden', 'Vaak onschuldige lucht- of ijzerdeeltjes — laat de kraan even doorlopen. Check bij twijfel onze storingen-check voor actuele meldingen.'],
+];
+
 const FAQ = [
   ['Is kraanwater filteren in Nederland nodig?', 'Nederlands kraanwater voldoet aan strenge normen en is veilig om te drinken. Filteren is een extra stap voor wie ook sporen van PFAS, medicijnresten en microplastics kwijt wil.'],
   ['Wat is de snelste manier om kraanwater te filteren?', 'Een waterfilterkan werkt meteen zonder installatie, maar filtert het minst grondig. Voor snelheid én diepgang samen is een kraanfilter een tussenoptie.'],
   ['Welke manier van kraanwater filteren is het grondigst?', 'Een waterzuiveraar onder de gootsteen met omgekeerde osmose, omdat het membraan veel fijner filtert dan een kan of kraanfilter.'],
+  ['Ik ruik chloor — welke manier van kraanwater filteren helpt het snelst?', 'Elk filtertype met een koolstoffilter helpt tegen chloorsmaak, ook de goedkoopste waterfilterkan. Voor een structurele oplossing is een vast systeem prettiger dan steeds bijvullen.'],
+  ['Kan filteren ook de waterdruk beïnvloeden?', 'Een goed geïnstalleerd systeem heeft geen merkbaar effect op je waterdruk. Bij twijfel over oude leidingen is het verstandig dit bij installatie te laten checken.'],
 ];
 
 export default function Page() {
@@ -80,6 +89,24 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Zoek je een snelle, goedkope manier om de chloorsmaak kwijt te raken, dan volstaat een kan. Wil je écht af van sporenstoffen zonder gedoe met bijvullen, dan is een systeem onder de gootsteen de grondigste keuze. Een uitgebreide vergelijking, inclusief kosten en gemak, vind je in ons artikel <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">beste waterfilter voor thuis</Link>.
             </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Welk signaal wijst op welke oplossing?</h2>
+            <p className="mt-4 text-dim leading-relaxed">Kraanwater filteren begint met weten wat je precies wilt oplossen. Een paar veelvoorkomende signalen:</p>
+            <div className="mt-6 space-y-4">
+              {SIGNALEN.map(([titel, uitleg]) => (
+                <div key={titel} className="reveal flex items-start gap-3">
+                  <svg className="shrink-0 mt-1" width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#EDA71B" strokeWidth="1.7" /><path d="M12 7v5l3 3" stroke="#EDA71B" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                  <div>
+                    <p className="font-semibold text-ink text-sm">{titel}</p>
+                    <p className="mt-1 text-sm text-dim leading-relaxed">{uitleg}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

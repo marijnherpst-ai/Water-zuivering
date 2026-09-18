@@ -19,11 +19,21 @@ const STAPPEN = [
   ['Nafiltratie', 'Een laatste koolstoffilter haalt de allerlaatste smaakjes en geurtjes weg, voor helder, fris RO-water.'],
 ];
 
+const TOEPASSINGEN = [
+  ['Drinkwater', 'De meest voorkomende toepassing thuis: zuiver water rechtstreeks uit de kraan, zonder chloor, PFAS of microplastics.'],
+  ['Koken en koffie/thee zetten', 'Zonder chloorsmaak en met minder kalk proef je merkbaar verschil, ook in gerechten die je kookt.'],
+  ['Aquaria', 'Aquariumhouders gebruiken RO-water vaak om volledige controle te hebben over de waterwaarden, zonder verstorende stoffen uit kraanwater.'],
+  ['Strijkijzers en stoomapparaten', 'Kalkvrij water voorkomt kalkaanslag in het apparaat, wat de levensduur verlengt.'],
+];
+
 const FAQ = [
   ['Wat betekent RO in RO-water?', 'RO staat voor "Reverse Osmosis", oftewel omgekeerde osmose — de techniek waarbij water onder druk door een extreem fijn membraan wordt geperst.'],
   ['Is RO-water hetzelfde als osmosewater?', 'Ja, dit zijn twee namen voor hetzelfde proces en resultaat — RO-water is de Engelse term, osmosewater de Nederlandse.'],
   ['Is RO-water veilig om te drinken?', 'Ja. RO-water is juist extra gefilterd en verwijdert stoffen die in gewoon kraanwater nog kunnen voorkomen, zoals PFAS en medicijnresten.'],
   ['Haalt RO-water ook nuttige mineralen weg?', 'Een RO-membraan filtert zeer fijn en houdt ook een deel van de mineralen tegen. Dat is normaal gesproken geen probleem, omdat de meeste mineralen via voeding binnenkomen.'],
+  ['Is RO-water hetzelfde als gedistilleerd water?', 'Niet helemaal. Beide zijn zeer zuiver, maar gedistilleerd water wordt gemaakt door verdamping en condensatie, terwijl RO-water door een membraan wordt geperst — RO is energiezuiniger en sneller voor huishoudelijk gebruik.'],
+  ['Ontstaat er afvalwater bij het maken van RO-water?', 'Ja, een deel van het water dat door het membraan gaat, spoelt de opgevangen stoffen weg. Moderne systemen zijn hier steeds zuiniger in dan oudere generaties.'],
+  ['Kan ik RO-water gebruiken voor planten?', 'Ja, veel kamerplanten doen het goed met RO-water, al hebben sommige planten juist baat bij de mineralen in gewoon kraanwater — dat verschilt per plantensoort.'],
 ];
 
 export default function Page() {
@@ -84,6 +94,21 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Thuis komt RO-water uit een compact systeem onder je aanrecht, direct via je eigen kraan — geen aparte machine of wachttijd. Benieuwd hoe dat er in de praktijk uitziet? Bekijk onze <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem-pagina</Link> of lees meer over <Link href="/kennisbank/omgekeerde-osmose-filter" className="underline hover:text-ink">hoe het membraan precies werkt</Link>.
             </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waar wordt RO-water nog meer voor gebruikt?</h2>
+            <p className="mt-4 text-dim leading-relaxed">Drinkwater is de meest voorkomende toepassing, maar niet de enige. Een paar voorbeelden:</p>
+            <div className="mt-6 grid sm:grid-cols-2 gap-4">
+              {TOEPASSINGEN.map(([titel, uitleg]) => (
+                <div key={titel} className="reveal rounded-2xl card p-5">
+                  <p className="font-display font-bold text-ink text-sm">{titel}</p>
+                  <p className="mt-1.5 text-sm text-dim leading-relaxed">{uitleg}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

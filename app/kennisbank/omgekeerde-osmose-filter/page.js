@@ -13,11 +13,20 @@ export const metadata = {
   description: 'Een omgekeerde osmose filter werkt met een membraan van 0,0001 micron. Uitleg over hoe dat membraan werkt en wat het wel en niet tegenhoudt.',
 };
 
+const ONDERDELEN = [
+  ['Voorfilter (PPC)', 'Vangt zand, roest en grof vuil op, zodat het membraan zelf niet snel verstopt raakt. Vervanging: elke 6-12 maanden.'],
+  ['RO-membraan', 'Het hart van het systeem — het fijne filtermateriaal zelf. Vervanging: elke 2-3 jaar.'],
+  ['Nafilter (CTO)', 'Actieve koolstof die de laatste smaakjes en geurtjes wegpolijst. Vervanging: elke 6-12 maanden.'],
+];
+
 const FAQ = [
   ['Hoe fijn is een omgekeerde osmose filter precies?', 'Het membraan heeft poriën van ongeveer 0,0001 micron — ter vergelijking, dat is ongeveer 500.000 keer fijner dan een mensenhaar.'],
   ['Wat houdt een omgekeerde osmose filter tegen?', 'Bacteriën, virussen, zware metalen zoals lood, en sporen van PFAS, medicijnresten en microplastics — grotendeels alles behalve de watermoleculen zelf.'],
   ['Hoe lang gaat het membraan mee?', 'Afhankelijk van gebruik en waterkwaliteit meestal 2 tot 3 jaar, terwijl de voor- en nafilters vaker (6-12 maanden) aan vervanging toe zijn.'],
   ['Kost een omgekeerde osmose filter veel water?', 'Er ontstaat wat afvalwater tijdens het filtratieproces, maar moderne systemen zijn hier steeds zuiniger in dan oudere generaties.'],
+  ['Waarom ontstaat er afvalwater bij een omgekeerde osmose filter?', 'Het membraan houdt stoffen tegen die ergens moeten blijven — een deel van het water spoelt die stoffen weg in plaats van dat ze zich ophopen op het membraan zelf, wat de levensduur ten goede komt.'],
+  ['Kan ik het membraan zelf vervangen?', 'Bij de meeste systemen is dit een kwestie van los- en vastdraaien, vaak met een instructievideo van de fabrikant. Twijfel je, dan kan een monteur het ook voor je doen.'],
+  ['Werkt een omgekeerde osmose filter zonder stroom?', 'Ja, het proces werkt op waterdruk, niet op elektriciteit — wel is een minimale waterdruk nodig voor een goede doorstroming.'],
 ];
 
 export default function Page() {
@@ -76,6 +85,24 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Benieuwd hoe dit in een compleet systeem samenkomt? Lees onze uitleg over <Link href="/kennisbank/wat-is-ro-water" className="underline hover:text-ink">RO-water</Link>, of bekijk de <Link href="/uitleg" className="underline hover:text-ink">specificaties van ons systeem</Link>.
             </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">De drie onderdelen en hun vervangingsschema</h2>
+            <p className="mt-4 text-dim leading-relaxed">Een omgekeerde osmose filter werkt zelden alleen — het membraan wordt meestal gecombineerd met een voor- en nafilter. Elk onderdeel heeft een eigen vervangingsritme:</p>
+            <div className="mt-6 space-y-4">
+              {ONDERDELEN.map(([titel, uitleg]) => (
+                <div key={titel} className="reveal flex items-start gap-3">
+                  <svg className="shrink-0 mt-1" width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#EDA71B" strokeWidth="1.7" /><path d="M12 7v5l3 3" stroke="#EDA71B" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                  <div>
+                    <p className="font-semibold text-ink text-sm">{titel}</p>
+                    <p className="mt-1 text-sm text-dim leading-relaxed">{uitleg}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

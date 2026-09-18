@@ -13,10 +13,20 @@ export const metadata = {
   description: 'Een waterontharder zonder afvoer bestaat niet als volwaardig alternatief voor een klassieke ontharder — wel als magneet- of elektronisch systeem. Uitleg.',
 };
 
+const VERGELIJKING = [
+  ['Werkingsprincipe', 'Ionenwisseling (echte verwijdering)', 'Verandert kristalstructuur (geen verwijdering)'],
+  ['Afvoer nodig', 'Ja', 'Nee'],
+  ['Effectiviteit bij hard water', 'Hoog', 'Gemiddeld tot laag'],
+  ['Doorlopende kosten', 'Onthardingszout', 'Meestal geen'],
+  ['Installatie', 'Vraagt vakkennis', 'Vaak eenvoudiger'],
+];
+
 const FAQ = [
   ['Bestaat een echte waterontharder zonder afvoer?', 'Een klassieke ionenwisselaar-ontharder heeft altijd een afvoer nodig voor het spoelproces. Wat vaak "waterontharder zonder afvoer" wordt genoemd, is meestal een magneet- of elektronisch systeem, dat anders werkt.'],
   ['Werkt een magneet- of elektronisch systeem net zo goed?', 'Deze systemen veranderen de kalkstructuur zodat het minder aanslaat, maar verwijderen de kalk niet daadwerkelijk uit het water zoals een klassieke ontharder dat doet.'],
   ['Is een systeem zonder afvoer goedkoper?', 'Vaak wel in aanschaf en onderhoud (geen zout, geen afvoeraansluiting nodig), maar het effect is doorgaans minder krachtig dan een klassieke ontharder.'],
+  ['Hoe herken ik overdreven marketingclaims bij deze systemen?', 'Wees kritisch bij claims als "100% kalkvrij zonder onderhoud" — magnetische en elektronische systemen verminderen aanslag, maar verwijderen kalk niet echt uit het water zoals een ionenwisselaar dat doet.'],
+  ['Voor wie is een systeem zonder afvoer een goede keuze?', 'Voor huishoudens met licht tot matig hard water die geen zin hebben in zoutonderhoud en een afvoeraansluiting, en die genoegen nemen met een minder krachtig resultaat dan een klassieke ontharder.'],
 ];
 
 export default function Page() {
@@ -75,6 +85,32 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Let op: geen van beide oplossingen filtert chloor, PFAS, medicijnresten of microplastics uit je drinkwater — daarvoor is een apart filtersysteem nodig. Lees meer in onze vergelijking <Link href="/kennisbank/waterontharder-vs-waterzuiveraar" className="underline hover:text-ink">waterontharder of waterzuiveraar</Link>.
             </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Klassiek vs. zonder afvoer: direct vergeleken</h2>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-bg">
+                  <tr>
+                    <th className="px-4 py-3 font-display font-bold"></th>
+                    <th className="px-4 py-3 font-display font-bold">Klassieke ontharder</th>
+                    <th className="px-4 py-3 font-display font-bold">Zonder afvoer (magneet/elektronisch)</th>
+                  </tr>
+                </thead>
+                <tbody className="text-dim">
+                  {VERGELIJKING.map(([label, klassiek, alt]) => (
+                    <tr key={label} className="border-t border-edge">
+                      <td className="px-4 py-3 font-semibold text-ink">{label}</td>
+                      <td className="px-4 py-3">{klassiek}</td>
+                      <td className="px-4 py-3">{alt}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </section>
 
