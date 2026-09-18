@@ -67,7 +67,7 @@ export default function Page() {
         <section className="relative bg-surface border-y border-edge overflow-hidden">
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-              <Image src="/assets/img/cabinet-install.png" alt="Installatie van een waterontharder onder een kastje" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+              <Image src="/assets/img/cabinet-install.png" alt="Waterontharder aansluiten op de hoofdleiding onder een kastje" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
             <div>
               <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">De vier stappen</h2>

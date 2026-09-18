@@ -10,7 +10,7 @@ import FaqSchema from '@/components/FaqSchema';
 export const metadata = {
   alternates: { canonical: '/kennisbank/hoe-werkt-een-waterontharder' },
   title: 'Hoe werkt een waterontharder? — Water-zuivering',
-  description: 'Een waterontharder ruilt harde mineralen in voor natrium via ionenwisseling. Stap voor stap uitgelegd hoe dat proces precies werkt.',
+  description: 'Hoe werkt een waterontharder? Via ionenwisseling worden harde mineralen ingeruild voor natrium. Stap voor stap uitgelegd.',
 };
 
 const STAPPEN = [
@@ -60,7 +60,7 @@ export default function Page() {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Hoe werkt een waterontharder?</h1>
-            <p className="mt-5 text-dim text-lg">Onder de motorkap draait het allemaal om één proces: ionenwisseling. We leggen het stap voor stap uit.</p>
+            <p className="mt-5 text-dim text-lg"><strong className="text-ink">Hoe werkt een waterontharder</strong>? Onder de motorkap draait het allemaal om één proces: ionenwisseling. We leggen het stap voor stap uit.</p>
           </div>
         </section>
 

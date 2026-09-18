@@ -83,7 +83,7 @@ export default function WaterzuiveringVoorThuisPage() {
                 Waterzuivering voor thuis: zuiver kraanwater zonder gedoe
               </h1>
               <p className="mt-5 text-dim text-lg">
-                Een waterzuiveraar voor thuis filtert chloor, PFAS, medicijnresten en microplastics uit je kraanwater — rechtstreeks geïnstalleerd onder je eigen aanrecht, zonder flessen sjouwen.
+                <strong className="text-ink">Waterzuivering voor thuis</strong> filtert chloor, PFAS, medicijnresten en microplastics uit je kraanwater — rechtstreeks geïnstalleerd onder je eigen aanrecht, zonder flessen sjouwen.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-3.5 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">

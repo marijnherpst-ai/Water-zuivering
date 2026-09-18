@@ -47,7 +47,7 @@ export default function Page() {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Osmosewater maken: kan dat gewoon thuis?</h1>
-            <p className="mt-5 text-dim text-lg">Ja — met de juiste installatie is osmosewater maken net zo simpel als een kraan opendraaien.</p>
+            <p className="mt-5 text-dim text-lg">Ja — met de juiste installatie is <strong className="text-ink">osmosewater maken</strong> net zo simpel als een kraan opendraaien.</p>
           </div>
         </section>
 

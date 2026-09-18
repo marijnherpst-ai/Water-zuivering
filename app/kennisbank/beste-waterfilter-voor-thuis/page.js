@@ -132,7 +132,7 @@ export default function BesteWaterfilterVoorThuisPage() {
               Wat is de beste waterfilter voor thuis?
             </h1>
             <p className="mt-5 text-dim text-lg">
-              Waterfilterkan, kraanfilter of een waterzuiveraar onder de gootsteen — we vergelijken de drie meest gekozen opties op filtratie, gemak en kosten.
+              Wat is de <strong className="text-ink">beste waterfilter voor thuis</strong>? Waterfilterkan, kraanfilter of een waterzuiveraar onder de gootsteen — we vergelijken de drie meest gekozen opties op filtratie, gemak en kosten.
             </p>
           </div>
         </section>

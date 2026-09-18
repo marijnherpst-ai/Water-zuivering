@@ -69,7 +69,7 @@ export default function Page() {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank — Vergelijking</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Waterontharder: voor- en nadelen op een rij</h1>
-            <p className="mt-5 text-dim text-lg">Een <strong className="text-ink">waterontharder</strong> lost een specifiek probleem op — kalk — maar het is goed om ook de nadelen te kennen voor je een keuze maakt.</p>
+            <p className="mt-5 text-dim text-lg">De <strong className="text-ink">voordelen en nadelen van een waterontharder</strong> op een rij — kalk is opgelost, maar er komt ook onderhoud bij kijken.</p>
           </div>
         </section>
 
