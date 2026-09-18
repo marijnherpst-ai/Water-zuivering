@@ -38,6 +38,13 @@ const METHODEN = [
   ['Zwaartekrachtfilter (gravity)', 'Werkt zonder stroom of wateraansluiting, handig voor noodsituaties, maar met een beperktere doorzet en meer handmatig gedoe dan een vast systeem.'],
 ];
 
+const INSTALLATIE = [
+  ['Adviesgesprek', 'We bespreken je situatie — keukeninrichting, waterdruk, en waar je systeem het best kan staan.'],
+  ['Aansluiting op de waterleiding', 'Het systeem wordt aangetakt op de koudwaterleiding onder je gootsteen, met een aparte kraan voor gezuiverd water.'],
+  ['Testen en instellen', 'Na installatie testen we de doorstroming en waterkwaliteit, zodat alles meteen goed werkt.'],
+  ['Uitleg en overdracht', 'Je krijgt een kort vervangingsschema mee voor de filters, zodat je precies weet wanneer onderhoud nodig is.'],
+];
+
 const FAQ = [
   ['Is waterzuivering voor thuis in Nederland nodig?', 'Nederlands kraanwater voldoet aan strenge wettelijke normen en is veilig om te drinken. Een waterzuiveraar voor thuis gaat een stap verder: die verwijdert ook sporen van stoffen die niet standaard worden getest of verwijderd, zoals PFAS, medicijnresten en microplastics.'],
   ['Wat kost waterzuivering voor thuis?', 'De aanschafprijs hangt af van het gekozen systeem en de installatie. Vraag een vrijblijvende offerte aan voor een prijs op maat van jouw situatie.'],
@@ -46,6 +53,9 @@ const FAQ = [
   ['Is waterzuivering voor thuis anders dan voor onderweg?', 'Ja. Onderweg kies je meestal voor een compact, draagbaar filter zonder wateraansluiting. Thuis is een vast systeem onder de gootsteen praktischer: onbeperkt zuiver water zonder gedoe met patronen of bijvullen.'],
   ['Kan waterzuivering voor thuis ook zonder installatie?', 'Er bestaan alternatieven zoals filterkannen of kraanfilters die geen vaste installatie vereisen, maar die filteren minder grondig dan een systeem onder de gootsteen. Lees de vergelijking in ons artikel over de beste waterfilter voor thuis.'],
   ['Waarom niet gewoon een waterfilterkan gebruiken?', 'Een kan is prima tegen chloorsmaak, maar houdt PFAS, medicijnresten en microplastics niet of nauwelijks tegen — en moet je steeds bijvullen. Een systeem onder de gootsteen filtert grondiger en werkt op de achtergrond mee.'],
+  ['Hoe lang duurt de installatie van waterzuivering voor thuis?', 'De meeste installaties zijn binnen een paar uur voltooid door een vakkundige monteur, inclusief testen en instellen.'],
+  ['Heeft waterzuivering voor thuis invloed op de waterdruk?', 'Nee, het apparaat is ontworpen om de druk op je bestaande kraan niet merkbaar te beïnvloeden.'],
+  ['Wat gebeurt er als ik verhuis met waterzuivering voor thuis?', 'Het systeem kan in de meeste gevallen worden meegenomen en op je nieuwe adres opnieuw geïnstalleerd worden — vraag dit na bij je aanbieder.'],
 ];
 
 export default function WaterzuiveringVoorThuisPage() {
@@ -170,6 +180,22 @@ export default function WaterzuiveringVoorThuisPage() {
                 <Image src="/assets/img/systeem-slim-105mm.png" alt="Slank waterzuiveringssysteem voor thuis, 10,5 cm breed, geïnstalleerd onder het aanrecht" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-contain p-6 bg-white" />
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* INSTALLATIE */}
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoe verloopt de installatie?</h2>
+            <p className="mt-4 text-dim leading-relaxed">Waterzuivering voor thuis regelen we in vier overzichtelijke stappen:</p>
+            <ol className="mt-6 space-y-4">
+              {INSTALLATIE.map(([titel, uitleg], i) => (
+                <li key={titel} className="flex items-start gap-3">
+                  <span className="shrink-0 flex items-center justify-center w-7 h-7 rounded-full bg-amber text-ink text-sm font-bold">{i + 1}</span>
+                  <span className="text-dim"><strong className="text-ink">{titel}.</strong> {uitleg}</span>
+                </li>
+              ))}
+            </ol>
           </div>
         </section>
 

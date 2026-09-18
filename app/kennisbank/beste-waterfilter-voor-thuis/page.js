@@ -62,6 +62,19 @@ const SITUATIES = [
   ['Huurwoning', 'Een kraanfilter is makkelijker weer te verwijderen dan een ingebouwd systeem, al bieden steeds meer aanbieders ook demontabele installaties voor huurders.'],
 ];
 
+const ONDERHOUD = [
+  ['Waterfilterkan', 'Patroon vervangen na 100-150 liter (meestal maandelijks bij dagelijks gebruik). Kan zelf, kost een paar minuten, filters zijn los verkrijgbaar.'],
+  ['Kraanfilter', 'Cartridge vervangen elke 2-3 maanden, afhankelijk van gebruik en model. Meestal een kwestie van los- en vastdraaien, geen gereedschap nodig.'],
+  ['Waterzuiveraar onder de gootsteen', 'Voor- en nafilters elke 6-12 maanden, het membraan zelf elke 2-3 jaar. Bij de meeste aanbieders kun je dit laten uitvoeren, of zelf doen met een instructievideo.'],
+];
+
+const FOUTEN = [
+  ['Alleen naar de aanschafprijs kijken', 'Een filterkan lijkt goedkoop, maar de doorlopende kosten voor patronen kunnen op jaarbasis flink oplopen — reken door wat je over 3-5 jaar kwijt bent.'],
+  ['Filters te laat vervangen', 'Een verzadigd filter laat stoffen juist eerder door in plaats van ze tegen te houden. Houd het vervangingsschema aan, ook als het water er nog "goed" uitziet.'],
+  ['Filtratiediepte verwarren met merknaam', 'Niet elk product dat zich "waterfilter" noemt, filtert even grondig. Check specifiek of PFAS en microplastics genoemd worden, niet alleen "chloor" of "smaak".'],
+  ['Geen rekening houden met waterdruk', 'Sommige systemen onder de gootsteen hebben een minimale waterdruk nodig om goed te werken — vraag dit na bij installatie, vooral in oudere woningen.'],
+];
+
 const FAQ = [
   ['Wat is de beste waterfilter voor thuis?', 'Dat hangt af van wat je belangrijk vindt. Wil je puur de chloorsmaak kwijt en zo min mogelijk uitgeven, dan volstaat een waterfilterkan. Wil je ook PFAS, medicijnresten en microplastics eruit, dan is een waterzuiveraar onder de gootsteen (osmose) de grondigste keuze.'],
   ['Is een waterfilterkan net zo goed als een waterzuiveraar?', 'Nee. Een waterfilterkan filtert vooral chloor en verbetert de smaak, maar houdt PFAS, medicijnresten en microplastics niet of nauwelijks tegen. Een osmosesysteem verwijdert daarvan tot 99%.'],
@@ -72,6 +85,9 @@ const FAQ = [
   ['Welke waterfilter is het beste voor een gezin met kinderen?', 'Een systeem onder de gootsteen, omdat je dan nooit een kan hoeft bij te vullen en er altijd onbeperkt zuiver water beschikbaar is — ook praktisch voor het bereiden van flesvoeding.'],
   ['Verschilt de beste waterfilter voor thuis per regio in Nederland?', 'De filtratiebehoefte verschilt niet sterk per regio — alle Nederlandse drinkwaterbedrijven voldoen aan dezelfde landelijke normen. Wel kan de waterhardheid (kalk) regionaal verschillen.'],
   ['Kan ik zien of er nu een storing of kookadvies geldt in mijn regio?', 'Ja — gebruik onze eigen storingen-check om direct te zien of er in jouw buurt een actuele melding is, los van welk filter je kiest.'],
+  ['Hoe vaak moet ik het filter van de beste waterfilter voor thuis vervangen?', 'Dat verschilt per type: een filterkan meestal maandelijks, een kraanfilter elke 2-3 maanden, en een systeem onder de gootsteen elke 6-12 maanden voor de voor- en nafilters.'],
+  ['Wat is de grootste fout die mensen maken bij het kiezen van een waterfilter?', 'Alleen naar de aanschafprijs kijken, zonder de doorlopende kosten voor vervangingsfilters mee te rekenen — op jaarbasis kan dat het prijsverschil met een grondiger systeem flink verkleinen.'],
+  ['Kan ik meerdere type waterfilters combineren?', 'Ja, sommige huishoudens gebruiken bijvoorbeeld een waterontharder voor kalk in combinatie met een osmosesysteem voor de rest — dat is geen overbodige dubbeling, want beide lossen een ander probleem op.'],
 ];
 
 function Sterren({ aantal }) {
@@ -243,6 +259,43 @@ export default function BesteWaterfilterVoorThuisPage() {
             <p className="mt-6 text-sm text-dim leading-relaxed">
               Los van welk filter je kiest: bij een onverwacht smaak- of kwaliteitsprobleem is het altijd goed om eerst te checken of er iets speelt bij je waterbedrijf. Gebruik onze <Link href="/storingen" className="underline hover:text-ink">storingen-check</Link> om direct te zien of er een actuele melding is in jouw buurt.
             </p>
+          </div>
+        </section>
+
+        {/* ONDERHOUD */}
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoeveel onderhoud vraagt elk type?</h2>
+            <p className="mt-4 text-dim leading-relaxed">Onderhoud is vaak de onderschatte factor bij het kiezen van een waterfilter voor thuis. Zo verhoudt het zich per type:</p>
+            <div className="mt-6 space-y-4">
+              {ONDERHOUD.map(([titel, uitleg]) => (
+                <div key={titel} className="reveal flex items-start gap-3">
+                  <svg className="shrink-0 mt-1" width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#EDA71B" strokeWidth="1.7" /><path d="M12 7v5l3 3" stroke="#EDA71B" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                  <div>
+                    <p className="font-semibold text-ink text-sm">{titel}</p>
+                    <p className="mt-1 text-sm text-dim leading-relaxed">{uitleg}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FOUTEN */}
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgemaakte fouten bij het kiezen van een waterfilter</h2>
+            <div className="mt-6 space-y-4">
+              {FOUTEN.map(([titel, uitleg]) => (
+                <div key={titel} className="reveal flex items-start gap-3">
+                  <svg className="shrink-0 mt-1" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 8v5M12 16h.01" stroke="#B91C1C" strokeWidth="2" strokeLinecap="round" /><circle cx="12" cy="12" r="9" stroke="#B91C1C" strokeWidth="1.7" /></svg>
+                  <div>
+                    <p className="font-semibold text-ink text-sm">{titel}</p>
+                    <p className="mt-1 text-sm text-dim leading-relaxed">{uitleg}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
