@@ -8,8 +8,8 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
   alternates: { canonical: '/zuiverwater' },
-  title: 'Zuiver water uit je eigen kraan — Water-zuivering',
-  description: 'Zuiver water, elke dag, uit je eigen kraan — zonder chloor, PFAS of microplastics. Ontdek wat écht zuiver water toevoegt aan je dagelijks leven.',
+  title: 'Zuiverwater uit je eigen kraan — Water-zuivering',
+  description: 'Zuiverwater, elke dag, uit je eigen kraan — zonder chloor, PFAS of microplastics. Ontdek wat zuiverwater toevoegt aan je dagelijks leven.',
 };
 
 const MOMENTEN = [
@@ -54,12 +54,12 @@ export default function Page() {
           <div className="glow drift2 w-[360px] h-[360px] bg-amber/10 top-10 -right-24" />
           <div className="relative max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Zuiver water</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Zuiverwater</span>
               <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
-                Zuiver water is geen luxe — het is gewoon hoe water hoort te zijn
+                <strong className="text-ink">Zuiverwater</strong> is geen luxe — het is gewoon hoe water hoort te zijn
               </h1>
               <p className="mt-5 text-dim text-lg">
-                <strong className="text-ink">Zuiver water</strong> uit je eigen kraan: zonder chloorsmaak, zonder kalkaanslag en zonder de onzichtbare sporenstoffen die je liever niet drinkt. Gewoon helder, fris water, elke dag opnieuw.
+                Zuiverwater uit je eigen kraan: zonder chloorsmaak, zonder kalkaanslag en zonder de onzichtbare sporenstoffen die je liever niet drinkt. Gewoon <strong className="text-ink">zuiver water</strong>, elke dag opnieuw.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-3.5 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">
@@ -74,7 +74,7 @@ export default function Page() {
             <div className="relative">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-[2rem] overflow-hidden border border-edge aspect-[4/5]">
-                <Image src="/assets/img/glas-water.webp" alt="Glas zuiver water, helder en fris uit de kraan" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" priority />
+                <Image src="/assets/img/glas-water.webp" alt="Glas zuiverwater, helder en fris uit de kraan" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" priority />
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function Page() {
         <section className="relative bg-surface border-y border-edge">
           <div className="max-w-4xl mx-auto px-6 py-14 md:py-20">
             <p className="text-dim leading-relaxed">
-              Er is een moment, ergens in de vroege ochtend, waarop je een glas water inschenkt zonder erbij na te denken. Je drinkt het, en denkt er niet meer over na. Dat is precies wat <strong className="text-ink">schoon water</strong> zou moeten zijn: iets waar je niet over hoeft na te denken. Geen vage chloorlucht die je even laat aarzelen, geen bijsmaak die je toeschrijft aan "gewoon hoe kraanwater is" — gewoon helder water, zoals het hoort.
+              Er is een moment, ergens in de vroege ochtend, waarop je een glas water inschenkt zonder erbij na te denken. Je drinkt het, en denkt er niet meer over na. Dat is precies wat zuiverwater zou moeten zijn: iets waar je niet over hoeft na te denken. Geen vage chloorlucht die je even laat aarzelen, geen bijsmaak die je toeschrijft aan "gewoon hoe kraanwater is" — gewoon <strong className="text-ink">schoon water</strong>, zoals het hoort.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Het rare is dat de meeste mensen dat gevoel pas herkennen ná de overstap. Zolang je nooit anders hebt geproefd, went een chloorsmaakje. Pas als het weg is, valt op hoe aanwezig het altijd was.
@@ -95,7 +95,7 @@ export default function Page() {
         {/* MOMENTEN */}
         <section className="relative">
           <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
-            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-center">Waar je puur water het meest merkt</h2>
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-center">Waar je zuiverwater het meest merkt</h2>
             <p className="mt-3 text-dim text-center max-w-xl mx-auto">Vier dagelijkse momenten waarin het verschil het duidelijkst opvalt.</p>
             <div className="mt-10 grid sm:grid-cols-2 gap-5">
               {MOMENTEN.map(([titel, uitleg]) => (
