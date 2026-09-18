@@ -8,7 +8,7 @@ import StoringenChecker from '@/components/storingen/StoringenChecker';
 export const metadata = {
   alternates: { canonical: '/storingen' },
   title: 'Storingen check — Water-zuivering',
-  description: 'Check met je postcode en huisnummer of er een waterstoring, kookwateradvies of onderhoud is in jouw buurt. Live data van Dunea, PWN, Waternet en Waterbedrijf Groningen.',
+  description: 'Check met je postcode of er een waterstoring, kookwateradvies of onderhoud is in jouw buurt. Live data van Dunea, PWN, Waternet en Groningen.',
 };
 
 const STAPPEN = [

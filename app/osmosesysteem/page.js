@@ -18,7 +18,7 @@ export const metadata = {
   alternates: { canonical: '/osmosesysteem' },
   title: 'Osmosewatersysteem — Water-zuivering',
   description:
-    'Ontdek precies hoe het Water-zuivering osmosewatersysteem werkt: 3-traps filtratie, interactieve TDS-meter en volledige uitleg van installatie tot filter vervangen.',
+    'Ontdek hoe het Water-zuivering osmosewatersysteem werkt: 3-traps filtratie, interactieve TDS-meter en uitleg van installatie tot filter vervangen.',
 };
 
 // Same [question, answer] pairs rendered in the FAQ section below — kept here

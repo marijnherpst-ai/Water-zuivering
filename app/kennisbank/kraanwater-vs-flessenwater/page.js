@@ -8,7 +8,7 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/kraanwater-vs-flessenwater' },
-  title: 'Kraanwater vs. flessenwater: wat is voordeliger? — Water-zuivering',
+  title: 'Kraanwater vs. flessenwater: wat is beter? — Water-zuivering',
   description:
     'Kraanwater vs. flessenwater vergeleken op kosten, gemak en milieu-impact — met een eerlijke conclusie.',
 };
