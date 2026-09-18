@@ -104,7 +104,7 @@ export default function Page() {
               ))}
             </ul>
             <p className="mt-6 text-dim leading-relaxed">
-              Het belangrijkste om te onthouden: een waterontharder en een waterzuiveraar lossen verschillende problemen op. Wil je ook van chloor, PFAS, medicijnresten en microplastics af, dan heb je naast (of in plaats van) een ontharder een filtersysteem nodig. Lees het volledige verschil in ons artikel <Link href="/kennisbank/waterontharder-vs-waterzuiveraar" className="underline hover:text-ink">waterontharder of waterzuiveraar</Link>.
+              Het belangrijkste om te onthouden: een waterontharder en een waterzuiveraar lossen verschillende problemen op. Wil je ook van chloor, PFAS, medicijnresten en microplastics af, dan heb je naast (of in plaats van) een ontharder een filtersysteem nodig. Lees het volledige verschil in ons artikel <Link href="/kennisbank/waterontharder-vs-waterzuiveraar" className="underline hover:text-ink">waterontharder of waterzuiveraar</Link>. Meer weten over het apparaat zelf? Lees <Link href="/kennisbank/hoe-werkt-een-waterontharder" className="underline hover:text-ink">hoe een waterontharder werkt</Link>, de uitleg over een <Link href="/kennisbank/waterontharder-zonder-afvoer" className="underline hover:text-ink">waterontharder zonder afvoer</Link>, of hoe je een <Link href="/kennisbank/waterontharder-aansluiten" className="underline hover:text-ink">waterontharder aansluit</Link>.
             </p>
           </div>
         </section>
