@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
 import { PERIODES, STANDAARD_INSTELLINGEN, bouwOverzicht, eur, getal, uitsluitWoord, verandering } from '@/lib/dashboard/analyse';
 import { stuurAanvraag, synchroniseerMeta, uitloggen } from '@/app/dashboard/actions';
-import { Doelgroepen, Klantreis, MetaSetup } from './FacebookBlokken';
+import { AccountMelding, Doelgroepen, FacebookInzicht, MetaSetup } from './FacebookBlokken';
 import Chart from './Chart';
 import UrenChart from './UrenChart';
 
@@ -288,6 +288,7 @@ export default function DashboardView({ data, email, geenEchteCijfers, metaGekop
           </div>
         )}
 
+        {fb && <AccountMelding account={data.account} campagnes={data.campagnes} />}
         {fb && !data.demo && <MetaSetup gekoppeld={metaGekoppeld} status={data.syncStatus} />}
         {fb && data.demo && !metaGekoppeld && <MetaSetup gekoppeld={false} status={null} />}
 
@@ -345,6 +346,8 @@ export default function DashboardView({ data, email, geenEchteCijfers, metaGekop
           <Sectiekop titel="Geld en leads per dag" sub="De gouden balken zijn wat je uitgaf, de groene lijn zijn je leads." />
           <Chart reeks={o.reeks} />
         </section>
+
+        {fb && <FacebookInzicht data={data} o={o} />}
 
         <section className="mt-5 grid gap-4 lg:grid-cols-2">
           <div className={`${kaart} relative overflow-hidden p-5 sm:p-7`}>
@@ -654,8 +657,6 @@ export default function DashboardView({ data, email, geenEchteCijfers, metaGekop
             <p className="mt-4 text-sm text-[#8A93A3]">In deze periode zijn er geen aanvragen binnengekomen.</p>
           )}
         </section>
-
-        <Klantreis leads={(data.alleLeads || data.leads).filter((l) => l.day >= o.nu.van && l.day <= o.nu.tot)} />
 
         <details className="mt-5 rounded-3xl border border-white/[0.07] px-5 py-4 text-sm text-[#B4BBC8]">
           <summary className="cursor-pointer font-medium text-white">Instellingen: wat vind je een goede prijs?</summary>
