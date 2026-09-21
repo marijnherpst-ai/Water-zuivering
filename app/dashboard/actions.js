@@ -43,6 +43,10 @@ export async function stuurAanvraag({ periode, notitie, items }) {
     soort: kort(i.soort, 20),
     titel: kort(i.titel, 200),
     uitleg: kort(i.uitleg, 400),
+    kanaal: kort(i.kanaal, 20),
+    actie: kort(i.actie, 400),
+    zekerheid: kort(i.zekerheid, 20),
+    door: kort(i.door, 20),
     ref: {
       niveau: kort(i.ref?.niveau, 20),
       naam: kort(i.ref?.naam, 200),

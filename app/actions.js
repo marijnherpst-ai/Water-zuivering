@@ -52,6 +52,8 @@ export async function logLeadEvent(data) {
     gclid: kort(data.gclid),
     fbclid: kort(data.fbclid),
     journey: kort(data.journey),
+    journey_days: Number.isFinite(Number(data.journey_days)) && Number(data.journey_days) >= 0 ? Math.min(Number(data.journey_days), 365) : null,
+    journey_detail: typeof data.journey_detail === 'string' && data.journey_detail ? data.journey_detail.slice(0, 700) : null,
     consent: data.consent === true,
   });
 

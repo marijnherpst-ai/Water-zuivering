@@ -1,8 +1,10 @@
 import { createClient } from '@/lib/supabase/server';
-import { haalDashboardData, haalMetaData, vandaagInAmsterdam } from '@/lib/dashboard/data';
-import { demoBron } from '@/lib/dashboard/demo';
+import { haalDashboardData, haalMetaData, haalSamenData, vandaagInAmsterdam } from '@/lib/dashboard/data';
+import { demoBron, demoSamen } from '@/lib/dashboard/demo';
 import LoginForm from '@/components/dashboard/LoginForm';
 import DashboardView from '@/components/dashboard/DashboardView';
+import SamenView from '@/components/dashboard/SamenView';
+import AdviesView from '@/components/dashboard/AdviesView';
 import { uitloggen } from './actions';
 
 export const dynamic = 'force-dynamic';
@@ -12,9 +14,17 @@ const LOKAAL_VOORBEELD = process.env.NODE_ENV !== 'production' && process.env.DA
 
 export default async function DashboardPage({ searchParams }) {
   const sp = await searchParams;
-  const bron = sp?.bron === 'facebook' ? 'facebook' : 'google';
+  const bron = sp?.bron === 'facebook' ? 'facebook' : sp?.bron === 'samen' ? 'samen' : sp?.bron === 'advies' ? 'advies' : 'google';
   const wilDemo = sp?.demo === '1';
   const metaGekoppeld = Boolean(process.env.META_ACCESS_TOKEN);
+
+  if (LOKAAL_VOORBEELD && bron === 'advies') {
+    return <AdviesView data={demoSamen(vandaagInAmsterdam())} email="lokaal" metaGekoppeld={metaGekoppeld} />;
+  }
+
+  if (LOKAAL_VOORBEELD && bron === 'samen') {
+    return <SamenView data={demoSamen(vandaagInAmsterdam())} email="lokaal" />;
+  }
 
   if (LOKAAL_VOORBEELD) {
     return <DashboardView data={demoBron(vandaagInAmsterdam(), bron)} email="lokaal" geenEchteCijfers metaGekoppeld={metaGekoppeld} />;
@@ -40,6 +50,22 @@ export default async function DashboardPage({ searchParams }) {
         </div>
       </main>
     );
+  }
+
+  if (bron === 'advies') {
+    const samen = await haalSamenData(supabase);
+    const geenCijfers = samen.google.campagnes.length === 0 && samen.facebook.campagnes.length === 0;
+    const demo = wilDemo || (sp?.demo !== '0' && geenCijfers);
+    const gegevens = demo ? { ...demoSamen(vandaagInAmsterdam()), aanvragen: samen.aanvragen } : samen;
+    return <AdviesView data={gegevens} email={user.email} metaGekoppeld={metaGekoppeld} />;
+  }
+
+  if (bron === 'samen') {
+    const samen = await haalSamenData(supabase);
+    const geenRoutes = !samen.leads.some((l) => l.type !== 'giveaway' && l.journey);
+    const demo = wilDemo || (sp?.demo !== '0' && geenRoutes);
+    const gegevens = demo ? { ...demoSamen(vandaagInAmsterdam()), aanvragen: samen.aanvragen } : samen;
+    return <SamenView data={gegevens} email={user.email} />;
   }
 
   const echt = bron === 'facebook' ? await haalMetaData(supabase) : await haalDashboardData(supabase);

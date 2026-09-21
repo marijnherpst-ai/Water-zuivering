@@ -262,7 +262,7 @@ export default function DashboardView({ data, email, geenEchteCijfers, metaGekop
           </div>
           <div className="flex flex-wrap items-center gap-3">
             <div className="inline-flex rounded-full border border-white/10 bg-white/[0.03] p-1 text-xs font-semibold">
-              {[['google', 'Google Ads'], ['facebook', 'Facebook']].map(([id, naam]) => (
+              {[['google', 'Google Ads'], ['facebook', 'Facebook'], ['samen', 'Samen'], ['advies', 'Advies']].map(([id, naam]) => (
                 <a key={id} href={`/dashboard?bron=${id}${data.demo ? '&demo=1' : ''}`}
                   className={`rounded-full px-3.5 py-1.5 transition ${data.bron === id ? 'bg-white/12 text-white' : 'text-[#8A93A3] hover:text-white'}`}>{naam}</a>
               ))}
