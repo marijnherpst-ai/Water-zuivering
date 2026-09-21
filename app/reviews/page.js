@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ReviewForm from '@/components/ReviewForm';
-import { createClient } from '@/lib/supabase/server';
+import { createClient } from '@supabase/supabase-js';
 
 export const metadata = {
   alternates: { canonical: '/reviews' },
@@ -9,7 +9,7 @@ export const metadata = {
   description: 'Lees ervaringen van klanten van Water-zuivering en laat zelf een review achter.',
 };
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 300;
 
 function Stars({ rating }) {
   return (
@@ -24,7 +24,11 @@ function Stars({ rating }) {
 }
 
 export default async function ReviewsPage() {
-  const supabase = await createClient();
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL,
+    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
+    { auth: { persistSession: false } },
+  );
   const { data: reviews } = await supabase
     .from('reviews')
     .select('id, name, city, rating, review_text, created_at')

@@ -102,12 +102,12 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <Link
             href="/winkel/mandje"
-            aria-label={aantalInMand > 0 ? `Winkelmand, ${aantalInMand} ${aantalInMand === 1 ? 'product' : 'producten'}` : 'Winkelmand'}
             className="relative cursor-pointer flex items-center justify-center w-10 h-10 rounded-full border border-edge text-ink hover:bg-bg transition-colors"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /><path d="M9 8V6a3 3 0 016 0v2" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /></svg>
+            <span className="sr-only">{aantalInMand > 0 ? `Winkelmand, ${aantalInMand} ${aantalInMand === 1 ? 'product' : 'producten'}` : 'Winkelmand'}</span>
             {aantalInMand > 0 && (
-              <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 flex items-center justify-center rounded-full bg-amber text-ink text-[11px] font-bold leading-none">{aantalInMand}</span>
+              <span aria-hidden="true" className="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 flex items-center justify-center rounded-full bg-amber text-ink text-[11px] font-bold leading-none">{aantalInMand}</span>
             )}
           </Link>
           <Link href="/aanmelden" className="cursor-pointer hidden sm:inline-flex items-center rounded-full bg-amber px-5 py-2.5 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">
