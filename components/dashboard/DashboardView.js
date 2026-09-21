@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { PERIODES, STANDAARD_INSTELLINGEN, bouwOverzicht, eur, getal, uitsluitWoord, verandering } from '@/lib/dashboard/analyse';
 import { stuurAanvraag, uitloggen } from '@/app/dashboard/actions';
 import Chart from './Chart';
+import UrenChart from './UrenChart';
 
 const STATUS = {
   goed: { label: 'Presteert goed', klas: 'bg-[#3DDC97]/12 text-[#3DDC97] border-[#3DDC97]/25', balk: '#3DDC97' },
@@ -71,6 +72,74 @@ function Sectiekop({ titel, sub, rechts }) {
   );
 }
 
+function RangRij({ nummer, r, soort, max }) {
+  const goed = soort === 'wint';
+  const waarde = goed ? r.leads : r.verlies;
+  return (
+    <li className="rounded-2xl border border-white/[0.06] bg-black/20 p-4">
+      <div className="flex items-start gap-3.5">
+        <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-bold ${goed ? 'bg-[#3DDC97]/15 text-[#3DDC97]' : 'bg-[#FF5C6C]/15 text-[#FF7A88]'}`}>{nummer}</span>
+        <div className="min-w-0 flex-1">
+          <div className="flex items-start justify-between gap-3">
+            <div className="min-w-0">
+              <p className="truncate font-semibold text-white">{r.naam}</p>
+              {r.groep && <p className="truncate text-xs text-[#6B7482]">{r.groep}</p>}
+            </div>
+            <div className="shrink-0 text-right">
+              <p className={`font-display text-lg font-bold leading-tight ${goed ? 'text-[#3DDC97]' : 'text-[#FF7A88]'}`}>
+                {goed ? `${getal(r.leads, r.leads % 1 ? 1 : 0)} ${r.leads === 1 ? 'lead' : 'leads'}` : `− ${eur(r.verlies)}`}
+              </p>
+              <p className="text-xs text-[#8A93A3]">
+                {goed ? `${eur(r.cpl)} per lead` : r.leads > 0 ? `${eur(r.cpl)} per lead` : 'geen enkele lead'}
+              </p>
+            </div>
+          </div>
+          <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-white/[0.06]">
+            <div className="h-full rounded-full" style={{ width: `${Math.max(6, (waarde / max) * 100)}%`, background: goed ? '#3DDC97' : '#FF5C6C' }} />
+          </div>
+          <p className="mt-2 text-xs text-[#6B7482]">{eur(r.kosten)} uitgegeven · {getal(r.klikken)} klikken</p>
+        </div>
+      </div>
+    </li>
+  );
+}
+
+function AdviesGroep({ titel, kleur, items, alles }) {
+  if (items.length === 0) return null;
+  const zichtbaar = alles ? items : items.slice(0, 4);
+  return (
+    <div className="mt-5 first:mt-0">
+      <p className="mb-2.5 flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#8A93A3]">
+        <span className="h-2 w-2 rounded-full" style={{ background: kleur }} />{titel} ({items.length})
+      </p>
+      <ul className="space-y-2.5">
+        {zichtbaar.map((a) => (
+          <li key={a.id} className="flex gap-3.5 rounded-2xl border border-white/[0.06] bg-black/20 p-4">
+            <span className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-base ${a.niveau === 'slecht' ? 'bg-[#FF5C6C]/12 text-[#FF7A88]' : 'bg-[#3DDC97]/12 text-[#3DDC97]'}`} aria-hidden="true">
+              {a.soort === 'pauzeer' ? '❚❚' : a.soort === 'uitsluiten' ? '⊘' : a.soort === 'meer' ? '▲' : a.soort === 'tijd' ? '◷' : '!'}
+            </span>
+            <div className="min-w-0">
+              <p className="font-semibold text-white">{a.titel}</p>
+              <p className="mt-0.5 text-sm leading-relaxed text-[#8A93A3]">{a.uitleg}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+const CEL = {
+  goed: 'bg-[#3DDC97]/15 text-[#3DDC97] border-[#3DDC97]/30',
+  'let-op': 'bg-[#EDA71B]/12 text-[#F3B93A] border-[#EDA71B]/25',
+  slecht: 'bg-[#FF5C6C]/14 text-[#FF7A88] border-[#FF5C6C]/30',
+  wacht: 'bg-white/[0.03] text-[#6B7482] border-white/[0.06]',
+};
+
+function uurTekst(v) {
+  return `${v.van} tot ${v.tot} uur`;
+}
+
 function tijdTekst(iso) {
   if (!iso) return null;
   return new Date(iso).toLocaleString('nl-NL', { timeZone: 'Europe/Amsterdam', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
@@ -121,7 +190,6 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
   const maxKosten = Math.max(...lijst.map((r) => r.kosten), 1);
   const teller = (st) => lijst.filter((r) => r.oordeel.status === st).length;
 
-  const zichtbaarAdvies = alleAdvies ? o.advies : o.advies.slice(0, 5);
   const aanvragen = [...lokaleAanvragen, ...data.aanvragen];
 
   function versturen() {
@@ -244,6 +312,156 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
           <Chart reeks={o.reeks} />
         </section>
 
+        <section className="mt-5 grid gap-4 lg:grid-cols-2">
+          <div className={`${kaart} relative overflow-hidden p-5 sm:p-7`}>
+            <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#3DDC97] opacity-[0.12] blur-3xl" />
+            <Sectiekop titel="Dit werkt" sub={o.wint.length ? `De beste ${o.zoekwoorden.length ? 'zoekwoorden' : 'campagnes'}. Alles wat goed presteert levert samen ${getal(o.winstLeads, o.winstLeads % 1 ? 1 : 0)} leads op. Hier mag meer geld naartoe.` : undefined} />
+            {o.wint.length === 0 ? (
+              <p className="rounded-2xl border border-white/[0.06] bg-black/20 p-5 text-sm text-[#B4BBC8]">Nog niets dat aantoonbaar werkt in deze periode. Kies een langere periode of wacht op meer klikken.</p>
+            ) : (
+              <ul className="space-y-2.5">{o.wint.map((r, i) => <RangRij key={r.key} nummer={i + 1} r={r} soort="wint" max={Math.max(...o.wint.map((x) => x.leads), 1)} />)}</ul>
+            )}
+          </div>
+          <div className={`${kaart} relative overflow-hidden p-5 sm:p-7`}>
+            <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#FF5C6C] opacity-[0.12] blur-3xl" />
+            <Sectiekop titel="Dit verliest geld" sub={o.verliest.length ? `De duurste problemen. Samen ${eur(o.verliest.reduce((t, r) => t + r.verlies, 0))} weggegooid. Stop of pas aan.` : undefined} />
+            {o.verliest.length === 0 ? (
+              <p className="rounded-2xl border border-white/[0.06] bg-black/20 p-5 text-sm text-[#B4BBC8]">Er verliest op dit moment niets aantoonbaar geld. Kies een langere periode voor een completer beeld.</p>
+            ) : (
+              <ul className="space-y-2.5">{o.verliest.map((r, i) => <RangRij key={r.key} nummer={i + 1} r={r} soort="verlies" max={Math.max(...o.verliest.map((x) => x.verlies), 1)} />)}</ul>
+            )}
+          </div>
+        </section>
+
+        <section className="mt-5 grid gap-4 lg:grid-cols-3">
+          <div className={`${kaart} p-5 sm:p-6`}>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#8A93A3]">Beste advertentiegroep</p>
+            {o.besteGroep ? (
+              <>
+                <p className="mt-3 font-display text-xl font-bold text-white">{o.besteGroep.naam}</p>
+                <p className="mt-1 text-sm text-[#3DDC97]">{getal(o.besteGroep.leads, o.besteGroep.leads % 1 ? 1 : 0)} leads voor {eur(o.besteGroep.cpl)} per lead</p>
+              </>
+            ) : <p className="mt-3 text-sm text-[#8A93A3]">Nog te vroeg om te zeggen.</p>}
+            {o.slechtsteGroep && (
+              <div className="mt-4 border-t border-white/[0.07] pt-4">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#8A93A3]">Zwakste groep</p>
+                <p className="mt-2 font-semibold text-white">{o.slechtsteGroep.naam}</p>
+                <p className="mt-0.5 text-sm text-[#FF7A88]">{o.slechtsteGroep.oordeel.tekst}</p>
+              </div>
+            )}
+          </div>
+
+          <div className={`${kaart} p-5 sm:p-6`}>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#8A93A3]">Beste dag van de week</p>
+            {o.besteWeekdag ? (
+              <>
+                <p className="mt-3 font-display text-xl font-bold capitalize text-white">{o.besteWeekdag.lang}</p>
+                <p className="mt-1 text-sm text-[#3DDC97]">Leads kosten hier gemiddeld {eur(o.besteWeekdag.cpl)}</p>
+              </>
+            ) : <p className="mt-3 text-sm text-[#8A93A3]">Nog te vroeg om te zeggen.</p>}
+            <div className="mt-4 flex h-24 gap-1.5" aria-hidden="true">
+              {o.weekdagen.map((w) => {
+                const maxL = Math.max(...o.weekdagen.map((x) => x.leads), 1);
+                const kleur = o.besteWeekdag && w.lang === o.besteWeekdag.lang ? '#3DDC97' : o.slechtsteWeekdag && w.lang === o.slechtsteWeekdag.lang ? '#FF5C6C' : '#EDA71B';
+                return (
+                  <div key={w.lang} className="flex h-full flex-1 flex-col items-center gap-1">
+                    <div className="flex w-full flex-1 items-end">
+                      <div className="w-full rounded-t-md" style={{ height: `${Math.max(6, (w.leads / maxL) * 100)}%`, background: kleur, opacity: 0.85 }} />
+                    </div>
+                    <span className="text-[10px] uppercase text-[#6B7482]">{w.kort}</span>
+                  </div>
+                );
+              })}
+            </div>
+            {o.slechtsteWeekdag && <p className="mt-3 text-xs text-[#8A93A3]">Op {o.slechtsteWeekdag.lang} kost een lead {eur(o.slechtsteWeekdag.cpl)}. Overweeg dan minder te bieden.</p>}
+          </div>
+
+          <div className={`${kaart} p-5 sm:p-6`}>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#8A93A3]">Weggegooid op verkeerde zoekopdrachten</p>
+            <p className="mt-3 font-display text-3xl font-bold text-[#FF7A88]">{eur(o.uitsluitKosten)}</p>
+            <p className="mt-1 text-sm text-[#B4BBC8]">
+              {o.zoektermen.filter((t) => uitsluitWoord(t.naam)).length} zoekopdrachten van mensen die niets willen kopen, zoals &quot;gratis&quot; of &quot;vervangen&quot;.
+            </p>
+            <p className="mt-3 text-xs text-[#6B7482]">Sluit ze uit en dat geld gaat naar echte klanten.</p>
+          </div>
+        </section>
+
+
+        {o.tijden && (
+          <section className={`${kaart} mt-5 p-5 sm:p-7`}>
+            <Sectiekop titel="Beste tijdstippen" sub="Op basis van de laatste 30 dagen. Zo zie je wanneer je advertenties het best werken en wanneer je geld weggooit." />
+
+            <div className="grid gap-3 sm:grid-cols-2">
+              <div className="rounded-2xl border border-[#3DDC97]/25 bg-[#3DDC97]/[0.07] p-4">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#3DDC97]">Beste tijd</p>
+                {o.tijden.beste ? (
+                  <>
+                    <p className="mt-2 font-display text-2xl font-bold text-white">{uurTekst(o.tijden.beste)}</p>
+                    <p className="mt-0.5 text-sm text-[#B4BBC8]">{getal(o.tijden.beste.leads)} leads voor {eur(o.tijden.beste.cpl)} per lead</p>
+                  </>
+                ) : <p className="mt-2 text-sm text-[#B4BBC8]">Nog te vroeg om te zeggen.</p>}
+              </div>
+              <div className="rounded-2xl border border-[#FF5C6C]/25 bg-[#FF5C6C]/[0.07] p-4">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#FF7A88]">Slechtste tijd</p>
+                {o.tijden.slechtste ? (
+                  <>
+                    <p className="mt-2 font-display text-2xl font-bold text-white">{uurTekst(o.tijden.slechtste)}</p>
+                    <p className="mt-0.5 text-sm text-[#B4BBC8]">{eur(o.tijden.slechtste.kosten)} uitgegeven, {o.tijden.slechtste.leads > 0 ? `${getal(o.tijden.slechtste.leads)} leads (${eur(o.tijden.slechtste.cpl)} per lead)` : 'geen enkele lead'}</p>
+                  </>
+                ) : <p className="mt-2 text-sm text-[#B4BBC8]">Geen tijd die duidelijk geld verliest.</p>}
+              </div>
+            </div>
+
+            <div className="mt-5">
+              <UrenChart uren={o.tijden.uren} beste={o.tijden.beste} slechtste={o.tijden.slechtste} />
+            </div>
+
+            <div className="mt-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
+              {o.tijden.blokken.map((b) => (
+                <div key={b.id} className={`rounded-2xl border p-4 ${CEL[b.oordeel.status]}`}>
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] opacity-90">{b.naam}</p>
+                  <p className="text-[11px] opacity-70">{b.tijd}</p>
+                  <p className="mt-2 font-display text-xl font-bold text-white">{b.cpl != null ? `${eur(b.cpl)}` : '–'}</p>
+                  <p className="text-xs opacity-90">{b.cpl != null ? 'per lead' : 'nog geen lead'}</p>
+                  <p className="mt-2 text-xs text-[#8A93A3]">{eur(b.kosten)} uitgegeven · {getal(b.leads, b.leads % 1 ? 1 : 0)} {b.leads === 1 ? 'lead' : 'leads'}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-7">
+              <p className="mb-1 font-display text-lg font-bold text-white">Welke advertentiegroep werkt wanneer?</p>
+              <p className="mb-3 text-sm text-[#8A93A3]">Per groep zie je wat een lead kost in elk deel van de dag. Groen is goedkoop, rood is duur, grijs is nog te weinig data.</p>
+              <div className="hidden grid-cols-[minmax(0,1.6fr)_repeat(4,minmax(0,1fr))_minmax(0,1.3fr)] gap-2.5 px-1 pb-2 text-[11px] font-semibold uppercase tracking-wider text-[#6B7482] md:grid">
+                <span>Advertentiegroep</span>
+                {o.tijden.blokken.map((b) => <span key={b.id} className="text-center">{b.naam}</span>)}
+                <span>Beste tijd</span>
+              </div>
+              <div className="space-y-2">
+                {o.tijden.groepen.map((g) => (
+                  <div key={g.key} className="grid grid-cols-4 gap-2 rounded-2xl border border-white/[0.06] bg-black/20 p-3 md:grid-cols-[minmax(0,1.6fr)_repeat(4,minmax(0,1fr))_minmax(0,1.3fr)] md:items-center md:gap-2.5">
+                    <div className="col-span-4 min-w-0 md:col-span-1">
+                      <p className="truncate font-semibold text-white">{g.naam}</p>
+                      <p className="truncate text-xs text-[#6B7482]">{g.campagne} · {eur(g.kosten)}</p>
+                    </div>
+                    {g.blokken.map((b) => (
+                      <div key={b.id} className={`rounded-xl border px-2 py-2 text-center ${CEL[b.oordeel.status]}`}>
+                        <p className="text-[9px] uppercase tracking-wider opacity-70 md:hidden">{b.naam}</p>
+                        <p className="font-display text-sm font-bold">{b.cpl != null ? eur(b.cpl, 0) : b.kosten >= 1 ? '0 leads' : '–'}</p>
+                        <p className="text-[10px] opacity-80">{b.leads > 0 ? `${getal(b.leads, b.leads % 1 ? 1 : 0)} ${b.leads === 1 ? 'lead' : 'leads'}` : eur(b.kosten, 0)}</p>
+                      </div>
+                    ))}
+                    <div className="col-span-4 md:col-span-1">
+                      {g.beste ? (
+                        <p className="text-sm"><span className="font-semibold text-[#3DDC97]">{g.beste.naam}</span> <span className="text-xs text-[#8A93A3]">{eur(g.beste.cpl, 0)} per lead</span></p>
+                      ) : <p className="text-xs text-[#6B7482]">Nog te vroeg</p>}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         <section className={`${kaart} mt-5 p-5 sm:p-7`}>
           <Sectiekop titel="Wat moet ik nu doen?" sub={o.advies.length ? 'Op basis van de cijfers hierboven. Hoe hoger in de lijst, hoe meer geld het scheelt.' : undefined} />
           {o.advies.length === 0 ? (
@@ -252,21 +470,10 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
             </p>
           ) : (
             <>
-              <ul className="space-y-2.5">
-                {zichtbaarAdvies.map((a) => (
-                  <li key={a.id} className="flex gap-3.5 rounded-2xl border border-white/[0.06] bg-black/20 p-4">
-                    <span className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-base ${a.niveau === 'slecht' ? 'bg-[#FF5C6C]/12 text-[#FF7A88]' : 'bg-[#3DDC97]/12 text-[#3DDC97]'}`} aria-hidden="true">
-                      {a.soort === 'pauzeer' ? '❚❚' : a.soort === 'uitsluiten' ? '⊘' : a.soort === 'meer' ? '▲' : '!'}
-                    </span>
-                    <div className="min-w-0">
-                      <p className="font-semibold text-white">{a.titel}</p>
-                      <p className="mt-0.5 text-sm leading-relaxed text-[#8A93A3]">{a.uitleg}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-              {o.advies.length > 5 && (
-                <button onClick={() => setAlleAdvies((v) => !v)} className="mt-3 text-sm font-medium text-[#F3B93A] hover:underline">
+              <AdviesGroep titel="Stoppen of aanpassen" kleur="#FF5C6C" items={o.advies.filter((a) => a.niveau === 'slecht')} alles={alleAdvies} />
+              <AdviesGroep titel="Meer aan uitgeven" kleur="#3DDC97" items={o.advies.filter((a) => a.niveau === 'goed')} alles={alleAdvies} />
+              {(o.advies.filter((a) => a.niveau === 'slecht').length > 4 || o.advies.filter((a) => a.niveau === 'goed').length > 4) && (
+                <button onClick={() => setAlleAdvies((v) => !v)} className="mt-4 text-sm font-medium text-[#F3B93A] hover:underline">
                   {alleAdvies ? 'Toon minder' : `Toon alle ${o.advies.length} punten`}
                 </button>
               )}
