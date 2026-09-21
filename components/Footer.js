@@ -24,6 +24,7 @@ export default function Footer() {
             <li><Link href="/kennisbank" className="hover:text-ink transition-colors">Kennisbank</Link></li>
             <li><Link href="/handleiding" className="hover:text-ink transition-colors">Handleiding</Link></li>
             <li><Link href="/garantie" className="hover:text-ink transition-colors">Garantie</Link></li>
+            <li><Link href="/over-ons" className="hover:text-ink transition-colors">Over ons</Link></li>
             <li><Link href="/#faq" className="hover:text-ink transition-colors">FAQ</Link></li>
           </ul>
         </div>
@@ -53,6 +54,11 @@ export default function Footer() {
           <li><Link href="/waterzuiveraar-drinkwater" className="hover:text-ink transition-colors">Waterzuiveraar drinkwater</Link></li>
           <li><Link href="/waterzuiveringsinstallatie" className="hover:text-ink transition-colors">Waterzuiveringsinstallatie</Link></li>
           <li><Link href="/maatcheck" className="hover:text-ink transition-colors">Maatcheck</Link></li>
+          <li><Link href="/winkel" className="hover:text-ink transition-colors">Osmose filter kopen</Link></li>
+          <li><Link href="/winkel/ppc-filter" className="hover:text-ink transition-colors">Sedimentfilter</Link></li>
+          <li><Link href="/winkel/ro-filter" className="hover:text-ink transition-colors">Osmose membraan</Link></li>
+          <li><Link href="/winkel/cto-filter" className="hover:text-ink transition-colors">Actief koolstof filter</Link></li>
+          <li><Link href="/winkel/cto-filter-met-mineralen" className="hover:text-ink transition-colors">Mineraalfilter osmose</Link></li>
           <li><Link href="/kennisbank/waterfilter-vervangen-hoe-vaak" className="hover:text-ink transition-colors">Waterfilter vervangen</Link></li>
           <li><Link href="/kennisbank/waterfilter-onder-de-gootsteen" className="hover:text-ink transition-colors">Waterfilter onder de gootsteen</Link></li>
           <li><Link href="/kennisbank/kraanwater-vs-flessenwater" className="hover:text-ink transition-colors">Kraanwater vs flessenwater</Link></li>

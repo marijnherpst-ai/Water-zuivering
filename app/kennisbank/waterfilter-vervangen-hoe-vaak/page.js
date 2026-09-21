@@ -81,7 +81,7 @@ export default function Page() {
             <div className="order-1 lg:order-2">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Zonder gedoe</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Filter vervangen zonder gereedschap</h2>
-              <p className="mt-4 text-dim">Bij een Water-zuivering systeem draai je in drie simpele stappen zelf een nieuw filter erin — geen gereedschap, geen monteur nodig. Benieuwd hoe dat precies gaat? Lees de volledige uitleg op onze <Link href="/uitleg" className="underline hover:text-ink">specificatiepagina</Link>.</p>
+              <p className="mt-4 text-dim">Bij een Water-zuivering systeem draai je in drie simpele stappen zelf een nieuw filter erin — geen gereedschap, geen monteur nodig. Benieuwd hoe dat precies gaat? Lees de volledige uitleg op onze <Link href="/uitleg" className="underline hover:text-ink">specificatiepagina</Link>. Een nieuw filter nodig? Bekijk de <Link href="/winkel" className="underline hover:text-ink">osmose filters in onze winkel</Link>.</p>
             </div>
           </div>
         </section>

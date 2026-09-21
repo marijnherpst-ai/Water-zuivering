@@ -262,7 +262,7 @@ export default async function Page() {
             <div className="mt-10 rounded-3xl bg-amber/10 border border-amber/20 px-7 py-6 flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left">
               <div>
                 <p className="font-display font-bold text-lg">Gemiddeld ± €135 per jaar aan filters</p>
-                <p className="mt-1 text-sm text-dim">Dat is nog geen €11,50 per maand — voor zuiver water waar je hele gezin dagelijks van drinkt.</p>
+                <p className="mt-1 text-sm text-dim">Dat is nog geen €11,50 per maand — voor zuiver water waar je hele gezin dagelijks van drinkt. Bekijk de <Link href="/winkel" className="underline hover:text-ink">osmose filters in de winkel</Link>.</p>
               </div>
               <Link href="/kennisbank/wat-kost-een-waterzuiveringssysteem" className="cursor-pointer shrink-0 inline-flex items-center gap-2 rounded-full border-2 border-ink px-6 py-3 text-sm font-bold text-ink hover:bg-white transition-colors">
                 Meer over de kosten
