@@ -27,10 +27,10 @@ const DROPDOWNS = [
 ];
 
 const NAV_LINKS = [
-  { href: '/winkel', label: 'Winkel' },
   { href: '/storingen', label: 'Storingen' },
   { href: '/reviews', label: 'Reviews' },
   { href: '/contact', label: 'Contact' },
+  { href: '/winkel', label: 'Winkel' },
 ];
 
 export default function Header() {

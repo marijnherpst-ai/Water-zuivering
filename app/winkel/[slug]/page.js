@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ProductAfbeelding from '@/components/winkel/ProductAfbeelding';
+import ProductZoom from '@/components/winkel/ProductZoom';
 import ToevoegenKnop from '@/components/winkel/ToevoegenKnop';
 import { PRODUCTEN, STAPPEN_VERVANGEN, FAQ_PRODUCT, getProduct, formatPrijs } from '@/lib/winkel/producten';
 
@@ -39,7 +40,7 @@ export default async function Page({ params }) {
           <Link href="/winkel" className="text-sm text-dim underline hover:text-ink">Terug naar de winkel</Link>
 
           <div className="mt-6 grid md:grid-cols-2 gap-10 items-start">
-            <ProductAfbeelding src={p.afbeelding} alt={p.afbeeldingAlt} className="aspect-[4/5]" priority />
+            <ProductZoom src={p.afbeelding} alt={p.afbeeldingAlt} className="aspect-[4/5]" />
 
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">{p.ondertitel}</span>
