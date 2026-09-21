@@ -80,7 +80,7 @@ function kort(d) {
   return new Date(`${d}T12:00:00Z`).toLocaleDateString('nl-NL', { day: 'numeric', month: 'short' });
 }
 
-export default function DashboardView({ data, email }) {
+export default function DashboardView({ data, email, geenEchteCijfers }) {
   const router = useRouter();
   const [periodeId, setPeriodeId] = useState('7');
   const [inst, setInst] = useState(STANDAARD_INSTELLINGEN);
@@ -175,7 +175,12 @@ export default function DashboardView({ data, email }) {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            {data.demo && <span className="rounded-full border border-[#EDA71B]/40 bg-[#EDA71B]/10 px-3 py-1 text-xs font-semibold text-[#F3B93A]">Voorbeeldcijfers</span>}
+            {email && (
+              <a href={data.demo ? '/dashboard?demo=0' : '/dashboard?demo=1'}
+                className={`rounded-full border px-3.5 py-1.5 text-xs font-semibold transition ${data.demo ? 'border-[#EDA71B]/50 bg-[#EDA71B]/12 text-[#F3B93A]' : 'border-white/10 text-[#B4BBC8] hover:border-white/25 hover:text-white'}`}>
+                {data.demo ? 'Voorbeeldcijfers: aan' : 'Voorbeeldcijfers bekijken'}
+              </a>
+            )}
             {email && (
               <form action={uitloggen}>
                 <button className="rounded-full border border-white/10 px-4 py-1.5 text-xs text-[#B4BBC8] transition hover:border-white/25 hover:text-white">Uitloggen</button>
@@ -183,6 +188,13 @@ export default function DashboardView({ data, email }) {
             )}
           </div>
         </header>
+
+        {data.demo && (
+          <div role="note" className="mt-5 rounded-2xl border border-[#EDA71B]/30 bg-[#EDA71B]/[0.08] px-4 py-3 text-sm text-[#F3B93A]">
+            <strong className="text-white">Dit zijn voorbeeldcijfers, geen echte.</strong>{' '}
+            {geenEchteCijfers ? 'Zodra je advertenties vertoningen hebben, verschijnen hier automatisch je echte cijfers.' : 'Klik rechtsboven op "Voorbeeldcijfers: aan" om terug te gaan naar je echte cijfers.'}
+          </div>
+        )}
 
         <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
           <div role="tablist" aria-label="Periode" className="inline-flex rounded-full border border-white/10 bg-white/[0.03] p-1">

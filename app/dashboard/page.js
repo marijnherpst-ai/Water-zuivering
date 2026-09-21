@@ -13,8 +13,9 @@ export default async function DashboardPage({ searchParams }) {
   const sp = await searchParams;
   const wilDemo = sp?.demo === '1';
 
+
   if (LOKAAL_VOORBEELD) {
-    return <DashboardView data={demoData(vandaagInAmsterdam())} />;
+    return <DashboardView data={demoData(vandaagInAmsterdam())} email="lokaal" geenEchteCijfers />;
   }
 
   const supabase = await createClient();
@@ -39,6 +40,9 @@ export default async function DashboardPage({ searchParams }) {
     );
   }
 
-  const data = wilDemo ? demoData(vandaagInAmsterdam()) : await haalDashboardData(supabase);
-  return <DashboardView data={data} email={user.email} />;
+  const echt = await haalDashboardData(supabase);
+  const geenEchteCijfers = echt.campagnes.length === 0;
+  const toonDemo = wilDemo || (sp?.demo !== '0' && geenEchteCijfers);
+  const data = toonDemo ? { ...demoData(vandaagInAmsterdam()), aanvragen: echt.aanvragen } : echt;
+  return <DashboardView data={data} email={user.email} geenEchteCijfers={geenEchteCijfers} />;
 }
