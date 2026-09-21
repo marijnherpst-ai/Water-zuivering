@@ -10,3 +10,8 @@ skills-lock.json
 # Env
 .env*.local
 !.env.production
+
+# Advertentie-dashboard (lokaal, met zakelijke cijfers)
+ads-dashboard/.env
+ads-dashboard/data/*
+!ads-dashboard/data/voorbeeld/

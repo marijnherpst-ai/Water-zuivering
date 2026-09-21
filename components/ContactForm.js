@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from 'react';
 import { submitContactForm } from '@/app/actions';
+import { trackLead } from '@/lib/trackLead';
 
 export default function ContactForm() {
   const [status, setStatus] = useState(null);
@@ -22,6 +23,7 @@ export default function ContactForm() {
         if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
           window.gtag('event', 'generate_lead', { event_category: 'contact' });
         }
+        trackLead('contact');
       } else {
         setStatus({ ok: false, message: result.error });
       }

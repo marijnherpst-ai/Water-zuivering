@@ -29,6 +29,33 @@ export async function submitContactForm(formData) {
   return { success: true };
 }
 
+const LEAD_TYPES = ['aanmelden', 'contact', 'besparing', 'giveaway'];
+
+function kort(waarde) {
+  return typeof waarde === 'string' && waarde ? waarde.slice(0, 200) : null;
+}
+
+export async function logLeadEvent(data) {
+  if (!data || !LEAD_TYPES.includes(data.type)) return { success: false };
+
+  const supabase = await createClient();
+  const { error } = await supabase.from('lead_events').insert({
+    lead_type: data.type,
+    page_path: kort(data.page),
+    landing_page: kort(data.landing_page),
+    referrer_host: kort(data.referrer_host),
+    utm_source: kort(data.utm_source),
+    utm_medium: kort(data.utm_medium),
+    utm_campaign: kort(data.utm_campaign),
+    utm_term: kort(data.utm_term),
+    utm_content: kort(data.utm_content),
+    gclid: kort(data.gclid),
+    consent: data.consent === true,
+  });
+
+  return { success: !error };
+}
+
 export async function submitReview(formData) {
   const name = formData.get('name')?.toString().trim();
   const city = formData.get('city')?.toString().trim() || null;

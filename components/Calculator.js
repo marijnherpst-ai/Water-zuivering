@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from 'react';
 import { submitBesparingLead } from '@/app/actions';
+import { trackLead } from '@/lib/trackLead';
 
 // Jaarlijkse onderhoudskosten van het Water-zuivering systeem: PPC- en
 // CTO-filter (elk €49,99, ieder jaar) + RO-filter (€69,99, elke 2 jaar).
@@ -70,6 +71,7 @@ export default function Calculator() {
         if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
           window.gtag('event', 'generate_lead', { event_category: 'besparing' });
         }
+        trackLead('besparing');
       } else {
         setError(result.error);
       }

@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from 'react';
 import { submitGiveawayEntry } from '@/app/actions';
+import { trackLead } from '@/lib/trackLead';
 
 export default function GiveawayForm({ closed = false }) {
   const [status, setStatus] = useState(null);
@@ -22,6 +23,7 @@ export default function GiveawayForm({ closed = false }) {
         if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
           window.gtag('event', 'generate_lead', { event_category: 'giveaway' });
         }
+        trackLead('giveaway');
       } else {
         setStatus({ ok: false, message: result.error });
       }

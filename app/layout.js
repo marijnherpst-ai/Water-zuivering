@@ -3,6 +3,7 @@ import { Inter, Outfit } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import TrackingScripts from '@/components/TrackingScripts';
+import AttributionCapture from '@/components/AttributionCapture';
 import OrganizationSchema from '@/components/OrganizationSchema';
 import './globals.css';
 
@@ -63,18 +64,43 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="nl" className={`${inter.variable} ${outfit.variable}`}>
+      <head>
+        <script
+          data-cookieconsent="ignore"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('consent', 'default', {
+                ad_storage: 'denied',
+                ad_user_data: 'denied',
+                ad_personalization: 'denied',
+                analytics_storage: 'denied',
+                functionality_storage: 'denied',
+                personalization_storage: 'denied',
+                security_storage: 'granted',
+                wait_for_update: 500
+              });
+              gtag('set', 'ads_data_redaction', true);
+              gtag('set', 'url_passthrough', true);
+            `,
+          }}
+        />
+      </head>
       <body className="bg-bg text-ink font-sans antialiased">
         <Script
           id="Cookiebot"
           src="https://consent.cookiebot.com/uc.js"
           data-cbid={COOKIEBOT_ID}
           data-blockingmode="auto"
+          data-consentmode-defaults="disabled"
           data-culture="nl"
           strategy="beforeInteractive"
         />
         <OrganizationSchema />
         {children}
         <WhatsAppButton />
+        <AttributionCapture />
         <Analytics />
         <TrackingScripts />
       </body>

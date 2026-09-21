@@ -3,6 +3,7 @@
 import { useRef, useState, useTransition } from 'react';
 import Link from 'next/link';
 import { submitAanmeldenForm } from '@/app/actions';
+import { trackLead } from '@/lib/trackLead';
 
 const TOTAL_STEPS = 3;
 
@@ -64,6 +65,7 @@ export default function AanmeldenPage() {
         if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
           window.gtag('event', 'generate_lead', { event_category: 'aanmelden' });
         }
+        trackLead('aanmelden');
       } else {
         setSubmitError(result.error);
       }

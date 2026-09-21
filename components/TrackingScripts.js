@@ -3,21 +3,23 @@ const CLARITY_PROJECT_ID = 'xxlly23zof';
 const GA_MEASUREMENT_ID = 'G-K7V64C0DH8';
 const GOOGLE_ADS_ID = 'AW-18325767412';
 
-// These scripts use type="text/plain" with a data-cookieconsent category.
-// Cookiebot scans the page for this pattern and only activates each script
-// after the visitor consents to that specific category ("statistics" or
-// "marketing"). Until then, browsers never execute a text/plain script.
+// Google tag (Analytics + Ads) runs in Consent Mode v2: consent defaults are set
+// to "denied" in app/layout.js and Cookiebot updates them per visitor choice
+// (statistics -> analytics_storage, marketing -> ad_storage/ad_user_data/
+// ad_personalization). "ignore" keeps Cookiebot auto-blocking away from these two
+// so Google can send cookieless pings until consent is given.
+// The other scripts use type="text/plain" with a data-cookieconsent category and
+// are only activated by Cookiebot after consent to that category.
 export default function TrackingScripts() {
   return (
     <>
       <script
-        type="text/plain"
-        data-cookieconsent="statistics"
+        async
+        data-cookieconsent="ignore"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
       />
       <script
-        type="text/plain"
-        data-cookieconsent="statistics"
+        data-cookieconsent="ignore"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
