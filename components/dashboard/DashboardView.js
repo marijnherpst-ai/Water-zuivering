@@ -3,7 +3,8 @@
 import { useEffect, useMemo, useState, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
 import { PERIODES, STANDAARD_INSTELLINGEN, bouwOverzicht, eur, getal, uitsluitWoord, verandering } from '@/lib/dashboard/analyse';
-import { stuurAanvraag, uitloggen } from '@/app/dashboard/actions';
+import { stuurAanvraag, synchroniseerMeta, uitloggen } from '@/app/dashboard/actions';
+import { Doelgroepen, Klantreis, MetaSetup } from './FacebookBlokken';
 import Chart from './Chart';
 import UrenChart from './UrenChart';
 
@@ -149,8 +150,10 @@ function kort(d) {
   return new Date(`${d}T12:00:00Z`).toLocaleDateString('nl-NL', { day: 'numeric', month: 'short' });
 }
 
-export default function DashboardView({ data, email, geenEchteCijfers }) {
+export default function DashboardView({ data, email, geenEchteCijfers, metaGekoppeld }) {
   const router = useRouter();
+  const fb = data.bron === 'facebook';
+  const BRON = fb ? 'Facebook' : 'Google Ads';
   const [periodeId, setPeriodeId] = useState('7');
   const [inst, setInst] = useState(STANDAARD_INSTELLINGEN);
   const [tab, setTab] = useState('zoekwoorden');
@@ -171,6 +174,20 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
     } catch {}
   }, []);
 
+  const [synchroniseert, startSync] = useTransition();
+  useEffect(() => {
+    if (!fb || data.demo || !metaGekoppeld) return;
+    synchroniseerMeta(false).then((r) => { if (r?.ok && !r.overgeslagen) router.refresh(); }).catch(() => {});
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  function versversFacebook() {
+    startSync(async () => {
+      await synchroniseerMeta(true);
+      router.refresh();
+    });
+  }
+
   function kiesPeriode(id) {
     setPeriodeId(id);
     try { localStorage.setItem('wz-dash-periode', id); } catch {}
@@ -184,6 +201,7 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
 
   const o = useMemo(() => bouwOverzicht(data, periodeId, inst), [data, periodeId, inst]);
   const kanOordelen = o.totaal.kosten > 0;
+  const bereikRij = fb ? (data.bereik || []).find((b) => b.campaign_id === '__account__' && b.days === o.periode.dagen) : null;
 
   const lijst = { zoekwoorden: o.zoekwoorden, groepen: o.groepen, campagnes: o.campagnes, zoektermen: o.zoektermen }[tab];
   const gefilterd = lijst.filter((r) => (filter === 'alles' ? true : filter === 'slecht' ? r.oordeel.status === 'slecht' : r.oordeel.status === 'goed'));
@@ -202,7 +220,7 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
       return;
     }
     start(async () => {
-      const r = await stuurAanvraag({ periode: o.periode.label, notitie, items: o.advies });
+      const r = await stuurAanvraag({ periode: o.periode.label + (fb ? ' · Facebook' : ''), notitie, items: o.advies });
       if (r.ok) {
         setMelding({ ok: true });
         setPaneel(false);
@@ -217,7 +235,7 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
   let hero;
   const effectief = kanOordelen ? Math.max(0, Math.round((1 - o.verspild / o.totaal.kosten) * 100)) : null;
   if (!o.heeftData) {
-    hero = { kleur: '#8A93A3', titel: 'Er zijn nog geen cijfers binnen', tekst: 'Zodra je advertenties worden getoond, stuurt Google Ads elk uur de cijfers hierheen. Je hoeft niets te doen.' };
+    hero = { kleur: '#8A93A3', titel: 'Er zijn nog geen cijfers binnen', tekst: fb ? 'Zodra Facebook is gekoppeld en je advertenties worden getoond, verschijnen hier je cijfers. Je hoeft niets te doen.' : 'Zodra je advertenties worden getoond, stuurt Google Ads elk uur de cijfers hierheen. Je hoeft niets te doen.' };
   } else if (!kanOordelen) {
     hero = { kleur: '#8A93A3', titel: 'In deze periode is niets uitgegeven', tekst: 'Kies een langere periode om resultaten te zien.' };
   } else if (o.verspild >= inst.verspildVanaf) {
@@ -242,9 +260,15 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
               <h1 className="font-display text-2xl font-bold leading-tight text-white">Advertentie-overzicht</h1>
             </div>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
+            <div className="inline-flex rounded-full border border-white/10 bg-white/[0.03] p-1 text-xs font-semibold">
+              {[['google', 'Google Ads'], ['facebook', 'Facebook']].map(([id, naam]) => (
+                <a key={id} href={`/dashboard?bron=${id}${data.demo ? '&demo=1' : ''}`}
+                  className={`rounded-full px-3.5 py-1.5 transition ${data.bron === id ? 'bg-white/12 text-white' : 'text-[#8A93A3] hover:text-white'}`}>{naam}</a>
+              ))}
+            </div>
             {email && (
-              <a href={data.demo ? '/dashboard?demo=0' : '/dashboard?demo=1'}
+              <a href={`/dashboard?bron=${data.bron}&demo=${data.demo ? 0 : 1}`}
                 className={`rounded-full border px-3.5 py-1.5 text-xs font-semibold transition ${data.demo ? 'border-[#EDA71B]/50 bg-[#EDA71B]/12 text-[#F3B93A]' : 'border-white/10 text-[#B4BBC8] hover:border-white/25 hover:text-white'}`}>
                 {data.demo ? 'Voorbeeldcijfers: aan' : 'Voorbeeldcijfers bekijken'}
               </a>
@@ -260,9 +284,12 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
         {data.demo && (
           <div role="note" className="mt-5 rounded-2xl border border-[#EDA71B]/30 bg-[#EDA71B]/[0.08] px-4 py-3 text-sm text-[#F3B93A]">
             <strong className="text-white">Dit zijn voorbeeldcijfers, geen echte.</strong>{' '}
-            {geenEchteCijfers ? 'Zodra je advertenties vertoningen hebben, verschijnen hier automatisch je echte cijfers.' : 'Klik rechtsboven op "Voorbeeldcijfers: aan" om terug te gaan naar je echte cijfers.'}
+            {geenEchteCijfers ? (fb ? 'Zodra Facebook is gekoppeld, verschijnen hier automatisch je echte cijfers.' : 'Zodra je advertenties vertoningen hebben, verschijnen hier automatisch je echte cijfers.') : 'Klik rechtsboven op "Voorbeeldcijfers: aan" om terug te gaan naar je echte cijfers.'}
           </div>
         )}
+
+        {fb && !data.demo && <MetaSetup gekoppeld={metaGekoppeld} status={data.syncStatus} />}
+        {fb && data.demo && !metaGekoppeld && <MetaSetup gekoppeld={false} status={null} />}
 
         <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
           <div role="tablist" aria-label="Periode" className="inline-flex rounded-full border border-white/10 bg-white/[0.03] p-1">
@@ -276,7 +303,10 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
           <p className="text-xs text-[#6B7482]">
             {o.periode.dagen === 1 ? kort(o.nu.tot) : `${kort(o.nu.van)} t/m ${kort(o.nu.tot)}`}
             {' · '}
-            {data.bijgewerkt ? `Google Ads-cijfers van ${tijdTekst(data.bijgewerkt)}` : 'Nog geen cijfers van Google Ads ontvangen'}
+            {data.bijgewerkt ? `${BRON}-cijfers van ${tijdTekst(data.bijgewerkt)}` : `Nog geen cijfers van ${BRON} ontvangen`}
+            {fb && !data.demo && metaGekoppeld && (
+              <button onClick={versversFacebook} disabled={synchroniseert} className="ml-2 rounded-full border border-white/10 px-2.5 py-0.5 text-[11px] text-[#B4BBC8] hover:text-white disabled:opacity-60">{synchroniseert ? 'Bezig…' : 'Nu verversen'}</button>
+            )}
           </p>
         </div>
 
@@ -304,7 +334,11 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
           <Kpi titel="Leads" waarde={getal(o.totaal.leads, o.totaal.leads % 1 ? 1 : 0)} accent="#3DDC97" onder={<Delta nu={o.totaal.leads} vorig={o.vorig.leads} hoogIsGoed />} />
           <Kpi titel="Kosten per lead" waarde={o.totaal.cpl != null ? eur(o.totaal.cpl) : '–'} accent={o.totaal.cpl != null && o.totaal.cpl > inst.doelCpl ? '#FF5C6C' : '#3DDC97'}
             onder={o.totaal.cpl != null && o.vorig.cpl != null ? <Delta nu={o.totaal.cpl} vorig={o.vorig.cpl} hoogIsGoed={false} /> : <span className="text-xs text-[#6B7482]">Doel: {eur(inst.doelCpl, 0)} per lead</span>} />
-          <Kpi titel="Bezoekers via advertenties" waarde={getal(o.totaal.klikken)} onder={<Delta nu={o.totaal.klikken} vorig={o.vorig.klikken} hoogIsGoed />} />
+          {fb && bereikRij ? (
+            <Kpi titel="Bereik" waarde={getal(bereikRij.reach)} onder={<span className="text-xs text-[#6B7482]">Gemiddeld {getal(bereikRij.frequency, 1)}x gezien per persoon</span>} />
+          ) : (
+            <Kpi titel="Bezoekers via advertenties" waarde={getal(o.totaal.klikken)} onder={<Delta nu={o.totaal.klikken} vorig={o.vorig.klikken} hoogIsGoed />} />
+          )}
         </section>
 
         <section className={`${kaart} mt-5 p-5 sm:p-7`}>
@@ -315,7 +349,7 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
         <section className="mt-5 grid gap-4 lg:grid-cols-2">
           <div className={`${kaart} relative overflow-hidden p-5 sm:p-7`}>
             <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#3DDC97] opacity-[0.12] blur-3xl" />
-            <Sectiekop titel="Dit werkt" sub={o.wint.length ? `De beste ${o.zoekwoorden.length ? 'zoekwoorden' : 'campagnes'}. Alles wat goed presteert levert samen ${getal(o.winstLeads, o.winstLeads % 1 ? 1 : 0)} leads op. Hier mag meer geld naartoe.` : undefined} />
+            <Sectiekop titel="Dit werkt" sub={o.wint.length ? `De beste ${o.zoekwoorden.length ? (fb ? 'advertenties' : 'zoekwoorden') : 'campagnes'}. Alles wat goed presteert levert samen ${getal(o.winstLeads, o.winstLeads % 1 ? 1 : 0)} leads op. Hier mag meer geld naartoe.` : undefined} />
             {o.wint.length === 0 ? (
               <p className="rounded-2xl border border-white/[0.06] bg-black/20 p-5 text-sm text-[#B4BBC8]">Nog niets dat aantoonbaar werkt in deze periode. Kies een langere periode of wacht op meer klikken.</p>
             ) : (
@@ -335,7 +369,7 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
 
         <section className="mt-5 grid gap-4 lg:grid-cols-3">
           <div className={`${kaart} p-5 sm:p-6`}>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#8A93A3]">Beste advertentiegroep</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#8A93A3]">{fb ? 'Beste advertentieset' : 'Beste advertentiegroep'}</p>
             {o.besteGroep ? (
               <>
                 <p className="mt-3 font-display text-xl font-bold text-white">{o.besteGroep.naam}</p>
@@ -344,7 +378,7 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
             ) : <p className="mt-3 text-sm text-[#8A93A3]">Nog te vroeg om te zeggen.</p>}
             {o.slechtsteGroep && (
               <div className="mt-4 border-t border-white/[0.07] pt-4">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#8A93A3]">Zwakste groep</p>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#8A93A3]">{fb ? 'Zwakste advertentieset' : 'Zwakste groep'}</p>
                 <p className="mt-2 font-semibold text-white">{o.slechtsteGroep.naam}</p>
                 <p className="mt-0.5 text-sm text-[#FF7A88]">{o.slechtsteGroep.oordeel.tekst}</p>
               </div>
@@ -376,6 +410,18 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
             {o.slechtsteWeekdag && <p className="mt-3 text-xs text-[#8A93A3]">Op {o.slechtsteWeekdag.lang} kost een lead {eur(o.slechtsteWeekdag.cpl)}. Overweeg dan minder te bieden.</p>}
           </div>
 
+          {fb ? (
+            <div className={`${kaart} p-5 sm:p-6`}>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#8A93A3]">Hoe vaak zien mensen je advertentie</p>
+              {bereikRij ? (
+                <>
+                  <p className={`mt-3 font-display text-3xl font-bold ${bereikRij.frequency > 3 ? 'text-[#FF7A88]' : bereikRij.frequency > 2.2 ? 'text-[#F3B93A]' : 'text-[#3DDC97]'}`}>{getal(bereikRij.frequency, 1)}x</p>
+                  <p className="mt-1 text-sm text-[#B4BBC8]">{getal(bereikRij.reach)} mensen bereikt, {getal(bereikRij.impressions)} keer getoond.</p>
+                  <p className="mt-3 text-xs text-[#8A93A3]">{bereikRij.frequency > 3 ? 'Dit is te vaak: mensen raken de advertentie beu. Ververs de advertentie of vergroot de doelgroep.' : bereikRij.frequency > 2.2 ? 'Let op: bij meer dan 3 keer per persoon nemen de resultaten meestal af.' : 'Dit is een gezond niveau.'}</p>
+                </>
+              ) : <p className="mt-3 text-sm text-[#8A93A3]">Nog geen bereikcijfers.</p>}
+            </div>
+          ) : (
           <div className={`${kaart} p-5 sm:p-6`}>
             <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#8A93A3]">Weggegooid op verkeerde zoekopdrachten</p>
             <p className="mt-3 font-display text-3xl font-bold text-[#FF7A88]">{eur(o.uitsluitKosten)}</p>
@@ -384,6 +430,7 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
             </p>
             <p className="mt-3 text-xs text-[#6B7482]">Sluit ze uit en dat geld gaat naar echte klanten.</p>
           </div>
+          )}
         </section>
 
 
@@ -429,7 +476,7 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
             </div>
 
             <div className="mt-7">
-              <p className="mb-1 font-display text-lg font-bold text-white">Welke advertentiegroep werkt wanneer?</p>
+              <p className="mb-1 font-display text-lg font-bold text-white">{fb ? 'Welke campagne werkt wanneer?' : 'Welke advertentiegroep werkt wanneer?'}</p>
               <p className="mb-3 text-sm text-[#8A93A3]">Per groep zie je wat een lead kost in elk deel van de dag. Groen is goedkoop, rood is duur, grijs is nog te weinig data.</p>
               <div className="hidden grid-cols-[minmax(0,1.6fr)_repeat(4,minmax(0,1fr))_minmax(0,1.3fr)] gap-2.5 px-1 pb-2 text-[11px] font-semibold uppercase tracking-wider text-[#6B7482] md:grid">
                 <span>Advertentiegroep</span>
@@ -461,6 +508,8 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
             </div>
           </section>
         )}
+
+        {fb && <Doelgroepen rijen={data.doelgroep} nu={o.nu} inst={inst} />}
 
         <section className={`${kaart} mt-5 p-5 sm:p-7`}>
           <Sectiekop titel="Wat moet ik nu doen?" sub={o.advies.length ? 'Op basis van de cijfers hierboven. Hoe hoger in de lijst, hoe meer geld het scheelt.' : undefined} />
@@ -534,7 +583,7 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
           <Sectiekop titel="Wat presteert goed en wat niet?" sub="Rood kost je geld zonder dat het iets oplevert, groen werkt." />
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="flex flex-wrap gap-1.5" role="tablist">
-              {[['zoekwoorden', 'Zoekwoorden'], ['groepen', 'Advertentiegroepen'], ['campagnes', 'Campagnes'], ['zoektermen', 'Wat mensen typten']].map(([id, naam]) => (
+              {(fb ? [['zoekwoorden', 'Advertenties'], ['groepen', 'Advertentiesets'], ['campagnes', 'Campagnes']] : [['zoekwoorden', 'Zoekwoorden'], ['groepen', 'Advertentiegroepen'], ['campagnes', 'Campagnes'], ['zoektermen', 'Wat mensen typten']]).map(([id, naam]) => (
                 <button key={id} role="tab" aria-selected={tab === id} onClick={() => setTab(id)}
                   className={`whitespace-nowrap rounded-full border px-4 py-2 text-sm font-medium transition ${tab === id ? 'border-[#EDA71B]/50 bg-[#EDA71B]/12 text-[#F3B93A]' : 'border-white/10 text-[#B4BBC8] hover:text-white'}`}>{naam}</button>
               ))}
@@ -583,7 +632,7 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
         <section className={`${kaart} mt-5 p-5 sm:p-7`}>
           <Sectiekop titel="Aanvragen van je website" sub="Zonder naam of contactgegevens. Je ziet alleen waar de aanvraag vandaan kwam." />
           <div className="grid grid-cols-2 gap-3">
-            <div className="rounded-2xl border border-white/[0.06] bg-black/20 p-4"><p className="text-[11px] uppercase tracking-wider text-[#8A93A3]">Via Google Ads</p><p className="mt-1 font-display text-3xl font-bold text-[#3DDC97]">{o.leadsViaAds}</p></div>
+            <div className="rounded-2xl border border-white/[0.06] bg-black/20 p-4"><p className="text-[11px] uppercase tracking-wider text-[#8A93A3]">Via {BRON}</p><p className="mt-1 font-display text-3xl font-bold text-[#3DDC97]">{o.leadsViaAds}</p></div>
             <div className="rounded-2xl border border-white/[0.06] bg-black/20 p-4"><p className="text-[11px] uppercase tracking-wider text-[#8A93A3]">Alle aanvragen</p><p className="mt-1 font-display text-3xl font-bold text-white">{o.leads.length}</p></div>
           </div>
           {o.leads.length > 0 ? (
@@ -595,7 +644,7 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
                     <p className="truncate text-xs text-[#6B7482]">{l.pagina || '/'}{l.term ? ` · zocht op "${l.term}"` : ''}</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <span className={`rounded-full border px-2.5 py-0.5 text-[11px] font-semibold ${l.isAds ? 'border-[#3DDC97]/25 bg-[#3DDC97]/10 text-[#3DDC97]' : 'border-white/10 text-[#8A93A3]'}`}>{l.isAds ? 'Google Ads' : 'Overig'}</span>
+                    <span className={`rounded-full border px-2.5 py-0.5 text-[11px] font-semibold ${l.isAds ? 'border-[#3DDC97]/25 bg-[#3DDC97]/10 text-[#3DDC97]' : 'border-white/10 text-[#8A93A3]'}`}>{l.isAds ? BRON : 'Overig'}</span>
                     <span className="text-xs text-[#6B7482]">{tijdTekst(l.tijd)}</span>
                   </div>
                 </li>
@@ -605,6 +654,8 @@ export default function DashboardView({ data, email, geenEchteCijfers }) {
             <p className="mt-4 text-sm text-[#8A93A3]">In deze periode zijn er geen aanvragen binnengekomen.</p>
           )}
         </section>
+
+        <Klantreis leads={(data.alleLeads || data.leads).filter((l) => l.day >= o.nu.van && l.day <= o.nu.tot)} />
 
         <details className="mt-5 rounded-3xl border border-white/[0.07] px-5 py-4 text-sm text-[#B4BBC8]">
           <summary className="cursor-pointer font-medium text-white">Instellingen: wat vind je een goede prijs?</summary>

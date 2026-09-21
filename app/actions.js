@@ -50,6 +50,8 @@ export async function logLeadEvent(data) {
     utm_term: kort(data.utm_term),
     utm_content: kort(data.utm_content),
     gclid: kort(data.gclid),
+    fbclid: kort(data.fbclid),
+    journey: kort(data.journey),
     consent: data.consent === true,
   });
 

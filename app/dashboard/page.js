@@ -1,21 +1,23 @@
 import { createClient } from '@/lib/supabase/server';
-import { haalDashboardData, vandaagInAmsterdam } from '@/lib/dashboard/data';
-import { demoData } from '@/lib/dashboard/demo';
+import { haalDashboardData, haalMetaData, vandaagInAmsterdam } from '@/lib/dashboard/data';
+import { demoBron } from '@/lib/dashboard/demo';
 import LoginForm from '@/components/dashboard/LoginForm';
 import DashboardView from '@/components/dashboard/DashboardView';
 import { uitloggen } from './actions';
 
 export const dynamic = 'force-dynamic';
+export const maxDuration = 60;
 
 const LOKAAL_VOORBEELD = process.env.NODE_ENV !== 'production' && process.env.DASHBOARD_PREVIEW === '1';
 
 export default async function DashboardPage({ searchParams }) {
   const sp = await searchParams;
+  const bron = sp?.bron === 'facebook' ? 'facebook' : 'google';
   const wilDemo = sp?.demo === '1';
-
+  const metaGekoppeld = Boolean(process.env.META_ACCESS_TOKEN);
 
   if (LOKAAL_VOORBEELD) {
-    return <DashboardView data={demoData(vandaagInAmsterdam())} email="lokaal" geenEchteCijfers />;
+    return <DashboardView data={demoBron(vandaagInAmsterdam(), bron)} email="lokaal" geenEchteCijfers metaGekoppeld={metaGekoppeld} />;
   }
 
   const supabase = await createClient();
@@ -40,9 +42,9 @@ export default async function DashboardPage({ searchParams }) {
     );
   }
 
-  const echt = await haalDashboardData(supabase);
+  const echt = bron === 'facebook' ? await haalMetaData(supabase) : await haalDashboardData(supabase);
   const geenEchteCijfers = echt.campagnes.length === 0;
   const toonDemo = wilDemo || (sp?.demo !== '0' && geenEchteCijfers);
-  const data = toonDemo ? { ...demoData(vandaagInAmsterdam()), aanvragen: echt.aanvragen } : echt;
-  return <DashboardView data={data} email={user.email} geenEchteCijfers={geenEchteCijfers} />;
+  const data = toonDemo ? { ...demoBron(vandaagInAmsterdam(), bron), aanvragen: echt.aanvragen, syncStatus: echt.syncStatus } : echt;
+  return <DashboardView data={data} email={user.email} geenEchteCijfers={geenEchteCijfers} metaGekoppeld={metaGekoppeld} />;
 }
