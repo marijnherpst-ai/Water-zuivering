@@ -2,6 +2,7 @@ const META_PIXEL_ID = '901866625752558';
 const CLARITY_PROJECT_ID = 'xxlly23zof';
 const GA_MEASUREMENT_ID = 'G-K7V64C0DH8';
 const GOOGLE_ADS_ID = 'AW-18325767412';
+const GOOGLE_ADS_SEARCH_ID = 'AW-18381773084';
 
 // Google tag (Analytics + Ads) runs in Consent Mode v2: consent defaults are set
 // to "denied" in app/layout.js and Cookiebot updates them per visitor choice
@@ -27,6 +28,7 @@ export default function TrackingScripts() {
             gtag('js', new Date());
             gtag('config', '${GA_MEASUREMENT_ID}');
             gtag('config', '${GOOGLE_ADS_ID}');
+            gtag('config', '${GOOGLE_ADS_SEARCH_ID}');
           `,
         }}
       />

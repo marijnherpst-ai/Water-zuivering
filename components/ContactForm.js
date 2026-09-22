@@ -22,6 +22,7 @@ export default function ContactForm() {
         }
         if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
           window.gtag('event', 'generate_lead', { event_category: 'contact' });
+          window.gtag('event', 'ads_conversion_Leadformulier_indienen_1');
         }
         trackLead('contact');
       } else {

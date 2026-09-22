@@ -70,6 +70,7 @@ export default function Calculator() {
         }
         if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
           window.gtag('event', 'generate_lead', { event_category: 'besparing' });
+          window.gtag('event', 'ads_conversion_Leadformulier_indienen_1');
         }
         trackLead('besparing');
       } else {

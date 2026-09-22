@@ -64,6 +64,7 @@ export default function AanmeldenPage() {
         }
         if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
           window.gtag('event', 'generate_lead', { event_category: 'aanmelden' });
+          window.gtag('event', 'ads_conversion_Leadformulier_indienen_1');
         }
         trackLead('aanmelden');
       } else {
