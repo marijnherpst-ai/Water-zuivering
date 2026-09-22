@@ -11,7 +11,7 @@ async function run() {
     const result = await testMinimaleCampagne();
     return NextResponse.json(result);
   } catch (e) {
-    return NextResponse.json({ ok: false, reden: e.message }, { status: 500 });
+    return NextResponse.json({ ok: false, reden: e.message, ruw: e.ruw }, { status: 500 });
   }
 }
 
