@@ -330,7 +330,7 @@ export default function DashboardView({ data, email, geenEchteCijfers, metaGekop
           </div>
         </section>
 
-        <section className="mt-5 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+        <section className="mt-5 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-5">
           <Kpi titel="Uitgegeven" waarde={eur(o.totaal.kosten)} accent="#EDA71B" onder={<Delta nu={o.totaal.kosten} vorig={o.vorig.kosten} neutraal />} />
           <Kpi titel="Leads" waarde={getal(o.totaal.leads, o.totaal.leads % 1 ? 1 : 0)} accent="#3DDC97" onder={<Delta nu={o.totaal.leads} vorig={o.vorig.leads} hoogIsGoed />} />
           <Kpi titel="Kosten per lead" waarde={o.totaal.cpl != null ? eur(o.totaal.cpl) : '–'} accent={o.totaal.cpl != null && o.totaal.cpl > inst.doelCpl ? '#FF5C6C' : '#3DDC97'}
@@ -340,6 +340,8 @@ export default function DashboardView({ data, email, geenEchteCijfers, metaGekop
           ) : (
             <Kpi titel="Bezoekers via advertenties" waarde={getal(o.totaal.klikken)} onder={<Delta nu={o.totaal.klikken} vorig={o.vorig.klikken} hoogIsGoed />} />
           )}
+          <Kpi titel="Zagen de advertentie, deden niks" waarde={getal(Math.max(0, o.totaal.vertoningen - o.totaal.klikken))} accent="#6B7482"
+            onder={<span className="text-xs text-[#6B7482]">Van {getal(o.totaal.vertoningen)} vertoningen</span>} />
         </section>
 
         <section className={`${kaart} mt-5 p-5 sm:p-7`}>
