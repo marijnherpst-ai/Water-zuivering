@@ -2,23 +2,35 @@
 
 import { useState, useTransition } from 'react';
 import Link from 'next/link';
-import { pfasCheck, RIVM_NORM_NG_L, KLEUR_INFO } from '@/lib/pfasData';
+import { pfasCheck, pfasCheckPerPlaats, RIVM_NORM_NG_L, KLEUR_INFO } from '@/lib/pfasData';
 import { trackLead } from '@/lib/trackLead';
 
 const VOLGORDE = ['donkerrood', 'rood', 'oranje', 'groen'];
 
 export default function PfasChecker() {
+  const [modus, setModus] = useState('postcode');
   const [postcode, setPostcode] = useState('');
   const [huisnummer, setHuisnummer] = useState('');
+  const [plaats, setPlaats] = useState('');
   const [resultaat, setResultaat] = useState(null);
   const [error, setError] = useState(null);
   const [isPending, startTransition] = useTransition();
 
+  function wisselModus(nieuw) {
+    setModus(nieuw);
+    setError(null);
+    setResultaat(null);
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
-    const check = pfasCheck(postcode);
+    const check = modus === 'postcode' ? pfasCheck(postcode) : pfasCheckPerPlaats(plaats);
     if (!check) {
-      setError('Vul een geldige Nederlandse postcode in (bijv. 1234 AB).');
+      setError(
+        modus === 'postcode'
+          ? 'Vul een geldige Nederlandse postcode in (bijv. 1234 AB).'
+          : 'Deze plaatsnaam herkennen we niet. Probeer een grotere plaats in de buurt, of zoek op postcode.'
+      );
       setResultaat(null);
       return;
     }
@@ -31,37 +43,77 @@ export default function PfasChecker() {
 
   return (
     <div className="mt-10">
-      <form onSubmit={handleSubmit} className="rounded-2xl card p-6 sm:p-8 grid sm:grid-cols-[1fr_140px_auto] gap-3 items-end">
-        <div>
-          <label htmlFor="pfas-postcode" className="block text-xs font-semibold text-dim mb-1.5">Postcode</label>
-          <input
-            id="pfas-postcode"
-            value={postcode}
-            onChange={(e) => setPostcode(e.target.value)}
-            placeholder="1234 AB"
-            required
-            className="w-full rounded-lg border border-edge bg-bg px-4 py-3 text-sm text-ink placeholder:text-dim/60 focus:outline-none focus:ring-2 focus:ring-amber transition-colors"
-          />
-        </div>
-        <div>
-          <label htmlFor="pfas-huisnummer" className="block text-xs font-semibold text-dim mb-1.5">Huisnummer</label>
-          <input
-            id="pfas-huisnummer"
-            value={huisnummer}
-            onChange={(e) => setHuisnummer(e.target.value)}
-            placeholder="12"
-            required
-            className="w-full rounded-lg border border-edge bg-bg px-4 py-3 text-sm text-ink placeholder:text-dim/60 focus:outline-none focus:ring-2 focus:ring-amber transition-colors"
-          />
-        </div>
+      <div className="flex gap-2 mb-3 justify-center">
         <button
-          type="submit"
-          disabled={isPending}
-          className="cursor-pointer inline-flex items-center justify-center rounded-lg bg-amber px-6 py-3 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors disabled:opacity-60"
+          type="button"
+          onClick={() => wisselModus('postcode')}
+          className={`cursor-pointer rounded-full px-4 py-2 text-xs font-bold transition-colors ${modus === 'postcode' ? 'bg-ink text-white' : 'bg-surface text-dim border border-edge'}`}
         >
-          Check mijn water
+          Zoek op postcode
         </button>
-      </form>
+        <button
+          type="button"
+          onClick={() => wisselModus('plaats')}
+          className={`cursor-pointer rounded-full px-4 py-2 text-xs font-bold transition-colors ${modus === 'plaats' ? 'bg-ink text-white' : 'bg-surface text-dim border border-edge'}`}
+        >
+          Zoek op plaatsnaam
+        </button>
+      </div>
+
+      {modus === 'postcode' ? (
+        <form onSubmit={handleSubmit} className="rounded-2xl card p-6 sm:p-8 grid sm:grid-cols-[1fr_140px_auto] gap-3 items-end">
+          <div>
+            <label htmlFor="pfas-postcode" className="block text-xs font-semibold text-dim mb-1.5">Postcode</label>
+            <input
+              id="pfas-postcode"
+              value={postcode}
+              onChange={(e) => setPostcode(e.target.value)}
+              placeholder="1234 AB"
+              required
+              className="w-full rounded-lg border border-edge bg-bg px-4 py-3 text-sm text-ink placeholder:text-dim/60 focus:outline-none focus:ring-2 focus:ring-amber transition-colors"
+            />
+          </div>
+          <div>
+            <label htmlFor="pfas-huisnummer" className="block text-xs font-semibold text-dim mb-1.5">Huisnummer</label>
+            <input
+              id="pfas-huisnummer"
+              value={huisnummer}
+              onChange={(e) => setHuisnummer(e.target.value)}
+              placeholder="12"
+              required
+              className="w-full rounded-lg border border-edge bg-bg px-4 py-3 text-sm text-ink placeholder:text-dim/60 focus:outline-none focus:ring-2 focus:ring-amber transition-colors"
+            />
+          </div>
+          <button
+            type="submit"
+            disabled={isPending}
+            className="cursor-pointer inline-flex items-center justify-center rounded-lg bg-amber px-6 py-3 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors disabled:opacity-60"
+          >
+            Check mijn water
+          </button>
+        </form>
+      ) : (
+        <form onSubmit={handleSubmit} className="rounded-2xl card p-6 sm:p-8 grid sm:grid-cols-[1fr_auto] gap-3 items-end">
+          <div>
+            <label htmlFor="pfas-plaats" className="block text-xs font-semibold text-dim mb-1.5">Plaatsnaam</label>
+            <input
+              id="pfas-plaats"
+              value={plaats}
+              onChange={(e) => setPlaats(e.target.value)}
+              placeholder="bijv. Rotterdam"
+              required
+              className="w-full rounded-lg border border-edge bg-bg px-4 py-3 text-sm text-ink placeholder:text-dim/60 focus:outline-none focus:ring-2 focus:ring-amber transition-colors"
+            />
+          </div>
+          <button
+            type="submit"
+            disabled={isPending}
+            className="cursor-pointer inline-flex items-center justify-center rounded-lg bg-amber px-6 py-3 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors disabled:opacity-60"
+          >
+            Check mijn water
+          </button>
+        </form>
+      )}
       {error && <p className="mt-3 text-sm font-semibold text-red-500">{error}</p>}
 
       {resultaat && (
