@@ -646,7 +646,7 @@ export default function DashboardView({ data, email, geenEchteCijfers, metaGekop
                 <li key={l.id} className="flex flex-wrap items-center justify-between gap-2 py-3 text-sm">
                   <div className="min-w-0">
                     <p className="font-medium text-white">{TYPE_LABEL[l.type] || l.type}</p>
-                    <p className="truncate text-xs text-[#6B7482]">{l.pagina || '/'}{l.term ? ` · zocht op "${l.term}"` : ''}</p>
+                    <p className="truncate text-xs text-[#6B7482]">{l.pagina || '/'}{l.term ? ` · zocht op "${l.term}"` : (l.isAds ? ' · zoekwoord niet doorgegeven (browser blokkeert tracking)' : '')}</p>
                   </div>
                   <div className="flex items-center gap-3">
                     <span className={`rounded-full border px-2.5 py-0.5 text-[11px] font-semibold ${l.isAds ? 'border-[#3DDC97]/25 bg-[#3DDC97]/10 text-[#3DDC97]' : 'border-white/10 text-[#8A93A3]'}`}>{l.isAds ? BRON : 'Overig'}</span>
