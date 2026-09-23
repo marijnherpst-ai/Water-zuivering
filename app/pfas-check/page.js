@@ -6,6 +6,7 @@ import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import PfasChecker from '@/components/PfasChecker';
+import KraanKleurSwitcher from '@/components/KraanKleurSwitcher';
 import { createClient } from '@/lib/supabase/server';
 
 function Stars({ rating }) {
@@ -30,10 +31,10 @@ const BRONNEN = [
 ];
 
 const GEZONDHEID = [
-  ['Immuunsysteem', 'Het eerste en best onderbouwde effect: EFSA concludeert dat PFAS het afweersysteem kunnen verzwakken, waardoor bijvoorbeeld vaccinaties minder goed aanslaan.'],
-  ['Cholesterol en lever', 'Langdurige blootstelling wordt in verband gebracht met een hoger cholesterolgehalte en mogelijke leverschade.'],
-  ['Voortplanting en ontwikkeling', 'PFOA staat bekend om effecten op de vruchtbaarheid en op de ontwikkeling van het ongeboren kind.'],
-  ['Blijft jarenlang in het lichaam', 'De halfwaardetijd van PFOS is gemiddeld 5 jaar, van PFOA ongeveer 3,5 jaar — het lichaam raakt het dus maar heel langzaam kwijt.'],
+  ['Immuunsysteem', 'Dit is het effect waar de meeste onderzoeken over eens zijn: PFAS kan uw afweer verzwakken. Vaccinaties werken daardoor minder goed aan.'],
+  ['Cholesterol en lever', 'Wie langere tijd aan PFAS blootstaat, heeft vaker een hoger cholesterol. Ook de lever kan er last van krijgen.'],
+  ['Voortplanting en ontwikkeling', 'PFOA kan de vruchtbaarheid beïnvloeden en de ontwikkeling van een ongeboren kind verstoren.'],
+  ['Blijft jarenlang in uw lichaam', 'Uw lichaam breekt PFAS bijna niet af. PFOS blijft gemiddeld 5 jaar in uw bloed, PFOA ongeveer 3,5 jaar.'],
 ];
 
 const FILTER_VERGELIJKING = [
@@ -43,17 +44,17 @@ const FILTER_VERGELIJKING = [
 ];
 
 const STAPPEN = [
-  ['Voorfilter', 'Grof vuil, zand en chloor worden er als eerste uitgehaald, zodat het membraan daarna niet dichtslibt.'],
-  ['Omgekeerde-osmosemembraan', 'Het water wordt onder druk door een membraan met poriën van 0,0001 micron geperst — ongeveer 500 keer kleiner dan de meeste PFAS-moleculen. Wat er niet doorheen past, spoelt weg via het afvalwater.'],
-  ['Nafilter', 'Een laatste polijstfilter haalt de laatste restjes en een eventuele metaalsmaak weg.'],
-  ['Kraan', 'Wat overblijft is water waar vrijwel alleen nog watermoleculen inzitten.'],
+  ['Voorfilter', 'Hier gaan grof vuil, zand en chloor er als eerste uit. Zo raakt het membraan daarna niet verstopt.'],
+  ['Omgekeerde-osmosemembraan', 'Het water gaat onder druk door een membraan met piepkleine poriën: 0,0001 micron, ongeveer 500 keer kleiner dan de meeste PFAS-deeltjes. Wat er niet doorheen past, spoelt gewoon weg.'],
+  ['Nafilter', 'Een laatste filter haalt de laatste restjes eruit, en een eventuele metaalsmaak.'],
+  ['Kraan', 'Wat overblijft is puur water. Klaar om te drinken.'],
 ];
 
 const KENMERKEN = [
-  ['0,0001 micron membraan', 'Zo fijn dat zelfs de kleinste, kortketenige PFAS-varianten (zoals GenX en PFBS) er niet doorheen komen — daar lopen koolstoffilters juist op vast.'],
-  ['Drie filtertrappen', 'Voorfilter, membraan en nafilter werken na elkaar, niet als los onderdeel.'],
-  ['10,5 cm breed', 'Past staand of liggend onder vrijwel elk aanrecht, zonder dat u kastruimte inlevert.'],
-  ['10 jaar garantie', 'Inclusief installatie door onze eigen monteurs, niet door een externe partij.'],
+  ['0,0001 micron membraan', 'Zo fijn dat zelfs de allerkleinste PFAS-varianten, zoals GenX en PFBS, er niet doorheen komen. Daar lopen koolstoffilters juist op vast.'],
+  ['Drie filtertrappen', 'Voorfilter, membraan en nafilter werken samen, stap voor stap.'],
+  ['10,5 cm breed', 'Past staand of liggend onder vrijwel elk aanrecht. U levert geen kastruimte in.'],
+  ['10 jaar garantie', 'Onze eigen monteurs installeren het systeem, geen externe partij.'],
 ];
 
 export const metadata = {
@@ -63,12 +64,12 @@ export const metadata = {
 };
 
 const UITLEG = [
-  ['Wat betekent PFAS precies?', 'PFAS staat voor poly- en perfluoralkylstoffen: een verzamelnaam voor meer dan 10.000 door de mens gemaakte chemicaliën, waaronder bekendere namen als PFOA, PFOS en GenX. De koolstof-fluorbinding waar ze op gebouwd zijn hoort tot de sterkste in de scheikunde — daardoor breken ze in de natuur nauwelijks af. Vandaar de bijnaam "forever chemicals".'],
-  ['Hoe komt PFAS in het drinkwater terecht?', 'Via blusschuim, industrieel afvalwater en producten die in de bodem of het oppervlaktewater terechtkomen sijpelt PFAS uiteindelijk door naar grondwater en rivieren — de bronnen waaruit Nederlandse waterbedrijven drinkwater winnen. Zuiveringsinstallaties van waterbedrijven zijn niet ontworpen om PFAS eruit te halen.'],
-  ['Wat is de RIVM-gezondheidsnorm?', 'Het RIVM hanteert een gezondheidskundige richtwaarde van 4,4 nanogram per liter (ng/l), uitgedrukt in PFOA-equivalenten (PEQ). Dit is geen wettelijke norm — de wettelijke Europese norm ligt met 100 ng/l veel hoger, en daar voldoen alle Nederlandse waterbedrijven aan. De RIVM-richtwaarde is de strengere, gezondheidskundige advieswaarde waar ruim een derde van Nederland boven zit.'],
-  ['Hoe betrouwbaar is de check hierboven?', 'Onze check geeft een regionale indicatie op basis van uw provincie en waterleverancier, gebaseerd op de meetgegevens van de Nederlandse waterbedrijven zoals geanalyseerd door Greenpeace Nederland. Het is geen exacte check op uw 4-cijferige postcode — die corrigeert ook voor mengwater binnen een postcodegebied. Voor die precisie verwijzen we naar de officiële Greenpeace-postcodechecker.'],
-  ['Waarom werkt een gewone kannenfilter niet tegen PFAS?', 'Kannenfilters en de meeste koolstoffilters zijn ontworpen voor chloor en smaak, niet voor moleculen zo klein als PFAS. Vooral de kortketenige varianten zoals GenX en PFBS glippen er grotendeels doorheen. Onafhankelijke tests laten zien dat alleen omgekeerde osmose en ionenwisseling consistent boven de 90% uitkomen.'],
-  ['Is één systeem genoeg voor het hele huis?', 'Ons systeem wordt aangesloten op de kraan die u voor drinken en koken gebruikt, meestal de keukenkraan. Voor douchewater is het meestal niet nodig, omdat PFAS-opname via de huid veel beperkter is dan via drinkwater.'],
+  ['Wat betekent PFAS precies?', 'PFAS is een verzamelnaam voor meer dan 10.000 door mensen gemaakte stoffen, waaronder bekende namen als PFOA, PFOS en GenX. Ze zijn zo stevig in elkaar gezet dat ze in de natuur bijna niet afbreken. Daarom noemt men ze ook wel "forever chemicals": eenmaal in het milieu, blijven ze daar praktisch voorgoed.'],
+  ['Hoe komt PFAS in het drinkwater terecht?', 'Via blusschuim, fabrieksafval en allerlei producten sijpelt PFAS de bodem in en spoelt mee met regen naar grondwater en rivieren. Precies daar wint Nederland zijn drinkwater. Gewone zuiveringsinstallaties van waterbedrijven zijn niet gebouwd om PFAS eruit te halen, dus het water blijft ermee besmet.'],
+  ['Wat is de RIVM-gezondheidsnorm?', 'Het RIVM adviseert om niet meer dan 4,4 nanogram PFAS per liter drinkwater binnen te krijgen. Dat is geen wet, maar een gezondheidsadvies. De officiële, wettelijke norm in Europa ligt met 100 ng/l veel hoger, en daaraan voldoen alle Nederlandse waterbedrijven. Toch zit ruim een derde van Nederland boven het strengere RIVM-advies.'],
+  ['Hoe betrouwbaar is de check hierboven?', 'Onze check laat zien hoe uw provincie en waterbedrijf er gemiddeld voor staan, op basis van cijfers die Greenpeace Nederland bij de waterbedrijven heeft opgevraagd. Het is geen meting op uw exacte postcode, dat verschilt namelijk per straat en leiding. Wilt u die precisie? Kijk dan op de officiële postcodechecker van Greenpeace.'],
+  ['Waarom werkt een gewone kannenfilter niet tegen PFAS?', 'Een kannenfilter is gemaakt voor chloor en een betere smaak, niet voor iets zo kleins als PFAS. Vooral de kleinste varianten, zoals GenX en PFBS, glippen er gewoon doorheen. Alleen omgekeerde osmose en ionenwisseling halen er in de praktijk consequent meer dan 90% uit.'],
+  ['Is één systeem genoeg voor het hele huis?', 'U sluit het systeem aan op de kraan waar u uit drinkt en mee kookt, meestal de keukenkraan. Voor de douche is het niet nodig: via uw huid neemt u veel minder PFAS op dan via drinkwater.'],
 ];
 
 export default async function PfasCheckPage() {
@@ -103,7 +104,7 @@ export default async function PfasCheckPage() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">PFAS in kraanwater</span>
               <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Hoeveel PFAS zit er in úw kraanwater?</h1>
               <p className="mt-5 text-dim text-lg">
-                Vul uw postcode en huisnummer in en zie direct hoe uw regio scoort ten opzichte van de RIVM-gezondheidsnorm van 4,4 ng/l.
+                Vul uw postcode en huisnummer in. U ziet meteen hoe uw water scoort ten opzichte van de RIVM-gezondheidsnorm van 4,4 ng/l.
               </p>
             </div>
             <PfasChecker />
@@ -126,10 +127,10 @@ export default async function PfasCheckPage() {
             <div className="mt-10 grid md:grid-cols-2 gap-10">
               <div>
                 <p className="text-dim leading-relaxed">
-                  PFAS is geen enkele stof, maar een familie van meer dan 10.000 door mensen gemaakte chemicaliën — bekende namen daaruit zijn PFOA, PFOS en GenX. Ze zijn gebouwd rond een koolstof-fluorbinding, een van de sterkste bindingen die er in de scheikunde bestaan. Dat maakt ze extreem water-, vet- en vuilafstotend, maar ook vrijwel onafbreekbaar in de natuur. Vandaar de bijnaam <em>forever chemicals</em>: eenmaal geloosd, verdwijnen ze niet meer vanzelf.
+                  PFAS is niet één stof, maar een hele familie: meer dan 10.000 door mensen gemaakte chemicaliën, met PFOA, PFOS en GenX als bekendste namen. Ze zijn zo sterk gemaakt dat water, vet en vuil er gewoon van afglijden. Handig voor de fabriek, maar diezelfde eigenschap zorgt ervoor dat de natuur ze bijna niet kan afbreken. Daarom heten ze ook wel <em>forever chemicals</em>: eenmaal in het milieu, blijven ze.
                 </p>
                 <p className="mt-4 text-dim leading-relaxed">
-                  Sinds de jaren '40 zitten deze stoffen in duizenden alledaagse producten, juist vanwege die handige eigenschappen:
+                  Al sinds de jaren '40 zitten ze in duizenden alledaagse spullen. Denk aan:
                 </p>
                 <ul className="mt-4 space-y-2">
                   {BRONNEN.map((bron) => (
@@ -140,7 +141,7 @@ export default async function PfasCheckPage() {
                   ))}
                 </ul>
                 <p className="mt-4 text-dim leading-relaxed">
-                  Via bodem, grondwater en rivieren komt PFAS uiteindelijk terecht in de bronnen waar Nederlandse waterbedrijven ons drinkwater uit winnen. Standaard zuiveringsinstallaties zijn daar niet op gebouwd — PFAS gaat er gewoon doorheen.
+                  Via de bodem spoelt PFAS mee naar grondwater en rivieren, precies de plekken waar Nederlandse waterbedrijven ons drinkwater vandaan halen. Hun zuiveringsinstallaties zijn er simpelweg niet op gebouwd, dus PFAS gaat er ongehinderd doorheen.
                 </p>
               </div>
               <div>
@@ -165,6 +166,29 @@ export default async function PfasCheckPage() {
           </div>
         </section>
 
+        {/* STATS DONKERE BREAK */}
+        <section className="relative bg-ink text-white overflow-hidden">
+          <div className="glow w-[380px] h-[380px] bg-amber/15 -top-32 -left-24" />
+          <div className="relative max-w-5xl mx-auto px-6 py-14 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <p className="font-display text-3xl md:text-4xl font-extrabold text-amber">4,4 ng/l</p>
+              <p className="mt-2 text-sm text-white/60">RIVM-gezondheidsnorm voor PFAS</p>
+            </div>
+            <div>
+              <p className="font-display text-3xl md:text-4xl font-extrabold text-amber">10.000+</p>
+              <p className="mt-2 text-sm text-white/60">bekende PFAS-varianten</p>
+            </div>
+            <div>
+              <p className="font-display text-3xl md:text-4xl font-extrabold text-amber">0,0001 µm</p>
+              <p className="mt-2 text-sm text-white/60">poriegrootte van ons membraan</p>
+            </div>
+            <div>
+              <p className="font-display text-3xl md:text-4xl font-extrabold text-amber">Tot 99%</p>
+              <p className="mt-2 text-sm text-white/60">PFAS verwijderd met omgekeerde osmose</p>
+            </div>
+          </div>
+        </section>
+
         {/* HOE WERKT HET SYSTEEM */}
         <section className="relative overflow-hidden">
           <div className="relative max-w-6xl mx-auto px-6 py-16 md:py-24">
@@ -172,7 +196,7 @@ export default async function PfasCheckPage() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Onze oplossing</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoe werkt onze waterzuiveraar tegen PFAS?</h2>
               <p className="mt-4 text-dim leading-relaxed">
-                Niet elk filter is hetzelfde. Een kannenfilter houdt chloor en smaak tegen, maar laat PFAS grotendeels door — de moleculen zijn er simpelweg te klein voor. Omgekeerde osmose werkt fundamenteel anders: het perst water onder druk door een membraan dat op moleculair niveau filtert.
+                Niet elk filter doet hetzelfde werk. Een kannenfilter houdt chloor en een vieze smaak tegen, maar PFAS glipt er grotendeels doorheen: de deeltjes zijn er gewoon te klein voor. Omgekeerde osmose pakt het anders aan en perst het water onder druk door een membraan dat tot op moleculair niveau filtert.
               </p>
             </div>
 
@@ -195,33 +219,52 @@ export default async function PfasCheckPage() {
               </div>
             </div>
 
-            {/* INSTALLATIE / 3-WEG KRAAN */}
+            {/* INSTALLATIE */}
             <div className="mt-16 rounded-2xl card p-6 md:p-8">
-              <p className="font-display font-bold text-ink mb-3">Waar wordt het systeem geplaatst?</p>
+              <p className="font-display font-bold text-ink mb-3">Waar komt het systeem te staan?</p>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <p className="text-sm text-dim leading-relaxed">
-                    Het filter zelf staat onder het aanrecht, meestal in het kastje onder de spoelbak naast het sifon. Dankzij de smalle behuizing van 10,5 cm past het ook in kleinere keukens, tussen de leidingen en het afvalsysteem door.
+                    Het filter zelf staat onder uw aanrecht, meestal in het kastje onder de spoelbak, naast het sifon. Het is maar 10,5 cm breed, dus het past ook in een kleine keuken tussen de leidingen door.
                   </p>
                   <p className="mt-3 text-sm text-dim leading-relaxed">
-                    Voor de kraan zelf heeft u twee opties. De meest gekozen oplossing is een aparte <strong className="text-ink">3-wegkraan</strong>: naast uw bestaande mengkraan komt een tweede, kleinere kraan specifiek voor gezuiverd water. Zo blijft warm en koud water gewoon uit de oude kraan komen, en tapt u gezuiverd drinkwater apart — koud, en indien gewenst ook direct koolzuurhoudend of heet, afhankelijk van het gekozen kraantype.
+                    Voor de kraan heeft u de keuze uit twee opties. De meeste mensen kiezen voor een <strong className="text-ink">3-wegkraan</strong>: naast uw gewone mengkraan komt een tweede, kleinere kraan die alleen gezuiverd water geeft. Uw oude kraan blijft gewoon warm en koud water geven, en uit de nieuwe tapt u schoon drinkwater, koud of desgewenst ook bruisend of heet.
                   </p>
                 </div>
                 <div>
                   <p className="text-sm text-dim leading-relaxed">
-                    Heeft u liever geen extra gat in het aanrecht? Dan sluiten we het systeem aan op een tussenstuk in de koudwaterleiding van uw bestaande kraan. Praktisch onderhoud, geen zichtbare wijziging aan het aanrecht — maar dan komt er altijd gezuiverd water uit die ene kraan, niet naast elkaar.
+                    Liever geen extra gat in het aanrecht? Dan koppelen we het systeem aan een tussenstuk in de koudwaterleiding van uw bestaande kraan. Geen zichtbare aanpassing, alleen komt er dan altijd gezuiverd water uit die ene kraan, niet naast elkaar.
                   </p>
                   <p className="mt-3 text-sm text-dim leading-relaxed">
-                    Onze monteur bekijkt bij de installatie de ruimte onder uw aanrecht en de staat van de leidingen, en adviseert welke optie het beste past. De installatie zelf duurt gemiddeld 1 tot 2 uur en is bij de meeste standaardkeukens zonder verbouwing mogelijk.
+                    Onze monteur kijkt bij u thuis welke optie het beste past bij uw keuken en leidingen. De installatie duurt meestal 1 tot 2 uur, en bij een standaardkeuken hoeft er niets verbouwd te worden.
                   </p>
                 </div>
+              </div>
+            </div>
+
+            {/* 3-WEG KRAAN SHOWCASE */}
+            <div className="mt-8 relative rounded-2xl bg-surface overflow-hidden">
+              <div className="glow w-64 h-64 bg-amber/10 top-1/2 left-1/2" style={{ transform: 'translate(-50%,-50%)' }} />
+              <div className="relative max-w-xl mx-auto flex flex-col items-center text-center gap-6 p-8 md:p-12">
+                <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Bekijk hier de 3-wegkraan</span>
+                <p className="-mt-4 font-display text-xl font-extrabold tracking-tight">In 4 afwerkingen leverbaar</p>
+                <div className="w-full max-w-[14rem]">
+                  <KraanKleurSwitcher />
+                </div>
+                <p className="text-sm text-dim leading-relaxed">
+                  Van tijdloos chroom tot een statement in goud of mat zwart — er is altijd een afwerking die past bij uw keuken. Tik op een kleurtje hierboven om 'm te bekijken.
+                </p>
+                <Link href="/3-weg-kraan" className="cursor-pointer inline-flex items-center gap-1.5 text-sm font-bold text-ink hover:text-amber-dark transition-colors">
+                  Meer over de 3-wegkraan
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                </Link>
               </div>
             </div>
 
             {/* VERGELIJKING FILTERTYPES */}
             <div className="mt-16">
               <p className="font-display font-bold text-ink text-center mb-2">Waarom niet gewoon een kannenfilter?</p>
-              <p className="text-sm text-dim text-center max-w-xl mx-auto mb-8">Onafhankelijke tests laten grote verschillen zien tussen filtertypen, vooral bij kortketenige PFAS zoals GenX.</p>
+              <p className="text-sm text-dim text-center max-w-xl mx-auto mb-8">Onafhankelijke tests laten zien dat filters onderling flink verschillen, vooral bij kleinere PFAS-varianten zoals GenX.</p>
               <div className="max-w-2xl mx-auto space-y-4">
                 {FILTER_VERGELIJKING.map((f) => (
                   <div key={f.naam} className="rounded-xl border border-edge p-4">
@@ -338,7 +381,7 @@ export default async function PfasCheckPage() {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber">Volgende stap</span>
             <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Schoon water, zonder PFAS, uit uw eigen kraan</h2>
-            <p className="mt-4 text-white/70">Onze osmose waterzuiveraar filtert PFAS, chloor, medicijnresten en microplastics eruit voordat het uw glas bereikt. Vraag een vrijblijvende offerte aan.</p>
+            <p className="mt-4 text-white/70">Onze osmose waterzuiveraar haalt PFAS, chloor, medicijnresten en microplastics eruit, nog voordat het water uw glas bereikt. Vraag vrijblijvend een offerte aan.</p>
             <Link href="/aanmelden" className="cursor-pointer mt-8 inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-xl shadow-amber/25">
               Vraag vrijblijvend een offerte aan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
