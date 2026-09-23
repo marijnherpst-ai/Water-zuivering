@@ -22,6 +22,7 @@ const NAV_ITEMS = [
       { href: '/handleiding', label: 'Handleiding' },
       { href: '/maatcheck', label: 'Maatcheck' },
       { href: '/besparing', label: 'Besparing' },
+      { href: '/pfas-check', label: 'PFAS check' },
       { href: '/storingen', label: 'Storingen' },
       { href: '/kennisbank', label: 'Kennisbank' },
     ],

@@ -29,7 +29,7 @@ export async function submitContactForm(formData) {
   return { success: true };
 }
 
-const LEAD_TYPES = ['aanmelden', 'contact', 'besparing', 'giveaway'];
+const LEAD_TYPES = ['aanmelden', 'contact', 'besparing', 'giveaway', 'pfas_check'];
 
 function kort(waarde) {
   return typeof waarde === 'string' && waarde ? waarde.slice(0, 200) : null;
