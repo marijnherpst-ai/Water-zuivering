@@ -27,7 +27,7 @@ export async function submitContactForm(formData) {
     return { success: false, error: 'Er ging iets mis bij het versturen. Probeer het opnieuw.' };
   }
 
-  stuurWelkomstMail({ naam, email }).catch(() => {});
+  await stuurWelkomstMail({ naam, email });
 
   return { success: true };
 }
@@ -113,7 +113,7 @@ export async function submitAanmeldenForm(data) {
     return { success: false, error: 'Er ging iets mis bij het versturen. Probeer het opnieuw.' };
   }
 
-  stuurWelkomstMail({ naam, email }).catch(() => {});
+  await stuurWelkomstMail({ naam, email });
 
   return { success: true };
 }
@@ -142,7 +142,7 @@ export async function submitBesparingLead(data) {
     return { success: false, error: 'Er ging iets mis bij het versturen. Probeer het opnieuw.' };
   }
 
-  stuurWelkomstMail({ naam, email }).catch(() => {});
+  await stuurWelkomstMail({ naam, email });
 
   return { success: true };
 }
