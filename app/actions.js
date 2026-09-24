@@ -1,6 +1,7 @@
 'use server';
 
 import { createClient } from '@/lib/supabase/server';
+import { stuurWelkomstMail } from '@/lib/email';
 
 export async function submitContactForm(formData) {
   const naam = formData.get('naam')?.toString().trim();
@@ -25,6 +26,8 @@ export async function submitContactForm(formData) {
   if (error) {
     return { success: false, error: 'Er ging iets mis bij het versturen. Probeer het opnieuw.' };
   }
+
+  stuurWelkomstMail({ naam, email }).catch(() => {});
 
   return { success: true };
 }
@@ -110,6 +113,8 @@ export async function submitAanmeldenForm(data) {
     return { success: false, error: 'Er ging iets mis bij het versturen. Probeer het opnieuw.' };
   }
 
+  stuurWelkomstMail({ naam, email }).catch(() => {});
+
   return { success: true };
 }
 
@@ -136,6 +141,8 @@ export async function submitBesparingLead(data) {
   if (error) {
     return { success: false, error: 'Er ging iets mis bij het versturen. Probeer het opnieuw.' };
   }
+
+  stuurWelkomstMail({ naam, email }).catch(() => {});
 
   return { success: true };
 }
