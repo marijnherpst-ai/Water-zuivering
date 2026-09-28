@@ -12,6 +12,7 @@ const NAV_ITEMS = [
     links: [
       { href: '/osmosesysteem', label: 'Osmosewatersysteem' },
       { href: '/3-weg-kraan', label: '3-weg kraan' },
+      { href: '/waterfilter', label: 'Waterfilter kopen' },
     ],
   },
   { label: 'Filters bestellen', href: '/winkel' },

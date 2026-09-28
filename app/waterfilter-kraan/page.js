@@ -88,6 +88,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Het mooie aan een <strong className="text-ink">waterfilter voor de keukenkraan</strong> is dat je 'm meteen vergeet. Geen kan die je moet bijvullen, geen herinnering op je telefoon om filters te bestellen, geen krat water dat je de trap op moet sjouwen. Je draait gewoon de kraan open, zoals je altijd al deed — het enige verschil is wat eruit komt.
             </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Twijfel je nog tussen alle mogelijke <Link href="/waterfilter" className="underline hover:text-ink">soorten waterfilters</Link> die er zijn? We zetten ze daar allemaal naast elkaar, van filterkan tot compleet osmosesysteem.
+            </p>
           </div>
         </section>
 
