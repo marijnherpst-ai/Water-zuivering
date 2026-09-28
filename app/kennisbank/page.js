@@ -166,6 +166,41 @@ const ARTICLES = [
     title: 'Waterontharder aansluiten: hoe gaat dat?',
     excerpt: 'Van aftakking tot afvoer — vier stappen die erbij komen kijken.',
   },
+  {
+    href: '/kennisbank/pfas-kaart-nederland',
+    image: '/assets/img/kennisbank/pfas-in-kraanwater.png',
+    category: 'Waterkwaliteit',
+    title: 'PFAS kaart Nederland: zit het ook in jouw water?',
+    excerpt: 'Hoe je de PFAS kaart leest, en hoe je zelf checkt wat het voor jouw gebied betekent.',
+  },
+  {
+    href: '/kennisbank/pfas-vrij-water',
+    image: '/assets/img/glas-water.webp',
+    category: 'Waterkwaliteit',
+    title: 'PFAS-vrij water: kan dat écht uit je eigen kraan?',
+    excerpt: 'Wat "PFAS-vrij" precies betekent, en welke filtermethode er het dichtst bij komt.',
+  },
+  {
+    href: '/kennisbank/pfos-pfoa-verschil',
+    image: '/assets/img/filters-closeup.png',
+    category: 'Waterkwaliteit',
+    title: 'PFAS, PFOS en PFOA: wat is het verschil?',
+    excerpt: 'Drie afkortingen die vaak door elkaar worden gebruikt — hier lees je het verschil.',
+  },
+  {
+    href: '/kennisbank/osmosewater-tappunt',
+    image: '/assets/img/twee-kranen.jpg',
+    category: 'Product',
+    title: 'Osmosewater tappunt: een apart kraantje, hoe werkt dat?',
+    excerpt: 'Waarom osmosewater een eigen kraantje krijgt, en hoe de aansluiting werkt.',
+  },
+  {
+    href: '/kennisbank/handelingskader-pfas-drinkwater',
+    image: '/assets/img/kennisbank/is-kraanwater-veilig.png',
+    category: 'Waterkwaliteit',
+    title: 'Handelingskader PFAS: wat betekent dat voor je water?',
+    excerpt: 'De term uit bouwnieuws uitgelegd, en wat het wel en niet zegt over je drinkwater.',
+  },
 ];
 
 export default function KennisbankPage() {
