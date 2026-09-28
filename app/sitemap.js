@@ -5,6 +5,7 @@ export default function sitemap() {
   const routes = [
     { path: '', priority: 1.0, changeFrequency: 'weekly' },
     { path: '/aanmelden', priority: 0.9, changeFrequency: 'monthly' },
+    { path: '/waterfilter', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/besparing', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/uitleg', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/osmosesysteem', priority: 0.7, changeFrequency: 'monthly' },

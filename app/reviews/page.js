@@ -1,6 +1,8 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ReviewForm from '@/components/ReviewForm';
+import ReviewsSchema from '@/components/ReviewsSchema';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import { createClient } from '@supabase/supabase-js';
 
 export const metadata = {
@@ -40,6 +42,13 @@ export default async function ReviewsPage() {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
+          { name: 'Reviews', url: 'https://www.water-zuivering.nl/reviews' },
+        ]}
+      />
+      <ReviewsSchema rating={average} count={list.length} reviews={list} />
       <Header />
 
       <main>
