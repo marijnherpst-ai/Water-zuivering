@@ -16,9 +16,9 @@ export const dynamic = 'force-dynamic';
 
 export const metadata = {
   alternates: { canonical: '/osmosesysteem' },
-  title: 'Osmosewatersysteem — Water-zuivering',
+  title: 'Osmosesysteem — Water-zuivering',
   description:
-    'Ontdek hoe het Water-zuivering osmosewatersysteem werkt: 3-traps filtratie, interactieve TDS-meter en uitleg van installatie tot filter vervangen.',
+    'Ontdek hoe het Water-zuivering osmosesysteem werkt: 3-traps filtratie, interactieve TDS-meter en uitleg van installatie tot filter vervangen.',
 };
 
 // Same [question, answer] pairs rendered in the FAQ section below — kept here
@@ -62,8 +62,8 @@ export default async function Page() {
   return (
     <>
       <ProductSchema
-        name="Water-zuivering osmosewatersysteem"
-        description="Osmosewatersysteem met 3-traps filtratie (PPC, RO, CTO) dat chloor, PFAS, medicijnresten en microplastics uit kraanwater verwijdert. Inclusief vakkundige installatie en 10 jaar garantie."
+        name="Water-zuivering osmosesysteem"
+        description="Osmosesysteem met 3-traps filtratie (PPC, RO, CTO) dat chloor, PFAS, medicijnresten en microplastics uit kraanwater verwijdert. Inclusief vakkundige installatie en 10 jaar garantie."
         image="https://www.water-zuivering.nl/assets/img/countertop.png"
         url="https://www.water-zuivering.nl/osmosesysteem"
         rating={avgRating ? avgRating.toFixed(1) : null}
@@ -85,10 +85,10 @@ export default async function Page() {
                 <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Hoofdsysteem</span>
               </span>
               <h1 className="mt-4 font-display text-4xl md:text-5xl lg:text-[3.4rem] font-extrabold tracking-tight leading-[1.05]">
-                Zuiver water.<br />Uit je eigen kraan<span className="text-amber-dark">.</span>
+                Het osmosesysteem.<br />Zuiver water uit je kraan<span className="text-amber-dark">.</span>
               </h1>
               <p className="mt-6 text-lg text-dim max-w-md leading-relaxed">
-                Het osmosewatersysteem is de basis van elk Water-zuivering huishouden — 3-traps filtratie die PFAS, medicijnresten en microplastics verwijdert, compact geplaatst onder je aanrecht.
+                Het osmosesysteem is de basis van elk Water-zuivering huishouden — 3-traps filtratie die PFAS, medicijnresten en microplastics verwijdert, compact geplaatst onder je aanrecht.
               </p>
               <div className="mt-9 flex flex-wrap items-center gap-4">
                 <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-xl shadow-amber/25">

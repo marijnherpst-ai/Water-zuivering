@@ -179,14 +179,14 @@ export default async function HomePage() {
                 </div>
               </Link>
 
-              {/* Kaart 2: Osmosewatersysteem (uitgelicht) */}
+              {/* Kaart 2: Osmosesysteem (uitgelicht) */}
               <Link href="/osmosesysteem" className="group reveal cursor-pointer relative rounded-[2rem] bg-ink text-white p-8 flex flex-col lg:-translate-y-5 shadow-2xl shadow-ink/25 lg:scale-[1.03] z-10 hover:shadow-amber/20 transition-shadow">
                 <span className="absolute -top-3 left-8 rounded-full bg-amber text-ink text-[11px] font-bold uppercase tracking-wide px-3 py-1 shadow-lg shadow-amber/30">Meest gekozen</span>
                 <span className="self-start inline-block rounded-full bg-white/10 text-amber text-[11px] font-bold uppercase tracking-wide px-3 py-1">Hoofdsysteem</span>
                 <div className="relative mt-6 rounded-2xl aspect-[4/3] overflow-hidden">
-                  <Image src="/assets/img/cabinet-install.png" alt="Water-zuivering Osmosewatersysteem, past smal in een standaard keukenkastje" fill sizes="(min-width: 1024px) 33vw, 90vw" className="object-cover" />
+                  <Image src="/assets/img/cabinet-install.png" alt="Water-zuivering osmosesysteem, past smal in een standaard keukenkastje" fill sizes="(min-width: 1024px) 33vw, 90vw" className="object-cover" />
                 </div>
-                <h3 className="mt-6 font-display text-xl font-extrabold tracking-tight">Osmosewatersysteem</h3>
+                <h3 className="mt-6 font-display text-xl font-extrabold tracking-tight">Osmosesysteem</h3>
                 <p className="mt-2 text-sm text-white/60">3-traps filtersysteem — PPC, RO en CTO. De basis van elk Water-zuivering huishouden.</p>
                 <ul className="mt-5 space-y-2.5 text-sm">
                   <li className="flex items-center gap-2.5 text-white/70"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#EDA71B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Zuivert tot 99% van onzuiverheden</li>
