@@ -74,7 +74,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoe is het handelingskader ontstaan?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Het handelingskader kwam er nadat bleek dat er in Nederland op grote schaal grond werd verplaatst zonder dat er duidelijke regels waren voor PFAS-verontreiniging — met als bekendste voorbeeld het tijdelijke bouwstop-incident van 2019, toen honderden bouw- en baggerprojecten in Nederland stil kwamen te liggen omdat niemand meer zeker wist welke grond nog verplaatst mocht worden. Om die onduidelijkheid weg te nemen, stelde het ministerie van Infrastructuur en Waterstaat het handelingskader op: een praktische leidraad met concrete grenswaarden, zodat werk weer door kon gaan zonder dat de bodemkwaliteit uit het oog werd verloren.
+              Het tijdelijk handelingskader PFAS werd op 8 juli 2019 naar de Tweede Kamer gestuurd door de staatssecretaris van Infrastructuur en Waterstaat. Aanleiding was dat grond-, weg- en waterbouwwerk dreigde stil te vallen, omdat er geen duidelijke regels waren voor het hergebruik van PFAS-houdende grond en baggerspecie. Het kader is ontwikkeld samen met provincies, gemeenten en waterschappen en is gebaseerd op advies van het RIVM, met een voorzorgsbenadering als uitgangspunt.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Sindsdien wordt het kader regelmatig bijgewerkt, naarmate er meer wetenschappelijk onderzoek beschikbaar komt over de risico's van verschillende PFAS-concentraties.
@@ -124,7 +124,7 @@ export default function Page() {
               </div>
               <div>
                 <h3 className="font-display text-lg font-bold text-ink">Wordt het handelingskader ooit vervangen door een vaste wet?</h3>
-                <p className="mt-2 text-dim leading-relaxed">Dat is goed mogelijk op termijn — momenteel is het nog een beleidskader, geen wet, juist omdat de kennis over PFAS-risico's nog volop in ontwikkeling is. Naarmate het onderzoek vordert, ligt het voor de hand dat de richtlijnen op een gegeven moment een steviger wettelijke basis krijgen.</p>
+                <p className="mt-2 text-dim leading-relaxed">Het handelingskader is een beleidskader en geen wet, en het is in de loop der jaren meerdere keren aangepast. Hoe de regels er nu precies uitzien en of ze verder worden vastgelegd, lees je het best na op de actuele pagina over PFAS-regels van de Rijksoverheid.</p>
               </div>
             </div>
           </div>

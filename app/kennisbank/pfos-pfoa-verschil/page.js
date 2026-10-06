@@ -100,7 +100,7 @@ export default function Page() {
             <div className="mt-8 space-y-6">
               <div>
                 <h3 className="font-display text-lg font-bold text-ink">Zijn PFOS en PFOA nu helemaal verboden?</h3>
-                <p className="mt-2 text-dim leading-relaxed">In de EU is het gebruik van PFOS al sinds 2009 sterk beperkt, en PFOA sinds 2020. Nieuwe productie en gebruik zijn dus grotendeels verboden, maar omdat beide stoffen decennialang zijn gebruikt en nauwelijks afbreken, zijn ze nog altijd in bodem, oppervlaktewater en soms drinkwater meetbaar.</p>
+                <p className="mt-2 text-dim leading-relaxed">In de EU is PFOS al sinds 2006 aan banden gelegd en valt het sinds 2010 onder de POP-verordening; PFOA kwam daar in juli 2020 bij. Productie en gebruik zijn dus in principe verboden, maar omdat beide stoffen decennialang zijn gebruikt en nauwelijks afbreken, zijn ze nog altijd in bodem, oppervlaktewater en soms drinkwater meetbaar.</p>
               </div>
               <div>
                 <h3 className="font-display text-lg font-bold text-ink">Kan ik zien welke specifieke PFAS-stof in mijn water zit?</h3>

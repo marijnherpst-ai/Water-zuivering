@@ -100,7 +100,7 @@ export default function Page() {
             <div className="mt-8 space-y-6">
               <div>
                 <h3 className="font-display text-lg font-bold text-ink">Past een tappunt in elk aanrecht?</h3>
-                <p className="mt-2 text-dim leading-relaxed">In vrijwel elk aanrecht wel, ja — er is maar een klein extra gaatje nodig (meestal rond de 1,2 cm doorsnede). Bij een keuken van natuursteen of composiet kan dat gat vaak netjes worden geboord door de installateur zonder dat het opvalt.</p>
+                <p className="mt-2 text-dim leading-relaxed">In vrijwel elk aanrecht wel, ja — er is maar een klein extra gaatje nodig. Bij een keuken van natuursteen of composiet kan dat gat vaak netjes worden geboord door de installateur zonder dat het opvalt.</p>
               </div>
               <div>
                 <h3 className="font-display text-lg font-bold text-ink">Kan ik het tappunt zelf plaatsen?</h3>

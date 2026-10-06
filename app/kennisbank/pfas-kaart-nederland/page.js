@@ -50,7 +50,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat laat de PFAS kaart precies zien?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Verschillende instanties — waaronder het RIVM en provincies — publiceren kaarten met gemeten PFAS-concentraties in bodem, oppervlaktewater en op locaties met een bekende vervuilingsbron, zoals voormalige fabrieksterreinen of brandweeroefenplaatsen. Op zo'n kaart zie je meestal een kleurcodering: van laag risico tot gebieden waar aanvullend onderzoek of een handelingskader geldt.
+              Verschillende instanties, zoals overheden en kennisinstituten, publiceren kaarten met gemeten PFAS-concentraties in bodem, oppervlaktewater en op locaties met een bekende vervuilingsbron, zoals voormalige fabrieksterreinen of brandweeroefenplaatsen. Op zo'n kaart zie je meestal een kleurcodering: van laag risico tot gebieden waar aanvullend onderzoek of een handelingskader geldt.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Belangrijk om te weten: deze kaarten gaan vooral over bodem en oppervlaktewater, niet direct over het water dat uit jouw kraan komt. Drinkwaterbedrijven zuiveren en controleren dat apart, en meestal blijft de PFAS-waarde daar onder de wettelijke norm.
@@ -74,7 +74,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Welke gebieden vallen extra op?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Op de kaarten van het RIVM en de provincies springen vooral een aantal type locaties eruit: de omgeving van Schiphol en andere vliegvelden (door jarenlang gebruik van PFAS-houdend blusschuim), industrieterreinen waar vroeger chemische fabrieken zaten, en de regio rond Dordrecht en de Drechtsteden, waar een grote chemiefabriek decennialang PFOA heeft uitgestoten. Ook in en rond veel brandweerkazernes en -oefenterreinen worden verhoogde waarden gemeten, om dezelfde reden als bij vliegvelden.
+              Op PFAS-kaarten springen vooral een paar type locaties eruit: industrieterreinen waar PFAS is geproduceerd of gebruikt (de regio rond Dordrecht wordt daarbij vaak genoemd), en plekken waar PFAS-houdend blusschuim is gebruikt, zoals brandweeroefenterreinen. Welke gebieden precies als aandachtsgebied zijn aangemerkt, verschilt per bron en verandert met nieuwe metingen.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Belangrijk detail: een "aandachtsgebied" op de kaart zegt iets over de bodem of het oppervlaktewater ter plekke, niet automatisch over de kwaliteit van het drinkwater dat bij jou uit de kraan komt. Drinkwaterbedrijven winnen hun water vaak dieper uit de grond of uit andere bronnen, en zuiveren en toetsen dat apart aan de wettelijke norm — ook als je toevallig in of vlakbij zo'n gebied woont.
