@@ -11,7 +11,7 @@ export const dynamic = 'force-dynamic';
 
 export const metadata = {
   alternates: { canonical: '/osmose-installatie' },
-  title: 'Osmose installatie thuis: zo verloopt de installatiedag — Water-zuivering',
+  title: 'Osmose installatie thuis: zo verloopt het — Water-zuivering',
   description: 'Osmose installatie thuis: wat er op de installatiedag gebeurt, wat je nodig hebt, hoe lang het duurt en wanneer zelf installeren €250 scheelt.',
 };
 

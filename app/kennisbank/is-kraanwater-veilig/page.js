@@ -82,7 +82,7 @@ export default function Page() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">De oplossing</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Zuiverder water, zonder erover na te hoeven denken</h2>
               <p className="mt-4 text-dim">Een Water-zuivering systeem filtert met 3 trappen chloor, PFAS, medicijnresten, microplastics en lood uit je kraanwater — direct beschikbaar, zonder dat je er verder aan hoeft te denken.</p>
-              <p className="mt-4 text-dim">Benieuwd naar de specifieke stoffen? Lees ook onze uitleg over <Link href="/kennisbank/pfas-in-kraanwater" className="underline hover:text-ink">PFAS in kraanwater</Link>.</p>
+              <p className="mt-4 text-dim">Benieuwd naar de specifieke stoffen? Lees ook onze uitleg over <Link href="/kennisbank/pfas-in-kraanwater" className="underline hover:text-ink">PFAS in kraanwater</Link>. Overweeg je een filter, kijk dan welk <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter bij welk probleem past</Link>.</p>
             </div>
           </div>
         </section>

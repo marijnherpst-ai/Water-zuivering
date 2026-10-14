@@ -140,7 +140,7 @@ export default async function Page() {
               ))}
             </div>
             <p className="mt-8 text-dim leading-relaxed max-w-3xl mx-auto text-center">
-              Twijfel je tussen de laatste twee opties? We zetten ze uitgebreider tegenover elkaar in <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">beste waterfilter voor thuis</Link>.
+              Twijfel je tussen de laatste twee opties? We zetten ze uitgebreider tegenover elkaar in <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">beste waterfilter voor thuis</Link>. Weet je al welk probleem je wilt oplossen, zoals chloor, kalk of PFAS? Dan helpt <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter kiezen per probleem</Link> je sneller verder.
             </p>
           </div>
         </section>
