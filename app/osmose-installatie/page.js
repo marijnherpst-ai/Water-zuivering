@@ -146,6 +146,24 @@ export default function Page() {
           </div>
         </section>
 
+        {/* VOORBEREIDEN */}
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-14 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Je keuken voorbereiden in drie handelingen</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een goede voorbereiding scheelt tijd op de dag zelf. Dit kun je vooraf al regelen:
+            </p>
+            <ol className="mt-5 space-y-3 text-dim leading-relaxed list-decimal pl-5">
+              <li><strong className="text-ink">Haal het kastje onder je spoelbak leeg</strong>, zodat de monteur bij de koudwaterleiding en op een vlakke plek voor het systeem kan.</li>
+              <li><strong className="text-ink">Controleer de maat</strong> met een foto van je kastje in de <Link href="/maatcheck" className="underline hover:text-ink">maatcheck</Link>, voor het geval je twijfelt tussen staand of liggend plaatsen.</li>
+              <li><strong className="text-ink">Kies de afwerking van je kraan</strong>. Voor de 3-weg kraan is er keuze uit chroom, geborsteld staal en goud.</li>
+            </ol>
+            <p className="mt-5 text-dim leading-relaxed">
+              Meer over de kraan zelf lees je in onze uitleg over de <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link>.
+            </p>
+          </div>
+        </section>
+
         {/* MONTEUR OF ZELF */}
         <section className="relative">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">

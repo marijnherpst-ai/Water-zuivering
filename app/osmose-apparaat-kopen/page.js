@@ -11,7 +11,7 @@ export const dynamic = 'force-dynamic';
 
 export const metadata = {
   alternates: { canonical: '/osmose-apparaat-kopen' },
-  title: 'Osmose apparaat kopen? 7 punten om te checken — Water-zuivering',
+  title: 'Osmose apparaat kopen? 7 checkpunten — Water-zuivering',
   description: 'Osmose apparaat kopen voor thuis? Zeven punten om vooraf te checken, met een rekenvoorbeeld van de filterkosten over 5 en 10 jaar.',
 };
 
@@ -72,7 +72,7 @@ export default function Page() {
                 Osmose apparaat kopen: zeven punten om vooraf te checken
               </h1>
               <p className="mt-5 text-dim text-lg">
-                Een <strong className="text-ink">osmose apparaat</strong> voor thuis is een investering voor jaren. Deze gids helpt je de juiste vragen te stellen, en laat zien wat de filters over 5 en 10 jaar kosten, zodat je niet pas achteraf tegen de kosten aanloopt.
+                Wil je een <strong className="text-ink">osmose apparaat kopen</strong> voor in je keuken? Dan koop je iets waar je jaren mee leeft. Deze gids helpt je de juiste vragen te stellen, en laat zien wat de filters over 5 en 10 jaar kosten, zodat je niet pas achteraf tegen de kosten aanloopt.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-3.5 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">
@@ -87,7 +87,7 @@ export default function Page() {
             <div className="relative">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-[2rem] overflow-hidden border border-edge aspect-[4/5]">
-                <Image src="/assets/img/countertop.png" alt="Osmose apparaat voor thuis op een keukenblad" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" priority />
+                <Image src="/assets/img/countertop.png" alt="Osmose apparaat kopen: een systeem voor thuis, hier op een keukenblad" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" priority />
               </div>
             </div>
           </div>
@@ -102,6 +102,27 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Deze gids gaat over één ding: een omgekeerde-osmosesysteem dat onder je aanrecht staat en je kraanwater tot drinkwater zuivert. Eerst de zeven punten waar je op let, daarna een rekenvoorbeeld van de kosten.
             </p>
+          </div>
+        </section>
+
+        {/* VEELGEMAAKTE FOUTEN */}
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-14 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Drie fouten die kopers van een osmose apparaat vaak maken</h2>
+            <div className="mt-6 space-y-5">
+              <div>
+                <p className="font-semibold text-ink text-sm">1. Alleen naar de aanschafprijs kijken</p>
+                <p className="mt-1 text-sm text-dim leading-relaxed">Een apparaat dat goedkoop is in de winkel, kan jaren duurder uitpakken als de filters vaak vervangen moeten worden. Zet de filterkosten per jaar altijd naast de aanschafprijs, zoals we hieronder doen.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-ink text-sm">2. Een model voor een andere toepassing kiezen</p>
+                <p className="mt-1 text-sm text-dim leading-relaxed">Een osmose apparaat voor je aquarium of voor het wassen van ramen zuivert water voor een heel ander doel dan drinken. Voor je keukenkraan wil je een systeem dat daarvoor is gemaakt.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-ink text-sm">3. Pas na aankoop meten of het past</p>
+                <p className="mt-1 text-sm text-dim leading-relaxed">Onder de spoelbak zit je met leidingen, een afvalbak en soms een boiler. Meet de ruimte voor je bestelt, of maak een foto van je kastje en laat de <Link href="/maatcheck" className="underline hover:text-ink">maatcheck</Link> het voor je uitzoeken.</p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -156,7 +177,7 @@ export default function Page() {
             <div className="relative">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/filters-closeup.png" alt="De drie filters van het osmosesysteem: PPC, RO en CTO" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image src="/assets/img/filters-closeup.png" alt="Osmose apparaat kopen: de drie filters van het systeem, PPC, RO en CTO" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
           </div>

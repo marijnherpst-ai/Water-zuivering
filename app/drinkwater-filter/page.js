@@ -17,24 +17,24 @@ export const metadata = {
 
 const PROBLEMEN = [
   {
-    titel: 'Chloorsmaak of een bijsmaak',
+    titel: 'Je proeft chloor in je glas water',
     filter: 'Koolstoffilter',
-    uitleg: 'Een koolstoffilter, in een filterkan, kraan-opzetstuk of als nafilter in een groter systeem, pakt chloor en smaakstoffen goed aan. Heb je alleen last van smaak, dan is dit vaak genoeg en hoef je niet meer te investeren.',
+    uitleg: 'Ruik je het zwembad in je kraanwater? Dan zit je probleem bij smaak en geur, en daar is actieve kool voor. Je vindt het terug in filterkannen, op de kraan of als laatste stap in een groter systeem. Meer is hier niet nodig, en dat scheelt je een flinke investering.',
   },
   {
-    titel: 'Kalk en kalkaanslag',
+    titel: 'Witte aanslag op kraan en waterkoker',
     filter: 'Waterontharder of osmose',
-    uitleg: 'Een waterontharder is gemaakt om kalk te verwijderen. Een osmosesysteem filtert zo grondig dat ook opgeloste mineralen, waaronder kalk, grotendeels verdwijnen. Het verschil: een osmosesysteem zuivert alleen het water uit de filterkraan, een ontharder werkt op je hele huis.',
+    uitleg: 'Kalkaanslag zie je terug op alles wat met warm water te maken heeft. Een ontharder pakt dat aan voor je hele huis. Een osmosesysteem lost het alleen op bij het water dat uit de filterkraan komt, want het haalt opgeloste mineralen weg. Kies dus op basis van wáár je het probleem wilt oplossen.',
   },
   {
-    titel: 'PFAS en medicijnresten',
+    titel: 'Je maakt je zorgen over PFAS en medicijnresten',
     filter: 'Omgekeerde osmose',
-    uitleg: 'Deze stoffen zijn te klein voor een gewoon koolstoffilter. Een omgekeerde-osmosemembraan heeft daarvoor fijn genoeg poriën. Volgens de productinformatie van ons systeem worden PFAS, medicijnresten, microplastics en lood effectief tegengehouden.',
+    uitleg: 'Dit gaat over stoffen die je niet proeft en niet ziet. Ze zijn zo klein dat koolstof ze deels laat lopen. Een omgekeerde-osmosemembraan houdt ze wel tegen. Volgens de productinformatie van ons systeem geldt dat voor PFAS, medicijnresten, microplastics en lood.',
   },
   {
-    titel: 'Je weet niet precies wat je wilt oplossen',
-    filter: 'Eerst uitzoeken, dan kiezen',
-    uitleg: 'Begin bij je waterbedrijf, dat meetgegevens van je regio publiceert. Voor PFAS kun je ook onze gratis PFAS-check doen. Zo koop je geen zwaarder filter dan je nodig hebt.',
+    titel: 'Je weet nog niet wat jij moet oplossen',
+    filter: 'Eerst meten, dan kiezen',
+    uitleg: 'Dat is een prima startpunt. Je drinkwaterbedrijf publiceert meetgegevens voor je regio, en voor PFAS kun je onze gratis PFAS-check gebruiken. Pas daarna weet je of een eenvoudig filter volstaat.',
   },
 ];
 
@@ -165,6 +165,30 @@ export default function Page() {
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
                 <Image src="/assets/img/twee-kranen.jpg" alt="Gewone kraan en kraan voor gefilterd drinkwater naast elkaar" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* KEUZEHULP */}
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Drie vragen die je drinkwater filter bepalen</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Heb je geen zin om alle stoffen langs te lopen? Beantwoord dan deze drie vragen, in deze volgorde.
+            </p>
+            <div className="mt-6 space-y-5">
+              <div className="rounded-2xl card p-5">
+                <p className="font-display font-bold text-ink">1. Wat stoort je nu echt?</p>
+                <p className="mt-1.5 text-sm text-dim leading-relaxed">Gaat het alleen om smaak, dan kom je met een kan of kraanfilter al een heel eind. Zijn het stoffen die je niet proeft, dan ga je naar vraag 2.</p>
+              </div>
+              <div className="rounded-2xl card p-5">
+                <p className="font-display font-bold text-ink">2. Weet je wat er in jouw water zit?</p>
+                <p className="mt-1.5 text-sm text-dim leading-relaxed">Zoek de meetgegevens van je drinkwaterbedrijf op, of doe de PFAS-check. Zit er niets opvallends in en wil je gewoon zekerheid, dan past osmose bij jou. Wil je alleen smaak, dan is dat overdreven.</p>
+              </div>
+              <div className="rounded-2xl card p-5">
+                <p className="font-display font-bold text-ink">3. Hoeveel gedoe accepteer je?</p>
+                <p className="mt-1.5 text-sm text-dim leading-relaxed">Een kan vul je zelf bij, en het patroon vervang je regelmatig. Een systeem onder de gootsteen doet dat zelf, en je vervangt alleen af en toe een filter.</p>
               </div>
             </div>
           </div>
