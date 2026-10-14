@@ -76,7 +76,7 @@ export default function Page() {
               Flessenwater of jerrycans kosten per liter al snel meer dan je denkt — en die kosten lopen jaar na jaar door, voor onbepaalde tijd. Een eigen systeem heeft wél een aanschafkost vooraf, maar daarna nog maar één beperkte, terugkerende kostenpost: het filter.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Bij Water-zuivering geldt op dit moment bovendien tijdelijk <strong className="text-ink">€250 korting</strong> bij aanvraag van een offerte.
+              Bij Water-zuivering geldt op dit moment bovendien tijdelijk <strong className="text-ink">€250 korting</strong> bij aanvraag van een offerte. Wil je zelf nog een aankoop goed beoordelen, loop dan onze <Link href="/osmose-apparaat-kopen" className="underline hover:text-ink">checklist voor het kopen van een osmose apparaat</Link> door.
             </p>
             <Link href="/besparing" className="cursor-pointer mt-6 inline-flex items-center gap-2 rounded-full bg-amber px-6 py-3 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors">
               Bereken je persoonlijke besparing

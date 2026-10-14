@@ -94,7 +94,7 @@ export default function Page() {
             <div className="order-1 lg:order-2">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Zekerheid</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Vakkundig geïnstalleerd, met 10 jaar garantie</h2>
-              <p className="mt-4 text-dim">Onze eigen monteurs installeren elk systeem persoonlijk en testen alles voordat ze vertrekken. Meer over de garantie lees je op onze <Link href="/garantie" className="underline hover:text-ink">garantiepagina</Link>.</p>
+              <p className="mt-4 text-dim">Onze eigen monteurs installeren elk systeem persoonlijk en testen alles voordat ze vertrekken. Meer over de garantie lees je op onze <Link href="/garantie" className="underline hover:text-ink">garantiepagina</Link>. Wil je precies weten wat er op de installatiedag gebeurt en wat je vooraf nodig hebt? Lees dan onze pagina over de <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>.</p>
             </div>
           </div>
         </section>

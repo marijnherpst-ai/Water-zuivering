@@ -87,7 +87,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Welke optie past bij jou?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Zoek je een snelle, goedkope manier om de chloorsmaak kwijt te raken, dan volstaat een kan. Wil je écht af van sporenstoffen zonder gedoe met bijvullen, dan is een systeem onder de gootsteen de grondigste keuze. Een uitgebreide vergelijking, inclusief kosten en gemak, vind je in ons artikel <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">beste waterfilter voor thuis</Link>.
+              Zoek je een snelle, goedkope manier om de chloorsmaak kwijt te raken, dan volstaat een kan. Wil je écht af van sporenstoffen zonder gedoe met bijvullen, dan is een systeem onder de gootsteen de grondigste keuze. Een uitgebreide vergelijking, inclusief kosten en gemak, vind je in ons artikel <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">beste waterfilter voor thuis</Link>. Wil je per stof (chloor, kalk, PFAS) weten welk filter past, bekijk dan <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter kiezen per probleem</Link>.
             </p>
           </div>
         </section>
