@@ -5,9 +5,6 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
-import ReviewsSectie from '@/components/ReviewsSectie';
-
-export const dynamic = 'force-dynamic';
 
 export const metadata = {
   alternates: { canonical: '/waterfilter-kraan' },
@@ -28,12 +25,6 @@ const VERGELIJKING = [
   ['Gefilterd én ongefilterd water', 'Omschakelen op het opzetstuk', 'Gescheiden: eigen kraan voor gefilterd water', 'Via een hendel of knop op de kraan'],
 ];
 
-const FILTERKOSTEN = [
-  ['PPC-filter (voorfilter)', 'ieder jaar', '€49,99'],
-  ['RO-filter (membraan)', 'elke 2 jaar', '€69,99'],
-  ['CTO-filter (nafilter)', 'ieder jaar', '€49,99'],
-];
-
 const REDENEN = [
   ['Je proeft het verschil meteen', 'Geen chloorlucht meer bij het inschenken van een glas water — dat is vaak het eerste wat mensen opvalt na een waterfilter aan de kraan.'],
   ['Nooit meer flessen sjouwen', 'De kraanwaterfilter zit vast aangesloten, dus er is altijd voorraad zonder dat je eraan hoeft te denken.'],
@@ -52,13 +43,6 @@ const FAQ = [
 export default function Page() {
   return (
     <>
-      <BreadcrumbSchema
-        items={[
-          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
-          { name: 'Waterfilter kraan', url: 'https://www.water-zuivering.nl/waterfilter-kraan' },
-        ]}
-      />
-      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 
@@ -89,7 +73,7 @@ export default function Page() {
             <div className="relative">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-[2rem] overflow-hidden border border-edge aspect-[4/5]">
-                <Image src="/assets/img/twee-kranen.jpg" alt="Waterfilter kraan: zuiver water direct uit de keukenkraan" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" priority />
+                <Image src="/assets/img/twee-kranen.jpg" alt="Water filter kraan: zuiver water direct uit de keukenkraan" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" priority />
               </div>
             </div>
           </div>
@@ -232,30 +216,13 @@ export default function Page() {
             <div>
               <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat kost een waterfilter kraan per jaar aan filters?</h2>
               <p className="mt-4 text-dim leading-relaxed">
-                De aanschaf is één ding, maar bij elke kraanwaterfilter betaal je ook voor vervangfilters. Bij ons systeem zijn dat er drie, elk met een eigen ritme:
+                Een opzetstuk lijkt goedkoop, tot je de vervangpatroontjes optelt die elke paar maanden op moeten. Bij een systeem onder de gootsteen ligt dat ritme veel lager: het voorfilter en het nafilter gaan een jaar mee, het membraan zelfs twee jaar.
               </p>
-              <div className="mt-6 overflow-x-auto rounded-2xl border border-edge">
-                <table className="w-full text-sm text-left">
-                  <thead className="bg-bg">
-                    <tr>
-                      <th className="p-3 font-display">Filter</th>
-                      <th className="p-3 font-display">Vervangen</th>
-                      <th className="p-3 font-display">Prijs</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {FILTERKOSTEN.map(([f, w, p]) => (
-                      <tr key={f} className="border-t border-edge">
-                        <td className="p-3 text-ink">{f}</td>
-                        <td className="p-3 text-dim">{w}</td>
-                        <td className="p-3 text-dim">{p}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
               <p className="mt-4 text-dim leading-relaxed">
-                Gemiddeld is dat zo'n €135 per jaar. Je wisselt de filters zelf, zonder gereedschap, en bestelt ze in de <Link href="/winkel" className="underline hover:text-ink">winkel</Link>. Hoe de plaatsing zelf in z'n werk gaat, lees je stap voor stap bij <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>.
+                Reken bij ons op ongeveer <strong className="text-ink">€135 per jaar</strong>, ruwweg €11 per maand, voor onbeperkt gefilterd water uit je eigen kraan. Geen abonnement: je bestelt een filter pas als het display aangeeft dat het tijd is, en wisselt hem zelf, zonder gereedschap. De losse prijzen per filter staan in de <Link href="/winkel" className="underline hover:text-ink">winkel</Link>.
+              </p>
+              <p className="mt-4 text-dim leading-relaxed">
+                Wil je weten wat er bij de plaatsing in je keukenkastje gebeurt? Dat lees je stap voor stap bij <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>.
               </p>
             </div>
             <div>
@@ -269,8 +236,6 @@ export default function Page() {
             </div>
           </div>
         </section>
-
-        <ReviewsSectie />
 
         {/* FAQ */}
         <section className="relative">
@@ -309,6 +274,13 @@ export default function Page() {
       </main>
 
       <Footer />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
+          { name: 'Waterfilter kraan', url: 'https://www.water-zuivering.nl/waterfilter-kraan' },
+        ]}
+      />
+      <FaqSchema items={FAQ} />
     </>
   );
 }
