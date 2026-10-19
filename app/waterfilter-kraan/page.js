@@ -55,7 +55,7 @@ export default function Page() {
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Waterfilter kraan</span>
               <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
-                Een waterfilter kraan die je elke dag gebruikt zonder erover na te denken
+                Een water filter kraan die je elke dag gebruikt zonder erover na te denken
               </h1>
               <p className="mt-5 text-dim text-lg">
                 Er zijn ochtenden dat je gewoon een glas water wilt, geen gedoe met filterkannen of flessen. Een <strong className="text-ink">waterfilter kraan</strong> (veel mensen zoeken het als <strong className="text-ink">water filter kraan</strong>) — een kraangemonteerd waterfiltersysteem dat vast op je keukenkraan is aangesloten — levert precies dat: zuiver water, direct, onbeperkt.
@@ -147,6 +147,33 @@ export default function Page() {
             </div>
             <p className="mt-6 text-dim leading-relaxed max-w-3xl">
               Twijfel je vooral over de filtratie en minder over de kraan? Op <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter kiezen per probleem</Link> lees je per stof (kalk, chloor, PFAS, medicijnresten) welk type filter er iets tegen doet.
+            </p>
+          </div>
+        </section>
+
+        {/* VOOR WIE */}
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Past een waterfilter aan de kraan bij jouw huishouden?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Of zo'n systeem de moeite waard is, hangt minder af van je kraanwater dan van hoe je leeft. Drie situaties waarin we het verschil het vaakst zien:
+            </p>
+            <div className="mt-8 grid md:grid-cols-3 gap-5">
+              <div className="reveal rounded-2xl card p-6">
+                <p className="font-display font-bold text-ink">Gezin met kinderen</p>
+                <p className="mt-2 text-sm text-dim leading-relaxed">Hier gaat het hardst door water heen: bekers limonade, flesjes, pasta, thee. Een filterkan is dan voortdurend leeg. Een kraan die gewoon blijft lopen, haalt dat gedoe in één keer weg.</p>
+              </div>
+              <div className="reveal rounded-2xl card p-6">
+                <p className="font-display font-bold text-ink">Thuiswerkers en koffiedrinkers</p>
+                <p className="mt-2 text-sm text-dim leading-relaxed">Wie de hele dag thuis zit, tapt ook de hele dag. Koffie en thee smaken zuiverder zonder chloor, en de waterkoker slibt minder snel dicht omdat osmose ook kalk tegenhoudt.</p>
+              </div>
+              <div className="reveal rounded-2xl card p-6">
+                <p className="font-display font-bold text-ink">Wie klaar is met flessen</p>
+                <p className="mt-2 text-sm text-dim leading-relaxed">Kratten sjouwen, statiegeld terugbrengen, plastic weggooien: het hoort bij flessenwater. Met een vaste kraan voor gefilterd water verdwijnt die hele routine uit je week.</p>
+              </div>
+            </div>
+            <p className="mt-8 text-dim leading-relaxed">
+              Woon je alleen en drink je vooral buiten de deur? Dan is een simpele filterkan soms genoeg. Merk je dat je toch elke week flessen koopt, of twijfel je over wat er in je water zit, dan is een vaste oplossing aan de kraan de stap die het wél verandert. Weet je niet zeker wat er bij jou uit de leiding komt? Doe dan eerst de <Link href="/pfas-check" className="underline hover:text-ink">PFAS-check</Link> voor jouw postcode.
             </p>
           </div>
         </section>
