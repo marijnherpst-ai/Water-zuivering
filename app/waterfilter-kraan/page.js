@@ -5,6 +5,9 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import ReviewsSectie from '@/components/ReviewsSectie';
+
+export const dynamic = 'force-dynamic';
 
 export const metadata = {
   alternates: { canonical: '/waterfilter-kraan' },
@@ -16,6 +19,19 @@ const TYPES = [
   ['Opzetstuk op de kraan', 'Klikt letterlijk om je bestaande kraan heen. Snel gemonteerd, maar wel zichtbaar — en de filtratie is beperkter dan bij een ingebouwd systeem.'],
   ['3-weg kraan met los systeem eronder', 'Een aparte, elegante kraan naast je bestaande mengkraan, gevoed door een filtersysteem onder de gootsteen. Het beste van twee werelden: onzichtbaar systeem, herkenbare bediening.'],
   ['Geïntegreerd in de bestaande kraan', 'Sommige systemen sluiten aan op je huidige kraan, zodat je geen extra opening in het aanrecht nodig hebt.'],
+];
+
+const VERGELIJKING = [
+  ['Montage', 'Zelf, in een paar minuten', 'Aansluiting op de koudwaterleiding plus een extra kraangat', 'Aansluiting op de bestaande kraan of leiding'],
+  ['Wat zie je op het aanrecht', 'Een filterblokje aan je kraan', 'Een tweede, slanke kraan', 'Niets extra'],
+  ['Filtratie', 'Meestal alleen koolstof: vooral smaak en chloor', 'Afhankelijk van het systeem eronder, tot en met omgekeerde osmose', 'Afhankelijk van het systeem eronder'],
+  ['Gefilterd én ongefilterd water', 'Omschakelen op het opzetstuk', 'Gescheiden: eigen kraan voor gefilterd water', 'Via een hendel of knop op de kraan'],
+];
+
+const FILTERKOSTEN = [
+  ['PPC-filter (voorfilter)', 'ieder jaar', '€49,99'],
+  ['RO-filter (membraan)', 'elke 2 jaar', '€69,99'],
+  ['CTO-filter (nafilter)', 'ieder jaar', '€49,99'],
 ];
 
 const REDENEN = [
@@ -30,7 +46,7 @@ const FAQ = [
   ['Kan ik een waterfiltersysteem kraan zelf plaatsen?', 'Een eenvoudig opzetstuk kun je vaak zelf monteren. Een systeem met een aparte 3-weg kraan vraagt om een vakkundige aansluiting op de waterleiding — dat regelen wij binnen één dag.'],
   ['Verwijdert een waterfilter kraan ook PFAS?', 'Dat hangt volledig af van het type filter erachter. Een eenvoudig opzetstuk filtert vooral chloor; alleen een systeem met een omgekeerde-osmose-membraan verwijdert ook PFAS, medicijnresten en microplastics.'],
   ['Wat kost een waterfilter kraan?', 'Een los opzetstuk is al voor een paar tientjes te koop. Een compleet systeem met eigen 3-weg kraan en osmosefiltratie is een grotere investering, maar betaalt zich terug doordat je nooit meer flessenwater koopt.'],
-  ['Hoe vaak moet ik het filter van mijn kraanwatersysteem vervangen?', 'Bij een eenvoudig opzetstuk meestal elke 2-3 maanden. Bij een compleet systeem onder de gootsteen gaan de voor- en nafilters 6 tot 12 maanden mee, het membraan zelf 2 tot 3 jaar.'],
+  ['Hoe vaak moet ik het filter van mijn kraanwatersysteem vervangen?', 'Bij een eenvoudig opzetstuk meestal elke 2-3 maanden. Bij ons systeem onder de gootsteen vervang je het voorfilter en het nafilter ieder jaar en het membraan elke 2 jaar. Het display geeft aan wanneer het zover is.'],
 ];
 
 export default function Page() {
@@ -58,7 +74,7 @@ export default function Page() {
                 Een waterfilter kraan die je elke dag gebruikt zonder erover na te denken
               </h1>
               <p className="mt-5 text-dim text-lg">
-                Er zijn ochtenden dat je gewoon een glas water wilt, geen gedoe met filterkannen of flessen. Een <strong className="text-ink">waterfilter kraan</strong> — een kraangemonteerd waterfiltersysteem dat vast op je keukenkraan is aangesloten — levert precies dat: zuiver water, direct, onbeperkt.
+                Er zijn ochtenden dat je gewoon een glas water wilt, geen gedoe met filterkannen of flessen. Een <strong className="text-ink">waterfilter kraan</strong> (veel mensen zoeken het als <strong className="text-ink">water filter kraan</strong>) — een kraangemonteerd waterfiltersysteem dat vast op je keukenkraan is aangesloten — levert precies dat: zuiver water, direct, onbeperkt.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-3.5 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">
@@ -116,11 +132,46 @@ export default function Page() {
           </div>
         </section>
 
+        {/* VERGELIJKING */}
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">De drie uitvoeringen naast elkaar</h2>
+            <p className="mt-4 text-dim leading-relaxed max-w-3xl">
+              Welke water filter kraan bij je past, hangt minder af van de kraan zelf dan van twee vragen: hoeveel wil je zien op je aanrecht, en wat wil je écht uit je water halen? Deze tabel zet de verschillen op een rij.
+            </p>
+            <div className="mt-8 overflow-x-auto rounded-2xl border border-edge">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-bg">
+                  <tr>
+                    <th className="p-4 font-display">&nbsp;</th>
+                    <th className="p-4 font-display">Opzetstuk</th>
+                    <th className="p-4 font-display">3-weg kraan + systeem</th>
+                    <th className="p-4 font-display">Geïntegreerd</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {VERGELIJKING.map(([label, a, b, c]) => (
+                    <tr key={label} className="border-t border-edge align-top">
+                      <th className="p-4 font-semibold text-ink">{label}</th>
+                      <td className="p-4 text-dim">{a}</td>
+                      <td className="p-4 text-dim">{b}</td>
+                      <td className="p-4 text-dim">{c}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-6 text-dim leading-relaxed max-w-3xl">
+              Twijfel je vooral over de filtratie en minder over de kraan? Op <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter kiezen per probleem</Link> lees je per stof (kalk, chloor, PFAS, medicijnresten) welk type filter er iets tegen doet.
+            </p>
+          </div>
+        </section>
+
         {/* WAAROM */}
         <section className="relative bg-surface border-y border-edge overflow-hidden">
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-              <Image src="/assets/img/een-kraan.jpg" alt="Waterfiltersysteem kraan naast een gewone keukenkraan" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+              <Image src="/assets/img/een-kraan.jpg" alt="Water filter kraan met eigen bediening naast een gewone keukenkraan" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Waarom mensen overstappen</span>
@@ -174,6 +225,52 @@ export default function Page() {
             </div>
           </div>
         </section>
+
+        {/* KOSTEN & AFWERKING */}
+        <section className="relative">
+          <div className="max-w-5xl mx-auto px-6 py-16 md:py-20 grid lg:grid-cols-2 gap-12">
+            <div>
+              <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat kost een waterfilter kraan per jaar aan filters?</h2>
+              <p className="mt-4 text-dim leading-relaxed">
+                De aanschaf is één ding, maar bij elke kraanwaterfilter betaal je ook voor vervangfilters. Bij ons systeem zijn dat er drie, elk met een eigen ritme:
+              </p>
+              <div className="mt-6 overflow-x-auto rounded-2xl border border-edge">
+                <table className="w-full text-sm text-left">
+                  <thead className="bg-bg">
+                    <tr>
+                      <th className="p-3 font-display">Filter</th>
+                      <th className="p-3 font-display">Vervangen</th>
+                      <th className="p-3 font-display">Prijs</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {FILTERKOSTEN.map(([f, w, p]) => (
+                      <tr key={f} className="border-t border-edge">
+                        <td className="p-3 text-ink">{f}</td>
+                        <td className="p-3 text-dim">{w}</td>
+                        <td className="p-3 text-dim">{p}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-4 text-dim leading-relaxed">
+                Gemiddeld is dat zo'n €135 per jaar. Je wisselt de filters zelf, zonder gereedschap, en bestelt ze in de <Link href="/winkel" className="underline hover:text-ink">winkel</Link>. Hoe de plaatsing zelf in z'n werk gaat, lees je stap voor stap bij <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>.
+              </p>
+            </div>
+            <div>
+              <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Een kraan die bij je keuken past</h2>
+              <p className="mt-4 text-dim leading-relaxed">
+                Omdat de 3-weg kraan naast je eigen mengkraan staat, valt hij op. Daarom kies je zelf de afwerking: <strong className="text-ink">chroom</strong>, <strong className="text-ink">geborsteld staal</strong> of <strong className="text-ink">goud</strong>. Chroom sluit aan bij de meeste standaard keukenkranen, geborsteld staal past bij RVS-spoelbakken en apparatuur, en goud is een bewuste blikvanger.
+              </p>
+              <p className="mt-4 text-dim leading-relaxed">
+                Een tip uit de praktijk: kijk niet alleen naar je huidige kraan, maar ook naar de handgrepen van je keukenkastjes. Daar sluit een tweede kraan vaak het mooist op aan. Alle varianten bekijk je bij de <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link>.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <ReviewsSectie />
 
         {/* FAQ */}
         <section className="relative">
