@@ -23,7 +23,7 @@ export const metadata = {
   alternates: { canonical: '/osmosesysteem' },
   title: 'Osmosesysteem voor thuis: direct flow — Water-zuivering',
   description:
-    'Osmosesysteem voor thuis: 3-traps filtratie, direct flow zonder tank, 1,58 liter per minuut en 10 jaar garantie. Bekijk hoe het werkt en vraag een offerte aan.',
+    'Osmosesysteem voor thuis: 3-traps filtratie, direct flow zonder tank en 10 jaar garantie. Bekijk hoe het werkt en vraag vrijblijvend een offerte aan.',
   openGraph: {
     title: 'Het osmosesysteem van Water-zuivering',
     description: 'Zuiver drinkwater uit je eigen kraan: 3-traps omgekeerde osmose, direct flow zonder tank, geplaatst in 1 à 2 uur.',
