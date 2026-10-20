@@ -14,6 +14,9 @@ const DEELTJES = [
 
 const DRUPPELS = [0.2, 1.6, 3.0, 4.4, 5.8];
 
+// mineralen komen vrij in het nafilter en gaan mee het glas in: [startX, vertraging]
+const MINERALEN = [[96, 0.9], [146, 2.4], [110, 3.9], [136, 5.4]];
+
 // al eerder opgevangen deeltjes: geven de lagen een "gebruikte" textuur
 const OPGEVANGEN = [
   [70, 247, '#FF5C8A'], [108, 247, '#A98BFF'], [132, 247, '#F2F2F2'], [156, 247, '#8FB3CC'], [176, 247, '#A98BFF'],
@@ -24,7 +27,7 @@ const LABELS = [
   { top: '4.2%', tag: 'In', titel: 'Kraanwater', tekst: null },
   { top: '23.7%', tag: '01', titel: 'PPC-voorfilter', tekst: 'Vangt zand, roest en slib' },
   { top: '48.7%', tag: '02', titel: 'RO-membraan', tekst: 'Houdt PFAS, medicijnresten, kalk en lood tegen' },
-  { top: '71.7%', tag: '03', titel: 'CTO-nafilter', tekst: 'Haalt bijsmaak en geur weg' },
+  { top: '71.7%', tag: '03', titel: 'CTO-nafilter', tekst: 'Polijst de smaak en voegt mineralen toe' },
   { top: '94.6%', tag: 'Uit', titel: 'Zuiver water', tekst: null },
 ];
 
@@ -35,6 +38,7 @@ const LEGENDA = [
   ['#F2F2F2', 'Kalk'],
   ['#8FB3CC', 'Lood'],
   ['#9BA3AE', 'Bijsmaak'],
+  ['#5FD3A8', 'Mineralen'],
   ['#7FD3FF', 'Water'],
 ];
 
@@ -53,6 +57,7 @@ export default function WaterReis({ monoClass = '' }) {
       <style>{`
         .waterreis .wr-p { animation: wr-val 7s cubic-bezier(.4,0,.2,1) infinite both; }
         .waterreis .wr-d { animation: wr-door 7s cubic-bezier(.45,0,.55,1) infinite both; }
+        .waterreis .wr-min { animation: wr-min 7s ease-in-out infinite both; }
         .waterreis .wr-flow { animation: wr-flow .9s linear infinite; }
         .waterreis .wr-pulse { animation: wr-pulse 3.2s ease-in-out infinite; }
         @keyframes wr-val {
@@ -68,11 +73,18 @@ export default function WaterReis({ monoClass = '' }) {
           64% { transform: translateY(456px); opacity: 1; }
           72%, 100% { transform: translateY(456px); opacity: 0; }
         }
+        @keyframes wr-min {
+          0%, 40% { transform: translate(0,0); opacity: 0; }
+          50% { opacity: 1; }
+          78% { transform: translate(var(--dx), 128px); opacity: 1; }
+          86%, 100% { transform: translate(var(--dx), 128px); opacity: 0; }
+        }
         @keyframes wr-flow { to { stroke-dashoffset: -24; } }
         @keyframes wr-pulse { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
         @media (prefers-reduced-motion: reduce) {
           .waterreis .wr-p { animation: none; transform: translate(var(--dx), var(--dy)); }
-          .waterreis .wr-d, .waterreis .wr-flow, .waterreis .wr-pulse { animation: none; }
+          .waterreis .wr-d, .waterreis .wr-flow, .waterreis .wr-pulse, .waterreis .wr-min { animation: none; }
+          .waterreis .wr-min { opacity: 0; }
           .waterreis .wr-d { opacity: 0; }
         }
       `}</style>
@@ -83,7 +95,7 @@ export default function WaterReis({ monoClass = '' }) {
 
       <div className="relative mt-6 max-w-[440px] mx-auto">
         <svg viewBox="0 0 240 520" className="block w-[52%] h-auto" role="img" aria-labelledby="wr-titel">
-          <title id="wr-titel">Doorsnede van een osmose waterfilter met drie lagen. Het PPC-voorfilter vangt zand en roest, het RO-membraan houdt PFAS, medicijnresten, kalk en lood tegen, en het CTO-nafilter haalt bijsmaak weg. Alleen zuiver water komt in het glas.</title>
+          <title id="wr-titel">Doorsnede van een osmose waterfilter met drie lagen. Het PPC-voorfilter vangt zand en roest, het RO-membraan houdt PFAS, medicijnresten, kalk en lood tegen, en het CTO-nafilter haalt bijsmaak weg en voegt mineralen toe. Alleen zuiver water komt in het glas.</title>
           <defs>
             <linearGradient id="wr-metal" x1="0" x2="1" y1="0" y2="0">
               <stop offset="0" stopColor="#2B2F35" />
@@ -207,6 +219,9 @@ export default function WaterReis({ monoClass = '' }) {
               filter="url(#wr-glow)"
               style={{ '--dx': `${x - 120}px`, '--dy': `${y - 30}px`, animationDelay: `${delay}s` }}
             />
+          ))}
+          {MINERALEN.map(([x, delay], i) => (
+            <circle key={`min${i}`} className="wr-min" cx={x} cy="366" r="2" fill="#5FD3A8" filter="url(#wr-glow)" style={{ '--dx': `${120 - x}px`, animationDelay: `${delay}s` }} />
           ))}
           {DRUPPELS.map((delay, i) => (
             <path key={`d${i}`} className="wr-d" d="M120 24c2 2.8 3.6 4.8 3.6 6.6a3.6 3.6 0 01-7.2 0c0-1.8 1.6-3.8 3.6-6.6z" fill="#7FD3FF" filter="url(#wr-glow)" style={{ animationDelay: `${delay}s` }} />
