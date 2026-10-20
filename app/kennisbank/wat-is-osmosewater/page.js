@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/wat-is-osmosewater' },
@@ -12,6 +13,13 @@ export const metadata = {
   description:
     'Osmosewater (RO-water) uitgelegd: wat het is, of je het kan drinken, hoe je het maakt en wat het kost — inclusief de makkelijkste optie voor thuis.',
 };
+
+const FAQ = [
+  ['Wat is osmosewater?', 'Osmosewater is water dat door een membraan met minuscule gaatjes is geperst. Alles wat groter is dan een watermolecuul blijft achter, zoals chloor, PFAS, medicijnresten, microplastics en lood. Het proces heet omgekeerde osmose (RO), daarom heet het ook RO-water.'],
+  ['Kun je osmosewater drinken?', 'Ja, osmosewater is veilig om te drinken. Er wordt niets aan toegevoegd, alleen weggefilterd. Omdat ook calcium en magnesium worden weggefilterd, voegen goede systemen daarna een mineraalfilter toe voor een vollere smaak.'],
+  ['Hoe maak je osmosewater thuis?', 'Je kunt jerrycans kopen, een tafelfilter gebruiken of een systeem onder je aanrecht laten installeren. Met een systeem onder het aanrecht heb je onbeperkt osmosewater direct uit je eigen kraan.'],
+  ['Wat kost osmosewater?', 'Met een eigen systeem betaal je eenmalig de aanschaf en installatie, en daarna alleen nieuwe filters, gemiddeld elke 12 tot 24 maanden afhankelijk van het filter.'],
+];
 
 export default function WatIsOsmosewaterPage() {
   return (
@@ -29,6 +37,7 @@ export default function WatIsOsmosewaterPage() {
           { name: 'Wat is osmosewater? Uitleg, gebruik & kosten', url: 'https://www.water-zuivering.nl/kennisbank/wat-is-osmosewater' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <Header />
 
       <main>
@@ -141,6 +150,26 @@ export default function WatIsOsmosewaterPage() {
         </section>
 
         {/* CTA */}
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <div className="text-center">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgestelde vragen</h2>
+            </div>
+            <div className="mt-10 space-y-3">
+              {FAQ.map(([vraag, antwoord]) => (
+                <details key={vraag} className="group rounded-2xl card p-5">
+                  <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-display font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber rounded">
+                    {vraag}
+                    <svg className="shrink-0 transition-transform group-open:rotate-45 text-amber-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+                  </summary>
+                  <p className="mt-3 text-sm text-dim leading-relaxed">{antwoord}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="relative bg-ink text-white overflow-hidden">
           <div className="glow w-[420px] h-[420px] bg-amber/15 -top-32 -right-32" />
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">

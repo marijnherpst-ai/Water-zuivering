@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/pfas-in-kraanwater' },
@@ -14,6 +15,13 @@ export const metadata = {
   description:
     'PFAS in kraanwater: wat het is, waar het vandaan komt en hoe je het effectief uit je drinkwater filtert.',
 };
+
+const FAQ = [
+  ['Wat zijn PFAS?', 'PFAS (poly- en perfluoralkylstoffen) zijn een grote groep synthetische stoffen die decennialang zijn gebruikt in onder meer antiaanbaklagen, waterafstotende kleding, blusschuim en verpakkingen. Ze heten ook wel "forever chemicals", omdat ze nauwelijks afbreken.'],
+  ['Zit er PFAS in Nederlands kraanwater?', 'Ja, in kleine sporen. Het water voldoet aan de wettelijke norm, maar in een deel van Nederland ligt de PFAS-waarde boven de strengere advieswaarde van het RIVM (4,4 ng/l).'],
+  ['Waarom krijgt PFAS steeds meer aandacht?', 'Onderzoek wijst voorzichtig op mogelijke gezondheidsrisico\'s bij langdurige blootstelling, ook bij lage concentraties. Daarom worden de toegestane grenswaarden geleidelijk aangescherpt.'],
+  ['Welk filter haalt PFAS uit kraanwater?', 'Omgekeerde osmose. Het RO-membraan heeft gaatjes die honderden keren dunner zijn dan een haar, te klein voor PFAS-moleculen. Een filterkan houdt PFAS nauwelijks tegen.'],
+];
 
 export default function Page() {
   return (
@@ -31,6 +39,7 @@ export default function Page() {
           { name: 'PFAS in kraanwater: wat is het en hoe filter je het?', url: 'https://www.water-zuivering.nl/kennisbank/pfas-in-kraanwater' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 
@@ -88,6 +97,26 @@ export default function Page() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">De oplossing</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Omgekeerde osmose filtert PFAS effectief</h2>
               <p className="mt-4 text-dim">Het RO-membraan in een Water-zuivering systeem heeft gaatjes die honderden keren dunner zijn dan een haar — te klein voor PFAS-moleculen om doorheen te komen. Meer over hoe dat proces precies werkt lees je in <Link href="/kennisbank/wat-is-osmosewater" className="underline hover:text-ink">onze uitleg over osmosewater</Link>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <div className="text-center">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgestelde vragen</h2>
+            </div>
+            <div className="mt-10 space-y-3">
+              {FAQ.map(([vraag, antwoord]) => (
+                <details key={vraag} className="reveal group rounded-2xl card p-5">
+                  <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-display font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber rounded">
+                    {vraag}
+                    <svg className="shrink-0 transition-transform group-open:rotate-45 text-amber-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+                  </summary>
+                  <p className="mt-3 text-sm text-dim leading-relaxed">{antwoord}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

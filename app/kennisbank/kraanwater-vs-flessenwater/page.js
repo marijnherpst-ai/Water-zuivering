@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/kraanwater-vs-flessenwater' },
@@ -13,6 +14,12 @@ export const metadata = {
   description:
     'Kraanwater vs. flessenwater vergeleken op kosten, smaak, gemak en milieu-impact — met een eerlijke conclusie over wat voor jou het beste werkt.',
 };
+
+const FAQ = [
+  ['Is gefilterd kraanwater goedkoper dan flessenwater?', 'Op termijn wel. Flessenwater blijft per liter geld kosten, jaar na jaar. Gefilterd kraanwater kost na de eenmalige installatie alleen nog vervangende filters, bij Water-zuivering gemiddeld ongeveer €135 per jaar.'],
+  ['Is flessenwater zuiverder dan gefilterd kraanwater?', 'Niet per se. Veel flessenwatermerken worden zelf (deels) gezuiverd via omgekeerde osmose, hetzelfde proces dat een systeem thuis gebruikt. Met een eigen systeem tap je dat water onbeperkt en vers uit je kraan.'],
+  ['Wat is beter voor het milieu?', 'Gefilterd kraanwater. Minder plastic flessen betekent minder productie, minder transport en minder afval.'],
+];
 
 export default function Page() {
   return (
@@ -30,6 +37,7 @@ export default function Page() {
           { name: 'Kraanwater vs. flessenwater: wat is voordeliger?', url: 'https://www.water-zuivering.nl/kennisbank/kraanwater-vs-flessenwater' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 
@@ -95,6 +103,26 @@ export default function Page() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Onze conclusie</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Zelf zuiveren wint op alle drie de punten</h2>
               <p className="mt-4 text-dim">Een eigen waterzuiveraar combineert de zuiverheid van flessenwater met het gemak en de lage kosten van kraanwater — zonder de nadelen van beide.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <div className="text-center">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgestelde vragen</h2>
+            </div>
+            <div className="mt-10 space-y-3">
+              {FAQ.map(([vraag, antwoord]) => (
+                <details key={vraag} className="reveal group rounded-2xl card p-5">
+                  <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-display font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber rounded">
+                    {vraag}
+                    <svg className="shrink-0 transition-transform group-open:rotate-45 text-amber-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+                  </summary>
+                  <p className="mt-3 text-sm text-dim leading-relaxed">{antwoord}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

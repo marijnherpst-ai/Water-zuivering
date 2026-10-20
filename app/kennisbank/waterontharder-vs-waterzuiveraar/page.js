@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/waterontharder-vs-waterzuiveraar' },
@@ -13,6 +14,13 @@ export const metadata = {
   description:
     'Waterontharder of waterzuiveraar — wat is het verschil, en wat heb jij nodig? Simpel uitgelegd, met een duidelijk antwoord voor jouw situatie.',
 };
+
+const FAQ = [
+  ['Wat is het verschil tussen een waterontharder en een waterzuiveraar?', 'Een waterontharder haalt calcium en magnesium uit al het water dat je huis binnenkomt, tegen kalkaanslag. Een waterzuiveraar richt zich op je drinkwater en filtert onder meer chloor, PFAS, medicijnresten, microplastics en lood eruit.'],
+  ['Haalt een waterontharder PFAS uit het water?', 'Nee. Een waterontharder verandert niets aan chloor, PFAS, medicijnresten of andere verontreinigingen; daar is hij niet voor gemaakt.'],
+  ['Heeft een waterzuiveraar zout nodig?', 'Nee. Een waterzuiveraar onder het aanrecht werkt zonder zoutvoorraad. Een waterontharder werkt meestal met een ionenwisselaar en zout.'],
+  ['Wanneer kies je welke?', 'Heb je last van kalk door het hele huis, dan past een waterontharder. Wil je vooral zuiverder, lekkerder drinkwater, dan is een waterzuiveraar onder je keukenkraan de directste oplossing.'],
+];
 
 export default function Page() {
   return (
@@ -30,6 +38,7 @@ export default function Page() {
           { name: 'Waterontharder of waterzuiveraar: het verschil', url: 'https://www.water-zuivering.nl/kennisbank/waterontharder-vs-waterzuiveraar' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 
@@ -90,6 +99,26 @@ export default function Page() {
                 <li className="flex items-center gap-2.5 text-dim"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>3-traps filtratie van je drinkwater</li>
                 <li className="flex items-center gap-2.5 text-dim"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Geen zoutvoorraad of grote installatie nodig</li>
               </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <div className="text-center">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgestelde vragen</h2>
+            </div>
+            <div className="mt-10 space-y-3">
+              {FAQ.map(([vraag, antwoord]) => (
+                <details key={vraag} className="reveal group rounded-2xl card p-5">
+                  <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-display font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber rounded">
+                    {vraag}
+                    <svg className="shrink-0 transition-transform group-open:rotate-45 text-amber-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+                  </summary>
+                  <p className="mt-3 text-sm text-dim leading-relaxed">{antwoord}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

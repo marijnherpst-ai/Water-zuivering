@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/wat-kost-een-waterzuiveringssysteem' },
@@ -14,6 +15,13 @@ export const metadata = {
   description:
     'Alle kosten van een waterzuiveringssysteem op een rij: aanschaf, installatie en onderhoud — en wat je ermee bespaart op flessenwater.',
 };
+
+const FAQ = [
+  ['Wat kosten de vervangende filters?', 'Bij Water-zuivering kosten het PPC-voorfilter en het CTO-nafilter elk €49,99 en gaan ze ongeveer een jaar mee; het CTO-filter met mineralen kost €64,99. Het RO-membraan kost €69,99 en gaat ongeveer twee jaar mee. Gemiddeld is dat ongeveer €135 per jaar.'],
+  ['Zit de installatie bij de prijs in?', 'Ja. De prijs in de offerte is inclusief plaatsing door een monteur, die het systeem meestal binnen 1 tot 2 uur aansluit op je bestaande kraan.'],
+  ['Waarom staat er geen vaste prijs op de website?', 'Omdat elke keuken anders is. Je krijgt liever een persoonlijk, vrijblijvend voorstel dan een algemeen bedrag dat voor jou misschien niet klopt. Een offerte aanvragen is gratis.'],
+  ['Is een waterzuiveringssysteem goedkoper dan flessenwater?', 'Op termijn vaak wel. Flessenwater blijft jaar na jaar geld kosten, terwijl een systeem na de aanschaf alleen nog de filters als terugkerende kostenpost heeft.'],
+];
 
 export default function Page() {
   return (
@@ -31,6 +39,7 @@ export default function Page() {
           { name: 'Wat kost een waterzuiveringssysteem?', url: 'https://www.water-zuivering.nl/kennisbank/wat-kost-een-waterzuiveringssysteem' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 
@@ -108,6 +117,26 @@ export default function Page() {
                 <li className="flex items-center gap-2.5 text-dim"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>10 jaar garantie inbegrepen</li>
                 <li className="flex items-center gap-2.5 text-dim"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Reactie binnen 1 werkdag</li>
               </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <div className="text-center">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgestelde vragen</h2>
+            </div>
+            <div className="mt-10 space-y-3">
+              {FAQ.map(([vraag, antwoord]) => (
+                <details key={vraag} className="reveal group rounded-2xl card p-5">
+                  <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-display font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber rounded">
+                    {vraag}
+                    <svg className="shrink-0 transition-transform group-open:rotate-45 text-amber-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+                  </summary>
+                  <p className="mt-3 text-sm text-dim leading-relaxed">{antwoord}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

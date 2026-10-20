@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import KortAntwoord from '@/components/KortAntwoord';
 import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
@@ -64,6 +65,9 @@ export default function Page() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Drinkwaternormen in Nederland: wat wordt er gecontroleerd?</h1>
             <p className="mt-5 text-dim text-lg">De <strong className="text-ink">drinkwaternormen</strong> die <strong className="text-ink">Nederland</strong> hanteert, behoren tot de strengste ter wereld. Maar wat houden die normen precies in, en wat controleren ze? In dit artikel zetten we de Nederlandse drinkwaternormen stap voor stap voor je uiteen.</p>
+            <KortAntwoord>
+              De drinkwaternormen in Nederland staan in de Drinkwaterwet en het Drinkwaterbesluit, met grenswaarden voor honderden stoffen: van bacteriën en zware metalen tot nitraat en een deel van de PFAS. Drinkwaterbedrijven testen, de Inspectie Leefomgeving en Transport (ILT) houdt toezicht. Voor veel medicijnresten en microplastics bestaan nog geen wettelijke grenswaarden.
+            </KortAntwoord>
             <AuteurRegel />
           </div>
         </section>

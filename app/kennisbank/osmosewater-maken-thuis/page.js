@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import KortAntwoord from '@/components/KortAntwoord';
 import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
@@ -49,6 +50,9 @@ export default function Page() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Osmosewater maken: kan dat gewoon thuis?</h1>
             <p className="mt-5 text-dim text-lg">Ja — met de juiste installatie is <strong className="text-ink">osmosewater maken</strong> net zo simpel als een kraan opendraaien.</p>
+            <KortAntwoord>
+              Osmosewater maak je thuis met een omgekeerde-osmosesysteem onder het aanrecht. Kraanwater wordt onder druk door een membraan met poriën van 0,0001 micron geperst; PFAS, zware metalen, bacteriën en microplastics blijven achter. Zonder zo'n apparaat lukt het niet. Is het systeem aangesloten, dan tap je onbeperkt osmosewater uit je eigen kraan.
+            </KortAntwoord>
             <AuteurRegel />
           </div>
         </section>

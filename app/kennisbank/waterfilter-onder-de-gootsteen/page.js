@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/waterfilter-onder-de-gootsteen' },
@@ -13,6 +14,13 @@ export const metadata = {
   description:
     'Een waterfilter onder de gootsteen: hoe het werkt, wat het kost en waar je op moet letten voor je een keuze maakt.',
 };
+
+const FAQ = [
+  ['Waarom een waterfilter onder de gootsteen?', 'Het systeem staat direct bij de plek waar je het water gebruikt, blijft uit het zicht en neemt geen aanrechtruimte in, anders dan een filterkan of tafelfilter.'],
+  ['Hoeveel ruimte heeft een waterfilter onder de gootsteen nodig?', 'De meeste systemen zijn compact, vaak rond de 10 à 15 cm breed. Het systeem van Water-zuivering meet 10,5 × 42 × 43 cm en past staand of liggend in het kastje.'],
+  ['Wat moet er onder het aanrecht aanwezig zijn?', 'Een koudwateraansluiting, de afvoer van de gootsteen en een stopcontact.'],
+  ['Waar let je op bij het kiezen?', 'Kijk naar de ruimte in je kastje, het aantal filtertrappen, vakkundige installatie en de garantie. Een goed systeem combineert grove, fijne en smaakfiltratie.'],
+];
 
 export default function Page() {
   return (
@@ -30,6 +38,7 @@ export default function Page() {
           { name: 'Waterfilter onder de gootsteen: alles wat je moet weten', url: 'https://www.water-zuivering.nl/kennisbank/waterfilter-onder-de-gootsteen' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 
@@ -94,6 +103,26 @@ export default function Page() {
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Slechts 10,5 cm breed</h2>
               <p className="mt-4 text-dim">Ons systeem is smaller dan de meeste keukenladen en past staand of liggend — zo goed als altijd geregeld, ongeacht hoe je kastje is ingedeeld.</p>
               <p className="mt-4 text-dim">Alle technische details vind je op onze <Link href="/uitleg" className="underline hover:text-ink">specificatiepagina</Link>. Twijfel je nog tussen dit type en een waterfilterkan of kraanfilter? Bekijk onze <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">vergelijking van de beste waterfilter voor thuis</Link>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <div className="text-center">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgestelde vragen</h2>
+            </div>
+            <div className="mt-10 space-y-3">
+              {FAQ.map(([vraag, antwoord]) => (
+                <details key={vraag} className="reveal group rounded-2xl card p-5">
+                  <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-display font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber rounded">
+                    {vraag}
+                    <svg className="shrink-0 transition-transform group-open:rotate-45 text-amber-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+                  </summary>
+                  <p className="mt-3 text-sm text-dim leading-relaxed">{antwoord}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

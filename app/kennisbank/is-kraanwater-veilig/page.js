@@ -6,6 +6,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import KortAntwoord from '@/components/KortAntwoord';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/is-kraanwater-veilig' },
@@ -13,6 +15,13 @@ export const metadata = {
   description:
     'Is kraanwater in Nederland veilig? Ja, maar met kanttekeningen. Wat erin kan zitten en hoe je dat er eenvoudig uit filtert.',
 };
+
+const FAQ = [
+  ['Is kraanwater in Nederland veilig om te drinken?', 'Ja. Nederlandse drinkwaterbedrijven controleren continu op honderden stoffen en houden zich aan strenge Europese en nationale normen. Je wordt er niet acuut ziek van.'],
+  ['Welke stoffen vallen nog niet volledig onder de norm?', 'Vooral stoffen die pas sinds kort goed meetbaar zijn: PFAS, resten van medicijnen die via het riool in het oppervlaktewater komen, en microplastics. De normen worden hier geleidelijk op aangepast.'],
+  ['Betekent "voldoet aan de norm" dat er niets in het water zit?', 'Nee. Het betekent dat de gemeten hoeveelheden onder de wettelijke grens blijven. Die grens is vastgesteld met de huidige kennis en kan met nieuwe inzichten verschuiven, zoals bij PFAS al gebeurt.'],
+  ['Waarom zou je kraanwater dan nog filteren?', 'Als extra zekerheid, niet uit wantrouwen richting het drinkwaterbedrijf. Een omgekeerde-osmosesysteem onder de gootsteen filtert chloor, PFAS, medicijnresten, microplastics en lood uit je kraanwater.'],
+];
 
 export default function Page() {
   return (
@@ -30,6 +39,7 @@ export default function Page() {
           { name: 'Is Nederlands kraanwater veilig om te drinken?', url: 'https://www.water-zuivering.nl/kennisbank/is-kraanwater-veilig' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 
@@ -44,6 +54,9 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               Nederland heeft een van de best gecontroleerde drinkwaternetten ter wereld. Betekent dat ook dat er niks te verbeteren valt?
             </p>
+            <KortAntwoord>
+              Ja, Nederlands kraanwater is veilig om te drinken. Drinkwaterbedrijven controleren continu op honderden stoffen volgens strenge Europese en nationale normen. Wel worden steeds vaker sporen gevonden van stoffen die de norm nog niet volledig dekt, zoals PFAS, medicijnresten en microplastics. Wie die ook kwijt wil, filtert thuis met omgekeerde osmose.
+            </KortAntwoord>
             <AuteurRegel />
           </div>
         </section>
@@ -85,6 +98,26 @@ export default function Page() {
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Zuiverder water, zonder erover na te hoeven denken</h2>
               <p className="mt-4 text-dim">Een Water-zuivering systeem filtert met 3 trappen chloor, PFAS, medicijnresten, microplastics en lood uit je kraanwater — direct beschikbaar, zonder dat je er verder aan hoeft te denken.</p>
               <p className="mt-4 text-dim">Benieuwd naar de specifieke stoffen? Lees ook onze uitleg over <Link href="/kennisbank/pfas-in-kraanwater" className="underline hover:text-ink">PFAS in kraanwater</Link>. Overweeg je een filter, kijk dan welk <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter bij welk probleem past</Link>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <div className="text-center">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgestelde vragen</h2>
+            </div>
+            <div className="mt-10 space-y-3">
+              {FAQ.map(([vraag, antwoord]) => (
+                <details key={vraag} className="reveal group rounded-2xl card p-5">
+                  <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-display font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber rounded">
+                    {vraag}
+                    <svg className="shrink-0 transition-transform group-open:rotate-45 text-amber-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+                  </summary>
+                  <p className="mt-3 text-sm text-dim leading-relaxed">{antwoord}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

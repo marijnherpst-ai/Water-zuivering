@@ -6,6 +6,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import KortAntwoord from '@/components/KortAntwoord';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/pfas-kaart-nederland' },
@@ -13,6 +15,13 @@ export const metadata = {
   description:
     'De PFAS kaart van Nederland laat zien waar de stoffen zijn gevonden. Zo lees je hem, en zo check je zelf of het ook in jouw drinkwater zit.',
 };
+
+const FAQ = [
+  ['Is er één officiële PFAS-kaart voor heel Nederland?', 'Niet één centrale kaart, maar een verzameling: het RIVM publiceert een landelijk overzicht, en provincies en gemeenten vullen dat aan met lokale bodemonderzoeken. Voor een volledig beeld van jouw omgeving kijk je dus eigenlijk naar meerdere bronnen tegelijk.'],
+  ['Kan ik zelf mijn kraanwater laten testen op PFAS?', 'Ja, gespecialiseerde laboratoria bieden dat aan, maar een volledige PFAS-analyse is prijzig en kost enkele weken. Voor de meeste huishoudens is het praktischer om te kijken naar de gepubliceerde meetdata van je drinkwaterbedrijf en waar nodig zelf te filteren, in plaats van zelf te laten testen.'],
+  ['Woon ik in een aandachtsgebied — betekent dat dat ik moet filteren?', 'Niet per se verplicht, maar wel een reden om extra zekerheid te willen. Omdat een omgekeerde-osmosefilter alle PFAS-varianten tegelijk tegenhoudt, ongeacht de concentratie, is het voor veel mensen in zo\'n gebied een simpele manier om het risico helemaal van tafel te halen in plaats van erop te vertrouwen dat de norm genoeg is.'],
+  ['Waarom verschillen kaarten van verschillende bronnen soms van elkaar?', 'Omdat elke bronhouder zijn eigen meetpunten, meetmomenten en meetmethode gebruikt. Een provinciale kaart kan bijvoorbeeld op andere data gebaseerd zijn dan een landelijke RIVM-kaart, of recenter zijn bijgewerkt. Bij twijfel is de meest recente, best gedocumenteerde bron meestal de betrouwbaarste keuze.'],
+];
 
 export default function Page() {
   return (
@@ -30,6 +39,7 @@ export default function Page() {
           { name: 'PFAS kaart Nederland: zit het ook in jouw water?', url: 'https://www.water-zuivering.nl/kennisbank/pfas-kaart-nederland' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 
@@ -44,6 +54,9 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               RIVM en waterschappen brengen PFAS-vervuiling steeds gedetailleerder in kaart. Zo lees je die kaart, en zo weet je wat het voor jouw eigen kraanwater betekent.
             </p>
+            <KortAntwoord>
+              PFAS-kaarten van onder meer het RIVM, provincies en gemeenten tonen gemeten PFAS in bodem en oppervlaktewater, vooral rond industrieterreinen en plekken waar blusschuim is gebruikt. Ze zeggen niet direct iets over je kraanwater: dat zuivert en toetst je drinkwaterbedrijf apart. Voor je eigen situatie kijk je dus naar beide bronnen.
+            </KortAntwoord>
             <AuteurRegel />
           </div>
         </section>

@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/waterzuiveraar-installeren' },
@@ -13,6 +14,13 @@ export const metadata = {
   description:
     'Hoe de installatie van een waterzuiveraar in zijn werk gaat: van afspraak tot zuiver water, stap voor stap.',
 };
+
+const FAQ = [
+  ['Hoe lang duurt het installeren van een waterzuiveraar?', 'De installatie zelf duurt ongeveer 1 à 2 uur. Daarna test de monteur de waterdruk, de aansluitingen en elke filtertrap, wat ongeveer 15 minuten kost.'],
+  ['Moet ik zelf iets voorbereiden?', 'Nee. De monteur brengt alles mee. Zorg alleen dat het kastje onder je spoelbak toegankelijk is.'],
+  ['Wat moet er onder het aanrecht aanwezig zijn?', 'Een koudwateraansluiting, de afvoer van de gootsteen en een stopcontact.'],
+  ['Welke garantie krijg je?', 'Je krijgt 10 jaar garantie. Onze eigen monteurs installeren elk systeem persoonlijk en testen alles voordat ze vertrekken.'],
+];
 
 export default function Page() {
   return (
@@ -30,6 +38,7 @@ export default function Page() {
           { name: 'Waterzuiveraar laten installeren: hoe gaat dat?', url: 'https://www.water-zuivering.nl/kennisbank/waterzuiveraar-installeren' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 
@@ -97,6 +106,26 @@ export default function Page() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Zekerheid</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Vakkundig geïnstalleerd, met 10 jaar garantie</h2>
               <p className="mt-4 text-dim">Onze eigen monteurs installeren elk systeem persoonlijk en testen alles voordat ze vertrekken. Meer over de garantie lees je op onze <Link href="/garantie" className="underline hover:text-ink">garantiepagina</Link>. Wil je precies weten wat er op de installatiedag gebeurt en wat je vooraf nodig hebt? Lees dan onze pagina over de <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <div className="text-center">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgestelde vragen</h2>
+            </div>
+            <div className="mt-10 space-y-3">
+              {FAQ.map(([vraag, antwoord]) => (
+                <details key={vraag} className="reveal group rounded-2xl card p-5">
+                  <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-display font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber rounded">
+                    {vraag}
+                    <svg className="shrink-0 transition-transform group-open:rotate-45 text-amber-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+                  </summary>
+                  <p className="mt-3 text-sm text-dim leading-relaxed">{antwoord}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

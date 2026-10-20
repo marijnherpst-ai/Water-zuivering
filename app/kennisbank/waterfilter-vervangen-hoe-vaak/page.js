@@ -6,6 +6,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import KortAntwoord from '@/components/KortAntwoord';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/waterfilter-vervangen-hoe-vaak' },
@@ -13,6 +15,14 @@ export const metadata = {
   description:
     'Hoe vaak een waterfilter vervangen moet worden, waarom, en wat er gebeurt als je het te lang uitstelt. Kort en duidelijk uitgelegd.',
 };
+
+const FAQ = [
+  ['Hoe vaak moet je een waterfilter vervangen?', 'Bij een Water-zuivering systeem gaan het PPC-voorfilter en het CTO-nafilter gemiddeld 12 maanden mee en het RO-membraan gemiddeld 24 maanden. Gebruik je veel water, dan vervang je ze eerder.'],
+  ['Hoe weet ik wanneer een filter vervangen moet worden?', 'Het display op het apparaat laat zien wanneer het tijd is, zodat je het niet zelf hoeft bij te houden.'],
+  ['Wat gebeurt er als je een filter te lang laat zitten?', 'Een verzadigd filter houdt onzuiverheden minder goed tegen. Bij sommige filtertypes neemt ook de doorstroom af, waardoor de waterdruk aan de kraan merkbaar daalt.'],
+  ['Kan ik het filter zelf vervangen?', 'Ja. Bij een Water-zuivering systeem draai je in drie simpele stappen zelf een nieuw filter erin, zonder gereedschap en zonder monteur.'],
+  ['Wat kost een nieuw filter?', 'Het PPC-voorfilter en het CTO-nafilter kosten elk €49,99 (het CTO-filter met mineralen €64,99), het RO-membraan €69,99. Gemiddeld is dat ongeveer €135 per jaar.'],
+];
 
 export default function Page() {
   return (
@@ -30,6 +40,7 @@ export default function Page() {
           { name: 'Hoe vaak moet je een waterfilter vervangen?', url: 'https://www.water-zuivering.nl/kennisbank/waterfilter-vervangen-hoe-vaak' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 
@@ -44,6 +55,9 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               Een simpele vraag met een simpel antwoord — en een paar redenen waarom je het niet te lang moet uitstellen.
             </p>
+            <KortAntwoord>
+              Dat verschilt per filter. Bij een omgekeerde-osmosesysteem van Water-zuivering vervang je het PPC-voorfilter en het CTO-nafilter gemiddeld elke 12 maanden en het RO-membraan gemiddeld elke 24 maanden. Gebruik je veel water, dan eerder. Een verzadigd filter houdt minder tegen; het display op het apparaat geeft aan wanneer het tijd is.
+            </KortAntwoord>
             <AuteurRegel />
           </div>
         </section>
@@ -84,6 +98,26 @@ export default function Page() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Zonder gedoe</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Filter vervangen zonder gereedschap</h2>
               <p className="mt-4 text-dim">Bij een Water-zuivering systeem draai je in drie simpele stappen zelf een nieuw filter erin — geen gereedschap, geen monteur nodig. Benieuwd hoe dat precies gaat? Lees de volledige uitleg op onze <Link href="/uitleg" className="underline hover:text-ink">specificatiepagina</Link>. Een nieuw filter nodig? Bekijk de <Link href="/winkel" className="underline hover:text-ink">osmose filters in onze winkel</Link>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <div className="text-center">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgestelde vragen</h2>
+            </div>
+            <div className="mt-10 space-y-3">
+              {FAQ.map(([vraag, antwoord]) => (
+                <details key={vraag} className="reveal group rounded-2xl card p-5">
+                  <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-display font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber rounded">
+                    {vraag}
+                    <svg className="shrink-0 transition-transform group-open:rotate-45 text-amber-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+                  </summary>
+                  <p className="mt-3 text-sm text-dim leading-relaxed">{antwoord}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

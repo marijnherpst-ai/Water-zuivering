@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/3-weg-kraan-uitleg' },
@@ -13,6 +14,13 @@ export const metadata = {
   description:
     'Wat een 3-weg kraan precies is, hoe hij werkt en of hij zinvol is bij jouw waterzuiveringssysteem.',
 };
+
+const FAQ = [
+  ['Heb ik een 3-weg kraan nodig voor een waterzuiveraar?', 'Nee. Een waterzuiveringssysteem werkt ook prima met een aparte, losse kraan voor gefilterd water. Een 3-weg kraan is een kwestie van voorkeur voor gemak en uiterlijk: alles in één kraan, zonder extra gat in je aanrecht.'],
+  ['Welk water komt er uit een 3-weg kraan?', 'Gewoon kraanwater, gefilterd water en, optioneel, gemineraliseerd water. Met een omschakelaar kies je welke stroom je nodig hebt.'],
+  ['In welke afwerkingen is de 3-weg kraan verkrijgbaar?', 'De 3-weg kraan van Water-zuivering is verkrijgbaar in vier afwerkingen: chroom, geborsteld staal, goud en zwart.'],
+  ['Werkt de 3-weg kraan met elk Water-zuivering systeem?', 'Ja. De 3-weg kraan is los verkrijgbaar als accessoire, werkt met elk Water-zuivering systeem en wordt vakkundig meegeïnstalleerd.'],
+];
 
 export default function Page() {
   return (
@@ -30,6 +38,7 @@ export default function Page() {
           { name: 'Wat is een 3-weg kraan en heb je die nodig?', url: 'https://www.water-zuivering.nl/kennisbank/3-weg-kraan-uitleg' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 
@@ -81,6 +90,26 @@ export default function Page() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Als accessoire</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Los verkrijgbaar, compatibel met elk systeem</h2>
               <p className="mt-4 text-dim">Onze <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link> is los verkrijgbaar als accessoire en werkt met elk Water-zuivering systeem — vakkundig meegeïnstalleerd, zodat je meteen alles in één keer geregeld hebt. Op de productpagina zie je hem in alle vier de afwerkingen: chroom, geborsteld staal, goud en zwart.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <div className="text-center">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgestelde vragen</h2>
+            </div>
+            <div className="mt-10 space-y-3">
+              {FAQ.map(([vraag, antwoord]) => (
+                <details key={vraag} className="reveal group rounded-2xl card p-5">
+                  <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-display font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber rounded">
+                    {vraag}
+                    <svg className="shrink-0 transition-transform group-open:rotate-45 text-amber-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+                  </summary>
+                  <p className="mt-3 text-sm text-dim leading-relaxed">{antwoord}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

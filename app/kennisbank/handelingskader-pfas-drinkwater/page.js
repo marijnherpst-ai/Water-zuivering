@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/handelingskader-pfas-drinkwater' },
@@ -13,6 +14,13 @@ export const metadata = {
   description:
     'Het handelingskader PFAS bepaalt wanneer de overheid ingrijpt bij vervuiling. Wat het is, wie het gebruikt en wat het voor je drinkwater betekent.',
 };
+
+const FAQ = [
+  ['Geldt het handelingskader voor heel Nederland?', 'Het landelijke kader vormt de basis, maar sommige provincies en gemeenten hanteren lokaal strengere grenswaarden, afhankelijk van de bekende vervuilingsgraad in hun gebied. Het kan dus per regio net iets anders liggen.'],
+  ['Betekent een streng handelingskader dat mijn kraanwater onveilig is?', 'Niet automatisch. Het kader zegt iets over de bodem en het oppervlaktewater in jouw regio, niet rechtstreeks over je kraanwater — dat wordt apart gezuiverd en getoetst door je drinkwaterbedrijf. Het is wel een indicatie dat er in die regio historisch meer PFAS-belasting is geweest.'],
+  ['Waar vind ik het handelingskader voor mijn eigen gemeente?', 'De meeste provincies en gemeenten publiceren dit op hun eigen website, vaak onder "bodem en grondverzet" of "omgevingsloket". Voor een snel beeld van je eigen situatie is onze eigen PFAS-check overigens een stuk sneller dan die documenten zelf doorzoeken.'],
+  ['Wordt het handelingskader ooit vervangen door een vaste wet?', 'Het handelingskader is een beleidskader en geen wet, en het is in de loop der jaren meerdere keren aangepast. Hoe de regels er nu precies uitzien en of ze verder worden vastgelegd, lees je het best na op de actuele pagina over PFAS-regels van de Rijksoverheid.'],
+];
 
 export default function Page() {
   return (
@@ -30,6 +38,7 @@ export default function Page() {
           { name: 'Handelingskader PFAS: wat betekent dat voor je water?', url: 'https://www.water-zuivering.nl/kennisbank/handelingskader-pfas-drinkwater' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 

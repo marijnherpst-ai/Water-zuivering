@@ -6,6 +6,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import KortAntwoord from '@/components/KortAntwoord';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/pfos-pfoa-verschil' },
@@ -13,6 +15,13 @@ export const metadata = {
   description:
     'PFAS, PFOS en PFOA worden vaak door elkaar gebruikt. Het verschil uitgelegd, en waarom het voor je drinkwater niet zoveel uitmaakt.',
 };
+
+const FAQ = [
+  ['Zijn PFOS en PFOA nu helemaal verboden?', 'In de EU is PFOS al sinds 2006 aan banden gelegd en valt het sinds 2010 onder de POP-verordening; PFOA kwam daar in juli 2020 bij. Productie en gebruik zijn dus in principe verboden, maar omdat beide stoffen decennialang zijn gebruikt en nauwelijks afbreken, zijn ze nog altijd in bodem, oppervlaktewater en soms drinkwater meetbaar.'],
+  ['Kan ik zien welke specifieke PFAS-stof in mijn water zit?', 'Drinkwaterbedrijven publiceren soms een uitsplitsing per stof in hun jaarrapportages, maar voor de meeste huishoudens is dat detailniveau niet nodig — de wettelijke norm en de meeste filtertechnieken werken toch op basis van de totale PFAS-belasting.'],
+  ['Is GenX veiliger dan PFOA, zoals ooit beloofd?', 'Nee, dat blijkt in de praktijk tegen te vallen. GenX breekt weliswaar iets sneller af dan PFOA, maar hoopt zich nog altijd op in het milieu en het lichaam, en staat inmiddels ook op de lijst van stoffen waar toezichthouders scherp op letten.'],
+  ['Waarom worden er steeds nieuwe PFAS-varianten ontdekt?', 'Omdat de chemische industrie tientallen jaren lang telkens net iets andere moleculen ontwikkelde voor specifieke toepassingen, en meetmethoden pas de laatste jaren gevoelig genoeg zijn geworden om al die varianten stuk voor stuk te herkennen. Vandaar dat de "PFAS-familie" op papier steeds groter lijkt te worden, terwijl de stoffen zelf al veel langer aanwezig zijn.'],
+];
 
 export default function Page() {
   return (
@@ -30,6 +39,7 @@ export default function Page() {
           { name: 'PFAS, PFOS en PFOA: wat is het verschil?', url: 'https://www.water-zuivering.nl/kennisbank/pfos-pfoa-verschil' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 
@@ -44,6 +54,9 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               Drie afkortingen die veel door elkaar worden gebruikt in het nieuws. Hier lees je wat elk begrip precies betekent.
             </p>
+            <KortAntwoord>
+              PFAS is de verzamelnaam voor duizenden vergelijkbare chemische stoffen. PFOS en PFOA zijn twee bekende, goed onderzochte stoffen binnen die groep. Ze zijn in de EU aan banden gelegd, maar nog altijd meetbaar omdat ze nauwelijks afbreken. Voor je drinkwater maakt het onderscheid weinig uit: omgekeerde osmose houdt alle varianten tegen.
+            </KortAntwoord>
             <AuteurRegel />
           </div>
         </section>

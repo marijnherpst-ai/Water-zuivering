@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/kalkaanslag-in-huis' },
@@ -13,6 +14,13 @@ export const metadata = {
   description:
     'Wat veroorzaakt kalkaanslag in huis, welke schade richt het aan, en hoe voorkom je het structureel?',
 };
+
+const FAQ = [
+  ['Waar komt kalkaanslag vandaan?', 'Van calcium en magnesium die van nature in het water zitten, vooral in gebieden met hard water. Zodra water verdampt, blijven deze mineralen achter als een witte, korstige laag.'],
+  ['Is kalkaanslag gevaarlijk?', 'Nee, het is geen vervuiling in de gevaarlijke zin. Het is een natuurlijk bijproduct van de waterhardheid in jouw regio.'],
+  ['Welke schade richt kalk aan in huis?', 'Kalk zet zich vast in leidingen, boilers en apparaten zoals de wasmachine en waterkoker. Dat kan hun levensduur verkorten en het energieverbruik verhogen, omdat verwarmingselementen minder efficiënt werken.'],
+  ['Waterontharder of waterzuiveraar tegen kalk?', 'Kalkaanslag door je hele huis pak je structureel aan met een waterontharder. Wil je vooral zuiverder drinkwater uit je keukenkraan, dan is een waterzuiveraar de betere keuze.'],
+];
 
 export default function Page() {
   return (
@@ -30,6 +38,7 @@ export default function Page() {
           { name: 'Kalkaanslag in huis: oorzaak en oplossing', url: 'https://www.water-zuivering.nl/kennisbank/kalkaanslag-in-huis' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 
@@ -81,6 +90,26 @@ export default function Page() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">De structurele aanpak</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Ontharden voor je hele huis, zuiveren voor je drinkwater</h2>
               <p className="mt-4 text-dim">Kalkaanslag door je hele huis pak je structureel aan met een waterontharder. Wil je vooral zuiverder drinkwater bij je keukenkraan? Dan is een waterzuiveraar de betere keuze. Benieuwd wat het verschil precies is? Lees <Link href="/kennisbank/waterontharder-vs-waterzuiveraar" className="underline hover:text-ink">waterontharder vs. waterzuiveraar</Link>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <div className="text-center">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgestelde vragen</h2>
+            </div>
+            <div className="mt-10 space-y-3">
+              {FAQ.map(([vraag, antwoord]) => (
+                <details key={vraag} className="reveal group rounded-2xl card p-5">
+                  <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-display font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber rounded">
+                    {vraag}
+                    <svg className="shrink-0 transition-transform group-open:rotate-45 text-amber-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+                  </summary>
+                  <p className="mt-3 text-sm text-dim leading-relaxed">{antwoord}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

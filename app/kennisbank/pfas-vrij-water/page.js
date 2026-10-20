@@ -6,6 +6,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import KortAntwoord from '@/components/KortAntwoord';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/pfas-vrij-water' },
@@ -13,6 +15,13 @@ export const metadata = {
   description:
     'Volledig PFAS-vrij drinkwater: is dat realistisch, en hoe kom je er zo dicht mogelijk bij? Uitleg over wat wel en niet werkt.',
 };
+
+const FAQ = [
+  ['Bestaat er dan helemaal geen 100% PFAS-vrij water?', 'In de praktijk niet met absolute zekerheid — wel water waarin PFAS ruim onder de meetbare of wettelijke grens zit. Voor je gezondheid maakt dat verschil vrijwel niets uit: het gaat erom dat de blootstelling zo laag mogelijk is, niet om een filosofische "nul".'],
+  ['Is flessenwater een veiliger alternatief?', 'Niet per se. PFAS is ook aangetroffen in sommige merken flessenwater, en de plastic fles brengt weer een eigen discussie over microplastics met zich mee. Gefilterd kraanwater via omgekeerde osmose is vaak een consistentere oplossing, en goedkoper op de lange termijn.'],
+  ['Moet ik ook koken met PFAS-vrij water?', 'Dat is een persoonlijke afweging, maar omdat PFAS niet verdwijnt door verhitting, heeft filteren vóór het koken meer zin dan erna. Veel mensen sluiten daarom hun osmosesysteem ook aan op de kraan die ze voor koken gebruiken.'],
+  ['Hoe snel merk ik verschil na het plaatsen van een filter?', 'Direct vanaf het eerste glas: zodra het systeem is aangesloten en doorgespoeld, filtert het membraan continu mee. Je merkt vaak ook meteen een zuiverdere smaak, omdat naast PFAS ook chloor en andere stoffen worden tegengehouden — al is dat natuurlijk een ander effect dan de PFAS-reductie zelf, die je niet proeft.'],
+];
 
 export default function Page() {
   return (
@@ -30,6 +39,7 @@ export default function Page() {
           { name: 'PFAS-vrij water: kan dat écht uit je eigen kraan?', url: 'https://www.water-zuivering.nl/kennisbank/pfas-vrij-water' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 
@@ -44,6 +54,9 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               "PFAS-vrij" staat op steeds meer producten en filters. Wat betekent dat woord eigenlijk, en is het bij drinkwater realistisch?
             </p>
+            <KortAntwoord>
+              Letterlijk 100% PFAS-vrij water bestaat bijna niet, omdat laboratoria steeds kleinere sporen kunnen meten. Wel kun je PFAS terugbrengen tot ruim onder de meetbare grens. Omgekeerde osmose komt daar het dichtst bij: het membraan houdt PFAS fysiek tegen. Koken, een waterontharder of een eenvoudig koolfilter doen dat niet of nauwelijks.
+            </KortAntwoord>
             <AuteurRegel />
           </div>
         </section>

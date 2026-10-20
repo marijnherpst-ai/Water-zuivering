@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/osmosewater-tappunt' },
@@ -13,6 +14,13 @@ export const metadata = {
   description:
     'Een osmosewater tappunt is een eigen kraantje naast je gewone kraan. Wat het is, waarom je het wilt en hoe de aansluiting werkt.',
 };
+
+const FAQ = [
+  ['Past een tappunt in elk aanrecht?', 'In vrijwel elk aanrecht wel, ja — er is maar een klein extra gaatje nodig. Bij een keuken van natuursteen of composiet kan dat gat vaak netjes worden geboord door de installateur zonder dat het opvalt.'],
+  ['Kan ik het tappunt zelf plaatsen?', 'Technisch gezien kan dat, maar de meeste mensen laten het door een installateur doen — vooral vanwege het boren van het gat in het aanrecht en het correct aansluiten op het systeem onder de kast. Dat scheelt achteraf gedoe met lekkages.'],
+  ['Wat kost een apart tappunt ongeveer?', 'Dat hangt af van het model en de afwerking, maar een tappunt is meestal onderdeel van de totale systeemprijs bij aanschaf van een osmosesysteem, inclusief installatie. Losse vervanging of upgrade naar een ander model kost typisch een fractie van de systeemprijs.'],
+  ['Kan ik later alsnog overstappen naar een 3-weg kraan?', 'Ja, dat kan meestal zonder het hele systeem te vervangen — alleen het kraanwerk zelf wordt dan omgewisseld. Het systeem onder de kast blijft ongewijzigd, dus het is vooral een kwestie van de juiste aansluiting op het nieuwe kraanmodel. Hoe zo\'n kraan eruitziet, zie je bij onze 3-weg kraan voor gefilterd water.'],
+];
 
 export default function Page() {
   return (
@@ -30,6 +38,7 @@ export default function Page() {
           { name: 'Osmosewater tappunt: een apart kraantje, hoe werkt dat?', url: 'https://www.water-zuivering.nl/kennisbank/osmosewater-tappunt' },
         ]}
       />
+      <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
 
