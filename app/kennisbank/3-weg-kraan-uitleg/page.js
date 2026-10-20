@@ -78,7 +78,7 @@ export default function Page() {
             <div className="order-1 lg:order-2">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Als accessoire</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Los verkrijgbaar, compatibel met elk systeem</h2>
-              <p className="mt-4 text-dim">Onze 3-weg kraan is los verkrijgbaar als accessoire en werkt met elk Water-zuivering systeem — vakkundig meegeïnstalleerd, zodat je meteen alles in één keer geregeld hebt.</p>
+              <p className="mt-4 text-dim">Onze <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link> is los verkrijgbaar als accessoire en werkt met elk Water-zuivering systeem — vakkundig meegeïnstalleerd, zodat je meteen alles in één keer geregeld hebt. Op de productpagina zie je hem in alle vier de afwerkingen: chroom, geborsteld staal, goud en zwart.</p>
             </div>
           </div>
         </section>

@@ -112,7 +112,7 @@ export default function Page() {
               </div>
               <div>
                 <h3 className="font-display text-lg font-bold text-ink">Kan ik later alsnog overstappen naar een 3-weg kraan?</h3>
-                <p className="mt-2 text-dim leading-relaxed">Ja, dat kan meestal zonder het hele systeem te vervangen — alleen het kraanwerk zelf wordt dan omgewisseld. Het systeem en de opslagtank onder de kast blijven ongewijzigd, dus het is vooral een kwestie van de juiste aansluiting op het nieuwe kraanmodel.</p>
+                <p className="mt-2 text-dim leading-relaxed">Ja, dat kan meestal zonder het hele systeem te vervangen — alleen het kraanwerk zelf wordt dan omgewisseld. Het systeem en de opslagtank onder de kast blijven ongewijzigd, dus het is vooral een kwestie van de juiste aansluiting op het nieuwe kraanmodel. Hoe zo'n kraan eruitziet, zie je bij onze <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan voor gefilterd water</Link>.</p>
               </div>
             </div>
           </div>
