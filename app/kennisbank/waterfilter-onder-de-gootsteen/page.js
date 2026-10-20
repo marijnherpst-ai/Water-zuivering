@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import AuteurRegel from '@/components/AuteurRegel';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
@@ -43,6 +44,7 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               De populairste plek voor een waterfilter in huis. Waarom eigenlijk, en waar moet je op letten?
             </p>
+            <AuteurRegel />
           </div>
         </section>
 

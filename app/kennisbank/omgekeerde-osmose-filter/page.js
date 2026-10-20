@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import AuteurRegel from '@/components/AuteurRegel';
 import KortAntwoord from '@/components/KortAntwoord';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -66,6 +67,7 @@ export default function Page() {
             <KortAntwoord>
               Een omgekeerde osmose filter perst kraanwater onder druk door een membraan met poriën van ongeveer 0,0001 micron. Vrijwel alleen watermoleculen komen erdoorheen; opgeloste stoffen zoals PFAS, medicijnresten, kalk en zware metalen blijven achter en spoelen weg naar de afvoer. Een voor- en nafilter beschermen het membraan en verbeteren de smaak.
             </KortAntwoord>
+            <AuteurRegel />
           </div>
         </section>
 

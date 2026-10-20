@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import AuteurRegel from '@/components/AuteurRegel';
 import KortAntwoord from '@/components/KortAntwoord';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -67,6 +68,7 @@ export default function Page() {
             <KortAntwoord>
               RO-water is kraanwater dat is gezuiverd met omgekeerde osmose (reverse osmosis). Het water wordt door een membraan met extreem kleine poriën geperst, waardoor vrijwel alle opgeloste stoffen achterblijven, ook kalk en mineralen. Het resultaat is zeer zuiver water met een lage TDS-waarde. Wie mineralen terug wil, kiest een nafilter met mineralen.
             </KortAntwoord>
+            <AuteurRegel />
           </div>
         </section>
 

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import AuteurRegel from '@/components/AuteurRegel';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
@@ -70,6 +71,7 @@ export default function Page() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank — Vergelijking</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Waterontharder: voor- en nadelen op een rij</h1>
             <p className="mt-5 text-dim text-lg">De <strong className="text-ink">voordelen en nadelen van een waterontharder</strong> op een rij — kalk is opgelost, maar er komt ook onderhoud bij kijken.</p>
+            <AuteurRegel />
           </div>
         </section>
 

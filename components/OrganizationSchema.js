@@ -15,6 +15,13 @@ export default function OrganizationSchema() {
     image: 'https://www.water-zuivering.nl/assets/img/hero-vrouw-water.webp',
     logo: 'https://www.water-zuivering.nl/icon.svg',
     identifier: 'KVK 88718301',
+    founder: {
+      '@type': 'Person',
+      name: 'Tomas',
+      jobTitle: 'Oprichter',
+      url: 'https://www.water-zuivering.nl/over-ons',
+    },
+    knowsAbout: ['omgekeerde osmose', 'waterfilters', 'drinkwater', 'PFAS in kraanwater', 'waterzuivering voor thuis'],
     description:
       'Water-zuivering installeert osmosewatersystemen voor thuis: zuiver drinkwater rechtstreeks uit de kraan, zonder chloor, PFAS, medicijnresten of microplastics.',
     address: {

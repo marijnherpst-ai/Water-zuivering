@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import AuteurRegel from '@/components/AuteurRegel';
 import KortAntwoord from '@/components/KortAntwoord';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -47,6 +48,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'RIVM, PFAS', url: 'https://www.rivm.nl/pfas' }}>
               PFAS zijn door de mens gemaakte chemische stoffen die nauwelijks afbreken en in lage concentraties in Nederlands kraanwater voorkomen. Het water voldoet aan de wettelijke norm, maar in een deel van Nederland ligt de waarde boven de strengere RIVM-advieswaarde van 4,4 ng/l. Een filterkan houdt PFAS nauwelijks tegen; een omgekeerde-osmosesysteem wel.
             </KortAntwoord>
+            <AuteurRegel />
           </div>
         </section>
 

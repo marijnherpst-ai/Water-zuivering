@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import AuteurRegel from '@/components/AuteurRegel';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ArticleSchema from '@/components/ArticleSchema';
@@ -42,6 +43,7 @@ export default function WatIsOsmosewaterPage() {
             <p className="mt-5 text-dim text-lg">
               Osmosewater, ook wel omgekeerde-osmosewater of RO-water genoemd, hoor je steeds vaker voorbijkomen. In gewone taal leggen we uit wat het is, of je het kan drinken, hoe je het maakt — en wat het je eigenlijk kost.
             </p>
+            <AuteurRegel />
           </div>
         </section>
 

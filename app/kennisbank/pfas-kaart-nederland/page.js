@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import AuteurRegel from '@/components/AuteurRegel';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
@@ -43,6 +44,7 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               RIVM en waterschappen brengen PFAS-vervuiling steeds gedetailleerder in kaart. Zo lees je die kaart, en zo weet je wat het voor jouw eigen kraanwater betekent.
             </p>
+            <AuteurRegel />
           </div>
         </section>
 

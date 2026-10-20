@@ -10,9 +10,11 @@ export default function ArticleSchema({ headline, description, image, url }) {
     image,
     url,
     author: {
-      '@type': 'Organization',
-      name: 'Water-zuivering',
-      url: 'https://www.water-zuivering.nl',
+      '@type': 'Person',
+      name: 'Tomas',
+      jobTitle: 'Oprichter van Water-zuivering',
+      url: 'https://www.water-zuivering.nl/over-ons',
+      worksFor: { '@id': 'https://www.water-zuivering.nl/#organization' },
     },
     publisher: {
       '@type': 'Organization',

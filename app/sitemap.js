@@ -6,6 +6,7 @@ export default function sitemap() {
     { path: '', priority: 1.0, changeFrequency: 'weekly' },
     { path: '/aanmelden', priority: 0.9, changeFrequency: 'monthly' },
     { path: '/waterfilter', priority: 0.8, changeFrequency: 'monthly' },
+    { path: '/pfas-check', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/osmose-installatie', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/osmose-apparaat-kopen', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/drinkwater-filter', priority: 0.7, changeFrequency: 'monthly' },

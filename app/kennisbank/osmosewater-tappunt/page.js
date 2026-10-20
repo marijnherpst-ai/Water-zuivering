@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import AuteurRegel from '@/components/AuteurRegel';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
@@ -43,6 +44,7 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               Bij een osmosesysteem hoort meestal een eigen tappunt naast je gewone kraan. Wat dat precies is, en waarom het handiger is dan het klinkt.
             </p>
+            <AuteurRegel />
           </div>
         </section>
 

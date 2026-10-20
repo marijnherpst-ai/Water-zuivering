@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import AuteurRegel from '@/components/AuteurRegel';
 import KortAntwoord from '@/components/KortAntwoord';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -138,6 +139,7 @@ export default function BesteWaterfilterVoorThuisPage() {
             <KortAntwoord>
               Dat hangt af van wat je kwijt wilt. Voor een betere smaak en minder chloor is een waterfilterkan of kraanfilter genoeg. Wil je ook PFAS, medicijnresten, microplastics en kalk uit je water, dan is een omgekeerde-osmosesysteem onder de gootsteen de enige optie die dat grondig doet, met onbeperkt gefilterd water uit je eigen kraan.
             </KortAntwoord>
+            <AuteurRegel />
           </div>
         </section>
 
