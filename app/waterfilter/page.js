@@ -130,22 +130,22 @@ const INBEGREPEN_ICONS = ['lagen', 'kraan', 'monteur', 'display', 'stil', 'schil
 const INBEGREPEN = [
   ['Drie filtertrappen', 'Een PPC-voorfilter voor zand en roest, het RO-membraan voor de fijnste stoffen en een CTO-nafilter dat de smaak afrondt.'],
   ['Een eigen kraan', 'Gefilterd water komt uit een eigen kraan op je aanrecht. Liever één kraan voor alles? Kies dan een 3-weg kraan in chroom, geborsteld staal, goud of zwart.'],
-  ['Plaatsing door onze monteur', 'Geen gedoe met slangen en aansluitingen: onze eigen monteur zet alles in 1 à 2 uur onder je aanrecht.'],
-  ['Een slim display', 'Het systeem meldt zelf wanneer een filter op is, en waarschuwt bij een lekkage of te lage waterdruk.'],
-  ['Stil en snel', 'Minder dan 48 dB en 1,58 liter gefilterd water per minuut. Een glas is in een paar tellen vol.'],
+  ['Plaatsing door onze monteur', 'Geen gedoe met slangen en aansluitingen: onze eigen monteur zet je waterfilter in 1 à 2 uur onder je aanrecht.'],
+  ['Een slim display', 'Het waterfilter meldt zelf wanneer een filter op is, en waarschuwt bij een lekkage of te lage waterdruk.'],
+  ['Stil en snel', 'Je waterfilter maakt minder dan 48 dB en levert 1,58 liter gefilterd water per minuut. Een glas is in een paar tellen vol.'],
   ['10 jaar garantie', 'Gaat er een technisch onderdeel stuk, van membraan tot display, dan repareren of vervangen we het zonder kosten.'],
 ];
 
 const KRITIEK = [
   ['"Nederlands kraanwater is al veilig."', 'Dat klopt, en dat zeggen wij ook. Een waterfilter is geen noodzaak. Het is een keuze voor wie verder wil gaan dan de wettelijke norm, bijvoorbeeld bij stoffen als PFAS die onder de grens blijven maar niet op nul staan.'],
-  ['"In een waterfilter kunnen bacteriën groeien."', 'Ook dat klopt, als filters te lang blijven zitten. Daarom is onderhoud belangrijk. Ons systeem houdt dat voor je bij: het display geeft aan wanneer een filter vervangen moet worden.'],
+  ['"In een waterfilter kunnen bacteriën groeien."', 'Ook dat klopt, als filters te lang blijven zitten. Daarom is onderhoud belangrijk. Ons waterfilter houdt dat voor je bij: het display geeft aan wanneer een filter vervangen moet worden.'],
   ['"Je filtert ook de goede mineralen eruit."', 'Bij omgekeerde osmose is dat zo. Wil je die mineralen terug, dan kies je voor een nafilter met mineralen dat calcium en magnesium weer aan het water toevoegt.'],
-  ['"Osmose geeft ook afvalwater."', 'Klopt: het membraan spoelt de tegengehouden stoffen af naar de afvoer. Daarom sluiten we het systeem aan op je afvoer onder de gootsteen, zodat je er zelf niets van merkt.'],
+  ['"Osmose geeft ook afvalwater."', 'Klopt: het membraan spoelt de tegengehouden stoffen af naar de afvoer. Daarom sluiten we het waterfilter aan op je afvoer onder de gootsteen, zodat je er zelf niets van merkt.'],
 ];
 
 const STAPPEN = [
-  ['Vraag een offerte aan', 'Vertel ons kort over je keuken. Met de maatcheck zie je vooraf of het systeem in je kastje past.'],
-  ['Plan de installatie', 'Onze monteur komt langs en plaatst systeem en kraan in 1 à 2 uur. Liever zelf monteren? Dat kan ook.'],
+  ['Vraag een offerte aan', 'Vertel ons kort over je keuken. Met de maatcheck zie je vooraf of het waterfilter in je kastje past.'],
+  ['Plan de installatie', 'Onze monteur komt langs en plaatst waterfilter en kraan in 1 à 2 uur. Liever zelf monteren? Dat kan ook.'],
   ['Tap zuiver water', 'Vanaf dat moment komt er gefilterd water uit je eigen kraan. Filters bestel je pas als het display erom vraagt.'],
 ];
 
@@ -153,10 +153,10 @@ const FAQ = [
   ['Welke waterfilter is het beste?', 'Dat hangt af van wat je wilt oplossen. Voor alleen een betere smaak volstaat een filterkan of opzetstuk. Wil je ook kalk, PFAS en medicijnresten kwijt, dan is een omgekeerde-osmosesysteem de enige optie die dat daadwerkelijk verwijdert.'],
   ['Is een waterfilter nodig in Nederland?', 'Nederlands kraanwater voldoet aan strenge wettelijke normen en is veilig om te drinken. Een waterfilter is dus geen noodzaak, maar wel een manier om verder te gaan dan het wettelijk minimum — vooral relevant voor smaak en voor sporen van stoffen die onder de norm blijven maar niet op nul staan.'],
   ['Wat kost een waterfilter?', 'Een filterkan begin je al voor een paar tientjes, een opzetstuk vergelijkbaar. Een compleet osmosesysteem met eigen kraan is een grotere investering, maar filtert grondiger en heeft geen maandelijkse aanschaf van losse kannen of filters nodig.'],
-  ['Hoe vaak moet ik een waterfilter vervangen?', 'Dat verschilt sterk per type: een filterkan-patroon gaat gemiddeld 4-6 weken mee, een opzetstuk 2-3 maanden. Bij ons osmosesysteem vervang je het voor- en nafilter ieder jaar en het membraan elke 2 jaar.'],
-  ['Voegt een waterfilter ook mineralen toe?', 'Een gewoon filter niet. Omgekeerde osmose haalt zelfs de goede mineralen eruit. Met het CTO-nafilter met mineralen komen calcium en magnesium er na het membraan weer bij, voor een voller en ronder glas water.'],
+  ['Hoe vaak moet ik een waterfilter vervangen?', 'Dat verschilt sterk per type: een filterkan-patroon gaat gemiddeld 4-6 weken mee, een opzetstuk 2-3 maanden. Bij ons waterfilter met osmose vervang je het voor- en nafilter ieder jaar en het membraan elke 2 jaar.'],
+  ['Voegt een waterfilter ook mineralen toe?', 'Een gewoon waterfilter niet. Omgekeerde osmose haalt zelfs de goede mineralen eruit. Met het CTO-nafilter met mineralen komen calcium en magnesium er na het membraan weer bij, voor een voller en ronder glas water.'],
   ['Waar kan ik een waterfilter kopen?', 'Filterkannen en opzetstukken vind je bij elke elektronicazaak of supermarkt. Een compleet osmosesysteem met eigen kraan koop je bij een gespecialiseerde aanbieder zoals Water-zuivering, inclusief plaatsing en garantie. Je vraagt eerst vrijblijvend een offerte aan.'],
-  ['Hoeveel water levert een waterfilter met osmose?', 'Ons systeem levert 1,58 liter gefilterd water per minuut. Genoeg om in een paar tellen een glas te vullen of rustig een pan water te tappen.'],
+  ['Hoeveel water levert een waterfilter met osmose?', 'Ons waterfilter levert 1,58 liter gefilterd water per minuut. Genoeg om in een paar tellen een glas te vullen of rustig een pan water te tappen.'],
   ['Verwijdert een waterfilter PFAS?', 'Alleen als er een omgekeerde-osmosemembraan in zit. Filterkannen en de meeste opzetstukken werken op basis van actieve kool, wat goed is tegen chloor en smaak, maar PFAS-moleculen grotendeels door laat.'],
   ['Wat is het verschil tussen een waterfilter en een waterontharder?', 'Een waterontharder haalt specifiek kalk uit het water via ionenwisseling. Een waterfilter (zeker met osmose) pakt een veel bredere groep aan stoffen aan, waaronder ook kalk, maar via een ander principe.'],
 ];
@@ -415,7 +415,7 @@ export default async function Page() {
               donker
               label="Het filterproces"
               titel="Zo werkt ons waterfilter, laag voor laag"
-              intro="Een filterkan of kraan-opzetstuk werkt met actieve kool: goed tegen chloor en smaakstoffen, maar de poriën zijn te grof om kleinere moleculen zoals PFAS tegen te houden. Ons waterfilter stuurt het water door drie lagen die elk een eigen taak hebben. Scroll mee en zie wat er in elke laag gebeurt."
+              intro="Een filterkan of kraan-opzetstuk werkt met actieve kool: goed tegen chloor en smaakstoffen, maar de poriën zijn te grof om kleinere moleculen zoals PFAS tegen te houden. Ons waterfilter stuurt het water door drie lagen die elk een eigen taak hebben. Scroll mee en zie wat er in elke laag van het waterfilter gebeurt."
             />
             <div className="mt-14">
               <FilterLagen monoClass={mono.className} />
@@ -452,7 +452,7 @@ export default async function Page() {
             </div>
             <div className="mt-10 max-w-3xl space-y-4 text-dim leading-relaxed">
               <p>
-                De prijs loopt sterk uiteen, en dat is direct gekoppeld aan hoe grondig een waterfilter werkt. Een filterkan of opzetstuk is de laagste instapkosten, maar de doorlopende kosten (nieuwe patronen, elke paar weken tot maanden) tikken op jaarbasis alsnog aardig aan. Een compleet omgekeerde-osmosesysteem kost meer bij aanschaf, maar de filters gaan een stuk langer mee — bij ons het voor- en nafilter een jaar en het membraan twee jaar. Gemiddeld kom je zo op ongeveer €135 per jaar aan filters, voor onbeperkt gefilterd water.
+                De prijs loopt sterk uiteen, en dat is direct gekoppeld aan hoe grondig een waterfilter werkt. Een filterkan of opzetstuk is de laagste instapkosten, maar de doorlopende kosten (nieuwe patronen, elke paar weken tot maanden) tikken op jaarbasis alsnog aardig aan. Een compleet waterfilter met omgekeerde osmose kost meer bij aanschaf, maar de filters gaan een stuk langer mee — bij ons het voor- en nafilter een jaar en het membraan twee jaar. Gemiddeld kom je zo op ongeveer €135 per jaar aan filters, voor onbeperkt gefilterd water.
               </p>
               <p>
                 Reken je het helemaal door inclusief wat je bespaart op flessenwater, dan lees je dat in <Link href="/kennisbank/wat-kost-een-waterzuiveringssysteem" className="underline hover:text-ink">wat kost een waterzuiveringssysteem</Link>.
@@ -485,7 +485,7 @@ export default async function Page() {
               <div className="relative">
                 <div className="glow w-80 h-80 bg-amber/20" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
                 <div className="relative rounded-[2rem] overflow-hidden border border-white/10 aspect-square shadow-2xl shadow-black/50">
-                  <Image src="/assets/img/cabinet-install.png" alt="Waterfilter met omgekeerde osmose van Water-zuivering, geplaatst in een keukenkastje onder het aanrecht" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                  <Image src="/assets/img/cabinet-install.png" alt="Waterfilter met omgekeerde osmose van Water-zuivering, geplaatst in een keukenkastje onder het aanrecht" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" loading="eager" />
                   <div className={`${mono.className} absolute left-4 bottom-4 rounded-full bg-ink/80 backdrop-blur px-3 py-1.5 text-[10px] uppercase tracking-[0.16em] text-white/80`}>10,5 cm breed · staand of liggend</div>
                 </div>
               </div>
@@ -511,7 +511,7 @@ export default async function Page() {
               <Kop
                 label="De 3-weg kraan"
                 titel="Eén kraan voor gewoon én gefilterd water"
-                intro="Geen tweede kraantje op je aanrecht? Met de 3-weg kraan vervang je je huidige keukenkraan door één kraan die alles doet: gewoon kraanwater, gefilterd water en, met een mineraalfilter, gemineraliseerd water. Je wisselt met één simpele omschakelaar, zonder extra gat in je aanrecht. Onze monteur sluit hem in één moeite mee aan."
+                intro="Geen tweede kraantje op je aanrecht? Met de 3-weg kraan vervang je je huidige keukenkraan door één kraan die alles doet: gewoon kraanwater, gefilterd water en, met een mineraalfilter, gemineraliseerd water. Je wisselt met één simpele omschakelaar, zonder extra gat in je aanrecht. Onze monteur sluit hem in één moeite mee aan op je waterfilter."
               />
               <p className="mt-4 text-dim leading-relaxed">
                 Klik op een kleur om te zien hoe hij eruitziet. Twijfel je? Kijk dan naar het beslag van je keukenkastjes of de kleur van je spoelbak: daar sluit de kraan meestal het mooist op aan.
@@ -638,7 +638,7 @@ export default async function Page() {
           <div className="relative max-w-4xl mx-auto px-6 py-20 md:py-28 text-center">
             <p className={`${mono.className} text-[11px] uppercase tracking-[0.2em] text-amber`}>Volgende stap</p>
             <h2 className="mt-4 font-display text-3xl md:text-5xl font-extrabold tracking-tight leading-[1.05]">Klaar voor een waterfilter die écht grondig filtert?</h2>
-            <p className="mt-5 text-white/65 text-lg max-w-2xl mx-auto">Vraag een vrijblijvende offerte aan en ontdek wat een Water-zuivering systeem voor jouw huishouden betekent.</p>
+            <p className="mt-5 text-white/65 text-lg max-w-2xl mx-auto">Vraag een vrijblijvende offerte aan en ontdek wat een waterfilter van Water-zuivering voor jouw huishouden betekent.</p>
             <div className="mt-9 flex flex-wrap justify-center gap-3">
               <Link href="/aanmelden" className={btnPrimair}>
                 Vraag vrijblijvend een offerte aan
