@@ -6,9 +6,9 @@ import RevealObserver from '@/components/RevealObserver';
 import FiltratieProces from '@/components/osmose/FiltratieProces';
 import TdsMeter from '@/components/osmose/TdsMeter';
 import WerkingTabs from '@/components/osmose/WerkingTabs';
-import MaatVergelijker from '@/components/osmose/MaatVergelijker';
 import MineraalUitleg from '@/components/osmose/MineraalUitleg';
 import Binnenkant from '@/components/osmose/Binnenkant';
+import KastjeCheck from '@/components/osmose/KastjeCheck';
 import KeuzeKaarten from '@/components/osmose/KeuzeKaarten';
 import StickyOfferte from '@/components/StickyOfferte';
 import ProductSchema from '@/components/ProductSchema';
@@ -288,27 +288,34 @@ export default async function Page() {
 
         {/* ONTWERP (donker) */}
         <section id="ontwerp" className="relative bg-ink text-white overflow-hidden scroll-mt-24" style={DONKER}>
-          <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-center">
             <div>
-              <Kop donker label="Ontwerp" titel="Past het osmosesysteem in je kastje?" />
-              <p className="mt-5 text-white/65 leading-relaxed">Het osmosesysteem is maar 10,5 cm breed, smaller dan de meeste keukenladen. Het past dus vrijwel altijd onder je aanrecht, naast je afvalbak of schoonmaakspullen.</p>
-              <p className="mt-4 text-white/65 leading-relaxed">Er hoeft geen los waterreservoir bij: het osmosesysteem maakt zuiver water op het moment dat jij de kraan opendraait. Past het niet rechtop, leg het dan op zijn kant. Het bedieningspaneel draait automatisch mee.</p>
-              <dl className={`${mono.className} mt-8 grid grid-cols-3 rounded-2xl border border-white/15 overflow-hidden`}>
-                {[['Breedte', '10,5 cm'], ['Diepte', '42 cm'], ['Hoogte', '43 cm']].map(([naam, waarde], i) => (
-                  <div key={naam} className={`px-4 py-4 ${i > 0 ? 'border-l border-white/15' : ''}`}>
-                    <dt className="text-[10px] uppercase tracking-[0.16em] text-white/45">{naam}</dt>
-                    <dd className="mt-1 text-lg font-semibold text-amber">{waarde}</dd>
-                  </div>
+              <Kop donker label="Plaatsing" titel="Past het osmosesysteem in je keukenkastje?" intro="Bijna altijd. Het systeem is 10,5 cm breed, 42 cm diep en 43 cm hoog, en het kan staand of liggend. Bekijk hiernaast op schaal hoeveel ruimte er overblijft." />
+              <p className={`${mono.className} mt-8 text-[11px] uppercase tracking-[0.2em] text-amber`}>Dit heb je onder je aanrecht nodig</p>
+              <ul className="mt-4 space-y-3">
+                {[
+                  ['Een koudwateraansluiting', 'Hier sluit de monteur de toevoer van het osmosesysteem op aan.'],
+                  ['De afvoer van je gootsteen', 'Voor het spoelwater met de stoffen die het membraan tegenhoudt.'],
+                  ['Een stopcontact', 'Het systeem werkt op gewone netspanning, 100–240V.'],
+                ].map(([titel, tekst]) => (
+                  <li key={titel} className="flex gap-3">
+                    <span className="mt-0.5 shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-amber text-ink">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                    </span>
+                    <span>
+                      <span className="block font-semibold text-white">{titel}</span>
+                      <span className="block text-sm text-white/60">{tekst}</span>
+                    </span>
+                  </li>
                 ))}
-              </dl>
-              <Link href="/maatcheck" className={`${btnPrimair} mt-8`}>
-                Check het met een foto van je kastje
+              </ul>
+              <p className="mt-6 text-sm text-white/60 leading-relaxed">Een tank is niet nodig: het osmosesysteem werkt direct flow en maakt zuiver water op het moment dat jij de kraan opendraait. Twijfel je? Met de maatcheck zet je het apparaat op ware grootte in je eigen keuken, met een foto of live met je camera.</p>
+              <Link href="/maatcheck" className={`${btnPrimair} mt-7`}>
+                Zet het in je eigen kastje
                 <Pijl />
               </Link>
             </div>
-            <div className="text-ink">
-              <MaatVergelijker />
-            </div>
+            <KastjeCheck monoClass={mono.className} />
           </div>
         </section>
 
