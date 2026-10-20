@@ -8,6 +8,7 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import RatingSchema from '@/components/RatingSchema';
 import KraanKleurSwitcher from '@/components/KraanKleurSwitcher';
 import PfasChecker from '@/components/PfasChecker';
+import FilterKiezer from '@/components/FilterKiezer';
 import { createClient } from '@/lib/supabase/server';
 
 function Stars({ rating }) {
@@ -38,6 +39,24 @@ const TYPES = [
 ];
 
 const USPS = ['10 jaar garantie', 'Geplaatst in 1 à 2 uur', 'Filtert tot 99% van onzuiverheden', 'Eigen kraan op je aanrecht'];
+
+const CIJFERS = [
+  ['99%', 'van de onzuiverheden gefilterd'],
+  ['1,58 L', 'gefilterd water per minuut'],
+  ['10,5 cm', 'breed onder je aanrecht'],
+  ['10 jaar', 'garantie op het systeem'],
+];
+
+const INHOUD = [
+  ['soorten', 'Vier soorten waterfilters'],
+  ['kiezer', 'Welke past bij jou?'],
+  ['vergelijking', 'Wat haalt elk filter eruit?'],
+  ['kosten', 'Wat kost een waterfilter?'],
+  ['inbegrepen', 'Wat je bij ons krijgt'],
+  ['kraan', 'De 3-weg kraan'],
+  ['kritiek', 'Kritiek op waterfilters'],
+  ['vragen', 'Veelgestelde vragen'],
+];
 
 const MATRIX = [
   ['Chloorsmaak en -geur', 'Ja', 'Ja', 'Ja'],
@@ -148,6 +167,18 @@ export default async function Page() {
           </div>
         </section>
 
+        {/* CIJFERS */}
+        <section className="relative bg-ink text-white">
+          <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-6">
+            {CIJFERS.map(([getal, label]) => (
+              <div key={label} className="text-center">
+                <p className="font-display text-3xl md:text-4xl font-extrabold text-amber">{getal}</p>
+                <p className="mt-1 text-sm text-white/70">{label}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* INTRO */}
         <section className="relative bg-surface border-y border-edge">
           <div className="max-w-4xl mx-auto px-6 py-14 md:py-20">
@@ -160,11 +191,24 @@ export default async function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               De kortste samenvatting: hoe fijner de filtratie, hoe meer stoffen eruit gaan — maar ook hoe groter de investering. Hieronder zetten we de vier belangrijkste type waterfilters naast elkaar, zodat je een weloverwogen keuze kunt maken in plaats van te gokken.
             </p>
+            <nav aria-label="Inhoud van deze pagina" className="mt-8 rounded-2xl border border-edge p-5">
+              <p className="text-xs font-bold uppercase tracking-widest text-amber-dark">Op deze pagina</p>
+              <ol className="mt-3 grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
+                {INHOUD.map(([id, label], i) => (
+                  <li key={id}>
+                    <a href={`#${id}`} className="cursor-pointer inline-flex gap-2 text-ink hover:text-amber-dark">
+                      <span className="text-dim tabular-nums">{String(i + 1).padStart(2, '0')}</span>
+                      {label}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
           </div>
         </section>
 
         {/* TYPES */}
-        <section className="relative">
+        <section id="soorten" className="relative scroll-mt-24">
           <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-center">Vier soorten waterfilters, van simpel tot compleet</h2>
             <p className="mt-3 text-dim text-center max-w-xl mx-auto">Gerangschikt van minst naar meest grondig — niet elk type lost hetzelfde probleem op.</p>
@@ -185,8 +229,22 @@ export default async function Page() {
           </div>
         </section>
 
+        {/* KIEZER */}
+        <section id="kiezer" className="relative bg-surface border-y border-edge scroll-mt-24">
+          <div className="max-w-5xl mx-auto px-6 py-16 md:py-20 grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Waterfilter kiezer</span>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Welke waterfilter past bij jou? Drie vragen, eerlijk advies</h2>
+              <p className="mt-4 text-dim leading-relaxed">
+                Niet iedereen heeft een osmosesysteem nodig. Beantwoord drie korte vragen en je ziet welk type waterfilter bij jouw situatie past. Soms is dat een simpele filterkan, en dan zeggen we dat ook.
+              </p>
+            </div>
+            <FilterKiezer />
+          </div>
+        </section>
+
         {/* MATRIX */}
-        <section className="relative bg-surface border-y border-edge">
+        <section id="vergelijking" className="relative scroll-mt-24">
           <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Welke waterfilter haalt wat uit je water?</h2>
             <p className="mt-4 text-dim leading-relaxed max-w-3xl">
@@ -251,7 +309,7 @@ export default async function Page() {
         </section>
 
         {/* PRIJS OVERZICHT */}
-        <section className="relative">
+        <section id="kosten" className="relative scroll-mt-24">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat kost een waterfilter, per type?</h2>
             <p className="mt-4 text-dim leading-relaxed">
@@ -286,7 +344,7 @@ export default async function Page() {
         </section>
 
         {/* INBEGREPEN */}
-        <section className="relative">
+        <section id="inbegrepen" className="relative scroll-mt-24">
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
             <div className="max-w-2xl">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Ons waterfilter</span>
@@ -316,7 +374,7 @@ export default async function Page() {
         </section>
 
         {/* KRAAN KLEUREN */}
-        <section className="relative bg-surface border-y border-edge overflow-hidden">
+        <section id="kraan" className="relative bg-surface border-y border-edge overflow-hidden scroll-mt-24">
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">De 3-weg kraan</span>
@@ -338,7 +396,7 @@ export default async function Page() {
         </section>
 
         {/* KRITIEK */}
-        <section className="relative">
+        <section id="kritiek" className="relative scroll-mt-24">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kritiek op waterfilters: wat klopt ervan?</h2>
             <p className="mt-4 text-dim leading-relaxed">
@@ -376,7 +434,7 @@ export default async function Page() {
 
         {/* REVIEWS */}
         {topReviews.length > 0 && (
-          <section className="relative bg-surface border-y border-edge overflow-hidden">
+          <section className="relative overflow-hidden">
             <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
               <div className="flex items-end justify-between gap-4 mb-8">
                 <div>
@@ -406,7 +464,7 @@ export default async function Page() {
         )}
 
         {/* FAQ */}
-        <section className="relative">
+        <section id="vragen" className="relative scroll-mt-24">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
             <div className="text-center">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
