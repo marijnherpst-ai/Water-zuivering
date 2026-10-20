@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import KortAntwoord from '@/components/KortAntwoord';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
@@ -63,6 +64,9 @@ export default function Page() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Wat is RO-water en hoe werkt het?</h1>
             <p className="mt-5 text-dim text-lg"><strong className="text-ink">RO-water</strong> — kort voor "reverse osmosis water" — is water dat is gezuiverd via omgekeerde osmose. In dit artikel leggen we uit wat <strong className="text-ink">RO-water</strong> precies is, hoe RO-water ontstaat en waar je het voor gebruikt.</p>
+            <KortAntwoord>
+              RO-water is kraanwater dat is gezuiverd met omgekeerde osmose (reverse osmosis). Het water wordt door een membraan met extreem kleine poriën geperst, waardoor vrijwel alle opgeloste stoffen achterblijven, ook kalk en mineralen. Het resultaat is zeer zuiver water met een lage TDS-waarde. Wie mineralen terug wil, kiest een nafilter met mineralen.
+            </KortAntwoord>
           </div>
         </section>
 

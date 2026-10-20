@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import KortAntwoord from '@/components/KortAntwoord';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
@@ -61,6 +62,9 @@ export default function Page() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Kraanwater filteren: welke opties heb je?</h1>
             <p className="mt-5 text-dim text-lg"><strong className="text-ink">Kraanwater filteren</strong> kan op meerdere manieren — met flink verschil in resultaat.</p>
+            <KortAntwoord>
+              Kraanwater filteren kan met een filterkan, een opzetstuk op de kraan of een systeem onder de gootsteen. Een kan of opzetstuk met actieve kool verbetert vooral smaak en geur en haalt chloor weg. Wil je ook PFAS, medicijnresten en microplastics verwijderen, dan heb je omgekeerde osmose nodig: de grondigste manier om kraanwater te filteren.
+            </KortAntwoord>
           </div>
         </section>
 

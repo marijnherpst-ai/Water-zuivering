@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import KortAntwoord from '@/components/KortAntwoord';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
@@ -62,6 +63,9 @@ export default function Page() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Omgekeerde osmose filter: hoe werkt het membraan?</h1>
             <p className="mt-5 text-dim text-lg">Het hart van elke <strong className="text-ink">omgekeerde osmose filter</strong> is één simpel maar krachtig onderdeel: een membraan met microscopisch kleine poriën.</p>
+            <KortAntwoord>
+              Een omgekeerde osmose filter perst kraanwater onder druk door een membraan met poriën van ongeveer 0,0001 micron. Vrijwel alleen watermoleculen komen erdoorheen; opgeloste stoffen zoals PFAS, medicijnresten, kalk en zware metalen blijven achter en spoelen weg naar de afvoer. Een voor- en nafilter beschermen het membraan en verbeteren de smaak.
+            </KortAntwoord>
           </div>
         </section>
 

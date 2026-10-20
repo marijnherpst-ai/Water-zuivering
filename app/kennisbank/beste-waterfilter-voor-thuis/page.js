@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import KortAntwoord from '@/components/KortAntwoord';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
@@ -134,6 +135,9 @@ export default function BesteWaterfilterVoorThuisPage() {
             <p className="mt-5 text-dim text-lg">
               Wat is de <strong className="text-ink">beste waterfilter voor thuis</strong>? Waterfilterkan, kraanfilter of een waterzuiveraar onder de gootsteen — we vergelijken de drie meest gekozen opties op filtratie, gemak en kosten.
             </p>
+            <KortAntwoord>
+              Dat hangt af van wat je kwijt wilt. Voor een betere smaak en minder chloor is een waterfilterkan of kraanfilter genoeg. Wil je ook PFAS, medicijnresten, microplastics en kalk uit je water, dan is een omgekeerde-osmosesysteem onder de gootsteen de enige optie die dat grondig doet, met onbeperkt gefilterd water uit je eigen kraan.
+            </KortAntwoord>
           </div>
         </section>
 
