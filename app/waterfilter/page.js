@@ -35,11 +35,46 @@ const TYPES = [
   ['Omgekeerde-osmosesysteem', 'De meest grondige optie: een membraan dat op moleculair niveau filtert. Verwijdert kalk, lood, PFAS, medicijnresten en microplastics — niet alleen de smaak, maar ook wat je niet proeft.'],
 ];
 
+const USPS = ['10 jaar garantie', 'Geplaatst in 1 à 2 uur', 'Filtert tot 99% van onzuiverheden', 'Eigen kraan op je aanrecht'];
+
+const MATRIX = [
+  ['Chloorsmaak en -geur', 'Ja', 'Ja', 'Ja'],
+  ['Kalk', 'Deels', 'Nauwelijks', 'Ja'],
+  ['PFAS', 'Nauwelijks', 'Nauwelijks', 'Ja'],
+  ['Medicijnresten', 'Nauwelijks', 'Nauwelijks', 'Ja'],
+  ['Microplastics', 'Deels', 'Deels', 'Ja'],
+  ['Onbeperkt water uit de kraan', 'Nee', 'Ja', 'Ja'],
+];
+
+const INBEGREPEN = [
+  ['Drie filtertrappen', 'Een PPC-voorfilter voor zand en roest, het RO-membraan voor de fijnste stoffen en een CTO-nafilter dat de smaak afrondt.'],
+  ['Een eigen kraan', 'Gefilterd water komt uit een eigen kraan op je aanrecht. Liever één kraan voor alles? Kies dan een 3-weg kraan in chroom, geborsteld staal of goud.'],
+  ['Plaatsing door onze monteur', 'Geen gedoe met slangen en aansluitingen: onze eigen monteur zet alles in 1 à 2 uur onder je aanrecht.'],
+  ['Een slim display', 'Het systeem meldt zelf wanneer een filter op is, en waarschuwt bij een lekkage of te lage waterdruk.'],
+  ['Stil en snel', 'Minder dan 48 dB en 1,58 liter gefilterd water per minuut. Een glas is in een paar tellen vol.'],
+  ['10 jaar garantie', 'Gaat er een technisch onderdeel stuk, van membraan tot display, dan repareren of vervangen we het zonder kosten.'],
+];
+
+const KRITIEK = [
+  ['"Nederlands kraanwater is al veilig."', 'Dat klopt, en dat zeggen wij ook. Een waterfilter is geen noodzaak. Het is een keuze voor wie verder wil gaan dan de wettelijke norm, bijvoorbeeld bij stoffen als PFAS die onder de grens blijven maar niet op nul staan.'],
+  ['"In een waterfilter kunnen bacteriën groeien."', 'Ook dat klopt, als filters te lang blijven zitten. Daarom is onderhoud belangrijk. Ons systeem houdt dat voor je bij: het display geeft aan wanneer een filter vervangen moet worden.'],
+  ['"Je filtert ook de goede mineralen eruit."', 'Bij omgekeerde osmose is dat zo. Wil je die mineralen terug, dan kies je voor een nafilter met mineralen dat ze weer aan het water toevoegt.'],
+  ['"Osmose geeft ook afvalwater."', 'Klopt: het membraan spoelt de tegengehouden stoffen af naar de afvoer. Daarom sluiten we het systeem aan op je afvoer onder de gootsteen, zodat je er zelf niets van merkt.'],
+];
+
+const STAPPEN = [
+  ['Vraag een offerte aan', 'Vertel ons kort over je keuken. Met de maatcheck zie je vooraf of het systeem in je kastje past.'],
+  ['Plan de installatie', 'Onze monteur komt langs en plaatst systeem en kraan in 1 à 2 uur. Liever zelf monteren? Dat kan ook.'],
+  ['Tap zuiver water', 'Vanaf dat moment komt er gefilterd water uit je eigen kraan. Filters bestel je pas als het display erom vraagt.'],
+];
+
 const FAQ = [
   ['Welke waterfilter is het beste?', 'Dat hangt af van wat je wilt oplossen. Voor alleen een betere smaak volstaat een filterkan of opzetstuk. Wil je ook kalk, PFAS en medicijnresten kwijt, dan is een omgekeerde-osmosesysteem de enige optie die dat daadwerkelijk verwijdert.'],
   ['Is een waterfilter nodig in Nederland?', 'Nederlands kraanwater voldoet aan strenge wettelijke normen en is veilig om te drinken. Een waterfilter is dus geen noodzaak, maar wel een manier om verder te gaan dan het wettelijk minimum — vooral relevant voor smaak en voor sporen van stoffen die onder de norm blijven maar niet op nul staan.'],
   ['Wat kost een waterfilter?', 'Een filterkan begin je al voor een paar tientjes, een opzetstuk vergelijkbaar. Een compleet osmosesysteem met eigen kraan is een grotere investering, maar filtert grondiger en heeft geen maandelijkse aanschaf van losse kannen of filters nodig.'],
-  ['Hoe vaak moet ik een waterfilter vervangen?', 'Dat verschilt sterk per type: een filterkan-patroon gaat gemiddeld 4-6 weken mee, een opzetstuk 2-3 maanden. Bij een compleet systeem gaan de voor- en nafilters 6-12 maanden mee, en het osmosemembraan zelf 2-3 jaar.'],
+  ['Hoe vaak moet ik een waterfilter vervangen?', 'Dat verschilt sterk per type: een filterkan-patroon gaat gemiddeld 4-6 weken mee, een opzetstuk 2-3 maanden. Bij ons osmosesysteem vervang je het voor- en nafilter ieder jaar en het membraan elke 2 jaar.'],
+  ['Waar kan ik een waterfilter kopen?', 'Filterkannen en opzetstukken vind je bij elke elektronicazaak of supermarkt. Een compleet osmosesysteem met eigen kraan koop je bij een gespecialiseerde aanbieder zoals Water-zuivering, inclusief plaatsing en garantie. Je vraagt eerst vrijblijvend een offerte aan.'],
+  ['Hoeveel water levert een waterfilter met osmose?', 'Ons systeem levert 1,58 liter gefilterd water per minuut. Genoeg om in een paar tellen een glas te vullen of rustig een pan water te tappen.'],
   ['Verwijdert een waterfilter PFAS?', 'Alleen als er een omgekeerde-osmosemembraan in zit. Filterkannen en de meeste opzetstukken werken op basis van actieve kool, wat goed is tegen chloor en smaak, maar PFAS-moleculen grotendeels door laat.'],
   ['Wat is het verschil tussen een waterfilter en een waterontharder?', 'Een waterontharder haalt specifiek kalk uit het water via ionenwisseling. Een waterfilter (zeker met osmose) pakt een veel bredere groep aan stoffen aan, waaronder ook kalk, maar via een ander principe.'],
 ];
@@ -67,14 +102,6 @@ export default async function Page() {
 
   return (
     <>
-      <BreadcrumbSchema
-        items={[
-          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
-          { name: 'Waterfilter', url: 'https://www.water-zuivering.nl/waterfilter' },
-        ]}
-      />
-      <FaqSchema items={FAQ} />
-      <RatingSchema rating={avgRating} count={reviewCount} />
       <RevealObserver />
       <Header />
 
@@ -92,6 +119,14 @@ export default async function Page() {
               <p className="mt-5 text-dim text-lg">
                 Van een simpele filterkan tot een compleet omgekeerde-osmosesysteem: niet elke <strong className="text-ink">waterfilter</strong> doet hetzelfde. Deze gids zet de opties eerlijk naast elkaar, zodat je weet waar je precies voor betaalt.
               </p>
+              <ul className="mt-6 grid grid-cols-2 gap-x-4 gap-y-2 text-sm font-semibold text-ink">
+                {USPS.map((usp) => (
+                  <li key={usp} className="flex items-center gap-2">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="shrink-0 text-amber-dark"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                    {usp}
+                  </li>
+                ))}
+              </ul>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-3.5 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">
                   Vraag vrijblijvend een offerte aan
@@ -105,7 +140,7 @@ export default async function Page() {
             <div className="relative">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-[2rem] overflow-hidden border border-edge aspect-[4/5]">
-                <Image src="/assets/img/glas-water.webp" alt="Glas gefilterd water uit een waterfilter" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" priority />
+                <Image src="/assets/img/glas-water.webp" alt="Glas helder water uit een waterfilter met osmose" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" priority />
               </div>
             </div>
           </div>
@@ -145,6 +180,41 @@ export default async function Page() {
           </div>
         </section>
 
+        {/* MATRIX */}
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Welke waterfilter haalt wat uit je water?</h2>
+            <p className="mt-4 text-dim leading-relaxed max-w-3xl">
+              Op de verpakking belooft bijna elk filter "zuiver water". Deze tabel laat zien wat de verschillende typen in de praktijk aankunnen. Bij filterkannen en opzetstukken verschilt het per merk en patroon, dus zie het als richtlijn.
+            </p>
+            <div className="mt-8 overflow-x-auto rounded-2xl border border-edge">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-bg">
+                  <tr>
+                    <th className="p-4 font-display">Wat wil je kwijt?</th>
+                    <th className="p-4 font-display">Filterkan</th>
+                    <th className="p-4 font-display">Opzetstuk</th>
+                    <th className="p-4 font-display">Osmosesysteem</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {MATRIX.map(([stof, kan, opzet, ro]) => (
+                    <tr key={stof} className="border-t border-edge">
+                      <th className="p-4 font-semibold text-ink">{stof}</th>
+                      <td className="p-4 text-dim">{kan}</td>
+                      <td className="p-4 text-dim">{opzet}</td>
+                      <td className="p-4 font-semibold text-ink">{ro}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-6 text-dim leading-relaxed max-w-3xl">
+              Wil je weten wat er bij jou thuis uit de leiding komt? Met de <Link href="/pfas-check" className="underline hover:text-ink">PFAS-check</Link> zie je de meetwaarden voor jouw postcode.
+            </p>
+          </div>
+        </section>
+
         {/* WAAROM OSMOSE GRONDIGER IS */}
         <section className="relative bg-surface border-y border-edge overflow-hidden">
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
@@ -169,7 +239,7 @@ export default async function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat kost een waterfilter, per type?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              De prijs loopt sterk uiteen, en dat is direct gekoppeld aan hoe grondig een filter werkt. Een filterkan of opzetstuk is de laagste instapkosten, maar de doorlopende kosten (nieuwe patronen, elke paar weken tot maanden) tikken op jaarbasis alsnog aardig aan. Een compleet omgekeerde-osmosesysteem kost meer bij aanschaf, maar de filters gaan een stuk langer mee — de voor- en nafilters 6-12 maanden, het membraan zelf 2-3 jaar — waardoor de jaarlijkse kosten per liter juist lager uitvallen.
+              De prijs loopt sterk uiteen, en dat is direct gekoppeld aan hoe grondig een filter werkt. Een filterkan of opzetstuk is de laagste instapkosten, maar de doorlopende kosten (nieuwe patronen, elke paar weken tot maanden) tikken op jaarbasis alsnog aardig aan. Een compleet omgekeerde-osmosesysteem kost meer bij aanschaf, maar de filters gaan een stuk langer mee — bij ons het voor- en nafilter een jaar en het membraan twee jaar. Gemiddeld kom je zo op ongeveer €135 per jaar aan filters, voor onbeperkt gefilterd water.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Reken je het helemaal door inclusief wat je bespaart op flessenwater, dan lees je dat in <Link href="/kennisbank/wat-kost-een-waterzuiveringssysteem" className="underline hover:text-ink">wat kost een waterzuiveringssysteem</Link>.
@@ -196,6 +266,73 @@ export default async function Page() {
                 <Image src="/assets/img/systeem-liggend.png" alt="Compleet osmosewaterfiltersysteem van Water-zuivering" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-contain p-6 bg-white" />
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* INBEGREPEN */}
+        <section className="relative">
+          <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
+            <div className="max-w-2xl">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Ons waterfilter</span>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Dit krijg je als je bij ons een waterfilter koopt</h2>
+              <p className="mt-4 text-dim leading-relaxed">
+                Geen los apparaat in een doos, maar een compleet systeem dat geplaatst en wel in je keuken staat. Dit zit er allemaal bij:
+              </p>
+            </div>
+            <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {INBEGREPEN.map(([titel, uitleg]) => (
+                <div key={titel} className="reveal rounded-2xl card p-6">
+                  <p className="font-display font-bold text-ink">{titel}</p>
+                  <p className="mt-2 text-sm text-dim leading-relaxed">{uitleg}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-10 flex flex-wrap gap-3">
+              <Link href="/osmosesysteem" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-3.5 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">
+                Bekijk het osmosesysteem
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </Link>
+              <Link href="/3-weg-kraan" className="cursor-pointer inline-flex items-center gap-2 rounded-full border-2 border-ink px-7 py-3.5 text-sm font-bold text-ink hover:bg-bg transition-colors">
+                Kies je kraan
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* KRITIEK */}
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kritiek op waterfilters: wat klopt ervan?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Wie zich verdiept in waterfilters, leest ook kritische geluiden, onder meer van drinkwaterbedrijven. Die nemen we serieus. Dit zijn de vier punten die het vaakst terugkomen, met ons eerlijke antwoord.
+            </p>
+            <div className="mt-8 space-y-4">
+              {KRITIEK.map(([punt, antwoord]) => (
+                <div key={punt} className="reveal rounded-2xl card p-6">
+                  <p className="font-display font-bold text-ink">{punt}</p>
+                  <p className="mt-2 text-sm text-dim leading-relaxed">{antwoord}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* STAPPEN */}
+        <section className="relative">
+          <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-center">Zo koop je een waterfilter bij Water-zuivering</h2>
+            <div className="mt-10 grid md:grid-cols-3 gap-5">
+              {STAPPEN.map(([titel, uitleg], i) => (
+                <div key={titel} className="reveal rounded-2xl card p-6">
+                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-amber text-ink text-sm font-bold">{i + 1}</span>
+                  <p className="mt-4 font-display font-bold text-ink">{titel}</p>
+                  <p className="mt-2 text-sm text-dim leading-relaxed">{uitleg}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 text-center text-dim">
+              Meer over de plaatsing lees je bij <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>. Twijfel je over de ruimte? Doe de <Link href="/maatcheck" className="underline hover:text-ink">maatcheck</Link>.
+            </p>
           </div>
         </section>
 
@@ -267,6 +404,14 @@ export default async function Page() {
       </main>
 
       <Footer />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.water-zuivering.nl/' },
+          { name: 'Waterfilter', url: 'https://www.water-zuivering.nl/waterfilter' },
+        ]}
+      />
+      <FaqSchema items={FAQ} />
+      <RatingSchema rating={avgRating} count={reviewCount} />
     </>
   );
 }
