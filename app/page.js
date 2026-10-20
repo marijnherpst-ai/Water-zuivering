@@ -154,6 +154,7 @@ export default async function HomePage() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Ons assortiment</span>
               <h2 className="mt-3 font-display text-3xl md:text-4xl font-extrabold tracking-tight">Onze producten</h2>
               <p className="mt-4 text-dim text-lg">Eén hoofdsysteem, twee slimme accessoires. Los verkrijgbaar, perfect op elkaar afgestemd.</p>
+              <p className="mt-3 text-sm text-dim">Nog aan het vergelijken? In onze gids <Link href="/waterfilter" className="underline hover:text-ink">waterfilter kopen</Link> zetten we filterkan, opzetstuk en osmose eerlijk naast elkaar.</p>
             </div>
 
             <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 lg:items-stretch">

@@ -28,7 +28,7 @@ const FAQ = [
   ['Wat is een waterfiltersysteem precies?', 'Een waterfiltersysteem is een set van meerdere filters die na elkaar werken — meestal een voorfilter, een fijn membraan en een nafilter — om kraanwater in stappen steeds verder te zuiveren.'],
   ['Wat is het verschil tussen een waterfiltersysteem en een los filter?', 'Een los filter (zoals in een kan) doet één ding: chloor of grof vuil eruit halen. Een compleet filtratiesysteem combineert meerdere technieken, waardoor het ook fijnere stoffen zoals PFAS en medicijnresten verwijdert.'],
   ['Hoeveel ruimte kost een waterfiltersysteem?', 'Ons systeem is slechts 10,5 cm breed en past staand of liggend in vrijwel elk keukenkastje, naast je andere spullen.'],
-  ['Hoe lang gaat een waterfiltersysteem mee?', 'Het frame en de behuizing gaan jarenlang mee (10 jaar garantie). De filters zelf worden periodiek vervangen: voor- en nafilter elke 6-12 maanden, het membraan elke 2-3 jaar.'],
+  ['Hoe lang gaat een waterfiltersysteem mee?', 'Het frame en de behuizing gaan jarenlang mee (10 jaar garantie). De filters zelf worden periodiek vervangen: het voor- en nafilter ieder jaar, het membraan elke 2 jaar. Het display geeft aan wanneer het zover is.'],
   ['Is een waterfiltersysteem moeilijk te onderhouden?', 'Nee — elk onderdeel heeft een vast vervangingsschema dat je bij installatie meekrijgt. Het is meer een kwestie van agenda bijhouden dan technische kennis.'],
   ['Kan een waterfiltersysteem ook water voor koken en koffie leveren?', 'Ja, het systeem levert onbeperkt zuiver water via een aparte kraan of aansluiting — perfect voor koken, koffie, thee of gewoon een glas water.'],
 ];
@@ -140,7 +140,7 @@ export default function Page() {
               Het resultaat van deze drie stappen samen: water dat tot 99% is bevrijd van chloor, PFAS, medicijnresten, microplastics en zware metalen. Geen marketingclaim, maar de directe optelsom van wat elk onderdeel afzonderlijk doet — de voorfilter houdt tegen wat groot is, het membraan houdt tegen wat klein is, en de nafilter poetst weg wat overblijft.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Benieuwd hoe dit precies verschilt van andere opties, zoals een filterkan of kraanfilter? Lees onze vergelijking <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">beste waterfilter voor thuis</Link>, of ga direct naar de <Link href="/osmose-waterfilter" className="underline hover:text-ink">osmose waterfilter-pagina</Link> voor de technische kern van het systeem.
+              Benieuwd hoe dit precies verschilt van andere opties, zoals een filterkan of kraanfilter? Lees onze vergelijking <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">beste waterfilter voor thuis</Link>, of ga direct naar de <Link href="/osmose-waterfilter" className="underline hover:text-ink">osmose waterfilter-pagina</Link> voor de technische kern van het systeem. Alle soorten naast elkaar, met kosten en een keuzehulp, vind je in de <Link href="/waterfilter" className="underline hover:text-ink">complete waterfilter koopgids</Link>.
             </p>
           </div>
         </section>

@@ -80,6 +80,13 @@ export const metadata = {
   alternates: { canonical: '/waterfilter' },
   title: 'Waterfilter kopen: de complete gids 2026 — Water-zuivering',
   description: 'Waterfilter kopen? Vergelijk filterkan, kraan-opzetstuk en osmosesysteem op grondigheid, gemak en prijs, en ontdek welk type bij jou past.',
+  openGraph: {
+    title: 'Waterfilter kopen: de complete gids 2026',
+    description: 'Filterkan, opzetstuk of osmose? Vergelijk wat elk waterfilter uit je water haalt, wat het kost en welk type bij jou past.',
+    url: 'https://www.water-zuivering.nl/waterfilter',
+    type: 'article',
+    images: [{ url: '/assets/img/cabinet-install.png', width: 1024, height: 1024, alt: 'Waterfilter met omgekeerde osmose in een keukenkastje' }],
+  },
 };
 
 const TYPES = [

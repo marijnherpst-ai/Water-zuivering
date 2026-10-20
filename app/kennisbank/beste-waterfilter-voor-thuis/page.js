@@ -218,7 +218,7 @@ export default function BesteWaterfilterVoorThuisPage() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat filtert elk type nou precies weg?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Nederlands kraanwater voldoet aan strenge wettelijke normen en is veilig om te drinken — daar gaat het bij een waterfilter voor thuis dan ook niet om. Het gaat om sporen van stoffen die niet standaard verwijderd worden: chloor (voor de smaak), kalk, en minder bekende stoffen zoals PFAS, medicijnresten en microplastics. Actuele informatie over de Nederlandse drinkwaterkwaliteit en normen vind je bij het <a href="https://www.rivm.nl/drinkwater" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">RIVM</a>.
+              Nederlands kraanwater voldoet aan strenge wettelijke normen en is veilig om te drinken — daar gaat het bij een waterfilter voor thuis dan ook niet om. Het gaat om sporen van stoffen die niet standaard verwijderd worden: chloor (voor de smaak), kalk, en minder bekende stoffen zoals PFAS, medicijnresten en microplastics. Weet je al welk type je zoekt en wil je direct verder? Lees dan onze gids over <Link href="/waterfilter" className="underline hover:text-ink">een waterfilter kopen</Link>. Actuele informatie over de Nederlandse drinkwaterkwaliteit en normen vind je bij het <a href="https://www.rivm.nl/drinkwater" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">RIVM</a>.
             </p>
             <div className="mt-6 overflow-x-auto rounded-2xl border border-edge">
               <table className="w-full text-sm text-left">
