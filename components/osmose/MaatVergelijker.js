@@ -64,8 +64,8 @@ export default function MaatVergelijker() {
 
       <p className="mt-6 text-sm text-dim">
         {object.cm > SYSTEEM_CM
-          ? `Het systeem is smaller dan ${object.label.toLowerCase()} — het past dus vrijwel altijd moeiteloos onder je aanrecht.`
-          : `Het systeem is net iets breder dan ${object.label.toLowerCase()}, maar nog steeds compact genoeg voor vrijwel elk keukenkastje.`}
+          ? `Het osmosesysteem is smaller dan ${object.label.toLowerCase()} — het past dus vrijwel altijd moeiteloos onder je aanrecht.`
+          : `Het osmosesysteem is net iets breder dan ${object.label.toLowerCase()}, maar nog steeds compact genoeg voor vrijwel elk keukenkastje.`}
       </p>
     </div>
   );

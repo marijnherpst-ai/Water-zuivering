@@ -20,7 +20,7 @@ const STAGES = [
   {
     key: 'ro',
     naam: 'RO-filter',
-    ondertitel: 'Het hart van het systeem',
+    ondertitel: 'Het hart van het osmosesysteem',
     poriegrootte: '0,0001 micron',
     poriegrootteVergelijk: '± 500.000x fijner dan een haar',
     purity: 99,

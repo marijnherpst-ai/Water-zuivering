@@ -6,7 +6,7 @@ const TABS = [
   {
     key: 'installatie',
     label: 'Installatie',
-    intro: 'Onze eigen monteur sluit het systeem in 1 tot 2 uur vakkundig aan op je bestaande kraan — je hoeft er zelf niets voor te doen.',
+    intro: 'Onze eigen monteur sluit het osmosesysteem in 1 tot 2 uur vakkundig aan op je bestaande kraan — je hoeft er zelf niets voor te doen.',
     steps: [
       'De koudwaterkraan gaat kort dicht en er komt een 3-weg aansluiting op.',
       'De kraan voor gefilterd water wordt op je aanrecht geplaatst.',
@@ -19,20 +19,20 @@ const TABS = [
   {
     key: 'opstarten',
     label: 'Opstarten',
-    intro: 'Na de installatie is het systeem binnen enkele minuten klaar voor gebruik.',
+    intro: 'Na de installatie is het osmosesysteem binnen enkele minuten klaar voor gebruik.',
     steps: [
       'De watertoevoer en de 3-weg kraan gaan open, de stekker gaat in het stopcontact.',
       'Alle filters lopen vanzelf vol water — je ziet het gefilterde water uit de kraan komen.',
       'De kraan gaat weer dicht, alle slangen worden nagekeken op lekkage.',
       'Na een paar seconden gaat de kraan weer open: er komt weer helder water uit.',
-      'Klaar — het systeem is nu volledig operationeel.',
+      'Klaar — het osmosesysteem is nu volledig operationeel.',
     ],
     note: null,
   },
   {
     key: 'dagelijks',
     label: 'Dagelijks gebruik',
-    intro: 'Het systeem regelt zichzelf grotendeels — jij hoeft alleen de kraan open te draaien.',
+    intro: 'Het osmosesysteem regelt zichzelf grotendeels — jij hoeft alleen de kraan open te draaien.',
     steps: null,
     display: true,
     note: null,
@@ -46,7 +46,7 @@ const TABS = [
       'Het voorpaneel gaat eraf en het oude filter wordt eruit getrokken.',
       'Het nieuwe filter wordt erin geduwd tot je een "klik" hoort — geen gereedschap nodig.',
       'Het voorpaneel gaat terug, water en stroom gaan weer aan.',
-      'De resetknop bevestigt welk filter is vervangen, en na een korte spoeling is het systeem weer klaar.',
+      'De resetknop bevestigt welk filter is vervangen, en na een korte spoeling is het osmosesysteem weer klaar.',
     ],
     note: null,
   },
