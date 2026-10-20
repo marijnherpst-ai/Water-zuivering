@@ -268,82 +268,55 @@ export default async function Page() {
           </div>
         </section>
 
-        {/* OFFERTE STARTEN */}
-        <section className="relative overflow-hidden bg-amber/10 border-y border-amber/25">
-          <div className="glow w-96 h-96 bg-amber/25 -top-40 -right-20" />
-          <div className="relative max-w-6xl mx-auto px-6 py-16 md:py-20 grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-center">
-            <div>
-              <p className={`${mono.className} text-[11px] uppercase tracking-[0.2em] text-amber-dark`}>Offerte · stap 1 van 3</p>
-              <h2 className="mt-3 font-display text-3xl md:text-[2.5rem] font-extrabold tracking-tight leading-[1.08]">Start je offerte voor het osmosesysteem</h2>
-              <p className="mt-4 text-dim leading-relaxed">Drie korte vragen, klaar in minder dan een minuut. Kies hier alvast je keukenblad, dan ga je direct verder met de rest. Gratis en vrijblijvend.</p>
-              <ul className="mt-6 space-y-2 text-sm font-semibold text-ink">
-                {['Prijs inclusief plaatsing door onze monteur', 'Geen verplichtingen', '10 jaar garantie op het systeem'].map((punt) => (
-                  <li key={punt} className="flex items-center gap-2"><Vinkje />{punt}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="rounded-[2rem] bg-white border border-edge shadow-2xl shadow-ink/10 p-6 md:p-8">
-              <div className="flex items-center gap-2" aria-hidden="true">
-                <span className="h-1.5 flex-1 rounded-full bg-amber" />
-                <span className="h-1.5 flex-1 rounded-full bg-edge" />
-                <span className="h-1.5 flex-1 rounded-full bg-edge" />
-              </div>
-              <p className="mt-6 font-display text-xl md:text-2xl font-extrabold text-ink">Welk soort keukenblad heb je?</p>
-              <div className="mt-5 grid sm:grid-cols-2 gap-3">
-                {KEUKENBLADEN.map((blad) => (
-                  <Link
-                    key={blad}
-                    href={`/aanmelden?keukenblad=${encodeURIComponent(blad)}`}
-                    className="cursor-pointer group flex items-center justify-between gap-3 rounded-2xl border-2 border-edge px-5 py-4 font-semibold text-ink hover:border-amber hover:bg-amber/5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber"
-                  >
-                    {blad}
-                    <span className="shrink-0 text-amber-dark opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all"><Pijl /></span>
-                  </Link>
-                ))}
-              </div>
-              <p className={`${mono.className} mt-5 text-[10px] uppercase tracking-[0.14em] text-dim`}>Daarna: je situatie en je contactgegevens</p>
-            </div>
-          </div>
-        </section>
-
-        {/* FILTRATIEPROCES */}
+        {/* PROCES + RESULTAAT */}
         <section id="hoe-het-werkt" className="relative overflow-hidden scroll-mt-24">
-          <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
             <Kop midden label="Het proces" titel="Van kraanwater tot kristalhelder glas water" intro="Elke druppel gaat door de drie filtertrappen van het osmosesysteem. Klik hieronder op een filter om te zien wat er gebeurt." />
             <div className="mt-12">
               <FiltratieProces />
             </div>
+            <div className="mt-16 md:mt-20 flex items-center gap-4" aria-hidden="true">
+              <span className="h-px flex-1 bg-edge" />
+              <span className={`${mono.className} text-[11px] uppercase tracking-[0.2em] text-amber-dark`}>Het resultaat</span>
+              <span className="h-px flex-1 bg-edge" />
+            </div>
+            <div className="mt-10">
+              <TdsMeter />
+            </div>
           </div>
         </section>
 
-        {/* TDS */}
-        <section className="relative bg-surface border-y border-edge overflow-hidden">
-          <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
-            <TdsMeter />
-          </div>
-        </section>
-
-        {/* ONTWERP */}
-        <section id="ontwerp" className="relative overflow-hidden scroll-mt-24">
-          <div className="max-w-6xl mx-auto px-6 py-20 md:py-28 grid lg:grid-cols-2 gap-12 items-center">
+        {/* ONTWERP (donker) */}
+        <section id="ontwerp" className="relative bg-ink text-white overflow-hidden scroll-mt-24" style={DONKER}>
+          <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Kop label="Ontwerp" titel="Past het osmosesysteem in je kastje?" />
-              <p className="mt-5 text-dim leading-relaxed">Het osmosesysteem is maar 10,5 cm breed (105 × 420 × 430 mm, b × d × h), smaller dan de meeste keukenladen. Het past dus vrijwel altijd onder je aanrecht, naast je afvalbak of schoonmaakspullen.</p>
-              <p className="mt-4 text-dim leading-relaxed">Er hoeft geen los waterreservoir bij: het osmosesysteem maakt zuiver water op het moment dat jij de kraan opendraait. Past het niet rechtop, leg het dan op zijn kant. Het bedieningspaneel draait automatisch mee.</p>
-              <Link href="/maatcheck" className="cursor-pointer mt-6 inline-flex items-center gap-2 text-sm font-bold text-ink hover:text-amber-dark transition-colors underline underline-offset-4">
-                Check het met een foto van je eigen kastje
+              <Kop donker label="Ontwerp" titel="Past het osmosesysteem in je kastje?" />
+              <p className="mt-5 text-white/65 leading-relaxed">Het osmosesysteem is maar 10,5 cm breed, smaller dan de meeste keukenladen. Het past dus vrijwel altijd onder je aanrecht, naast je afvalbak of schoonmaakspullen.</p>
+              <p className="mt-4 text-white/65 leading-relaxed">Er hoeft geen los waterreservoir bij: het osmosesysteem maakt zuiver water op het moment dat jij de kraan opendraait. Past het niet rechtop, leg het dan op zijn kant. Het bedieningspaneel draait automatisch mee.</p>
+              <dl className={`${mono.className} mt-8 grid grid-cols-3 rounded-2xl border border-white/15 overflow-hidden`}>
+                {[['Breedte', '10,5 cm'], ['Diepte', '42 cm'], ['Hoogte', '43 cm']].map(([naam, waarde], i) => (
+                  <div key={naam} className={`px-4 py-4 ${i > 0 ? 'border-l border-white/15' : ''}`}>
+                    <dt className="text-[10px] uppercase tracking-[0.16em] text-white/45">{naam}</dt>
+                    <dd className="mt-1 text-lg font-semibold text-amber">{waarde}</dd>
+                  </div>
+                ))}
+              </dl>
+              <Link href="/maatcheck" className={`${btnPrimair} mt-8`}>
+                Check het met een foto van je kastje
                 <Pijl />
               </Link>
             </div>
-            <MaatVergelijker />
+            <div className="text-ink">
+              <MaatVergelijker />
+            </div>
           </div>
         </section>
 
         {/* WERKING */}
-        <section className="relative bg-surface border-y border-edge overflow-hidden">
-          <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+        <section className="relative bg-surface border-b border-edge overflow-hidden">
+          <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
             <Kop midden label="Van A tot Z" titel="Installatie, gebruik en onderhoud" intro="Alles over je osmosesysteem: van de installatie tot je eerste glas water, en van dagelijks gebruik tot een filter vervangen." />
-            <div className="mt-14">
+            <div className="mt-12">
               <WerkingTabs />
             </div>
           </div>
@@ -351,7 +324,7 @@ export default async function Page() {
 
         {/* KOSTEN */}
         <section id="kosten" className="relative overflow-hidden scroll-mt-24">
-          <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
             <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-center">
               <div>
                 <Kop label="Onderhoud" titel="Filters wisselen zonder gereedschap" intro="Paneel eraf, oud filter eruit, nieuw filter erin tot je een klik hoort. Het display van het osmosesysteem vertelt je wanneer, dus je hoeft niets bij te houden." />
@@ -372,7 +345,7 @@ export default async function Page() {
 
         {/* MET VS ZONDER */}
         <section className="relative bg-surface border-y border-edge overflow-hidden">
-          <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
             <Kop midden label="Het verschil" titel="Waarom kiezen voor dit osmosesysteem?" intro="Zet het naast een leven zonder, en het verschil spreekt voor zich." />
             <div className="relative mt-14 grid md:grid-cols-2 gap-4 md:gap-0 md:rounded-[2rem] md:overflow-hidden md:border md:border-edge md:shadow-xl md:shadow-ink/5">
               <div className="rounded-3xl md:rounded-none bg-bg p-8 md:p-10 lg:p-12">
@@ -414,7 +387,7 @@ export default async function Page() {
 
         {/* MINERALEN */}
         <section className="relative overflow-hidden">
-          <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
             <Kop midden label="Optioneel" titel="Mineralen terug in je water" intro="Omgekeerde osmose is zo grondig dat ook goede mineralen worden meegefilterd. Het CTO-filter met mineralen in je osmosesysteem voegt na het membraan onder meer calcium en magnesium toe, voor een voller en natuurlijker glas water." />
             <div className="mt-12">
               <MineraalUitleg />
@@ -426,33 +399,61 @@ export default async function Page() {
           </div>
         </section>
 
-        {/* TRAJECT (donker) */}
+        {/* TRAJECT + OFFERTE STARTEN (donker) */}
         <section id="traject" className="relative bg-ink text-white scroll-mt-24 overflow-hidden" style={DONKER}>
-          <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
-            <div className="grid lg:grid-cols-[1fr_1.1fr] gap-12 items-center">
-              <div>
-                <Kop donker label="Zo werkt het" titel="Van aanvraag tot je eerste glas" intro="Een osmosesysteem kopen is bij ons geen doos die je zelf moet uitzoeken. Zo verloopt het, van je aanvraag tot het moment dat je het eerste glas tapt." />
-                <div className="mt-8 relative rounded-[2rem] overflow-hidden border border-white/10 aspect-square shadow-2xl shadow-black/50">
+          <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
+            <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-start">
+              <div className="lg:sticky lg:top-32">
+                <Kop donker label="Offerte aanvragen" titel="Van aanvraag tot je eerste glas" intro="Een osmosesysteem kopen is bij ons geen doos die je zelf moet uitzoeken. Je begint hiernaast met één vraag, en wij regelen de rest." />
+                <ul className={`${mono.className} mt-6 space-y-2 text-[11px] uppercase tracking-[0.14em] text-white/60`}>
+                  {['Gratis en vrijblijvend', 'Klaar in minder dan een minuut', 'Prijs inclusief plaatsing'].map((punt) => (
+                    <li key={punt} className="flex items-center gap-2"><Vinkje className="text-amber" />{punt}</li>
+                  ))}
+                </ul>
+                <div className="hidden lg:block mt-8 relative rounded-[2rem] overflow-hidden border border-white/10 aspect-[4/3] shadow-2xl shadow-black/50">
                   <Image src="/assets/img/cabinet-install.png" alt="Osmosesysteem geplaatst in een keukenkastje onder de spoelbak" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" />
                 </div>
               </div>
               <div className="relative">
-              <div className="absolute left-6 top-6 bottom-24 border-l border-dashed border-amber/50" aria-hidden="true" />
-              <ol className="relative space-y-5">
-                {TRAJECT.map(([titel, tekst], i) => (
-                  <li key={titel} className="reveal relative flex gap-5">
-                    <span className={`${mono.className} relative z-10 shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-amber text-ink text-sm font-semibold shadow-lg shadow-amber/30`}>{String(i + 1).padStart(2, '0')}</span>
-                    <div className="flex-1 rounded-3xl border border-white/10 bg-white/[0.04] p-6">
-                      <p className="font-display text-lg font-bold text-white">{titel}</p>
-                      <p className="mt-2 text-sm text-white/65 leading-relaxed">{tekst}</p>
-                    </div>
-                  </li>
-                ))}
-              </ol>
-              <div className="relative mt-6 pl-[4.25rem] flex flex-wrap gap-3">
-                <Link href="/aanmelden" className={btnPrimair}>Vraag een offerte aan<Pijl /></Link>
-                <Link href="/osmose-installatie" className={btnDonker}>Meer over de installatie</Link>
-              </div>
+                <div className="absolute left-6 top-6 bottom-6 border-l border-dashed border-amber/50" aria-hidden="true" />
+                <ol className="relative space-y-5">
+                  {TRAJECT.map(([titel, tekst], i) => (
+                    <li key={titel} className="relative flex gap-5">
+                      <span className={`${mono.className} relative z-10 shrink-0 flex items-center justify-center w-12 h-12 rounded-full text-sm font-semibold ${i === 0 ? 'bg-amber text-ink shadow-lg shadow-amber/40 ring-4 ring-amber/20' : 'bg-ink border border-amber/50 text-amber'}`}>{String(i + 1).padStart(2, '0')}</span>
+                      {i === 0 ? (
+                        <div className="flex-1 rounded-3xl border border-amber/40 bg-white/[0.06] p-6 md:p-7 shadow-[0_0_60px_-25px_rgba(237,167,27,0.6)]">
+                          <p className={`${mono.className} text-[10px] uppercase tracking-[0.18em] text-amber`}>Begin hier</p>
+                          <p className="mt-1.5 font-display text-xl font-bold text-white">{titel}</p>
+                          <p className="mt-2 text-sm text-white/65 leading-relaxed">Kies je keukenblad, dan staat je antwoord al klaar en ga je direct door naar de volgende vraag.</p>
+                          <p className="mt-5 text-sm font-semibold text-white">Welk soort keukenblad heb je?</p>
+                          <div className="mt-3 grid sm:grid-cols-2 gap-2.5">
+                            {KEUKENBLADEN.map((blad) => (
+                              <Link
+                                key={blad}
+                                href={`/aanmelden?keukenblad=${encodeURIComponent(blad)}`}
+                                className="cursor-pointer group flex items-center justify-between gap-2 rounded-xl border border-white/15 bg-white/[0.03] px-4 py-3 text-sm font-semibold text-white hover:border-amber hover:bg-amber hover:text-ink transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber"
+                              >
+                                {blad}
+                                <span className="shrink-0 opacity-40 group-hover:opacity-100 transition-opacity"><Pijl /></span>
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="flex-1 rounded-3xl border border-white/10 bg-white/[0.03] p-6">
+                          <p className="font-display text-lg font-bold text-white">{titel}</p>
+                          <p className="mt-2 text-sm text-white/60 leading-relaxed">{tekst}</p>
+                        </div>
+                      )}
+                    </li>
+                  ))}
+                </ol>
+                <div className="relative mt-6 pl-[4.25rem]">
+                  <Link href="/osmose-installatie" className="cursor-pointer inline-flex items-center gap-2 text-sm font-bold text-white/80 hover:text-amber transition-colors underline underline-offset-4">
+                    Meer over de installatie
+                    <Pijl />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
