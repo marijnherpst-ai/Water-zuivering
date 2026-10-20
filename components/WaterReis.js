@@ -1,103 +1,235 @@
-// Animated cross-section of the 3-stage system: particles fall in from the tap
-// and get stuck in the layer that stops them; only clear water reaches the glass.
-// Positions are fixed (no Math.random) so server and client markup match.
+// Technical cut-away of the 3-stage system. Particles fan out from the inlet and
+// get caught in the layer that stops them; only water reaches the glass.
+// All positions are fixed (no Math.random) so server and client markup match.
 
-const LAGEN = [
-  { y: 70, h: 100, naam: 'PPC-voorfilter', regels: ['vangt zand,', 'roest en slib'], fill: '#F6E7C4' },
-  { y: 170, h: 110, naam: 'RO-membraan', regels: ['houdt PFAS,', 'medicijnresten,', 'kalk en lood tegen'], fill: '#FBF1DA' },
-  { y: 280, h: 70, naam: 'CTO-nafilter', regels: ['haalt bijsmaak', 'en geur weg'], fill: '#2A2D33' },
-];
-
-// [x, stopY, r, kleur, vertraging in s]
+// [eindX, eindY, straal, kleur, vertraging in s]
 const DEELTJES = [
-  // zand en roest: blijven in het voorfilter
-  [132, 92, 5, '#9A6B3C', 0], [198, 104, 4.5, '#B5652B', 1.4], [226, 88, 5.5, '#9A6B3C', 2.8], [160, 112, 4, '#B5652B', 4.1],
-  // PFAS, medicijnresten, kalk: blijven op het membraan
-  [142, 182, 2.6, '#D9467A', 0.6], [176, 182, 2.4, '#7B5CD6', 2.0], [212, 182, 2.8, '#D9467A', 3.3], [124, 182, 2.4, '#3E8E7E', 4.6], [232, 182, 2.4, '#7B5CD6', 5.4], [190, 182, 2.2, '#3E8E7E', 1.1],
-  // bijsmaak: blijft in het koolfilter
-  [150, 296, 3, '#8A8F98', 1.8], [206, 300, 3, '#8A8F98', 3.9],
+  // zand en roest -> voorfilter
+  [78, 96, 3.2, '#C8925A', 0], [150, 108, 2.8, '#D0703A', 1.5], [168, 84, 3.4, '#C8925A', 3.0], [100, 122, 2.6, '#D0703A', 4.4],
+  // PFAS, medicijnresten, kalk, lood -> membraan
+  [74, 247, 1.9, '#FF5C8A', 0.7], [98, 247, 1.8, '#A98BFF', 2.2], [142, 247, 2.0, '#F2F2F2', 3.5], [164, 247, 1.9, '#8FB3CC', 4.9], [118, 247, 1.8, '#FF5C8A', 5.8], [86, 247, 2.0, '#F2F2F2', 1.2],
+  // bijsmaak -> koolfilter
+  [96, 338, 2.1, '#9BA3AE', 2.6], [150, 342, 2.1, '#9BA3AE', 5.1],
 ];
 
-// waterdruppels gaan helemaal door tot in het glas
-const DRUPPELS = [[170, 0.3], [190, 1.6], [180, 2.9], [175, 4.2], [185, 5.5]];
+const DRUPPELS = [0.2, 1.6, 3.0, 4.4, 5.8];
 
-export default function WaterReis() {
+// al eerder opgevangen deeltjes: geven de lagen een "gebruikte" textuur
+const OPGEVANGEN = [
+  [70, 247, '#FF5C8A'], [108, 247, '#A98BFF'], [132, 247, '#F2F2F2'], [156, 247, '#8FB3CC'], [176, 247, '#A98BFF'],
+  [90, 78, '#C8925A'], [128, 92, '#D0703A'], [160, 128, '#C8925A'], [70, 140, '#D0703A'],
+];
+
+const LABELS = [
+  { top: '4.2%', tag: 'In', titel: 'Kraanwater', tekst: null },
+  { top: '23.7%', tag: '01', titel: 'PPC-voorfilter', tekst: 'Vangt zand, roest en slib' },
+  { top: '48.7%', tag: '02', titel: 'RO-membraan', tekst: 'Houdt PFAS, medicijnresten, kalk en lood tegen' },
+  { top: '71.7%', tag: '03', titel: 'CTO-nafilter', tekst: 'Haalt bijsmaak en geur weg' },
+  { top: '94.6%', tag: 'Uit', titel: 'Zuiver water', tekst: null },
+];
+
+const LEGENDA = [
+  ['#C8925A', 'Zand en roest'],
+  ['#FF5C8A', 'PFAS'],
+  ['#A98BFF', 'Medicijnresten'],
+  ['#F2F2F2', 'Kalk'],
+  ['#8FB3CC', 'Lood'],
+  ['#9BA3AE', 'Bijsmaak'],
+  ['#7FD3FF', 'Water'],
+];
+
+const LEADERS = [[22, 128], [123, 188], [253, 188], [373, 188], [492, 148]];
+
+export default function WaterReis({ monoClass = '' }) {
   return (
-    <figure className="waterreis relative">
+    <figure
+      className="waterreis relative overflow-hidden rounded-[2rem] bg-ink p-6 md:p-8 shadow-2xl shadow-ink/25"
+      style={{
+        backgroundImage:
+          'radial-gradient(circle at 85% 0%, rgba(237,167,27,0.16), transparent 55%), radial-gradient(circle at 10% 100%, rgba(127,211,255,0.08), transparent 50%), linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px)',
+        backgroundSize: 'auto, auto, 24px 24px, 24px 24px',
+      }}
+    >
       <style>{`
-        .waterreis .wr-p { animation: wr-val 6.5s cubic-bezier(.45,.05,.55,.95) infinite both; }
-        .waterreis .wr-d { animation: wr-door 6.5s cubic-bezier(.45,.05,.55,.95) infinite both; }
+        .waterreis .wr-p { animation: wr-val 7s cubic-bezier(.4,0,.2,1) infinite both; }
+        .waterreis .wr-d { animation: wr-door 7s cubic-bezier(.45,0,.55,1) infinite both; }
+        .waterreis .wr-flow { animation: wr-flow .9s linear infinite; }
+        .waterreis .wr-pulse { animation: wr-pulse 3.2s ease-in-out infinite; }
         @keyframes wr-val {
-          0% { transform: translateY(0); opacity: 0; }
-          8% { opacity: 1; }
-          35% { transform: translateY(var(--stop)); }
-          85% { transform: translateY(var(--stop)); opacity: 1; }
-          100% { transform: translateY(var(--stop)); opacity: 0; }
+          0% { transform: translate(0,0); opacity: 0; }
+          6% { opacity: 1; }
+          34% { transform: translate(var(--dx), var(--dy)); }
+          86% { transform: translate(var(--dx), var(--dy)); opacity: 1; }
+          100% { transform: translate(var(--dx), var(--dy)); opacity: 0; }
         }
         @keyframes wr-door {
           0% { transform: translateY(0); opacity: 0; }
-          8% { opacity: .95; }
-          70% { transform: translateY(390px); opacity: .95; }
-          80%, 100% { transform: translateY(390px); opacity: 0; }
+          6% { opacity: 1; }
+          64% { transform: translateY(456px); opacity: 1; }
+          72%, 100% { transform: translateY(456px); opacity: 0; }
         }
+        @keyframes wr-flow { to { stroke-dashoffset: -24; } }
+        @keyframes wr-pulse { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
         @media (prefers-reduced-motion: reduce) {
-          .waterreis .wr-p { animation: none; transform: translateY(var(--stop)); }
-          .waterreis .wr-d { animation: none; opacity: 0; }
+          .waterreis .wr-p { animation: none; transform: translate(var(--dx), var(--dy)); }
+          .waterreis .wr-d, .waterreis .wr-flow, .waterreis .wr-pulse { animation: none; }
+          .waterreis .wr-d { opacity: 0; }
         }
       `}</style>
-      <svg viewBox="0 0 400 470" className="w-full h-auto" role="img" aria-labelledby="wr-titel">
-        <title id="wr-titel">Doorsnede van een waterfilter met drie lagen: het voorfilter vangt zand en roest, het RO-membraan houdt PFAS, medicijnresten en kalk tegen, het nafilter haalt bijsmaak weg. Alleen schoon water komt in het glas.</title>
 
-        {/* kraan */}
-        <path d="M150 8h60v14h-22v12h-16V22h-22z" fill="#0B0D10" />
-        <text x="222" y="20" fontSize="11" fill="#5B6472" fontWeight="600">kraanwater</text>
+      <figcaption className={`${monoClass} text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-amber`}>
+        Doorsnede · 3-traps omgekeerde osmose
+      </figcaption>
 
-        {/* kolom */}
-        <rect x="108" y="56" width="144" height="306" rx="22" fill="#FFFFFF" stroke="#E4E7EC" strokeWidth="2" />
-        {LAGEN.map((l, i) => (
-          <g key={l.naam}>
-            <rect x="114" y={l.y} width="132" height={l.h} rx={i === 0 ? 16 : i === 2 ? 16 : 0} fill={l.fill} />
-          </g>
-        ))}
-        {/* textuur voorfilter */}
-        {[0, 1, 2, 3, 4, 5].map((r) => [0, 1, 2, 3, 4, 5, 6].map((c) => (
-          <circle key={`${r}-${c}`} cx={124 + c * 19 + (r % 2) * 9} cy={84 + r * 15} r="1.6" fill="#E3C98C" />
-        )))}
-        {/* membraan */}
-        <path d="M114 190 q11 -6 22 0 t22 0 t22 0 t22 0 t22 0 t22 0" stroke="#EDA71B" strokeWidth="3" fill="none" />
-        <path d="M114 196 q11 -6 22 0 t22 0 t22 0 t22 0 t22 0 t22 0" stroke="#EDA71B" strokeWidth="1.2" fill="none" opacity=".5" />
-        {/* koolkorrels */}
-        {[0, 1, 2].map((r) => [0, 1, 2, 3, 4, 5].map((c) => (
-          <rect key={`k${r}-${c}`} x={122 + c * 21 + (r % 2) * 8} y={292 + r * 18} width="7" height="5" rx="1.5" fill="#43474F" />
-        )))}
+      <div className="relative mt-6 max-w-[440px] mx-auto">
+        <svg viewBox="0 0 240 520" className="block w-[52%] h-auto" role="img" aria-labelledby="wr-titel">
+          <title id="wr-titel">Doorsnede van een osmose waterfilter met drie lagen. Het PPC-voorfilter vangt zand en roest, het RO-membraan houdt PFAS, medicijnresten, kalk en lood tegen, en het CTO-nafilter haalt bijsmaak weg. Alleen zuiver water komt in het glas.</title>
+          <defs>
+            <linearGradient id="wr-metal" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stopColor="#2B2F35" />
+              <stop offset=".28" stopColor="#9097A0" />
+              <stop offset=".55" stopColor="#5A6069" />
+              <stop offset="1" stopColor="#24272C" />
+            </linearGradient>
+            <linearGradient id="wr-glass" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stopColor="#FFFFFF" stopOpacity=".14" />
+              <stop offset=".35" stopColor="#FFFFFF" stopOpacity=".03" />
+              <stop offset=".7" stopColor="#FFFFFF" stopOpacity=".02" />
+              <stop offset="1" stopColor="#FFFFFF" stopOpacity=".12" />
+            </linearGradient>
+            <linearGradient id="wr-ppc" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stopColor="#DCC08C" />
+              <stop offset="1" stopColor="#A9844B" />
+            </linearGradient>
+            <linearGradient id="wr-ro" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stopColor="#1C2027" />
+              <stop offset=".5" stopColor="#262B33" />
+              <stop offset="1" stopColor="#1A1D23" />
+            </linearGradient>
+            <radialGradient id="wr-korrel" cx=".35" cy=".3" r=".8">
+              <stop offset="0" stopColor="#5C626C" />
+              <stop offset="1" stopColor="#1E2126" />
+            </radialGradient>
+            <linearGradient id="wr-water" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stopColor="#A9E3FF" />
+              <stop offset="1" stopColor="#3BA7E0" />
+            </linearGradient>
+            <clipPath id="wr-binnen">
+              <rect x="58" y="66" width="124" height="354" rx="3" />
+            </clipPath>
+            <filter id="wr-glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="2.2" result="b" />
+              <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+            </filter>
+          </defs>
 
-        {/* labels */}
-        {LAGEN.map((l, i) => (
-          <g key={`lbl-${l.naam}`}>
-            <line x1="252" x2="268" y1={l.y + l.h / 2} y2={l.y + l.h / 2} stroke="#C6890F" strokeWidth="1.5" />
-            <text x="274" y={l.y + l.h / 2 - 3} fontSize="12.5" fontWeight="800" fill="#0B0D10">{l.naam}</text>
-            {l.regels.map((r, j) => (
-              <text key={r} x="274" y={l.y + l.h / 2 + 13 + j * 13} fontSize="10.5" fill="#5B6472">{r}</text>
+          {/* inlaat */}
+          <rect x="113" y="0" width="14" height="46" fill="url(#wr-metal)" />
+          <rect x="104" y="36" width="32" height="9" rx="2" fill="url(#wr-metal)" />
+
+          {/* behuizing */}
+          <rect x="52" y="62" width="136" height="362" rx="6" fill="#0F1115" />
+          <g clipPath="url(#wr-binnen)">
+            {/* 01 voorfilter: vezels */}
+            <rect x="58" y="66" width="124" height="114" fill="url(#wr-ppc)" />
+            {Array.from({ length: 13 }, (_, i) => (
+              <path key={`v${i}`} d={`M56 ${74 + i * 8.5} q8 -3 16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0`} stroke="#FFFFFF" strokeOpacity=".22" strokeWidth=".7" fill="none" />
             ))}
-            <text x="96" y={l.y + 16} fontSize="10" fontWeight="700" fill="#C6890F" textAnchor="end">{i + 1}</text>
+            <rect x="58" y="180" width="124" height="5" fill="#0B0D10" />
+
+            {/* 02 membraan: gewikkelde lagen */}
+            <rect x="58" y="185" width="124" height="136" fill="url(#wr-ro)" />
+            {Array.from({ length: 11 }, (_, i) => (
+              <path key={`m${i}`} d={`M56 ${193 + i * 12} q7 -2.5 14 0 t14 0 t14 0 t14 0 t14 0 t14 0 t14 0 t14 0 t14 0`} stroke="#EDA71B" strokeOpacity=".16" strokeWidth=".8" fill="none" />
+            ))}
+            <path className="wr-pulse" d="M56 253 q7 -3 14 0 t14 0 t14 0 t14 0 t14 0 t14 0 t14 0 t14 0 t14 0" stroke="#EDA71B" strokeWidth="2" fill="none" filter="url(#wr-glow)" />
+            <rect x="58" y="321" width="124" height="5" fill="#0B0D10" />
+
+            {/* 03 koolfilter: korrels */}
+            <rect x="58" y="326" width="124" height="94" fill="#121418" />
+            {Array.from({ length: 5 }, (_, r) => Array.from({ length: 8 }, (_, c) => (
+              <rect
+                key={`k${r}-${c}`}
+                x={60 + c * 15.5 + (r % 2) * 7}
+                y={332 + r * 17.5}
+                width={9 + ((r + c) % 3)}
+                height={6 + ((r * 2 + c) % 3)}
+                rx="2.5"
+                transform={`rotate(${((r * 7 + c * 13) % 40) - 20} ${64 + c * 15.5 + (r % 2) * 7} ${335 + r * 17.5})`}
+                fill="url(#wr-korrel)"
+              />
+            )))}
+
+            {/* stroming door het filter */}
+            <path className="wr-flow" d="M120 66 V420" stroke="#7FD3FF" strokeOpacity=".75" strokeWidth="1.6" strokeDasharray="3 9" strokeLinecap="round" filter="url(#wr-glow)" />
+
+            {/* eerder opgevangen deeltjes */}
+            {OPGEVANGEN.map(([x, y, kleur], i) => (
+              <circle key={`o${i}`} cx={x} cy={y} r="1.6" fill={kleur} opacity=".45" />
+            ))}
           </g>
-        ))}
 
-        {/* afvoer naar glas */}
-        <path d="M180 362v34" stroke="#BFE0F3" strokeWidth="4" strokeLinecap="round" />
-        {/* glas */}
-        <path d="M146 400h68l-7 62h-54z" fill="#FFFFFF" stroke="#C9CDD1" strokeWidth="2" />
-        <path d="M150 420h60l-4.6 40h-50.8z" fill="#BFE0F3" />
-        <text x="222" y="440" fontSize="11" fill="#0B0D10" fontWeight="700">zuiver water</text>
+          {/* glas van de behuizing */}
+          <rect x="52" y="62" width="136" height="362" rx="6" fill="url(#wr-glass)" stroke="#FFFFFF" strokeOpacity=".18" />
+          <rect x="60" y="70" width="4" height="346" rx="2" fill="#FFFFFF" opacity=".12" />
+          <rect x="178" y="70" width="1.5" height="346" rx=".75" fill="#FFFFFF" opacity=".08" />
 
-        {/* deeltjes */}
-        {DEELTJES.map(([x, stop, r, kleur, delay], i) => (
-          <circle key={`p${i}`} className="wr-p" cx={x} cy="30" r={r} fill={kleur} style={{ '--stop': `${stop - 30}px`, animationDelay: `${delay}s` }} />
+          {/* kappen */}
+          <rect x="46" y="44" width="148" height="22" rx="7" fill="url(#wr-metal)" />
+          <rect x="46" y="420" width="148" height="22" rx="7" fill="url(#wr-metal)" />
+          <rect x="46" y="62" width="148" height="1.5" fill="#000000" opacity=".4" />
+          <rect x="46" y="420" width="148" height="1.5" fill="#FFFFFF" opacity=".12" />
+
+          {/* uitlaat en glas */}
+          <rect x="114" y="442" width="12" height="20" fill="url(#wr-metal)" />
+          <path d="M95 481 h50 l-3.2 32 h-43.6 z" fill="url(#wr-water)" opacity=".9" />
+          <path d="M95 481 h50" stroke="#FFFFFF" strokeOpacity=".6" strokeWidth="1" />
+          <path d="M91 466 h58 l-5.5 51 h-47 z" fill="#FFFFFF" fillOpacity=".04" stroke="#FFFFFF" strokeOpacity=".4" strokeWidth="1.2" />
+          <path d="M95 470 l3.6 42" stroke="#FFFFFF" strokeOpacity=".25" strokeWidth="1.5" strokeLinecap="round" />
+
+          {/* aanwijslijnen */}
+          {LEADERS.map(([y, x]) => (
+            <g key={`l${y}`}>
+              <path d={`M${x} ${y} H238`} stroke="#EDA71B" strokeOpacity=".55" strokeWidth="1" />
+              <circle cx={x} cy={y} r="2.2" fill="#EDA71B" />
+            </g>
+          ))}
+
+          {/* bewegende deeltjes en druppels */}
+          {DEELTJES.map(([x, y, r, kleur, delay], i) => (
+            <circle
+              key={`p${i}`}
+              className="wr-p"
+              cx="120"
+              cy="30"
+              r={r}
+              fill={kleur}
+              filter="url(#wr-glow)"
+              style={{ '--dx': `${x - 120}px`, '--dy': `${y - 30}px`, animationDelay: `${delay}s` }}
+            />
+          ))}
+          {DRUPPELS.map((delay, i) => (
+            <path key={`d${i}`} className="wr-d" d="M120 24c2 2.8 3.6 4.8 3.6 6.6a3.6 3.6 0 01-7.2 0c0-1.8 1.6-3.8 3.6-6.6z" fill="#7FD3FF" filter="url(#wr-glow)" style={{ animationDelay: `${delay}s` }} />
+          ))}
+        </svg>
+
+        {LABELS.map((l) => (
+          <div key={l.titel} className="absolute left-[55%] right-0 -translate-y-1/2" style={{ top: l.top }}>
+            <p className={`${monoClass} text-[10px] uppercase tracking-[0.18em] text-amber`}>{l.tag}</p>
+            <p className="font-display text-sm md:text-base font-bold text-white leading-tight">{l.titel}</p>
+            {l.tekst && <p className="mt-0.5 text-[11px] md:text-xs text-white/55 leading-snug">{l.tekst}</p>}
+          </div>
         ))}
-        {DRUPPELS.map(([x, delay], i) => (
-          <path key={`d${i}`} className="wr-d" d={`M${x} 26c2.2 3 4 5.2 4 7.2a4 4 0 01-8 0c0-2 1.8-4.2 4-7.2z`} fill="#6DB6E0" style={{ animationDelay: `${delay}s` }} />
+      </div>
+
+      <ul className={`${monoClass} mt-6 pt-5 border-t border-white/10 flex flex-wrap gap-x-4 gap-y-2 text-[10px] uppercase tracking-[0.12em] text-white/60`}>
+        {LEGENDA.map(([kleur, naam]) => (
+          <li key={naam} className="inline-flex items-center gap-1.5">
+            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: kleur, boxShadow: `0 0 6px ${kleur}` }} />
+            {naam}
+          </li>
         ))}
-      </svg>
+      </ul>
     </figure>
   );
 }

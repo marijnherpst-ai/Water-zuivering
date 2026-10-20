@@ -77,7 +77,7 @@ const USPS = ['10 jaar garantie', 'Geplaatst in 1 à 2 uur', 'Filtert tot 99% va
 const CIJFERS = [
   ['tot 99%', 'Filtratie'],
   ['1,58 L/min', 'Gefilterd water'],
-  ['10,5 cm', 'Breedte onder aanrecht'],
+  ['10,5 cm', 'Breedte'],
   ['10 jaar', 'Garantie'],
 ];
 
@@ -188,6 +188,17 @@ export default async function Page() {
                   </li>
                 ))}
               </ul>
+              {avgRating && (
+                <Link href="/reviews" className="cursor-pointer mt-6 inline-flex items-center gap-3 rounded-full border border-edge bg-white/80 py-1.5 pl-2 pr-4 shadow-sm hover:border-amber transition-colors">
+                  <span className="flex items-center gap-0.5 rounded-full bg-ink px-2.5 py-1">
+                    <Stars rating={Math.round(Number(avgRating))} />
+                  </span>
+                  <span className="text-sm text-ink">
+                    <strong className="font-bold">{String(avgRating).replace('.', ',')}</strong>
+                    <span className="text-dim"> uit 5 · {reviewCount} {reviewCount === 1 ? 'review' : 'reviews'}</span>
+                  </span>
+                </Link>
+              )}
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-3.5 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">
                   Vraag vrijblijvend een offerte aan
@@ -203,11 +214,8 @@ export default async function Page() {
             </div>
             <div className="relative">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
-              <div className="relative rounded-[2rem] border border-edge bg-white/70 backdrop-blur-sm p-6 md:p-8 shadow-xl shadow-ink/5">
-                <p className={`${mono.className} text-[11px] uppercase tracking-[0.18em] text-amber-dark`}>Wat er gebeurt tussen kraan en glas</p>
-                <div className="mt-4">
-                  <WaterReis />
-                </div>
+              <div className="relative">
+                <WaterReis monoClass={mono.className} />
               </div>
             </div>
           </div>
@@ -220,7 +228,7 @@ export default async function Page() {
               {CIJFERS.map(([getal, label], i) => (
                 <div key={label} className={`px-5 py-5 ${i % 2 === 1 ? 'border-l border-white/15' : ''} ${i > 1 ? 'border-t md:border-t-0 border-white/15' : ''} ${i === 2 ? 'md:border-l' : ''}`}>
                   <p className="text-[10px] uppercase tracking-[0.18em] text-white/45">{label}</p>
-                  <p className="mt-1.5 text-xl sm:text-2xl md:text-3xl font-semibold text-amber whitespace-nowrap">{getal}</p>
+                  <p className="mt-1.5 text-xl sm:text-2xl lg:text-3xl font-semibold text-amber whitespace-nowrap">{getal}</p>
                 </div>
               ))}
             </div>
