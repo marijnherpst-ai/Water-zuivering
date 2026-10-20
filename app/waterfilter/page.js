@@ -23,6 +23,30 @@ function Stars({ rating }) {
   );
 }
 
+function Pill({ waarde }) {
+  if (waarde === 'Ja') {
+    return (
+      <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" /></svg>
+        Ja
+      </span>
+    );
+  }
+  if (waarde === 'Deels') {
+    return <span className="inline-flex items-center rounded-full bg-amber/15 px-3 py-1 text-xs font-bold text-amber-dark">Deels</span>;
+  }
+  return <span className="inline-flex items-center rounded-full bg-bg px-3 py-1 text-xs font-semibold text-dim">{waarde}</span>;
+}
+
+const ICONS = {
+  lagen: 'M12 3l9 5-9 5-9-5 9-5zm-9 9l9 5 9-5M3 16l9 5 9-5',
+  kraan: 'M12 3c3 4 6 7.5 6 11a6 6 0 01-12 0c0-3.5 3-7 6-11z',
+  monteur: 'M14.7 6.3a4 4 0 00-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 005.4-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6z',
+  display: 'M4 5h16v11H4zM9 20h6M12 16v4',
+  stil: 'M4 10v4h4l5 4V6L8 10H4zm13-1a4 4 0 010 6',
+  schild: 'M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6l8-3zm-3.5 9l2.5 2.5 4.5-5',
+};
+
 export const dynamic = 'force-dynamic';
 
 export const metadata = {
@@ -32,10 +56,16 @@ export const metadata = {
 };
 
 const TYPES = [
-  ['Filterkan', 'Goedkoopst en direct te gebruiken, maar filtert alleen chloor en smaakstoffen. PFAS, kalk en medicijnresten gaan er gewoon doorheen. Filter moet elke maand vervangen worden.'],
+  ['Filterkan', 'Goedkoopst en direct te gebruiken, maar filtert alleen chloor en smaakstoffen. PFAS, kalk en medicijnresten gaan er gewoon doorheen. Het patroon moet om de paar weken vervangen worden.'],
   ['Opzetstuk op de kraan', 'Klikt om je bestaande kraan heen, filtert continu zonder bijvullen. Vergelijkbare beperking als de filterkan: prima tegen smaak, niet tegen fijnere verontreinigingen.'],
   ['Waterfilter kraan (3-weg of geïntegreerd)', 'Een apart, compact systeem onder de gootsteen met een eigen kraantje erboven. Hier zit meestal een uitgebreider filterpakket achter, tot en met omgekeerde osmose.'],
   ['Omgekeerde-osmosesysteem', 'De meest grondige optie: een membraan dat op moleculair niveau filtert. Verwijdert kalk, lood, PFAS, medicijnresten en microplastics — niet alleen de smaak, maar ook wat je niet proeft.'],
+];
+
+const KOSTEN = [
+  ['Filterkan', 'Een paar tientjes', 'Nieuw patroon elke 4 à 6 weken'],
+  ['Opzetstuk', 'Een paar tientjes', 'Nieuw filter elke 2 à 3 maanden'],
+  ['Osmosesysteem', 'Via offerte, inclusief plaatsing', 'Ongeveer €135 per jaar aan filters'],
 ];
 
 const USPS = ['10 jaar garantie', 'Geplaatst in 1 à 2 uur', 'Filtert tot 99% van onzuiverheden', 'Eigen kraan op je aanrecht'];
@@ -66,6 +96,8 @@ const MATRIX = [
   ['Microplastics', 'Deels', 'Deels', 'Ja'],
   ['Onbeperkt water uit de kraan', 'Nee', 'Ja', 'Ja'],
 ];
+
+const INBEGREPEN_ICONS = ['lagen', 'kraan', 'monteur', 'display', 'stil', 'schild'];
 
 const INBEGREPEN = [
   ['Drie filtertrappen', 'Een PPC-voorfilter voor zand en roest, het RO-membraan voor de fijnste stoffen en een CTO-nafilter dat de smaak afrondt.'],
@@ -212,16 +244,28 @@ export default async function Page() {
           <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-center">Vier soorten waterfilters, van simpel tot compleet</h2>
             <p className="mt-3 text-dim text-center max-w-xl mx-auto">Gerangschikt van minst naar meest grondig — niet elk type lost hetzelfde probleem op.</p>
-            <div className="mt-10 space-y-5">
-              {TYPES.map(([titel, uitleg], i) => (
-                <div key={titel} className="reveal rounded-2xl card p-6 flex gap-4">
-                  <span className="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-amber text-ink text-sm font-bold">{i + 1}</span>
-                  <div>
-                    <p className="font-display font-bold text-ink">{titel}</p>
-                    <p className="mt-1.5 text-sm text-dim leading-relaxed">{uitleg}</p>
+            <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {TYPES.map(([titel, uitleg], i) => {
+                const top = i === TYPES.length - 1;
+                return (
+                  <div key={titel} className={`reveal relative flex flex-col rounded-3xl p-6 transition-transform hover:-translate-y-1 ${top ? 'bg-ink text-white shadow-xl shadow-ink/20' : 'card'}`}>
+                    {top && (
+                      <span className="absolute -top-3 left-6 rounded-full bg-amber px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-ink">Meest grondig</span>
+                    )}
+                    <span className={`text-xs font-bold uppercase tracking-widest ${top ? 'text-amber' : 'text-amber-dark'}`}>Type {i + 1}</span>
+                    <p className={`mt-2 font-display text-lg font-extrabold leading-tight ${top ? 'text-white' : 'text-ink'}`}>{titel}</p>
+                    <p className={`mt-3 text-sm leading-relaxed flex-1 ${top ? 'text-white/70' : 'text-dim'}`}>{uitleg}</p>
+                    <div className="mt-5">
+                      <p className={`text-[11px] font-bold uppercase tracking-wider ${top ? 'text-white/50' : 'text-dim'}`}>Grondigheid</p>
+                      <div className="mt-2 flex gap-1.5" aria-label={`Grondigheid ${i + 1} van 4`}>
+                        {[0, 1, 2, 3].map((n) => (
+                          <span key={n} className={`h-2 flex-1 rounded-full ${n <= i ? 'bg-amber' : top ? 'bg-white/15' : 'bg-edge'}`} />
+                        ))}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
             <p className="mt-8 text-dim leading-relaxed max-w-3xl mx-auto text-center">
               Twijfel je tussen de laatste twee opties? We zetten ze uitgebreider tegenover elkaar in <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">beste waterfilter voor thuis</Link>. Weet je al welk probleem je wilt oplossen, zoals chloor, kalk of PFAS? Dan helpt <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter kiezen per probleem</Link> je sneller verder.
@@ -250,23 +294,23 @@ export default async function Page() {
             <p className="mt-4 text-dim leading-relaxed max-w-3xl">
               Op de verpakking belooft bijna elk filter "zuiver water". Deze tabel laat zien wat de verschillende typen in de praktijk aankunnen. Bij filterkannen en opzetstukken verschilt het per merk en patroon, dus zie het als richtlijn.
             </p>
-            <div className="mt-8 overflow-x-auto rounded-2xl border border-edge">
+            <div className="mt-8 overflow-x-auto rounded-3xl card">
               <table className="w-full text-sm text-left">
-                <thead className="bg-bg">
+                <thead>
                   <tr>
-                    <th className="p-4 font-display">Wat wil je kwijt?</th>
-                    <th className="p-4 font-display">Filterkan</th>
-                    <th className="p-4 font-display">Opzetstuk</th>
-                    <th className="p-4 font-display">Osmosesysteem</th>
+                    <th className="p-4 md:p-5 font-display text-ink">Wat wil je kwijt?</th>
+                    <th className="p-4 md:p-5 font-display text-ink">Filterkan</th>
+                    <th className="p-4 md:p-5 font-display text-ink">Opzetstuk</th>
+                    <th className="p-4 md:p-5 font-display text-ink bg-amber/10 rounded-t-2xl">Osmosesysteem</th>
                   </tr>
                 </thead>
                 <tbody>
                   {MATRIX.map(([stof, kan, opzet, ro]) => (
                     <tr key={stof} className="border-t border-edge">
-                      <th className="p-4 font-semibold text-ink">{stof}</th>
-                      <td className="p-4 text-dim">{kan}</td>
-                      <td className="p-4 text-dim">{opzet}</td>
-                      <td className="p-4 font-semibold text-ink">{ro}</td>
+                      <th className="p-4 md:p-5 font-semibold text-ink">{stof}</th>
+                      <td className="p-4 md:p-5"><Pill waarde={kan} /></td>
+                      <td className="p-4 md:p-5"><Pill waarde={opzet} /></td>
+                      <td className="p-4 md:p-5 bg-amber/10"><Pill waarde={ro} /></td>
                     </tr>
                   ))}
                 </tbody>
@@ -310,8 +354,28 @@ export default async function Page() {
 
         {/* PRIJS OVERZICHT */}
         <section id="kosten" className="relative scroll-mt-24">
-          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+          <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat kost een waterfilter, per type?</h2>
+            <div className="mt-8 grid md:grid-cols-3 gap-5">
+              {KOSTEN.map(([type, aanschaf, doorlopend], i) => {
+                const top = i === KOSTEN.length - 1;
+                return (
+                  <div key={type} className={`reveal rounded-3xl p-6 ${top ? 'bg-amber/10 border-2 border-amber' : 'card'}`}>
+                    <p className="font-display text-lg font-extrabold text-ink">{type}</p>
+                    <dl className="mt-4 space-y-3 text-sm">
+                      <div>
+                        <dt className="text-[11px] font-bold uppercase tracking-wider text-dim">Aanschaf</dt>
+                        <dd className="mt-0.5 font-semibold text-ink">{aanschaf}</dd>
+                      </div>
+                      <div>
+                        <dt className="text-[11px] font-bold uppercase tracking-wider text-dim">Doorlopend</dt>
+                        <dd className="mt-0.5 font-semibold text-ink">{doorlopend}</dd>
+                      </div>
+                    </dl>
+                  </div>
+                );
+              })}
+            </div>
             <p className="mt-4 text-dim leading-relaxed">
               De prijs loopt sterk uiteen, en dat is direct gekoppeld aan hoe grondig een filter werkt. Een filterkan of opzetstuk is de laagste instapkosten, maar de doorlopende kosten (nieuwe patronen, elke paar weken tot maanden) tikken op jaarbasis alsnog aardig aan. Een compleet omgekeerde-osmosesysteem kost meer bij aanschaf, maar de filters gaan een stuk langer mee — bij ons het voor- en nafilter een jaar en het membraan twee jaar. Gemiddeld kom je zo op ongeveer €135 per jaar aan filters, voor onbeperkt gefilterd water.
             </p>
@@ -328,7 +392,7 @@ export default async function Page() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Onze aanpak</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wij kiezen bewust voor omgekeerde osmose</h2>
               <p className="mt-4 text-dim leading-relaxed">
-                Bij Water-zuivering verkopen we geen filterkannen of opzetstukken — we geloven dat de moeite van een echt systeem het waard is als je toch al voor een waterfilter kiest. Ons systeem past compact onder je gootsteen, wordt binnen één werkdag geïnstalleerd, en levert zuiver water via een eigen kraantje op je aanrecht.
+                Bij Water-zuivering verkopen we geen filterkannen of opzetstukken — we geloven dat de moeite van een echt systeem het waard is als je toch al voor een waterfilter kiest. Ons systeem past compact onder je gootsteen, wordt in 1 à 2 uur geplaatst door onze eigen monteur, en levert zuiver water via een eigen kraantje op je aanrecht.
               </p>
               <p className="mt-4 text-dim leading-relaxed">
                 Inclusief 10 jaar garantie, en zonder dat je ooit nog een filterkan hoeft bij te vullen.
@@ -354,9 +418,12 @@ export default async function Page() {
               </p>
             </div>
             <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {INBEGREPEN.map(([titel, uitleg]) => (
-                <div key={titel} className="reveal rounded-2xl card p-6">
-                  <p className="font-display font-bold text-ink">{titel}</p>
+              {INBEGREPEN.map(([titel, uitleg], i) => (
+                <div key={titel} className="reveal rounded-3xl card p-6 transition-transform hover:-translate-y-1">
+                  <span className="flex items-center justify-center w-11 h-11 rounded-2xl bg-amber/15 text-amber-dark">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d={ICONS[INBEGREPEN_ICONS[i]]} stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                  </span>
+                  <p className="mt-4 font-display font-bold text-ink">{titel}</p>
                   <p className="mt-2 text-sm text-dim leading-relaxed">{uitleg}</p>
                 </div>
               ))}
@@ -397,16 +464,22 @@ export default async function Page() {
 
         {/* KRITIEK */}
         <section id="kritiek" className="relative scroll-mt-24">
-          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+          <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kritiek op waterfilters: wat klopt ervan?</h2>
             <p className="mt-4 text-dim leading-relaxed">
               Wie zich verdiept in waterfilters, leest ook kritische geluiden, onder meer van drinkwaterbedrijven. Die nemen we serieus. Dit zijn de vier punten die het vaakst terugkomen, met ons eerlijke antwoord.
             </p>
-            <div className="mt-8 space-y-4">
+            <div className="mt-8 grid md:grid-cols-2 gap-5">
               {KRITIEK.map(([punt, antwoord]) => (
-                <div key={punt} className="reveal rounded-2xl card p-6">
-                  <p className="font-display font-bold text-ink">{punt}</p>
-                  <p className="mt-2 text-sm text-dim leading-relaxed">{antwoord}</p>
+                <div key={punt} className="reveal rounded-3xl card overflow-hidden">
+                  <div className="bg-bg px-6 py-5 border-b border-edge">
+                    <p className="text-[11px] font-bold uppercase tracking-wider text-dim">Wat critici zeggen</p>
+                    <p className="mt-1.5 font-display text-lg font-bold italic text-ink">{punt}</p>
+                  </div>
+                  <div className="px-6 py-5">
+                    <p className="text-[11px] font-bold uppercase tracking-wider text-amber-dark">Ons antwoord</p>
+                    <p className="mt-1.5 text-sm text-dim leading-relaxed">{antwoord}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -417,10 +490,11 @@ export default async function Page() {
         <section className="relative bg-surface border-y border-edge">
           <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-center">Zo koop je een waterfilter bij Water-zuivering</h2>
-            <div className="mt-10 grid md:grid-cols-3 gap-5">
+            <div className="relative mt-12 grid md:grid-cols-3 gap-5">
+              <div className="hidden md:block absolute top-12 left-[16%] right-[16%] border-t-2 border-dashed border-amber/50" aria-hidden="true" />
               {STAPPEN.map(([titel, uitleg], i) => (
-                <div key={titel} className="reveal rounded-2xl card p-6">
-                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-amber text-ink text-sm font-bold">{i + 1}</span>
+                <div key={titel} className="reveal relative rounded-3xl card p-6 text-center">
+                  <span className="mx-auto flex items-center justify-center w-12 h-12 rounded-full bg-amber text-ink font-display text-lg font-extrabold shadow-lg shadow-amber/30">{i + 1}</span>
                   <p className="mt-4 font-display font-bold text-ink">{titel}</p>
                   <p className="mt-2 text-sm text-dim leading-relaxed">{uitleg}</p>
                 </div>
