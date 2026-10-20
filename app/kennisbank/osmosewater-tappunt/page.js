@@ -50,10 +50,10 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waarom niet gewoon uit de bestaande kraan?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Een omgekeerde-osmosesysteem filtert relatief langzaam, omdat het water onder druk door een fijn membraan wordt geperst. Zou je dat direct op je gewone kraan aansluiten, dan zou de druk en de doorstroomsnelheid daar niet op berekend zijn. Daarom krijgt het gefilterde water een eigen, apart kraantje: een dun tappunt dat naast — of gecombineerd met — je bestaande kraan wordt geplaatst.
+              Een omgekeerde-osmosesysteem perst het water onder druk door een fijn membraan. Dat gefilterde water loopt via een eigen leiding, los van je gewone warm- en koudwaterleiding. Daarom krijgt het gefilterde water een eigen, apart kraantje: een dun tappunt dat naast — of gecombineerd met — je bestaande kraan wordt geplaatst.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Het systeem zelf, inclusief een kleine opslagtank, staat meestal weggewerkt in het kastje onder je gootsteen. Alleen het tappunt is zichtbaar op je aanrecht.
+              Het systeem zelf staat weggewerkt in het kastje onder je gootsteen. Alleen het tappunt is zichtbaar op je aanrecht. Een opslagtank is er bij ons systeem niet: het werkt volgens het direct-flow-principe en zuivert het water op het moment dat je de kraan opendraait, met 1,58 liter per minuut.
             </p>
           </div>
         </section>
@@ -104,7 +104,7 @@ export default function Page() {
               </div>
               <div>
                 <h3 className="font-display text-lg font-bold text-ink">Kan ik het tappunt zelf plaatsen?</h3>
-                <p className="mt-2 text-dim leading-relaxed">Technisch gezien kan dat, maar de meeste mensen laten het door een installateur doen — vooral vanwege het boren van het gat in het aanrecht en het correct aansluiten op de opslagtank en het systeem onder de kast. Dat scheelt achteraf gedoe met lekkages.</p>
+                <p className="mt-2 text-dim leading-relaxed">Technisch gezien kan dat, maar de meeste mensen laten het door een installateur doen — vooral vanwege het boren van het gat in het aanrecht en het correct aansluiten op het systeem onder de kast. Dat scheelt achteraf gedoe met lekkages.</p>
               </div>
               <div>
                 <h3 className="font-display text-lg font-bold text-ink">Wat kost een apart tappunt ongeveer?</h3>
@@ -112,7 +112,7 @@ export default function Page() {
               </div>
               <div>
                 <h3 className="font-display text-lg font-bold text-ink">Kan ik later alsnog overstappen naar een 3-weg kraan?</h3>
-                <p className="mt-2 text-dim leading-relaxed">Ja, dat kan meestal zonder het hele systeem te vervangen — alleen het kraanwerk zelf wordt dan omgewisseld. Het systeem en de opslagtank onder de kast blijven ongewijzigd, dus het is vooral een kwestie van de juiste aansluiting op het nieuwe kraanmodel. Hoe zo'n kraan eruitziet, zie je bij onze <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan voor gefilterd water</Link>.</p>
+                <p className="mt-2 text-dim leading-relaxed">Ja, dat kan meestal zonder het hele systeem te vervangen — alleen het kraanwerk zelf wordt dan omgewisseld. Het systeem onder de kast blijft ongewijzigd, dus het is vooral een kwestie van de juiste aansluiting op het nieuwe kraanmodel. Hoe zo'n kraan eruitziet, zie je bij onze <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan voor gefilterd water</Link>.</p>
               </div>
             </div>
           </div>
