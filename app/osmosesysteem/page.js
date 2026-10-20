@@ -9,6 +9,7 @@ import WerkingTabs from '@/components/osmose/WerkingTabs';
 import MaatVergelijker from '@/components/osmose/MaatVergelijker';
 import MineraalUitleg from '@/components/osmose/MineraalUitleg';
 import Binnenkant from '@/components/osmose/Binnenkant';
+import KeuzeKaarten from '@/components/osmose/KeuzeKaarten';
 import ProductSchema from '@/components/ProductSchema';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
@@ -242,17 +243,9 @@ export default async function Page() {
         <section id="kenmerken" className="relative scroll-mt-24">
           <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
             <Kop midden label="Het verschil" titel="Drie dingen die dit osmosesysteem anders maken" />
-            <div className="mt-14 grid md:grid-cols-3 gap-5">
-              {KENMERKEN.map((k, i) => (
-                <div key={k.label} className={`reveal flex flex-col rounded-3xl p-7 transition-transform duration-300 hover:-translate-y-1 ${i === 0 ? 'bg-ink text-white shadow-2xl shadow-ink/25' : 'card'}`} style={i === 0 ? DONKER : undefined}>
-                  <span className={`flex items-center justify-center w-11 h-11 rounded-2xl ${i === 0 ? 'bg-amber/20 text-amber' : 'bg-amber/15 text-amber-dark'}`}>
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d={k.icoon} stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                  </span>
-                  <p className={`${mono.className} mt-5 text-[11px] uppercase tracking-[0.2em] ${i === 0 ? 'text-amber' : 'text-amber-dark'}`}>{k.label}</p>
-                  <h3 className={`mt-2 font-display text-xl font-extrabold leading-snug ${i === 0 ? 'text-white' : 'text-ink'}`}>{k.titel}</h3>
-                  <p className={`mt-3 text-sm leading-relaxed ${i === 0 ? 'text-white/70' : 'text-dim'}`}>{k.tekst}</p>
-                </div>
-              ))}
+            <p className={`${mono.className} mt-4 text-center text-[11px] uppercase tracking-[0.16em] text-dim`}>Klik op een kaart</p>
+            <div className="mt-10">
+              <KeuzeKaarten items={KENMERKEN} monoClass={mono.className} />
             </div>
           </div>
         </section>
@@ -326,20 +319,7 @@ export default async function Page() {
                 </div>
               </div>
               <div>
-                <div className="grid sm:grid-cols-3 gap-4 sm:items-center">
-                  {FILTERS.map((f) => (
-                    <div key={f.naam} className={`reveal relative rounded-3xl p-6 flex flex-col ${f.top ? 'bg-ink text-white shadow-2xl shadow-ink/25 sm:scale-[1.05] z-10' : 'card'}`} style={f.top ? DONKER : undefined}>
-                      <span className={`${mono.className} self-start rounded-full px-2.5 py-1 text-[10px] uppercase tracking-[0.14em] ${f.top ? 'bg-white/10 text-amber' : 'bg-amber/12 text-amber-dark'}`}>{f.interval}</span>
-                      <p className="mt-4 font-display font-bold text-lg">{f.naam}</p>
-                      <p className={`text-xs ${f.top ? 'text-white/50' : 'text-dim'}`}>{f.rol}</p>
-                      <p className={`mt-2 text-sm ${f.top ? 'text-white/65' : 'text-dim'}`}>{f.tekst}</p>
-                      <div className={`mt-5 pt-5 border-t flex items-baseline gap-1 ${f.top ? 'border-white/15' : 'border-edge'}`}>
-                        <span className="font-display text-2xl font-extrabold">{f.prijs}</span>
-                        <span className={`text-xs ${f.top ? 'text-white/55' : 'text-dim'}`}>{f.per}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                <KeuzeKaarten items={FILTERS} variant="filter" start={1} monoClass={mono.className} />
                 <div className="mt-8 rounded-3xl bg-amber/10 border border-amber/25 px-6 py-5">
                   <p className="font-display font-bold text-lg">Gemiddeld ± €135 per jaar aan filters</p>
                   <p className="mt-1 text-sm text-dim">Nog geen €11,50 per maand om je osmosesysteem draaiende te houden, voor zuiver water waar je hele huishouden dagelijks van drinkt. Alle filters vind je in de <Link href="/winkel" className="underline hover:text-ink">winkel</Link>, en het totaalplaatje lees je in <Link href="/kennisbank/wat-kost-een-waterzuiveringssysteem" className="underline hover:text-ink">wat kost een waterzuiveringssysteem</Link>.</p>
