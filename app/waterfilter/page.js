@@ -303,7 +303,7 @@ export default async function Page() {
               midden
               label="Vier soorten"
               titel="Vier soorten waterfilters, van simpel tot compleet"
-              intro="Gerangschikt van minst naar meest grondig — niet elk type lost hetzelfde probleem op."
+              intro="Gerangschikt van minst naar meest grondig — niet elk type waterfilter lost hetzelfde probleem op."
             />
             <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {TYPES.map(([titel, uitleg], i) => {
@@ -361,27 +361,33 @@ export default async function Page() {
             <Kop
               label="Vergelijking"
               titel="Welke waterfilter haalt wat uit je water?"
-              intro={'Op de verpakking belooft bijna elk filter "zuiver water". Deze tabel laat zien wat de verschillende typen in de praktijk aankunnen. Bij filterkannen en opzetstukken verschilt het per merk en patroon, dus zie het als richtlijn.'}
+              intro={'Op de verpakking belooft bijna elk waterfilter "zuiver water". Deze tabel laat zien wat de verschillende typen in de praktijk aankunnen. Bij filterkannen en opzetstukken verschilt het per merk en patroon, dus zie het als richtlijn.'}
             />
-            <div className="mt-10 overflow-x-auto rounded-3xl card">
-              <table className="w-full text-sm text-left">
+            <div className="mt-10 overflow-x-auto rounded-3xl card px-2 pt-3 pb-2">
+              <table className="w-full text-sm text-left border-separate border-spacing-0">
                 <thead>
                   <tr>
-                    <th className="p-4 md:p-5 font-display text-ink">Wat wil je kwijt?</th>
-                    <th className="p-4 md:p-5 font-display text-ink">Filterkan</th>
-                    <th className="p-4 md:p-5 font-display text-ink">Opzetstuk</th>
-                    <th className="p-4 md:p-5 font-display text-white bg-ink">Osmosesysteem</th>
+                    <th className="p-4 md:p-5 align-bottom font-display text-ink">Wat wil je kwijt?</th>
+                    <th className="p-4 md:p-5 align-bottom font-display text-ink">Filterkan</th>
+                    <th className="p-4 md:p-5 align-bottom font-display text-ink">Opzetstuk</th>
+                    <th className="p-4 md:p-5 align-bottom font-display text-ink bg-amber/[0.12] border-x border-t border-amber/50 rounded-t-2xl">
+                      <span className={`${mono.className} block text-[9px] font-semibold uppercase tracking-[0.16em] text-amber-dark`}>Onze keuze</span>
+                      Osmosesysteem
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
-                  {MATRIX.map(([stof, kan, opzet, ro], i) => (
-                    <tr key={stof} className="border-t border-edge">
-                      <th className="p-4 md:p-5 font-semibold text-ink">{stof}</th>
-                      <td className="p-4 md:p-5"><Pill waarde={kan} /></td>
-                      <td className="p-4 md:p-5"><Pill waarde={opzet} /></td>
-                      <td className={`p-4 md:p-5 bg-ink ${i === MATRIX.length - 1 ? 'rounded-br-3xl' : ''}`}><Pill waarde={ro} /></td>
-                    </tr>
-                  ))}
+                  {MATRIX.map(([stof, kan, opzet, ro], i) => {
+                    const laatste = i === MATRIX.length - 1;
+                    return (
+                      <tr key={stof}>
+                        <th className="p-4 md:p-5 border-t border-edge font-semibold text-ink">{stof}</th>
+                        <td className="p-4 md:p-5 border-t border-edge"><Pill waarde={kan} /></td>
+                        <td className="p-4 md:p-5 border-t border-edge"><Pill waarde={opzet} /></td>
+                        <td className={`p-4 md:p-5 bg-amber/[0.06] border-x border-t border-t-amber/20 border-x-amber/50 ${laatste ? 'border-b border-b-amber/50 rounded-b-2xl' : ''}`}><Pill waarde={ro} /></td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
@@ -409,7 +415,7 @@ export default async function Page() {
               donker
               label="Het filterproces"
               titel="Zo werkt ons waterfilter, laag voor laag"
-              intro="Een filterkan of kraan-opzetstuk werkt met actieve kool: goed tegen chloor en smaakstoffen, maar de poriën zijn te grof om kleinere moleculen zoals PFAS tegen te houden. Ons systeem stuurt het water door drie lagen die elk een eigen taak hebben. Scroll mee en zie wat er in elke laag gebeurt."
+              intro="Een filterkan of kraan-opzetstuk werkt met actieve kool: goed tegen chloor en smaakstoffen, maar de poriën zijn te grof om kleinere moleculen zoals PFAS tegen te houden. Ons waterfilter stuurt het water door drie lagen die elk een eigen taak hebben. Scroll mee en zie wat er in elke laag gebeurt."
             />
             <div className="mt-14">
               <FilterLagen monoClass={mono.className} />
@@ -446,7 +452,7 @@ export default async function Page() {
             </div>
             <div className="mt-10 max-w-3xl space-y-4 text-dim leading-relaxed">
               <p>
-                De prijs loopt sterk uiteen, en dat is direct gekoppeld aan hoe grondig een filter werkt. Een filterkan of opzetstuk is de laagste instapkosten, maar de doorlopende kosten (nieuwe patronen, elke paar weken tot maanden) tikken op jaarbasis alsnog aardig aan. Een compleet omgekeerde-osmosesysteem kost meer bij aanschaf, maar de filters gaan een stuk langer mee — bij ons het voor- en nafilter een jaar en het membraan twee jaar. Gemiddeld kom je zo op ongeveer €135 per jaar aan filters, voor onbeperkt gefilterd water.
+                De prijs loopt sterk uiteen, en dat is direct gekoppeld aan hoe grondig een waterfilter werkt. Een filterkan of opzetstuk is de laagste instapkosten, maar de doorlopende kosten (nieuwe patronen, elke paar weken tot maanden) tikken op jaarbasis alsnog aardig aan. Een compleet omgekeerde-osmosesysteem kost meer bij aanschaf, maar de filters gaan een stuk langer mee — bij ons het voor- en nafilter een jaar en het membraan twee jaar. Gemiddeld kom je zo op ongeveer €135 per jaar aan filters, voor onbeperkt gefilterd water.
               </p>
               <p>
                 Reken je het helemaal door inclusief wat je bespaart op flessenwater, dan lees je dat in <Link href="/kennisbank/wat-kost-een-waterzuiveringssysteem" className="underline hover:text-ink">wat kost een waterzuiveringssysteem</Link>.
