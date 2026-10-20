@@ -10,6 +10,7 @@ import MaatVergelijker from '@/components/osmose/MaatVergelijker';
 import MineraalUitleg from '@/components/osmose/MineraalUitleg';
 import Binnenkant from '@/components/osmose/Binnenkant';
 import KeuzeKaarten from '@/components/osmose/KeuzeKaarten';
+import StickyOfferte from '@/components/StickyOfferte';
 import ProductSchema from '@/components/ProductSchema';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
@@ -123,6 +124,8 @@ const INHOUD = [
   ['vragen', 'Veelgestelde vragen'],
 ];
 
+const KEUKENBLADEN = ['Composiet / kunststeen', 'Natuursteen (graniet/marmer)', 'Hout', 'RVS', 'Laminaat', 'Anders / weet ik niet'];
+
 const Vinkje = ({ className = 'text-amber-dark' }) => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className={`shrink-0 ${className}`}><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" /></svg>
 );
@@ -148,7 +151,7 @@ export default async function Page() {
 
       <main>
         {/* HERO */}
-        <section className="relative overflow-hidden">
+        <section id="hero" className="relative overflow-hidden">
           <div className="glow w-[520px] h-[520px] bg-amber/15 -top-44 -left-44 drift" />
           <div className="glow w-72 h-72 bg-amber/10 top-1/3 -right-24 drift2" />
           <div className="relative max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-14 items-center">
@@ -178,7 +181,7 @@ export default async function Page() {
                 </Link>
                 <a href="#binnenkant" className={btnLicht}>Bekijk het osmosesysteem van binnen</a>
               </div>
-              <p className={`${mono.className} mt-6 text-xs text-dim`}>Prijs op aanvraag, inclusief plaatsing · CE / RoHS</p>
+              <p className={`${mono.className} mt-6 text-xs text-dim`}>Gratis en vrijblijvend · klaar in minder dan een minuut · prijs inclusief plaatsing</p>
             </div>
             <div className="relative">
               <div className="absolute -inset-5 rounded-[2.75rem] bg-gradient-to-br from-amber/25 via-amber/5 to-transparent -rotate-2" />
@@ -261,6 +264,44 @@ export default async function Page() {
             />
             <div className="mt-12">
               <Binnenkant monoClass={mono.className} />
+            </div>
+          </div>
+        </section>
+
+        {/* OFFERTE STARTEN */}
+        <section className="relative overflow-hidden bg-amber/10 border-y border-amber/25">
+          <div className="glow w-96 h-96 bg-amber/25 -top-40 -right-20" />
+          <div className="relative max-w-6xl mx-auto px-6 py-16 md:py-20 grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-center">
+            <div>
+              <p className={`${mono.className} text-[11px] uppercase tracking-[0.2em] text-amber-dark`}>Offerte · stap 1 van 3</p>
+              <h2 className="mt-3 font-display text-3xl md:text-[2.5rem] font-extrabold tracking-tight leading-[1.08]">Start je offerte voor het osmosesysteem</h2>
+              <p className="mt-4 text-dim leading-relaxed">Drie korte vragen, klaar in minder dan een minuut. Kies hier alvast je keukenblad, dan ga je direct verder met de rest. Gratis en vrijblijvend.</p>
+              <ul className="mt-6 space-y-2 text-sm font-semibold text-ink">
+                {['Prijs inclusief plaatsing door onze monteur', 'Geen verplichtingen', '10 jaar garantie op het systeem'].map((punt) => (
+                  <li key={punt} className="flex items-center gap-2"><Vinkje />{punt}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-[2rem] bg-white border border-edge shadow-2xl shadow-ink/10 p-6 md:p-8">
+              <div className="flex items-center gap-2" aria-hidden="true">
+                <span className="h-1.5 flex-1 rounded-full bg-amber" />
+                <span className="h-1.5 flex-1 rounded-full bg-edge" />
+                <span className="h-1.5 flex-1 rounded-full bg-edge" />
+              </div>
+              <p className="mt-6 font-display text-xl md:text-2xl font-extrabold text-ink">Welk soort keukenblad heb je?</p>
+              <div className="mt-5 grid sm:grid-cols-2 gap-3">
+                {KEUKENBLADEN.map((blad) => (
+                  <Link
+                    key={blad}
+                    href={`/aanmelden?keukenblad=${encodeURIComponent(blad)}`}
+                    className="cursor-pointer group flex items-center justify-between gap-3 rounded-2xl border-2 border-edge px-5 py-4 font-semibold text-ink hover:border-amber hover:bg-amber/5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber"
+                  >
+                    {blad}
+                    <span className="shrink-0 text-amber-dark opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all"><Pijl /></span>
+                  </Link>
+                ))}
+              </div>
+              <p className={`${mono.className} mt-5 text-[10px] uppercase tracking-[0.14em] text-dim`}>Daarna: je situatie en je contactgegevens</p>
             </div>
           </div>
         </section>
@@ -496,7 +537,7 @@ export default async function Page() {
         </section>
 
         {/* CTA (donker) */}
-        <section className="relative bg-ink text-white overflow-hidden" style={DONKER}>
+        <section id="offerte-einde" className="relative bg-ink text-white overflow-hidden" style={DONKER}>
           <div className="glow w-[420px] h-[420px] bg-amber/20 -top-32 -right-32" />
           <div className="relative max-w-4xl mx-auto px-6 py-20 md:py-28 text-center">
             <p className={`${mono.className} text-[11px] uppercase tracking-[0.2em] text-amber`}>Volgende stap</p>
@@ -515,6 +556,7 @@ export default async function Page() {
         </section>
       </main>
 
+      <StickyOfferte ratingTekst={ratingTekst} reviewCount={reviewCount} monoClass={mono.className} />
       <Footer />
       <BreadcrumbSchema
         items={[

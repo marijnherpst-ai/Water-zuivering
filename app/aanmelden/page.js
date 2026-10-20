@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, useTransition } from 'react';
+import { useEffect, useRef, useState, useTransition } from 'react';
 import Link from 'next/link';
 import { submitAanmeldenForm } from '@/app/actions';
 import { trackLead } from '@/lib/trackLead';
@@ -12,6 +12,15 @@ export default function AanmeldenPage() {
   const [submitError, setSubmitError] = useState(null);
   const [isPending, startTransition] = useTransition();
   const formRef = useRef(null);
+
+  // Preselect the kitchen-top answer when a product page sent the visitor here
+  // with ?keukenblad=... (they already picked it on that page).
+  useEffect(() => {
+    const keuze = new URLSearchParams(window.location.search).get('keukenblad');
+    if (!keuze || !formRef.current) return;
+    const input = [...formRef.current.querySelectorAll('input[name="keukenblad"]')].find((el) => el.value === keuze);
+    if (input) input.checked = true;
+  }, []);
 
   function currentPanel() {
     return formRef.current.querySelector(`[data-step="${step}"]`);
