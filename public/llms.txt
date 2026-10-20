@@ -1,0 +1,52 @@
+# Water-zuivering
+
+> Water-zuivering (water-zuivering.nl) levert en installeert in heel Nederland een omgekeerde-osmosesysteem voor drinkwater thuis. Het systeem staat onder het aanrecht, werkt volgens het direct-flow-principe (zonder opslagtank) en levert gefilterd water via een eigen kraan of een 3-weg kraan. De prijs van het systeem is op aanvraag, inclusief plaatsing door een eigen monteur.
+
+## Het product in het kort
+
+- Type: omgekeerde-osmose waterzuiveraar voor drinkwater in de keuken, direct flow, geen tank
+- Filtratie in 3 trappen:
+  - PPC-voorfilter (PP-katoen met koolstofblok, 1 micron): vangt zand, roest en slib en haalt restchloor weg. Vervangen ieder jaar, €49,99
+  - RO-membraan (0,0001 micron): houdt onder meer PFAS, medicijnresten, microplastics, kalk en lood tegen. Vervangen elke 2 jaar, €69,99
+  - CTO-nafilter (actieve koolstof): verbetert de smaak. Vervangen ieder jaar, €49,99; de uitvoering met mineralen (€64,99) voegt calcium en magnesium toe
+- Filterkosten gemiddeld ongeveer €135 per jaar; filters wisselen zonder gereedschap, het display meldt wanneer
+- Gefilterd water: 1,58 liter per minuut; totale capaciteit 4.000 liter
+- Afmetingen: 10,5 × 42 × 43 cm (b × d × h), staand of liggend te plaatsen
+- Geluid: minder dan 48 dB; voeding 100–240V, 96 W; waterdruk 0,1–0,4 MPa; werktemperatuur 4–40 °C
+- Display met filterstatus en meldingen: E1 (30 minuten onafgebroken gedraaid), E2 (lekkage), E3 (te lage waterdruk)
+- Certificering: CE / RoHS
+- Garantie: 10 jaar
+- Installatie: door een eigen monteur in 1 à 2 uur; zelf installeren geeft €250 korting
+- 3-weg kraan (optioneel): gewoon, gefilterd en gemineraliseerd water uit één kraan; afwerkingen chroom, geborsteld staal, goud en zwart
+- Benodigd onder het aanrecht: koudwateraansluiting, afvoer van de gootsteen en een stopcontact
+
+## Belangrijke pagina's
+
+- [Osmosesysteem](https://www.water-zuivering.nl/osmosesysteem): het product, werking, specificaties en veelgestelde vragen
+- [Waterfilter kopen: de complete gids](https://www.water-zuivering.nl/waterfilter): filterkan, opzetstuk en osmose vergeleken, met kosten en keuzehulp
+- [Waterfilter kraan](https://www.water-zuivering.nl/waterfilter-kraan): kraanoplossingen voor gefilterd water
+- [3-weg kraan](https://www.water-zuivering.nl/3-weg-kraan): de kraan voor gewoon en gefilterd water
+- [Osmose installatie](https://www.water-zuivering.nl/osmose-installatie): hoe de plaatsing verloopt
+- [Drinkwater filter kiezen per probleem](https://www.water-zuivering.nl/drinkwater-filter): welk filter helpt tegen chloor, kalk, PFAS of medicijnresten
+- [PFAS-check per postcode](https://www.water-zuivering.nl/pfas-check): PFAS-niveau in het kraanwater per regio, vergeleken met de RIVM-advieswaarde
+- [Winkel](https://www.water-zuivering.nl/winkel): vervangende filters
+- [Reviews](https://www.water-zuivering.nl/reviews): ervaringen van klanten
+- [Offerte aanvragen](https://www.water-zuivering.nl/aanmelden): gratis en vrijblijvend
+
+## Kennisbank
+
+- [Beste waterfilter voor thuis](https://www.water-zuivering.nl/kennisbank/beste-waterfilter-voor-thuis)
+- [Omgekeerde osmose filter](https://www.water-zuivering.nl/kennisbank/omgekeerde-osmose-filter)
+- [Wat is RO-water](https://www.water-zuivering.nl/kennisbank/wat-is-ro-water)
+- [PFAS in kraanwater](https://www.water-zuivering.nl/kennisbank/pfas-in-kraanwater)
+- [PFAS-kaart Nederland](https://www.water-zuivering.nl/kennisbank/pfas-kaart-nederland)
+- [Kraanwater filteren](https://www.water-zuivering.nl/kennisbank/kraanwater-filteren)
+- [Is kraanwater veilig](https://www.water-zuivering.nl/kennisbank/is-kraanwater-veilig)
+- [Wat kost een waterzuiveringssysteem](https://www.water-zuivering.nl/kennisbank/wat-kost-een-waterzuiveringssysteem)
+- [Waterfilter vervangen: hoe vaak](https://www.water-zuivering.nl/kennisbank/waterfilter-vervangen-hoe-vaak)
+
+## Contact
+
+- Bedrijf: Water-zuivering, Berkel en Rodenrijs, Nederland (werkgebied: heel Nederland)
+- E-mail: info@water-zuivering.nl
+- Telefoon / WhatsApp: +31 6 26944877
