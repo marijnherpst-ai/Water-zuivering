@@ -255,7 +255,7 @@ export default function Page() {
             <div>
               <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Een kraan die bij je keuken past</h2>
               <p className="mt-4 text-dim leading-relaxed">
-                Omdat de 3-weg kraan naast je eigen mengkraan staat, valt hij op. Daarom kies je zelf de afwerking: <strong className="text-ink">chroom</strong>, <strong className="text-ink">geborsteld staal</strong> of <strong className="text-ink">goud</strong>. Chroom sluit aan bij de meeste standaard keukenkranen, geborsteld staal past bij RVS-spoelbakken en apparatuur, en goud is een bewuste blikvanger.
+                Omdat de 3-weg kraan naast je eigen mengkraan staat, valt hij op. Daarom kies je zelf de afwerking: <strong className="text-ink">chroom</strong>, <strong className="text-ink">geborsteld staal</strong>, <strong className="text-ink">goud</strong> of <strong className="text-ink">zwart</strong>. Chroom sluit aan bij de meeste standaard keukenkranen, geborsteld staal past bij RVS-spoelbakken en apparatuur, zwart staat strak in een moderne keuken en goud is een bewuste blikvanger.
               </p>
               <p className="mt-4 text-dim leading-relaxed">
                 Een tip uit de praktijk: kijk niet alleen naar je huidige kraan, maar ook naar de handgrepen van je keukenkastjes. Daar sluit een tweede kraan vaak het mooist op aan. Alle varianten bekijk je bij de <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link>.

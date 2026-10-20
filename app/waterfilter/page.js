@@ -6,6 +6,8 @@ import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import RatingSchema from '@/components/RatingSchema';
+import KraanKleurSwitcher from '@/components/KraanKleurSwitcher';
+import PfasChecker from '@/components/PfasChecker';
 import { createClient } from '@/lib/supabase/server';
 
 function Stars({ rating }) {
@@ -48,7 +50,7 @@ const MATRIX = [
 
 const INBEGREPEN = [
   ['Drie filtertrappen', 'Een PPC-voorfilter voor zand en roest, het RO-membraan voor de fijnste stoffen en een CTO-nafilter dat de smaak afrondt.'],
-  ['Een eigen kraan', 'Gefilterd water komt uit een eigen kraan op je aanrecht. Liever één kraan voor alles? Kies dan een 3-weg kraan in chroom, geborsteld staal of goud.'],
+  ['Een eigen kraan', 'Gefilterd water komt uit een eigen kraan op je aanrecht. Liever één kraan voor alles? Kies dan een 3-weg kraan in chroom, geborsteld staal, goud of zwart.'],
   ['Plaatsing door onze monteur', 'Geen gedoe met slangen en aansluitingen: onze eigen monteur zet alles in 1 à 2 uur onder je aanrecht.'],
   ['Een slim display', 'Het systeem meldt zelf wanneer een filter op is, en waarschuwt bij een lekkage of te lage waterdruk.'],
   ['Stil en snel', 'Minder dan 48 dB en 1,58 liter gefilterd water per minuut. Een glas is in een paar tellen vol.'],
@@ -153,6 +155,9 @@ export default async function Page() {
               Zoek je op "waterfilter", dan kom je een wirwar aan producten tegen: filterkannen van vijftien euro, opzetstukken voor de kraan, en complete systemen die duizenden liters per jaar zuiveren. Ze worden vaak in één adem genoemd, maar filteren totaal niet hetzelfde — en dat verschil merk je pas als je weet waar je op moet letten.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
+              Of je het nu een drinkwaterfilter, kraanwaterfilter of waterfilter voor thuis noemt: het doel is hetzelfde. Je wilt water filteren tot het schoner is en lekkerder smaakt dan wat er standaard uit de leiding komt. De vraag is alleen hoe ver je daarin wilt gaan.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
               De kortste samenvatting: hoe fijner de filtratie, hoe meer stoffen eruit gaan — maar ook hoe groter de investering. Hieronder zetten we de vier belangrijkste type waterfilters naast elkaar, zodat je een weloverwogen keuze kunt maken in plaats van te gokken.
             </p>
           </div>
@@ -209,9 +214,20 @@ export default async function Page() {
                 </tbody>
               </table>
             </div>
-            <p className="mt-6 text-dim leading-relaxed max-w-3xl">
-              Wil je weten wat er bij jou thuis uit de leiding komt? Met de <Link href="/pfas-check" className="underline hover:text-ink">PFAS-check</Link> zie je de meetwaarden voor jouw postcode.
-            </p>
+            <div className="mt-12 grid lg:grid-cols-2 gap-10 items-start">
+              <div>
+                <h3 className="font-display text-xl md:text-2xl font-extrabold tracking-tight">Check eerst wat er in jouw kraanwater zit</h3>
+                <p className="mt-3 text-dim leading-relaxed">
+                  Of een drinkwaterfilter zinvol is, hangt af van wat er bij jou uit de leiding komt. Vul je postcode of woonplaats in en zie direct hoe het PFAS-gehalte in jouw regio zich verhoudt tot de RIVM-advieswaarde.
+                </p>
+                <p className="mt-3 text-sm text-dim">
+                  Meer uitleg over de meetwaarden vind je op de pagina <Link href="/pfas-check" className="underline hover:text-ink">PFAS-check</Link>.
+                </p>
+              </div>
+              <div>
+                <PfasChecker />
+              </div>
+            </div>
           </div>
         </section>
 
@@ -299,8 +315,30 @@ export default async function Page() {
           </div>
         </section>
 
+        {/* KRAAN KLEUREN */}
+        <section className="relative bg-surface border-y border-edge overflow-hidden">
+          <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">De 3-weg kraan</span>
+              <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Eén kraan voor gewoon én gefilterd water</h2>
+              <p className="mt-4 text-dim leading-relaxed">
+                Geen tweede kraantje op je aanrecht? Met de 3-weg kraan vervang je je huidige keukenkraan door één kraan die alles doet: gewoon kraanwater, gefilterd water en, met een mineraalfilter, gemineraliseerd water. Je wisselt met één simpele omschakelaar, zonder extra gat in je aanrecht. Onze monteur sluit hem in één moeite mee aan.
+              </p>
+              <p className="mt-4 text-dim leading-relaxed">
+                Klik op een kleur om te zien hoe hij eruitziet. Twijfel je? Kijk dan naar het beslag van je keukenkastjes of de kleur van je spoelbak: daar sluit de kraan meestal het mooist op aan.
+              </p>
+              <Link href="/3-weg-kraan" className="cursor-pointer mt-6 inline-flex items-center gap-2 text-sm font-bold text-ink underline hover:text-amber-dark">
+                Alles over de 3-weg kraan
+              </Link>
+            </div>
+            <div className="max-w-sm w-full mx-auto">
+              <KraanKleurSwitcher />
+            </div>
+          </div>
+        </section>
+
         {/* KRITIEK */}
-        <section className="relative bg-surface border-y border-edge">
+        <section className="relative">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kritiek op waterfilters: wat klopt ervan?</h2>
             <p className="mt-4 text-dim leading-relaxed">
@@ -318,7 +356,7 @@ export default async function Page() {
         </section>
 
         {/* STAPPEN */}
-        <section className="relative">
+        <section className="relative bg-surface border-y border-edge">
           <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-center">Zo koop je een waterfilter bij Water-zuivering</h2>
             <div className="mt-10 grid md:grid-cols-3 gap-5">

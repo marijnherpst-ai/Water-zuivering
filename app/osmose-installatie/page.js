@@ -156,7 +156,7 @@ export default function Page() {
             <ol className="mt-5 space-y-3 text-dim leading-relaxed list-decimal pl-5">
               <li><strong className="text-ink">Haal het kastje onder je spoelbak leeg</strong>, zodat de monteur bij de koudwaterleiding en op een vlakke plek voor het systeem kan.</li>
               <li><strong className="text-ink">Controleer de maat</strong> met een foto van je kastje in de <Link href="/maatcheck" className="underline hover:text-ink">maatcheck</Link>, voor het geval je twijfelt tussen staand of liggend plaatsen.</li>
-              <li><strong className="text-ink">Kies de afwerking van je kraan</strong>. Voor de 3-weg kraan is er keuze uit chroom, geborsteld staal en goud.</li>
+              <li><strong className="text-ink">Kies de afwerking van je kraan</strong>. Voor de 3-weg kraan is er keuze uit chroom, geborsteld staal, goud en zwart.</li>
             </ol>
             <p className="mt-5 text-dim leading-relaxed">
               Meer over de kraan zelf lees je in onze uitleg over de <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link>.
