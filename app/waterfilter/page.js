@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { IBM_Plex_Mono } from 'next/font/google';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -9,6 +10,9 @@ import RatingSchema from '@/components/RatingSchema';
 import KraanKleurSwitcher from '@/components/KraanKleurSwitcher';
 import PfasChecker from '@/components/PfasChecker';
 import FilterKiezer from '@/components/FilterKiezer';
+import WaterReis from '@/components/WaterReis';
+
+const mono = IBM_Plex_Mono({ subsets: ['latin'], weight: ['500', '600'], display: 'swap' });
 import { createClient } from '@/lib/supabase/server';
 
 function Stars({ rating }) {
@@ -71,10 +75,10 @@ const KOSTEN = [
 const USPS = ['10 jaar garantie', 'Geplaatst in 1 à 2 uur', 'Filtert tot 99% van onzuiverheden', 'Eigen kraan op je aanrecht'];
 
 const CIJFERS = [
-  ['99%', 'van de onzuiverheden gefilterd'],
-  ['1,58 L', 'gefilterd water per minuut'],
-  ['10,5 cm', 'breed onder je aanrecht'],
-  ['10 jaar', 'garantie op het systeem'],
+  ['tot 99%', 'Filtratie'],
+  ['1,58 L/min', 'Gefilterd water'],
+  ['10,5 cm', 'Breedte onder aanrecht'],
+  ['10 jaar', 'Garantie'],
 ];
 
 const INHOUD = [
@@ -167,7 +171,11 @@ export default async function Page() {
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Waterfilter</span>
               <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
-                Waterfilter kopen? Zo kies je het type dat écht bij je past
+                <span className="relative inline-block">
+                  Waterfilter
+                  <svg className="absolute left-0 -bottom-2 w-full h-3 text-amber" viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 Q 18 1 34 7 T 66 7 T 98 7 T 130 7 T 162 7 T 198 6" stroke="currentColor" strokeWidth="4" fill="none" strokeLinecap="round" /></svg>
+                </span>{' '}
+                kopen? Zo kies je het type dat écht bij je past
               </h1>
               <p className="mt-5 text-dim text-lg">
                 Van een simpele filterkan tot een compleet omgekeerde-osmosesysteem: niet elke <strong className="text-ink">waterfilter</strong> doet hetzelfde. Deze gids zet de opties eerlijk naast elkaar, zodat je weet waar je precies voor betaalt.
@@ -189,11 +197,17 @@ export default async function Page() {
                   Bekijk onze waterfilter kraan
                 </Link>
               </div>
+              <p className={`${mono.className} mt-6 text-xs text-dim`}>
+                Door het team van Water-zuivering · bijgewerkt oktober 2026
+              </p>
             </div>
             <div className="relative">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
-              <div className="relative rounded-[2rem] overflow-hidden border border-edge aspect-[4/5]">
-                <Image src="/assets/img/glas-water.webp" alt="Glas helder water uit een waterfilter met osmose" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" priority />
+              <div className="relative rounded-[2rem] border border-edge bg-white/70 backdrop-blur-sm p-6 md:p-8 shadow-xl shadow-ink/5">
+                <p className={`${mono.className} text-[11px] uppercase tracking-[0.18em] text-amber-dark`}>Wat er gebeurt tussen kraan en glas</p>
+                <div className="mt-4">
+                  <WaterReis />
+                </div>
               </div>
             </div>
           </div>
@@ -201,13 +215,15 @@ export default async function Page() {
 
         {/* CIJFERS */}
         <section className="relative bg-ink text-white">
-          <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-6">
-            {CIJFERS.map(([getal, label]) => (
-              <div key={label} className="text-center">
-                <p className="font-display text-3xl md:text-4xl font-extrabold text-amber">{getal}</p>
-                <p className="mt-1 text-sm text-white/70">{label}</p>
-              </div>
-            ))}
+          <div className="max-w-6xl mx-auto px-6 py-8">
+            <div className={`${mono.className} grid grid-cols-2 md:grid-cols-4 border border-white/15 rounded-2xl overflow-hidden`}>
+              {CIJFERS.map(([getal, label], i) => (
+                <div key={label} className={`px-5 py-5 ${i % 2 === 1 ? 'border-l border-white/15' : ''} ${i > 1 ? 'border-t md:border-t-0 border-white/15' : ''} ${i === 2 ? 'md:border-l' : ''}`}>
+                  <p className="text-[10px] uppercase tracking-[0.18em] text-white/45">{label}</p>
+                  <p className="mt-1.5 text-xl sm:text-2xl md:text-3xl font-semibold text-amber whitespace-nowrap">{getal}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
