@@ -23,7 +23,7 @@ const FAQ = [
   ['Wat is een osmose waterfilter precies?', 'Een filtersysteem dat water onder lichte druk door een membraan van 0,0001 micron perst — dit verwijdert bacteriën, zware metalen, PFAS, medicijnresten en microplastics.'],
   ['Is een osmose waterfilter hetzelfde als een osmosesysteem?', 'Ja, dit zijn twee namen voor dezelfde technologie: omgekeerde osmose, ook wel RO (reverse osmosis) genoemd.'],
   ['Wat kost een osmose waterfilter?', 'De prijs hangt af van het gekozen systeem en de installatie. Vraag een vrijblijvende offerte aan voor een prijs op maat.'],
-  ['Hoeveel onderhoud vraagt een osmose waterfilter?', 'De voor- en nafilters gaan 6 tot 12 maanden mee, het membraan zelf 2 tot 3 jaar, afhankelijk van gebruik en waterkwaliteit.'],
+  ['Hoeveel onderhoud vraagt een osmose waterfilter?', 'Het voorfilter en het nafilter vervang je gemiddeld elk jaar, het membraan gemiddeld elke 2 jaar. Bij veel waterverbruik eerder. Het display geeft aan wanneer het tijd is.'],
 ];
 
 export default function Page() {
@@ -104,6 +104,41 @@ export default function Page() {
                 Meer weten over hoe het membraan precies werkt? Bekijk <Link href="/kennisbank/omgekeerde-osmose-filter" className="underline hover:text-ink">onze uitleg over het omgekeerde-osmose-membraan</Link>.
               </p>
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoe werkt een osmose waterfilter?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Het water gaat in drie stappen door het systeem:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">PPC-voorfilter</strong>: vangt zand, roest en slib tot 1 micron en haalt restchloor weg, zodat het membraan schoon blijft.</li>
+              <li><strong className="text-ink">RO-membraan</strong>: perst het water door poriën van 0,0001 micron. Onder meer PFAS, medicijnresten, microplastics, kalk en lood blijven achter en spoelen weg naar de afvoer.</li>
+              <li><strong className="text-ink">CTO-nafilter</strong>: actieve koolstof voor een frisse smaak. Met de mineralenvariant komen calcium en magnesium terug in het water.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Het systeem werkt direct flow, zonder opslagtank, en levert 1,58 liter per minuut uit je eigen kraan.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Past een osmose waterfilter in jouw keuken?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Waarschijnlijk wel. Het systeem is 10,5 cm breed, 42 cm diep en 43 cm hoog en kan staand of liggend. Onder het aanrecht zijn een koudwateraansluiting, de afvoer van de gootsteen en een stopcontact nodig. De installatie door onze monteur duurt 1 à 2 uur. Twijfel je, gebruik dan de <Link href="/maatcheck" className="underline hover:text-ink">maatcheck</Link> of bekijk het complete <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Onderhoud en kosten van je osmose waterfilter</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Het voorfilter en het nafilter vervang je elk jaar, het membraan elke twee jaar. Dat kost gemiddeld ongeveer € 135 per jaar. De filters draai je zelf los en vast, zonder gereedschap, en het display laat zien wanneer het tijd is. Je hebt 10 jaar garantie op het systeem.
+            </p>
           </div>
         </section>
 

@@ -61,7 +61,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat is een 3-weg kraan?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Een 3-weg kraan combineert gewoon kraanwater, gefilterd water en (optioneel) gemineraliseerd water in één enkele kraan op je aanrecht — met een handige omschakelaar om te kiezen welke stroom je nodig hebt. Zonder 3-weg kraan heb je voor gefilterd water meestal een aparte, losse kraan naast je bestaande kraan nodig.
+              Een <strong className="text-ink">3-weg kraan</strong> combineert gewoon kraanwater, gefilterd water en (optioneel) gemineraliseerd water in één enkele kraan op je aanrecht — met een handige omschakelaar om te kiezen welke stroom je nodig hebt. Zonder 3-weg kraan heb je voor gefilterd water meestal een aparte, losse kraan naast je bestaande kraan nodig.
             </p>
           </div>
         </section>
@@ -83,7 +83,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/kennisbank/3-weg-kraan-uitleg.png" alt="Moderne 3-weg kraan op een keukenblad" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/kennisbank/3-weg-kraan-uitleg.png" alt="Moderne 3-weg kraan op een keukenblad" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -91,6 +91,54 @@ export default function Page() {
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Los verkrijgbaar, compatibel met elk systeem</h2>
               <p className="mt-4 text-dim">Onze <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link> is los verkrijgbaar als accessoire en werkt met elk Water-zuivering systeem — vakkundig meegeïnstalleerd, zodat je meteen alles in één keer geregeld hebt. Op de productpagina zie je hem in alle vier de afwerkingen: chroom, geborsteld staal, goud en zwart.</p>
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoe werkt een 3-weg kraan?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een 3-weg kraan heeft binnenin gescheiden waterwegen. Warm en koud kraanwater lopen zoals bij een gewone mengkraan. Het gefilterde water komt via een eigen leiding rechtstreeks vanaf het systeem onder het aanrecht en loopt nergens samen met het gewone leidingwater. Met een aparte hendel of knop kies je welk water er uit de uitloop komt.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Daardoor blijft het gefilterde water zuiver, ook al komt het uit dezelfde kraan als het afwaswater.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">3-weg kraan of apart tappunt?</h2>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">3-weg kraan</strong>: één kraan voor alles, strakker op het aanrecht, vervangt je huidige keukenkraan.</li>
+              <li><strong className="text-ink">Apart tappunt</strong>: een extra, kleiner kraantje naast je bestaande kraan. Je hoeft je huidige kraan niet te vervangen.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Allebei werken ze met hetzelfde systeem eronder. Meer over het tappunt lees je in <Link href="/kennisbank/osmosewater-tappunt" className="underline hover:text-ink">osmosewater tappunt: hoe werkt dat?</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Afwerkingen en installatie</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              De 3-weg kraan van Water-zuivering is er in vier afwerkingen: chroom, geborsteld staal, goud en zwart. De monteur plaatst hem bij de installatie van het systeem in plaats van je huidige keukenkraan, dus in het bestaande gat in je aanrecht. Bekijk alle uitvoeringen op de pagina over de <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Voor wie is een 3-weg kraan geschikt?</h2>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Voor wie een strak aanrecht wil</strong>, zonder extra kraantje.</li>
+              <li><strong className="text-ink">Voor wie toch al een nieuwe keukenkraan nodig heeft</strong>: dan vervang je die in één keer.</li>
+              <li><strong className="text-ink">Voor wie veel gefilterd water gebruikt</strong>, ook voor koken, koffie en thee.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Wil je je huidige kraan houden, dan is een apart tappunt de makkelijkste keuze.
+            </p>
           </div>
         </section>
 

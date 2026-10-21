@@ -61,7 +61,7 @@ export default function Page() {
             <div className="grid sm:grid-cols-3 gap-6">
               <div className="rounded-2xl card p-6">
                 <p className="font-display font-bold">Kosten</p>
-                <p className="mt-2 text-sm text-dim">Flessenwater loopt per liter al snel op, jaar na jaar. Gefilterd kraanwater kost na de eenmalige installatie alleen nog een filter per paar jaar.</p>
+                <p className="mt-2 text-sm text-dim"><strong className="text-ink">Flessenwater</strong> loopt per liter al snel op, jaar na jaar. Gefilterd kraanwater kost na de eenmalige installatie alleen nog een filter per paar jaar.</p>
               </div>
               <div className="rounded-2xl card p-6">
                 <p className="font-display font-bold">Gemak</p>
@@ -96,7 +96,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/kennisbank/kraanwater-vs-flessenwater.png" alt="Een glas kraanwater naast een waterfles op het aanrecht" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/kennisbank/kraanwater-vs-flessenwater.png" alt="Een glas kraanwater naast flessenwater op het aanrecht" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -104,6 +104,48 @@ export default function Page() {
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Zelf zuiveren wint op alle drie de punten</h2>
               <p className="mt-4 text-dim">Een eigen waterzuiveraar combineert de zuiverheid van flessenwater met het gemak en de lage kosten van kraanwater — zonder de nadelen van beide.</p>
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kraanwater vs. flessenwater: de prijs per liter</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Kraanwater kost in Nederland minder dan een cent per liter. Voor flessenwater betaal je in de supermarkt al snel honderd keer zoveel, en voor merkwater nog meer. Drink je met het hele gezin elke dag een paar liter, dan loopt dat verschil per jaar op tot honderden euro&apos;s.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Gefilterd kraanwater zit daar tussenin: je betaalt de aanschaf van het systeem en daarna alleen de filters, bij Water-zuivering gemiddeld ongeveer € 135 per jaar.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Is flessenwater gezonder dan kraanwater?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Niet per se. Nederlands kraanwater wordt strenger en vaker gecontroleerd dan veel mensen denken. Lees daarover <Link href="/kennisbank/is-kraanwater-veilig" className="underline hover:text-ink">is kraanwater veilig?</Link>.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Flessenwater heeft ook eigen nadelen. Er is PFAS gevonden in sommige merken flessenwater, en er wordt onderzoek gedaan naar microplastics die uit plastic flessen in het water komen. Wie de zuiverheid van flessenwater wil zonder die nadelen, filtert kraanwater met omgekeerde osmose.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kraanwater vs. flessenwater voor het milieu</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Elke fles moet worden gemaakt, gevuld, vervoerd, gekoeld en weer ingezameld. Kraanwater komt via de leiding je huis in, zonder verpakking en zonder vrachtwagen. Ook gefilterd kraanwater heeft die voordelen: je hebt alleen eens per jaar een paar filters nodig.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">En de smaak?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Kraanwater smaakt niet overal hetzelfde. Dat komt door de bron, grondwater of oppervlaktewater, en door de hoeveelheid mineralen. Lees daarover <Link href="/kennisbank/slechtste-kraanwater-nederland" className="underline hover:text-ink">het slechtste kraanwater van Nederland: de feiten</Link>. Flessenwater smaakt per merk anders om dezelfde reden. Gefilterd kraanwater smaakt neutraal en zacht; met een mineraalfilter voeg je weer wat smaak toe.
+            </p>
           </div>
         </section>
 

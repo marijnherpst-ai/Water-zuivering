@@ -11,7 +11,7 @@ import FaqSchema from '@/components/FaqSchema';
 export const metadata = {
   alternates: { canonical: '/kennisbank/waterontharder-zonder-afvoer' },
   title: 'Waterontharder zonder afvoer: hoe werkt dat? — Water-zuivering',
-  description: 'Een waterontharder zonder afvoer bestaat niet als volwaardig alternatief voor een klassieke ontharder — wel als magneet- of elektronisch systeem. Uitleg.',
+  description: 'Een waterontharder zonder afvoer werkt anders dan een klassieke ontharder: meestal magnetisch of elektronisch. Hoe het werkt en wat je mag verwachten.',
 };
 
 const VERGELIJKING = [
@@ -64,7 +64,7 @@ export default function Page() {
         <section className="relative bg-surface border-y border-edge overflow-hidden">
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-              <Image src="/assets/img/systeem-liggend.png" alt="Compact watersysteem als alternatief voor een waterontharder zonder afvoer" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-contain p-6 bg-white" />
+              <Image loading="eager" src="/assets/img/systeem-liggend.png" alt="Compact watersysteem als alternatief voor een waterontharder zonder afvoer" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-contain p-6 bg-white" />
             </div>
             <div>
               <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waarom heeft een klassieke ontharder een afvoer nodig?</h2>
@@ -113,6 +113,40 @@ export default function Page() {
                 </tbody>
               </table>
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Soorten waterontharders zonder afvoer</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Onder de naam waterontharder zonder afvoer worden een paar heel verschillende apparaten verkocht:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Magnetische systemen</strong>. Magneten rond de waterleiding die de kalkdeeltjes zouden beïnvloeden. Ze zijn goedkoop en eenvoudig te plaatsen, maar het effect is omstreden.</li>
+              <li><strong className="text-ink">Elektronische systemen</strong>. Een spoel om de leiding die een wisselend signaal afgeeft. Ook hier blijft de kalk in het water; het doel is dat hij minder hard aanslaat.</li>
+              <li><strong className="text-ink">Zoutvrije kristallisatiesystemen</strong>. Een vat met een speciaal granulaat dat kalk omzet in microkristallen die minder snel aanslaan. Ook dit werkt zonder afvoer en zonder zout.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Geen van deze systemen haalt de kalk echt uit het water. Een <strong className="text-ink">waterontharder zonder afvoer</strong> verandert hoe kalk zich gedraagt, niet hoeveel er in zit.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoe merk je of een waterontharder zonder afvoer werkt?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Dat is lastiger dan bij een klassieke ontharder. Met een teststripje voor waterhardheid zie je bij een systeem zonder afvoer meestal geen verschil, omdat de hoeveelheid kalk in het water gelijk blijft. Let daarom op wat je in de praktijk ziet, een paar weken lang:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li>Komt er minder snel een witte laag op je kranen en douchewand?</li>
+              <li>Hoeft de waterkoker minder vaak ontkalkt te worden?</li>
+              <li>Is de aanslag die er komt makkelijker weg te vegen?</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Zie je na een paar maanden geen verschil, dan is een klassieke ontharder met afvoer een betere keuze. Hoe die werkt, lees je in <Link href="/kennisbank/hoe-werkt-een-waterontharder" className="underline hover:text-ink">hoe werkt een waterontharder?</Link>.
+            </p>
           </div>
         </section>
 

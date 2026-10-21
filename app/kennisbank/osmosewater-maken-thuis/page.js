@@ -60,7 +60,7 @@ export default function Page() {
         <section className="relative bg-surface border-y border-edge overflow-hidden">
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-              <Image src="/assets/img/glas-water.webp" alt="Glas osmosewater, thuis gemaakt met een omgekeerde-osmose-systeem" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+              <Image loading="eager" src="/assets/img/glas-water.webp" alt="Glas osmosewater, thuis gemaakt met een omgekeerde-osmose-systeem" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
             <div>
               <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat is er eigenlijk voor nodig?</h2>
@@ -83,6 +83,33 @@ export default function Page() {
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Zelf maken vs. flessenwater kopen</h2>
             <p className="mt-4 text-dim leading-relaxed">
               Flessenwater kopen betekent elke keer opnieuw betalen, sjouwen en plastic weggooien. Osmosewater maken thuis is een eenmalige investering die zich terugbetaalt: geen wekelijkse boodschap meer, geen lege flessen in de kast, en altijd voorraad zonder eraan te hoeven denken. Reken zelf uit wat dat voor jouw huishouden betekent via onze <Link href="/besparing" className="underline hover:text-ink">besparingscalculator</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoe snel maak je osmosewater thuis?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een systeem onder het aanrecht van Water-zuivering levert 1,58 liter osmosewater per minuut. Een glas is in een paar seconden vol, een pan van 3 liter in minder dan twee minuten. Omdat het systeem werkt volgens het direct-flow-principe, zonder opslagtank, is het water altijd vers: het wordt gezuiverd op het moment dat je de kraan opendraait.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Osmosewater maken met of zonder tank</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Oudere osmosesystemen werken met een opslagtank: het systeem vult langzaam een tank, en daar tap je uit. Zo&apos;n tank neemt veel ruimte in het kastje in, en als hij leeg is moet je wachten. Bij een systeem zonder tank heb je die nadelen niet. Het past in een kleiner kastje, het systeem van Water-zuivering is 10,5 cm breed, en je kunt meteen weer tappen.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Osmosewater lekkerder maken met mineralen</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Bij het <strong className="text-ink">osmosewater maken</strong> houdt het membraan ook calcium en magnesium tegen. Het water smaakt daardoor heel zacht, soms wat vlak. Met het <Link href="/winkel/cto-filter-met-mineralen" className="underline hover:text-ink">CTO-filter met mineralen</Link> komen die mineralen na het filteren terug in het water, voor een vollere smaak. Wil je het liever kopen, lees dan <Link href="/kennisbank/osmosewater-kopen" className="underline hover:text-ink">osmosewater kopen: waar en wat kost het?</Link>.
             </p>
           </div>
         </section>

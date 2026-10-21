@@ -56,7 +56,7 @@ export default function Page() {
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Waterzuiveraar drinkwater</span>
               <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
-                Wat er niet in je glas hoort, hoort ook niet in je gezin
+                Waterzuiveraar drinkwater: wat er niet in je glas hoort, haal je eruit
               </h1>
               <p className="mt-5 text-dim text-lg">
                 Nederlands kraanwater is veilig, maar niet vrij van alles. Een <strong className="text-ink">waterzuiveraar drinkwater</strong> filtert sporen van PFAS, medicijnresten en microplastics — stoffen die reguliere zuivering nog niet volledig wegneemt.

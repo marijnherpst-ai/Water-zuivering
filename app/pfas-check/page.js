@@ -127,7 +127,7 @@ export default async function PfasCheckPage() {
             <div className="mt-10 grid md:grid-cols-2 gap-10">
               <div>
                 <p className="text-dim leading-relaxed">
-                  PFAS is niet één stof, maar een hele familie: meer dan 10.000 door mensen gemaakte chemicaliën, met PFOA, PFOS en GenX als bekendste namen. Ze zijn zo sterk gemaakt dat water, vet en vuil er gewoon van afglijden. Handig voor de fabriek, maar diezelfde eigenschap zorgt ervoor dat de natuur ze bijna niet kan afbreken. Daarom heten ze ook wel <em>forever chemicals</em>: eenmaal in het milieu, blijven ze.
+                  <strong className="text-ink">PFAS</strong> is niet één stof, maar een hele familie: meer dan 10.000 door mensen gemaakte chemicaliën, met PFOA, PFOS en GenX als bekendste namen. Ze zijn zo sterk gemaakt dat water, vet en vuil er gewoon van afglijden. Handig voor de fabriek, maar diezelfde eigenschap zorgt ervoor dat de natuur ze bijna niet kan afbreken. Daarom heten ze ook wel <em>forever chemicals</em>: eenmaal in het milieu, blijven ze.
                 </p>
                 <p className="mt-4 text-dim leading-relaxed">
                   Al sinds de jaren '40 zitten ze in duizenden alledaagse spullen. Denk aan:
@@ -202,7 +202,7 @@ export default async function PfasCheckPage() {
 
             <div className="mt-14 grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3] bg-white order-2 lg:order-1">
-                <Image src="/assets/img/hero-vrouw-water.webp" alt="Vrouw tapt schoon, PFAS-vrij water uit de kraan met osmose waterzuiveraar" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/hero-vrouw-water.webp" alt="Vrouw tapt schoon, PFAS-vrij water uit de kraan met osmose waterzuiveraar" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
               <div className="order-1 lg:order-2">
                 <div className="space-y-5">

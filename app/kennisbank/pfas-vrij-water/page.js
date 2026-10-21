@@ -11,7 +11,7 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/pfas-vrij-water' },
-  title: 'PFAS-vrij water: kan dat écht uit je eigen kraan? — Water-zuivering',
+  title: 'PFAS-vrij water uit je eigen kraan? — Water-zuivering',
   description:
     'Volledig PFAS-vrij drinkwater: is dat realistisch, en hoe kom je er zo dicht mogelijk bij? Uitleg over wat wel en niet werkt.',
 };
@@ -52,7 +52,7 @@ export default function Page() {
               PFAS-vrij water: kan dat écht uit je eigen kraan?
             </h1>
             <p className="mt-5 text-dim text-lg">
-              "PFAS-vrij" staat op steeds meer producten en filters. Wat betekent dat woord eigenlijk, en is het bij drinkwater realistisch?
+              "<strong className="text-ink">PFAS-vrij</strong>" staat op steeds meer producten en filters. Wat betekent dat woord eigenlijk, en is het bij drinkwater realistisch?
             </p>
             <KortAntwoord>
               Letterlijk 100% PFAS-vrij water bestaat bijna niet, omdat laboratoria steeds kleinere sporen kunnen meten. Wel kun je PFAS terugbrengen tot ruim onder de meetbare grens. Omgekeerde osmose komt daar het dichtst bij: het membraan houdt PFAS fysiek tegen. Koken, een waterontharder of een eenvoudig koolfilter doen dat niet of nauwelijks.
@@ -138,7 +138,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/glas-water.webp" alt="Glas helder gefilterd water" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/glas-water.webp" alt="Glas PFAS-vrij gefilterd water" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">

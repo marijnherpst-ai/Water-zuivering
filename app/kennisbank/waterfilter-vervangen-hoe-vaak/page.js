@@ -53,7 +53,7 @@ export default function Page() {
               Hoe vaak moet je een waterfilter vervangen?
             </h1>
             <p className="mt-5 text-dim text-lg">
-              Een simpele vraag met een simpel antwoord — en een paar redenen waarom je het niet te lang moet uitstellen.
+              Hoe vaak je een <strong className="text-ink">waterfilter vervangen</strong> moet, is een simpele vraag met een simpel antwoord — en een paar redenen waarom je het niet te lang moet uitstellen.
             </p>
             <KortAntwoord>
               Dat verschilt per filter. Bij een omgekeerde-osmosesysteem van Water-zuivering vervang je het PPC-voorfilter en het CTO-nafilter gemiddeld elke 12 maanden en het RO-membraan gemiddeld elke 24 maanden. Gebruik je veel water, dan eerder. Een verzadigd filter houdt minder tegen; het display op het apparaat geeft aan wanneer het tijd is.
@@ -91,7 +91,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/kennisbank/waterfilter-vervangen-hoe-vaak.png" alt="Een waterfilter wordt vervangen onder het aanrecht" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/kennisbank/waterfilter-vervangen-hoe-vaak.png" alt="Een waterfilter wordt vervangen onder het aanrecht" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -99,6 +99,53 @@ export default function Page() {
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Filter vervangen zonder gereedschap</h2>
               <p className="mt-4 text-dim">Bij een Water-zuivering systeem draai je in drie simpele stappen zelf een nieuw filter erin — geen gereedschap, geen monteur nodig. Benieuwd hoe dat precies gaat? Lees de volledige uitleg op onze <Link href="/uitleg" className="underline hover:text-ink">specificatiepagina</Link>. Een nieuw filter nodig? Bekijk de <Link href="/winkel" className="underline hover:text-ink">osmose filters in onze winkel</Link>.</p>
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waterfilter vervangen: per filter op een rij</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een osmosesysteem heeft drie filters, elk met een eigen taak en een eigen termijn:
+            </p>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold">Filter</th><th scope="col" className="p-4 font-display font-bold">Wat het doet</th><th scope="col" className="p-4 font-display font-bold">Vervangen</th><th scope="col" className="p-4 font-display font-bold">Prijs</th></tr></thead>
+                <tbody>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">PPC-voorfilter</th><td className="p-4 text-dim">Vangt zand, roest en slib tot 1 micron en haalt restchloor weg</td><td className="p-4 text-dim">Elk jaar</td><td className="p-4 text-dim">€ 49,99</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">RO-membraan</th><td className="p-4 text-dim">Houdt onder meer PFAS, medicijnresten, microplastics, kalk en lood tegen</td><td className="p-4 text-dim">Elke 2 jaar</td><td className="p-4 text-dim">€ 69,99</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">CTO-nafilter</th><td className="p-4 text-dim">Actieve koolstof voor een frisse smaak</td><td className="p-4 text-dim">Elk jaar</td><td className="p-4 text-dim">€ 49,99</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">CTO-nafilter met mineralen</th><td className="p-4 text-dim">Zelfde als hierboven, en voegt calcium en magnesium toe</td><td className="p-4 text-dim">Elk jaar</td><td className="p-4 text-dim">€ 64,99</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 text-dim leading-relaxed">
+              Gemiddeld kost het vervangen van de filters zo ongeveer € 135 per jaar. Je bestelt ze in de <Link href="/winkel" className="underline hover:text-ink">winkel</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Signalen dat je je waterfilter moet vervangen</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Ook zonder op de kalender te kijken, zijn er een paar duidelijke signalen:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Het display geeft een melding</strong>. Dat is het makkelijkste signaal.</li>
+              <li><strong className="text-ink">Er komt minder water uit de kraan</strong>. Een vol voorfilter laat het water minder makkelijk door.</li>
+              <li><strong className="text-ink">De smaak of geur verandert</strong>. Een verzadigd koolstoffilter haalt chloor en smaakstoffen minder goed weg.</li>
+              <li><strong className="text-ink">Je wijk had last van bruin water</strong>. Het voorfilter vangt dan veel roestdeeltjes op en kan eerder vol zijn. Lees meer over <Link href="/kennisbank/bruin-water-uit-de-kraan" className="underline hover:text-ink">bruin water uit de kraan</Link>.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">En bij een filterkan of kraanfilter?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Bij een filterkan of een filter op de kraan is de termijn veel korter dan bij een systeem onder het aanrecht. Zulke filters zijn klein en raken snel vol, vaak al binnen een paar weken. Volg altijd de termijn die de fabrikant op de verpakking zet. Wil je weten hoe die opties zich verhouden tot een osmosesysteem, lees dan <Link href="/kennisbank/kraanwater-filteren" className="underline hover:text-ink">kraanwater filteren: welke opties heb je?</Link>.
+            </p>
           </div>
         </section>
 

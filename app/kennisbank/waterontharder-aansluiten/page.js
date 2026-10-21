@@ -69,7 +69,7 @@ export default function Page() {
         <section className="relative bg-surface border-y border-edge overflow-hidden">
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-              <Image src="/assets/img/cabinet-install.png" alt="Waterontharder aansluiten op de hoofdleiding onder een kastje" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+              <Image loading="eager" src="/assets/img/cabinet-install.png" alt="Waterontharder aansluiten op de hoofdleiding onder een kastje" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
             <div>
               <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">De vier stappen</h2>
@@ -108,6 +108,42 @@ export default function Page() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat heb je nodig om een waterontharder aan te sluiten?</h2>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Ruimte</strong> bij de hoofdleiding, meestal in de meterkast, de kelder of de berging.</li>
+              <li><strong className="text-ink">Een afvoer</strong> in de buurt, voor het spoelwater van de regeneratie.</li>
+              <li><strong className="text-ink">Een stopcontact</strong>: veel ontharders hebben een elektronische klep die de regeneratie regelt.</li>
+              <li><strong className="text-ink">Een bypass</strong>: een omloopkraan waarmee je de ontharder kunt overslaan.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Ontbreekt een van deze punten, dan is het <strong className="text-ink">waterontharder aansluiten</strong> meer werk, bijvoorbeeld omdat er een afvoer moet worden doorgetrokken.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waarom een bypass handig is</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Met een bypass laat je het water om de ontharder heen lopen. Dat is handig bij onderhoud, als het zout op is of als er iets mis is met het apparaat: je hebt dan gewoon water in huis terwijl de ontharder buiten gebruik is. De meeste installateurs plaatsen hem standaard.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Na het aansluiten: zout en instellen</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Na het aansluiten vul je het zoutvat met speciaal onthardingszout en stelt de installateur de ontharder in op de hardheid van jouw water. Met een teststripje kun je daarna controleren of het water uit de kraan echt zachter is. Daarna is het vooral een kwestie van af en toe zout bijvullen.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Let op: een ontharder pakt kalk aan, niet de kwaliteit van je drinkwater. Daarvoor is een <Link href="/kennisbank/waterzuiveraar-installeren" className="underline hover:text-ink">waterzuiveraar onder het aanrecht</Link> bedoeld.
+            </p>
           </div>
         </section>
 

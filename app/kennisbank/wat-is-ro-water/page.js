@@ -75,7 +75,7 @@ export default function Page() {
         <section className="relative bg-surface border-y border-edge overflow-hidden">
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-              <Image src="/assets/img/filters-closeup.png" alt="RO-water filtratieproces: het RO-membraan en filtertrappen van dichtbij" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+              <Image loading="eager" src="/assets/img/filters-closeup.png" alt="RO-water filtratieproces: het RO-membraan en filtertrappen van dichtbij" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
             <div>
               <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Drie stappen naar RO-water</h2>
@@ -115,6 +115,35 @@ export default function Page() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">RO-water vs. kraanwater vs. flessenwater</h2>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold"></th><th scope="col" className="p-4 font-display font-bold">Kraanwater</th><th scope="col" className="p-4 font-display font-bold">Flessenwater</th><th scope="col" className="p-4 font-display font-bold">RO-water</th></tr></thead>
+                <tbody>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Kalk</th><td className="p-4 text-dim">Ja, afhankelijk van regio</td><td className="p-4 text-dim">Verschilt per merk</td><td className="p-4 text-dim">Nauwelijks</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Sporen van PFAS en medicijnresten</th><td className="p-4 text-dim">Kan voorkomen</td><td className="p-4 text-dim">Kan voorkomen</td><td className="p-4 text-dim">Grotendeels verwijderd</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Kosten per liter</th><td className="p-4 text-dim">Minder dan een cent</td><td className="p-4 text-dim">Veel hoger</td><td className="p-4 text-dim">Filters, ± € 135 per jaar</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Gemak</th><td className="p-4 text-dim">Uit de kraan</td><td className="p-4 text-dim">Kopen en sjouwen</td><td className="p-4 text-dim">Uit je eigen kraan</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 text-dim leading-relaxed">
+              Meer over de keuze tussen kraan en fles lees je in <Link href="/kennisbank/kraanwater-vs-flessenwater" className="underline hover:text-ink">kraanwater vs. flessenwater</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kun je RO-water elke dag drinken?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Ja. <strong className="text-ink">RO-water</strong> is gewoon water waar ongewenste stoffen uit zijn gefilterd. Je haalt de meeste mineralen uit je eten, niet uit water. Mis je de smaak van mineralen, kies dan een systeem met een mineraalfilter dat calcium en magnesium na het filteren weer toevoegt.
+            </p>
           </div>
         </section>
 

@@ -176,8 +176,9 @@ export default function BesteWaterfilterVoorThuisPage() {
                   <div className={`relative rounded-2xl overflow-hidden border border-edge aspect-[4/3] ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
                     <Image
                       src={type.beeld}
-                      alt={`${type.naam} als waterfilter voor thuis`}
+                      alt={`${type.naam}: een van de opties voor de beste waterfilter voor thuis`}
                       fill
+                      loading={i === 0 ? 'eager' : 'lazy'}
                       sizes="(min-width: 1024px) 40vw, 100vw"
                       className={type.naam.includes('osmose') ? 'object-contain p-6 bg-white' : 'object-cover'}
                     />

@@ -10,7 +10,7 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/osmosewater-tappunt' },
-  title: 'Osmosewater tappunt: apart kraantje, hoe werkt dat? — Water-zuivering',
+  title: 'Osmosewater tappunt: hoe werkt dat? — Water-zuivering',
   description:
     'Een osmosewater tappunt is een eigen kraantje naast je gewone kraan. Wat het is, waarom je het wilt en hoe de aansluiting werkt.',
 };
@@ -51,7 +51,7 @@ export default function Page() {
               Osmosewater tappunt: een apart kraantje, hoe werkt dat?
             </h1>
             <p className="mt-5 text-dim text-lg">
-              Bij een osmosesysteem hoort meestal een eigen tappunt naast je gewone kraan. Wat dat precies is, en waarom het handiger is dan het klinkt.
+              Bij een osmosesysteem hoort meestal een eigen <strong className="text-ink">tappunt</strong> naast je gewone kraan. Wat dat precies is, en waarom het handiger is dan het klinkt.
             </p>
             <AuteurRegel />
           </div>
@@ -134,7 +134,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/twee-kranen.jpg" alt="Twee kranen naast elkaar op een aanrecht" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/twee-kranen.jpg" alt="Osmosewater tappunt naast de gewone kraan op een aanrecht" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">

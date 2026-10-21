@@ -55,7 +55,7 @@ export default function Page() {
               Nederland heeft een van de best gecontroleerde drinkwaternetten ter wereld. Betekent dat ook dat er niks te verbeteren valt?
             </p>
             <KortAntwoord>
-              Ja, Nederlands kraanwater is veilig om te drinken. Drinkwaterbedrijven controleren continu op honderden stoffen volgens strenge Europese en nationale normen. Wel worden steeds vaker sporen gevonden van stoffen die de norm nog niet volledig dekt, zoals PFAS, medicijnresten en microplastics. Wie die ook kwijt wil, filtert thuis met omgekeerde osmose.
+              Ja, Nederlands <strong className="text-ink">kraanwater</strong> is veilig om te drinken. Drinkwaterbedrijven controleren continu op honderden stoffen volgens strenge Europese en nationale normen. Wel worden steeds vaker sporen gevonden van stoffen die de norm nog niet volledig dekt, zoals PFAS, medicijnresten en microplastics. Wie die ook kwijt wil, filtert thuis met omgekeerde osmose.
             </KortAntwoord>
             <AuteurRegel />
           </div>
@@ -90,7 +90,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/kennisbank/is-kraanwater-veilig.png" alt="Een glas helder kraanwater wordt gevuld" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/kennisbank/is-kraanwater-veilig.png" alt="Een glas helder kraanwater wordt gevuld" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -99,6 +99,37 @@ export default function Page() {
               <p className="mt-4 text-dim">Een Water-zuivering systeem filtert met 3 trappen chloor, PFAS, medicijnresten, microplastics en lood uit je kraanwater — direct beschikbaar, zonder dat je er verder aan hoeft te denken.</p>
               <p className="mt-4 text-dim">Benieuwd naar de specifieke stoffen? Lees ook onze uitleg over <Link href="/kennisbank/pfas-in-kraanwater" className="underline hover:text-ink">PFAS in kraanwater</Link>. Overweeg je een filter, kijk dan welk <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter bij welk probleem past</Link>.</p>
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoe wordt kraanwater gecontroleerd?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              De regels staan in de Drinkwaterwet. Drinkwaterbedrijven testen het water op honderden stoffen, op meerdere plekken in het leidingnet, en de Inspectie Leefomgeving en Transport houdt toezicht. Welke grenswaarden er gelden en wat er (nog) buiten valt, lees je in <Link href="/kennisbank/drinkwaternormen-nederland" className="underline hover:text-ink">drinkwaternormen in Nederland</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wanneer is kraanwater tijdelijk niet veilig?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Heel af en toe gaat er iets mis, bijvoorbeeld bij een leidingbreuk of een verontreiniging. Het waterbedrijf geeft dan een kookadvies voor het getroffen gebied: water eerst koken voordat je het drinkt. Dat wordt altijd gecommuniceerd en duurt meestal kort.
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Kookadvies of storing?</strong> Check het met je postcode in onze <Link href="/storingen" className="underline hover:text-ink">storingen-check</Link>.</li>
+              <li><strong className="text-ink">Bruin water?</strong> Dat is meestal niet gevaarlijk. Lees ons <Link href="/kennisbank/bruin-water-uit-de-kraan" className="underline hover:text-ink">stappenplan bij bruin water uit de kraan</Link>.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Oude leidingen in huis</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Het waterbedrijf is verantwoordelijk tot aan de watermeter. Daarna zijn de leidingen van de woning zelf. In zeer oude woningen kunnen nog loden leidingen zitten, en lood kan dan in kleine hoeveelheden in het kraanwater komen. Twijfel je, laat een installateur je leidingen bekijken. Laat bij twijfel in elk geval de kraan even lopen als het water lang heeft stilgestaan, bijvoorbeeld na een vakantie.
+            </p>
           </div>
         </section>
 

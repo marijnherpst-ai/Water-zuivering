@@ -78,7 +78,7 @@ export default function Page() {
         <section className="relative bg-surface border-y border-edge overflow-hidden">
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-              <Image src="/assets/img/kennisbank/waterontharder-vs-waterzuiveraar.png" alt="Vergelijking van een waterontharder met de voor- en nadelen op een rij" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+              <Image loading="eager" src="/assets/img/kennisbank/waterontharder-vs-waterzuiveraar.png" alt="Vergelijking van een waterontharder met de voor- en nadelen op een rij" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
             <div>
               <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Voordelen</h2>
@@ -123,6 +123,35 @@ export default function Page() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Voor wie is een waterontharder zinvol?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Of de voordelen van een <strong className="text-ink">waterontharder</strong> opwegen tegen de nadelen, hangt vooral af van hoe hard je water is:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Zacht tot matig hard water</strong> (tot ongeveer 14 °dH): de voordelen zijn beperkt. Regelmatig ontkalken van de waterkoker en de douchekop is vaak genoeg.</li>
+              <li><strong className="text-ink">Hard water</strong> (14 tot 21 °dH): je merkt duidelijk minder kalkaanslag en je apparaten gaan langer mee.</li>
+              <li><strong className="text-ink">Zeer hard water</strong> (boven 21 °dH): hier is een ontharder het meest de moeite waard.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              De hardheid van jouw water vind je op de website van je waterbedrijf. Hoe je dat getal leest, staat in <Link href="/kennisbank/hoe-werkt-een-waterontharder" className="underline hover:text-ink">hoe werkt een waterontharder?</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waterontharder en drinkwater</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een ontharder ruilt kalk in voor een kleine hoeveelheid natrium. Dat is niet te proeven en veilig, maar sommige mensen houden voor drinken en koken liever een kraan die niet onthard is. Daarnaast verandert een ontharder niets aan PFAS, medicijnresten of microplastics.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Daarom combineren veel huishoudens beide: een ontharder voor het hele huis tegen kalk, en een osmosesysteem onder de keukenkraan voor het drinkwater. Het verschil tussen de twee lees je in <Link href="/kennisbank/waterontharder-vs-waterzuiveraar" className="underline hover:text-ink">waterontharder of waterzuiveraar</Link>.
+            </p>
           </div>
         </section>
 

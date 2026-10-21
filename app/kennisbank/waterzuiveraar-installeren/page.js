@@ -51,7 +51,7 @@ export default function Page() {
               Waterzuiveraar laten installeren: hoe gaat dat?
             </h1>
             <p className="mt-5 text-dim text-lg">
-              Veel mensen stellen een systeem uit omdat ze denken dat installatie een hele klus is. In werkelijkheid valt dat erg mee.
+              Veel mensen stellen een <strong className="text-ink">waterzuiveraar</strong> uit omdat ze denken dat installeren een hele klus is. In werkelijkheid valt dat erg mee.
             </p>
             <AuteurRegel />
           </div>
@@ -99,7 +99,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/kennisbank/waterzuiveraar-installeren.png" alt="Monteur installeert een waterzuiveringssysteem onder de gootsteen" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/kennisbank/waterzuiveraar-installeren.png" alt="Monteur installeert een waterzuiveraar onder de gootsteen" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -107,6 +107,54 @@ export default function Page() {
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Vakkundig geïnstalleerd, met 10 jaar garantie</h2>
               <p className="mt-4 text-dim">Onze eigen monteurs installeren elk systeem persoonlijk en testen alles voordat ze vertrekken. Meer over de garantie lees je op onze <Link href="/garantie" className="underline hover:text-ink">garantiepagina</Link>. Wil je precies weten wat er op de installatiedag gebeurt en wat je vooraf nodig hebt? Lees dan onze pagina over de <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>.</p>
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat heb je nodig om een waterzuiveraar te installeren?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Voor een omgekeerde-osmosesysteem onder het aanrecht zijn drie dingen nodig. Die zijn in vrijwel elke keuken al aanwezig:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Een koudwateraansluiting</strong> onder de gootsteen, waarop de monteur een aftakking maakt.</li>
+              <li><strong className="text-ink">De afvoer van de gootsteen</strong>. Daar loopt het spoelwater naartoe waarmee het membraan de tegengehouden stoffen wegspoelt.</li>
+              <li><strong className="text-ink">Een stopcontact</strong> in of vlak bij het kastje, voor de pomp en het display.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Daarnaast moet het systeem in je kastje passen. De waterzuiveraar van Water-zuivering is 10,5 cm breed, 42 cm diep en 43 cm hoog, en kan staand of liggend worden geplaatst. De waterdruk in huis moet tussen 0,1 en 0,4 MPa liggen; dat is in Nederlandse woningen normaal.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Zo verloopt het installeren van een waterzuiveraar</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              De monteur werkt meestal in deze volgorde:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Aftakking maken</strong> op de koude waterleiding onder de gootsteen.</li>
+              <li><strong className="text-ink">Afvoer aansluiten</strong> met een klein koppelstuk op de afvoerbuis.</li>
+              <li><strong className="text-ink">Systeem plaatsen</strong> in het kastje, staand of liggend, afhankelijk van de ruimte.</li>
+              <li><strong className="text-ink">Kraan plaatsen</strong>: een apart tappunt of een <Link href="/kennisbank/3-weg-kraan-uitleg" className="underline hover:text-ink">3-weg kraan</Link>. Daarvoor is soms een extra gat in het aanrecht nodig.</li>
+              <li><strong className="text-ink">Doorspoelen en testen</strong>: alle aansluitingen, de waterdruk en elke filtertrap worden gecontroleerd.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Wil je weten wat er precies op de installatiedag gebeurt? Lees ook onze pagina over de <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Na de installatie: wat merk je ervan?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Vanaf het eerste glas komt er gefilterd water uit je kraan. Het systeem werkt direct flow, dus zonder opslagtank: het water wordt gezuiverd op het moment dat je de kraan opendraait, met 1,58 liter per minuut.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een display op het apparaat laat de filterstatus zien en geeft een melding als er iets is: E1 als het systeem 30 minuten onafgebroken heeft gedraaid, E2 bij lekkage en E3 bij te lage waterdruk. De filters vervang je later zelf, zonder gereedschap. Hoe vaak, lees je in <Link href="/kennisbank/waterfilter-vervangen-hoe-vaak" className="underline hover:text-ink">hoe vaak moet je een waterfilter vervangen</Link>.
+            </p>
           </div>
         </section>
 

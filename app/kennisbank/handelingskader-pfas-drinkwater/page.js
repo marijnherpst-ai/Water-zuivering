@@ -10,7 +10,7 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/handelingskader-pfas-drinkwater' },
-  title: 'Handelingskader PFAS: wat betekent dat voor je water? — Water-zuivering',
+  title: 'Handelingskader PFAS: wat betekent het? — Water-zuivering',
   description:
     'Het handelingskader PFAS bepaalt wanneer de overheid ingrijpt bij vervuiling. Wat het is, wie het gebruikt en wat het voor je drinkwater betekent.',
 };
@@ -51,7 +51,7 @@ export default function Page() {
               Handelingskader PFAS: wat betekent dat voor je water?
             </h1>
             <p className="mt-5 text-dim text-lg">
-              Je komt de term vooral tegen in nieuwsberichten over bouwprojecten en grondverzet. Maar wat is een handelingskader precies, en raakt het ook je drinkwater?
+              Je komt de term vooral tegen in nieuwsberichten over bouwprojecten en grondverzet. Maar wat is een <strong className="text-ink">handelingskader</strong> precies, en raakt het ook je drinkwater?
             </p>
             <AuteurRegel />
           </div>
@@ -146,7 +146,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/kennisbank/is-kraanwater-veilig.png" alt="Waterglas met kraanwater tegen een lichte achtergrond" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/kennisbank/is-kraanwater-veilig.png" alt="Waterglas met kraanwater: wat betekent het handelingskader PFAS" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">

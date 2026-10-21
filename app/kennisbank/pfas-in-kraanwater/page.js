@@ -52,7 +52,7 @@ export default function Page() {
               PFAS in kraanwater: wat is het en hoe filter je het eruit?
             </h1>
             <p className="mt-5 text-dim text-lg">
-              Je hebt de term vast voorbij zien komen in het nieuws. Wat zijn PFAS precies, en wat kun je er zelf aan doen?
+              Je hebt het vast voorbij zien komen in het nieuws: <strong className="text-ink">PFAS in kraanwater</strong>. Wat zijn PFAS precies, en wat kun je er zelf aan doen?
             </p>
             <KortAntwoord bron={{ naam: 'RIVM, PFAS', url: 'https://www.rivm.nl/pfas' }}>
               PFAS zijn door de mens gemaakte chemische stoffen die nauwelijks afbreken en in lage concentraties in Nederlands kraanwater voorkomen. Het water voldoet aan de wettelijke norm, maar in een deel van Nederland ligt de waarde boven de strengere RIVM-advieswaarde van 4,4 ng/l. Een filterkan houdt PFAS nauwelijks tegen; een omgekeerde-osmosesysteem wel.
@@ -90,7 +90,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/kennisbank/pfas-in-kraanwater.png" alt="Close-up van een druppel helder water" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/kennisbank/pfas-in-kraanwater.png" alt="Druppel water: PFAS in kraanwater is onzichtbaar" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -98,6 +98,42 @@ export default function Page() {
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Omgekeerde osmose filtert PFAS effectief</h2>
               <p className="mt-4 text-dim">Het RO-membraan in een Water-zuivering systeem heeft gaatjes die honderden keren dunner zijn dan een haar — te klein voor PFAS-moleculen om doorheen te komen. Meer over hoe dat proces precies werkt lees je in <Link href="/kennisbank/wat-is-osmosewater" className="underline hover:text-ink">onze uitleg over osmosewater</Link>.</p>
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoeveel PFAS zit er in kraanwater per regio?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Dat verschilt sterk per provincie. Greenpeace zette in september 2026 de publieke meetgegevens van de tien Nederlandse waterbedrijven naast de RIVM-advieswaarde van 4,4 ng/l. Het aandeel inwoners met kraanwater boven anderhalf keer die waarde:
+            </p>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold">Provincie</th><th scope="col" className="p-4 font-display font-bold">Boven 1,5× de RIVM-waarde</th></tr></thead>
+                <tbody>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Noord-Holland</th><td className="p-4 text-dim">93%</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Zuid-Holland</th><td className="p-4 text-dim">76%</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Zeeland</th><td className="p-4 text-dim">28%</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Utrecht</th><td className="p-4 text-dim">4%</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Overige provincies</th><td className="p-4 text-dim">0%</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 text-dim leading-relaxed">
+              Het gaat om een indicatie per provincie, niet per adres. Met onze <Link href="/pfas-check" className="underline hover:text-ink">PFAS-check</Link> zie je met je postcode hoe het in jouw regio zit.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waarom zit er in het westen meer PFAS in kraanwater?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              In Noord- en Zuid-Holland wordt drinkwater voor een groot deel gemaakt van oppervlaktewater, uit rivieren en meren. PFAS komt via industrie, rioolwater en blusschuim in dat oppervlaktewater terecht en is moeilijk te verwijderen. In regio&apos;s waar drinkwater vooral uit diep grondwater komt, liggen de waarden meestal lager.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Meer over de verschillende PFAS-stoffen lees je in <Link href="/kennisbank/pfos-pfoa-verschil" className="underline hover:text-ink">PFAS, PFOS en PFOA: het verschil</Link>, en hoe je zo dicht mogelijk bij PFAS-vrij water komt in <Link href="/kennisbank/pfas-vrij-water" className="underline hover:text-ink">PFAS-vrij water</Link>.
+            </p>
           </div>
         </section>
 

@@ -50,7 +50,7 @@ export default function WatIsOsmosewaterPage() {
               Wat is osmosewater? Uitleg, gebruik en kosten
             </h1>
             <p className="mt-5 text-dim text-lg">
-              Osmosewater, ook wel omgekeerde-osmosewater of RO-water genoemd, hoor je steeds vaker voorbijkomen. In gewone taal leggen we uit wat het is, of je het kan drinken, hoe je het maakt — en wat het je eigenlijk kost.
+              <strong className="text-ink">Osmosewater</strong>, ook wel omgekeerde-osmosewater of RO-water genoemd, hoor je steeds vaker voorbijkomen. In gewone taal leggen we uit wat het is, of je het kan drinken, hoe je het maakt — en wat het je eigenlijk kost.
             </p>
             <AuteurRegel />
           </div>
@@ -133,7 +133,7 @@ export default function WatIsOsmosewaterPage() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/5]">
-                <Image src="/assets/img/cabinet-install.png" alt="Water-zuivering osmosesysteem geïnstalleerd onder het aanrecht" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/cabinet-install.png" alt="Osmosesysteem onder het aanrecht dat osmosewater maakt" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">

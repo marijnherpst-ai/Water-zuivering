@@ -73,7 +73,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat doet een waterzuiveraar?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Een waterzuiveraar (zoals een omgekeerde-osmosesysteem) richt zich specifiek op je <strong className="text-ink">drinkwater</strong>, meestal via een aparte kraan. Via meerdere filtertrappen worden chloor, PFAS, medicijnresten, microplastics, lood en andere ongewenste stoffen eruit gefilterd. Meer weten over hoe dat precies werkt? Lees onze uitleg over{' '}
+              Een <strong className="text-ink">waterzuiveraar</strong> (zoals een omgekeerde-osmosesysteem) richt zich specifiek op je <strong className="text-ink">drinkwater</strong>, meestal via een aparte kraan. Via meerdere filtertrappen worden chloor, PFAS, medicijnresten, microplastics, lood en andere ongewenste stoffen eruit gefilterd. Meer weten over hoe dat precies werkt? Lees onze uitleg over{' '}
               <Link href="/kennisbank/wat-is-osmosewater" className="underline hover:text-ink">wat osmosewater is</Link>.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
@@ -87,7 +87,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/kennisbank/waterontharder-vs-waterzuiveraar.png" alt="Water uit een moderne kraan in een glas" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/kennisbank/waterontharder-vs-waterzuiveraar.png" alt="Gefilterd water uit een waterzuiveraar in een glas" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -100,6 +100,34 @@ export default function Page() {
                 <li className="flex items-center gap-2.5 text-dim"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Geen zoutvoorraad of grote installatie nodig</li>
               </ul>
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waterontharder vs. waterzuiveraar op een rij</h2>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold"></th><th scope="col" className="p-4 font-display font-bold">Waterontharder</th><th scope="col" className="p-4 font-display font-bold">Waterzuiveraar</th></tr></thead>
+                <tbody>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Doel</th><td className="p-4 text-dim">Minder kalk in het hele huis</td><td className="p-4 text-dim">Zuiver drinkwater in de keuken</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Werking</th><td className="p-4 text-dim">Ionenwisseling met zout</td><td className="p-4 text-dim">Omgekeerde osmose met een membraan</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Haalt kalk weg</th><td className="p-4 text-dim">Ja</td><td className="p-4 text-dim">Ja, uit het drinkwater</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Haalt PFAS en medicijnresten weg</th><td className="p-4 text-dim">Nee</td><td className="p-4 text-dim">Ja</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Plek</th><td className="p-4 text-dim">Bij de hoofdleiding</td><td className="p-4 text-dim">Onder het aanrecht</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Onderhoud</th><td className="p-4 text-dim">Zout bijvullen</td><td className="p-4 text-dim">Filters vervangen, ± € 135 per jaar</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kun je beide combineren?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Ja, en dat gebeurt vaak in regio&apos;s met hard water. De ontharder beschermt je leidingen, boiler en wasmachine tegen kalk. De <strong className="text-ink">waterzuiveraar</strong> onder de keukenkraan zorgt voor drinkwater zonder PFAS, medicijnresten en microplastics. Hoe het installeren gaat, lees je in <Link href="/kennisbank/waterzuiveraar-installeren" className="underline hover:text-ink">waterzuiveraar laten installeren</Link>.
+            </p>
           </div>
         </section>
 

@@ -55,7 +55,7 @@ export default function Page() {
               Een eerlijk overzicht van waar de kosten vandaan komen — en waarom het op termijn vaak voordeliger is dan je zou denken.
             </p>
             <KortAntwoord>
-              De aanschafprijs van een waterzuiveringssysteem met omgekeerde osmose hangt af van je situatie en vraag je op via een offerte, inclusief plaatsing. Daarnaast betaal je voor vervangende filters: bij het systeem van Water-zuivering gemiddeld ongeveer €135 per jaar. Daar staat tegenover dat je geen flessenwater meer hoeft te kopen.
+              De aanschafprijs van een <strong className="text-ink">waterzuiveringssysteem</strong> met omgekeerde osmose hangt af van je situatie en vraag je op via een offerte, inclusief plaatsing. Daarnaast betaal je voor vervangende filters: bij het systeem van Water-zuivering gemiddeld ongeveer €135 per jaar. Daar staat tegenover dat je geen flessenwater meer hoeft te kopen.
             </KortAntwoord>
             <AuteurRegel />
           </div>
@@ -105,7 +105,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/kennisbank/wat-kost-een-waterzuiveringssysteem.png" alt="Euromunten naast een glas helder water op een keukenblad" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/kennisbank/wat-kost-een-waterzuiveringssysteem.png" alt="Euromunten naast een glas water: wat kost een waterzuiveringssysteem" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -118,6 +118,57 @@ export default function Page() {
                 <li className="flex items-center gap-2.5 text-dim"><svg className="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Reactie binnen 1 werkdag</li>
               </ul>
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat bepaalt de prijs van een waterzuiveringssysteem?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Twee systemen die op elkaar lijken, kunnen flink in prijs verschillen. Dat komt door deze punten:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Het type filter</strong>. Een simpel koolstoffilter is goedkoper dan een omgekeerde-osmosesysteem, maar houdt ook veel minder tegen, zoals PFAS en medicijnresten.</li>
+              <li><strong className="text-ink">Het aantal filtertrappen</strong>. Meer trappen betekent grondiger filteren en een langere levensduur van het membraan.</li>
+              <li><strong className="text-ink">Met of zonder tank</strong>. Een direct-flow systeem zonder opslagtank neemt minder ruimte in en levert altijd vers water.</li>
+              <li><strong className="text-ink">De kraan</strong>. Een apart tappunt of een 3-weg kraan, in chroom, geborsteld staal, goud of zwart.</li>
+              <li><strong className="text-ink">Installatie en garantie</strong>. Een prijs inclusief plaatsing en 10 jaar garantie is iets anders dan een losse doos.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kosten van een waterzuiveringssysteem per jaar</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Na de aanschaf zijn de filters de enige vaste kosten. Bij het systeem van Water-zuivering ziet dat er zo uit:
+            </p>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold">Onderdeel</th><th scope="col" className="p-4 font-display font-bold">Hoe vaak</th><th scope="col" className="p-4 font-display font-bold">Kosten</th></tr></thead>
+                <tbody>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">PPC-voorfilter</th><td className="p-4 text-dim">Elk jaar</td><td className="p-4 text-dim">€ 49,99</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">CTO-nafilter (of met mineralen)</th><td className="p-4 text-dim">Elk jaar</td><td className="p-4 text-dim">€ 49,99 (€ 64,99)</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">RO-membraan</th><td className="p-4 text-dim">Elke 2 jaar</td><td className="p-4 text-dim">€ 69,99, dus ± € 35 per jaar</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Gemiddeld per jaar</th><td className="p-4 text-dim"></td><td className="p-4 text-dim">Ongeveer € 135</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waar je op let bij het vergelijken van prijzen</h2>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Filterprijzen</strong>: een goedkoop systeem met dure of moeilijk verkrijgbare filters is op termijn duurder.</li>
+              <li><strong className="text-ink">Installatie</strong>: zit die in de prijs, of komt er nog een monteur bij?</li>
+              <li><strong className="text-ink">Garantie</strong>: hoe lang ben je gedekt, en wat valt eronder?</li>
+              <li><strong className="text-ink">Wat het systeem tegenhoudt</strong>: vergelijk niet alleen de prijs, maar ook of PFAS en medicijnresten eruit gaan.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Twijfel je tussen de soorten? Lees <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">beste waterfilter voor thuis</Link>.
+            </p>
           </div>
         </section>
 

@@ -73,7 +73,7 @@ export default function Page() {
         <section className="relative bg-surface border-y border-edge overflow-hidden">
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-              <Image src="/assets/img/twee-kranen.jpg" alt="Twee kranen, waarvan een met gefilterd kraanwater" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+              <Image loading="eager" src="/assets/img/twee-kranen.jpg" alt="Twee kranen, waarvan een met gefilterd kraanwater" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
             <div>
               <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">De drie meest gekozen opties</h2>
@@ -113,6 +113,39 @@ export default function Page() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kraanwater filteren: de opties vergeleken</h2>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold"></th><th scope="col" className="p-4 font-display font-bold">Filterkan</th><th scope="col" className="p-4 font-display font-bold">Kraanfilter</th><th scope="col" className="p-4 font-display font-bold">Osmose onder de gootsteen</th></tr></thead>
+                <tbody>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Chloor en smaak</th><td className="p-4 text-dim">Ja</td><td className="p-4 text-dim">Ja</td><td className="p-4 text-dim">Ja</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Kalk</th><td className="p-4 text-dim">Deels</td><td className="p-4 text-dim">Nauwelijks</td><td className="p-4 text-dim">Ja</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">PFAS en medicijnresten</th><td className="p-4 text-dim">Nauwelijks</td><td className="p-4 text-dim">Nauwelijks</td><td className="p-4 text-dim">Ja</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Gemak</th><td className="p-4 text-dim">Steeds bijvullen</td><td className="p-4 text-dim">Direct uit de kraan</td><td className="p-4 text-dim">Direct uit eigen kraan</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Filter vervangen</th><td className="p-4 text-dim">Vaak, na een paar weken</td><td className="p-4 text-dim">Regelmatig</td><td className="p-4 text-dim">1× per jaar, membraan 1× per 2 jaar</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waar je op let als je kraanwater gaat filteren</h2>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Wat wil je eruit hebben?</strong> Alleen een betere smaak, of ook PFAS en medicijnresten?</li>
+              <li><strong className="text-ink">Hoeveel water gebruik je?</strong> Voor een heel gezin is steeds een kan bijvullen onhandig.</li>
+              <li><strong className="text-ink">Wat kosten de filters per jaar?</strong> Een goedkope kan met vaak nieuwe filters is op termijn niet altijd goedkoper.</li>
+              <li><strong className="text-ink">Past het in je keuken?</strong> Een systeem onder de gootsteen moet in het kastje passen.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Hoe vaak je de filters vervangt, lees je in <Link href="/kennisbank/waterfilter-vervangen-hoe-vaak" className="underline hover:text-ink">hoe vaak moet je een waterfilter vervangen</Link>.
+            </p>
           </div>
         </section>
 

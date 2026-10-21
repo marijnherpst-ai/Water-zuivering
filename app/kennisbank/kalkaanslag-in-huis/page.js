@@ -61,7 +61,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waar komt kalkaanslag vandaan?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Kalkaanslag ontstaat door calcium en magnesium die van nature in het water zitten — vooral in gebieden met "hard water", zoals grote delen van Nederland. Zodra water verdampt (bijvoorbeeld rond een kraan of op tegels), blijven deze mineralen achter als een witte, korstige laag.
+              <strong className="text-ink">Kalkaanslag</strong> ontstaat door calcium en magnesium die van nature in het water zitten — vooral in gebieden met "hard water", zoals grote delen van Nederland. Zodra water verdampt (bijvoorbeeld rond een kraan of op tegels), blijven deze mineralen achter als een witte, korstige laag.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Het is dus geen vervuiling in de gevaarlijke zin — het is gewoon een natuurlijk bijproduct van je plaatselijke waterhardheid.
@@ -83,7 +83,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/kennisbank/kalkaanslag-in-huis.png" alt="Kalkaanslag op een chromen kraan" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/kennisbank/kalkaanslag-in-huis.png" alt="Kalkaanslag op een chromen kraan" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -91,6 +91,40 @@ export default function Page() {
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Ontharden voor je hele huis, zuiveren voor je drinkwater</h2>
               <p className="mt-4 text-dim">Kalkaanslag door je hele huis pak je structureel aan met een waterontharder. Wil je vooral zuiverder drinkwater bij je keukenkraan? Dan is een waterzuiveraar de betere keuze. Benieuwd wat het verschil precies is? Lees <Link href="/kennisbank/waterontharder-vs-waterzuiveraar" className="underline hover:text-ink">waterontharder vs. waterzuiveraar</Link>.</p>
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kalkaanslag verwijderen: per plek</h2>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold">Waar</th><th scope="col" className="p-4 font-display font-bold">Zo pak je het aan</th></tr></thead>
+                <tbody>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Kranen en douchekop</th><td className="p-4 text-dim">Laat een doekje met schoonmaakazijn een uur op de kraan zitten, of leg de douchekop in een bakje azijn. Daarna afspoelen.</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Waterkoker</th><td className="p-4 text-dim">Kook water met een scheut azijn of citroenzuur, laat het even staan en spoel goed na.</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Douchewand en tegels</th><td className="p-4 text-dim">Een kalkreiniger of azijn, daarna goed naspoelen en droogvegen.</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Wasmachine en koffiezetapparaat</th><td className="p-4 text-dim">Gebruik de ontkalker die de fabrikant aanraadt, volgens de handleiding.</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 text-dim leading-relaxed">
+              Let op natuursteen: azijn en zure middelen kunnen marmer en kalksteen aantasten. Gebruik daar een middel dat geschikt is voor natuursteen.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kalkaanslag voorkomen</h2>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Droogvegen</strong>: met een douchetrekker of doek na het douchen voorkom je het meeste.</li>
+              <li><strong className="text-ink">Regelmatig ontkalken</strong> van waterkoker en koffiezetapparaat, voordat de laag dik wordt.</li>
+              <li><strong className="text-ink">Een waterontharder</strong> voor het hele huis, als je water echt hard is.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              In de keuken is er nog een oplossing: water dat door een osmosesysteem gaat, bevat bijna geen kalk meer. Koffie, thee en de waterkoker blijven dan schoon. Hoe hard jouw water is, lees je in <Link href="/kennisbank/hoe-werkt-een-waterontharder" className="underline hover:text-ink">hoe werkt een waterontharder?</Link>.
+            </p>
           </div>
         </section>
 

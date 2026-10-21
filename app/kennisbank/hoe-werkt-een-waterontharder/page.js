@@ -69,7 +69,7 @@ export default function Page() {
         <section className="relative bg-surface border-y border-edge overflow-hidden">
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-              <Image src="/assets/img/kennisbank/kalkaanslag-in-huis.png" alt="Kalkaanslag die een waterontharder voorkomt door ionenwisseling" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+              <Image loading="eager" src="/assets/img/kennisbank/kalkaanslag-in-huis.png" alt="Kalkaanslag die een waterontharder voorkomt door ionenwisseling" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
             <div>
               <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Het proces in drie stappen</h2>
@@ -122,6 +122,40 @@ export default function Page() {
               </table>
             </div>
             <p className="mt-4 text-xs text-dim">De exacte hardheid verschilt per waterbedrijf en wordt door hen gepubliceerd.</p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Welk zout gebruik je in een waterontharder?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een <strong className="text-ink">waterontharder</strong> werkt met speciaal onthardingszout, meestal in de vorm van tabletten. Dat is zuiverder dan gewoon keukenzout en lost gelijkmatig op in het zoutvat. Gebruik geen strooizout of keukenzout: daar zitten stoffen in die de harskorrels kunnen vervuilen.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Hoeveel zout je verbruikt, hangt af van je waterverbruik en hoe hard je water is. De ontharder regenereert alleen als dat nodig is, dus bij zacht water gaat het zout langer mee.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Ontharder, kalkfilter of waterzuiveraar?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Drie apparaten die vaak door elkaar worden gehaald:
+            </p>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold">Apparaat</th><th scope="col" className="p-4 font-display font-bold">Wat het doet</th><th scope="col" className="p-4 font-display font-bold">Voor</th></tr></thead>
+                <tbody>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Waterontharder</th><td className="p-4 text-dim">Haalt kalk uit al het water in huis via ionenwisseling</td><td className="p-4 text-dim">Minder kalkaanslag in het hele huis</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Kalkfilter zonder afvoer</th><td className="p-4 text-dim">Verandert hoe kalk zich gedraagt, haalt het er niet uit</td><td className="p-4 text-dim">Lichte kalkproblemen</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Waterzuiveraar (omgekeerde osmose)</th><td className="p-4 text-dim">Filtert drinkwater, ook PFAS, medicijnresten en kalk</td><td className="p-4 text-dim">Zuiver drink- en kookwater</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 text-dim leading-relaxed">
+              Meer over het verschil lees je in <Link href="/kennisbank/waterontharder-vs-waterzuiveraar" className="underline hover:text-ink">waterontharder of waterzuiveraar</Link> en <Link href="/kennisbank/waterontharder-zonder-afvoer" className="underline hover:text-ink">waterontharder zonder afvoer</Link>.
+            </p>
           </div>
         </section>
 

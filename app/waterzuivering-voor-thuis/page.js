@@ -10,11 +10,11 @@ export const metadata = {
   alternates: { canonical: '/waterzuivering-voor-thuis' },
   title: 'Waterzuivering voor thuis — Water-zuivering',
   description:
-    'Waterzuivering voor thuis: zuiver, fris kraanwater zonder chloor, PFAS of microplastics. Ontdek hoe een waterzuiveraar voor thuis werkt en wat het kost.',
+    'Waterzuivering voor thuis: fris kraanwater zonder chloor, PFAS of microplastics. Ontdek hoe een waterzuiveraar voor thuis werkt en wat het kost.',
   openGraph: {
     title: 'Waterzuivering voor thuis — Water-zuivering',
     description:
-      'Waterzuivering voor thuis: zuiver, fris kraanwater zonder chloor, PFAS of microplastics. Ontdek hoe een waterzuiveraar voor thuis werkt en wat het kost.',
+      'Waterzuivering voor thuis: fris kraanwater zonder chloor, PFAS of microplastics. Ontdek hoe een waterzuiveraar voor thuis werkt en wat het kost.',
     images: ['/assets/img/hero-vrouw-water.webp'],
   },
 };

@@ -51,7 +51,7 @@ export default function Page() {
               Waterfilter onder de gootsteen: alles wat je moet weten
             </h1>
             <p className="mt-5 text-dim text-lg">
-              De populairste plek voor een waterfilter in huis. Waarom eigenlijk, en waar moet je op letten?
+              Een <strong className="text-ink">waterfilter onder de gootsteen</strong> is de populairste keuze in huis. Waarom eigenlijk, en waar moet je op letten?
             </p>
             <AuteurRegel />
           </div>
@@ -95,7 +95,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/kennisbank/waterfilter-onder-de-gootsteen.png" alt="Waterfiltersysteem geïnstalleerd in een keukenkastje" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/kennisbank/waterfilter-onder-de-gootsteen.png" alt="Waterfiltersysteem geïnstalleerd in een keukenkastje" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -104,6 +104,55 @@ export default function Page() {
               <p className="mt-4 text-dim">Ons systeem is smaller dan de meeste keukenladen en past staand of liggend — zo goed als altijd geregeld, ongeacht hoe je kastje is ingedeeld.</p>
               <p className="mt-4 text-dim">Alle technische details vind je op onze <Link href="/uitleg" className="underline hover:text-ink">specificatiepagina</Link>. Twijfel je nog tussen dit type en een waterfilterkan of kraanfilter? Bekijk onze <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">vergelijking van de beste waterfilter voor thuis</Link>.</p>
             </div>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Soorten waterfilters onder de gootsteen</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Onder de gootsteen kom je grofweg twee soorten tegen:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Een koolstoffilter</strong>. Eén of twee filterpatronen die chloor, geur en smaak verbeteren. Eenvoudig en goedkoop, maar PFAS en medicijnresten gaan er grotendeels doorheen.</li>
+              <li><strong className="text-ink">Een omgekeerde-osmosesysteem</strong>. Meerdere filtertrappen met een membraan van 0,0001 micron dat ook PFAS, medicijnresten, microplastics en kalk tegenhoudt.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Bij osmosesystemen is er nog een verschil: met of zonder opslagtank. Een tank neemt veel ruimte in het kastje in. Een direct-flow systeem zuivert het water op het moment dat je tapt en past daardoor in een kleiner kastje.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat moet er in je kastje aanwezig zijn?</h2>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Koudwateraansluiting</strong> voor de aftakking.</li>
+              <li><strong className="text-ink">Afvoer</strong> van de gootsteen, voor een osmosesysteem.</li>
+              <li><strong className="text-ink">Stopcontact</strong> voor een systeem met pomp en display.</li>
+              <li><strong className="text-ink">Ruimte</strong>: het systeem van Water-zuivering meet 10,5 × 42 × 43 cm en kan staand of liggend.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Twijfel je of het past? Met onze <Link href="/maatcheck" className="underline hover:text-ink">maatcheck</Link> zie je het in je eigen kastje.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Onderhoud van een waterfilter onder de gootsteen</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een filter onder de gootsteen vraagt weinig aandacht. Je vervangt de filters volgens schema: bij een osmosesysteem het voor- en nafilter elk jaar en het membraan elke twee jaar. Meer daarover in <Link href="/kennisbank/waterfilter-vervangen-hoe-vaak" className="underline hover:text-ink">hoe vaak moet je een waterfilter vervangen</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat kost een waterfilter onder de gootsteen?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een simpel koolstoffilter onder de gootsteen is goedkoper in aanschaf, maar houdt ook minder tegen. Een osmosesysteem kost meer, maar daarna betaal je alleen de filters: bij Water-zuivering gemiddeld ongeveer € 135 per jaar. Een overzicht van alle kosten vind je in <Link href="/kennisbank/wat-kost-een-waterzuiveringssysteem" className="underline hover:text-ink">wat kost een waterzuiveringssysteem?</Link>.
+            </p>
           </div>
         </section>
 
