@@ -13,6 +13,20 @@ export const metadata = {
 
 const ARTICLES = [
   {
+    href: '/kennisbank/bruin-water-uit-de-kraan',
+    image: '/assets/img/een-kraan.jpg',
+    category: 'Waterkwaliteit',
+    title: 'Bruin water uit de kraan: oorzaak en wat je doet',
+    excerpt: 'Waar het vandaan komt, of je het kunt drinken en welk stappenplan je direct volgt.',
+  },
+  {
+    href: '/kennisbank/osmosewater-kopen',
+    image: '/assets/img/glas-water.webp',
+    category: 'Koopgids',
+    title: 'Osmosewater kopen: waar haal je het en wat kost het?',
+    excerpt: 'Tappunt, aquariumwinkel of drogist: wat je koopt, wat het kost en wanneer zelf maken slimmer is.',
+  },
+  {
     href: '/kennisbank/wat-is-osmosewater',
     image: '/assets/img/glas-water.webp',
     category: 'Waterkwaliteit',

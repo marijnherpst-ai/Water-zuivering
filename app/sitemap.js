@@ -61,6 +61,8 @@ export default function sitemap() {
     { path: '/kennisbank/pfos-pfoa-verschil', priority: 0.5, changeFrequency: 'monthly' },
     { path: '/kennisbank/osmosewater-tappunt', priority: 0.5, changeFrequency: 'monthly' },
     { path: '/kennisbank/handelingskader-pfas-drinkwater', priority: 0.5, changeFrequency: 'monthly' },
+    { path: '/kennisbank/bruin-water-uit-de-kraan', priority: 0.5, changeFrequency: 'monthly' },
+    { path: '/kennisbank/osmosewater-kopen', priority: 0.5, changeFrequency: 'monthly' },
     { path: '/algemene-voorwaarden', priority: 0.3, changeFrequency: 'yearly' },
     { path: '/privacybeleid', priority: 0.3, changeFrequency: 'yearly' },
     { path: '/cookiebeleid', priority: 0.3, changeFrequency: 'yearly' },

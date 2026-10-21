@@ -94,7 +94,7 @@ export default function WatIsOsmosewaterPage() {
               <div className="rounded-2xl card p-6">
                 <span className="font-display text-3xl font-extrabold text-amber/40">1</span>
                 <p className="mt-3 font-display font-bold">Jerrycans kopen</p>
-                <p className="mt-2 text-sm text-dim">Verkrijgbaar bij bouwmarkten. Handig voor eenmalig gebruik (bijv. accu's, strijkijzers), maar op de lange termijn duur en onhandig sjouwen.</p>
+                <p className="mt-2 text-sm text-dim">Verkrijgbaar bij bouwmarkten. Handig voor eenmalig gebruik (bijv. accu's, strijkijzers), maar op de lange termijn duur en onhandig sjouwen. Lees waar je <Link href="/kennisbank/osmosewater-kopen" className="underline hover:text-ink">osmosewater kunt kopen</Link> en wat het kost.</p>
               </div>
               <div className="rounded-2xl card p-6">
                 <span className="font-display text-3xl font-extrabold text-amber/40">2</span>

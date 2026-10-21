@@ -94,7 +94,7 @@ export default function Page() {
               Als je merkt dat kraanwater in jouw regio een sterke smaak of geur heeft, is dat vaak op te lossen zonder dat er iets mis is met de veiligheid ervan. Een filter dat chloor en organische sporenstoffen weghaalt, verbetert de smaak merkbaar — ongeacht in welke regio je woont.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Twijfel je over de kwaliteit in jouw huis specifiek? Check eerst of er iets aan de hand is via onze <Link href="/storingen" className="underline hover:text-ink">storingen-check</Link>, of lees meer over <Link href="/kennisbank/is-kraanwater-veilig" className="underline hover:text-ink">of Nederlands kraanwater veilig is</Link>.
+              Twijfel je over de kwaliteit in jouw huis specifiek? Check eerst of er iets aan de hand is via onze <Link href="/storingen" className="underline hover:text-ink">storingen-check</Link>, of lees meer over <Link href="/kennisbank/is-kraanwater-veilig" className="underline hover:text-ink">of Nederlands kraanwater veilig is</Link>. Komt er ineens bruin water uit de kraan, volg dan ons <Link href="/kennisbank/bruin-water-uit-de-kraan" className="underline hover:text-ink">stappenplan bij bruin water</Link>.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Kortom: het "slechtste kraanwater van Nederland" is geen erkend fenomeen bij drinkwaterbedrijven of toezichthouders — het is vooral een label dat mensen plakken op een sterke smaak die ze niet gewend zijn. Verhuis je naar een andere regio, dan proef je soms verschil, maar dat zegt niets over hoe veilig het water is.
