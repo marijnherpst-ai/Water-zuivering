@@ -10,6 +10,12 @@ const nextConfig = {
         destination: '/kennisbank/waterontharder-vs-waterzuiveraar',
         permanent: true,
       },
+      // Misspelled URL that shows up as a 404 in Search Console
+      {
+        source: '/waterzuivering-for-thuis',
+        destination: '/waterzuivering-voor-thuis',
+        permanent: true,
+      },
     ];
   },
 };

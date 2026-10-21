@@ -140,7 +140,7 @@ export default function Page() {
             <div className="order-1 lg:order-2">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Installatie</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoe wordt het tappunt geplaatst?</h2>
-              <p className="mt-4 text-dim">Een extra gaatje in het aanrecht, een leidingaftakking naar het systeem onder de kast, en klaar — meestal is een installateur hier binnen één werkdag mee klaar. Wat er verder allemaal bij komt kijken lees je in <Link href="/kennisbank/waterzuiveraar-installeren" className="underline hover:text-ink">onze uitleg over installatie</Link>.</p>
+              <p className="mt-4 text-dim">Een extra gaatje in het aanrecht, een leidingaftakking naar het systeem onder de kast, en klaar — de installatie van het hele systeem duurt meestal 1 à 2 uur. Wat er verder allemaal bij komt kijken lees je in <Link href="/kennisbank/waterzuiveraar-installeren" className="underline hover:text-ink">onze uitleg over installatie</Link>.</p>
             </div>
           </div>
         </section>

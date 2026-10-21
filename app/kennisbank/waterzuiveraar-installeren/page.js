@@ -89,7 +89,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Moet ik zelf iets regelen?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Nee. De monteur brengt alles mee en sluit het systeem netjes aan op je bestaande waterleiding — er is geen voorbereiding van jouw kant nodig, behalve dat het kastje onder je spoelbak toegankelijk is. Kalkaanslag of geen Quooker aanwezig? Ook geen probleem, dat wordt gewoon meegenomen in de aansluiting.
+              Nee. De monteur brengt alles mee en sluit het systeem netjes aan op je bestaande waterleiding — er is geen voorbereiding van jouw kant nodig, behalve dat het kastje onder je spoelbak toegankelijk is. Heb je al een Quooker of een andere extra kraan? Geef dat aan bij je aanvraag, dan houdt de monteur er bij de aansluiting rekening mee.
             </p>
           </div>
         </section>
