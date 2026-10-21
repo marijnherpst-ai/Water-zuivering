@@ -135,13 +135,25 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Drie vragen om de keuze te maken</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Twijfel je tussen een waterontharder of waterzuiveraar? Stel jezelf deze drie vragen:
+              Nog steeds twijfel tussen een waterontharder of waterzuiveraar? Loop dan even deze drie vragen door:
             </p>
             <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
-              <li><strong className="text-ink">Heb je last van kalk door het hele huis?</strong> Witte aanslag op de douchewand, kranen en in de waterkoker wijst op hard water. Dan helpt een ontharder.</li>
-              <li><strong className="text-ink">Gaat het je om wat je drinkt?</strong> Wil je PFAS, medicijnresten en microplastics uit je drinkwater, dan heb je een waterzuiveraar nodig.</li>
-              <li><strong className="text-ink">Hoeveel ruimte en onderhoud wil je?</strong> Een ontharder staat bij de hoofdleiding en vraagt zout. Een waterzuiveraar past onder het aanrecht en vraagt alleen nieuwe filters.</li>
+              <li><strong className="text-ink">Heb je last van kalk door het hele huis?</strong> Als je douchewand na een paar dagen alweer wit ziet en je de waterkoker steeds moet ontkalken, is je water hard. Daar is een ontharder voor gemaakt.</li>
+              <li><strong className="text-ink">Gaat het je om wat je drinkt?</strong> Draait het om het glas water dat je drinkt, en om stoffen als PFAS en medicijnresten, dan kom je uit bij een waterzuiveraar.</li>
+              <li><strong className="text-ink">Hoeveel ruimte en onderhoud wil je?</strong> Voor een ontharder heb je plek nodig in de meterkast of berging, en je vult regelmatig zout bij. Een waterzuiveraar verdwijnt in het keukenkastje; je wisselt eens per jaar de filters.</li>
             </ul>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Haalt een waterzuiveraar ook kalk weg?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Ja, maar alleen uit het water dat uit de keukenkraan van de zuiveraar komt. Het membraan van een omgekeerde-osmosesysteem houdt kalk tegen, dus je waterkoker, koffiemachine en glazen blijven schoon. De rest van je huis, zoals de douche en de wasmachine, krijgt gewoon het harde kraanwater.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Woon je in een regio met zacht tot gemiddeld hard water en gaat het je vooral om de keuken? Dan is een waterzuiveraar alleen vaak genoeg. Heb je in het hele huis last van kalk, dan kies je voor beide: de ontharder voor het huis, de waterzuiveraar voor het drinkwater.
+            </p>
           </div>
         </section>
 

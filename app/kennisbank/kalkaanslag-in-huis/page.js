@@ -144,8 +144,32 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoeveel kalkaanslag krijg je in jouw regio?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Hoe snel kalkaanslag ontstaat, hangt af van de hardheid van het water. Die verschilt per regio en wordt uitgedrukt in Duitse hardheidsgraden (°dH). Je waterbedrijf publiceert de hardheid voor jouw postcode. Boven ongeveer 14 °dH heb je hard water en krijg je merkbaar meer kalkaanslag. Wat dat getal betekent, lees je in <Link href="/kennisbank/hoe-werkt-een-waterontharder" className="underline hover:text-ink">hoe werkt een waterontharder?</Link>.
+              Woon je in een regio met hard water, dan zie je kalkaanslag binnen een paar dagen terug op een net gepoetste kraan. In een regio met zacht water duurt dat weken. Zoek op de site van je waterbedrijf je postcode op: staat er een hoge hardheid, dan weet je waar al die kalkaanslag vandaan komt en loont het om er structureel iets aan te doen. Meer over hardheid en ontharders lees je in <Link href="/kennisbank/hoe-werkt-een-waterontharder" className="underline hover:text-ink">hoe werkt een waterontharder?</Link>.
             </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Is kalkaanslag schadelijk voor je gezondheid?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Nee. Kalkaanslag bestaat uit calcium en magnesium, mineralen die je ook uit je eten haalt. Water met veel kalk is dus niet ongezond om te drinken. Het probleem van kalkaanslag zit in je huis, niet in je lichaam: in vlekken op glas en kranen, in verstopte douchekoppen en in apparaten die sneller slijten.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Wel kan kalkaanslag de smaak beïnvloeden. Thee krijgt bij hard water sneller een vliesje, en koffie smaakt anders. Dat is geen gezondheidsrisico, maar wel een reden waarom veel mensen voor hun drinkwater kiezen voor gefilterd water.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kalkaanslag in de badkamer: wat werkt wel en wat niet</h2>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Wel</strong>: een douchetrekker na elke douchebeurt. Water dat niet opdroogt, laat geen kalkaanslag achter.</li>
+              <li><strong className="text-ink">Wel</strong>: een wekelijkse doekje met een milde kalkreiniger, voordat de laag dik wordt.</li>
+              <li><strong className="text-ink">Niet</strong>: schuursponsjes op glas en chroom. Die verwijderen de kalkaanslag wel, maar maken krasjes waar nieuwe kalk zich nog sneller aan hecht.</li>
+              <li><strong className="text-ink">Niet</strong>: azijn op natuursteen, marmer of de voegen van sommige tegels. Het zuur tast het oppervlak aan.</li>
+            </ul>
           </div>
         </section>
 
