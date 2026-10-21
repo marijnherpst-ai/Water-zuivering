@@ -10,9 +10,9 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/waterzuiveraar-installeren' },
-  title: 'Waterzuiveraar laten installeren — Water-zuivering',
+  title: 'Waterzuiveraar installeren: zo gaat dat — Water-zuivering',
   description:
-    'Hoe de installatie van een waterzuiveraar in zijn werk gaat: van afspraak tot zuiver water, stap voor stap.',
+    'Waterzuiveraar installeren: wat je nodig hebt, hoe de monteur het aansluit en hoe lang het duurt. Van afspraak tot zuiver water, stap voor stap.',
 };
 
 const FAQ = [
@@ -48,10 +48,10 @@ export default function Page() {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
-              Waterzuiveraar laten installeren: hoe gaat dat?
+              Waterzuiveraar installeren: hoe gaat dat?
             </h1>
             <p className="mt-5 text-dim text-lg">
-              Veel mensen stellen een <strong className="text-ink">waterzuiveraar</strong> uit omdat ze denken dat installeren een hele klus is. In werkelijkheid valt dat erg mee.
+              Veel mensen stellen het <strong className="text-ink">waterzuiveraar installeren</strong> uit omdat ze denken dat het een hele klus is. In werkelijkheid valt dat erg mee.
             </p>
             <AuteurRegel />
           </div>
@@ -99,7 +99,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image loading="eager" src="/assets/img/kennisbank/waterzuiveraar-installeren.png" alt="Monteur installeert een waterzuiveraar onder de gootsteen" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/kennisbank/waterzuiveraar-installeren.png" alt="Waterzuiveraar installeren onder de gootsteen door een monteur" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -154,6 +154,33 @@ export default function Page() {
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Een display op het apparaat laat de filterstatus zien en geeft een melding als er iets is: E1 als het systeem 30 minuten onafgebroken heeft gedraaid, E2 bij lekkage en E3 bij te lage waterdruk. De filters vervang je later zelf, zonder gereedschap. Hoe vaak, lees je in <Link href="/kennisbank/waterfilter-vervangen-hoe-vaak" className="underline hover:text-ink">hoe vaak moet je een waterfilter vervangen</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waterzuiveraar installeren in een huurwoning</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Ook in een huurhuis kan een waterzuiveraar onder het aanrecht. Het systeem wordt aangesloten met een aftakking op de koude leiding en een koppelstuk op de afvoer, en kan er bij verhuizing weer uit. Vraag wel vooraf toestemming aan je verhuurder, zeker als er voor een tappunt een extra gat in het aanrecht moet worden geboord. Kies je voor een <Link href="/kennisbank/3-weg-kraan-uitleg" className="underline hover:text-ink">3-weg kraan</Link>, dan vervangt die je huidige kraan en is er geen extra gat nodig.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waterzuiveraar installeren naast een Quooker</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Heb je al een Quooker of een andere kokendwaterkraan? Dan kan er gewoon een waterzuiveraar bij. Het gefilterde water krijgt een eigen tappunt of komt uit een 3-weg kraan, los van de Quooker. Geef het bij je aanvraag aan, dan weet de monteur hoeveel ruimte er in het kastje is en hoe de leidingen lopen.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Geen stopcontact onder het aanrecht?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Het systeem van Water-zuivering gebruikt stroom voor de pomp en het display, 96 watt op 100–240 volt. Zit er geen stopcontact in of vlak bij het kastje, laat er dan vooraf een plaatsen door een elektricien. De monteur van Water-zuivering sluit alleen het water aan.
             </p>
           </div>
         </section>

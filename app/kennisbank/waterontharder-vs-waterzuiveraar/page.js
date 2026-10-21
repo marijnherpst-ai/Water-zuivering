@@ -51,7 +51,7 @@ export default function Page() {
               Waterontharder of waterzuiveraar: het verschil
             </h1>
             <p className="mt-5 text-dim text-lg">
-              Deze twee worden vaak door elkaar gehaald, maar ze doen iets heel anders. Welke past bij jouw situatie?
+              <strong className="text-ink">Waterontharder of waterzuiveraar</strong>? Deze twee worden vaak door elkaar gehaald, maar ze doen iets heel anders. Welke past bij jouw situatie?
             </p>
             <AuteurRegel />
           </div>
@@ -87,7 +87,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image loading="eager" src="/assets/img/kennisbank/waterontharder-vs-waterzuiveraar.png" alt="Gefilterd water uit een waterzuiveraar in een glas" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/kennisbank/waterontharder-vs-waterzuiveraar.png" alt="Waterontharder of waterzuiveraar: gefilterd water in een glas" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -128,6 +128,20 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Ja, en dat gebeurt vaak in regio&apos;s met hard water. De ontharder beschermt je leidingen, boiler en wasmachine tegen kalk. De <strong className="text-ink">waterzuiveraar</strong> onder de keukenkraan zorgt voor drinkwater zonder PFAS, medicijnresten en microplastics. Hoe het installeren gaat, lees je in <Link href="/kennisbank/waterzuiveraar-installeren" className="underline hover:text-ink">waterzuiveraar laten installeren</Link>.
             </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Drie vragen om de keuze te maken</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Twijfel je tussen een waterontharder of waterzuiveraar? Stel jezelf deze drie vragen:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Heb je last van kalk door het hele huis?</strong> Witte aanslag op de douchewand, kranen en in de waterkoker wijst op hard water. Dan helpt een ontharder.</li>
+              <li><strong className="text-ink">Gaat het je om wat je drinkt?</strong> Wil je PFAS, medicijnresten en microplastics uit je drinkwater, dan heb je een waterzuiveraar nodig.</li>
+              <li><strong className="text-ink">Hoeveel ruimte en onderhoud wil je?</strong> Een ontharder staat bij de hoofdleiding en vraagt zout. Een waterzuiveraar past onder het aanrecht en vraagt alleen nieuwe filters.</li>
+            </ul>
           </div>
         </section>
 

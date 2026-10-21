@@ -128,6 +128,27 @@ export default function Page() {
           </div>
         </section>
 
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kalkaanslag in de waterkoker en koffiemachine</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              In de keuken zie je kalkaanslag het eerst: een witte laag op de bodem van de waterkoker en schilfers in je thee. In een koffiemachine zie je het niet, maar daar doet kalkaanslag de meeste schade: het verstopt leidingen en verwarmingselementen, waardoor de machine trager en minder warm wordt.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Ontkalk de waterkoker zodra je een laagje ziet, en volg voor de koffiemachine het schema van de fabrikant. Gebruik je water uit een osmosesysteem voor koffie en thee, dan krijg je nauwelijks nog kalkaanslag, omdat het membraan de kalk tegenhoudt.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoeveel kalkaanslag krijg je in jouw regio?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Hoe snel kalkaanslag ontstaat, hangt af van de hardheid van het water. Die verschilt per regio en wordt uitgedrukt in Duitse hardheidsgraden (°dH). Je waterbedrijf publiceert de hardheid voor jouw postcode. Boven ongeveer 14 °dH heb je hard water en krijg je merkbaar meer kalkaanslag. Wat dat getal betekent, lees je in <Link href="/kennisbank/hoe-werkt-een-waterontharder" className="underline hover:text-ink">hoe werkt een waterontharder?</Link>.
+            </p>
+          </div>
+        </section>
+
         <section className="relative bg-surface border-y border-edge">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <div className="text-center">

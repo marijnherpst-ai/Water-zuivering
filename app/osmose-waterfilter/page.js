@@ -143,6 +143,21 @@ export default function Page() {
         </section>
 
         <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat merk je van een osmose waterfilter in huis?</h2>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Koffie en thee</strong>: zonder kalk en smaakstoffen proef je de koffie of thee zelf beter, en er komen geen schilfers meer in je kopje.</li>
+              <li><strong className="text-ink">De waterkoker</strong>: geen witte laag meer op de bodem, omdat de kalk eruit is.</li>
+              <li><strong className="text-ink">IJsblokjes</strong>: helderder, omdat er minder opgeloste stoffen in het water zitten.</li>
+              <li><strong className="text-ink">Koken</strong>: je kookt pasta, groente en soep met gefilterd water, direct uit je eigen kraan.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Wil je weten hoe het systeem eruitziet en wat erbij hoort? Bekijk het complete <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> of lees <Link href="/kennisbank/wat-is-osmosewater" className="underline hover:text-ink">wat is osmosewater?</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
             <div className="text-center">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>

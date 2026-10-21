@@ -10,11 +10,11 @@ export const metadata = {
   alternates: { canonical: '/waterzuivering-voor-thuis' },
   title: 'Waterzuivering voor thuis — Water-zuivering',
   description:
-    'Waterzuivering voor thuis: kraanwater zonder PFAS, medicijnresten of microplastics. Ontdek hoe een waterzuiveraar voor thuis werkt en wat het kost.',
+    'Waterzuivering voor thuis: kraanwater zonder PFAS, medicijnresten of microplastics. Zo werkt een waterzuiveraar voor thuis en dit kost het.',
   openGraph: {
     title: 'Waterzuivering voor thuis — Water-zuivering',
     description:
-      'Waterzuivering voor thuis: kraanwater zonder PFAS, medicijnresten of microplastics. Ontdek hoe een waterzuiveraar voor thuis werkt en wat het kost.',
+      'Waterzuivering voor thuis: kraanwater zonder PFAS, medicijnresten of microplastics. Zo werkt een waterzuiveraar voor thuis en dit kost het.',
     images: ['/assets/img/hero-vrouw-water.webp'],
   },
 };
@@ -285,6 +285,21 @@ export default function WaterzuiveringVoorThuisPage() {
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waterzuivering thuis vs. flessenwater</h2>
             <p className="mt-4 text-dim leading-relaxed">
               Wie geen kraanwater wil drinken, koopt vaak flessenwater. Dat is per liter veel duurder, je moet het sjouwen, en ook in sommige merken flessenwater is PFAS gevonden. Met waterzuivering thuis tap je zuiver water uit je eigen kraan, en betaal je na de aanschaf alleen nog filters: gemiddeld ongeveer € 135 per jaar. Het volledige verschil lees je in <Link href="/kennisbank/kraanwater-vs-flessenwater" className="underline hover:text-ink">kraanwater vs. flessenwater</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Voor wie is waterzuivering voor thuis het meest zinvol?</h2>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Je woont in Noord- of Zuid-Holland</strong>, waar de PFAS-waarden in kraanwater het hoogst zijn.</li>
+              <li><strong className="text-ink">Je hebt kinderen</strong> en wilt hun blootstelling aan PFAS en medicijnresten zo laag mogelijk houden.</li>
+              <li><strong className="text-ink">Je koopt nu veel flessenwater</strong> en wilt van het sjouwen en het plastic af.</li>
+              <li><strong className="text-ink">Je drinkt veel koffie en thee</strong> en wilt geen kalk meer in je waterkoker en machine.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Herken je jezelf in geen van deze punten en vind je kraanwater prima zoals het is? Dan is waterzuivering voor thuis een luxe, geen noodzaak. Dat zeggen we liever eerlijk.
             </p>
           </div>
         </section>

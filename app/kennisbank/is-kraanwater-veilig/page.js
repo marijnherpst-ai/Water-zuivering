@@ -11,9 +11,9 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/is-kraanwater-veilig' },
-  title: 'Is Nederlands kraanwater veilig om te drinken? — Water-zuivering',
+  title: 'Is kraanwater veilig? Zo zit het in Nederland — Water-zuivering',
   description:
-    'Is kraanwater in Nederland veilig? Ja, maar met kanttekeningen. Wat erin kan zitten en hoe je dat er eenvoudig uit filtert.',
+    'Is kraanwater veilig om te drinken? In Nederland wel, met een paar kanttekeningen. Wat erin kan zitten en hoe je het eruit filtert.',
 };
 
 const FAQ = [
@@ -49,10 +49,10 @@ export default function Page() {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
-              Is Nederlands kraanwater veilig om te drinken?
+              Is kraanwater veilig om te drinken in Nederland?
             </h1>
             <p className="mt-5 text-dim text-lg">
-              Nederland heeft een van de best gecontroleerde drinkwaternetten ter wereld. Betekent dat ook dat er niks te verbeteren valt?
+              <strong className="text-ink">Is kraanwater veilig</strong>? Nederland heeft een van de best gecontroleerde drinkwaternetten ter wereld. Betekent dat ook dat er niks te verbeteren valt?
             </p>
             <KortAntwoord>
               Ja, Nederlands <strong className="text-ink">kraanwater</strong> is veilig om te drinken. Drinkwaterbedrijven controleren continu op honderden stoffen volgens strenge Europese en nationale normen. Wel worden steeds vaker sporen gevonden van stoffen die de norm nog niet volledig dekt, zoals PFAS, medicijnresten en microplastics. Wie die ook kwijt wil, filtert thuis met omgekeerde osmose.
@@ -90,7 +90,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image loading="eager" src="/assets/img/kennisbank/is-kraanwater-veilig.png" alt="Een glas helder kraanwater wordt gevuld" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/kennisbank/is-kraanwater-veilig.png" alt="Een glas wordt gevuld: is kraanwater veilig om te drinken?" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -129,6 +129,30 @@ export default function Page() {
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Oude leidingen in huis</h2>
             <p className="mt-4 text-dim leading-relaxed">
               Het waterbedrijf is verantwoordelijk tot aan de watermeter. Daarna zijn de leidingen van de woning zelf. In zeer oude woningen kunnen nog loden leidingen zitten, en lood kan dan in kleine hoeveelheden in het kraanwater komen. Twijfel je, laat een installateur je leidingen bekijken. Laat bij twijfel in elk geval de kraan even lopen als het water lang heeft stilgestaan, bijvoorbeeld na een vakantie.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Is kraanwater veilig als het warm uit de kraan komt?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Drink en kook bij voorkeur met koud kraanwater. Warm water komt uit je boiler, geiser of cv-ketel en heeft daar soms lang gestaan. Het is bedoeld om mee te wassen en te douchen, niet om te drinken. Wil je warm water voor thee of om te koken, verwarm dan koud kraanwater in de waterkoker of pan.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Heeft het koude water lang stilgestaan, bijvoorbeeld na een vakantie of als je een paar dagen weg was? Laat de koude kraan dan eerst even lopen tot het water fris en koel is.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoe weet je wat er in jouw kraanwater zit?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Je waterbedrijf publiceert de kwaliteit van het drinkwater in jouw regio, vaak met een zoekfunctie op postcode. Daar vind je onder meer de hardheid en de gemeten stoffen. Voor PFAS kun je ook onze <Link href="/pfas-check" className="underline hover:text-ink">PFAS-check</Link> gebruiken: die laat per regio zien hoe het water zich verhoudt tot de RIVM-advieswaarde.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Twijfel je over je eigen leidingen, dan kan een laboratorium je kraanwater testen. Voor de meeste huishoudens is dat niet nodig; de gegevens van het waterbedrijf geven een goed beeld. Is kraanwater veilig in jouw huis, maar wil je toch zekerheid over PFAS en medicijnresten, dan is een <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> de grondigste stap.
             </p>
           </div>
         </section>

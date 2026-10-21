@@ -50,7 +50,7 @@ export default function Page() {
               Kraanwater vs. flessenwater: wat is voordeliger?
             </h1>
             <p className="mt-5 text-dim text-lg">
-              Een eerlijke vergelijking op drie punten: kosten, gemak en milieu-impact.
+              Een eerlijke vergelijking van <strong className="text-ink">kraanwater vs flessenwater</strong> op drie punten: kosten, gemak en milieu-impact.
             </p>
             <AuteurRegel />
           </div>
@@ -96,7 +96,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image loading="eager" src="/assets/img/kennisbank/kraanwater-vs-flessenwater.png" alt="Een glas kraanwater naast flessenwater op het aanrecht" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image loading="eager" src="/assets/img/kennisbank/kraanwater-vs-flessenwater.png" alt="Kraanwater vs flessenwater: een glas kraanwater naast een fles op het aanrecht" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -146,6 +146,35 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Kraanwater smaakt niet overal hetzelfde. Dat komt door de bron, grondwater of oppervlaktewater, en door de hoeveelheid mineralen. Lees daarover <Link href="/kennisbank/slechtste-kraanwater-nederland" className="underline hover:text-ink">het slechtste kraanwater van Nederland: de feiten</Link>. Flessenwater smaakt per merk anders om dezelfde reden. Gefilterd kraanwater smaakt neutraal en zacht; met een mineraalfilter voeg je weer wat smaak toe.
             </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Mineraalwater, bronwater of tafelwater: wat koop je eigenlijk?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Flessenwater is niet allemaal hetzelfde. Op het etiket staat welke soort het is:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Natuurlijk mineraalwater</strong> komt uit een beschermde ondergrondse bron en mag nauwelijks behandeld worden. De samenstelling van de mineralen staat op het etiket.</li>
+              <li><strong className="text-ink">Bronwater</strong> komt ook uit een ondergrondse bron, maar hoeft geen vaste samenstelling te hebben.</li>
+              <li><strong className="text-ink">Tafelwater</strong> kan uit elke bron komen, ook uit de kraan, en mag behandeld worden, bijvoorbeeld gefilterd of met toegevoegde mineralen.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Wie kraanwater vs flessenwater vergelijkt, vergelijkt dus soms gewoon kraanwater met kraanwater in een fles.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kraanwater vs flessenwater: wat past bij jouw situatie?</h2>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Je vindt kraanwater gewoon lekker</strong>: drink het. Het is veilig en kost bijna niets.</li>
+              <li><strong className="text-ink">Je vindt de smaak niet prettig</strong>: een simpel koolfilter of een filterkan verbetert de smaak.</li>
+              <li><strong className="text-ink">Je wilt ook PFAS en medicijnresten eruit</strong>: dan is een <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> de enige vorm van filteren die dat grondig doet.</li>
+              <li><strong className="text-ink">Je koopt nu flessenwater om dezelfde reden</strong>: dan is gefilterd kraanwater goedkoper, en je hoeft niets meer te sjouwen.</li>
+            </ul>
           </div>
         </section>
 
