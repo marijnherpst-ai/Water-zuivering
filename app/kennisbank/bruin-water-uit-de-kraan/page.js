@@ -13,7 +13,7 @@ export const metadata = {
   alternates: { canonical: '/kennisbank/bruin-water-uit-de-kraan' },
   title: 'Bruin water uit de kraan: wat nu? — Water-zuivering',
   description:
-    'Bruin water uit de kraan? Lees waardoor het komt, of je het kunt drinken en wat je direct doet: welke kraan open, hoe lang doorspoelen en wanneer bellen.',
+    'Bruin water uit de kraan? Lees waardoor het komt, of je het kunt drinken en wat je nu doet: welke kraan open en wanneer je belt.',
   openGraph: {
     title: 'Bruin water uit de kraan: wat nu?',
     description: 'Waardoor bruin water uit de kraan komt, of het kwaad kan en wat je direct doet.',
@@ -25,8 +25,8 @@ export const metadata = {
 const STAPPEN = [
   ['Draai de kraan weer dicht', 'Blijf niet minutenlang tappen terwijl het water nog bruin is. Zolang de oorzaak in het leidingnet zit, trek je alleen meer roestdeeltjes je huis in.'],
   ['Check of er een storing of werkzaamheden zijn', 'Vaak weet je waterbedrijf al wat er speelt. Met onze storingen-check zie je met je postcode of er in jouw buurt werkzaamheden, een leidingbreuk of een kookwateradvies is.'],
-  ['Wacht een paar uur', 'De losgekomen deeltjes moeten weer bezinken of uit het net gespoeld worden. Vitens adviseert om de kranen in de tussentijd dicht te houden.'],
-  ['Open de kraan die het dichtst bij de watermeter zit', 'Meestal is dat de keukenkraan of de kraan van het toilet. Laat koud water lopen tot het weer helemaal helder is. Pas daarna de andere kranen.'],
+  ['Wacht een paar uur', 'Geef de losgekomen deeltjes de tijd om te bezinken of uit het net te spoelen. Laat in de tussentijd alle kranen dicht.'],
+  ['Spoel door via de kraan vlak bij de watermeter', 'Dat is in veel huizen de keukenkraan of het toilet. Laat daar koud water lopen tot het glashelder is, en spoel pas daarna de overige kranen kort door.'],
   ['Zet daarna pas wasmachine, vaatwasser en koffiemachine aan', 'Zo voorkom je bruine vlekken in je was en vuil in je apparaten. Blijft het water bruin, bel dan het storingsnummer van je waterbedrijf.'],
 ];
 
@@ -40,9 +40,9 @@ const SITUATIES = [
 
 const FAQ = [
   ['Waarom komt er bruin water uit de kraan?', 'Bruin water uit de kraan ontstaat meestal doordat ijzer- en mangaandeeltjes in de waterleiding loskomen. Die stoffen zitten van nature in grondwater en zetten zich op den duur af in leidingen. Bij drukverschillen, zoals bij werkzaamheden, een leidingbreuk of heel veel verbruik tegelijk, komen ze weer los.'],
-  ['Is bruin water uit de kraan gevaarlijk?', 'Volgens Vitens is het niet schadelijk voor je gezondheid, maar wel niet lekker. Uit voorzorg kunnen baby\'s en ouderen het beter niet drinken. Wacht met drinken tot het water weer helder is.'],
+  ['Is bruin water uit de kraan gevaarlijk?', 'Nee, je wordt er niet ziek van, maar het smaakt vies. Geef baby\'s en ouderen voor de zekerheid iets anders en wacht zelf ook met drinken tot het water weer helder is.'],
   ['Hoe lang moet ik de kraan laten lopen?', 'Er is geen vaste tijd. Houd de kranen eerst een paar uur dicht en laat daarna de kraan die het dichtst bij de watermeter zit lopen tot het water helemaal helder is. Is het na lang doorspoelen nog steeds bruin, neem dan contact op met je waterbedrijf.'],
-  ['Kan ik wassen met bruin water?', 'Wacht met witte was tot het water weer helder is. Zitten er toch bruine vlekken in, was het dan nog eens met een beetje Biotex en houd de was tussen beide wasbeurten nat.'],
+  ['Kan ik wassen met bruin water?', 'Liever niet, zeker geen witte of lichte was. Zitten er toch roestvlekken in, laat de kleding dan niet drogen maar was hem direct opnieuw met een vlekkenmiddel.'],
   ['Wat als alleen het warme water bruin is?', 'Dan zit de oorzaak meestal in je boiler, geiser of andere warmwatervoorziening, niet in het leidingnet van het waterbedrijf. Laat die nakijken door een installateur.'],
   ['Wie moet ik bellen bij bruin water uit de kraan?', 'Je eigen waterbedrijf. Het storingsnummer staat op hun website. Vitens heeft bijvoorbeeld een gratis storingsnummer dat dag en nacht bereikbaar is: 0800 0359.'],
   ['Houdt een waterfilter bruin water tegen?', 'Een goed voorfilter vangt roest, zand en slib. Het PPC-voorfilter van een Water-zuivering osmosesysteem houdt deeltjes tot 1 micron tegen, zodat die niet in je drinkwater komen. Bij veel roest raakt zo\'n voorfilter wel sneller vol.'],
@@ -167,7 +167,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Is bruin water uit de kraan gevaarlijk?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Meestal niet. Volgens Vitens kun je het gewoon drinken: <em>&ldquo;het is alleen niet zo lekker.&rdquo;</em> IJzer en mangaan in deze kleine hoeveelheden zijn geen gezondheidsrisico. Toch adviseert het waterbedrijf om <strong className="text-ink">baby&apos;s en ouderen</strong> het bruine water uit voorzorg niet te laten drinken.
+              Meestal niet. Vitens geeft aan dat je er niet ziek van wordt; het smaakt vooral vies. De kleine hoeveelheden ijzer en mangaan die loskomen, vormen geen gezondheidsrisico. Wel raadt het waterbedrijf aan om <strong className="text-ink">baby&apos;s en ouderen</strong> voor de zekerheid iets anders te geven tot het water weer helder is.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Ons advies: drink het niet zolang je het kunt zien. Wacht tot het water weer helder is, ook voor de fles van de baby en voor koffie en thee. Ruikt of smaakt het water ook daarna nog vreemd, of blijft het troebel, neem dan contact op met je waterbedrijf. Meer over de veiligheid van ons drinkwater lees je in <Link href="/kennisbank/is-kraanwater-veilig" className="underline hover:text-ink">is kraanwater veilig?</Link>
@@ -183,9 +183,9 @@ export default function Page() {
             </p>
             <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
               <li><strong className="text-ink">Witte was uitstellen</strong> tot het water weer helder is.</li>
-              <li><strong className="text-ink">Toch vlekken?</strong> Was het nog eens met een beetje Biotex en houd de was tussen beide wasbeurten nat. Laat de vlekken niet opdrogen.</li>
+              <li><strong className="text-ink">Toch vlekken?</strong> Laat de kleding niet opdrogen, maar gooi hem meteen nog een keer in de machine, met een schepje vlekkenmiddel zoals Biotex.</li>
               <li><strong className="text-ink">Vaatwasser en koffiemachine</strong> pas weer gebruiken na het doorspoelen, zodat er geen vuil in de apparaten komt.</li>
-              <li><strong className="text-ink">Zuinig aan doen bij piekgebruik.</strong> Op hete dagen helpt het als iedereen korter doucht en de (vaat)wasmachine alleen vol aanzet.</li>
+              <li><strong className="text-ink">Zuinig aan doen bij piekgebruik.</strong> Op tropische dagen helpt elke minuut minder douchen, en draai de wasmachine en vaatwasser liever 's avonds laat en alleen als ze vol zitten.</li>
             </ul>
           </div>
         </section>
@@ -195,7 +195,7 @@ export default function Page() {
             <div className="relative order-2 lg:order-1">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/filters-closeup.png" alt="Voorfilter, membraan en nafilter van een osmosesysteem dat roest en slib uit kraanwater filtert" fill loading="eager" sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image src="/assets/img/filters-closeup.png" alt="Voorfilter van een osmosesysteem dat roest uit bruin water uit de kraan opvangt" fill loading="eager" sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
