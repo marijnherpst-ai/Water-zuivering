@@ -184,7 +184,7 @@ export default function Page() {
               </table>
             </div>
             <p className="mt-4 text-dim leading-relaxed">
-              De installatie van Water-zuivering is gemaakt voor leidingwater. Wil je regen- of slootwater drinkbaar maken, laat je dan adviseren door een specialist in off-grid-watersystemen en laat het water laboratoriumtesten voordat je het drinkt.
+              De waterzuiveringsinstallatie van Water-zuivering is gemaakt voor leidingwater. Wil je regen- of slootwater drinkbaar maken, laat je dan adviseren door een specialist in off-grid-watersystemen en laat het water laboratoriumtesten voordat je het drinkt.
             </p>
           </div>
         </section>
@@ -193,7 +193,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat kost een eigen waterzuiveringsinstallatie per jaar?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Na de aanschaf, inclusief plaatsing, zijn de filters de enige terugkerende kosten:
+              Na de aanschaf van je waterzuiveringsinstallatie, inclusief plaatsing, zijn de filters de enige terugkerende kosten:
             </p>
             <div className="mt-6 overflow-x-auto rounded-2xl border border-edge bg-white">
               <table className="w-full text-sm text-left">

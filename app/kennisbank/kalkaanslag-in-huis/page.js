@@ -18,8 +18,8 @@ export const metadata = {
 const FAQ = [
   ['Waar komt kalkaanslag vandaan?', 'Van calcium en magnesium die van nature in het water zitten, vooral in gebieden met hard water. Zodra water verdampt, blijven deze mineralen achter als een witte, korstige laag.'],
   ['Is kalkaanslag gevaarlijk?', 'Nee, het is geen vervuiling in de gevaarlijke zin. Het is een natuurlijk bijproduct van de waterhardheid in jouw regio.'],
-  ['Welke schade richt kalk aan in huis?', 'Kalk zet zich vast in leidingen, boilers en apparaten zoals de wasmachine en waterkoker. Dat kan hun levensduur verkorten en het energieverbruik verhogen, omdat verwarmingselementen minder efficiënt werken.'],
-  ['Waterontharder of waterzuiveraar tegen kalk?', 'Kalkaanslag door je hele huis pak je structureel aan met een waterontharder. Wil je vooral zuiverder drinkwater uit je keukenkraan, dan is een waterzuiveraar de betere keuze.'],
+  ['Welke schade richt kalkaanslag aan in huis?', 'Kalkaanslag zet zich vast in leidingen, boilers en apparaten zoals de wasmachine en waterkoker. Dat kan hun levensduur verkorten en het energieverbruik verhogen, omdat verwarmingselementen minder efficiënt werken.'],
+  ['Waterontharder of waterzuiveraar tegen kalkaanslag?', 'Kalkaanslag door je hele huis pak je structureel aan met een waterontharder. Wil je vooral zuiverder drinkwater uit je keukenkraan, dan is een waterzuiveraar de betere keuze.'],
 ];
 
 export default function Page() {
@@ -73,7 +73,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Welke schade richt het aan?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Naast het cosmetische probleem (kranen en glaswerk die er snel vies uitzien), zet kalkaanslag zich ook vast in leidingen, boilers en apparaten zoals de wasmachine en waterkoker. Dat kan op termijn hun levensduur verkorten en hun energieverbruik verhogen, omdat verwarmingselementen minder efficiënt werken door een laagje kalk.
+              Naast het cosmetische probleem (kranen en glaswerk die er snel vies uitzien), zet kalkaanslag zich ook vast in leidingen, boilers en apparaten zoals de wasmachine en waterkoker. Dat kan op termijn hun levensduur verkorten en hun energieverbruik verhogen, omdat verwarmingselementen minder efficiënt werken door een laagje kalkaanslag.
             </p>
           </div>
         </section>
@@ -123,7 +123,7 @@ export default function Page() {
               <li><strong className="text-ink">Een waterontharder</strong> voor het hele huis, als je water echt hard is.</li>
             </ul>
             <p className="mt-4 text-dim leading-relaxed">
-              In de keuken is er nog een oplossing: water dat door een osmosesysteem gaat, bevat bijna geen kalk meer. Koffie, thee en de waterkoker blijven dan schoon. Hoe hard jouw water is, lees je in <Link href="/kennisbank/hoe-werkt-een-waterontharder" className="underline hover:text-ink">hoe werkt een waterontharder?</Link>.
+              In de keuken is er nog een oplossing: water dat door een osmosesysteem gaat, bevat bijna geen kalk meer en geeft dus geen kalkaanslag. Koffie, thee en de waterkoker blijven dan schoon. Hoe hard jouw water is, lees je in <Link href="/kennisbank/hoe-werkt-een-waterontharder" className="underline hover:text-ink">hoe werkt een waterontharder?</Link>.
             </p>
           </div>
         </section>
@@ -153,7 +153,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Is kalkaanslag schadelijk voor je gezondheid?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Nee. Kalkaanslag bestaat uit calcium en magnesium, mineralen die je ook uit je eten haalt. Water met veel kalk is dus niet ongezond om te drinken. Het probleem van kalkaanslag zit in je huis, niet in je lichaam: in vlekken op glas en kranen, in verstopte douchekoppen en in apparaten die sneller slijten.
+              Nee. Kalkaanslag bestaat uit calcium en magnesium, mineralen die je ook uit je eten haalt. Water dat veel kalkaanslag geeft, is dus niet ongezond om te drinken. Het probleem van kalkaanslag zit in je huis, niet in je lichaam: in vlekken op glas en kranen, in verstopte douchekoppen en in apparaten die sneller slijten.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Wel kan kalkaanslag de smaak beïnvloeden. Thee krijgt bij hard water sneller een vliesje, en koffie smaakt anders. Dat is geen gezondheidsrisico, maar wel een reden waarom veel mensen voor hun drinkwater kiezen voor gefilterd water.
@@ -167,7 +167,7 @@ export default function Page() {
             <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
               <li><strong className="text-ink">Wel</strong>: een douchetrekker na elke douchebeurt. Water dat niet opdroogt, laat geen kalkaanslag achter.</li>
               <li><strong className="text-ink">Wel</strong>: een wekelijkse doekje met een milde kalkreiniger, voordat de laag dik wordt.</li>
-              <li><strong className="text-ink">Niet</strong>: schuursponsjes op glas en chroom. Die verwijderen de kalkaanslag wel, maar maken krasjes waar nieuwe kalk zich nog sneller aan hecht.</li>
+              <li><strong className="text-ink">Niet</strong>: schuursponsjes op glas en chroom. Die verwijderen de kalkaanslag wel, maar maken krasjes waar nieuwe kalkaanslag zich nog sneller aan hecht.</li>
               <li><strong className="text-ink">Niet</strong>: azijn op natuursteen, marmer of de voegen van sommige tegels. Het zuur tast het oppervlak aan.</li>
             </ul>
           </div>

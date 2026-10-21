@@ -16,9 +16,9 @@ export const metadata = {
 };
 
 const FAQ = [
-  ['Wat is het verschil tussen een waterontharder en een waterzuiveraar?', 'Een waterontharder haalt calcium en magnesium uit al het water dat je huis binnenkomt, tegen kalkaanslag. Een waterzuiveraar richt zich op je drinkwater en filtert onder meer chloor, PFAS, medicijnresten, microplastics en lood eruit.'],
-  ['Haalt een waterontharder PFAS uit het water?', 'Nee. Een waterontharder verandert niets aan chloor, PFAS, medicijnresten of andere verontreinigingen; daar is hij niet voor gemaakt.'],
-  ['Heeft een waterzuiveraar zout nodig?', 'Nee. Een waterzuiveraar onder het aanrecht werkt zonder zoutvoorraad. Een waterontharder werkt meestal met een ionenwisselaar en zout.'],
+  ['Wat is het verschil tussen een waterontharder en een waterzuiveraar?', 'Een waterontharder haalt calcium en magnesium uit al het water dat je huis binnenkomt, tegen kalkaanslag. Een waterzuiveraar werkt alleen op het water dat je drinkt, en haalt daar ook PFAS, geneesmiddelresten, kunststofdeeltjes en lood uit.'],
+  ['Haalt een waterontharder PFAS uit het water?', 'Nee. Ionenwisseling ruilt alleen kalkdeeltjes in voor natrium. PFAS en resten van geneesmiddelen gaan er onveranderd doorheen.'],
+  ['Heeft een waterzuiveraar zout nodig?', 'Nee, een waterzuiveraar heeft geen zout nodig: het membraan doet het werk. Alleen een klassieke ontharder vraagt om een zoutvat dat je bijvult.'],
   ['Wanneer kies je welke?', 'Heb je last van kalk door het hele huis, dan past een waterontharder. Wil je vooral zuiverder, lekkerder drinkwater, dan is een waterzuiveraar onder je keukenkraan de directste oplossing.'],
 ];
 
