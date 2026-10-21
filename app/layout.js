@@ -59,6 +59,10 @@ export const metadata = {
     description: DEFAULT_DESCRIPTION,
     images: ['/assets/img/hero-vrouw-water.webp'],
   },
+  // Bing Webmaster Tools ownership; keep after verification
+  verification: {
+    other: { 'msvalidate.01': 'AEB7981FB7FB5EC6C751692ED44DDE64' },
+  },
 };
 
 export default function RootLayout({ children }) {
