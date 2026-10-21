@@ -30,7 +30,7 @@ const FAQ = [
   ['Hoe lang duurt het installeren van een zuiveringsinstallatie?', 'De meeste installaties zijn binnen een paar uur voltooid door een vakkundige monteur, inclusief testen en instellen.'],
   ['Kan ik een waterzuiveringsinstallatie ook zelf plaatsen?', 'Technisch kan dat bij sommige systemen, maar een verkeerde aansluiting kan lekkage veroorzaken en de fabrieksgarantie laten vervallen — vakkundige installatie is daarom aan te raden.'],
   ['Welke garantie krijg ik op een waterzuiveringsinstallatie?', 'Bij Water-zuivering krijg je 10 jaar garantie op het systeem, mits vakkundig geïnstalleerd en onderhouden volgens het meegegeven schema.'],
-  ['Is er onderhoud nodig na de installatie?', 'Ja, de voor- en nafilters worden elke 6-12 maanden vervangen, het membraan elke 2-3 jaar — dit kun je zelf doen of laten uitvoeren.'],
+  ['Is er onderhoud nodig na de installatie?', 'Ja. Het voorfilter en het nafilter vervang je gemiddeld elk jaar, het membraan elke 2 jaar. Dat kun je zelf doen, zonder gereedschap.'],
   ['Werkt een waterzuiveringsinstallatie in elke keuken?', 'In de meeste standaardkeukens is voldoende ruimte onder de spoelbak. Tijdens het adviesgesprek kijken we naar jouw specifieke situatie.'],
 ];
 
@@ -150,6 +150,85 @@ export default function Page() {
         </section>
 
         {/* FAQ */}
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat is een waterzuiveringsinstallatie voor thuis?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een <strong className="text-ink">waterzuiveringsinstallatie</strong> voor thuis is een vast systeem dat je drinkwater filtert voordat het uit de kraan komt. De meest grondige soort werkt met omgekeerde osmose en staat onder het aanrecht. Het systeem van Water-zuivering heeft drie filtertrappen:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">PPC-voorfilter</strong>: vangt zand, roest en slib tot 1 micron.</li>
+              <li><strong className="text-ink">RO-membraan</strong> van 0,0001 micron: houdt onder meer PFAS, medicijnresten, microplastics, kalk en lood tegen.</li>
+              <li><strong className="text-ink">CTO-nafilter</strong>: actieve koolstof voor de smaak, desgewenst met mineralen.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Het werkt direct flow, zonder opslagtank, en levert 1,58 liter per minuut via een eigen tappunt of een <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Voor kraanwater of voor een eigen bron?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Bij het zoeken naar een waterzuiveringsinstallatie kom je ook systemen tegen voor regenwater, putwater of slootwater, bijvoorbeeld voor een vakantiehuis zonder wateraansluiting. Dat is een heel andere situatie:
+            </p>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold"></th><th scope="col" className="p-4 font-display font-bold">Kraanwater</th><th scope="col" className="p-4 font-display font-bold">Eigen bron (regen-, put- of slootwater)</th></tr></thead>
+                <tbody>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Uitgangspunt</th><td className="p-4 text-dim">Al veilig drinkwater, gecontroleerd door het waterbedrijf</td><td className="p-4 text-dim">Onbehandeld water met mogelijk bacteriën en vuil</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Doel van de installatie</th><td className="p-4 text-dim">Sporen van PFAS, medicijnresten en microplastics eruit halen</td><td className="p-4 text-dim">Water eerst drinkbaar maken</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Nodig</th><td className="p-4 text-dim">Omgekeerde osmose onder het aanrecht</td><td className="p-4 text-dim">Een complete keten met onder meer grove filtratie en ontsmetting, zoals UV</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 text-dim leading-relaxed">
+              De installatie van Water-zuivering is gemaakt voor leidingwater. Wil je regen- of slootwater drinkbaar maken, laat je dan adviseren door een specialist in off-grid-watersystemen en laat het water laboratoriumtesten voordat je het drinkt.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat kost een eigen waterzuiveringsinstallatie per jaar?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Na de aanschaf, inclusief plaatsing, zijn de filters de enige terugkerende kosten:
+            </p>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold">Onderdeel</th><th scope="col" className="p-4 font-display font-bold">Hoe vaak</th><th scope="col" className="p-4 font-display font-bold">Kosten</th></tr></thead>
+                <tbody>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">PPC-voorfilter</th><td className="p-4 text-dim">Elk jaar</td><td className="p-4 text-dim">€ 49,99</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">CTO-nafilter (met mineralen)</th><td className="p-4 text-dim">Elk jaar</td><td className="p-4 text-dim">€ 49,99 (€ 64,99)</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">RO-membraan</th><td className="p-4 text-dim">Elke 2 jaar</td><td className="p-4 text-dim">€ 69,99</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Gemiddeld per jaar</th><td className="p-4 text-dim"></td><td className="p-4 text-dim">Ongeveer € 135</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een uitgebreider overzicht vind je in <Link href="/kennisbank/wat-kost-een-waterzuiveringssysteem" className="underline hover:text-ink">wat kost een waterzuiveringssysteem?</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kun je zelf een waterzuiveringsinstallatie maken?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Er zijn bouwpakketten te koop waarmee je zelf een osmosesysteem in elkaar zet. Dat kan, maar let op drie dingen:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Lekkage</strong>: een systeem onder het aanrecht staat altijd onder druk. Een slechte koppeling kan je keukenkastje laten onderlopen.</li>
+              <li><strong className="text-ink">Hygiëne</strong>: drinkwater vraagt om materialen die daarvoor geschikt zijn en een schone montage.</li>
+              <li><strong className="text-ink">Garantie</strong>: bij zelfbouw ben je zelf verantwoordelijk als er iets misgaat.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Wil je zeker weten dat het goed zit, laat het dan plaatsen. Bij Water-zuivering duurt dat 1 à 2 uur, en je krijgt 10 jaar garantie. Hoe dat verloopt, lees je bij de <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>.
+            </p>
+          </div>
+        </section>
+
         <section className="relative bg-surface border-y border-edge">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
             <div className="text-center">

@@ -10,11 +10,11 @@ export const metadata = {
   alternates: { canonical: '/waterzuivering-voor-thuis' },
   title: 'Waterzuivering voor thuis — Water-zuivering',
   description:
-    'Waterzuivering voor thuis: fris kraanwater zonder chloor, PFAS of microplastics. Ontdek hoe een waterzuiveraar voor thuis werkt en wat het kost.',
+    'Waterzuivering voor thuis: kraanwater zonder PFAS, medicijnresten of microplastics. Ontdek hoe een waterzuiveraar voor thuis werkt en wat het kost.',
   openGraph: {
     title: 'Waterzuivering voor thuis — Water-zuivering',
     description:
-      'Waterzuivering voor thuis: fris kraanwater zonder chloor, PFAS of microplastics. Ontdek hoe een waterzuiveraar voor thuis werkt en wat het kost.',
+      'Waterzuivering voor thuis: kraanwater zonder PFAS, medicijnresten of microplastics. Ontdek hoe een waterzuiveraar voor thuis werkt en wat het kost.',
     images: ['/assets/img/hero-vrouw-water.webp'],
   },
 };
@@ -48,7 +48,7 @@ const INSTALLATIE = [
 const FAQ = [
   ['Is waterzuivering voor thuis in Nederland nodig?', 'Nederlands kraanwater voldoet aan strenge wettelijke normen en is veilig om te drinken. Een waterzuiveraar voor thuis gaat een stap verder: die verwijdert ook sporen van stoffen die niet standaard worden getest of verwijderd, zoals PFAS, medicijnresten en microplastics.'],
   ['Wat kost waterzuivering voor thuis?', 'De aanschafprijs hangt af van het gekozen systeem en de installatie. Vraag een vrijblijvende offerte aan voor een prijs op maat van jouw situatie.'],
-  ['Hoeveel onderhoud heeft een waterzuiveringssysteem?', 'De filters gaan afhankelijk van gebruik en waterkwaliteit meestal 6 tot 12 maanden mee. Bij installatie krijg je een concreet vervangingsschema.'],
+  ['Hoeveel onderhoud heeft een waterzuiveringssysteem?', 'Het voorfilter en het nafilter vervang je gemiddeld elk jaar, het membraan elke 2 jaar. Dat kost gemiddeld ongeveer € 135 per jaar. Het display laat zien wanneer het tijd is.'],
   ['Past een waterzuiveraar voor thuis onder elk aanrecht?', 'In de meeste standaardkeukens is voldoende ruimte onder de spoelbak. Ons systeem is slechts 10,5 cm breed en past staand of liggend.'],
   ['Is waterzuivering voor thuis anders dan voor onderweg?', 'Ja. Onderweg kies je meestal voor een compact, draagbaar filter zonder wateraansluiting. Thuis is een vast systeem onder de gootsteen praktischer: onbeperkt zuiver water zonder gedoe met patronen of bijvullen.'],
   ['Kan waterzuivering voor thuis ook zonder installatie?', 'Er bestaan alternatieven zoals filterkannen of kraanfilters die geen vaste installatie vereisen, maar die filteren minder grondig dan een systeem onder de gootsteen. Lees de vergelijking in ons artikel over de beste waterfilter voor thuis.'],
@@ -220,6 +220,75 @@ export default function WaterzuiveringVoorThuisPage() {
         </section>
 
         {/* FAQ */}
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Is waterzuivering voor thuis nodig? Een eerlijk antwoord</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Eerlijk is eerlijk: Nederlands kraanwater is van uitstekende kwaliteit. Het wordt continu gecontroleerd, en Nederland is een van de weinige landen die geen chloor of fluor aan drinkwater toevoegt. Onderzoekers van KWR Water noemen een waterfilter in Nederland daarom niet noodzakelijk (<a href="https://www.drinkwaterplatform.nl/waterfilters-de-zin-en-onzin/" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Drinkwaterplatform</a>).
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Waarom kiezen mensen dan toch voor <strong className="text-ink">waterzuivering voor thuis</strong>? Om drie redenen:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">PFAS</strong>: in Noord- en Zuid-Holland heeft de meerderheid van de inwoners kraanwater boven de strengere RIVM-advieswaarde van 4,4 ng/l. Check het voor jouw postcode met de <Link href="/pfas-check" className="underline hover:text-ink">PFAS-check</Link>.</li>
+              <li><strong className="text-ink">Stoffen zonder norm</strong>: voor veel medicijnresten en microplastics bestaan nog geen wettelijke grenswaarden. Lees meer over de <Link href="/kennisbank/drinkwaternormen-nederland" className="underline hover:text-ink">drinkwaternormen in Nederland</Link>.</li>
+              <li><strong className="text-ink">Je eigen leidingen</strong>: het waterbedrijf is verantwoordelijk tot de watermeter. Wat daarna in je huis gebeurt, bijvoorbeeld in oude leidingen, valt daarbuiten.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Het is dus geen kwestie van onveilig water, maar van een extra stap voor wie die sporen ook kwijt wil.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Welke stoffen haalt waterzuivering voor thuis uit je kraanwater?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Niet elk filter doet hetzelfde. Een filter met actieve kool, zoals in een filterkan, en een omgekeerde-osmosesysteem verschillen flink:
+            </p>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold">Stof</th><th scope="col" className="p-4 font-display font-bold">Actieve kool (kan, kraanfilter)</th><th scope="col" className="p-4 font-display font-bold">Omgekeerde osmose</th></tr></thead>
+                <tbody>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">PFAS</th><td className="p-4 text-dim">Deels en niet lang: PFAS breekt snel door de kool heen, en TFA wordt niet tegengehouden</td><td className="p-4 text-dim">Ja, het membraan houdt ze tegen</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Medicijnresten</th><td className="p-4 text-dim">Deels</td><td className="p-4 text-dim">Ja</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Microplastics</th><td className="p-4 text-dim">Beperkt</td><td className="p-4 text-dim">Ja</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Lood uit oude leidingen</th><td className="p-4 text-dim">Beperkt</td><td className="p-4 text-dim">Ja</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Kalk</th><td className="p-4 text-dim">Nauwelijks</td><td className="p-4 text-dim">Ja</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Smaak en geur</th><td className="p-4 text-dim">Ja</td><td className="p-4 text-dim">Ja, met het nafilter van actieve kool</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 text-dim leading-relaxed">
+              Wat actieve kool met PFAS doet, staat in het artikel van KWR op het <a href="https://www.drinkwaterplatform.nl/waterfilters-de-zin-en-onzin/" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Drinkwaterplatform</a>. Meer over PFAS-vrij water lees je in <Link href="/kennisbank/pfas-vrij-water" className="underline hover:text-ink">PFAS-vrij water</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Nadelen van waterzuivering voor thuis, en hoe je ze voorkomt</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Ook een waterzuiveraar heeft nadelen. Het is goed om die te kennen, en om te weten hoe een goed systeem ermee omgaat:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Bacteriegroei in een vol filter</strong>. Een filter dat veel te lang blijft zitten, kan vervuilen. Vervang je filters dus op tijd. Bij Water-zuivering geeft het display aan wanneer dat moet.</li>
+              <li><strong className="text-ink">Minder mineralen</strong>. Het membraan houdt ook calcium en magnesium tegen. Je haalt de meeste mineralen uit je eten, maar wie de smaak mist, kiest het <Link href="/winkel/cto-filter-met-mineralen" className="underline hover:text-ink">nafilter met mineralen</Link>.</li>
+              <li><strong className="text-ink">Spoelwater</strong>. Omgekeerde osmose spoelt de tegengehouden stoffen weg naar de afvoer. Dat kost wat extra water.</li>
+              <li><strong className="text-ink">Zuiver water en leidingen</strong>. Heel zuiver water kan metalen leidingen aantasten. Daarom zuivert een systeem onder het aanrecht alleen het water voor je keukenkraan, via een eigen leiding. Het water voor de rest van je huis blijft gewoon kraanwater.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waterzuivering thuis vs. flessenwater</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Wie geen kraanwater wil drinken, koopt vaak flessenwater. Dat is per liter veel duurder, je moet het sjouwen, en ook in sommige merken flessenwater is PFAS gevonden. Met waterzuivering thuis tap je zuiver water uit je eigen kraan, en betaal je na de aanschaf alleen nog filters: gemiddeld ongeveer € 135 per jaar. Het volledige verschil lees je in <Link href="/kennisbank/kraanwater-vs-flessenwater" className="underline hover:text-ink">kraanwater vs. flessenwater</Link>.
+            </p>
+          </div>
+        </section>
+
         <section className="relative">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
             <div className="text-center">

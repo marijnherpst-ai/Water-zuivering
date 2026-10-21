@@ -17,6 +17,8 @@ export const metadata = {
 };
 
 const FAQ = [
+  ['Is kraanwater PFAS-vrij?', 'Nee. In vrijwel al het Nederlandse kraanwater zitten kleine sporen PFAS, omdat de stoffen nauwelijks afbreken en overal in het milieu zitten. Het water voldoet aan de wettelijke norm, maar in een groot deel van Noord- en Zuid-Holland ligt de waarde boven de strengere RIVM-advieswaarde.'],
+  ['Hoe haal je PFAS uit kraanwater?', 'Met omgekeerde osmose: het membraan houdt PFAS-moleculen tegen. Een filter met actieve kool, zoals in een filterkan, doet dat maar deels en niet lang. Koken en een waterontharder helpen niet.'],
   ['Wat zijn PFAS?', 'PFAS (poly- en perfluoralkylstoffen) zijn een grote groep synthetische stoffen die decennialang zijn gebruikt in onder meer antiaanbaklagen, waterafstotende kleding, blusschuim en verpakkingen. Ze heten ook wel "forever chemicals", omdat ze nauwelijks afbreken.'],
   ['Zit er PFAS in Nederlands kraanwater?', 'Ja, in kleine sporen. Het water voldoet aan de wettelijke norm, maar in een deel van Nederland ligt de PFAS-waarde boven de strengere advieswaarde van het RIVM (4,4 ng/l).'],
   ['Waarom krijgt PFAS steeds meer aandacht?', 'Onderzoek wijst voorzichtig op mogelijke gezondheidsrisico\'s bij langdurige blootstelling, ook bij lage concentraties. Daarom worden de toegestane grenswaarden geleidelijk aangescherpt.'],

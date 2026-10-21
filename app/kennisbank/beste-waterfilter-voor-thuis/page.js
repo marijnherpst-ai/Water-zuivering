@@ -51,7 +51,7 @@ const TYPES = [
 
 const CRITERIA = [
   ['Filtratiediepte', 'Wil je alleen de smaak verbeteren, of ook stoffen als PFAS, medicijnresten en microplastics kwijt? Dit bepaalt het type filter meer dan wat ook.'],
-  ['Onderhoud en gemak', 'Een kan moet je steeds bijvullen en het patroon vaak vervangen. Een ingebouwd systeem draait op de achtergrond mee, met filters die eens per 6-12 maanden aan de beurt zijn.'],
+  ['Onderhoud en gemak', 'Een kan moet je steeds bijvullen en het patroon vaak vervangen. Een ingebouwd systeem draait op de achtergrond mee, met filters die ongeveer eens per jaar aan de beurt zijn.'],
   ['Kosten op de lange termijn', 'Een lage aanschafprijs kan op termijn duurder uitpakken door vervangingskosten of doorlopend flessenwater. Reken door wat je over 3-5 jaar kwijt bent, niet alleen de instapprijs.'],
   ['Ruimte in de keuken', 'Een kan of kraanfilter is zichtbaar, een systeem onder de gootsteen blijft volledig uit het zicht — belangrijk als je weinig aanrechtruimte hebt.'],
   ['Milieu-impact', 'Hoe grondiger en langduriger een filter werkt, hoe minder flessenwater (en dus plastic) je op termijn nodig hebt.'],
@@ -67,7 +67,7 @@ const SITUATIES = [
 const ONDERHOUD = [
   ['Waterfilterkan', 'Patroon vervangen na 100-150 liter (meestal maandelijks bij dagelijks gebruik). Kan zelf, kost een paar minuten, filters zijn los verkrijgbaar.'],
   ['Kraanfilter', 'Cartridge vervangen elke 2-3 maanden, afhankelijk van gebruik en model. Meestal een kwestie van los- en vastdraaien, geen gereedschap nodig.'],
-  ['Waterzuiveraar onder de gootsteen', 'Voor- en nafilters elke 6-12 maanden, het membraan zelf elke 2-3 jaar. Bij de meeste aanbieders kun je dit laten uitvoeren, of zelf doen met een instructievideo.'],
+  ['Waterzuiveraar onder de gootsteen', 'Voor- en nafilters gemiddeld elk jaar, het membraan elke 2 jaar. Bij Water-zuivering draai je de filters zelf los en vast, zonder gereedschap.'],
 ];
 
 const FOUTEN = [
@@ -87,7 +87,7 @@ const FAQ = [
   ['Welke waterfilter is het beste voor een gezin met kinderen?', 'Een systeem onder de gootsteen, omdat je dan nooit een kan hoeft bij te vullen en er altijd onbeperkt zuiver water beschikbaar is — ook praktisch voor het bereiden van flesvoeding.'],
   ['Verschilt de beste waterfilter voor thuis per regio in Nederland?', 'De filtratiebehoefte verschilt niet sterk per regio — alle Nederlandse drinkwaterbedrijven voldoen aan dezelfde landelijke normen. Wel kan de waterhardheid (kalk) regionaal verschillen.'],
   ['Kan ik zien of er nu een storing of kookadvies geldt in mijn regio?', 'Ja — gebruik onze eigen storingen-check om direct te zien of er in jouw buurt een actuele melding is, los van welk filter je kiest.'],
-  ['Hoe vaak moet ik het filter van de beste waterfilter voor thuis vervangen?', 'Dat verschilt per type: een filterkan meestal maandelijks, een kraanfilter elke 2-3 maanden, en een systeem onder de gootsteen elke 6-12 maanden voor de voor- en nafilters.'],
+  ['Hoe vaak moet ik het filter van de beste waterfilter voor thuis vervangen?', 'Dat verschilt per type: een filterkan meestal maandelijks, een kraanfilter elke 2-3 maanden, en bij een systeem onder de gootsteen gemiddeld elk jaar het voor- en nafilter en elke 2 jaar het membraan.'],
   ['Wat is de grootste fout die mensen maken bij het kiezen van een waterfilter?', 'Alleen naar de aanschafprijs kijken, zonder de doorlopende kosten voor vervangingsfilters mee te rekenen — op jaarbasis kan dat het prijsverschil met een grondiger systeem flink verkleinen.'],
   ['Kan ik meerdere type waterfilters combineren?', 'Ja, sommige huishoudens gebruiken bijvoorbeeld een waterontharder voor kalk in combinatie met een osmosesysteem voor de rest — dat is geen overbodige dubbeling, want beide lossen een ander probleem op.'],
 ];

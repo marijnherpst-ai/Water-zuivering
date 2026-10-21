@@ -22,15 +22,15 @@ const SIGNALEN = [
 ];
 
 const ONDERDELEN = [
-  ['Voorfilter (PPC)', 'Vangt zand, roest en grof vuil op, zodat het membraan zelf niet snel verstopt raakt. Vervanging: elke 6-12 maanden.'],
-  ['RO-membraan', 'Het hart van het systeem — het fijne filtermateriaal zelf. Vervanging: elke 2-3 jaar.'],
-  ['Nafilter (CTO)', 'Actieve koolstof die de laatste smaakjes en geurtjes wegpolijst. Vervanging: elke 6-12 maanden.'],
+  ['Voorfilter (PPC)', 'Vangt zand, roest en grof vuil op, zodat het membraan zelf niet snel verstopt raakt. Vervanging: gemiddeld elk jaar.'],
+  ['RO-membraan', 'Het hart van het systeem — het fijne filtermateriaal zelf. Vervanging: gemiddeld elke 2 jaar.'],
+  ['Nafilter (CTO)', 'Actieve koolstof die de laatste smaakjes en geurtjes wegpolijst. Vervanging: gemiddeld elk jaar.'],
 ];
 
 const FAQ = [
   ['Hoe fijn is een omgekeerde osmose filter precies?', 'Het membraan heeft poriën van ongeveer 0,0001 micron — ter vergelijking, dat is ongeveer 500.000 keer fijner dan een mensenhaar.'],
   ['Wat houdt een omgekeerde osmose filter tegen?', 'Bacteriën, virussen, zware metalen zoals lood, en sporen van PFAS, medicijnresten en microplastics — grotendeels alles behalve de watermoleculen zelf.'],
-  ['Hoe lang gaat het membraan mee?', 'Afhankelijk van gebruik en waterkwaliteit meestal 2 tot 3 jaar, terwijl de voor- en nafilters vaker (6-12 maanden) aan vervanging toe zijn.'],
+  ['Hoe lang gaat het membraan mee?', 'Gemiddeld 2 jaar, afhankelijk van gebruik en waterkwaliteit. De voor- en nafilters zijn vaker aan de beurt: gemiddeld elk jaar.'],
   ['Kost een omgekeerde osmose filter veel water?', 'Er ontstaat wat afvalwater tijdens het filtratieproces, maar moderne systemen zijn hier steeds zuiniger in dan oudere generaties.'],
   ['Waarom ontstaat er afvalwater bij een omgekeerde osmose filter?', 'Het membraan houdt stoffen tegen die ergens moeten blijven — een deel van het water spoelt die stoffen weg in plaats van dat ze zich ophopen op het membraan zelf, wat de levensduur ten goede komt.'],
   ['Kan ik het membraan zelf vervangen?', 'Bij de meeste systemen is dit een kwestie van los- en vastdraaien, vaak met een instructievideo van de fabrikant. Twijfel je, dan kan een monteur het ook voor je doen.'],

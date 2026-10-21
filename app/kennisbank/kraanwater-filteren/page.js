@@ -151,6 +151,36 @@ export default function Page() {
 
         <section className="relative">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Heeft het zin om kraanwater te filteren?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Waterbedrijven en onderzoekers zijn er duidelijk over: Nederlands kraanwater is veilig, ook zonder filter. Er wordt geen chloor of fluor aan toegevoegd en het water wordt continu gecontroleerd (<a href="https://www.drinkwaterplatform.nl/waterfilters-de-zin-en-onzin/" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">KWR op Drinkwaterplatform</a>).
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Of <strong className="text-ink">kraanwater filteren</strong> zin heeft, hangt dus af van wat je wilt bereiken. Voor een betere smaak is het een persoonlijke keuze. Wie ook sporen van PFAS en medicijnresten kwijt wil, heeft alleen iets aan omgekeerde osmose: een koolfilter houdt die nauwelijks tegen.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Nadelen van gefilterd kraanwater: bacteriën en mineralen</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Pointer (KRO-NCRV) liet in 2024 het water uit het osmosefilter van een influencer testen door Het Waterlaboratorium. Daarin zaten veel meer bacteriën dan in gewoon kraanwater, en bijna geen mineralen meer. Een onderzoeker van KWR noemde dat water ongeschikt om te drinken (<a href="https://pointer.kro-ncrv.nl/door-waterfilter-wordt-kraanwater-absoluut-ongeschikt-als-drinkwater" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Pointer</a>).
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Zo&apos;n uitslag gaat over dat ene filter, maar laat goed zien waar je op moet letten als je kraanwater filtert:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Vervang filters op tijd</strong>. Een filter dat te lang blijft zitten, is een voedingsbodem voor bacteriën. Bij een filterkan geldt dat net zo goed.</li>
+              <li><strong className="text-ink">Laat water niet lang stilstaan</strong>. In een opslagtank of een kan die dagen staat, kunnen bacteriën groeien. Een direct-flow systeem zonder tank zuivert het water op het moment dat je tapt.</li>
+              <li><strong className="text-ink">Spoel door na afwezigheid</strong>. Ben je een week weg geweest, laat de kraan dan even lopen voordat je drinkt.</li>
+              <li><strong className="text-ink">Denk aan mineralen</strong>. Osmosewater bevat bijna geen calcium en magnesium. Met een nafilter met mineralen komen die terug in het water.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <div className="text-center">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgestelde vragen</h2>

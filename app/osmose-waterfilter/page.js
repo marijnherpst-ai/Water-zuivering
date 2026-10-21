@@ -23,7 +23,7 @@ const FAQ = [
   ['Wat is een osmose waterfilter precies?', 'Een filtersysteem dat water onder lichte druk door een membraan van 0,0001 micron perst — dit verwijdert bacteriën, zware metalen, PFAS, medicijnresten en microplastics.'],
   ['Is een osmose waterfilter hetzelfde als een osmosesysteem?', 'Ja, dit zijn twee namen voor dezelfde technologie: omgekeerde osmose, ook wel RO (reverse osmosis) genoemd.'],
   ['Wat kost een osmose waterfilter?', 'De prijs hangt af van het gekozen systeem en de installatie. Vraag een vrijblijvende offerte aan voor een prijs op maat.'],
-  ['Hoeveel onderhoud vraagt een osmose waterfilter?', 'Het voorfilter en het nafilter vervang je gemiddeld elk jaar, het membraan gemiddeld elke 2 jaar. Bij veel waterverbruik eerder. Het display geeft aan wanneer het tijd is.'],
+  ['Hoeveel onderhoud vraagt een osmose waterfilter?', 'Weinig: één keer per jaar wissel je het voor- en nafilter, en om het jaar ook het membraan. Gebruik je veel water, dan iets vaker. Het apparaat geeft zelf een seintje.'],
 ];
 
 export default function Page() {
@@ -137,7 +137,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Onderhoud en kosten van je osmose waterfilter</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Het voorfilter en het nafilter vervang je elk jaar, het membraan elke twee jaar. Dat kost gemiddeld ongeveer € 135 per jaar. De filters draai je zelf los en vast, zonder gereedschap, en het display laat zien wanneer het tijd is. Je hebt 10 jaar garantie op het systeem.
+              Eén keer per jaar gaan er een nieuw voor- en nafilter in, en om het jaar komt daar het membraan bij. Reken op zo&apos;n € 135 per jaar aan filters. Wisselen doe je zelf: oude patroon eruit draaien, nieuwe erin, klaar. Het display van de osmose waterfilter waarschuwt als het zover is. Je hebt 10 jaar garantie op het systeem.
             </p>
           </div>
         </section>

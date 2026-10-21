@@ -116,6 +116,24 @@ export default function Page() {
 
         <section className="relative">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Is gekookt water hetzelfde als osmosewater?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Nee. Koken doodt bacteriën, maar haalt geen opgeloste stoffen uit het water. Kalk, PFAS en medicijnresten blijven gewoon zitten, en omdat er bij het koken wat water verdampt, wordt het zelfs iets geconcentreerder. Voor osmosewater moet het water door een membraan. Zelf osmosewater maken lukt dus alleen met een osmose-apparaat.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoe maakt een glazenwasser osmosewater?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Glazenwassers gebruiken osmosewater omdat het geen kalkvlekken en strepen achterlaat. Ze hebben daarvoor grotere osmose-installaties, in een bus of aanhanger, of ze tanken het bij een osmose-tappunt. Die installaties zijn gemaakt voor grote hoeveelheden schoonmaakwater, niet voor drinkwater. Voor drinkwater in de keuken gebruik je een systeem dat daarvoor is gemaakt. Waar je osmosewater koopt, lees je in <Link href="/kennisbank/osmosewater-kopen" className="underline hover:text-ink">osmosewater kopen</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <div className="text-center">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgestelde vragen</h2>

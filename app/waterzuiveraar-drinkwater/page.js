@@ -30,7 +30,7 @@ const FAQ = [
   ['Is Nederlands kraanwater niet al veilig genoeg?', 'Ja, Nederlands kraanwater voldoet aan strenge wettelijke normen en is veilig om te drinken. Een waterzuiveraar drinkwater gaat een stap verder, voor stoffen die nog niet standaard gereguleerd of verwijderd worden.'],
   ['Is water uit een waterzuiveraar veilig voor baby\'s?', 'Water dat via osmose is gezuiverd, wordt vaak juist aanbevolen voor het bereiden van flesvoeding, omdat het vrij is van sporen van stoffen die reguliere zuivering niet volledig wegneemt. Overleg bij twijfel altijd met je consultatiebureau of huisarts.'],
   ['Verandert een drinkwaterzuiveraar de smaak van koffie of thee?', 'Ja, meestal juist ten goede — zonder chloorsmaak en met minder kalk komt de eigen smaak van koffie, thee of eten beter naar voren.'],
-  ['Hoeveel onderhoud heeft een waterzuiveraar voor drinkwater?', 'De voor- en nafilters vervang je elke 6 tot 12 maanden, het membraan elke 2 tot 3 jaar — je krijgt bij installatie een concreet schema mee.'],
+  ['Hoeveel onderhoud heeft een waterzuiveraar voor drinkwater?', 'Het voorfilter en het nafilter vervang je gemiddeld elk jaar, het membraan elke 2 jaar. Het display laat zien wanneer het tijd is.'],
   ['Wat kost een waterzuiveraar voor drinkwater?', 'De prijs hangt af van het gekozen systeem en de installatie. Vraag een vrijblijvende offerte aan voor een prijs op maat van jouw huishouden.'],
 ];
 
@@ -146,6 +146,54 @@ export default function Page() {
         </section>
 
         {/* FAQ */}
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Soorten waterzuiveraars voor drinkwater</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een <strong className="text-ink">waterzuiveraar voor drinkwater</strong> bestaat in vier vormen. Ze verschillen vooral in hoe ze geplaatst worden en hoe fijn ze filteren:
+            </p>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold">Soort</th><th scope="col" className="p-4 font-display font-bold">Plaatsing</th><th scope="col" className="p-4 font-display font-bold">Werking</th><th scope="col" className="p-4 font-display font-bold">Geschikt voor</th></tr></thead>
+                <tbody>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Waterfilterkan</th><td className="p-4 text-dim">Los, in de koelkast</td><td className="p-4 text-dim">Actieve kool, soms met ionenwisselaar</td><td className="p-4 text-dim">Smaak verbeteren, kleine hoeveelheden</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Zwaartekrachtfilter</th><td className="p-4 text-dim">Op het aanrecht, je vult hem zelf</td><td className="p-4 text-dim">Keramiek en/of koolstof, water zakt langzaam door</td><td className="p-4 text-dim">Huishoudens zonder installatie, ook off-grid</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Kraanfilter</th><td className="p-4 text-dim">Op de uitloop van je kraan</td><td className="p-4 text-dim">Klein koolstoffilter</td><td className="p-4 text-dim">Snel gefilterd water zonder bijvullen</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Omgekeerde osmose</th><td className="p-4 text-dim">Onder het aanrecht, met eigen kraan</td><td className="p-4 text-dim">Voorfilter, membraan van 0,0001 micron en nafilter</td><td className="p-4 text-dim">Ook PFAS, medicijnresten, microplastics en kalk</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 text-dim leading-relaxed">
+              Alleen omgekeerde osmose filtert fijn genoeg voor de opgeloste stoffen waar de meeste mensen zich zorgen over maken. Meer over het membraan lees je in <Link href="/kennisbank/omgekeerde-osmose-filter" className="underline hover:text-ink">omgekeerde osmose filter: hoe werkt het?</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waar let je op bij het kiezen van een waterzuiveraar?</h2>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Wat wil je eruit halen?</strong> Voor smaak volstaat actieve kool. Voor PFAS en medicijnresten heb je een membraan nodig.</li>
+              <li><strong className="text-ink">Hoeveel water gebruik je?</strong> Een gezin dat ook kookt en koffie zet met gefilterd water, heeft meer aan een systeem dat direct levert (1,58 liter per minuut) dan aan een kan.</li>
+              <li><strong className="text-ink">Is er een tank?</strong> Een systeem zonder opslagtank neemt minder ruimte in en levert altijd vers water.</li>
+              <li><strong className="text-ink">Wat kosten de filters?</strong> Reken de jaarlijkse filterkosten mee. Bij Water-zuivering is dat gemiddeld ongeveer € 135.</li>
+              <li><strong className="text-ink">Garantie en installatie</strong>: wie plaatst het, en hoe lang ben je gedekt?</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waterzuiveraar of waterontharder?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Die twee worden vaak verward. Een waterontharder haalt kalk uit al het water in huis, tegen aanslag in leidingen en apparaten. Een waterzuiveraar richt zich op het water dat je drinkt en haalt er ook PFAS, medicijnresten en microplastics uit. Het volledige verschil staat in <Link href="/kennisbank/waterontharder-vs-waterzuiveraar" className="underline hover:text-ink">waterontharder of waterzuiveraar</Link>.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Zoek je een manier om regen- of slootwater drinkbaar te maken? Dat vraagt een ander systeem dan een waterzuiveraar voor kraanwater. Lees daarover bij de <Link href="/waterzuiveringsinstallatie" className="underline hover:text-ink">waterzuiveringsinstallatie</Link>.
+            </p>
+          </div>
+        </section>
+
         <section className="relative bg-surface border-y border-edge">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
             <div className="text-center">
