@@ -52,7 +52,7 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
-        headline="Bruin water uit de kraan: oorzaak, risico's en wat je doet"
+        headline="Bruin water uit de kraan: oorzaak, risico's en wat je eraan doet"
         description="Waardoor bruin water uit de kraan komt, of je het kunt drinken en wat je direct doet."
         image="https://www.water-zuivering.nl/assets/img/een-kraan.jpg"
         url="https://www.water-zuivering.nl/kennisbank/bruin-water-uit-de-kraan"
@@ -74,7 +74,7 @@ export default function Page() {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
-              Bruin water uit de kraan: oorzaak, risico&apos;s en wat je doet
+              Bruin water uit de kraan: oorzaak, risico&apos;s en wat je eraan doet
             </h1>
             <p className="mt-5 text-dim text-lg">
               Je draait de kraan open en er komt <strong className="text-ink">bruin water uit de kraan</strong>. Schrikken, maar meestal niet erg. Hier lees je waar het vandaan komt, of je het kunt drinken en wat je nu direct doet.
