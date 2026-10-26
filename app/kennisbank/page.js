@@ -13,6 +13,27 @@ export const metadata = {
 
 const ARTICLES = [
   {
+    href: '/kennisbank/drinkwater-amsterdam',
+    image: '/assets/img/glas-water.webp',
+    category: 'Waterkwaliteit per stad',
+    title: 'Drinkwater Amsterdam: bron, hardheid en PFAS',
+    excerpt: 'Waar Waternet het water vandaan haalt, hoe zacht het is en wat de PFAS-cijfers zeggen.',
+  },
+  {
+    href: '/kennisbank/drinkwater-dordrecht-zwijndrecht',
+    image: '/assets/img/een-kraan.jpg',
+    category: 'Waterkwaliteit per stad',
+    title: 'Drinkwater Dordrecht en Zwijndrecht: PFAS en Chemours',
+    excerpt: 'Biesbosch, diep grondwater, de PFAS-score en wat Chemours wel en niet met je kraanwater te maken heeft.',
+  },
+  {
+    href: '/kennisbank/kraanwater-utrecht',
+    image: '/assets/img/twee-kranen.jpg',
+    category: 'Waterkwaliteit per stad',
+    title: 'Kraanwater Utrecht: bronnen, PFAS en kwaliteit',
+    excerpt: 'Zeven grondwaterbronnen, PFAS per wijk en wat er misging bij het kookadvies van 2025.',
+  },
+  {
     href: '/kennisbank/bruin-water-uit-de-kraan',
     image: '/assets/img/een-kraan.jpg',
     category: 'Waterkwaliteit',
