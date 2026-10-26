@@ -222,7 +222,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Is het drinkwater in Amsterdam veilig?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Ja, drinkwater Amsterdam is veilig. Het Waterlaboratorium controleert het water van Waternet elke dag op onder meer smaak, geur, temperatuur, helderheid, hardheid en een lange lijst stoffen. Het moet voldoen aan de Europese drinkwaterrichtlijn, de Drinkwaterwet en het Drinkwaterbesluit. Je kunt het Amsterdamse kraanwater dus gewoon drinken.
+              Ja, <strong className="text-ink">drinkwater Amsterdam</strong> is veilig. Het Waterlaboratorium controleert het water van Waternet elke dag op onder meer smaak, geur, temperatuur, helderheid, hardheid en een lange lijst stoffen. Het moet voldoen aan de Europese drinkwaterrichtlijn, de Drinkwaterwet en het Drinkwaterbesluit. Je kunt het Amsterdamse kraanwater dus gewoon drinken.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Twee dingen hebben wel invloed op wat er uiteindelijk in jouw glas komt:

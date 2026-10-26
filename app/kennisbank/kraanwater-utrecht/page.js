@@ -172,7 +172,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hardheid en smaak van kraanwater in Utrecht</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Kraanwater Utrecht is overwegend zacht. Water uit Leidsche Rijn is volgens Vitens van nature zacht. Op een aantal andere locaties onthardt Vitens het water om kalkaanslag in huis te beperken. Een vaste waarde voor de hele stad is er dus niet: de hardheid op jouw adres vind je met je postcode op de site van Vitens.
+              <strong className="text-ink">Kraanwater Utrecht</strong> is overwegend zacht. Water uit Leidsche Rijn is volgens Vitens van nature zacht. Op een aantal andere locaties onthardt Vitens het water om kalkaanslag in huis te beperken. Een vaste waarde voor de hele stad is er dus niet: de hardheid op jouw adres vind je met je postcode op de site van Vitens.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Grondwater heeft een paar voordelen voor de smaak. Er hoeft geen chloor in, het is het hele jaar door ongeveer even koel, en het bevat van nature mineralen als calcium en magnesium. Ruik je toch een metaalachtige smaak of zie je bruinig water, dan gaat het vaak om ijzer uit de leidingen. Wat je dan doet, lees je in <Link href="/kennisbank/bruin-water-uit-de-kraan" className="underline hover:text-ink">bruin water uit de kraan</Link>.
