@@ -14,7 +14,7 @@ export const metadata = {
   alternates: { canonical: '/kennisbank/drinkwater-dordrecht-zwijndrecht' },
   title: 'Drinkwater Dordrecht en Zwijndrecht — Water-zuivering',
   description:
-    'Drinkwater Dordrecht en Zwijndrecht: de bron (Biesbosch en diep grondwater), de PFAS-score, de rol van Chemours en het kookadvies van juni 2026.',
+    'Drinkwater Dordrecht en Zwijndrecht: de bron (Biesbosch en grondwater), de PFAS-score, de rol van Chemours en het kookadvies van juni 2026.',
   openGraph: {
     title: 'Drinkwater Dordrecht en Zwijndrecht: PFAS en bron',
     description: 'Waar het kraanwater in de Drechtsteden vandaan komt, wat de PFAS-cijfers zeggen en wat Chemours ermee te maken heeft.',
@@ -194,7 +194,7 @@ export default function Page() {
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 lg:order-1">
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/systeem-staand.png" alt="Osmosesysteem dat PFAS uit het drinkwater in Dordrecht filtert" fill loading="eager" sizes="(min-width: 1024px) 50vw, 100vw" className="object-contain bg-white" />
+                <Image src="/assets/img/systeem-staand.png" alt="Drinkwater Dordrecht filteren met een osmosesysteem" fill loading="eager" sizes="(min-width: 1024px) 50vw, 100vw" className="object-contain bg-white" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -244,7 +244,7 @@ export default function Page() {
               <p className="font-display font-bold text-ink">Bronnen</p>
               <ul className="mt-3 space-y-1 text-sm text-dim list-disc pl-5">
                 <li><a href="https://www.evides.nl/pfas-en-drinkwater/lokale-situatie-in-dordrecht" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Evides: lokale situatie in Dordrecht</a></li>
-                <li><a href="https://nos.nl/artikel/2618439-drinkwater-voor-de-200-000-mensen-in-regio-dordrecht" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">NOS: drinkwater regio Dordrecht weer veilig (13 juni 2026)</a></li>
+                <li><a href="https://nos.nl/artikel/2618439-drinkwater-voor-de-200-000-mensen-in-regio-dordrecht-toch-veilig-te-gebruiken" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">NOS: drinkwater regio Dordrecht weer veilig (13 juni 2026)</a></li>
                 <li><a href="https://open.rijkswaterstaat.nl/publish/pages/115913/gebiedsdossier_brabantse_biesbosch_definitief.pdf" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Rijkswaterstaat: gebiedsdossier Brabantse Biesbosch</a></li>
                 <li><a href="https://omgevingsweb.nl/wp-content/uploads/2026/09/7f7a499b-260922-uitleg-en-verantwoording-bij-de-pfas-kraanwater-postcodechecker.docx.pdf" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Greenpeace: uitleg en verantwoording bij de PFAS kraanwater postcodechecker (22 september 2026)</a></li>
               </ul>

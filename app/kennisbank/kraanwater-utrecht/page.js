@@ -96,7 +96,7 @@ export default function Page() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">De bronnen</span>
             <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Zeven grondwaterbronnen voor één stad</h2>
             <p className="mt-4 text-dim leading-relaxed max-w-3xl">
-              Waar Amsterdam en Rotterdam vooral rivierwater zuiveren, pompt Vitens voor kraanwater Utrecht <strong className="text-ink">grondwater</strong> op. Onder de Utrechtse Heuvelrug liggen schone voorraden, en in het westen beschermen kleilagen de diepere zandlagen. Volgens DUIC haalt de stad haar water uit deze zeven bronnen:
+              Waar Amsterdam en Rotterdam vooral rivierwater zuiveren, pompt Vitens voor kraanwater Utrecht <strong className="text-ink">grondwater</strong> op. Onder de Utrechtse Heuvelrug liggen schone voorraden, en in het westen beschermen kleilagen de diepere zandlagen. Volgens DUIC (2018) haalt de stad haar water uit deze zeven bronnen:
             </p>
             <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {BRONNEN.map(([naam, uitleg]) => (
@@ -203,7 +203,7 @@ export default function Page() {
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 lg:order-1">
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/twee-kranen.jpg" alt="Gewone kraan en osmosekraan voor gefilterd kraanwater in Utrecht" fill loading="eager" sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image src="/assets/img/twee-kranen.jpg" alt="Kraanwater Utrecht uit een gewone kraan en een osmosekraan" fill loading="eager" sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -259,7 +259,7 @@ export default function Page() {
               <p className="font-display font-bold text-ink">Bronnen</p>
               <ul className="mt-3 space-y-1 text-sm text-dim list-disc pl-5">
                 <li><a href="https://www.vitens.nl/over-water/projecten/utrecht" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Vitens: drinkwater in de provincie Utrecht</a></li>
-                <li><a href="https://www.duic.nl/algemeen/waar-komt-ons-kraanwater-eigenlijk-vandaan/" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">DUIC: waar komt ons kraanwater eigenlijk vandaan?</a></li>
+                <li>DUIC: waar komt ons kraanwater eigenlijk vandaan? (11 juli 2018)</li>
                 <li><a href="https://www.hartvannederland.nl/advies-en-tips/waarschuwen/artikelen/utrecht-oorzaak-besmet-drinkwater-vitens" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Hart van Nederland: oorzaak besmet drinkwater Utrecht</a></li>
                 <li><a href="https://omgevingsweb.nl/wp-content/uploads/2026/09/7f7a499b-260922-uitleg-en-verantwoording-bij-de-pfas-kraanwater-postcodechecker.docx.pdf" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Greenpeace: uitleg en verantwoording bij de PFAS kraanwater postcodechecker (22 september 2026)</a></li>
               </ul>

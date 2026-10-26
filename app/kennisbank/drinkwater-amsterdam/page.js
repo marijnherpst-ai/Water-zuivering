@@ -271,7 +271,7 @@ export default function Page() {
           <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 lg:order-1">
               <div className="relative rounded-3xl overflow-hidden border border-edge aspect-[4/3]">
-                <Image src="/assets/img/cabinet-install.png" alt="Osmosesysteem onder het aanrecht dat het drinkwater in Amsterdam filtert" fill loading="eager" sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+                <Image src="/assets/img/cabinet-install.png" alt="Drinkwater Amsterdam filteren met een osmosesysteem onder het aanrecht" fill loading="eager" sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -321,7 +321,7 @@ export default function Page() {
               <p className="font-display font-bold text-ink">Bronnen</p>
               <ul className="mt-3 space-y-1 text-sm text-dim list-disc pl-5">
                 <li><a href="https://www.waternet.nl/service-en-contact/drinkwater/waterkwaliteit/" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Waternet: waterkwaliteit en hardheid</a></li>
-                <li><a href="https://waternet.nl/en/service-and-contact/tap-water/where-does-our-tap-water-come-from" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Waternet: waar komt ons kraanwater vandaan</a></li>
+                <li><a href="https://www.waternet.nl/en/service-and-contact/tap-water/how-do-we-make-clean-tap-water/" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Waternet: hoe maken we schoon kraanwater</a></li>
                 <li><a href="https://www.waternet.nl/service-en-contact/drinkwater/waterkwaliteit/pfas/" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Waternet: PFAS in drinkwater</a></li>
                 <li><a href="https://omgevingsweb.nl/wp-content/uploads/2026/09/7f7a499b-260922-uitleg-en-verantwoording-bij-de-pfas-kraanwater-postcodechecker.docx.pdf" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Greenpeace: uitleg en verantwoording bij de PFAS kraanwater postcodechecker (22 september 2026)</a></li>
               </ul>
