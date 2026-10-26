@@ -8,6 +8,7 @@ import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import KortAntwoord from '@/components/KortAntwoord';
 import FaqSchema from '@/components/FaqSchema';
+import TussenCta from '@/components/TussenCta';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/kraanwater-utrecht' },
@@ -142,6 +143,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               In welke categorie jouw adres valt, zie je met de <Link href="/pfas-check" className="underline hover:text-ink">PFAS-check</Link>. Hoe Utrecht zich verhoudt tot de rest van het land, staat op de <Link href="/kennisbank/pfas-kaart-nederland" className="underline hover:text-ink">PFAS kaart van Nederland</Link>.
             </p>
+            <TussenCta titel="Woon je in een rode zone in Utrecht?" pfasEerst>
+              Check eerst met je postcode in welke PFAS-categorie jouw adres valt. Zit je boven de RIVM-richtwaarde, dan kun je met een osmosesysteem onder het aanrecht het overgrote deel van de PFAS zelf uit je drinkwater halen.
+            </TussenCta>
           </div>
         </section>
 

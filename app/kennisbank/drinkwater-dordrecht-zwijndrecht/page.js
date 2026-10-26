@@ -8,6 +8,7 @@ import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import KortAntwoord from '@/components/KortAntwoord';
 import FaqSchema from '@/components/FaqSchema';
+import TussenCta from '@/components/TussenCta';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/drinkwater-dordrecht-zwijndrecht' },
@@ -164,6 +165,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Toch zitten de waterbedrijven er bovenop. Evides en Oasen gingen in beroep tegen de omgevingsvergunning die de provincie Zuid-Holland in 2022 aan Chemours gaf, en tegen de watervergunning van Rijkswaterstaat. Begin september 2026 diende Greenpeace bovendien een handhavingsverzoek in tegen lozingen van de fabriek. De waterbedrijven pleiten samen voor een totaalverbod op PFAS. De PFAS-vervuiling rond Chemours zit vooral in bodem, lucht, moestuinen en oppervlaktewater in de buurt; daar gaat de site <a href="https://www.pfasinfo.nl" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">pfasinfo.nl</a> van de overheden in de regio over.
             </p>
+            <TussenCta titel="Niet wachten tot het PFAS-probleem bij de bron is opgelost?">
+              Met een osmosesysteem onder het aanrecht filter je het overgrote deel van de PFAS uit je drinkwater, in Dordrecht, Zwijndrecht en omgeving. Vraag vrijblijvend een offerte aan of check eerst de PFAS-categorie van je postcode.
+            </TussenCta>
           </div>
         </section>
 

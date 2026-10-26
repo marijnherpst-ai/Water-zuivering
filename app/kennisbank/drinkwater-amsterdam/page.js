@@ -8,6 +8,7 @@ import ArticleSchema from '@/components/ArticleSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import KortAntwoord from '@/components/KortAntwoord';
 import FaqSchema from '@/components/FaqSchema';
+import TussenCta from '@/components/TussenCta';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/drinkwater-amsterdam' },
@@ -208,6 +209,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Dat Amsterdam zo hoog scoort, komt door de bron: de Rijn neemt onderweg vervuiling op van industrie in Duitsland en Nederland. Hoe het in de rest van het land zit, lees je in <Link href="/kennisbank/pfas-in-kraanwater" className="underline hover:text-ink">PFAS in kraanwater</Link>. Wil je de waarde voor jouw postcode weten, doe dan de <Link href="/pfas-check" className="underline hover:text-ink">PFAS-check</Link>.
             </p>
+            <TussenCta titel="Zelf onder de RIVM-richtwaarde zitten in Amsterdam?">
+              Een osmosesysteem onder het aanrecht houdt het overgrote deel van de PFAS tegen. Ons systeem werkt zonder opslagtank en past ook in een kleine Amsterdamse keuken. Je ontvangt vrijblijvend een prijs voor jouw situatie.
+            </TussenCta>
           </div>
         </section>
 
