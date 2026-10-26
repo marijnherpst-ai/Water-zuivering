@@ -134,6 +134,9 @@ export default function Page() {
               In Noord- en Zuid-Holland wordt drinkwater voor een groot deel gemaakt van oppervlaktewater, uit rivieren en meren. PFAS komt via industrie, rioolwater en blusschuim in dat oppervlaktewater terecht en is moeilijk te verwijderen. In regio&apos;s waar drinkwater vooral uit diep grondwater komt, liggen de waarden meestal lager.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
+              Hoe dat per stad uitpakt, lees je in onze stadspagina&apos;s over <Link href="/kennisbank/drinkwater-amsterdam" className="underline hover:text-ink">drinkwater in Amsterdam</Link> (Rijnwater, hoogste categorie), <Link href="/kennisbank/drinkwater-dordrecht-zwijndrecht" className="underline hover:text-ink">drinkwater in Dordrecht en Zwijndrecht</Link> (Maaswater) en <Link href="/kennisbank/kraanwater-utrecht" className="underline hover:text-ink">kraanwater in Utrecht</Link> (vooral grondwater).
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
               Meer over de verschillende PFAS-stoffen lees je in <Link href="/kennisbank/pfos-pfoa-verschil" className="underline hover:text-ink">PFAS, PFOS en PFOA: het verschil</Link>, en hoe je zo dicht mogelijk bij PFAS-vrij water komt in <Link href="/kennisbank/pfas-vrij-water" className="underline hover:text-ink">PFAS-vrij water</Link>.
             </p>
           </div>

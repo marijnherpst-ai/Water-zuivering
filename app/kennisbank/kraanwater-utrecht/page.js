@@ -12,7 +12,7 @@ import TussenCta from '@/components/TussenCta';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/kraanwater-utrecht' },
-  title: 'Kraanwater Utrecht: bronnen, PFAS en kwaliteit — Water-zuivering',
+  title: 'Kraanwater Utrecht: bronnen en PFAS — Water-zuivering',
   description:
     'Kraanwater Utrecht: de zeven grondwaterbronnen van Vitens, de PFAS-cijfers per wijk, het kookadvies van 2025 en hoe zacht het water is.',
   openGraph: {
@@ -58,6 +58,9 @@ export default function Page() {
         description="De bronnen van het Utrechtse kraanwater, de PFAS-cijfers per categorie, het kookadvies van 2025 en de hardheid."
         image="https://www.water-zuivering.nl/assets/img/twee-kranen.jpg"
         url="https://www.water-zuivering.nl/kennisbank/kraanwater-utrecht"
+        datePublished="2026-10-26"
+        about={{ '@type': 'City', name: 'Utrecht', sameAs: 'https://nl.wikipedia.org/wiki/Utrecht_(stad)' }}
+        mentions={[{ '@type': 'Organization', name: 'Vitens', url: 'https://www.vitens.nl' }]}
       />
       <BreadcrumbSchema
         items={[
@@ -84,7 +87,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Vitens en Greenpeace (22 september 2026)', url: 'https://www.vitens.nl/over-water/projecten/utrecht' }}>
               Kraanwater Utrecht komt van Vitens en is gemaakt van grondwater uit zeven bronnen rond de stad. Het voldoet aan alle normen en werd in 2023 nog uitgeroepen tot het beste van Nederland. Volgens Greenpeace zit 84% van de Utrechters ruim onder de PFAS-richtwaarde; voor ongeveer 16% ligt de waarde erboven.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="26 oktober 2026" />
           </div>
         </section>
 
@@ -238,6 +241,28 @@ export default function Page() {
                   <p className="mt-3 text-sm text-dim leading-relaxed">{antwoord}</p>
                 </details>
               ))}
+            </div>
+            <div className="mt-12">
+              <p className="font-display font-bold text-ink">Vergelijk met andere steden</p>
+              <div className="mt-4 grid sm:grid-cols-2 gap-4">
+              <Link href="/kennisbank/drinkwater-amsterdam" className="card rounded-2xl p-5 block hover:border-amber transition-colors">
+                <span className="font-display font-bold text-ink">Drinkwater in Amsterdam</span>
+                <span className="mt-1 block text-sm text-dim">Rijn- en duinwater, alle inwoners in de hoogste PFAS-categorie.</span>
+              </Link>
+              <Link href="/kennisbank/drinkwater-dordrecht-zwijndrecht" className="card rounded-2xl p-5 block hover:border-amber transition-colors">
+                <span className="font-display font-bold text-ink">Drinkwater in Dordrecht en Zwijndrecht</span>
+                <span className="mt-1 block text-sm text-dim">Maaswater uit de Biesbosch en diep grondwater, PFAS-categorie rood.</span>
+              </Link>
+              </div>
+            </div>
+            <div className="mt-12">
+              <p className="font-display font-bold text-ink">Bronnen</p>
+              <ul className="mt-3 space-y-1 text-sm text-dim list-disc pl-5">
+                <li><a href="https://www.vitens.nl/over-water/projecten/utrecht" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Vitens: drinkwater in de provincie Utrecht</a></li>
+                <li><a href="https://www.duic.nl/algemeen/waar-komt-ons-kraanwater-eigenlijk-vandaan/" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">DUIC: waar komt ons kraanwater eigenlijk vandaan?</a></li>
+                <li><a href="https://www.hartvannederland.nl/advies-en-tips/waarschuwen/artikelen/utrecht-oorzaak-besmet-drinkwater-vitens" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Hart van Nederland: oorzaak besmet drinkwater Utrecht</a></li>
+                <li><a href="https://omgevingsweb.nl/wp-content/uploads/2026/09/7f7a499b-260922-uitleg-en-verantwoording-bij-de-pfas-kraanwater-postcodechecker.docx.pdf" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Greenpeace: uitleg en verantwoording bij de PFAS kraanwater postcodechecker (22 september 2026)</a></li>
+              </ul>
             </div>
           </div>
         </section>

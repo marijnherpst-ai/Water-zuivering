@@ -58,6 +58,9 @@ export default function Page() {
         description="Waar het kraanwater in Dordrecht en Zwijndrecht vandaan komt, hoeveel PFAS erin zit en wat de rol van Chemours is."
         image="https://www.water-zuivering.nl/assets/img/een-kraan.jpg"
         url="https://www.water-zuivering.nl/kennisbank/drinkwater-dordrecht-zwijndrecht"
+        datePublished="2026-10-26"
+        about={[{ '@type': 'City', name: 'Dordrecht', sameAs: 'https://nl.wikipedia.org/wiki/Dordrecht' }, { '@type': 'City', name: 'Zwijndrecht', sameAs: 'https://nl.wikipedia.org/wiki/Zwijndrecht_(Nederland)' }]}
+        mentions={[{ '@type': 'Organization', name: 'Evides Waterbedrijf', url: 'https://www.evides.nl' }, { '@type': 'Organization', name: 'Oasen', url: 'https://www.oasen.nl' }]}
       />
       <BreadcrumbSchema
         items={[
@@ -84,7 +87,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Evides en Greenpeace (22 september 2026)', url: 'https://www.evides.nl/pfas-en-drinkwater/lokale-situatie-in-dordrecht' }}>
               Drinkwater Dordrecht komt van Evides, uit productielocatie Baanhoek: Maaswater uit de Biesbosch plus diep grondwater. Het voldoet aan de wettelijke normen. Volgens Greenpeace zit heel Dordrecht wel in de PFAS-categorie rood, boven de RIVM-richtwaarde. Volgens Evides komt dat niet door Chemours, maar door PFAS in de Maas.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="26 oktober 2026" />
           </div>
         </section>
 
@@ -223,6 +226,28 @@ export default function Page() {
                   <p className="mt-3 text-sm text-dim leading-relaxed">{antwoord}</p>
                 </details>
               ))}
+            </div>
+            <div className="mt-12">
+              <p className="font-display font-bold text-ink">Vergelijk met andere steden</p>
+              <div className="mt-4 grid sm:grid-cols-2 gap-4">
+              <Link href="/kennisbank/drinkwater-amsterdam" className="card rounded-2xl p-5 block hover:border-amber transition-colors">
+                <span className="font-display font-bold text-ink">Drinkwater in Amsterdam</span>
+                <span className="mt-1 block text-sm text-dim">Rijn- en duinwater, alle inwoners in de hoogste PFAS-categorie.</span>
+              </Link>
+              <Link href="/kennisbank/kraanwater-utrecht" className="card rounded-2xl p-5 block hover:border-amber transition-colors">
+                <span className="font-display font-bold text-ink">Kraanwater in Utrecht</span>
+                <span className="mt-1 block text-sm text-dim">Grondwater uit zeven bronnen, grotendeels onder de PFAS-richtwaarde.</span>
+              </Link>
+              </div>
+            </div>
+            <div className="mt-12">
+              <p className="font-display font-bold text-ink">Bronnen</p>
+              <ul className="mt-3 space-y-1 text-sm text-dim list-disc pl-5">
+                <li><a href="https://www.evides.nl/pfas-en-drinkwater/lokale-situatie-in-dordrecht" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Evides: lokale situatie in Dordrecht</a></li>
+                <li><a href="https://nos.nl/artikel/2618439-drinkwater-voor-de-200-000-mensen-in-regio-dordrecht" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">NOS: drinkwater regio Dordrecht weer veilig (13 juni 2026)</a></li>
+                <li><a href="https://open.rijkswaterstaat.nl/publish/pages/115913/gebiedsdossier_brabantse_biesbosch_definitief.pdf" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Rijkswaterstaat: gebiedsdossier Brabantse Biesbosch</a></li>
+                <li><a href="https://omgevingsweb.nl/wp-content/uploads/2026/09/7f7a499b-260922-uitleg-en-verantwoording-bij-de-pfas-kraanwater-postcodechecker.docx.pdf" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Greenpeace: uitleg en verantwoording bij de PFAS kraanwater postcodechecker (22 september 2026)</a></li>
+              </ul>
             </div>
           </div>
         </section>

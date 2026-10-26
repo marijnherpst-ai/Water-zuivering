@@ -12,7 +12,7 @@ import TussenCta from '@/components/TussenCta';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/drinkwater-amsterdam' },
-  title: 'Drinkwater Amsterdam: bron, hardheid en PFAS — Water-zuivering',
+  title: 'Drinkwater Amsterdam: bron, hardheid, PFAS — Water-zuivering',
   description:
     'Drinkwater Amsterdam: waar Waternet het water vandaan haalt, hoe zacht het is (7,8 °dH) en hoeveel PFAS erin zit volgens Greenpeace.',
   openGraph: {
@@ -86,6 +86,9 @@ export default function Page() {
         description="Waar het Amsterdamse kraanwater vandaan komt, hoe hard het is, hoeveel PFAS erin zit en wat je zelf kunt doen."
         image="https://www.water-zuivering.nl/assets/img/glas-water.webp"
         url="https://www.water-zuivering.nl/kennisbank/drinkwater-amsterdam"
+        datePublished="2026-10-26"
+        about={{ '@type': 'City', name: 'Amsterdam', sameAs: 'https://nl.wikipedia.org/wiki/Amsterdam' }}
+        mentions={[{ '@type': 'Organization', name: 'Waternet', url: 'https://www.waternet.nl' }]}
       />
       <BreadcrumbSchema
         items={[
@@ -112,7 +115,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Waternet en Greenpeace (22 september 2026)', url: 'https://www.waternet.nl/service-en-contact/drinkwater/waterkwaliteit/' }}>
               Drinkwater Amsterdam komt van Waternet, uit Rijnwater dat door de duinen zakt (Leiduin) en kwelwater uit de Bethunepolder (Weesperkarspel). Het water is zacht, gemiddeld 7,8 °dH, en voldoet aan de wettelijke normen. Wel valt heel Amsterdam volgens Greenpeace in de hoogste PFAS-categorie: ruim twee keer de RIVM-richtwaarde.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="26 oktober 2026" />
           </div>
         </section>
 
@@ -300,6 +303,28 @@ export default function Page() {
                   <p className="mt-3 text-sm text-dim leading-relaxed">{antwoord}</p>
                 </details>
               ))}
+            </div>
+            <div className="mt-12">
+              <p className="font-display font-bold text-ink">Vergelijk met andere steden</p>
+              <div className="mt-4 grid sm:grid-cols-2 gap-4">
+              <Link href="/kennisbank/drinkwater-dordrecht-zwijndrecht" className="card rounded-2xl p-5 block hover:border-amber transition-colors">
+                <span className="font-display font-bold text-ink">Drinkwater in Dordrecht en Zwijndrecht</span>
+                <span className="mt-1 block text-sm text-dim">Maaswater uit de Biesbosch en diep grondwater, PFAS-categorie rood.</span>
+              </Link>
+              <Link href="/kennisbank/kraanwater-utrecht" className="card rounded-2xl p-5 block hover:border-amber transition-colors">
+                <span className="font-display font-bold text-ink">Kraanwater in Utrecht</span>
+                <span className="mt-1 block text-sm text-dim">Grondwater uit zeven bronnen, grotendeels onder de PFAS-richtwaarde.</span>
+              </Link>
+              </div>
+            </div>
+            <div className="mt-12">
+              <p className="font-display font-bold text-ink">Bronnen</p>
+              <ul className="mt-3 space-y-1 text-sm text-dim list-disc pl-5">
+                <li><a href="https://www.waternet.nl/service-en-contact/drinkwater/waterkwaliteit/" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Waternet: waterkwaliteit en hardheid</a></li>
+                <li><a href="https://waternet.nl/en/service-and-contact/tap-water/where-does-our-tap-water-come-from" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Waternet: waar komt ons kraanwater vandaan</a></li>
+                <li><a href="https://www.waternet.nl/service-en-contact/drinkwater/waterkwaliteit/pfas/" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Waternet: PFAS in drinkwater</a></li>
+                <li><a href="https://omgevingsweb.nl/wp-content/uploads/2026/09/7f7a499b-260922-uitleg-en-verantwoording-bij-de-pfas-kraanwater-postcodechecker.docx.pdf" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Greenpeace: uitleg en verantwoording bij de PFAS kraanwater postcodechecker (22 september 2026)</a></li>
+              </ul>
             </div>
           </div>
         </section>

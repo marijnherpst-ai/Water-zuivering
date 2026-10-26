@@ -89,7 +89,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Welke gebieden vallen extra op?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Op een PFAS kaart springen vooral een paar type locaties eruit: industrieterreinen waar PFAS is geproduceerd of gebruikt (de regio rond Dordrecht wordt daarbij vaak genoemd), en plekken waar PFAS-houdend blusschuim is gebruikt, zoals brandweeroefenterreinen. Welke gebieden precies als aandachtsgebied zijn aangemerkt, verschilt per bron en verandert met nieuwe metingen.
+              Op een PFAS kaart springen vooral een paar type locaties eruit: industrieterreinen waar PFAS is geproduceerd of gebruikt (de regio rond Dordrecht wordt daarbij vaak genoemd; wat dat betekent voor het kraanwater daar, lees je in <Link href="/kennisbank/drinkwater-dordrecht-zwijndrecht" className="underline hover:text-ink">drinkwater Dordrecht en Zwijndrecht</Link>), en plekken waar PFAS-houdend blusschuim is gebruikt, zoals brandweeroefenterreinen. Welke gebieden precies als aandachtsgebied zijn aangemerkt, verschilt per bron en verandert met nieuwe metingen.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Belangrijk detail: een "aandachtsgebied" op de kaart zegt iets over de bodem of het oppervlaktewater ter plekke, niet automatisch over de kwaliteit van het drinkwater dat bij jou uit de kraan komt. Drinkwaterbedrijven winnen hun water vaak dieper uit de grond of uit andere bronnen, en zuiveren en toetsen dat apart aan de wettelijke norm — ook als je toevallig in of vlakbij zo'n gebied woont.
