@@ -11,7 +11,7 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/pfas-kaart-nederland' },
-  title: 'PFAS kaart Nederland: zit het in jouw water? — Water-zuivering',
+  title: 'PFAS kaart Nederland: zit het in jouw drinkwater?',
   description:
     'De PFAS kaart van Nederland laat zien waar de stoffen zijn gevonden. Zo lees je hem, en zo check je zelf of het ook in jouw drinkwater zit.',
 };

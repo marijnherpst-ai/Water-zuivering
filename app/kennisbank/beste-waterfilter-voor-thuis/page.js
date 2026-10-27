@@ -11,7 +11,7 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/beste-waterfilter-voor-thuis' },
-  title: 'Beste waterfilter voor thuis: vergelijking 2026 — Water-zuivering',
+  title: 'Beste waterfilter voor thuis: vergelijking 2026',
   description:
     'Waterfilterkan, kraanfilter of waterzuiveraar onder de gootsteen: wat is de beste waterfilter voor thuis? Vergelijking op filtratie, gemak en kosten.',
 };

@@ -11,7 +11,7 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/waterfilter-vervangen-hoe-vaak' },
-  title: 'Hoe vaak moet je een waterfilter vervangen? — Water-zuivering',
+  title: 'Hoe vaak moet je een waterfilter vervangen?',
   description:
     'Hoe vaak een waterfilter vervangen moet worden, waarom, en wat er gebeurt als je het te lang uitstelt. Kort en duidelijk uitgelegd.',
 };

@@ -10,7 +10,7 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/waterontharder-voor-en-nadelen' },
-  title: 'Waterontharder: voor- en nadelen op een rij — Water-zuivering',
+  title: 'Waterontharder voor- en nadelen op een rij',
   description: 'Een waterontharder heeft duidelijke voordelen tegen kalkaanslag, maar ook nadelen zoals zoutverbruik en onderhoud. Alle voor- en nadelen op een rij.',
 };
 

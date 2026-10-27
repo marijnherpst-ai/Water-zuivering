@@ -6,7 +6,7 @@ import RevealObserver from '@/components/RevealObserver';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank' },
-  title: 'Kennisbank — Water-zuivering',
+  title: 'Kennisbank drinkwater, PFAS en osmose — Water-zuivering',
   description:
     'Alles wat je wilt weten over waterzuivering, osmosewater en drinkwater — in gewone taal uitgelegd.',
 };

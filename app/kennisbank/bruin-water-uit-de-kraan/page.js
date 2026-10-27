@@ -11,7 +11,7 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/bruin-water-uit-de-kraan' },
-  title: 'Bruin water uit de kraan: wat nu? — Water-zuivering',
+  title: 'Bruin water uit de kraan? Oorzaak en wat je nu doet',
   description:
     'Bruin water uit de kraan? Lees waardoor het komt, of je het kunt drinken en wat je nu doet: welke kraan open en wanneer je belt.',
   openGraph: {

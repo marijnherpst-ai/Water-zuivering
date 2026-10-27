@@ -6,7 +6,7 @@ import MaatcheckPicker from '@/components/maatcheck/MaatcheckPicker';
 
 export const metadata = {
   alternates: { canonical: '/maatcheck' },
-  title: 'Maatcheck — past het systeem in jouw kastje? — Water-zuivering',
+  title: 'Past een osmosesysteem in je keukenkastje? Maatcheck',
   description:
     'Zet het osmosewatersysteem live in je keuken met je camera, of gebruik een foto — op ware grootte, staand of liggend.',
 };

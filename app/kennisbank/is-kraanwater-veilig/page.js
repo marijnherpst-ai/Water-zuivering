@@ -11,7 +11,7 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/is-kraanwater-veilig' },
-  title: 'Is kraanwater veilig? Zo zit het in Nederland — Water-zuivering',
+  title: 'Is kraanwater veilig om te drinken in Nederland?',
   description:
     'Is kraanwater veilig om te drinken? In Nederland wel, met een paar kanttekeningen. Wat erin kan zitten en hoe je het eruit filtert.',
 };

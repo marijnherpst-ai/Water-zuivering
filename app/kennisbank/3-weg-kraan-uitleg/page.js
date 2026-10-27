@@ -10,7 +10,7 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/3-weg-kraan-uitleg' },
-  title: 'Wat is een 3-weg kraan en heb je die nodig? — Water-zuivering',
+  title: 'Wat is een 3-weg kraan en heb je die nodig?',
   description:
     'Wat een 3-weg kraan precies is, hoe hij werkt en of hij zinvol is bij jouw waterzuiveringssysteem.',
 };

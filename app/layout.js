@@ -24,7 +24,7 @@ const outfit = Outfit({
 });
 
 const SITE_URL = 'https://www.water-zuivering.nl';
-const DEFAULT_TITLE = 'Water-zuivering — Waterzuiveraar voor onder de kraan';
+const DEFAULT_TITLE = 'Waterzuiveraar voor onder de kraan — Water-zuivering';
 const DEFAULT_DESCRIPTION =
   'Zuiver drinkwater rechtstreeks uit uw kraan. Water-zuivering verwijdert chloor, PFAS, medicijnresten en microplastics. Vraag een gratis offerte aan.';
 

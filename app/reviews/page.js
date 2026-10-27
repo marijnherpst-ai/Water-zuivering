@@ -7,7 +7,7 @@ import { createClient } from '@supabase/supabase-js';
 
 export const metadata = {
   alternates: { canonical: '/reviews' },
-  title: 'Reviews — Water-zuivering',
+  title: 'Water-zuivering ervaringen en reviews van klanten',
   description: 'Lees ervaringen van klanten van Water-zuivering en laat zelf een review achter.',
 };
 

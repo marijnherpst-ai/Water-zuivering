@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   alternates: { canonical: '/uitleg' },
-  title: 'Hoe werkt het? — Water-zuivering',
+  title: 'Hoe werkt een waterzuiveraar? In gewone taal uitgelegd',
   description: 'In gewone taal uitgelegd: hoe je waterzuiveraar werkt, hoe je een filter vervangt en hoe de installatie gaat.',
 };
 

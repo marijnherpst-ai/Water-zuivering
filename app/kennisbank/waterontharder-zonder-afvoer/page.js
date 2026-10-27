@@ -10,7 +10,7 @@ import FaqSchema from '@/components/FaqSchema';
 
 export const metadata = {
   alternates: { canonical: '/kennisbank/waterontharder-zonder-afvoer' },
-  title: 'Waterontharder zonder afvoer: hoe werkt dat? — Water-zuivering',
+  title: 'Waterontharder zonder afvoer: hoe werkt dat?',
   description: 'Een waterontharder zonder afvoer werkt anders dan een klassieke ontharder: meestal magnetisch of elektronisch. Hoe het werkt en wat je mag verwachten.',
 };
 
