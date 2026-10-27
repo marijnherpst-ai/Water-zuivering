@@ -152,7 +152,7 @@ export default function Page() {
               Je waterbedrijf publiceert de kwaliteit van het drinkwater in jouw regio, vaak met een zoekfunctie op postcode. Daar vind je onder meer de hardheid en de gemeten stoffen. Voor PFAS kun je ook onze <Link href="/pfas-check" className="underline hover:text-ink">PFAS-check</Link> gebruiken: die laat per regio zien hoe het water zich verhoudt tot de RIVM-advieswaarde.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Twijfel je over je eigen leidingen, dan kan een laboratorium je kraanwater testen. Voor de meeste huishoudens is dat niet nodig; de gegevens van het waterbedrijf geven een goed beeld. Is kraanwater veilig in jouw huis, maar wil je toch zekerheid over PFAS en medicijnresten, dan is een <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> de grondigste stap.
+              Twijfel je over je eigen leidingen, dan kan een laboratorium je kraanwater testen. Voor de meeste huishoudens is dat niet nodig; de gegevens van het waterbedrijf geven een goed beeld. Is kraanwater veilig in jouw huis, maar wil je toch zekerheid over PFAS en <Link href="/kennisbank/medicijnresten-in-drinkwater" className="underline hover:text-ink">medicijnresten in drinkwater</Link>, dan is een <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> de grondigste stap.
             </p>
           </div>
         </section>

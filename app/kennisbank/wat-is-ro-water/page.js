@@ -149,6 +149,25 @@ export default function Page() {
 
         <section className="relative">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">TDS-waarde van water: wat zegt het?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              TDS staat voor <em>total dissolved solids</em>: de totale hoeveelheid opgeloste stoffen in water, uitgedrukt in milligram per liter of ppm. Het gaat vooral om zouten en mineralen zoals calcium, magnesium, natrium en bicarbonaat. Een <strong className="text-ink">TDS-meter</strong> meet eigenlijk hoe goed het water stroom geleidt, en rekent dat om naar een TDS-waarde.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Nederlands kraanwater zit meestal op een paar honderd ppm. Dunea mat in Scheveningen begin 2024 bijvoorbeeld een geleidbaarheid van 48,5 mS/m; dat komt neer op ongeveer 300 ppm. RO-water zit daar ver onder, vaak onder de 20 ppm. Op de pagina over het <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> zie je dat verschil met de interactieve TDS-meter.
+            </p>
+            <h3 className="mt-8 font-display text-xl font-bold text-ink">Wat de TDS-waarde van water niet zegt</h3>
+            <p className="mt-3 text-dim leading-relaxed">
+              Een lage TDS-waarde betekent niet automatisch schoon water, en een hoge niet automatisch vies water. Een TDS-meter ziet vooral mineralen. Stoffen als PFAS, medicijnresten, lood of bacteriën zitten in zulke kleine hoeveelheden in water dat je ze niet aan de TDS-waarde ziet. Daarvoor heb je een laboratorium nodig; lees meer in <Link href="/kennisbank/drinkwater-laten-testen" className="underline hover:text-ink">drinkwater laten testen</Link>.
+            </p>
+            <p className="mt-3 text-dim leading-relaxed">
+              Waar een TDS-meter wel handig voor is: controleren of je osmosemembraan nog goed werkt. Meet je water uit de osmosekraan en loopt de waarde in de loop van de tijd duidelijk op, dan raakt het membraan uitgeput en is het tijd om het te vervangen. Meet daarbij het gefilterde water zonder mineralen: een mineraalfilter voegt bewust calcium en magnesium toe en verhoogt de TDS-waarde dus.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <div className="text-center">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vragen</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Veelgestelde vragen</h2>

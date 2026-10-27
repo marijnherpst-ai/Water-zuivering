@@ -142,7 +142,7 @@ export default function Page() {
               In de schappen van drogist en bouwmarkt zie je flessen <strong className="text-ink">gedemineraliseerd water</strong>. Dat lijkt op osmosewater: bij allebei zijn de opgeloste mineralen grotendeels verwijderd. Het verschil zit in hoe het gemaakt wordt en waar het voor bedoeld is. Gedemineraliseerd water is vaak bedoeld voor apparaten, zoals een strijkijzer of stoomreiniger, en is niet als drinkwater bedoeld. Twijfel je, kijk dan op het etiket.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Zoek je water om te drinken, dan is gedemineraliseerd water uit de bouwmarkt dus niet de oplossing. Zoek je water voor je strijkijzer, dan is osmosewater kopen niet nodig.
+              Zoek je water om te drinken, dan is gedemineraliseerd water uit de bouwmarkt dus niet de oplossing. Hoe het zit met gedestilleerd water, lees je in <Link href="/kennisbank/gedestilleerd-water-drinken" className="underline hover:text-ink">gedestilleerd water drinken</Link>. Zoek je water voor je strijkijzer, dan is osmosewater kopen niet nodig.
             </p>
           </div>
         </section>

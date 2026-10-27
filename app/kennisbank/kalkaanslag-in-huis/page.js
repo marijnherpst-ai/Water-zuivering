@@ -158,6 +158,23 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Wel kan kalkaanslag de smaak beïnvloeden. Thee krijgt bij hard water sneller een vliesje, en koffie smaakt anders. Dat is geen gezondheidsrisico, maar wel een reden waarom veel mensen voor hun drinkwater kiezen voor gefilterd water.
             </p>
+            <h3 className="mt-10 font-display text-xl font-bold text-ink">Kalk in water drinken: gezond of ongezond?</h3>
+            <p className="mt-3 text-dim leading-relaxed">
+              <strong className="text-ink">Kalk in water</strong> is niet ongezond. Het Drinkwaterbesluit schrijft zelfs een minimale hardheid voor: drinkwater moet minstens 1 millimol calcium en magnesium per liter bevatten. Over de vraag of hard water ook gezónder is, bijvoorbeeld voor hart en bloedvaten, zijn de onderzoeken niet eensgezind. Wat wel vaststaat: je haalt verreweg de meeste calcium en magnesium uit je eten, niet uit water. Kalkvrij drinkwater is dus ook niet ongezond, zolang je gevarieerd eet.
+            </p>
+            <h3 className="mt-10 font-display text-xl font-bold text-ink">Kalkvrij water: zo haal je kalk uit water</h3>
+            <p className="mt-3 text-dim leading-relaxed">
+              Wil je water zonder kalk voor je koffie, thee of gewoon een helder glas water, dan zijn er een paar manieren om kalk uit water te halen:
+            </p>
+            <ul className="mt-3 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Koken:</strong> bij het koken slaat een deel van de kalk neer. Dat zie je als aanslag in je waterkoker. Een deel blijft opgelost.</li>
+              <li><strong className="text-ink">Filterkan met ionenwisselaar:</strong> haalt een deel van de kalk weg, maar het patroon is snel vol en moet vaak vervangen worden.</li>
+              <li><strong className="text-ink">Omgekeerde osmose:</strong> het membraan houdt kalk vrijwel helemaal tegen. Zo krijg je kalkvrij drinkwater uit een aparte kraan, en met een mineraalfilter kun je daarna gericht calcium en magnesium terug laten voegen. Lees meer in <Link href="/kennisbank/omgekeerde-osmose-filter" className="underline hover:text-ink">omgekeerde osmose filter</Link>.</li>
+              <li><strong className="text-ink">Waterontharder:</strong> maakt het water voor je hele huis zachter, tegen aanslag in douche en apparaten. Voor drinkwater is dat minder bedoeld; het verschil lees je in <Link href="/kennisbank/waterontharder-vs-waterzuiveraar" className="underline hover:text-ink">waterontharder of waterzuiveraar</Link>.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Water helemaal zonder mineralen, zoals gedestilleerd water, is een ander verhaal. Wat dat met smaak en gezondheid doet, lees je in <Link href="/kennisbank/gedestilleerd-water-drinken" className="underline hover:text-ink">gedestilleerd water drinken</Link>.
+            </p>
           </div>
         </section>
 

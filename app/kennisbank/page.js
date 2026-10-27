@@ -13,6 +13,27 @@ export const metadata = {
 
 const ARTICLES = [
   {
+    href: '/kennisbank/medicijnresten-in-drinkwater',
+    image: '/assets/img/filters-closeup.png',
+    category: 'Waterkwaliteit',
+    title: 'Medicijnresten in drinkwater en microplastics',
+    excerpt: 'Wat RIVM en KWR echt meten in Nederlands kraanwater, en wat een filter tegenhoudt.',
+  },
+  {
+    href: '/kennisbank/gedestilleerd-water-drinken',
+    image: '/assets/img/mineraalfilter.jpg',
+    category: 'Osmose',
+    title: 'Gedestilleerd water drinken: kan dat en is het gezond?',
+    excerpt: 'Gedestilleerd, gedemineraliseerd of osmosewater: het verschil en waarom mineralen ertoe doen.',
+  },
+  {
+    href: '/kennisbank/chloor-in-kraanwater',
+    image: '/assets/img/een-kraan.jpg',
+    category: 'Waterkwaliteit',
+    title: 'Chloor in kraanwater: zit het erin in Nederland?',
+    excerpt: 'Waarom Nederland drinkwater zonder chloor levert en wanneer het toch tijdelijk wordt gebruikt.',
+  },
+  {
     href: '/kennisbank/quooker-waterfilter',
     image: '/assets/img/twee-kranen.jpg',
     category: 'Waterfilters',
