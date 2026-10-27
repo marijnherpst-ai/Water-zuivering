@@ -13,6 +13,41 @@ export const metadata = {
 
 const ARTICLES = [
   {
+    href: '/kennisbank/quooker-waterfilter',
+    image: '/assets/img/twee-kranen.jpg',
+    category: 'Waterfilters',
+    title: 'Quooker waterfilter: wat filtert hij wel en niet?',
+    excerpt: 'Het HiTAC- en CUBE-filter uitgelegd, hoe vaak je ze vervangt en wanneer osmose meer doet.',
+  },
+  {
+    href: '/kennisbank/loden-leidingen',
+    image: '/assets/img/een-kraan.jpg',
+    category: 'Waterkwaliteit',
+    title: "Loden leidingen: herkennen, risico's en vervangen",
+    excerpt: 'Zo herken je loden leidingen, laat je je water testen en dit is het advies tot ze vervangen zijn.',
+  },
+  {
+    href: '/kennisbank/ph-kraanwater',
+    image: '/assets/img/mineraalfilter.jpg',
+    category: 'Waterkwaliteit',
+    title: 'pH kraanwater: wat is normaal in Nederland?',
+    excerpt: 'De norm, echte meetwaarden, waarom kraanwater licht basisch is en wat osmose met de pH doet.',
+  },
+  {
+    href: '/kennisbank/kraanwater-babyvoeding',
+    image: '/assets/img/glas-water.webp',
+    category: 'Gezondheid',
+    title: 'Kraanwater voor babyvoeding: koken of niet?',
+    excerpt: 'Het advies van het Voedingscentrum, stap voor stap, en wanneer je flessenwater gebruikt.',
+  },
+  {
+    href: '/kennisbank/drinkwater-laten-testen',
+    image: '/assets/img/cabinet-install.png',
+    category: 'Waterkwaliteit',
+    title: 'Drinkwater laten testen: waar, hoe en wat kost het?',
+    excerpt: 'Gratis gegevens van je waterbedrijf, een loodtest van ongeveer 50 euro of een PFAS-test.',
+  },
+  {
     href: '/kennisbank/drinkwater-amsterdam',
     image: '/assets/img/glas-water.webp',
     category: 'Waterkwaliteit per stad',

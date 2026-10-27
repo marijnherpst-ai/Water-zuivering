@@ -128,7 +128,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Oude leidingen in huis</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Het waterbedrijf is verantwoordelijk tot aan de watermeter. Daarna zijn de leidingen van de woning zelf. In zeer oude woningen kunnen nog loden leidingen zitten, en lood kan dan in kleine hoeveelheden in het kraanwater komen. Twijfel je, laat een installateur je leidingen bekijken. Laat bij twijfel in elk geval de kraan even lopen als het water lang heeft stilgestaan, bijvoorbeeld na een vakantie.
+              Het waterbedrijf is verantwoordelijk tot aan de watermeter. Daarna zijn de leidingen van de woning zelf. In zeer oude woningen kunnen nog loden leidingen zitten, en lood kan dan in kleine hoeveelheden in het kraanwater komen. Twijfel je, lees dan <Link href="/kennisbank/loden-leidingen" className="underline hover:text-ink">hoe je loden leidingen herkent</Link> of laat je <Link href="/kennisbank/drinkwater-laten-testen" className="underline hover:text-ink">drinkwater testen</Link>. Laat bij twijfel in elk geval de kraan even lopen als het water lang heeft stilgestaan, bijvoorbeeld na een vakantie.
             </p>
           </div>
         </section>

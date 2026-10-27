@@ -228,7 +228,7 @@ export default function Page() {
               Twee dingen hebben wel invloed op wat er uiteindelijk in jouw glas komt:
             </p>
             <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
-              <li><strong className="text-ink">Je eigen leidingen.</strong> In woningen van vóór 1960 kunnen nog loden waterleidingen zitten. Amsterdam heeft veel oude panden. Twijfel je, laat dan een installateur kijken. Het waterbedrijf is alleen verantwoordelijk tot en met de watermeter.</li>
+              <li><strong className="text-ink">Je eigen leidingen.</strong> In woningen van vóór 1960 kunnen nog loden waterleidingen zitten. Amsterdam heeft veel oude panden. Twijfel je, lees dan <Link href="/kennisbank/loden-leidingen" className="underline hover:text-ink">hoe je loden leidingen herkent</Link> of laat een installateur kijken. Het waterbedrijf is alleen verantwoordelijk tot en met de watermeter.</li>
               <li><strong className="text-ink">Stoffen die niet in de norm zitten.</strong> Naast PFAS gaat het om lage concentraties medicijnresten en microplastics. Die staan niet allemaal met een harde grens in de wet. Lees meer in <Link href="/kennisbank/is-kraanwater-veilig" className="underline hover:text-ink">is kraanwater veilig?</Link></li>
             </ul>
             <p className="mt-4 text-dim leading-relaxed">

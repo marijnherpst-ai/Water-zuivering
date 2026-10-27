@@ -80,7 +80,7 @@ export default function WatIsOsmosewaterPage() {
               Dat is ook precies waarom osmose de industriestandaard is: het is de basis van veel bekende merken flessenwater. Eén kanttekening: omdat het filterproces zó grondig is, filtert het ook de natuurlijke mineralen (calcium, magnesium) uit het water, die mede bepalen hoe water smaakt.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Daarom voegen goede systemen — zoals dat van Water-zuivering — na de osmosestap een <Link href="/#product" className="underline hover:text-ink">mineraalfilter</Link> toe, die calcium en magnesium teruggeeft voor een voller, ronder smaakprofiel. Zo hou je het beste van twee werelden: maximale zuiverheid én goede smaak.
+              Daarom voegen goede systemen — zoals dat van Water-zuivering — na de osmosestap een <Link href="/#product" className="underline hover:text-ink">mineraalfilter</Link> toe, die calcium en magnesium teruggeeft voor een voller, ronder smaakprofiel. Zo hou je het beste van twee werelden: maximale zuiverheid én goede smaak. Wat osmose met de zuurgraad van je water doet, lees je in <Link href="/kennisbank/ph-kraanwater" className="underline hover:text-ink">pH van kraanwater</Link>.
             </p>
           </div>
         </section>

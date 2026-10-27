@@ -170,7 +170,7 @@ export default function Page() {
               Meestal niet. Vitens geeft aan dat je er niet ziek van wordt; het smaakt vooral vies. De kleine hoeveelheden ijzer en mangaan die loskomen, vormen geen gezondheidsrisico. Wel raadt het waterbedrijf aan om <strong className="text-ink">baby&apos;s en ouderen</strong> voor de zekerheid iets anders te geven tot het water weer helder is.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Ons advies: drink het niet zolang je het kunt zien. Wacht tot het water weer helder is, ook voor de fles van de baby en voor koffie en thee. Ruikt of smaakt het water ook daarna nog vreemd, of blijft het troebel, neem dan contact op met je waterbedrijf. Meer over de veiligheid van ons drinkwater lees je in <Link href="/kennisbank/is-kraanwater-veilig" className="underline hover:text-ink">is kraanwater veilig?</Link>
+              Ons advies: drink het niet zolang je het kunt zien. Wacht tot het water weer helder is, ook voor de fles van de baby en voor koffie en thee. Hoe je de fles verder veilig klaarmaakt, lees je in <Link href="/kennisbank/kraanwater-babyvoeding" className="underline hover:text-ink">kraanwater voor babyvoeding</Link>. Ruikt of smaakt het water ook daarna nog vreemd, of blijft het troebel, neem dan contact op met je waterbedrijf. Meer over de veiligheid van ons drinkwater lees je in <Link href="/kennisbank/is-kraanwater-veilig" className="underline hover:text-ink">is kraanwater veilig?</Link>
             </p>
           </div>
         </section>
