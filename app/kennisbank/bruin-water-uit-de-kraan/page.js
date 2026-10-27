@@ -205,7 +205,7 @@ export default function Page() {
                 Heb je een <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> onder het aanrecht, dan vangt het voorfilter de roestdeeltjes op voordat ze bij je drinkwater komen. Het <Link href="/winkel/ppc-filter" className="underline hover:text-ink">PPC-voorfilter</Link> van Water-zuivering houdt deeltjes tot 1 micron tegen: zand, roest en slib. Daarna filtert het membraan de rest.
               </p>
               <p className="mt-4 text-dim leading-relaxed">
-                Eén kanttekening: een voorfilter dat veel roest opvangt, raakt sneller vol. Komt er vaak bruin water uit de kraan in jouw wijk, dan kan het voorfilter eerder aan vervanging toe zijn dan na het gebruikelijke jaar. Hoe vaak je filters vervangt, lees je in <Link href="/kennisbank/waterfilter-vervangen-hoe-vaak" className="underline hover:text-ink">hoe vaak moet je een waterfilter vervangen</Link>.
+                Eén kanttekening: een voorfilter dat veel roest opvangt, raakt sneller vol. Komt er vaak bruin water uit de kraan in jouw wijk, dan kan het voorfilter eerder aan vervanging toe zijn dan na het gebruikelijke jaar. Hoe vaak je filters vervangt, lees je in <Link href="/kennisbank/waterfilter-vervangen-hoe-vaak" className="underline hover:text-ink">hoe vaak moet je een waterfilter vervangen</Link>. Heb je nog geen filter en wil je weten welk type bij jouw situatie past, bekijk dan de <Link href="/waterfilter" className="underline hover:text-ink">soorten waterfilters</Link> naast elkaar.
               </p>
             </div>
           </div>

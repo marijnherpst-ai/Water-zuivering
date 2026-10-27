@@ -135,7 +135,7 @@ export default function Page() {
               </div>
               <div>
                 <h3 className="font-display text-lg font-bold text-ink">Woon ik in een aandachtsgebied — betekent dat dat ik moet filteren?</h3>
-                <p className="mt-2 text-dim leading-relaxed">Niet per se verplicht, maar wel een reden om extra zekerheid te willen. Omdat een omgekeerde-osmosefilter alle PFAS-varianten tegelijk tegenhoudt, ongeacht de concentratie, is het voor veel mensen in zo'n gebied een simpele manier om het risico helemaal van tafel te halen in plaats van erop te vertrouwen dat de norm genoeg is.</p>
+                <p className="mt-2 text-dim leading-relaxed">Niet per se verplicht, maar wel een reden om extra zekerheid te willen. Omdat een omgekeerde-osmosefilter alle PFAS-varianten tegelijk tegenhoudt, ongeacht de concentratie, is het voor veel mensen in zo'n gebied een simpele manier om het risico helemaal van tafel te halen in plaats van erop te vertrouwen dat de norm genoeg is. Let op: niet elk waterfilter haalt PFAS eruit. In ons overzicht van <Link href="/waterfilter" className="underline hover:text-ink">waterfilters per type</Link> zie je wat een filterkan, kraanfilter of osmosesysteem wel en niet tegenhoudt.</p>
               </div>
               <div>
                 <h3 className="font-display text-lg font-bold text-ink">Waarom verschillen kaarten van verschillende bronnen soms van elkaar?</h3>

@@ -144,7 +144,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">En bij een filterkan of kraanfilter?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Bij een filterkan of een filter op de kraan is de termijn veel korter dan bij een systeem onder het aanrecht. Zulke filters zijn klein en raken snel vol, vaak al binnen een paar weken. Volg altijd de termijn die de fabrikant op de verpakking zet. Wil je weten hoe die opties zich verhouden tot een osmosesysteem, lees dan <Link href="/kennisbank/kraanwater-filteren" className="underline hover:text-ink">kraanwater filteren: welke opties heb je?</Link>.
+              Bij een filterkan of een filter op de kraan is de termijn veel korter dan bij een systeem onder het aanrecht. Zulke filters zijn klein en raken snel vol, vaak al binnen een paar weken. Volg altijd de termijn die de fabrikant op de verpakking zet. Wil je weten hoe die opties zich verhouden tot een osmosesysteem, lees dan <Link href="/kennisbank/kraanwater-filteren" className="underline hover:text-ink">kraanwater filteren: welke opties heb je?</Link>. Sta je nog voor de keuze welk type je koopt, dan zetten we filterkan, kraanfilter en osmosesysteem naast elkaar in onze gids over <Link href="/waterfilter" className="underline hover:text-ink">waterfilter kopen</Link>.
             </p>
           </div>
         </section>
