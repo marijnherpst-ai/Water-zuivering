@@ -57,7 +57,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/twee-kranen.jpg"
         url="https://www.water-zuivering.nl/kennisbank/quooker-waterfilter"
         datePublished="2026-10-27"
-        about={{ '@type': 'Product', name: 'Quooker', brand: { '@type': 'Brand', name: 'Quooker' } }}
+        about={{ '@type': 'Brand', name: 'Quooker', sameAs: 'https://nl.wikipedia.org/wiki/Quooker' }}
         mentions={[{ '@type': 'Organization', name: 'Quooker', url: 'https://www.quooker.nl' }]}
       />
       <BreadcrumbSchema
