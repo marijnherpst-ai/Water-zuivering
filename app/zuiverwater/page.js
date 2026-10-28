@@ -5,6 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import PrijsVanaf, { PRIJS_VANAF } from '@/components/PrijsVanaf';
+import ProductSchema from '@/components/ProductSchema';
 
 export const metadata = {
   alternates: { canonical: '/zuiverwater' },
@@ -26,12 +28,13 @@ const WAAROM_HELDER = [
 ];
 
 const FAQ = [
+  ['Wat kost zuiverwater uit je eigen kraan?', 'Een osmosesysteem van Water-zuivering kost vanaf €999, exclusief montage. Daarna betaal je alleen nog de filters, gemiddeld ongeveer €135 per jaar.'],
   ['Wat betekent "zuiver water" precies?', 'Zuiver water is water dat is ontdaan van chloor, kalk en sporen van stoffen zoals PFAS, medicijnresten en microplastics — meer dan alleen "veilig", ook merkbaar fris en helder.'],
   ['Is Nederlands kraanwater niet al schoon water?', 'Ja, Nederlands kraanwater voldoet aan strenge normen en is veilig. Zuiver water gaat een stap verder: het verwijdert ook wat normale zuivering nog laat zitten.'],
   ['Hoe krijg ik zuiver water uit mijn eigen kraan?', 'Met een waterzuiveringssysteem onder je aanrecht, dat kraanwater filtert via een voorfilter, een fijn membraan en een nafilter — voor onbeperkt zuiver water, direct uit de kraan.'],
   ['Proef je echt verschil met puur water?', 'De meeste mensen merken het meteen: geen chloorsmaak, minder kalk, en een frissere afdronk — vooral zichtbaar in koffie, thee en gekookt eten.'],
   ['Is zuiver water hetzelfde als osmosewater?', 'In de praktijk vaak wel — osmose is de techniek die het meest grondig chloor, PFAS en microplastics uit kraanwater filtert, met zuiver water als resultaat.'],
-  ['Kost het onderhouden van zuiver water veel moeite?', 'Nee, de filters van een goed systeem gaan 6 maanden tot 3 jaar mee, afhankelijk van het onderdeel — je krijgt een concreet schema mee bij installatie.'],
+  ['Kost het onderhouden van zuiver water veel moeite?', 'Nee. De voor- en nafilter vervang je eens per jaar, het membraan eens per 2 jaar. Het display laat zien wanneer het zover is, en je vervangt ze zelf zonder gereedschap.'],
 ];
 
 export default function Page() {
@@ -42,6 +45,13 @@ export default function Page() {
           { name: 'Home', url: 'https://www.water-zuivering.nl/' },
           { name: 'Zuiver water', url: 'https://www.water-zuivering.nl/zuiverwater' },
         ]}
+      />
+      <ProductSchema
+        name="Water-zuivering osmosesysteem"
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        image="https://www.water-zuivering.nl/assets/img/countertop.png"
+        url="https://www.water-zuivering.nl/zuiverwater"
+        prijsVanaf={PRIJS_VANAF}
       />
       <FaqSchema items={FAQ} />
       <RevealObserver />
@@ -70,6 +80,7 @@ export default function Page() {
                   Bekijk het systeem
                 </Link>
               </div>
+              <PrijsVanaf className="mt-5" />
             </div>
             <div className="relative">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
@@ -142,6 +153,49 @@ export default function Page() {
           </div>
         </section>
 
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
+            <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vergelijken</span>
+            <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Zuiverwater, kraanwater of flessenwater?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Nederlands kraanwater is veilig en wordt streng gecontroleerd. <strong className="text-ink">Zuiverwater</strong> gaat een stap verder: het haalt ook de sporen eruit waar geen of een ruime norm voor geldt. Flessenwater lijkt een alternatief, maar is dat vaak niet: onderzoekers van KWR en de drinkwaterbedrijven vonden in flessenwater juist meer microplastics dan in kraanwater.
+            </p>
+            <div className="mt-8 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold"></th><th scope="col" className="p-4 font-display font-bold">Kraanwater</th><th scope="col" className="p-4 font-display font-bold">Flessenwater</th><th scope="col" className="p-4 font-display font-bold">Zuiverwater uit je eigen kraan</th></tr></thead>
+                <tbody>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Veilig om te drinken</th><td className="p-4 text-dim">Ja</td><td className="p-4 text-dim">Ja</td><td className="p-4 text-dim">Ja</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">PFAS en medicijnresten</th><td className="p-4 text-dim">In sporen, binnen de norm</td><td className="p-4 text-dim">Verschilt per merk</td><td className="p-4 text-dim">Grotendeels verwijderd door het membraan</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Microplastics</th><td className="p-4 text-dim">1 à 2 deeltjes per liter</td><td className="p-4 text-dim">Meer dan kraanwater</td><td className="p-4 text-dim">Tegengehouden door het membraan</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Kalk</th><td className="p-4 text-dim">Afhankelijk van je regio</td><td className="p-4 text-dim">Afhankelijk van het merk</td><td className="p-4 text-dim">Vrijwel kalkvrij</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Sjouwen en plastic afval</th><td className="p-4 text-dim">Nee</td><td className="p-4 text-dim">Ja</td><td className="p-4 text-dim">Nee</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Kosten</th><td className="p-4 text-dim">Minder dan een cent per liter</td><td className="p-4 text-dim">Vaak tientallen centen per liter</td><td className="p-4 text-dim">Vanaf €999 eenmalig, plus ±€135 per jaar aan filters</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-6 text-dim leading-relaxed">
+              Een rekenvoorbeeld: drinkt een gezin van vier samen 8 liter water per dag, dan is dat bijna 3.000 liter per jaar. Met ongeveer €135 aan filters kost elke liter zuiverwater dan zo&apos;n 5 cent, plus de eenmalige aanschaf. Meer over de verschillen lees je in <Link href="/kennisbank/kraanwater-vs-flessenwater" className="underline hover:text-ink">kraanwater vs. flessenwater</Link> en <Link href="/kennisbank/medicijnresten-in-drinkwater" className="underline hover:text-ink">medicijnresten en microplastics in drinkwater</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Zuiverwater blijven drinken: zo houd je het systeem fris</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Zuiverwater is pas echt zuiver als de filters op tijd worden vervangen. Bij het systeem van Water-zuivering is dat overzichtelijk: drie filters, elk met een vaste termijn. Het display laat zien wanneer een filter aan de beurt is.
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">PPC-voorfilter</strong>: elk jaar, €49,99. Vangt zand, roest en slib en haalt restchloor weg.</li>
+              <li><strong className="text-ink">RO-membraan</strong>: elke 2 jaar, €69,99. Het hart van het systeem, met poriën van 0,0001 micron.</li>
+              <li><strong className="text-ink">CTO-nafilter</strong>: elk jaar, €49,99, of €64,99 met mineralen voor een voller glas water.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              De filters vervang je zelf, zonder gereedschap, en je bestelt ze in onze <Link href="/winkel" className="underline hover:text-ink">winkel</Link>. Hoe vaak filters in het algemeen vervangen moeten worden, lees je in <Link href="/kennisbank/waterfilter-vervangen-hoe-vaak" className="underline hover:text-ink">hoe vaak moet je een waterfilter vervangen</Link>.
+            </p>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section className="relative bg-surface border-y border-edge">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
@@ -174,6 +228,7 @@ export default function Page() {
               Vraag vrijblijvend een offerte aan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </Link>
+            <PrijsVanaf donker className="mt-5" />
           </div>
         </section>
       </main>

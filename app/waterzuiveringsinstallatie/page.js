@@ -5,6 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import PrijsVanaf, { PRIJS_VANAF } from '@/components/PrijsVanaf';
+import ProductSchema from '@/components/ProductSchema';
 
 export const metadata = {
   alternates: { canonical: '/waterzuiveringsinstallatie' },
@@ -26,7 +28,7 @@ const REDENEN_VAKMAN = [
 ];
 
 const FAQ = [
-  ['Wat kost een waterzuiveringsinstallatie?', 'De prijs hangt af van het gekozen systeem en de complexiteit van je leidingwerk. Vraag een vrijblijvende offerte aan voor een prijs op maat.'],
+  ['Wat kost een waterzuiveringsinstallatie?', 'Een waterzuiveringsinstallatie van Water-zuivering kost vanaf €999, exclusief montage. De montage hangt af van je keuken en leidingwerk; die staat apart in je vrijblijvende offerte.'],
   ['Hoe lang duurt het installeren van een zuiveringsinstallatie?', 'De meeste installaties zijn binnen een paar uur voltooid door een vakkundige monteur, inclusief testen en instellen.'],
   ['Kan ik een waterzuiveringsinstallatie ook zelf plaatsen?', 'Technisch kan dat bij sommige systemen, maar een verkeerde aansluiting kan lekkage veroorzaken en de fabrieksgarantie laten vervallen — vakkundige installatie is daarom aan te raden.'],
   ['Welke garantie krijg ik op een waterzuiveringsinstallatie?', 'Bij Water-zuivering krijg je 10 jaar garantie op het systeem, mits vakkundig geïnstalleerd en onderhouden volgens het meegegeven schema.'],
@@ -42,6 +44,13 @@ export default function Page() {
           { name: 'Home', url: 'https://www.water-zuivering.nl/' },
           { name: 'Waterzuiveringsinstallatie', url: 'https://www.water-zuivering.nl/waterzuiveringsinstallatie' },
         ]}
+      />
+      <ProductSchema
+        name="Water-zuivering osmosesysteem"
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        image="https://www.water-zuivering.nl/assets/img/countertop.png"
+        url="https://www.water-zuivering.nl/waterzuiveringsinstallatie"
+        prijsVanaf={PRIJS_VANAF}
       />
       <FaqSchema items={FAQ} />
       <RevealObserver />
@@ -70,6 +79,7 @@ export default function Page() {
                   Lees hoe installeren werkt
                 </Link>
               </div>
+              <PrijsVanaf className="mt-5" />
               <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-dim">
                 <li className="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Vakkundige monteur</li>
                 <li className="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>10 jaar garantie</li>
@@ -229,6 +239,27 @@ export default function Page() {
           </div>
         </section>
 
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Voorbereiding</span>
+            <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat heb je nodig voor een waterzuiveringsinstallatie?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een <strong className="text-ink">waterzuiveringsinstallatie</strong> voor drinkwater vraagt weinig van je keuken. Dit moet er zijn:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Een koudwateraansluiting</strong> onder het aanrecht, waar het systeem op wordt aangetakt.</li>
+              <li><strong className="text-ink">Een afvoer</strong>, voor het water waarmee het membraan zichzelf schoonspoelt.</li>
+              <li><strong className="text-ink">Een stopcontact</strong> in of bij het kastje. Het systeem gebruikt 96 watt en werkt op 100 tot 240 volt.</li>
+              <li><strong className="text-ink">Ruimte</strong> van 10,5 × 42 × 43 cm, staand of liggend. Twijfel je? Doe de <Link href="/maatcheck" className="underline hover:text-ink">maatcheck</Link>.</li>
+              <li><strong className="text-ink">Normale waterdruk</strong>, tussen 1 en 4 bar (0,1 tot 0,4 MPa). Dat heeft vrijwel elke Nederlandse woning.</li>
+            </ul>
+            <h3 className="mt-10 font-display text-xl font-bold text-ink">In een huurwoning of appartement</h3>
+            <p className="mt-3 text-dim leading-relaxed">
+              Het systeem wordt onder het aanrecht geplaatst en aangesloten op de bestaande leidingen; er hoeft niet gebroken te worden. Overleg in een huurwoning wel vooraf met je verhuurder. Verhuis je, dan kun je het systeem laten afkoppelen en meenemen. Hoe de aansluiting stap voor stap gaat, lees je in <Link href="/kennisbank/waterzuiveraar-installeren" className="underline hover:text-ink">waterzuiveraar installeren</Link>.
+            </p>
+          </div>
+        </section>
+
         <section className="relative bg-surface border-y border-edge">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
             <div className="text-center">
@@ -260,6 +291,7 @@ export default function Page() {
               Vraag vrijblijvend een offerte aan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </Link>
+            <PrijsVanaf donker className="mt-5" />
           </div>
         </section>
       </main>

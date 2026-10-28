@@ -5,6 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import PrijsVanaf, { PRIJS_VANAF } from '@/components/PrijsVanaf';
+import ProductSchema from '@/components/ProductSchema';
 
 export const metadata = {
   alternates: { canonical: '/waterzuiveraar-drinkwater' },
@@ -31,7 +33,7 @@ const FAQ = [
   ['Is water uit een waterzuiveraar veilig voor baby\'s?', 'Water dat via osmose is gezuiverd, wordt vaak juist aanbevolen voor het bereiden van flesvoeding, omdat het vrij is van sporen van stoffen die reguliere zuivering niet volledig wegneemt. Overleg bij twijfel altijd met je consultatiebureau of huisarts.'],
   ['Verandert een drinkwaterzuiveraar de smaak van koffie of thee?', 'Ja, meestal juist ten goede — zonder chloorsmaak en met minder kalk komt de eigen smaak van koffie, thee of eten beter naar voren.'],
   ['Hoeveel onderhoud heeft een waterzuiveraar voor drinkwater?', 'Het voorfilter en het nafilter vervang je gemiddeld elk jaar, het membraan elke 2 jaar. Het display laat zien wanneer het tijd is.'],
-  ['Wat kost een waterzuiveraar voor drinkwater?', 'De prijs hangt af van het gekozen systeem en de installatie. Vraag een vrijblijvende offerte aan voor een prijs op maat van jouw huishouden.'],
+  ['Wat kost een waterzuiveraar voor drinkwater?', 'Een waterzuiveraar voor drinkwater van Water-zuivering kost vanaf €999, exclusief montage. Je exacte prijs, met of zonder montage door onze eigen monteur, krijg je in een vrijblijvende offerte. Reken daarnaast op ongeveer €135 per jaar aan filters.'],
 ];
 
 export default function Page() {
@@ -42,6 +44,13 @@ export default function Page() {
           { name: 'Home', url: 'https://www.water-zuivering.nl/' },
           { name: 'Waterzuiveraar drinkwater', url: 'https://www.water-zuivering.nl/waterzuiveraar-drinkwater' },
         ]}
+      />
+      <ProductSchema
+        name="Water-zuivering osmosesysteem"
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        image="https://www.water-zuivering.nl/assets/img/countertop.png"
+        url="https://www.water-zuivering.nl/waterzuiveraar-drinkwater"
+        prijsVanaf={PRIJS_VANAF}
       />
       <FaqSchema items={FAQ} />
       <RevealObserver />
@@ -70,6 +79,7 @@ export default function Page() {
                   Lees over PFAS
                 </Link>
               </div>
+              <PrijsVanaf className="mt-5" />
             </div>
             <div className="relative">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
@@ -225,6 +235,7 @@ export default function Page() {
               Vraag vrijblijvend een offerte aan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </Link>
+            <PrijsVanaf donker className="mt-5" />
           </div>
         </section>
       </main>

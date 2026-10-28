@@ -5,6 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import PrijsVanaf, { PRIJS_VANAF } from '@/components/PrijsVanaf';
+import ProductSchema from '@/components/ProductSchema';
 
 export const metadata = {
   alternates: { canonical: '/waterzuivering-voor-thuis' },
@@ -47,7 +49,7 @@ const INSTALLATIE = [
 
 const FAQ = [
   ['Is waterzuivering voor thuis in Nederland nodig?', 'Nederlands kraanwater voldoet aan strenge wettelijke normen en is veilig om te drinken. Een waterzuiveraar voor thuis gaat een stap verder: die verwijdert ook sporen van stoffen die niet standaard worden getest of verwijderd, zoals PFAS, medicijnresten en microplastics.'],
-  ['Wat kost waterzuivering voor thuis?', 'De aanschafprijs hangt af van het gekozen systeem en de installatie. Vraag een vrijblijvende offerte aan voor een prijs op maat van jouw situatie.'],
+  ['Wat kost waterzuivering voor thuis?', 'Een osmosesysteem van Water-zuivering kost vanaf €999, exclusief montage. Je exacte prijs, met montage door onze eigen monteur of zonder als je zelf installeert, krijg je in een vrijblijvende offerte. Reken daarnaast op ongeveer €135 per jaar aan filters.'],
   ['Hoeveel onderhoud heeft een waterzuiveringssysteem?', 'Het voorfilter en het nafilter vervang je gemiddeld elk jaar, het membraan elke 2 jaar. Dat kost gemiddeld ongeveer € 135 per jaar. Het display laat zien wanneer het tijd is.'],
   ['Past een waterzuiveraar voor thuis onder elk aanrecht?', 'In de meeste standaardkeukens is voldoende ruimte onder de spoelbak. Ons systeem is slechts 10,5 cm breed en past staand of liggend.'],
   ['Is waterzuivering voor thuis anders dan voor onderweg?', 'Ja. Onderweg kies je meestal voor een compact, draagbaar filter zonder wateraansluiting. Thuis is een vast systeem onder de gootsteen praktischer: onbeperkt zuiver water zonder gedoe met patronen of bijvullen.'],
@@ -66,6 +68,13 @@ export default function WaterzuiveringVoorThuisPage() {
           { name: 'Home', url: 'https://www.water-zuivering.nl/' },
           { name: 'Waterzuivering voor thuis', url: 'https://www.water-zuivering.nl/waterzuivering-voor-thuis' },
         ]}
+      />
+      <ProductSchema
+        name="Water-zuivering osmosesysteem"
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        image="https://www.water-zuivering.nl/assets/img/countertop.png"
+        url="https://www.water-zuivering.nl/waterzuivering-voor-thuis"
+        prijsVanaf={PRIJS_VANAF}
       />
       <FaqSchema items={FAQ} />
       <RevealObserver />
@@ -94,6 +103,7 @@ export default function WaterzuiveringVoorThuisPage() {
                   Bekijk het systeem
                 </Link>
               </div>
+              <PrijsVanaf className="mt-5" />
               <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-dim">
                 <li className="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Vakkundige installatie</li>
                 <li className="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>10 jaar garantie</li>
@@ -335,6 +345,7 @@ export default function WaterzuiveringVoorThuisPage() {
               Vraag vrijblijvend een offerte aan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </Link>
+            <PrijsVanaf donker className="mt-5" />
           </div>
         </section>
       </main>

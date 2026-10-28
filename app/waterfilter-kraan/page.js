@@ -5,6 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import PrijsVanaf, { PRIJS_VANAF } from '@/components/PrijsVanaf';
+import ProductSchema from '@/components/ProductSchema';
 
 export const metadata = {
   alternates: { canonical: '/waterfilter-kraan' },
@@ -36,7 +38,7 @@ const FAQ = [
   ['Wat is het verschil tussen een waterfilter kraan en een waterfilterkan?', 'Een filterkan filtert in kleine porties die je zelf bijvult. Een waterfilter kraan levert onbeperkt gefilterd water rechtstreeks uit de kraan, zonder wachten of bijvullen.'],
   ['Kan ik een waterfiltersysteem kraan zelf plaatsen?', 'Een eenvoudig opzetstuk kun je vaak zelf monteren. Een systeem met een aparte 3-weg kraan vraagt om een vakkundige aansluiting op de waterleiding — dat regelen wij binnen één dag.'],
   ['Verwijdert een waterfilter kraan ook PFAS?', 'Dat hangt volledig af van het type filter erachter. Een eenvoudig opzetstuk filtert vooral chloor; alleen een systeem met een omgekeerde-osmose-membraan verwijdert ook PFAS, medicijnresten en microplastics.'],
-  ['Wat kost een waterfilter kraan?', 'Een los opzetstuk is al voor een paar tientjes te koop. Een compleet systeem met eigen 3-weg kraan en osmosefiltratie is een grotere investering, maar betaalt zich terug doordat je nooit meer flessenwater koopt.'],
+  ['Wat kost een waterfilter kraan?', 'Een los opzetstuk is al voor een paar tientjes te koop. Een compleet osmosesysteem kost bij Water-zuivering vanaf €999, exclusief montage; een 3-weg kraan neem je mee in je offerte. Het betaalt zich terug doordat je nooit meer flessenwater koopt.'],
   ['Hoe vaak moet ik het filter van mijn kraanwatersysteem vervangen?', 'Bij een eenvoudig opzetstuk meestal elke 2-3 maanden. Bij ons systeem onder de gootsteen vervang je het voorfilter en het nafilter ieder jaar en het membraan elke 2 jaar. Het display geeft aan wanneer het zover is.'],
 ];
 
@@ -55,7 +57,7 @@ export default function Page() {
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Waterfilter kraan</span>
               <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
-                Een water filter kraan die je elke dag gebruikt zonder erover na te denken
+                Een waterfilter kraan die je elke dag gebruikt zonder erover na te denken
               </h1>
               <p className="mt-5 text-dim text-lg">
                 Er zijn ochtenden dat je gewoon een glas water wilt, geen gedoe met filterkannen of flessen. Een <strong className="text-ink">waterfilter kraan</strong> (veel mensen zoeken het als <strong className="text-ink">water filter kraan</strong>) — een kraangemonteerd waterfiltersysteem dat vast op je keukenkraan is aangesloten — levert precies dat: zuiver water, direct, onbeperkt.
@@ -69,6 +71,7 @@ export default function Page() {
                   Bekijk de 3-weg kraan
                 </Link>
               </div>
+              <PrijsVanaf className="mt-5" />
             </div>
             <div className="relative">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
@@ -296,6 +299,7 @@ export default function Page() {
               Vraag vrijblijvend een offerte aan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </Link>
+            <PrijsVanaf donker className="mt-5" />
           </div>
         </section>
       </main>
@@ -306,6 +310,13 @@ export default function Page() {
           { name: 'Home', url: 'https://www.water-zuivering.nl/' },
           { name: 'Waterfilter kraan', url: 'https://www.water-zuivering.nl/waterfilter-kraan' },
         ]}
+      />
+      <ProductSchema
+        name="Water-zuivering osmosesysteem"
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        image="https://www.water-zuivering.nl/assets/img/countertop.png"
+        url="https://www.water-zuivering.nl/waterfilter-kraan"
+        prijsVanaf={PRIJS_VANAF}
       />
       <FaqSchema items={FAQ} />
     </>

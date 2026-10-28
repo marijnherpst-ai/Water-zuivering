@@ -1,9 +1,9 @@
-// Product structured data. No `offers`/price on purpose — this site's prices
-// are promotional and change (zomeractie etc.), and none of these pages show
-// a fixed price in the copy itself. Adding a price here that drifts from what
-// a visitor actually sees risks a Google Merchant Center mismatch penalty, so
-// it's left out until a page has a stable, always-accurate price to quote.
-export default function ProductSchema({ name, description, image, url, rating, reviewCount }) {
+// Product structured data. An offer is only added when a page passes
+// `prijsVanaf`, and then it must be the same "vanaf" price the page shows
+// (see PrijsVanaf), so schema and visible copy never drift apart. It's an
+// AggregateOffer with only a lowPrice because the exact price depends on the
+// quote (montage, faucet finish, filters).
+export default function ProductSchema({ name, description, image, url, rating, reviewCount, prijsVanaf }) {
   const data = {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -16,6 +16,17 @@ export default function ProductSchema({ name, description, image, url, rating, r
       name: 'Water-zuivering',
     },
   };
+
+  if (prijsVanaf) {
+    data.offers = {
+      '@type': 'AggregateOffer',
+      lowPrice: prijsVanaf,
+      priceCurrency: 'EUR',
+      offerCount: 1,
+      availability: 'https://schema.org/InStock',
+      url,
+    };
+  }
 
   if (reviewCount > 0) {
     data.aggregateRating = {

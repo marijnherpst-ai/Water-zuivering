@@ -5,6 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import PrijsVanaf, { PRIJS_VANAF } from '@/components/PrijsVanaf';
+import ProductSchema from '@/components/ProductSchema';
 
 export const metadata = {
   alternates: { canonical: '/osmose-waterfilter' },
@@ -22,7 +24,7 @@ const KENMERKEN = [
 const FAQ = [
   ['Wat is een osmose waterfilter precies?', 'Een filtersysteem dat water onder lichte druk door een membraan van 0,0001 micron perst — dit verwijdert bacteriën, zware metalen, PFAS, medicijnresten en microplastics.'],
   ['Is een osmose waterfilter hetzelfde als een osmosesysteem?', 'Ja, dit zijn twee namen voor dezelfde technologie: omgekeerde osmose, ook wel RO (reverse osmosis) genoemd.'],
-  ['Wat kost een osmose waterfilter?', 'De prijs hangt af van het gekozen systeem en de installatie. Vraag een vrijblijvende offerte aan voor een prijs op maat.'],
+  ['Wat kost een osmose waterfilter?', 'Het osmose waterfilter van Water-zuivering kost vanaf €999, exclusief montage. Je exacte prijs, met of zonder montage door onze monteur, krijg je in een vrijblijvende offerte. Reken daarnaast op ongeveer €135 per jaar aan filters.'],
   ['Hoeveel onderhoud vraagt een osmose waterfilter?', 'Weinig: één keer per jaar wissel je het voor- en nafilter, en om het jaar ook het membraan. Gebruik je veel water, dan iets vaker. Het apparaat geeft zelf een seintje.'],
 ];
 
@@ -34,6 +36,13 @@ export default function Page() {
           { name: 'Home', url: 'https://www.water-zuivering.nl/' },
           { name: 'Osmose waterfilter', url: 'https://www.water-zuivering.nl/osmose-waterfilter' },
         ]}
+      />
+      <ProductSchema
+        name="Water-zuivering osmosesysteem"
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        image="https://www.water-zuivering.nl/assets/img/countertop.png"
+        url="https://www.water-zuivering.nl/osmose-waterfilter"
+        prijsVanaf={PRIJS_VANAF}
       />
       <FaqSchema items={FAQ} />
       <RevealObserver />
@@ -59,6 +68,7 @@ export default function Page() {
                   Bekijk specificaties
                 </Link>
               </div>
+              <PrijsVanaf className="mt-5" />
             </div>
             <div className="relative">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
@@ -157,6 +167,36 @@ export default function Page() {
           </div>
         </section>
 
+        <section className="relative">
+          <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
+            <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Vergelijken</span>
+            <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Osmose waterfilter tegenover andere waterfilters</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een <strong className="text-ink">osmose waterfilter</strong> werkt anders dan een filterkan of een opzetstuk op de kraan. Die twee werken met actieve kool: goed voor smaak en geur, maar opgeloste stoffen gaan er grotendeels doorheen. Een osmosemembraan houdt ze tegen.
+            </p>
+            <div className="mt-8 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold">Stof</th><th scope="col" className="p-4 font-display font-bold">Filterkan</th><th scope="col" className="p-4 font-display font-bold">Opzetstuk op de kraan</th><th scope="col" className="p-4 font-display font-bold">Osmose waterfilter</th></tr></thead>
+                <tbody>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Chloor, smaak en geur</th><td className="p-4 text-dim">Ja</td><td className="p-4 text-dim">Ja</td><td className="p-4 text-dim">Ja</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Kalk</th><td className="p-4 text-dim">Deels (met ionenwisselaar)</td><td className="p-4 text-dim">Nauwelijks</td><td className="p-4 text-dim">Ja</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">PFAS</th><td className="p-4 text-dim">Nauwelijks</td><td className="p-4 text-dim">Nauwelijks</td><td className="p-4 text-dim">Ja, tot 99%</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Medicijnresten</th><td className="p-4 text-dim">Deels</td><td className="p-4 text-dim">Deels</td><td className="p-4 text-dim">Ja</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Microplastics</th><td className="p-4 text-dim">Nauwelijks</td><td className="p-4 text-dim">Nauwelijks</td><td className="p-4 text-dim">Ja</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Lood en andere metalen</th><td className="p-4 text-dim">Deels</td><td className="p-4 text-dim">Deels</td><td className="p-4 text-dim">Grotendeels</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <h3 className="mt-10 font-display text-xl font-bold text-ink">Direct flow: geen opslagtank</h3>
+            <p className="mt-3 text-dim leading-relaxed">
+              Veel osmose waterfilters werken met een opslagtank die langzaam volloopt. Het systeem van Water-zuivering niet: het filtert direct wanneer je de kraan opendraait, met 1,58 liter per minuut. Daardoor staat er geen water stil en past het kastje van 10,5 cm breed in vrijwel elk keukenkastje. Het draait stil, onder de 48 dB, en het display waarschuwt bij een lek of te lage waterdruk.
+            </p>
+            <p className="mt-3 text-dim leading-relaxed">
+              Hoe het membraan precies werkt, lees je in <Link href="/kennisbank/omgekeerde-osmose-filter" className="underline hover:text-ink">omgekeerde osmose filter</Link>. Alle filtertypes naast elkaar vind je bij <Link href="/waterfilter" className="underline hover:text-ink">waterfilter kopen</Link>.
+            </p>
+          </div>
+        </section>
+
         <section className="relative bg-surface border-y border-edge">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
             <div className="text-center">
@@ -187,6 +227,7 @@ export default function Page() {
               Vraag vrijblijvend een offerte aan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </Link>
+            <PrijsVanaf donker className="mt-5" />
           </div>
         </section>
       </main>

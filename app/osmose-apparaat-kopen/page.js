@@ -6,6 +6,8 @@ import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import ReviewsSectie from '@/components/ReviewsSectie';
+import PrijsVanaf, { PRIJS_VANAF } from '@/components/PrijsVanaf';
+import ProductSchema from '@/components/ProductSchema';
 
 export const dynamic = 'force-dynamic';
 
@@ -38,7 +40,7 @@ const SPECS = [
 ];
 
 const FAQ = [
-  ['Wat kost een osmose apparaat?', 'De prijs hangt af van het type en wat er in zit. Bij Water-zuivering krijg je de prijs van het systeem in een vrijblijvende offerte, inclusief installatie. Daarnaast reken je op gemiddeld ongeveer €135 per jaar aan filters.'],
+  ['Wat kost een osmose apparaat?', 'Het osmose apparaat van Water-zuivering kost vanaf €999, exclusief montage. Laat je het door onze eigen monteur installeren, dan staat de montage apart in je vrijblijvende offerte. Daarnaast reken je op gemiddeld ongeveer €135 per jaar aan filters.'],
   ['Is een osmose apparaat voor een aquarium geschikt voor drinkwater?', 'Niet zonder meer. Die apparaten zijn voor een ander doel gemaakt. Controleer bij de fabrikant of een apparaat nadrukkelijk voor drinkwater bedoeld is voor je het gebruikt.'],
   ['Haalt een osmose apparaat PFAS uit het water?', 'Volgens de productinformatie van ons systeem zuivert het tot 99% van onzuiverheden, waaronder PFAS, medicijnresten en microplastics. Het RO-membraan is daarvoor het belangrijkste onderdeel. Meer over de werking lees je in onze uitleg over de omgekeerde osmose filter.'],
   ['Haalt osmose ook de goede mineralen eruit?', 'Ja, omgekeerde osmose is zo grondig dat ook mineralen worden meegefilterd. Wil je die terug, dan kun je een mineraalfilter laten toevoegen, dat na het RO-filter in het systeem klikt.'],
@@ -55,6 +57,13 @@ export default function Page() {
           { name: 'Home', url: 'https://www.water-zuivering.nl/' },
           { name: 'Osmose apparaat kopen', url: 'https://www.water-zuivering.nl/osmose-apparaat-kopen' },
         ]}
+      />
+      <ProductSchema
+        name="Water-zuivering osmosesysteem"
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        image="https://www.water-zuivering.nl/assets/img/countertop.png"
+        url="https://www.water-zuivering.nl/osmose-apparaat-kopen"
+        prijsVanaf={PRIJS_VANAF}
       />
       <FaqSchema items={FAQ} />
       <RevealObserver />
@@ -83,6 +92,7 @@ export default function Page() {
                   Bekijk ons systeem
                 </Link>
               </div>
+              <PrijsVanaf className="mt-5" />
             </div>
             <div className="relative">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
@@ -243,6 +253,7 @@ export default function Page() {
               Vraag vrijblijvend een offerte aan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </Link>
+            <PrijsVanaf donker className="mt-5" />
           </div>
         </section>
       </main>

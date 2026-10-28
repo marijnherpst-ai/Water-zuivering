@@ -13,6 +13,8 @@ import FilterKiezer from '@/components/FilterKiezer';
 import WaterReis from '@/components/WaterReis';
 import FilterLagen from '@/components/FilterLagen';
 import { createClient } from '@/lib/supabase/server';
+import PrijsVanaf, { PRIJS_VANAF } from '@/components/PrijsVanaf';
+import ProductSchema from '@/components/ProductSchema';
 
 const mono = IBM_Plex_Mono({ subsets: ['latin'], weight: ['500', '600'], display: 'swap' });
 
@@ -99,7 +101,7 @@ const TYPES = [
 const KOSTEN = [
   ['Filterkan', 'Een paar tientjes', 'Nieuw patroon elke 4 à 6 weken'],
   ['Opzetstuk', 'Een paar tientjes', 'Nieuw filter elke 2 à 3 maanden'],
-  ['Osmosesysteem', 'Via offerte, inclusief plaatsing', 'Ongeveer €135 per jaar aan filters'],
+  ['Osmosesysteem', 'Vanaf €999 exclusief montage', 'Ongeveer €135 per jaar aan filters'],
 ];
 
 const USPS = ['10 jaar garantie', 'Geplaatst in 1 à 2 uur', 'Filtert tot 99% van onzuiverheden', 'Eigen kraan op je aanrecht'];
@@ -159,7 +161,7 @@ const STAPPEN = [
 const FAQ = [
   ['Welke waterfilter is het beste?', 'Dat hangt af van wat je wilt oplossen. Voor alleen een betere smaak volstaat een filterkan of opzetstuk. Wil je ook kalk, PFAS en medicijnresten kwijt, dan is een omgekeerde-osmosesysteem de enige optie die dat daadwerkelijk verwijdert.'],
   ['Is een waterfilter nodig in Nederland?', 'Nederlands kraanwater voldoet aan strenge wettelijke normen en is veilig om te drinken. Een waterfilter is dus geen noodzaak, maar wel een manier om verder te gaan dan het wettelijk minimum — vooral relevant voor smaak en voor sporen van stoffen die onder de norm blijven maar niet op nul staan.'],
-  ['Wat kost een waterfilter?', 'Een filterkan begin je al voor een paar tientjes, een opzetstuk vergelijkbaar. Een compleet osmosesysteem met eigen kraan is een grotere investering, maar filtert grondiger en heeft geen maandelijkse aanschaf van losse kannen of filters nodig.'],
+  ['Wat kost een waterfilter?', 'Een filterkan begin je al voor een paar tientjes, een opzetstuk vergelijkbaar. Een compleet osmosesysteem met eigen kraan kost bij Water-zuivering vanaf €999 exclusief montage. Dat is een grotere investering, maar filtert grondiger en heeft geen maandelijkse aanschaf van losse kannen of filters nodig.'],
   ['Hoe vaak moet ik een waterfilter vervangen?', 'Dat verschilt sterk per type: een filterkan-patroon gaat gemiddeld 4-6 weken mee, een opzetstuk 2-3 maanden. Bij ons waterfilter met osmose vervang je het voor- en nafilter ieder jaar en het membraan elke 2 jaar.'],
   ['Voegt een waterfilter ook mineralen toe?', 'Een gewoon waterfilter niet. Omgekeerde osmose haalt zelfs de goede mineralen eruit. Met het CTO-nafilter met mineralen komen calcium en magnesium er na het membraan weer bij, voor een voller en ronder glas water.'],
   ['Waar kan ik een waterfilter kopen?', 'Filterkannen en opzetstukken vind je bij elke elektronicazaak of supermarkt. Een compleet osmosesysteem met eigen kraan koop je bij een gespecialiseerde aanbieder zoals Water-zuivering, inclusief plaatsing en garantie. Je vraagt eerst vrijblijvend een offerte aan.'],
@@ -245,6 +247,7 @@ export default async function Page() {
                   Bekijk onze waterfilter kraan
                 </Link>
               </div>
+              <PrijsVanaf className="mt-5" />
               <p className={`${mono.className} mt-6 text-xs text-dim`}>
                 Door het team van Water-zuivering · bijgewerkt oktober 2026
               </p>
@@ -653,6 +656,7 @@ export default async function Page() {
               </Link>
               <Link href="/maatcheck" className={btnDonker}>Doe de maatcheck</Link>
             </div>
+            <PrijsVanaf donker className="mt-5" />
             <ul className={`${mono.className} mt-10 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[11px] uppercase tracking-[0.14em] text-white/50`}>
               <li>10 jaar garantie</li>
               <li>Geplaatst in 1 à 2 uur</li>
@@ -668,6 +672,13 @@ export default async function Page() {
           { name: 'Home', url: 'https://www.water-zuivering.nl/' },
           { name: 'Waterfilter', url: 'https://www.water-zuivering.nl/waterfilter' },
         ]}
+      />
+      <ProductSchema
+        name="Water-zuivering osmosesysteem"
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        image="https://www.water-zuivering.nl/assets/img/countertop.png"
+        url="https://www.water-zuivering.nl/waterfilter"
+        prijsVanaf={PRIJS_VANAF}
       />
       <FaqSchema items={FAQ} />
       <RatingSchema rating={avgRating} count={reviewCount} />

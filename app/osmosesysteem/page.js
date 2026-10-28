@@ -16,6 +16,7 @@ import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import { mono, DONKER, Kop, Pijl, Sterren, btnPrimair, btnLicht, btnDonker } from '@/components/Ontwerp';
 import { createClient } from '@/lib/supabase/server';
+import PrijsVanaf, { PRIJS_VANAF } from '@/components/PrijsVanaf';
 
 export const dynamic = 'force-dynamic';
 
@@ -181,6 +182,7 @@ export default async function Page() {
                 </Link>
                 <a href="#binnenkant" className={btnLicht}>Bekijk het osmosesysteem van binnen</a>
               </div>
+              <PrijsVanaf className="mt-5" />
               <p className={`${mono.className} mt-6 text-xs text-dim`}>Gratis en vrijblijvend · klaar in minder dan een minuut · prijs inclusief plaatsing</p>
             </div>
             <div className="relative">
@@ -555,6 +557,7 @@ export default async function Page() {
               <Link href="/aanmelden" className={btnPrimair}>Vraag vrijblijvend een offerte aan<Pijl /></Link>
               <Link href="/maatcheck" className={btnDonker}>Doe de maatcheck</Link>
             </div>
+            <PrijsVanaf donker className="mt-5" />
             <ul className={`${mono.className} mt-10 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[11px] uppercase tracking-[0.14em] text-white/50`}>
               <li>10 jaar garantie</li>
               <li>Geplaatst in 1 à 2 uur</li>
@@ -579,6 +582,7 @@ export default async function Page() {
         url="https://www.water-zuivering.nl/osmosesysteem"
         rating={avgRating ? avgRating.toFixed(1) : null}
         reviewCount={reviewCount}
+        prijsVanaf={PRIJS_VANAF}
       />
       <FaqSchema items={FAQ_ITEMS} />
     </>

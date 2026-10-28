@@ -21,6 +21,7 @@ export const metadata = {
 // here as plain text so the FAQPage schema matches what's rendered. If the
 // accordion copy changes, update this list too.
 const FAQ_ITEMS = [
+  ['Hoe werkt een 3-weg kraan?', 'Een 3-weg kraan heeft gescheiden waterwegen. Met de gewone hendel tap je warm en koud kraanwater, met de tweede bediening gefilterd water uit het osmosesysteem. Gefilterd en gewoon water komen in de kraan nooit met elkaar in aanraking.'],
   ['Past de 3-weg kraan op elk aanrecht?', 'In de meeste gevallen wel — de kraan past op een standaard boorgat. Tijdens de offerteaanvraag kijken we naar jouw specifieke situatie.'],
   ['Kan ik de kraan later nog toevoegen aan mijn systeem?', 'Ja, de 3-weg kraan is compatibel met elk Water-zuivering systeem en kan ook achteraf nog worden toegevoegd.'],
   ['Wordt de kraan samen met het systeem geïnstalleerd?', 'Ja, onze monteur sluit de kraan in één moeite mee aan tijdens de installatie van je osmosesysteem — geen aparte afspraak nodig.'],
@@ -77,10 +78,10 @@ export default async function Page() {
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Accessoire</span>
               <h1 className="mt-3 font-display text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.05]">
-                Eén kraan.<br />Drie waterstromen<span className="text-amber-dark">.</span>
+                De 3-weg kraan:<br />één kraan, drie waterstromen<span className="text-amber-dark">.</span>
               </h1>
               <p className="mt-6 text-lg text-dim max-w-md">
-                Nooit meer een losse kraan of extra gat in je aanrecht. Gefilterd, gewoon én gemineraliseerd water uit één stijlvolle kraan — in de afwerking die bij jouw keuken past.
+                Met de <strong className="text-ink">3-weg kraan</strong> van Water-zuivering heb je nooit meer een losse kraan of extra gat in je aanrecht nodig. Gefilterd, gewoon én gemineraliseerd water uit één stijlvolle kraan — in de afwerking die bij jouw keuken past.
               </p>
               <div className="mt-9 flex flex-wrap items-center gap-4">
                 <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-xl shadow-amber/25">
@@ -97,7 +98,7 @@ export default async function Page() {
             <div className="relative">
               <div className="absolute -inset-6 rounded-[3rem] bg-gradient-to-br from-amber/25 via-amber/5 to-transparent -rotate-3" />
               <div className="relative rounded-[2.5rem] overflow-hidden border border-edge shadow-2xl aspect-[4/5] bg-bg flex items-center justify-center p-10">
-                <Image src="/assets/img/3-weg-kraan.png" alt="Water-zuivering 3-weg kraan in chroom" fill sizes="(min-width: 1024px) 45vw, 90vw" className="object-contain" />
+                <Image src="/assets/img/3-weg-kraan.png" alt="Water-zuivering 3-weg kraan in chroom" fill loading="eager" sizes="(min-width: 1024px) 45vw, 90vw" className="object-contain" />
               </div>
               <div className="hidden sm:flex items-center gap-2 absolute -top-5 right-6 rounded-full glass shadow-lg px-4 py-2.5">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="#EDA71B" aria-hidden="true"><path d="M12 2l2.9 6.2 6.8.8-5 4.6 1.4 6.7L12 16.9 5.9 20.3l1.4-6.7-5-4.6 6.8-.8L12 2z" /></svg>
@@ -333,6 +334,39 @@ export default async function Page() {
         </section>
 
         {/* FAQ */}
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Zo werkt het</span>
+            <h2 className="mt-3 font-display text-3xl md:text-4xl font-extrabold tracking-tight">Hoe werkt een 3-weg kraan?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een 3-weg kraan ziet eruit als een gewone keukenkraan, maar heeft binnenin gescheiden waterwegen. Daardoor komt er uit één uitloop drie soorten water:
+            </p>
+            <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Gewoon kraanwater</strong>, warm en koud, voor afwassen en schoonmaken. Dit loopt via de normale leidingen.</li>
+              <li><strong className="text-ink">Gefilterd water</strong> uit het osmosesysteem onder je aanrecht, voor drinken, koken, koffie en thee.</li>
+              <li><strong className="text-ink">Gemineraliseerd water</strong>: gefilterd water waar calcium en magnesium aan zijn toegevoegd, voor een voller glas water.</li>
+            </ul>
+            <p className="mt-4 text-dim leading-relaxed">
+              Gefilterd en gewoon water komen in de kraan nooit met elkaar in aanraking. Zo weet je zeker dat het water dat je drinkt ook echt door het systeem is gegaan. Hoe het systeem zelf werkt, lees je bij het <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link>; de techniek achter het membraan staat in <Link href="/kennisbank/omgekeerde-osmose-filter" className="underline hover:text-ink">omgekeerde osmose filter</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight">3-weg kraan, losse kraan of Quooker?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Bij een osmosesysteem heb je drie keuzes voor de kraan. Een <strong className="text-ink">losse filterkraan</strong> naast je gewone kraan werkt prima, maar je hebt dan twee kranen en een extra gat in het aanrecht. Een <strong className="text-ink">3-weg kraan</strong> vervangt je huidige keukenkraan en geeft alles uit één uitloop. Dat is rustiger op het aanrecht en ideaal als je toch al een nieuwe kraan wilt.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Heb je een Quooker? Die kun je gewoon houden voor kokend water. Het filter van een Quooker zit alleen in het reservoir en zuivert het koude water niet; een osmosesysteem doet dat wel. Lees het verschil in <Link href="/kennisbank/quooker-waterfilter" className="underline hover:text-ink">Quooker waterfilter</Link>. Meer over het aparte kraantje lees je in <Link href="/kennisbank/osmosewater-tappunt" className="underline hover:text-ink">osmosewater tappunt</Link>.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Onze monteur sluit de 3-weg kraan aan samen met het osmosesysteem. Het systeem kost vanaf €999 exclusief montage; de kraan in jouw afwerking neem je mee in je offerte. Je kiest uit vier afwerkingen: chroom, geborsteld staal, goud en zwart.
+            </p>
+          </div>
+        </section>
+
         <section className="relative bg-surface border-y border-edge">
           <div className="max-w-3xl mx-auto px-6 py-20 md:py-28">
             <div className="text-center">

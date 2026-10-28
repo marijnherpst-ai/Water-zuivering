@@ -6,6 +6,8 @@ import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import ReviewsSectie from '@/components/ReviewsSectie';
+import PrijsVanaf, { PRIJS_VANAF } from '@/components/PrijsVanaf';
+import ProductSchema from '@/components/ProductSchema';
 
 export const dynamic = 'force-dynamic';
 
@@ -32,7 +34,7 @@ const BENODIGD = [
 
 const FAQ = [
   ['Hoe lang duurt een osmose installatie?', 'Bij ons duurt de installatie meestal 1 tot 2 uur, door een vakkundige monteur van Water-zuivering.'],
-  ['Wat kost een osmose installatie?', 'Bij Water-zuivering is vakkundige installatie inbegrepen. Kies je ervoor om zelf te installeren, dan krijg je €250 korting. Laat je offertes van andere partijen vergelijken, controleer dan altijd of installatie, de kraan en de eerste filters in de prijs zitten.'],
+  ['Wat kost een osmose installatie?', 'Het systeem kost vanaf €999, exclusief montage. Laat je het door onze eigen monteur installeren, dan staat de montage apart in je offerte; installeer je zelf, dan betaal je alleen het systeem. Laat je offertes van andere partijen vergelijken, controleer dan altijd of installatie, de kraan en de eerste filters in de prijs zitten.'],
   ['Kan ik een osmose systeem zelf installeren?', 'Ja, dat kan. Je krijgt dan €250 korting. Het vraagt wel om het aansluiten op de waterleiding en het plaatsen van een extra kraan, dus alleen aan te raden als je daar handig in bent. Laat je het door onze monteur doen, dan valt de installatie ook onder je garantie.'],
   ['Is er een afvoer nodig?', 'Ja. Bij omgekeerde osmose hoort een afvoer voor afvalwater. Die slang wordt door de monteur aangesloten, samen met de watertoevoer en de slang voor het gefilterde water.'],
   ['Valt de installatie onder de garantie?', 'Ja. Problemen die voortkomen uit de montage door onze eigen monteurs lossen we gratis op, binnen de 10 jaar garantie die op elk systeem zit.'],
@@ -47,6 +49,13 @@ export default function Page() {
           { name: 'Home', url: 'https://www.water-zuivering.nl/' },
           { name: 'Osmose installatie', url: 'https://www.water-zuivering.nl/osmose-installatie' },
         ]}
+      />
+      <ProductSchema
+        name="Water-zuivering osmosesysteem"
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        image="https://www.water-zuivering.nl/assets/img/countertop.png"
+        url="https://www.water-zuivering.nl/osmose-installatie"
+        prijsVanaf={PRIJS_VANAF}
       />
       <FaqSchema items={FAQ} />
       <RevealObserver />
@@ -75,6 +84,7 @@ export default function Page() {
                   Past het in mijn kastje?
                 </Link>
               </div>
+              <PrijsVanaf className="mt-5" />
               <div className="mt-8 flex flex-wrap gap-x-7 gap-y-3 text-sm text-dim">
                 <span className="inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Installatie in 1 tot 2 uur</span>
                 <span className="inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="#C6890F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>Installatie inbegrepen</span>
@@ -257,6 +267,7 @@ export default function Page() {
               Vraag vrijblijvend een offerte aan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </Link>
+            <PrijsVanaf donker className="mt-5" />
           </div>
         </section>
       </main>

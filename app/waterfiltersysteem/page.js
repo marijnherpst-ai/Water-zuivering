@@ -5,6 +5,8 @@ import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import PrijsVanaf, { PRIJS_VANAF } from '@/components/PrijsVanaf';
+import ProductSchema from '@/components/ProductSchema';
 
 export const metadata = {
   alternates: { canonical: '/waterfiltersysteem' },
@@ -42,6 +44,13 @@ export default function Page() {
           { name: 'Waterfiltersysteem', url: 'https://www.water-zuivering.nl/waterfiltersysteem' },
         ]}
       />
+      <ProductSchema
+        name="Water-zuivering osmosesysteem"
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        image="https://www.water-zuivering.nl/assets/img/countertop.png"
+        url="https://www.water-zuivering.nl/waterfiltersysteem"
+        prijsVanaf={PRIJS_VANAF}
+      />
       <FaqSchema items={FAQ} />
       <RevealObserver />
       <Header />
@@ -69,6 +78,7 @@ export default function Page() {
                   Bekijk specificaties
                 </Link>
               </div>
+              <PrijsVanaf className="mt-5" />
             </div>
             <div className="relative">
               <div className="glow w-64 h-64 bg-amber/15" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
@@ -145,6 +155,43 @@ export default function Page() {
           </div>
         </section>
 
+        <section className="relative bg-surface border-y border-edge">
+          <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
+            <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Soorten</span>
+            <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Welke soorten waterfiltersystemen zijn er?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Een <strong className="text-ink">waterfiltersysteem</strong> kan op drie plekken in huis zitten. Welke je nodig hebt, hangt af van wat je wilt oplossen.
+            </p>
+            <div className="mt-8 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold">Systeem</th><th scope="col" className="p-4 font-display font-bold">Waar</th><th scope="col" className="p-4 font-display font-bold">Wat het doet</th><th scope="col" className="p-4 font-display font-bold">Geschikt voor</th></tr></thead>
+                <tbody>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Onder het aanrecht (osmose)</th><td className="p-4 text-dim">In het keukenkastje, met een eigen of 3-weg kraan</td><td className="p-4 text-dim">Zuivert drinkwater: PFAS, medicijnresten, microplastics, kalk</td><td className="p-4 text-dim">Drinken, koken, koffie en thee</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Op de kraan</th><td className="p-4 text-dim">Opzetstuk op de keukenkraan</td><td className="p-4 text-dim">Actieve kool tegen smaak en geur</td><td className="p-4 text-dim">Betere smaak, klein budget</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Voor het hele huis</th><td className="p-4 text-dim">Bij de hoofdleiding, na de watermeter</td><td className="p-4 text-dim">Vangt vuil of maakt het water zachter</td><td className="p-4 text-dim">Kalk in douche en apparaten</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-6 text-dim leading-relaxed">
+              Voor drinkwater is een systeem onder het aanrecht het grondigst: het zuivert precies het water dat je drinkt, zonder al je douche- en toiletwater mee te filteren. Wil je ook minder kalkaanslag in de badkamer, lees dan het verschil in <Link href="/kennisbank/waterontharder-vs-waterzuiveraar" className="underline hover:text-ink">waterontharder of waterzuiveraar</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waar let je op bij een waterfiltersysteem?</h2>
+            <ul className="mt-6 space-y-3 text-dim leading-relaxed list-disc pl-5">
+              <li><strong className="text-ink">Welke stoffen wil je kwijt?</strong> Alleen smaak en chloor kan met actieve kool. Voor PFAS, medicijnresten en microplastics heb je een osmosemembraan nodig.</li>
+              <li><strong className="text-ink">Tank of direct flow?</strong> Een systeem zonder opslagtank neemt minder ruimte in en er staat geen water stil.</li>
+              <li><strong className="text-ink">Past het in je kastje?</strong> Ons systeem is 10,5 cm breed en kan staand of liggend. Check het met de <Link href="/maatcheck" className="underline hover:text-ink">maatcheck</Link>.</li>
+              <li><strong className="text-ink">Wat kosten de filters per jaar?</strong> Bij Water-zuivering gemiddeld ongeveer €135.</li>
+              <li><strong className="text-ink">Hoe lang is de garantie?</strong> Wij geven 10 jaar garantie op het systeem.</li>
+              <li><strong className="text-ink">Wie installeert het?</strong> Het systeem kost vanaf €999 exclusief montage. Onze eigen monteur sluit het in 1 à 2 uur aan, of je doet het zelf. Lees hoe dat gaat in <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>.</li>
+            </ul>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section className="relative bg-surface border-y border-edge">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
@@ -177,6 +224,7 @@ export default function Page() {
               Vraag vrijblijvend een offerte aan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </Link>
+            <PrijsVanaf donker className="mt-5" />
           </div>
         </section>
       </main>
