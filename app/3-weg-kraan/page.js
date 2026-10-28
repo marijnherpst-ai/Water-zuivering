@@ -4,7 +4,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RevealObserver from '@/components/RevealObserver';
 import KleurenGallery from '@/components/KleurenGallery';
-import ProductSchema from '@/components/ProductSchema';
 import FaqSchema from '@/components/FaqSchema';
 import { createClient } from '@/lib/supabase/server';
 
@@ -60,12 +59,6 @@ export default async function Page() {
 
   return (
     <>
-      <ProductSchema
-        name="Water-zuivering 3-weg kraan"
-        description="Eén elegante kraan voor gefilterd, gewoon en gemineraliseerd water. Compatibel met elk Water-zuivering systeem, in 4 afwerkingen, vakkundig meegeïnstalleerd."
-        image="https://www.water-zuivering.nl/assets/img/3-weg-kraan.png"
-        url="https://www.water-zuivering.nl/3-weg-kraan"
-      />
       <FaqSchema items={FAQ_ITEMS} />
       <RevealObserver />
       <Header />
