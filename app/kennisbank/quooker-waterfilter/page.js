@@ -230,7 +230,7 @@ export default function Page() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Combineren</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Een Quooker en een osmosesysteem samen</h2>
               <p className="mt-4 text-dim leading-relaxed">
-                Je hoeft niet te kiezen. Veel mensen houden hun Quooker voor kokend water en zetten er een osmosesysteem naast voor drinkwater. Het gefilterde water komt dan uit een <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link>, die gewoon water, gefilterd water en water met mineralen geeft, of uit een apart kraantje.
+                Je hoeft niet te kiezen. Veel mensen houden hun Quooker voor kokend water en zetten er een osmosesysteem naast voor drinkwater. Het gefilterde water komt dan uit een <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link>, die gewoon water, gefilterd water en water met mineralen geeft, of uit een aparte <Link href="/waterfilter-kraan" className="underline hover:text-ink">waterfilter kraan</Link>.
               </p>
               <p className="mt-4 text-dim leading-relaxed">
                 Het <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> van Water-zuivering werkt zonder opslagtank: het filtert direct wanneer je de kraan opendraait. Het kastje is 10,5 cm breed en kan staand of liggend, dus het past vaak nog naast het reservoir van een Quooker. Twijfel je? Met de <Link href="/maatcheck" className="underline hover:text-ink">maatcheck</Link> zie je met je camera of het in jouw keukenkastje past.

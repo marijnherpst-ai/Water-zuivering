@@ -160,7 +160,7 @@ export default function Page() {
                 Wil je heel zuiver drinkwater zonder de nadelen van water zonder mineralen? Dan is osmosewater met een mineraalfilter de logische keuze. Het membraan haalt PFAS, medicijnresten, microplastics en kalk eruit. Daarna voegt het <Link href="/winkel/cto-filter-met-mineralen" className="underline hover:text-ink">CTO-filter met mineralen</Link> weer calcium en magnesium toe, voor een voller glas water.
               </p>
               <p className="mt-4 text-dim leading-relaxed">
-                Met de <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link> kies je zelf: gewoon kraanwater, gefilterd water of gefilterd water met mineralen. Meer over hoe het werkt lees je in <Link href="/kennisbank/wat-is-osmosewater" className="underline hover:text-ink">wat is osmosewater?</Link>
+                Met de <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link> kies je zelf: gewoon kraanwater, gefilterd water of gefilterd water met mineralen. Liever een losse kraan naast je gewone kraan? Dat kan met een <Link href="/waterfilter-kraan" className="underline hover:text-ink">waterfilter kraan</Link>. Meer over hoe het werkt lees je in <Link href="/kennisbank/wat-is-osmosewater" className="underline hover:text-ink">wat is osmosewater?</Link>
               </p>
             </div>
           </div>

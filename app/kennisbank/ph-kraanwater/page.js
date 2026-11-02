@@ -176,7 +176,7 @@ export default function Page() {
                 Een <Link href="/kennisbank/omgekeerde-osmose-filter" className="underline hover:text-ink">omgekeerde-osmosefilter</Link> haalt bijna alle opgeloste stoffen uit het water, ook calcium en magnesium. Juist die mineralen houden de pH van kraanwater stabiel. Zonder die buffer neemt het water koolzuur uit de lucht op, en zakt de pH vaak tot iets onder 7.
               </p>
               <p className="mt-4 text-dim leading-relaxed">
-                Dat is niet schadelijk; koffie, sinaasappelsap en frisdrank zijn veel zuurder. Wel smaakt water zonder mineralen voor sommige mensen vlak. Daarom kun je bij een Water-zuivering systeem kiezen voor het <Link href="/winkel/cto-filter-met-mineralen" className="underline hover:text-ink">CTO-filter met mineralen</Link>. Dat voegt na het membraan weer calcium en magnesium toe, voor een voller glas water. Met de <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link> kies je zelf tussen gewoon, gefilterd en gemineraliseerd water.
+                Dat is niet schadelijk; koffie, sinaasappelsap en frisdrank zijn veel zuurder. Wel smaakt water zonder mineralen voor sommige mensen vlak. Daarom kun je bij een Water-zuivering <Link href="/waterfiltersysteem" className="underline hover:text-ink">waterfiltersysteem</Link> kiezen voor het <Link href="/winkel/cto-filter-met-mineralen" className="underline hover:text-ink">CTO-filter met mineralen</Link>. Dat voegt na het membraan weer calcium en magnesium toe, voor een voller glas water. Met de <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link> kies je zelf tussen gewoon, gefilterd en gemineraliseerd water.
               </p>
             </div>
           </div>

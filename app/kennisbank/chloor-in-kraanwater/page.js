@@ -162,7 +162,7 @@ export default function Page() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Filteren</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Chloor uit water halen</h2>
               <p className="mt-4 text-dim leading-relaxed">
-                Chloor hecht zich goed aan <strong className="text-ink">actieve kool</strong>. Daarom halen bijna alle waterfilters het eruit: een filterkan, een kraanfilter en ook het koolstofvoorfilter van een osmosesysteem. Het <Link href="/winkel/ppc-filter" className="underline hover:text-ink">PPC-voorfilter</Link> van Water-zuivering combineert katoen met een koolstofblok en haalt restchloor weg voordat het water het membraan bereikt.
+                Chloor hecht zich goed aan <strong className="text-ink">actieve kool</strong>. Daarom halen bijna alle waterfilters het eruit: een filterkan, een kraanfilter en ook het koolstofvoorfilter van een <Link href="/waterfiltersysteem" className="underline hover:text-ink">waterfiltersysteem</Link> met osmose. Het <Link href="/winkel/ppc-filter" className="underline hover:text-ink">PPC-voorfilter</Link> van Water-zuivering combineert katoen met een koolstofblok en haalt restchloor weg voordat het water het membraan bereikt.
               </p>
               <p className="mt-4 text-dim leading-relaxed">
                 Heb je geen filter? Laat water dan een tijdje in een open kan staan. Chloor verdampt langzaam, en de smaak wordt minder. In Nederland heb je dat meestal niet nodig; op vakantie kan het helpen. Welk filter bij jou past, lees je in <Link href="/kennisbank/kraanwater-filteren" className="underline hover:text-ink">kraanwater filteren</Link>.

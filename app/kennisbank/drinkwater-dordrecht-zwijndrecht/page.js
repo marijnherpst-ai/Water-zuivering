@@ -204,7 +204,7 @@ export default function Page() {
                 Wie in Dordrecht of Zwijndrecht woont en de PFAS-inname uit kraanwater zo laag mogelijk wil houden, heeft weinig aan een gewone filterkan: die haalt PFAS maar voor een deel weg. Een <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> onder het aanrecht werkt anders. Het membraan heeft poriën van 0,0001 micron en houdt het overgrote deel van de PFAS tegen, net als medicijnresten en microplastics.
               </p>
               <p className="mt-4 text-dim leading-relaxed">
-                Ons systeem heeft geen opslagtank en filtert direct als je de kraan opendraait. Verschillen met andere oplossingen, zoals actief kool of een waterontharder, staan in <Link href="/kennisbank/pfas-vrij-water" className="underline hover:text-ink">PFAS-vrij water</Link>.
+                Ons systeem heeft geen opslagtank en filtert direct als je de kraan opendraait. Hoe zo&apos;n <Link href="/waterzuiveringsinstallatie" className="underline hover:text-ink">waterzuiveringsinstallatie</Link> bij je thuis wordt aangesloten, lees je apart. Verschillen met andere oplossingen, zoals actief kool of een waterontharder, staan in <Link href="/kennisbank/pfas-vrij-water" className="underline hover:text-ink">PFAS-vrij water</Link>.
               </p>
             </div>
           </div>

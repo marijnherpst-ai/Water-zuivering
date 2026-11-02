@@ -278,7 +278,7 @@ export default function Page() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Osmose</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Past een osmosesysteem in een Amsterdamse keuken?</h2>
               <p className="mt-4 text-dim leading-relaxed">
-                Veel Amsterdamse keukens zijn klein, zeker in grachtenpanden en portiekflats. Daarom werkt ons <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> zonder opslagtank: het filtert direct op het moment dat je tapt en past in een gewoon keukenkastje. Je krijgt een aparte kraan of een 3-weg-kraan die ook je gewone warme en koude water levert.
+                Veel Amsterdamse keukens zijn klein, zeker in grachtenpanden en portiekflats. Daarom werkt ons <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> zonder opslagtank: het filtert direct op het moment dat je tapt en past in een gewoon keukenkastje. Je krijgt een aparte <Link href="/waterfilter-kraan" className="underline hover:text-ink">waterfilter kraan</Link> of een 3-weg-kraan die ook je gewone warme en koude water levert.
               </p>
               <p className="mt-4 text-dim leading-relaxed">
                 Omdat het Amsterdamse water zacht is, gaan de filters vaak de normale levensduur mee: het voorfilter en het nafilter ongeveer 12 maanden, het membraan ongeveer 24 maanden. Huur je? Lees dan eerst <Link href="/kennisbank/waterzuiveraar-installeren" className="underline hover:text-ink">waterzuiveraar installeren</Link>; daar staat ook wat je met je verhuurder regelt.

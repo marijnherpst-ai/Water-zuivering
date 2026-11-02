@@ -219,7 +219,7 @@ export default function Page() {
                 <li>je stopt met flessenwater en toch een neutrale smaak wilt voor koffie en thee.</li>
               </ul>
               <p className="mt-4 text-dim leading-relaxed">
-                Wat zo&apos;n systeem per jaar kost, inclusief filters, staat in <Link href="/kennisbank/wat-kost-een-waterzuiveringssysteem" className="underline hover:text-ink">wat kost een waterzuiveringssysteem</Link>.
+                Hoe een compleet <Link href="/waterfiltersysteem" className="underline hover:text-ink">waterfiltersysteem</Link> is opgebouwd, lees je op de productpagina. Wat zo&apos;n systeem per jaar kost, inclusief filters, staat in <Link href="/kennisbank/wat-kost-een-waterzuiveringssysteem" className="underline hover:text-ink">wat kost een waterzuiveringssysteem</Link>.
               </p>
             </div>
           </div>
