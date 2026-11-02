@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import TussenCta from '@/components/TussenCta';
 import AuteurRegel from '@/components/AuteurRegel';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -94,6 +95,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Belangrijk detail: een "aandachtsgebied" op de kaart zegt iets over de bodem of het oppervlaktewater ter plekke, niet automatisch over de kwaliteit van het drinkwater dat bij jou uit de kraan komt. Drinkwaterbedrijven winnen hun water vaak dieper uit de grond of uit andere bronnen, en zuiveren en toetsen dat apart aan de wettelijke norm — ook als je toevallig in of vlakbij zo'n gebied woont.
             </p>
+            <TussenCta titel="Hoe zit het op jouw adres?" pfasEerst>
+              Een kaart laat de grote lijnen zien. Met de PFAS-check zie je hoe het in jouw regio zit, en met een osmosesysteem onder het aanrecht filter je het overgrote deel van de PFAS zelf uit je drinkwater.
+            </TussenCta>
           </div>
         </section>
 

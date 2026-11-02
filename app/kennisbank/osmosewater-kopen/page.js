@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import TussenCta from '@/components/TussenCta';
 import AuteurRegel from '@/components/AuteurRegel';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -116,6 +117,9 @@ export default function Page() {
               </ul>
               <p className="mt-3 text-xs text-dim">Dit is een voorbeeld met de hoogste prijs die we tegenkwamen. Betaal je minder per liter, dan wordt het goedkoper, maar het sjouwen blijft.</p>
             </div>
+            <TussenCta titel="Liever niet meer sjouwen met jerrycans?">
+              Met een osmosesysteem onder het aanrecht tap je osmosewater direct uit je eigen kraan. Vanaf €999 exclusief montage. Vraag vrijblijvend een offerte aan.
+            </TussenCta>
           </div>
         </section>
 

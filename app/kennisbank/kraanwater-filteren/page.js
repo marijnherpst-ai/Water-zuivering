@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import TussenCta from '@/components/TussenCta';
 import AuteurRegel from '@/components/AuteurRegel';
 import KortAntwoord from '@/components/KortAntwoord';
 import Header from '@/components/Header';
@@ -131,6 +132,9 @@ export default function Page() {
                 </tbody>
               </table>
             </div>
+            <TussenCta titel="De grondigste optie thuis?">
+              Een osmosesysteem onder het aanrecht filtert het meest uit je kraanwater en werkt zonder opslagtank. Vanaf €999 exclusief montage. Vraag vrijblijvend een offerte aan.
+            </TussenCta>
           </div>
         </section>
 

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import TussenCta from '@/components/TussenCta';
 import AuteurRegel from '@/components/AuteurRegel';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -172,6 +173,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Ons advies: drink het niet zolang je het kunt zien. Wacht tot het water weer helder is, ook voor de fles van de baby en voor koffie en thee. Hoe je de fles verder veilig klaarmaakt, lees je in <Link href="/kennisbank/kraanwater-babyvoeding" className="underline hover:text-ink">kraanwater voor babyvoeding</Link>. Ruikt of smaakt het water ook daarna nog vreemd, of blijft het troebel, neem dan contact op met je waterbedrijf. Meer over de veiligheid van ons drinkwater lees je in <Link href="/kennisbank/is-kraanwater-veilig" className="underline hover:text-ink">is kraanwater veilig?</Link>
             </p>
+            <TussenCta titel="Vaker last van roest of slib in je water?">
+              Een osmosesysteem met voorfilter vangt roest, zand en slib op voordat ze bij je drinkwater komen. Bij een kookadvies of storing volg je altijd eerst het advies van je waterbedrijf.
+            </TussenCta>
           </div>
         </section>
 

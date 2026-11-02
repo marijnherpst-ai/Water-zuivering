@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import TussenCta from '@/components/TussenCta';
 import AuteurRegel from '@/components/AuteurRegel';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -99,6 +100,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Kortom: het "slechtste kraanwater van Nederland" is geen erkend fenomeen bij drinkwaterbedrijven of toezichthouders — het is vooral een label dat mensen plakken op een sterke smaak die ze niet gewend zijn. Verhuis je naar een andere regio, dan proef je soms verschil, maar dat zegt niets over hoe veilig het water is. Stoort de smaak je, dan kan een <Link href="/waterfilter" className="underline hover:text-ink">waterfilter</Link> al helpen; daar lees je welk type wat tegenhoudt.
             </p>
+            <TussenCta titel="Wil je weten wat er in jouw water zit?" pfasEerst>
+              Met de PFAS-check zie je hoe het in jouw regio zit. Wil je daarna zelf filteren, dan kan dat met een osmosesysteem onder het aanrecht.
+            </TussenCta>
           </div>
         </section>
 

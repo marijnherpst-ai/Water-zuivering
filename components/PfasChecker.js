@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from 'react';
 import Link from 'next/link';
+import { PRIJS_VANAF } from '@/components/PrijsVanaf';
 import { pfasCheck, pfasCheckPerPlaats, RIVM_NORM_NG_L, KLEUR_INFO } from '@/lib/pfasData';
 import { trackLead } from '@/lib/trackLead';
 
@@ -155,10 +156,16 @@ export default function PfasChecker() {
           <div className="mt-6 pt-6 border-t border-edge">
             <p className="font-display font-bold text-ink">Wilt u PFAS, kalk en andere stoffen uit uw kraanwater filteren?</p>
             <p className="mt-1.5 text-sm text-dim">Onze osmose waterzuiveraar verwijdert tot 99% van PFAS, chloor, medicijnresten en microplastics.</p>
-            <Link href="/aanmelden" className="cursor-pointer mt-4 inline-flex items-center gap-2 rounded-full bg-amber px-6 py-3 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors">
-              Vraag vrijblijvend een offerte aan
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-            </Link>
+            <p className="mt-3 text-sm text-dim"><strong className="text-ink">Vanaf €{PRIJS_VANAF}</strong> exclusief montage.</p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-6 py-3 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors">
+                Vraag vrijblijvend een offerte aan
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </Link>
+              <Link href="/osmosesysteem" className="cursor-pointer inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-6 py-3 text-sm font-bold text-ink hover:border-ink transition-colors">
+                Bekijk het osmosesysteem
+              </Link>
+            </div>
           </div>
         </div>
       )}
