@@ -226,6 +226,7 @@ export default function WaterzuiveringVoorThuisPage() {
             <p className="mt-6 text-sm text-dim leading-relaxed">
               Twijfel je überhaupt of er iets aan de hand is met je kraanwater? Check eerst onze <Link href="/storingen" className="underline hover:text-ink">storingen-check</Link> voor actuele meldingen in jouw buurt, of lees de volledige vergelijking in <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">beste waterfilter voor thuis</Link>. Met de keuzehulp in onze gids zie je in drie vragen <Link href="/waterfilter" className="underline hover:text-ink">welke waterfilter bij je past</Link>.
             </p>
+            <p className="mt-4 text-dim leading-relaxed">Een bekend zwaartekrachtfilter is de <Link href="/kennisbank/berkey-waterfilter" className="underline hover:text-ink">Berkey</Link>. Handig zonder stroom, maar voor iets anders gemaakt dan een vast systeem.</p>
           </div>
         </section>
 

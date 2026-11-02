@@ -135,7 +135,7 @@ export default function Page() {
               In de keuken zie je kalkaanslag het eerst: een witte laag op de bodem van de waterkoker en schilfers in je thee. In een koffiemachine zie je het niet, maar daar doet kalkaanslag de meeste schade: het verstopt leidingen en verwarmingselementen, waardoor de machine trager en minder warm wordt.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Ontkalk de waterkoker zodra je een laagje ziet, en volg voor de koffiemachine het schema van de fabrikant. Gebruik je water uit een osmosesysteem voor koffie en thee, dan krijg je nauwelijks nog kalkaanslag, omdat het membraan de kalk tegenhoudt.
+              Ontkalk de waterkoker zodra je een laagje ziet, en volg voor de koffiemachine het schema van de fabrikant. Of je daar een filter bij nodig hebt, lees je bij <Link href="/kennisbank/waterfilter-koffiemachine" className="underline hover:text-ink">waterfilter koffiemachine</Link>. Gebruik je water uit een osmosesysteem voor koffie en thee, dan krijg je nauwelijks nog kalkaanslag, omdat het membraan de kalk tegenhoudt.
             </p>
           </div>
         </section>

@@ -96,7 +96,7 @@ export default function Page() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">De bronnen</span>
             <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Zeven grondwaterbronnen voor één stad</h2>
             <p className="mt-4 text-dim leading-relaxed max-w-3xl">
-              Waar Amsterdam en Rotterdam vooral rivierwater zuiveren, pompt Vitens voor kraanwater Utrecht <strong className="text-ink">grondwater</strong> op. Onder de Utrechtse Heuvelrug liggen schone voorraden, en in het westen beschermen kleilagen de diepere zandlagen. Volgens DUIC (2018) haalt de stad haar water uit deze zeven bronnen:
+              Waar Amsterdam en <Link href="/kennisbank/drinkwater-rotterdam" className="underline hover:text-ink">Rotterdam</Link> vooral rivierwater zuiveren, pompt Vitens voor kraanwater Utrecht <strong className="text-ink">grondwater</strong> op. Onder de Utrechtse Heuvelrug liggen schone voorraden, en in het westen beschermen kleilagen de diepere zandlagen. Volgens DUIC (2018) haalt de stad haar water uit deze zeven bronnen:
             </p>
             <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {BRONNEN.map(([naam, uitleg]) => (
