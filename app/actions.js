@@ -1,7 +1,7 @@
 'use server';
 
 import { createClient } from '@/lib/supabase/server';
-import { stuurWelkomstMail } from '@/lib/email';
+import { stuurWelkomstMail, stuurLeadMelding } from '@/lib/email';
 
 export async function submitContactForm(formData) {
   const naam = formData.get('naam')?.toString().trim();
@@ -27,7 +27,10 @@ export async function submitContactForm(formData) {
     return { success: false, error: 'Er ging iets mis bij het versturen. Probeer het opnieuw.' };
   }
 
-  await stuurWelkomstMail({ naam, email });
+  await Promise.all([
+    stuurWelkomstMail({ naam, email }),
+    stuurLeadMelding({ formulier: 'contact', naam, telefoon, email, postcode, velden: [['Bericht', bericht]] }),
+  ]);
 
   return { success: true };
 }
@@ -113,7 +116,13 @@ export async function submitAanmeldenForm(data) {
     return { success: false, error: 'Er ging iets mis bij het versturen. Probeer het opnieuw.' };
   }
 
-  await stuurWelkomstMail({ naam, email });
+  await Promise.all([
+    stuurWelkomstMail({ naam, email }),
+    stuurLeadMelding({
+      formulier: 'aanmelden', naam, telefoon, email, postcode,
+      velden: [['Huisnummer', huisnummer], ['Keukenblad', keukenblad], ['Kastje leeg', kastje_leeg], ['Quooker', quooker], ['Gevonden via', bron]],
+    }),
+  ]);
 
   return { success: true };
 }
@@ -142,7 +151,13 @@ export async function submitBesparingLead(data) {
     return { success: false, error: 'Er ging iets mis bij het versturen. Probeer het opnieuw.' };
   }
 
-  await stuurWelkomstMail({ naam, email });
+  await Promise.all([
+    stuurWelkomstMail({ naam, email }),
+    stuurLeadMelding({
+      formulier: 'besparing', naam, telefoon, email, postcode,
+      velden: [['Huisnummer', huisnummer], ['Watermerk', watermerk], ['Personen', personen], ['Glazen per dag', glazen], ['Besparing per jaar', `€${besparing}`]],
+    }),
+  ]);
 
   return { success: true };
 }
@@ -172,6 +187,11 @@ export async function submitGiveawayEntry(formData) {
   if (error) {
     return { success: false, error: 'Er ging iets mis bij het versturen. Probeer het opnieuw.' };
   }
+
+  await stuurLeadMelding({
+    formulier: 'giveaway', naam: `${voornaam} ${achternaam}`, telefoon, email, postcode,
+    velden: [['Huisnummer', huisnummer]],
+  });
 
   return { success: true };
 }
