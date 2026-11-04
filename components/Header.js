@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import CountdownTimer from './CountdownTimer';
+import { isBlackFriday } from '@/lib/actie';
 import { useMand } from '@/lib/winkel/mand';
 import { PRODUCTEN } from '@/lib/winkel/producten';
 
@@ -63,7 +64,11 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 glass">
       <div className="bg-ink text-white text-center text-xs sm:text-sm font-semibold py-2 px-6">
-        Nu tijdelijk <span className="text-amber font-bold">€250 korting</span> bij aanvraag van een offerte
+        {isBlackFriday() ? (
+          <><span className="text-amber font-extrabold uppercase tracking-wider">Black Friday</span> €250 korting bij aanvraag van een offerte</>
+        ) : (
+          <>Nu tijdelijk <span className="text-amber font-bold">€250 korting</span> bij aanvraag van een offerte</>
+        )}
         <CountdownTimer />
       </div>
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">

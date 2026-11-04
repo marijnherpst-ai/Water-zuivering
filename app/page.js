@@ -8,6 +8,8 @@ import Calculator from '@/components/Calculator';
 import ContactForm from '@/components/ContactForm';
 import SubstanceSlideshow from '@/components/SubstanceSlideshow';
 import RatingSchema from '@/components/RatingSchema';
+import BlackFridayHero from '@/components/BlackFridayHero';
+import { isBlackFriday } from '@/lib/actie';
 import { createClient } from '@/lib/supabase/server';
 
 export const dynamic = 'force-dynamic';
@@ -54,7 +56,8 @@ export default async function HomePage() {
       <Header />
 
       <main id="top">
-        {/* HERO */}
+        {/* HERO: Black Friday in November, regular hero from 1 December */}
+        {isBlackFriday() ? <BlackFridayHero /> : (
         <section id="hero" className="relative overflow-hidden min-h-[92vh] flex items-center">
           <Image
             src="/assets/img/hero-vrouw-water.webp"
@@ -96,6 +99,7 @@ export default async function HomePage() {
             </div>
           </div>
         </section>
+        )}
 
         {/* TRUST BAR */}
         <section className="relative border-y border-edge bg-surface">
