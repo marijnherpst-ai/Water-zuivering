@@ -9,12 +9,17 @@ export async function GET(request) {
   if (!isAdmin) return NextResponse.json({ ok: false, reden: 'Geen toegang.' }, { status: 403 });
 
   // ?type=lead sends a sample lead alert to LEAD_MELDING_EMAIL without touching the database.
+  // With &welkom=<address> a welcome mail goes out at the same moment, like a real submission.
   if (request.nextUrl.searchParams.get('type') === 'lead') {
-    const resultaat = await stuurLeadMelding({
-      formulier: 'aanmelden', naam: 'Test Lead', telefoon: '0612345678', email: 'test@example.com', postcode: '1234 AB',
-      velden: [['Huisnummer', '1'], ['Keukenblad', 'Test'], ['Kastje leeg', 'Ja'], ['Quooker', 'Nee'], ['Gevonden via', 'Test']],
-    });
-    return NextResponse.json({ heeftKey: !!process.env.RESEND_API_KEY, heeftOntvanger: !!process.env.LEAD_MELDING_EMAIL, resultaat });
+    const welkom = request.nextUrl.searchParams.get('welkom');
+    const [resultaat, welkomResultaat] = await Promise.all([
+      stuurLeadMelding({
+        formulier: 'aanmelden', naam: 'Test Lead', telefoon: '0612345678', email: 'test@example.com', postcode: '1234 AB',
+        velden: [['Huisnummer', '1'], ['Keukenblad', 'Test'], ['Kastje leeg', 'Ja'], ['Quooker', 'Nee'], ['Gevonden via', 'Test']],
+      }),
+      welkom ? stuurWelkomstMail({ naam: 'Test', email: welkom }) : null,
+    ]);
+    return NextResponse.json({ heeftKey: !!process.env.RESEND_API_KEY, heeftOntvanger: !!process.env.LEAD_MELDING_EMAIL, resultaat, welkomResultaat });
   }
 
   // ?type=status lists the latest sent mails with their delivery status, addresses masked.
