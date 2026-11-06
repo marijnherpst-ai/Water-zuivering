@@ -13,6 +13,27 @@ export const metadata = {
 
 const ARTICLES = [
   {
+    href: '/kennisbank/kraanwater-buitenland',
+    image: '/assets/img/glas-water.webp',
+    category: 'Waterkwaliteit',
+    title: 'Kraanwater buitenland: in welke landen kun je het drinken?',
+    excerpt: 'Per land wel of niet drinken, plus ijsblokjes, tandenpoetsen en water onderweg veilig maken.',
+  },
+  {
+    href: '/kennisbank/water-zuiveren-noodsituatie',
+    image: '/assets/img/een-kraan.jpg',
+    category: 'Veiligheid',
+    title: 'Water zuiveren in een noodsituatie: wat werkt echt?',
+    excerpt: 'Koken, filteren en tabletten vergeleken, hoeveel water je bewaart en wat je doet bij een kookadvies.',
+  },
+  {
+    href: '/kennisbank/wit-water-uit-de-kraan',
+    image: '/assets/img/twee-kranen.jpg',
+    category: 'Waterkwaliteit',
+    title: 'Wit water uit de kraan: oorzaak en de glastest',
+    excerpt: 'Lucht, kalk of iets anders? Met de glastest weet je het binnen een minuut.',
+  },
+  {
     href: '/kennisbank/medicijnresten-in-drinkwater',
     image: '/assets/img/filters-closeup.png',
     category: 'Waterkwaliteit',

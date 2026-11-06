@@ -115,7 +115,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wanneer is kraanwater tijdelijk niet veilig?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Heel af en toe gaat er iets mis, bijvoorbeeld bij een leidingbreuk of een verontreiniging. Het waterbedrijf geeft dan een kookadvies voor het getroffen gebied: water eerst koken voordat je het drinkt. Dat wordt altijd gecommuniceerd en duurt meestal kort.
+              Heel af en toe gaat er iets mis, bijvoorbeeld bij een leidingbreuk of een verontreiniging. Het waterbedrijf geeft dan een kookadvies voor het getroffen gebied: water eerst koken voordat je het drinkt. Dat wordt altijd gecommuniceerd en duurt meestal kort. Hoe je water dan veilig maakt, lees je in <Link href="/kennisbank/water-zuiveren-noodsituatie" className="underline hover:text-ink">water zuiveren in een noodsituatie</Link>; ga je op reis, check dan of je het <Link href="/kennisbank/kraanwater-buitenland" className="underline hover:text-ink">kraanwater in het buitenland</Link> kunt drinken.
             </p>
             <ul className="mt-4 space-y-2 text-dim leading-relaxed list-disc pl-5">
               <li><strong className="text-ink">Kookadvies of storing?</strong> Check het met je postcode in onze <Link href="/storingen" className="underline hover:text-ink">storingen-check</Link>.</li>

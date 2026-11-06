@@ -149,7 +149,7 @@ export default function Page() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Keuzehulp</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Voor wie past een waterfilter Berkey?</h2>
               <p className="mt-4 text-dim leading-relaxed">
-                Een <strong className="text-ink">waterfilter Berkey</strong> past vooral als je geen aansluiting hebt of wilt: in een vakantiehuisje, tijdens een reis of als reserve voor noodgevallen. Ook wie niets aan de keuken wil veranderen, zit er goed mee.
+                Een <strong className="text-ink">waterfilter Berkey</strong> past vooral als je geen aansluiting hebt of wilt: in een vakantiehuisje, tijdens een reis of als reserve voor noodgevallen. Ook wie niets aan de keuken wil veranderen, zit er goed mee. Wat een filter in een noodgeval wel en niet doet, lees je in <Link href="/kennisbank/water-zuiveren-noodsituatie" className="underline hover:text-ink">water zuiveren in een noodsituatie</Link>.
               </p>
               <p className="mt-4 text-dim leading-relaxed">
                 Wil je elke dag zonder moeite gefilterd water uit de kraan, dan past een vast systeem meestal beter. Ons <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> werkt zonder opslagtank en filtert op het moment dat je tapt. Past dat in jouw keuken? Dat zie je met de <Link href="/maatcheck" className="underline hover:text-ink">maatcheck</Link>.
