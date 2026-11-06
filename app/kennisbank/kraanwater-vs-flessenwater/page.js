@@ -161,7 +161,7 @@ export default function Page() {
               <li><strong className="text-ink">Tafelwater</strong> kan uit elke bron komen, ook uit de kraan, en mag behandeld worden, bijvoorbeeld gefilterd of met toegevoegde mineralen.</li>
             </ul>
             <p className="mt-4 text-dim leading-relaxed">
-              Wie kraanwater vs flessenwater vergelijkt, vergelijkt dus soms gewoon kraanwater met kraanwater in een fles.
+              Wie kraanwater vs flessenwater vergelijkt, vergelijkt dus soms gewoon kraanwater met kraanwater in een fles. Welke merken bronwater of mineraalwater zijn en wat er in de fles zit, lees je in onze uitleg over <Link href="/kennisbank/bronwater" className="underline hover:text-ink">bronwater</Link>.
             </p>
           </div>
         </section>

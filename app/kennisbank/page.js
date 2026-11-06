@@ -13,6 +13,20 @@ export const metadata = {
 
 const ARTICLES = [
   {
+    href: '/kennisbank/bronwater',
+    image: '/assets/img/glas-water.webp',
+    category: 'Vergelijking',
+    title: 'Bronwater: wat is het en is het beter dan kraanwater?',
+    excerpt: 'Het verschil met mineraalwater, wat er in flessenwater zit en wat bronwater per jaar kost.',
+  },
+  {
+    href: '/kennisbank/waterkoeler-thuis',
+    image: '/assets/img/3-weg-kraan.png',
+    category: 'Vergelijking',
+    title: 'Waterkoeler thuis: met fles, op de leiding of een filterkraan?',
+    excerpt: 'Kosten, gemak, hygiëne en waterkwaliteit van drie manieren om thuis water te tappen.',
+  },
+  {
     href: '/kennisbank/kraanwater-buitenland',
     image: '/assets/img/glas-water.webp',
     category: 'Waterkwaliteit',

@@ -81,6 +81,8 @@ export default function sitemap() {
     { path: '/kennisbank/kraanwater-buitenland', priority: 0.5, changeFrequency: 'monthly' },
     { path: '/kennisbank/water-zuiveren-noodsituatie', priority: 0.5, changeFrequency: 'monthly' },
     { path: '/kennisbank/wit-water-uit-de-kraan', priority: 0.5, changeFrequency: 'monthly' },
+    { path: '/kennisbank/bronwater', priority: 0.5, changeFrequency: 'monthly' },
+    { path: '/kennisbank/waterkoeler-thuis', priority: 0.5, changeFrequency: 'monthly' },
     { path: '/algemene-voorwaarden', priority: 0.3, changeFrequency: 'yearly' },
     { path: '/privacybeleid', priority: 0.3, changeFrequency: 'yearly' },
     { path: '/cookiebeleid', priority: 0.3, changeFrequency: 'yearly' },
