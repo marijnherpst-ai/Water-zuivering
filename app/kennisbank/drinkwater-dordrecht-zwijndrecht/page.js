@@ -59,6 +59,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/een-kraan.jpg"
         url="https://www.water-zuivering.nl/kennisbank/drinkwater-dordrecht-zwijndrecht"
         datePublished="2026-10-26"
+        dateModified="2026-11-02"
         about={[{ '@type': 'City', name: 'Dordrecht', sameAs: 'https://nl.wikipedia.org/wiki/Dordrecht' }, { '@type': 'City', name: 'Zwijndrecht', sameAs: 'https://nl.wikipedia.org/wiki/Zwijndrecht_(Nederland)' }]}
         mentions={[{ '@type': 'Organization', name: 'Evides Waterbedrijf', url: 'https://www.evides.nl' }, { '@type': 'Organization', name: 'Oasen', url: 'https://www.oasen.nl' }]}
       />
@@ -87,7 +88,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Evides en Greenpeace (22 september 2026)', url: 'https://www.evides.nl/pfas-en-drinkwater/lokale-situatie-in-dordrecht' }}>
               Drinkwater Dordrecht komt van Evides, uit productielocatie Baanhoek: Maaswater uit de Biesbosch plus diep grondwater. Het voldoet aan de wettelijke normen. Volgens Greenpeace zit heel Dordrecht wel in de PFAS-categorie rood, boven de RIVM-richtwaarde. Volgens Evides komt dat niet door Chemours, maar door PFAS in de Maas.
             </KortAntwoord>
-            <AuteurRegel bijgewerkt="26 oktober 2026" />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

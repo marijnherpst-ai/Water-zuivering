@@ -1,0 +1,652 @@
+# Water-zuivering kennisbank: korte antwoorden en veelgestelde vragen
+
+> Per artikel van https://www.water-zuivering.nl/kennisbank het korte antwoord en de veelgestelde vragen, bedoeld voor AI-assistenten en zoekmachines. Water-zuivering levert en installeert omgekeerde-osmosesystemen voor drinkwater thuis in heel Nederland.
+
+## Wat is een 3-weg kraan en heb je die nodig?
+URL: https://www.water-zuivering.nl/kennisbank/3-weg-kraan-uitleg
+Bijgewerkt: 2026-10-27
+
+Veelgestelde vragen:
+- Heb ik een 3-weg kraan nodig voor een waterzuiveraar? Nee. Een waterzuiveringssysteem werkt ook prima met een aparte, losse kraan voor gefilterd water. Een 3-weg kraan is een kwestie van voorkeur voor gemak en uiterlijk: alles in één kraan, zonder extra gat in je aanrecht.
+- Welk water komt er uit een 3-weg kraan? Gewoon kraanwater, gefilterd water en, optioneel, gemineraliseerd water. Met een omschakelaar kies je welke stroom je nodig hebt.
+- In welke afwerkingen is de 3-weg kraan verkrijgbaar? De 3-weg kraan van Water-zuivering is verkrijgbaar in vier afwerkingen: chroom, geborsteld staal, goud en zwart.
+- Werkt de 3-weg kraan met elk Water-zuivering systeem? Ja. De 3-weg kraan is los verkrijgbaar als accessoire, werkt met elk Water-zuivering systeem en wordt vakkundig meegeïnstalleerd.
+
+## Waterfilter Berkey: hoe het werkt en wat het kan
+URL: https://www.water-zuivering.nl/kennisbank/berkey-waterfilter
+Bijgewerkt: 2026-11-06
+
+Kort antwoord: Een Berkey-waterfilter is een zwaartekrachtfilter: je giet water in de bovenste bak en het zakt door filterelementen naar de onderste. Het werkt zonder stroom of aansluiting. De prestaties komen vooral uit opgaven van de fabrikant. In de VS loopt al sinds 2022 een conflict met de milieutoezichthouder EPA over de filters.
+
+Veelgestelde vragen:
+- Wat is een waterfilter Berkey? Een waterfilter dat werkt op zwaartekracht. Je giet water in een bovenste bak, het zakt door filterelementen en je tapt het onderin af. Er is geen stroom of aansluiting voor nodig.
+- Hoe lang gaan Berkey-filters mee? Dealers noemen ongeveer 22.700 liter per paar Black Berkey-elementen. Dat is een opgave van verkopers. Hoe lang ze in de praktijk meegaan, hangt ook af van het water dat je filtert.
+- Filtert een Berkey PFAS? Berkey en dealers claimen dat wel, maar we vonden daarvoor geen onafhankelijke certificering volgens NSF/ANSI 53 of 58, de normen die de Amerikaanse EPA noemt voor PFAS.
+- Is de Berkey verboden? In Nederland hebben we geen verbod gevonden. In de VS gaf de EPA stop-sale-bevelen voor de Black Berkey-elementen, omdat die volgens de toezichthouder onder de regels voor bestrijdingsmiddelen vallen. De fabrikant bestrijdt dat.
+- Wat is het verschil tussen Berkey en British Berkefeld? Het zijn verschillende merknamen die allebei bekendstaan om zwaartekrachtfilters. Vergelijk altijd het precieze model en de filterkaarsen, want daar zit het verschil in.
+- Is een Berkey beter dan omgekeerde osmose? Ze zijn voor iets anders gemaakt. Een Berkey werkt overal zonder stroom. Osmose filtert via een membraan van 0,0001 micron en levert direct uit de kraan, maar heeft een aansluiting nodig.
+
+## Wat is de beste waterfilter voor thuis?
+URL: https://www.water-zuivering.nl/kennisbank/beste-waterfilter-voor-thuis
+Bijgewerkt: 2026-10-27
+
+Kort antwoord: Dat hangt af van wat je kwijt wilt. Voor een betere smaak en minder chloor is een waterfilterkan of kraanfilter genoeg. Wil je ook PFAS, medicijnresten, microplastics en kalk uit je water, dan is een omgekeerde-osmosesysteem onder de gootsteen de enige optie die dat grondig doet, met onbeperkt gefilterd water uit je eigen kraan.
+
+Veelgestelde vragen:
+- Wat is de beste waterfilter voor thuis? Dat hangt af van wat je belangrijk vindt. Wil je puur de chloorsmaak kwijt en zo min mogelijk uitgeven, dan volstaat een waterfilterkan. Wil je ook PFAS, medicijnresten en microplastics eruit, dan is een waterzuiveraar onder de gootsteen (osmose) de grondigste keuze.
+- Is een waterfilterkan net zo goed als een waterzuiveraar? Nee. Een waterfilterkan filtert vooral chloor en verbetert de smaak, maar houdt PFAS, medicijnresten en microplastics niet of nauwelijks tegen. Een osmosesysteem verwijdert daarvan tot 99%.
+- Wat kost de beste waterfilter voor thuis? Een waterfilterkan kost enkele tientjes, een kraanfilter meestal onder de honderd euro. Een waterzuiveraar onder de gootsteen kost meer bij aanschaf, maar heeft geen doorlopende kosten voor flessenwater en gaat jarenlang mee.
+- Moet een waterzuiveraar onder de gootsteen professioneel geïnstalleerd worden? Het kan in principe zelf, maar een vakkundige installatie voorkomt lekkages en zorgt dat de waterdruk goed blijft. De meeste aanbieders regelen dit binnen één dag.
+- Welke beste waterfilter voor thuis verwijdert PFAS? Alleen filters met een omgekeerde-osmose-membraan (0,0001 micron) verwijderen PFAS effectief — een waterfilterkan of eenvoudig kraanfilter houdt dit nauwelijks tegen.
+- Is een beste waterfilter kraan hetzelfde als een waterzuiveraar onder de gootsteen? Nee. Een kraanfilter (opzetstuk) zit zichtbaar op de kraan en filtert minder grondig; een waterzuiveraar onder de gootsteen is een ingebouwd systeem met een veel fijnere filtratie.
+- Welke waterfilter is het beste voor een gezin met kinderen? Een systeem onder de gootsteen, omdat je dan nooit een kan hoeft bij te vullen en er altijd onbeperkt zuiver water beschikbaar is — ook praktisch voor het bereiden van flesvoeding.
+- Verschilt de beste waterfilter voor thuis per regio in Nederland? De filtratiebehoefte verschilt niet sterk per regio — alle Nederlandse drinkwaterbedrijven voldoen aan dezelfde landelijke normen. Wel kan de waterhardheid (kalk) regionaal verschillen.
+- Kan ik zien of er nu een storing of kookadvies geldt in mijn regio? Ja — gebruik onze eigen storingen-check om direct te zien of er in jouw buurt een actuele melding is, los van welk filter je kiest.
+- Hoe vaak moet ik het filter van de beste waterfilter voor thuis vervangen? Dat verschilt per type: een filterkan meestal maandelijks, een kraanfilter elke 2-3 maanden, en bij een systeem onder de gootsteen gemiddeld elk jaar het voor- en nafilter en elke 2 jaar het membraan.
+- Wat is de grootste fout die mensen maken bij het kiezen van een waterfilter? Alleen naar de aanschafprijs kijken, zonder de doorlopende kosten voor vervangingsfilters mee te rekenen — op jaarbasis kan dat het prijsverschil met een grondiger systeem flink verkleinen.
+- Kan ik meerdere type waterfilters combineren? Ja, sommige huishoudens gebruiken bijvoorbeeld een waterontharder voor kalk in combinatie met een osmosesysteem voor de rest — dat is geen overbodige dubbeling, want beide lossen een ander probleem op.
+
+## Bronwater: wat is het en is het beter dan kraanwater?
+URL: https://www.water-zuivering.nl/kennisbank/bronwater
+Bijgewerkt: 2026-11-06
+
+Kort antwoord: Bronwater is water uit een onderaardse bron dat in zijn natuurlijke staat wordt verpakt. Anders dan mineraalwater hoeft de bron niet officieel erkend te zijn en is de samenstelling niet vast. Bronwater is niet gezonder dan Nederlands kraanwater, maar wel honderd tot duizend keer duurder per liter.
+
+Veelgestelde vragen:
+- Wat is bronwater? Bronwater is water dat uit een onderaardse bron komt en in zijn natuurlijke staat wordt verpakt. Het wordt niet ontsmet. Anders dan bij mineraalwater hoeft de bron niet officieel erkend te zijn en hoeft de samenstelling van mineralen niet constant te zijn.
+- Wat is het verschil tussen mineraalwater en bronwater? Natuurlijk mineraalwater komt uit een door de overheid erkende bron, heeft een vaste samenstelling en moet direct bij de bron worden verpakt. Bronwater komt ook uit een onderaardse bron, maar zonder die erkenning en zonder vaste samenstelling.
+- Is Spa water bronwater? Spa Reine wordt verkocht als natuurlijk mineraalwater, niet als bronwater. Het komt uit een erkende bron in de Belgische Ardennen. Op het etiket zie je altijd welke soort water je koopt.
+- Is bronwater gezonder dan kraanwater? Nee. Het Voedingscentrum stelt dat mineraal- of bronwater niet gezonder is dan kraanwater. Nederlands kraanwater wordt strenger en vaker gecontroleerd dan veel flessenwater. Het grootste verschil zit in de smaak en de prijs.
+- Welke bronwater merken zijn er in Nederland? Bekende merken in Nederlandse winkels zijn Bar-le-Duc, Sourcy, Spa, Vittel en Evian. Sourcy en Spa Reine zijn officieel natuurlijk mineraalwater. Supermarkten verkopen daarnaast eigen huismerken bronwater; op het etiket staat uit welke bron het komt.
+- Zit er PFAS in bronwater? Soms. Belgisch onderzoek vond sporen van zeer kortketenige PFAS in bron- en mineraalwater uit de Ardennen, de Hoge Venen en Oost-Vlaanderen. Een internationaal onderzoek liet zien dat flessenwater niet automatisch minder PFAS bevat dan kraanwater.
+- Is bronwater in een glazen fles beter? Glas geeft geen plastic deeltjes af aan het water, en in glas proef je geen plastic. Het water zelf is hetzelfde. Glas is wel duurder en zwaarder, en de dop kan zelf ook deeltjes afgeven.
+
+## Bruin water uit de kraan: oorzaak, risico's en wat je eraan doet
+URL: https://www.water-zuivering.nl/kennisbank/bruin-water-uit-de-kraan
+Bijgewerkt: 2026-11-06
+
+Kort antwoord: Bruin water uit de kraan komt meestal door ijzer- en mangaandeeltjes die in de waterleiding loskomen, bijvoorbeeld bij werkzaamheden, een leidingbreuk of veel verbruik tegelijk. Het is niet schadelijk, wel onsmakelijk. Draai de kranen dicht, wacht een paar uur en laat dan de kraan bij de watermeter lopen tot het water helder is.
+
+Veelgestelde vragen:
+- Waarom komt er bruin water uit de kraan? Bruin water uit de kraan ontstaat meestal doordat ijzer- en mangaandeeltjes in de waterleiding loskomen. Die stoffen zitten van nature in grondwater en zetten zich op den duur af in leidingen. Bij drukverschillen, zoals bij werkzaamheden, een leidingbreuk of heel veel verbruik tegelijk, komen ze weer los.
+- Is bruin water uit de kraan gevaarlijk? Nee, je wordt er niet ziek van, maar het smaakt vies. Geef baby's en ouderen voor de zekerheid iets anders en wacht zelf ook met drinken tot het water weer helder is.
+- Hoe lang moet ik de kraan laten lopen? Er is geen vaste tijd. Houd de kranen eerst een paar uur dicht en laat daarna de kraan die het dichtst bij de watermeter zit lopen tot het water helemaal helder is. Is het na lang doorspoelen nog steeds bruin, neem dan contact op met je waterbedrijf.
+- Kan ik wassen met bruin water? Liever niet, zeker geen witte of lichte was. Zitten er toch roestvlekken in, laat de kleding dan niet drogen maar was hem direct opnieuw met een vlekkenmiddel.
+- Wat als alleen het warme water bruin is? Dan zit de oorzaak meestal in je boiler, geiser of andere warmwatervoorziening, niet in het leidingnet van het waterbedrijf. Laat die nakijken door een installateur.
+- Wie moet ik bellen bij bruin water uit de kraan? Je eigen waterbedrijf. Het storingsnummer staat op hun website. Vitens heeft bijvoorbeeld een gratis storingsnummer dat dag en nacht bereikbaar is: 0800 0359.
+- Houdt een waterfilter bruin water tegen? Een goed voorfilter vangt roest, zand en slib. Het PPC-voorfilter van een Water-zuivering osmosesysteem houdt deeltjes tot 1 micron tegen, zodat die niet in je drinkwater komen. Bij veel roest raakt zo'n voorfilter wel sneller vol.
+
+## Chloor in kraanwater: zit het in Nederland in je water?
+URL: https://www.water-zuivering.nl/kennisbank/chloor-in-kraanwater
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Normaal gesproken zit er geen chloor in Nederlands kraanwater. Drinkwaterbedrijven maken het water veilig met meerdere zuiveringsstappen, uv-licht en een goed leidingnet, in plaats van met chloor. Alleen bij een besmetting, een leidingbreuk of werkzaamheden wordt soms tijdelijk chloor gebruikt. Ruik je chloor, check dan of er in je buurt iets speelt.
+
+Veelgestelde vragen:
+- Zit er chloor in Nederlands kraanwater? Normaal gesproken niet. Nederlandse drinkwaterbedrijven gebruiken voor de desinfectie geen chloor, in tegenstelling tot de meeste andere landen. Ze maken het water veilig met meerdere zuiveringsstappen en uv-licht.
+- Wanneer wordt er toch chloor gebruikt? Alleen tijdelijk, bijvoorbeeld bij een besmetting, na een leidingbreuk of bij werkzaamheden aan het leidingnet. Dan kan het waterbedrijf een leiding desinfecteren of een tijdje chloor toevoegen. Daarna wordt dat weer gestopt.
+- Waarom gebruikt Nederland geen chloor? Chloor kan met natuurlijke stoffen in water bijproducten vormen die je liever niet binnenkrijgt, en het geeft een smaak en geur die veel mensen niet lekker vinden. Omdat het Nederlandse water op andere manieren goed gezuiverd wordt, is chloor niet nodig.
+- Mijn kraanwater ruikt naar chloor, wat nu? Kijk of er in je buurt werkzaamheden of een storing zijn, bijvoorbeeld met onze storingen-check, of bel je drinkwaterbedrijf. Ruikt het water lang naar chloor zonder duidelijke reden, laat het dan weten aan je waterbedrijf.
+- Is chloor in drinkwater schadelijk? In de lage hoeveelheden die in veel landen in drinkwater zitten, niet direct. Chloor wordt juist gebruikt om ziekteverwekkers te doden. Het nadeel zit vooral in de smaak en geur, en in bijproducten die kunnen ontstaan.
+- Hoe haal je chloor uit water? Actieve kool neemt chloor goed op. Een filterkan, kraanfilter of het koolstofvoorfilter van een osmosesysteem haalt chloor er dus uit. Ook water een tijdje laten staan in een open kan helpt, omdat chloor dan langzaam verdampt.
+- Zit er chloor in kraanwater in het buitenland? In de meeste andere landen wel. Daar blijft er een kleine hoeveelheid chloor in het water om bacteriegroei in de leidingen tegen te gaan. Daarom proef je op vakantie vaak een chloorsmaak die je thuis niet kent.
+
+## Drinkwater Amsterdam: waar het vandaan komt en wat erin zit
+URL: https://www.water-zuivering.nl/kennisbank/drinkwater-amsterdam
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Drinkwater Amsterdam komt van Waternet, uit Rijnwater dat door de duinen zakt (Leiduin) en kwelwater uit de Bethunepolder (Weesperkarspel). Het water is zacht, gemiddeld 7,8 °dH, en voldoet aan de wettelijke normen. Wel valt heel Amsterdam volgens Greenpeace in de hoogste PFAS-categorie: ruim twee keer de RIVM-richtwaarde.
+
+Veelgestelde vragen:
+- Waar komt het drinkwater in Amsterdam vandaan? Waternet maakt het Amsterdamse drinkwater op twee plekken. Leiduin gebruikt Rijnwater uit het Lekkanaal dat eerst door de Amsterdamse Waterleidingduinen zakt. Weesperkarspel gebruikt kwelwater uit de Bethunepolder dat eerst door de Waterleidingplas gaat. Welke van de twee je krijgt, hangt af van of je west of oost van de Amstel woont.
+- Is het drinkwater in Amsterdam hard of zacht? Zacht. Waternet geeft een gemiddelde hardheid van 7,8 Duitse graden (°dH). Pas vanaf 12 °dH spreek je van hard water. Je hebt in Amsterdam dus minder last van kalkaanslag dan in grote delen van het oosten en zuiden van het land.
+- Zit er PFAS in het Amsterdamse kraanwater? Ja. Volgens de analyse van Greenpeace (22 september 2026) valt heel Amsterdam in de categorie donkerrood: meer dan anderhalf keer de RIVM-richtwaarde van 4,4 ng/l PEQ, en volgens Greenpeace ruim twee keer. De wettelijke Europese norm wordt wel gehaald. Het RIVM noemt het drinken van dit water niet gevaarlijk.
+- Wordt er chloor aan het Amsterdamse drinkwater toegevoegd? Weinig tot geen. Waternet zuivert het water vooral op natuurlijke wijze, via de duinen en de Waterleidingplas. Daardoor is chloor normaal gesproken niet nodig. Alleen bij een besmetting of bij werkzaamheden kan het tijdelijk wel gebruikt worden.
+- Wat doet Waternet tegen PFAS? Waternet zet actieve kool in om PFAS uit het drinkwater te halen en onderzoekt andere technieken, zoals membranen. Volgens Waternet kost die extra zuivering jaarlijks miljoenen euro's. Het bedrijf pleit daarnaast voor een Europees totaalverbod op PFAS.
+- Hoe check ik de PFAS-waarde op mijn adres in Amsterdam? Vul je postcode in bij onze PFAS-check. Je ziet dan de indicatie voor jouw regio, met een link naar de postcodechecker van Greenpeace voor de precieze uitslag op vier cijfers.
+- Heb ik in Amsterdam een waterontharder nodig? Meestal niet. Met 7,8 °dH is het Amsterdamse water al zacht. Een ontharder haalt bovendien alleen kalk weg en doet niets tegen PFAS of medicijnresten.
+
+## Drinkwater Dordrecht en Zwijndrecht: bron, PFAS en Chemours
+URL: https://www.water-zuivering.nl/kennisbank/drinkwater-dordrecht-zwijndrecht
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Drinkwater Dordrecht komt van Evides, uit productielocatie Baanhoek: Maaswater uit de Biesbosch plus diep grondwater. Het voldoet aan de wettelijke normen. Volgens Greenpeace zit heel Dordrecht wel in de PFAS-categorie rood, boven de RIVM-richtwaarde. Volgens Evides komt dat niet door Chemours, maar door PFAS in de Maas.
+
+Veelgestelde vragen:
+- Waar komt het drinkwater in Dordrecht vandaan? Uit productielocatie Baanhoek van Evides. Daar wordt Maaswater uit de spaarbekkens in de Brabantse Biesbosch gemengd met diep grondwater van het Eiland van Dordrecht. Dat grondwater komt uit putten van 50 tot 150 meter diep.
+- Wie levert het drinkwater in Zwijndrecht? In Zwijndrecht en Hendrik-Ido-Ambacht beheert Oasen het leidingnet. Bij het kookadvies van juni 2026 gaven Evides en Oasen samen het advies voor Dordrecht, Zwijndrecht en Hendrik-Ido-Ambacht. Welk bedrijf op jouw adres levert, staat op je waterrekening.
+- Zit er PFAS in het drinkwater van Dordrecht? Ja, in kleine hoeveelheden. Volgens de analyse van Greenpeace (22 september 2026) valt heel Dordrecht in de categorie rood: tussen 4,4 en 6,6 ng/l PEQ, dus boven de RIVM-richtwaarde. Evides meldt dat alle waarden ruim onder de wettelijke Europese norm van 100 ng/l liggen.
+- Komt de PFAS in het Dordtse kraanwater van Chemours? Volgens Evides niet. Het innamepunt in de Biesbosch ligt ten zuiden en stroomopwaarts van Chemours, en de wind waait meestal vanuit het zuidwesten, dus van het innamepunt af. Het grondwater onder Baanhoek wordt niet voor drinkwater gebruikt. De PFAS in het drinkwater komt vooral mee met het Maaswater.
+- Wat gebeurde er bij het kookadvies in juni 2026? Op 13 juni 2026 gaven de waterbedrijven een kookadvies voor zo'n 200.000 inwoners van Dordrecht, Zwijndrecht en Hendrik-Ido-Ambacht, omdat tests wezen op de E. coli-bacterie. Na extra controles bleek de bacterie niet in het water te zitten en werd het advies na ongeveer een dag ingetrokken.
+- Is het kraanwater in Dordrecht veilig om te drinken? Ja. Evides en de gemeente noemen het drinkwater betrouwbaar; het voldoet aan de Europese drinkwaterrichtlijn. Wie ook onder de RIVM-richtwaarde voor PFAS wil zitten, kan thuis extra filteren met een osmosesysteem.
+- Hoe weet ik hoeveel PFAS er op mijn adres zit? Doe onze PFAS-check met je postcode. Je ziet de indicatie voor jouw regio en een link naar de postcodechecker van Greenpeace voor de precieze uitslag.
+
+## Drinkwater laten testen: waar, hoe en wanneer het zin heeft
+URL: https://www.water-zuivering.nl/kennisbank/drinkwater-laten-testen
+Bijgewerkt: 2026-10-27
+
+Kort antwoord: Je drinkwaterbedrijf meet het water in jouw gebied zelf en publiceert de uitslagen gratis. Een eigen test is vooral zinvol bij een huis van vóór 1960 (lood, ongeveer 50 euro), bij water uit een eigen put, of als je de PFAS voor jouw adres precies wilt weten (rond 270 euro). Kies altijd een gecertificeerd laboratorium.
+
+Veelgestelde vragen:
+- Waar kan ik mijn kraanwater laten testen? Bij een gecertificeerd laboratorium. Voor lood is er loodinwatertesten.nl, een initiatief van Het Waterlaboratorium met Dunea, PWN en Waternet. De gemeente Utrecht noemt daarnaast Water-Lab en Aquador. Voor PFAS zijn er commerciële aanbieders met een thuistestpakket.
+- Wat kost het om water te laten testen? Een test op lood kost volgens de Rijksoverheid ongeveer 50 euro. Een PFAS-test kost rond de 270 euro; testenoppfas.nl rekent bijvoorbeeld € 269,50. Een uitgebreid pakket met meerdere stoffen gaat op offerte.
+- Kan ik mijn drinkwater gratis laten testen? Een gratis test voor particulieren is er meestal niet. Wel kun je gratis de meetgegevens van je drinkwaterbedrijf opzoeken. Die meten het water in jouw leveringsgebied meerdere keren per jaar in een geaccrediteerd lab.
+- Hoe neem ik een watermonster voor een loodtest? Laat het water minstens zes uur stilstaan, bijvoorbeeld &rsquo;s nachts. Vang &rsquo;s ochtends het eerste water op in de monsterflesjes van het lab en stuur ze zo snel mogelijk terug. Volg altijd de instructie van het lab zelf.
+- Hoe lang duurt het voor ik de uitslag heb? Dat verschilt per lab en per test. Voor een PFAS-test noemen aanbieders ongeveer tien werkdagen. De uitslag van een loodtest via loodinwatertesten.nl krijg je per mail.
+- Zijn thuistests met teststrips betrouwbaar? Teststrips voor hardheid of pH geven een indicatie, geen exacte meting. Voor lood, PFAS of bacteriën heb je een laboratorium nodig; die stoffen kun je niet betrouwbaar met een strip meten.
+- Wat doe ik als er te veel lood in mijn water zit? Laat de loden leidingen vervangen. Tot die tijd drinken zwangeren en kinderen tot en met 7 jaar flessenwater. In een huurwoning moet de verhuurder de leidingen vervangen.
+
+## Drinkwater Rotterdam: bron, PFAS en watertappunten
+URL: https://www.water-zuivering.nl/kennisbank/drinkwater-rotterdam
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Drinkwater Rotterdam komt van Evides en wordt gemaakt van Maaswater dat eerst in de spaarbekkens in de Biesbosch staat. Het water voldoet aan de wettelijke eisen. Wel plaatste Greenpeace in september 2026 heel Rotterdam in de hoogste PFAS-categorie, boven de RIVM-richtwaarde van 4,4 ng/l. Greenpeace en het RIVM blijven kraanwater drinken adviseren.
+
+Veelgestelde vragen:
+- Waar komt het drinkwater in Rotterdam vandaan? Van de Maas. Het water staat eerst in de spaarbekkens in de Biesbosch en wordt daarna door Evides gezuiverd, onder meer op de locaties Berenplaat en Kralingen.
+- Is kraanwater in Rotterdam veilig om te drinken? Ja. Het voldoet aan de wettelijke eisen, en zowel Greenpeace als het RIVM blijft adviseren kraanwater te drinken. Wel ligt de PFAS-waarde volgens de Greenpeace-analyse boven de RIVM-richtwaarde.
+- Zit er PFAS in het drinkwater van Rotterdam? Ja. Greenpeace plaatste op 22 september 2026 de hele gemeente in de hoogste categorie, donkerrood. Dat is ruim boven de RIVM-richtwaarde van 4,4 ng/l.
+- Welk waterbedrijf heeft Rotterdam? Evides levert het drinkwater in Rotterdam. Bij hen regel je je aansluiting, rekening en meterstanden.
+- Hoe hard is het water in Rotterdam? Dat verschilt per productielocatie. Evides geeft de precieze waterhardheid voor jouw postcode via Mijn waterhardheid.
+- Waar vind ik watertappunten in Rotterdam? Rotterdam heeft meer dan 120 gratis openbare watertappunten. De locaties staan op de kaart van de gemeente, en Evides heeft een overzicht met ook tappunten van anderen.
+
+## Drinkwaternormen in Nederland: wat wordt er gecontroleerd?
+URL: https://www.water-zuivering.nl/kennisbank/drinkwaternormen-nederland
+Bijgewerkt: 2026-10-21
+
+Kort antwoord: De drinkwaternormen in Nederland staan in de Drinkwaterwet en het Drinkwaterbesluit, met grenswaarden voor honderden stoffen: van bacteriën en zware metalen tot nitraat en een deel van de PFAS. Drinkwaterbedrijven testen, de Inspectie Leefomgeving en Transport (ILT) houdt toezicht. Voor veel medicijnresten en microplastics bestaan nog geen wettelijke grenswaarden.
+
+Veelgestelde vragen:
+- Wie controleert de drinkwaternormen in Nederland? Drinkwaterbedrijven zijn wettelijk verplicht regelmatig te testen op honderden parameters, onder toezicht van de Inspectie Leefomgeving en Transport (ILT).
+- Vallen PFAS onder de drinkwaternormen? Er gelden voor een deel van de PFAS-stoffen inmiddels grenswaarden, maar niet voor alle varianten — en de norm ligt hoger dan wat sommige mensen wenselijk vinden voor langdurige blootstelling.
+- Zijn medicijnresten opgenomen in de normen? Nee, voor de meeste medicijnresten en microplastics bestaan (nog) geen wettelijke grenswaarden in drinkwater, ook al worden ze soms wel in sporen aangetroffen.
+- Betekent voldoen aan de norm dat water perfect zuiver is? Het betekent dat het water veilig is volgens de huidige wetenschappelijke inzichten — niet dat er helemaal geen sporen van stoffen meer in zitten.
+- Hoe vaak wordt kraanwater in Nederland getest? Drinkwaterbedrijven testen doorlopend, met een frequentie die afhangt van het type parameter — sommige stoffen worden dagelijks gecontroleerd, andere periodiek.
+- Worden de testresultaten openbaar gemaakt? Ja, drinkwaterbedrijven publiceren jaarlijkse kwaliteitsrapportages, vaak ook regionaal uitgesplitst.
+
+## Gedestilleerd water drinken: kan dat, en is het gezond?
+URL: https://www.water-zuivering.nl/kennisbank/gedestilleerd-water-drinken
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Je kunt gedestilleerd water drinken; een glas is niet schadelijk. Er zitten alleen geen mineralen in, waardoor het vlak smaakt en je de calcium en magnesium mist die kraanwater meegeeft. Als vast drinkwater is het daarom minder geschikt. Wil je heel zuiver drinkwater, dan is osmosewater met een mineraalfilter een betere keuze.
+
+Veelgestelde vragen:
+- Kun je gedestilleerd water drinken? Ja, een glas gedestilleerd water is niet schadelijk. Het smaakt wel vlak, omdat er geen mineralen in zitten. Als je enige drinkwater is het minder geschikt: je mist de calcium en magnesium die gewoon kraanwater meegeeft.
+- Is gedestilleerd water gezond? Het is heel zuiver, maar dat maakt het niet gezonder dan kraanwater. Er zitten geen mineralen in. De WHO heeft gewezen op mogelijke nadelen als je langdurig alleen water met heel weinig mineralen drinkt. Je haalt de meeste mineralen wel uit je eten, dus af en toe is het geen probleem.
+- Wat is het verschil tussen gedestilleerd en gedemineraliseerd water? Gedestilleerd water wordt gemaakt door verdampen en weer laten condenseren. Gedemineraliseerd water wordt gemaakt met ionenwisselaars die zouten en mineralen eruit halen. Beide bevatten vrijwel geen mineralen meer, maar bij verdampen blijven ook andere stoffen achter.
+- Kun je gedemineraliseerd water uit de supermarkt drinken? Liever niet. Gedemineraliseerd water uit de supermarkt of bouwmarkt is bedoeld voor je strijkijzer of auto, niet als drinkwater. Het wordt niet gemaakt en verpakt volgens de eisen voor drinkwater. Kijk altijd op de verpakking.
+- Is osmosewater hetzelfde als gedestilleerd water? Nee. Beide zijn heel zuiver, maar ze worden anders gemaakt. Osmosewater ontstaat door filteren via een membraan, gedestilleerd water door verdampen. Osmosewater bevat nog een heel klein beetje mineralen, en met een mineraalfilter voeg je calcium en magnesium weer toe.
+- Waarom smaakt gedestilleerd water vlak? Mineralen zoals calcium, magnesium en bicarbonaat geven water zijn smaak. Zonder die mineralen smaakt water leeg of vlak. Daarom voegen veel osmosesystemen na het filteren weer mineralen toe.
+- Mag je gedestilleerd water gebruiken voor babyvoeding? Het Voedingscentrum adviseert gewoon koud kraanwater voor flesvoeding, of flessenwater waarvan op het etiket staat dat het geschikt is voor babyvoeding. Gedestilleerd water hoort daar niet bij.
+
+## Handelingskader PFAS: wat betekent dat voor je water?
+URL: https://www.water-zuivering.nl/kennisbank/handelingskader-pfas-drinkwater
+Bijgewerkt: 2026-10-21
+
+Veelgestelde vragen:
+- Geldt het handelingskader voor heel Nederland? Het landelijke kader vormt de basis, maar sommige provincies en gemeenten hanteren lokaal strengere grenswaarden, afhankelijk van de bekende vervuilingsgraad in hun gebied. Het kan dus per regio net iets anders liggen.
+- Betekent een streng handelingskader dat mijn kraanwater onveilig is? Niet automatisch. Het kader zegt iets over de bodem en het oppervlaktewater in jouw regio, niet rechtstreeks over je kraanwater — dat wordt apart gezuiverd en getoetst door je drinkwaterbedrijf. Het is wel een indicatie dat er in die regio historisch meer PFAS-belasting is geweest.
+- Waar vind ik het handelingskader voor mijn eigen gemeente? De meeste provincies en gemeenten publiceren dit op hun eigen website, vaak onder "bodem en grondverzet" of "omgevingsloket". Voor een snel beeld van je eigen situatie is onze eigen PFAS-check overigens een stuk sneller dan die documenten zelf doorzoeken.
+- Wordt het handelingskader ooit vervangen door een vaste wet? Het handelingskader is een beleidskader en geen wet, en het is in de loop der jaren meerdere keren aangepast. Hoe de regels er nu precies uitzien en of ze verder worden vastgelegd, lees je het best na op de actuele pagina over PFAS-regels van de Rijksoverheid.
+
+## Hoe werkt een waterontharder?
+URL: https://www.water-zuivering.nl/kennisbank/hoe-werkt-een-waterontharder
+Bijgewerkt: 2026-10-21
+
+Veelgestelde vragen:
+- Hoe vaak regenereert een waterontharder? Dat hangt af van je waterverbruik en de hardheid van het water, meestal elke paar dagen, automatisch en meestal in de nacht.
+- Maakt een waterontharder het water zout? Nee, de hoeveelheid natrium die aan het water wordt toegevoegd is minimaal en niet merkbaar in smaak.
+- Is onthard water veilig om te drinken? Ja, al geven sommige mensen de voorkeur aan een aparte onthardingsloze kraan voor drink- en kookwater vanwege de lichte natriumtoename.
+- Hoe weet ik of mijn water hard is? Je waterbedrijf publiceert de gemiddelde waterhardheid voor jouw regio (uitgedrukt in °dH). Ook kalkaanslag op kranen en in het koffiezetapparaat is een praktische indicator.
+- Vanaf welke hardheid is een waterontharder de moeite waard? Bij een hardheid boven ongeveer 14 °dH merk je doorgaans duidelijk verschil in kalkaanslag en wasgoed — daaronder is het vooral een kwestie van comfortvoorkeur.
+
+## Is kraanwater veilig om te drinken in Nederland?
+URL: https://www.water-zuivering.nl/kennisbank/is-kraanwater-veilig
+Bijgewerkt: 2026-11-06
+
+Kort antwoord: Ja, Nederlands kraanwater is veilig om te drinken. Drinkwaterbedrijven controleren continu op honderden stoffen volgens strenge Europese en nationale normen. Wel worden steeds vaker sporen gevonden van stoffen die de norm nog niet volledig dekt, zoals PFAS, medicijnresten en microplastics. Wie die ook kwijt wil, filtert thuis met omgekeerde osmose.
+
+Veelgestelde vragen:
+- Is kraanwater in Nederland veilig om te drinken? Ja. Nederlandse drinkwaterbedrijven controleren continu op honderden stoffen en houden zich aan strenge Europese en nationale normen. Je wordt er niet acuut ziek van.
+- Welke stoffen vallen nog niet volledig onder de norm? Vooral stoffen die pas sinds kort goed meetbaar zijn: PFAS, resten van medicijnen die via het riool in het oppervlaktewater komen, en microplastics. De normen worden hier geleidelijk op aangepast.
+- Betekent "voldoet aan de norm" dat er niets in het water zit? Nee. Het betekent dat de gemeten hoeveelheden onder de wettelijke grens blijven. Die grens is vastgesteld met de huidige kennis en kan met nieuwe inzichten verschuiven, zoals bij PFAS al gebeurt.
+- Waarom zou je kraanwater dan nog filteren? Als extra zekerheid, niet uit wantrouwen richting het drinkwaterbedrijf. Een omgekeerde-osmosesysteem onder de gootsteen filtert chloor, PFAS, medicijnresten, microplastics en lood uit je kraanwater.
+
+## Kalkaanslag in huis: oorzaak en oplossing
+URL: https://www.water-zuivering.nl/kennisbank/kalkaanslag-in-huis
+Bijgewerkt: 2026-11-02
+
+Veelgestelde vragen:
+- Waar komt kalkaanslag vandaan? Van calcium en magnesium die van nature in het water zitten, vooral in gebieden met hard water. Zodra water verdampt, blijven deze mineralen achter als een witte, korstige laag.
+- Is kalkaanslag gevaarlijk? Nee, het is geen vervuiling in de gevaarlijke zin. Het is een natuurlijk bijproduct van de waterhardheid in jouw regio.
+- Welke schade richt kalkaanslag aan in huis? Kalkaanslag zet zich vast in leidingen, boilers en apparaten zoals de wasmachine en waterkoker. Dat kan hun levensduur verkorten en het energieverbruik verhogen, omdat verwarmingselementen minder efficiënt werken.
+- Waterontharder of waterzuiveraar tegen kalkaanslag? Kalkaanslag door je hele huis pak je structureel aan met een waterontharder. Wil je vooral zuiverder drinkwater uit je keukenkraan, dan is een waterzuiveraar de betere keuze.
+
+## Kraanwater voor babyvoeding: zo maak je de fles veilig klaar
+URL: https://www.water-zuivering.nl/kennisbank/kraanwater-babyvoeding
+Bijgewerkt: 2026-10-27
+
+Kort antwoord: In Nederland mag je flesvoeding maken met koud kraanwater, zonder het eerst te koken. Dat zegt het Voedingscentrum. Gebruik geen warm water uit de kraan. Heb je loden leidingen, neem dan flessenwater waarvan op het etiket staat dat het geschikt is voor babyvoeding. Bij nieuwe leidingen of kranen laat je de kraan eerst even doorstromen.
+
+Veelgestelde vragen:
+- Kan je babyvoeding maken met kraanwater? Ja. Volgens het Voedingscentrum is koud kraanwater in Nederland veilig voor flesvoeding, ook als je het niet kookt. De uitzondering is een huis met loden leidingen; gebruik dan flessenwater dat geschikt is voor babyvoeding.
+- Moet je kraanwater koken voor flesvoeding? Nee, in Nederland niet. Op de verpakking van kunstvoeding staat vaak dat je het water moet koken, maar dat advies is bedoeld voor landen waar kraanwater minder veilig is. Het Voedingscentrum zegt dat ongekookt koud kraanwater hier veilig is.
+- Waarom geen warm water uit de kraan voor flesvoeding? Warm water uit de kraan heeft vaak langer in een boiler of leidingen gestaan en kan meer metaal uit leidingen bevatten. Begin daarom altijd met koud kraanwater en verwarm het zelf tot 30 à 35 graden.
+- Welk flessenwater is geschikt voor babyvoeding? Kijk op het etiket. Daarop staat of het water geschikt is voor de bereiding van babyvoeding. Is dat niet vermeld, gebruik het dan niet voor de fles.
+- Mag je flesvoeding van tevoren klaarmaken? Ja, maximaal 2 flessen. Sla het verwarmen over, zet ze meteen achter in de koelkast op 4 °C en gebruik ze binnen 8 uur. Restjes gooi je weg.
+- Wat als ik nieuwe leidingen of een nieuwe kraan heb? Laat de kraan dan eerst doorstromen voordat je het water voor de fles gebruikt. Bij alleen een nieuwe kraan is ongeveer 10 seconden genoeg; bij nieuwe leidingen ongeveer 1 liter per 5 meter leiding. Dit geldt de eerste drie maanden.
+- Kan ik osmosewater of gefilterd water gebruiken voor de fles? Daar is geen officieel advies over. Het Voedingscentrum gaat uit van gewoon koud kraanwater. Gebruik je toch een filter, vervang de filters dan op tijd, want een filter dat te lang blijft zitten kan bacteriegroei geven. Overleg bij twijfel met het consultatiebureau.
+
+## Kraanwater buitenland: in welke landen kun je het drinken?
+URL: https://www.water-zuivering.nl/kennisbank/kraanwater-buitenland
+Bijgewerkt: 2026-11-06
+
+Kort antwoord: In het grootste deel van West- en Noord-Europa, Noord-Amerika, Australië, Japan en Singapore kun je kraanwater in het buitenland gewoon drinken. In grote delen van Azië, Afrika, Midden- en Zuid-Amerika en een deel van Oost-Europa niet. Neem daar verzegeld flessenwater, ook voor tandenpoetsen en ijsblokjes, of kook het water eerst.
+
+Veelgestelde vragen:
+- In welke landen kun je kraanwater drinken? In het grootste deel van West- en Noord-Europa, in Canada, de Verenigde Staten, Australië, Nieuw-Zeeland, Singapore, Japan en op Aruba en Curaçao kun je het kraanwater in steden gewoon drinken. In grote delen van Azië, Afrika, Midden- en Zuid-Amerika en in een deel van Oost-Europa neem je beter verzegeld flessenwater.
+- Kun je kraanwater drinken in Spanje? Op de meeste plekken is kraanwater in Spanje veilig. Op de eilanden en langs de kust is het water vaak hard of ontzilt en smaakt het minder lekker. Daarom kopen veel mensen daar toch flessen.
+- Kun je kraanwater drinken in Turkije? In grote steden en toeristische gebieden is het kraanwater vaak behandeld, maar de leidingen in gebouwen zijn niet altijd goed. Het advies is daarom verzegeld flessenwater te drinken.
+- Mag je je tanden poetsen met kraanwater in het buitenland? In landen waar het kraanwater veilig is wel. In landen waar je geen kraanwater drinkt, poets je je tanden ook met flessenwater, omdat een kleine slok al genoeg kan zijn om ziek te worden.
+- Is gekookt kraanwater in het buitenland veilig? Water dat een paar minuten goed heeft doorgekookt, is vrij van bacteriën en virussen. Koken haalt wel geen chemische stoffen zoals zware metalen of pesticiden weg, en het verbetert de smaak niet.
+- Werkt een waterfilter op vakantie? Een reisfilter met een poriegrootte van ongeveer 0,1 micron houdt bacteriën en parasieten tegen, maar de meeste virussen niet. Wil je ook virussen aanpakken, combineer een filter dan met koken of zuiveringstabletten.
+- Waarom is Nederlands kraanwater zo goed? Nederlandse drinkwaterbedrijven zuiveren in meerdere stappen, voegen geen chloor toe en controleren het water continu volgens het Drinkwaterbesluit. Daardoor hoort Nederland bij de landen met het meest betrouwbare kraanwater ter wereld.
+
+## Kraanwater filteren: welke opties heb je?
+URL: https://www.water-zuivering.nl/kennisbank/kraanwater-filteren
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Kraanwater filteren kan met een filterkan, een opzetstuk op de kraan of een systeem onder de gootsteen. Een kan of opzetstuk met actieve kool verbetert vooral smaak en geur en haalt chloor weg. Wil je ook PFAS, medicijnresten en microplastics verwijderen, dan heb je omgekeerde osmose nodig: de grondigste manier om kraanwater te filteren.
+
+Veelgestelde vragen:
+- Is kraanwater filteren in Nederland nodig? Nederlands kraanwater voldoet aan strenge normen en is veilig om te drinken. Filteren is een extra stap voor wie ook sporen van PFAS, medicijnresten en microplastics kwijt wil.
+- Wat is de snelste manier om kraanwater te filteren? Een waterfilterkan werkt meteen zonder installatie, maar filtert het minst grondig. Voor snelheid én diepgang samen is een kraanfilter een tussenoptie.
+- Welke manier van kraanwater filteren is het grondigst? Een waterzuiveraar onder de gootsteen met omgekeerde osmose, omdat het membraan veel fijner filtert dan een kan of kraanfilter.
+- Ik ruik chloor — welke manier van kraanwater filteren helpt het snelst? Elk filtertype met een koolstoffilter helpt tegen chloorsmaak, ook de goedkoopste waterfilterkan. Voor een structurele oplossing is een vast systeem prettiger dan steeds bijvullen.
+- Kan filteren ook de waterdruk beïnvloeden? Een goed geïnstalleerd systeem heeft geen merkbaar effect op je waterdruk. Bij twijfel over oude leidingen is het verstandig dit bij installatie te laten checken.
+
+## Kraanwater Utrecht: waar het vandaan komt en hoe schoon het is
+URL: https://www.water-zuivering.nl/kennisbank/kraanwater-utrecht
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Kraanwater Utrecht komt van Vitens en is gemaakt van grondwater uit zeven bronnen rond de stad. Het voldoet aan alle normen en werd in 2023 nog uitgeroepen tot het beste van Nederland. Volgens Greenpeace zit 84% van de Utrechters ruim onder de PFAS-richtwaarde; voor ongeveer 16% ligt de waarde erboven.
+
+Veelgestelde vragen:
+- Waar komt het kraanwater in Utrecht vandaan? Het Utrechtse kraanwater is gemaakt van grondwater. Vitens haalt het uit zeven bronnen rond de stad, waaronder Soestduinen, Leidsche Rijn, De Meern, Beerschoten, Tull en 't Waal, Groenekan en winningen op de Utrechtse Heuvelrug. De bodem doet het eerste filterwerk; daarna zuivert Vitens het water verder.
+- Is het kraanwater in Utrecht goed? Ja. Het water voldoet aan alle wettelijke normen en het Utrechtse water van Vitens werd in 2023 nog uitgeroepen tot het beste kraanwater van Nederland. Omdat het grondwater is, zit er van nature veel minder PFAS in dan in het westen van het land, al verschilt dat per wijk.
+- Zit er PFAS in het kraanwater in Utrecht? In een deel van de stad wel. Volgens Greenpeace (september 2026) zit ongeveer 84% van de inwoners van de gemeente Utrecht in de categorie groen, onder de helft van de RIVM-richtwaarde. Voor zo'n 16% (58.805 inwoners) valt het water in de categorie rood, tussen 4,4 en 6,6 ng/l PEQ. Met je postcode zie je in welke groep jij valt.
+- Wat was er mis met het Utrechtse kraanwater in november 2025? Op 1 november 2025 vond Vitens enterokokken in het water, waarna zo'n 125.000 aansluitingen in Utrecht en omgeving een kookadvies kregen. Op 4 november was het water weer veilig. Op 19 december 2025 meldde Vitens de oorzaak: een scheur in het dak van een drinkwaterreservoir in Kanaleneiland, waardoor grond- en regenwater naar binnen kon.
+- Is het water in Utrecht hard of zacht? Overwegend zacht tot gemiddeld. Het grondwater uit bijvoorbeeld Leidsche Rijn is van nature zacht, en op sommige andere locaties onthardt Vitens het water om kalkaanslag te beperken. De exacte hardheid op jouw adres vind je met je postcode op de website van Vitens.
+- Wordt het drinkwater in Utrecht schaars? De provincie en Vitens waarschuwen daarvoor. Door nieuwbouw kan de vraag rond 2032 groter worden dan wat er geleverd kan worden. Daarom zoekt Vitens nieuwe winningen, bijvoorbeeld op het Eiland van Schalkwijk, en beoordeelt het sinds 2023 nieuwe zakelijke aansluitingen kritisch.
+- Heeft een waterfilter in Utrecht zin? Voor de meeste Utrechters is het kraanwater prima. Een osmosesysteem is vooral interessant als je in een wijk woont die in de categorie rood valt, of als je ook medicijnresten en microplastics zo veel mogelijk uit je drinkwater wilt halen.
+
+## Kraanwater vs. flessenwater: wat is voordeliger?
+URL: https://www.water-zuivering.nl/kennisbank/kraanwater-vs-flessenwater
+Bijgewerkt: 2026-11-06
+
+Veelgestelde vragen:
+- Is gefilterd kraanwater goedkoper dan flessenwater? Op termijn wel. Flessenwater blijft per liter geld kosten, jaar na jaar. Gefilterd kraanwater kost na de eenmalige installatie alleen nog vervangende filters, bij Water-zuivering gemiddeld ongeveer €135 per jaar.
+- Is flessenwater zuiverder dan gefilterd kraanwater? Niet per se. Veel flessenwatermerken worden zelf (deels) gezuiverd via omgekeerde osmose, hetzelfde proces dat een systeem thuis gebruikt. Met een eigen systeem tap je dat water onbeperkt en vers uit je kraan.
+- Wat is beter voor het milieu? Gefilterd kraanwater. Minder plastic flessen betekent minder productie, minder transport en minder afval.
+
+## Loden leidingen: zo herken je ze en dit doe je eraan
+URL: https://www.water-zuivering.nl/kennisbank/loden-leidingen
+Bijgewerkt: 2026-10-27
+
+Kort antwoord: Loden leidingen zitten alleen in huizen die vóór 1960 zijn gebouwd. Lood is dof grijs, klinkt dof als je erop tikt en wordt zilverkleurig als je erin krast. Het mag maximaal 5 microgram per liter in drinkwater zitten. Laat de leidingen vervangen; tot die tijd drinken zwangeren en kinderen tot en met 7 jaar beter flessenwater.
+
+Veelgestelde vragen:
+- Tot welk jaar zijn loden leidingen gebruikt? Sinds 1960 mogen loden drinkwaterleidingen niet meer worden aangelegd. Huizen die vóór 1960 zijn gebouwd, kunnen ze dus nog hebben, ook als een deel van de leidingen al is vervangen. Vooral leidingen onder de vloer en in muren worden vaak vergeten.
+- Hoe weet ik of ik loden leidingen heb? Kijk eerst naar het bouwjaar. Bekijk daarna de leiding bij de watermeter: lood is dof grijs, klinkt dof als je erop tikt, heeft vaak verdikkingen en wordt zilverkleurig als je er een krasje in maakt. Zekerheid krijg je met een watertest of een installateur.
+- Is het verplicht om loden leidingen te vervangen? Voor eigenaar-bewoners is er geen wettelijke plicht, wel het dringende advies van het RIVM en de overheid. Sinds 2022 zijn loden leidingen verboden in huurwoningen en kinderopvanglocaties. Een verhuurder moet ze dus vervangen.
+- Wat kost een test op lood in drinkwater? Volgens de Rijksoverheid ongeveer 50 euro. Bij loodinwatertesten.nl, een initiatief van Het Waterlaboratorium met Dunea, PWN en Waternet, bestel je monsterflesjes en stuur je ze gratis retour naar het lab.
+- Wie betaalt het vervangen van loden leidingen? De eigenaar van het huis betaalt de leidingen vanaf de watermeter het huis in. Het drinkwaterbedrijf is verantwoordelijk voor de leiding van de straat tot aan de watermeter. In een huurwoning moet de verhuurder de leidingen vervangen.
+- Helpt koken tegen lood in drinkwater? Nee. Het Voedingscentrum zegt dat koken geen lood uit water verwijdert. Gebruik bovendien geen warm water uit de kraan om mee te koken of te drinken.
+- Haalt een waterfilter lood uit het water? Dat verschilt sterk per filter. Het Voedingscentrum waarschuwt dat niet bekend is of filters die als loodverwijderend worden verkocht goed genoeg werken. Een omgekeerde-osmosemembraan houdt opgeloste metalen zoals lood grotendeels tegen, maar het vervangen van de leidingen blijft de echte oplossing.
+
+## Medicijnresten in drinkwater en microplastics: wat zit er echt in?
+URL: https://www.water-zuivering.nl/kennisbank/medicijnresten-in-drinkwater
+Bijgewerkt: 2026-10-27
+
+Kort antwoord: Medicijnresten zitten vooral in sporen in drinkwater dat van rivierwater wordt gemaakt; volgens het RIVM vormen ze geen gezondheidsrisico. In kraanwater zitten 1 à 2 microplastics per liter, minder dan 1% van wat je dagelijks binnenkrijgt. Flessenwater bevat er meer. Wil je ook die sporen kwijt, dan houdt een osmosemembraan ze grotendeels tegen.
+
+Veelgestelde vragen:
+- Zitten er medicijnresten in drinkwater? In sporen, vooral in drinkwater dat van rivierwater wordt gemaakt. Medicijnen komen via urine en het riool in de Rijn en de Maas. Drinkwaterbedrijven zuiveren het grootste deel eruit. Het RIVM concludeerde in 2018 dat de opkomende stoffen in de bronnen, waaronder medicijnresten, geen risico voor de gezondheid vormen via drinkwater.
+- Zijn er normen voor medicijnresten in drinkwater? Voor de meeste medicijnresten bestaat geen aparte wettelijke norm. Drinkwaterbedrijven gebruiken wel een signaleringswaarde van 0,1 microgram per liter voor stoffen die door mensen in het milieu komen. Komt een stof daarboven, dan gaan ze extra meten en onderzoeken.
+- Hoeveel microplastics zitten er in kraanwater? Volgens onderzoek van KWR, Vitens, Oasen en Het Waterlaboratorium (2025) zit er in kraanwater 1.000 tot 2.000 microplastics per kubieke meter. Dat is 1 à 2 deeltjes per liter. Via drinkwater krijg je hooguit rond 3 deeltjes per dag binnen.
+- Bevat flessenwater minder microplastics dan kraanwater? Nee, juist meer. De onderzoekers schrijven dat flessenwater veel meer microplastics bevat dan kraanwater. Overstappen op flessenwater is dus geen oplossing.
+- Zitten er hormonen in kraanwater? Resten van hormonen, bijvoorbeeld uit de anticonceptiepil, horen bij de medicijnresten die via het riool in rivieren komen. Ze worden net als andere medicijnresten grotendeels weggezuiverd en in drinkwater hooguit in sporen gevonden.
+- Haalt een waterfilter medicijnresten eruit? Een filterkan met actieve kool houdt een deel tegen. Een omgekeerde-osmosemembraan met poriën van 0,0001 micron houdt de meeste opgeloste stoffen tegen, dus ook medicijnresten, en ook microplastics.
+- Is kraanwater dan nog veilig om te drinken? Ja. Nederlands kraanwater voldoet aan strenge normen, en de gemeten hoeveelheden zijn klein. Filteren is een keuze voor wie verder wil gaan dan de norm, geen noodzaak.
+
+## Omgekeerde osmose filter: hoe werkt het membraan?
+URL: https://www.water-zuivering.nl/kennisbank/omgekeerde-osmose-filter
+Bijgewerkt: 2026-10-21
+
+Kort antwoord: Een omgekeerde osmose filter perst kraanwater onder druk door een membraan met poriën van ongeveer 0,0001 micron. Vrijwel alleen watermoleculen komen erdoorheen; opgeloste stoffen zoals PFAS, medicijnresten, kalk en zware metalen blijven achter en spoelen weg naar de afvoer. Een voor- en nafilter beschermen het membraan en verbeteren de smaak.
+
+Veelgestelde vragen:
+- Hoe fijn is een omgekeerde osmose filter precies? Het membraan heeft poriën van ongeveer 0,0001 micron — ter vergelijking, dat is ongeveer 500.000 keer fijner dan een mensenhaar.
+- Wat houdt een omgekeerde osmose filter tegen? Bacteriën, virussen, zware metalen zoals lood, en sporen van PFAS, medicijnresten en microplastics — grotendeels alles behalve de watermoleculen zelf.
+- Hoe lang gaat het membraan mee? Gemiddeld 2 jaar, afhankelijk van gebruik en waterkwaliteit. De voor- en nafilters zijn vaker aan de beurt: gemiddeld elk jaar.
+- Kost een omgekeerde osmose filter veel water? Er ontstaat wat afvalwater tijdens het filtratieproces, maar moderne systemen zijn hier steeds zuiniger in dan oudere generaties.
+- Waarom ontstaat er afvalwater bij een omgekeerde osmose filter? Het membraan houdt stoffen tegen die ergens moeten blijven — een deel van het water spoelt die stoffen weg in plaats van dat ze zich ophopen op het membraan zelf, wat de levensduur ten goede komt.
+- Kan ik het membraan zelf vervangen? Bij de meeste systemen is dit een kwestie van los- en vastdraaien, vaak met een instructievideo van de fabrikant. Twijfel je, dan kan een monteur het ook voor je doen.
+- Werkt een omgekeerde osmose filter zonder stroom? Ja, het proces werkt op waterdruk, niet op elektriciteit — wel is een minimale waterdruk nodig voor een goede doorstroming.
+
+## Osmosewater kopen: waar haal je het en wat kost het?
+URL: https://www.water-zuivering.nl/kennisbank/osmosewater-kopen
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Osmosewater kopen kan bij een osmose-tappunt, een groothandel voor glazenwassers of een aquariumspeciaalzaak. Je betaalt van een paar cent tot ongeveer € 0,18 per liter, plus jerrycans. Bij de drogist vind je vooral gedemineraliseerd water, en dat is iets anders. Wil je osmosewater drinken, dan is zelf maken onder het aanrecht meestal goedkoper en hygiënischer.
+
+Veelgestelde vragen:
+- Waar kun je osmosewater kopen? Osmosewater koop je bij een osmose-tappunt (vaak zelfbediening, dag en nacht open), bij een groothandel voor glazenwassers of bij een aquariumspeciaalzaak. Bij de drogist en bouwmarkt vind je vooral gedemineraliseerd water, en dat is niet hetzelfde.
+- Wat kost osmosewater per liter? Dat verschilt per verkoper. Wij zagen prijzen van een paar cent tot ongeveer € 0,18 per liter. Reken daarbij de jerrycans: een jerrycan van 20 liter met kraan kost in de bouwmarkt zo'n € 12 tot € 15.
+- Kun je gekocht osmosewater drinken? Dat hangt af van waar het vandaan komt. Tappunten voor glazenwassers zijn niet gemaakt voor drinkwater, en de jerrycan moet schoon en voedselveilig zijn. Vraag bij de verkoper na of het water geschikt is om te drinken.
+- Is gedemineraliseerd water hetzelfde als osmosewater? Niet helemaal. Bij allebei zijn de opgeloste mineralen grotendeels verwijderd, maar gedemineraliseerd water wordt vaak op een andere manier gemaakt en is bedoeld voor apparaten zoals een strijkijzer. Kijk op het etiket of het geschikt is om te drinken.
+- Hoe lang kun je osmosewater bewaren? Bewaar het in een schone, afgesloten en voedselveilige jerrycan, koel en donker. Voor drinkwater raden we aan om het binnen een paar dagen te gebruiken. Voor schoonmaken mag het langer staan.
+- Is zelf osmosewater maken goedkoper dan kopen? Voor drinkwater meestal wel. Een gezin van vier dat 2 liter per persoon per dag drinkt, heeft bijna 3.000 liter per jaar nodig. Met een eigen systeem betaal je na de aanschaf alleen nog vervangende filters, bij Water-zuivering gemiddeld ongeveer € 135 per jaar, en je hoeft niets te sjouwen.
+- Zitten er mineralen in osmosewater? Nauwelijks. Het membraan houdt ook calcium en magnesium tegen, waardoor osmosewater wat vlak kan smaken. Sommige systemen voegen die mineralen na het filteren weer toe met een mineraalfilter.
+
+## Osmosewater maken: kan dat gewoon thuis?
+URL: https://www.water-zuivering.nl/kennisbank/osmosewater-maken-thuis
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Osmosewater maak je thuis met een omgekeerde-osmosesysteem onder het aanrecht. Kraanwater wordt onder druk door een membraan met poriën van 0,0001 micron geperst; PFAS, zware metalen, bacteriën en microplastics blijven achter. Zonder zo'n apparaat lukt het niet. Is het systeem aangesloten, dan tap je onbeperkt osmosewater uit je eigen kraan.
+
+Veelgestelde vragen:
+- Kan ik zelf osmosewater maken zonder apparaat? Nee. Osmose vereist druk en een membraan met microscopisch kleine poriën — dat proces gaat niet zonder een speciaal filtersysteem.
+- Is zelfgemaakt osmosewater net zo zuiver als gekocht water? Met een goed onderhouden systeem thuis is de zuiverheid vergelijkbaar met, en vaak beter dan, veel flessenwater — en je hoeft niets te vervoeren of op te slaan.
+- Hoeveel osmosewater kan ik per dag maken? Een systeem onder het aanrecht levert continu water zolang de kraan open staat — er is geen dagelijkse limiet zoals bij een filterkan.
+- Kost het maken van osmosewater veel extra water? Er ontstaat wat afvalwater tijdens het proces, dat de opgevangen stoffen wegspoelt. Moderne systemen zijn hier zuiniger in dan oudere generaties.
+- Kan ik osmosewater maken gebruiken voor mijn aquarium of planten? Ja, dat gebeurt vaak — voor aquaria omdat je dan volledige controle hebt over de waterwaarden, voor planten hangt het af van de plantensoort of dit wenselijk is.
+
+## Osmosewater tappunt: een apart kraantje, hoe werkt dat?
+URL: https://www.water-zuivering.nl/kennisbank/osmosewater-tappunt
+Bijgewerkt: 2026-10-21
+
+Veelgestelde vragen:
+- Past een tappunt in elk aanrecht? In vrijwel elk aanrecht wel, ja — er is maar een klein extra gaatje nodig. Bij een keuken van natuursteen of composiet kan dat gat vaak netjes worden geboord door de installateur zonder dat het opvalt.
+- Kan ik het tappunt zelf plaatsen? Technisch gezien kan dat, maar de meeste mensen laten het door een installateur doen — vooral vanwege het boren van het gat in het aanrecht en het correct aansluiten op het systeem onder de kast. Dat scheelt achteraf gedoe met lekkages.
+- Wat kost een apart tappunt ongeveer? Dat hangt af van het model en de afwerking, maar een tappunt is meestal onderdeel van de totale systeemprijs bij aanschaf van een osmosesysteem, inclusief installatie. Losse vervanging of upgrade naar een ander model kost typisch een fractie van de systeemprijs.
+- Kan ik later alsnog overstappen naar een 3-weg kraan? Ja, dat kan meestal zonder het hele systeem te vervangen — alleen het kraanwerk zelf wordt dan omgewisseld. Het systeem onder de kast blijft ongewijzigd, dus het is vooral een kwestie van de juiste aansluiting op het nieuwe kraanmodel. Hoe zo'n kraan eruitziet, zie je bij onze 3-weg kraan voor gefilterd water.
+
+## PFAS in kraanwater: wat is het en hoe filter je het eruit?
+URL: https://www.water-zuivering.nl/kennisbank/pfas-in-kraanwater
+Bijgewerkt: 2026-10-26
+
+Kort antwoord: PFAS zijn door de mens gemaakte chemische stoffen die nauwelijks afbreken en in lage concentraties in Nederlands kraanwater voorkomen. Het water voldoet aan de wettelijke norm, maar in een deel van Nederland ligt de waarde boven de strengere RIVM-advieswaarde van 4,4 ng/l. Een filterkan houdt PFAS nauwelijks tegen; een omgekeerde-osmosesysteem wel.
+
+Veelgestelde vragen:
+- Is kraanwater PFAS-vrij? Nee. In vrijwel al het Nederlandse kraanwater zitten kleine sporen PFAS, omdat de stoffen nauwelijks afbreken en overal in het milieu zitten. Het water voldoet aan de wettelijke norm, maar in een groot deel van Noord- en Zuid-Holland ligt de waarde boven de strengere RIVM-advieswaarde.
+- Hoe haal je PFAS uit kraanwater? Met omgekeerde osmose: het membraan houdt PFAS-moleculen tegen. Een filter met actieve kool, zoals in een filterkan, doet dat maar deels en niet lang. Koken en een waterontharder helpen niet.
+- Wat zijn PFAS? PFAS (poly- en perfluoralkylstoffen) zijn een grote groep synthetische stoffen die decennialang zijn gebruikt in onder meer antiaanbaklagen, waterafstotende kleding, blusschuim en verpakkingen. Ze heten ook wel "forever chemicals", omdat ze nauwelijks afbreken.
+- Zit er PFAS in Nederlands kraanwater? Ja, in kleine sporen. Het water voldoet aan de wettelijke norm, maar in een deel van Nederland ligt de PFAS-waarde boven de strengere advieswaarde van het RIVM (4,4 ng/l).
+- Waarom krijgt PFAS steeds meer aandacht? Onderzoek wijst voorzichtig op mogelijke gezondheidsrisico's bij langdurige blootstelling, ook bij lage concentraties. Daarom worden de toegestane grenswaarden geleidelijk aangescherpt.
+- Welk filter haalt PFAS uit kraanwater? Omgekeerde osmose. Het RO-membraan heeft gaatjes die honderden keren dunner zijn dan een haar, te klein voor PFAS-moleculen. Een filterkan houdt PFAS nauwelijks tegen.
+
+## PFAS kaart Nederland: zit het ook in jouw water?
+URL: https://www.water-zuivering.nl/kennisbank/pfas-kaart-nederland
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Een PFAS kaart van onder meer het RIVM, provincies en gemeenten toont gemeten PFAS in bodem en oppervlaktewater, vooral rond industrieterreinen en plekken waar blusschuim is gebruikt. Zo’n kaart zegt niet direct iets over je kraanwater: dat zuivert en toetst je drinkwaterbedrijf apart. Voor je eigen situatie kijk je dus naar beide bronnen.
+
+Veelgestelde vragen:
+- Is er één officiële PFAS-kaart voor heel Nederland? Niet één centrale kaart, maar een verzameling: het RIVM publiceert een landelijk overzicht, en provincies en gemeenten vullen dat aan met lokale bodemonderzoeken. Voor een volledig beeld van jouw omgeving kijk je dus eigenlijk naar meerdere bronnen tegelijk.
+- Kan ik zelf mijn kraanwater laten testen op PFAS? Ja, gespecialiseerde laboratoria bieden dat aan, maar een volledige PFAS-analyse is prijzig en kost enkele weken. Voor de meeste huishoudens is het praktischer om te kijken naar de gepubliceerde meetdata van je drinkwaterbedrijf en waar nodig zelf te filteren, in plaats van zelf te laten testen.
+- Woon ik in een aandachtsgebied — betekent dat dat ik moet filteren? Niet per se verplicht, maar wel een reden om extra zekerheid te willen. Omdat een omgekeerde-osmosefilter alle PFAS-varianten tegelijk tegenhoudt, ongeacht de concentratie, is het voor veel mensen in zo'n gebied een simpele manier om het risico helemaal van tafel te halen in plaats van erop te vertrouwen dat de norm genoeg is.
+- Waarom verschillen kaarten van verschillende bronnen soms van elkaar? Omdat elke bronhouder zijn eigen meetpunten, meetmomenten en meetmethode gebruikt. Een provinciale kaart kan bijvoorbeeld op andere data gebaseerd zijn dan een landelijke RIVM-kaart, of recenter zijn bijgewerkt. Bij twijfel is de meest recente, best gedocumenteerde bron meestal de betrouwbaarste keuze.
+
+## PFAS-vrij water: kan dat écht uit je eigen kraan?
+URL: https://www.water-zuivering.nl/kennisbank/pfas-vrij-water
+Bijgewerkt: 2026-10-21
+
+Kort antwoord: Letterlijk 100% PFAS-vrij water bestaat bijna niet, omdat laboratoria steeds kleinere sporen kunnen meten. Wel kun je PFAS terugbrengen tot ruim onder de meetbare grens. Omgekeerde osmose komt daar het dichtst bij: het membraan houdt PFAS fysiek tegen. Koken, een waterontharder of een eenvoudig koolfilter doen dat niet of nauwelijks.
+
+Veelgestelde vragen:
+- Bestaat er dan helemaal geen 100% PFAS-vrij water? In de praktijk niet met absolute zekerheid — wel water waarin PFAS ruim onder de meetbare of wettelijke grens zit. Voor je gezondheid maakt dat verschil vrijwel niets uit: het gaat erom dat de blootstelling zo laag mogelijk is, niet om een filosofische "nul".
+- Is flessenwater een veiliger alternatief? Niet per se. PFAS is ook aangetroffen in sommige merken flessenwater, en de plastic fles brengt weer een eigen discussie over microplastics met zich mee. Gefilterd kraanwater via omgekeerde osmose is vaak een consistentere oplossing, en goedkoper op de lange termijn.
+- Moet ik ook koken met PFAS-vrij water? Dat is een persoonlijke afweging, maar omdat PFAS niet verdwijnt door verhitting, heeft filteren vóór het koken meer zin dan erna. Veel mensen sluiten daarom hun osmosesysteem ook aan op de kraan die ze voor koken gebruiken.
+- Hoe snel merk ik verschil na het plaatsen van een filter? Direct vanaf het eerste glas: zodra het systeem is aangesloten en doorgespoeld, filtert het membraan continu mee. Je merkt vaak ook meteen een zuiverdere smaak, omdat naast PFAS ook chloor en andere stoffen worden tegengehouden — al is dat natuurlijk een ander effect dan de PFAS-reductie zelf, die je niet proeft.
+
+## PFAS, PFOS en PFOA: wat is het verschil?
+URL: https://www.water-zuivering.nl/kennisbank/pfos-pfoa-verschil
+Bijgewerkt: 2026-10-21
+
+Kort antwoord: PFAS is de verzamelnaam voor duizenden vergelijkbare chemische stoffen. PFOS en PFOA zijn twee bekende, goed onderzochte stoffen binnen die groep. Ze zijn in de EU aan banden gelegd, maar nog altijd meetbaar omdat ze nauwelijks afbreken. Voor je drinkwater maakt het onderscheid weinig uit: omgekeerde osmose houdt alle varianten tegen.
+
+Veelgestelde vragen:
+- Zijn PFOS en PFOA nu helemaal verboden? In de EU is PFOS al sinds 2006 aan banden gelegd en valt het sinds 2010 onder de POP-verordening; PFOA kwam daar in juli 2020 bij. Productie en gebruik zijn dus in principe verboden, maar omdat beide stoffen decennialang zijn gebruikt en nauwelijks afbreken, zijn ze nog altijd in bodem, oppervlaktewater en soms drinkwater meetbaar.
+- Kan ik zien welke specifieke PFAS-stof in mijn water zit? Drinkwaterbedrijven publiceren soms een uitsplitsing per stof in hun jaarrapportages, maar voor de meeste huishoudens is dat detailniveau niet nodig — de wettelijke norm en de meeste filtertechnieken werken toch op basis van de totale PFAS-belasting.
+- Is GenX veiliger dan PFOA, zoals ooit beloofd? Nee, dat blijkt in de praktijk tegen te vallen. GenX breekt weliswaar iets sneller af dan PFOA, maar hoopt zich nog altijd op in het milieu en het lichaam, en staat inmiddels ook op de lijst van stoffen waar toezichthouders scherp op letten.
+- Waarom worden er steeds nieuwe PFAS-varianten ontdekt? Omdat de chemische industrie tientallen jaren lang telkens net iets andere moleculen ontwikkelde voor specifieke toepassingen, en meetmethoden pas de laatste jaren gevoelig genoeg zijn geworden om al die varianten stuk voor stuk te herkennen. Vandaar dat de "PFAS-familie" op papier steeds groter lijkt te worden, terwijl de stoffen zelf al veel langer aanwezig zijn.
+
+## pH kraanwater: wat is normaal en waarom maakt het uit?
+URL: https://www.water-zuivering.nl/kennisbank/ph-kraanwater
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Nederlands kraanwater moet volgens het Drinkwaterbesluit een pH tussen 7,0 en 9,5 hebben. In de praktijk is het licht basisch, rond 8: Dunea mat in Scheveningen begin 2024 gemiddeld 8,41. Drinkwaterbedrijven doen dat bewust, zodat het water leidingen niet aantast. Voor je gezondheid maakt een pH kraanwater binnen die grenzen geen verschil.
+
+Veelgestelde vragen:
+- Wat is de pH van kraanwater in Nederland? Volgens het Drinkwaterbesluit moet de pH van drinkwater tussen 7,0 en 9,5 liggen. In de praktijk is Nederlands kraanwater licht basisch. Dunea mat in Scheveningen begin 2024 bijvoorbeeld een gemiddelde pH van 8,41.
+- Waarom is kraanwater licht basisch? Drinkwaterbedrijven stellen de pH bewust zo in dat het water niet agressief is. Water dat te zuur is, kan leidingen aantasten en metalen zoals koper en lood oplossen. Het Drinkwaterbesluit eist daarom ook dat het water niet agressief of corrosief is.
+- Is water met een hoge pH gezonder? Nee. Je lichaam regelt zijn eigen zuur-base-evenwicht, via onder meer de nieren en longen. De Consumentenbond schrijft dat daar geen alkalisch water voor nodig is. Gewoon kraanwater met een pH rond 8 is prima.
+- Is een pH van 9 goed voor drinkwater? Een pH van 9 valt binnen de wettelijke norm, die tot 9,5 loopt. Het is dus toegestaan en niet schadelijk. Water met zo’n hoge pH kan wel iets zeepachtiger of bitterder smaken.
+- Wat is de pH van osmosewater? Osmosewater heeft vaak een pH iets onder 7. Het membraan haalt de mineralen weg die de pH stabiel houden, en koolzuur uit de lucht maakt het water dan licht zuur. Dat is niet schadelijk; koffie en frisdrank zijn veel zuurder.
+- Hoe meet ik de pH van mijn kraanwater? Met pH-teststrips of een digitale pH-meter, te koop bij bouwmarkten en webwinkels. Betrouwbaarder is het overzicht van je drinkwaterbedrijf: dat meet de pH van jouw leveringsgebied meerdere keren per jaar in een geaccrediteerd lab.
+- Is de pH hetzelfde als de hardheid van water? Nee. De pH zegt hoe zuur of basisch water is. De hardheid zegt hoeveel kalk, oftewel calcium en magnesium, erin zit. Beide staan in het waterkwaliteitsoverzicht van je drinkwaterbedrijf.
+
+## Quooker waterfilter: wat het filter wel en niet doet
+URL: https://www.water-zuivering.nl/kennisbank/quooker-waterfilter
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Elke Quooker heeft een HiTAC-filter van actieve kool in het reservoir. Dat haalt chloor, bepaalde bestrijdingsmiddelen en organische vervuiling uit het kokende water en verbetert de smaak. Het is geen kalkfilter en het filtert je koude water niet. PFAS, medicijnresten en microplastics noemt Quooker niet; daarvoor heb je een osmosemembraan nodig.
+
+Veelgestelde vragen:
+- Heeft een Quooker een waterfilter? Ja. In het reservoir van elke Quooker zit een HiTAC-filter van actieve kool. Dat filtert het water dat de Quooker kookt. Heb je ook een CUBE voor gekoeld en bruisend water, dan zit daar een apart filter in.
+- Wat filtert het Quooker HiTAC-filter? Volgens Quooker neemt de koolstof chloor, bepaalde bestrijdingsmiddelen en organische vervuiling op en verbetert het de smaak en geur. Quooker zegt er nadrukkelijk bij dat het HiTAC-filter geen kalkfilter is.
+- Hoe vaak moet je het Quooker-filter vervangen? Het HiTAC-filter in het reservoir gaat in gebieden met zacht water ongeveer 3 tot 5 jaar mee. Bij hard water kun je het meenemen bij een onderhouds- en ontkalkingsbeurt. Het CUBE-filter vervang je na 12 maanden; de CUBE geeft dan zelf een signaal.
+- Filtert een Quooker ook het koude water? Nee. Het HiTAC-filter zit in het reservoir, dus alleen water dat de Quooker kookt gaat erdoorheen. Koud water uit de Quooker-kraan komt gewoon uit de waterleiding. Alleen met een CUBE krijg je gefilterd koud water, en dan alleen uit die CUBE.
+- Haalt een Quooker-filter PFAS uit het water? Quooker noemt PFAS niet bij wat zijn filters tegenhouden. Wil je PFAS zeker uit je drinkwater halen, dan heb je een omgekeerde-osmosemembraan nodig. Dat houdt ook de kleine PFAS-moleculen grotendeels tegen.
+- Kan ik zelf het Quooker-filter vervangen? Ja. Quooker levert het vervangfilter met stap-voor-stap instructies. Je kunt het ook laten doen door een monteur van Quooker of je dealer, bijvoorbeeld tijdens een onderhoudsbeurt.
+- Kun je een Quooker en een osmosesysteem combineren? Ja. Ze doen elk iets anders: de Quooker geeft kokend water, het osmosesysteem gefilterd drinkwater uit een eigen kraan of een 3-weg kraan. Beide staan onder het aanrecht, dus check vooraf of er in je keukenkastje ruimte is voor allebei.
+
+## Is er "slechtste kraanwater" in Nederland?
+URL: https://www.water-zuivering.nl/kennisbank/slechtste-kraanwater-nederland
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Er is geen regio in Nederland met structureel onveilig kraanwater: alle drinkwaterbedrijven moeten aan dezelfde wettelijke normen voldoen. Wel verschillen smaak en hardheid per regio, door de waterbron (grondwater of oppervlaktewater) en het mineraalgehalte. Verhalen over het slechtste kraanwater gaan dus meestal over smaak of kalk, niet over veiligheid.
+
+Veelgestelde vragen:
+- Is er een regio met echt slecht kraanwater in Nederland? Nee, alle Nederlandse drinkwaterbedrijven moeten voldoen aan dezelfde wettelijke normen — er is geen regio waar kraanwater structureel onveilig zou zijn.
+- Waarom smaakt kraanwater dan per regio anders? Smaakverschillen ontstaan vooral door de waterbron (grondwater vs. oppervlaktewater) en de hoeveelheid mineralen, niet door een verschil in veiligheid.
+- Komen incidenten met kraanwater vaak voor? Incidenteel gebeurt er iets (zoals een lokale storing of kookwateradvies), maar dat wordt snel gecommuniceerd en verholpen — het is geen teken van structureel slechte kwaliteit.
+- Hoe kom ik erachter waarom mijn kraanwater een bepaalde smaak heeft? Je eigen waterbedrijf publiceert meestal informatie over de bron en samenstelling van het water in jouw regio — vaak terug te vinden op hun website.
+- Is troebel water na werkzaamheden gevaarlijk? Meestal niet — het komt vaak door lucht of ijzerdeeltjes die loskomen tijdens reparaties. Laat de kraan even doorlopen; als het niet wegtrekt, neem dan contact op met je waterbedrijf.
+
+## Wat filtert Brita? Wat het filter wel en niet doet
+URL: https://www.water-zuivering.nl/kennisbank/wat-filtert-brita
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Volgens Brita vermindert het MAXTRA PRO PURE PERFORMANCE-patroon chloor, kalk, lood en koper, en ook bepaalde pesticiden, medicijnresten en PFAS. Een patroon gaat tot 4 weken of 150 liter mee. Dit zijn cijfers van de fabrikant, gemeten volgens de genoemde teststandaarden. Een onafhankelijke test hebben we niet gevonden.
+
+Veelgestelde vragen:
+- Wat filtert Brita uit water? Volgens de fabrikant vermindert het MAXTRA PRO PURE PERFORMANCE-patroon chloor, kalk, lood en koper, en bepaalde pesticiden, medicijnresten en PFAS. Dit zijn opgaven van Brita zelf.
+- Filtert een Brita-filter kalk? Ja, voor een deel. Brita noemt kalkvermindering tot 150 liter voor zacht tot middelhard water. Bij hard water raakt dat sneller op; daarvoor heeft Brita het KALK EXPERT-patroon.
+- Haalt Brita PFAS uit water? Brita claimt tot 98% minder PFAS bij het PURE PERFORMANCE-patroon, getest volgens onder meer NSF/ANSI 53. Een onafhankelijke Nederlandse test hebben we niet gevonden, en een test meet maar een deel van alle PFAS-stoffen.
+- Hoe vaak moet je een Brita-filter vervangen? Elke 4 weken of na 150 liter, wat er het eerst komt. Dat is de opgave van Brita voor de MAXTRA PRO-patronen.
+- Is een Brita-filter gezond? Bij goed gebruik is er geen reden tot zorgen, maar Milieu Centraal vindt een filter in Nederland niet nodig en waarschuwt voor bacteriegroei op filters. Vervang het patroon op tijd, houd de kan schoon en drink het water snel op.
+- Is Brita beter dan osmose? Dat hangt af van wat je wilt. Een kan is goedkoop en werkt zonder installatie. Een osmosesysteem filtert grondiger via een membraan en levert direct uit de kraan, maar kost meer en moet worden aangesloten.
+- Haalt Brita bacteriën uit water? Reken daar niet op. Een filterkan is niet bedoeld om onveilig water veilig te maken. Volg bij een kookadvies altijd je waterbedrijf.
+
+## Wat is osmosewater? Uitleg, gebruik en kosten
+URL: https://www.water-zuivering.nl/kennisbank/wat-is-osmosewater
+Bijgewerkt: 2026-10-27
+
+Veelgestelde vragen:
+- Wat is osmosewater? Osmosewater is water dat door een membraan met minuscule gaatjes is geperst. Alles wat groter is dan een watermolecuul blijft achter, zoals chloor, PFAS, medicijnresten, microplastics en lood. Het proces heet omgekeerde osmose (RO), daarom heet het ook RO-water.
+- Kun je osmosewater drinken? Ja, osmosewater is veilig om te drinken. Er wordt niets aan toegevoegd, alleen weggefilterd. Omdat ook calcium en magnesium worden weggefilterd, voegen goede systemen daarna een mineraalfilter toe voor een vollere smaak.
+- Hoe maak je osmosewater thuis? Je kunt jerrycans kopen, een tafelfilter gebruiken of een systeem onder je aanrecht laten installeren. Met een systeem onder het aanrecht heb je onbeperkt osmosewater direct uit je eigen kraan.
+- Wat kost osmosewater? Met een eigen systeem betaal je eenmalig de aanschaf en installatie, en daarna alleen nieuwe filters, gemiddeld elke 12 tot 24 maanden afhankelijk van het filter.
+
+## Wat is RO-water en hoe werkt het?
+URL: https://www.water-zuivering.nl/kennisbank/wat-is-ro-water
+Bijgewerkt: 2026-10-27
+
+Kort antwoord: RO-water is kraanwater dat is gezuiverd met omgekeerde osmose (reverse osmosis). Het water wordt door een membraan met extreem kleine poriën geperst, waardoor vrijwel alle opgeloste stoffen achterblijven, ook kalk en mineralen. Het resultaat is zeer zuiver water met een lage TDS-waarde. Wie mineralen terug wil, kiest een nafilter met mineralen.
+
+Veelgestelde vragen:
+- Wat betekent RO in RO-water? RO staat voor "Reverse Osmosis", oftewel omgekeerde osmose — de techniek waarbij water onder druk door een extreem fijn membraan wordt geperst.
+- Is RO-water hetzelfde als osmosewater? Ja, dit zijn twee namen voor hetzelfde proces en resultaat — RO-water is de Engelse term, osmosewater de Nederlandse.
+- Is RO-water veilig om te drinken? Ja. RO-water is juist extra gefilterd en verwijdert stoffen die in gewoon kraanwater nog kunnen voorkomen, zoals PFAS en medicijnresten.
+- Haalt RO-water ook nuttige mineralen weg? Een RO-membraan filtert zeer fijn en houdt ook een deel van de mineralen tegen. Dat is normaal gesproken geen probleem, omdat de meeste mineralen via voeding binnenkomen.
+- Is RO-water hetzelfde als gedistilleerd water? Niet helemaal. Beide zijn zeer zuiver, maar gedistilleerd water wordt gemaakt door verdamping en condensatie, terwijl RO-water door een membraan wordt geperst — RO is energiezuiniger en sneller voor huishoudelijk gebruik.
+- Ontstaat er afvalwater bij het maken van RO-water? Ja, een deel van het water dat door het membraan gaat, spoelt de opgevangen stoffen weg. Moderne systemen zijn hier steeds zuiniger in dan oudere generaties.
+- Kan ik RO-water gebruiken voor planten? Ja, veel kamerplanten doen het goed met RO-water, al hebben sommige planten juist baat bij de mineralen in gewoon kraanwater — dat verschilt per plantensoort.
+
+## Wat kost een waterzuiveringssysteem?
+URL: https://www.water-zuivering.nl/kennisbank/wat-kost-een-waterzuiveringssysteem
+Bijgewerkt: 2026-10-21
+
+Kort antwoord: De aanschafprijs van een waterzuiveringssysteem met omgekeerde osmose hangt af van je situatie en vraag je op via een offerte, inclusief plaatsing. Daarnaast betaal je voor vervangende filters: bij het systeem van Water-zuivering gemiddeld ongeveer €135 per jaar. Daar staat tegenover dat je geen flessenwater meer hoeft te kopen.
+
+Veelgestelde vragen:
+- Wat kosten de vervangende filters? Bij Water-zuivering kosten het PPC-voorfilter en het CTO-nafilter elk €49,99 en gaan ze ongeveer een jaar mee; het CTO-filter met mineralen kost €64,99. Het RO-membraan kost €69,99 en gaat ongeveer twee jaar mee. Gemiddeld is dat ongeveer €135 per jaar.
+- Zit de installatie bij de prijs in? Ja. De prijs in de offerte is inclusief plaatsing door een monteur, die het systeem meestal binnen 1 tot 2 uur aansluit op je bestaande kraan.
+- Waarom staat er geen vaste prijs op de website? Omdat elke keuken anders is. Je krijgt liever een persoonlijk, vrijblijvend voorstel dan een algemeen bedrag dat voor jou misschien niet klopt. Een offerte aanvragen is gratis.
+- Is een waterzuiveringssysteem goedkoper dan flessenwater? Op termijn vaak wel. Flessenwater blijft jaar na jaar geld kosten, terwijl een systeem na de aanschaf alleen nog de filters als terugkerende kostenpost heeft.
+
+## Water zuiveren in een noodsituatie: wat werkt echt?
+URL: https://www.water-zuivering.nl/kennisbank/water-zuiveren-noodsituatie
+Bijgewerkt: 2026-11-06
+
+Kort antwoord: Bewaar minimaal 9 liter water per persoon voor drie dagen. Moet je toch water zuiveren in een noodsituatie, laat het dan eerst bezinken en giet het door een schone doek. Kook het daarna een paar minuten goed door, of gebruik een noodfilter of zuiveringstabletten. Bij een kookadvies volg je altijd de instructies van je waterbedrijf.
+
+Veelgestelde vragen:
+- Hoe zuiver je water in een noodsituatie? Haal eerst grof vuil eruit door het water te laten bezinken en door een schone doek te gieten. Kook het daarna een paar minuten goed door, of gebruik een noodfilter of zuiveringstabletten. Het veiligst is een combinatie van filteren en koken of tabletten.
+- Hoe lang moet je water koken om het drinkbaar te maken? Bij een kookadvies in Nederland adviseert een waterbedrijf als Vitens het water drie minuten te laten koken. Volg altijd de tijd die je eigen waterbedrijf noemt.
+- Hoeveel water heb je nodig in een noodsituatie? De overheid adviseert via Denk vooruit minimaal 9 liter water per persoon voor de eerste 72 uur: ongeveer 3 liter per dag om te drinken en eten te maken. Denk ook aan water voor huisdieren.
+- Werken waterzuiveringstabletten tegen alles? Nee. Tabletten op basis van chloor of chloordioxide doden bacteriën en virussen, maar werken trager tegen sommige parasieten. Chemische stoffen zoals pesticiden of zware metalen halen ze niet weg.
+- Hoe lang kun je kraanwater bewaren voor je noodpakket? Kraanwater in een schone, goed afgesloten fles blijft koel en donker bewaard een aantal dagen goed. Ververs zelf getapt water daarom regelmatig. Verzegeld flessenwater uit de winkel kun je tot de houdbaarheidsdatum bewaren.
+- Werkt een osmosesysteem als de waterleiding uitvalt? Nee. Een osmosesysteem onder het aanrecht heeft waterdruk uit de leiding en stroom nodig. Valt de watervoorziening uit, dan heb je een voorraad, een noodfilter of tabletten nodig.
+- Wat moet ik doen bij een kookadvies? Gebruik geen kraanwater zonder het eerst te koken om te drinken, tanden te poetsen, eten klaar te maken of ijsblokjes te maken. Volg de instructies en de kooktijd van je waterbedrijf, ook als je een waterfilter hebt.
+
+## Waterfilter koffiemachine: is het nodig en wanneer?
+URL: https://www.water-zuivering.nl/kennisbank/waterfilter-koffiemachine
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Een waterfilter in je koffiemachine vermindert vooral kalk en verbetert de smaak van het water. Dat is het meest zinvol bij hard water. De meeste fabrikanten adviseren het filter ongeveer elke 2 maanden te vervangen, bij hard water of veel gebruik eerder. Volg altijd de handleiding van je machine.
+
+Veelgestelde vragen:
+- Is een waterfilter koffiemachine nodig? Niet altijd. Bij hard water is het vaak de moeite waard, omdat het kalk in de machine vermindert. Bij zacht water is het voordeel kleiner. Kijk ook in de handleiding van je machine.
+- Hoe vaak vervang je een waterfilter van een koffiemachine? De meeste fabrikanten noemen ongeveer elke 2 maanden, bij hard water of veel gebruik eerder. Sommige machines geven zelf een signaal.
+- Moet ik nog ontkalken met een waterfilter? Meestal wel, alleen minder vaak. Een filter haalt niet alle kalk weg. Volg de ontkalkmelding of de handleiding van je machine.
+- Mag osmosewater in een koffiemachine? Dat hangt af van je machine. Puur osmosewater bevat bijna geen mineralen, wat vlakke koffie kan geven. Kijk in de handleiding, en overweeg water met toegevoegde mineralen.
+- Wat is het beste water voor koffie? Water met een beetje mineralen en weinig kalk. De Specialty Coffee Association mikt op ongeveer 150 mg/l opgeloste stoffen. Thuis gaat het vooral om frisse smaak en een machine die niet verkalkt.
+- Past elk waterfilter in mijn koffiemachine? Nee. Filters zijn meestal gemaakt voor bepaalde merken of series. Controleer het typenummer van je machine voor je koopt.
+
+## Waterfilter onder de gootsteen: alles wat je moet weten
+URL: https://www.water-zuivering.nl/kennisbank/waterfilter-onder-de-gootsteen
+Bijgewerkt: 2026-10-21
+
+Veelgestelde vragen:
+- Waarom een waterfilter onder de gootsteen? Het systeem staat direct bij de plek waar je het water gebruikt, blijft uit het zicht en neemt geen aanrechtruimte in, anders dan een filterkan of tafelfilter.
+- Hoeveel ruimte heeft een waterfilter onder de gootsteen nodig? De meeste systemen zijn compact, vaak rond de 10 à 15 cm breed. Het systeem van Water-zuivering meet 10,5 × 42 × 43 cm en past staand of liggend in het kastje.
+- Wat moet er onder het aanrecht aanwezig zijn? Een koudwateraansluiting, de afvoer van de gootsteen en een stopcontact.
+- Waar let je op bij het kiezen? Kijk naar de ruimte in je kastje, het aantal filtertrappen, vakkundige installatie en de garantie. Een goed systeem combineert grove, fijne en smaakfiltratie.
+
+## Hoe vaak moet je een waterfilter vervangen?
+URL: https://www.water-zuivering.nl/kennisbank/waterfilter-vervangen-hoe-vaak
+Bijgewerkt: 2026-11-02
+
+Kort antwoord: Dat verschilt per filter. Bij een omgekeerde-osmosesysteem van Water-zuivering vervang je het PPC-voorfilter en het CTO-nafilter gemiddeld elke 12 maanden en het RO-membraan gemiddeld elke 24 maanden. Gebruik je veel water, dan eerder. Een verzadigd filter houdt minder tegen; het display op het apparaat geeft aan wanneer het tijd is.
+
+Veelgestelde vragen:
+- Hoe vaak moet je een waterfilter vervangen? Bij een Water-zuivering systeem gaan het PPC-voorfilter en het CTO-nafilter gemiddeld 12 maanden mee en het RO-membraan gemiddeld 24 maanden. Gebruik je veel water, dan vervang je ze eerder.
+- Hoe weet ik wanneer een filter vervangen moet worden? Het display op het apparaat laat zien wanneer het tijd is, zodat je het niet zelf hoeft bij te houden.
+- Wat gebeurt er als je een filter te lang laat zitten? Een verzadigd filter houdt onzuiverheden minder goed tegen. Bij sommige filtertypes neemt ook de doorstroom af, waardoor de waterdruk aan de kraan merkbaar daalt.
+- Kan ik het filter zelf vervangen? Ja. Bij een Water-zuivering systeem draai je in drie simpele stappen zelf een nieuw filter erin, zonder gereedschap en zonder monteur.
+- Wat kost een nieuw filter? Het PPC-voorfilter en het CTO-nafilter kosten elk €49,99 (het CTO-filter met mineralen €64,99), het RO-membraan €69,99. Gemiddeld is dat ongeveer €135 per jaar.
+
+## Waterkoeler thuis: met fles, op de leiding of een filterkraan?
+URL: https://www.water-zuivering.nl/kennisbank/waterkoeler-thuis
+Bijgewerkt: 2026-11-06
+
+Kort antwoord: Een waterkoeler thuis met fles is makkelijk te plaatsen, maar je betaalt per fles en sjouwt flessen van ongeveer 19 kilo. Een leidingwaterkoeler is handiger, maar duurder in aanschaf of huur. Een filterkraan met osmosesysteem koelt niet, maar levert wel het zuiverste water, zonder flessen en zonder apparaat op het aanrecht.
+
+Veelgestelde vragen:
+- Wat kost een waterkoeler voor thuis? Een eenvoudige waterkoeler voor thuis met fles kost bij gespecialiseerde winkels vanaf ongeveer € 125 tot € 200. Daarbij komen de kosten voor de flessen water. Een leidingwaterkoeler is duurder in aanschaf of wordt per maand verhuurd.
+- Wat is beter: een waterkoeler met fles of op de waterleiding? Een koeler op de waterleiding is handiger, want je hoeft geen flessen te sjouwen of te bestellen. Een flessenkoeler kun je overal neerzetten waar een stopcontact is. Op de lange termijn is een leidingwaterkoeler vaak goedkoper.
+- Hoeveel kost het water voor een waterkoeler? Een fles bronwater van ongeveer 19 liter kost bij zakelijke leveranciers rond de € 15 exclusief btw, zo'n 80 tot 85 cent per liter. Kraanwater kost in 2026 gemiddeld minder dan een halve cent per liter.
+- Is water uit een waterkoeler gezonder dan kraanwater? Niet vanzelf. Een waterkoeler maakt water koud, niet zuiverder. Water uit een fles is bronwater, water uit een leidingwaterkoeler is kraanwater met soms een eenvoudig filter. Wil je stoffen als PFAS en medicijnresten eruit, dan heb je een osmosefilter nodig.
+- Moet je een waterkoeler schoonmaken? Ja. In het reservoir en de tapkraantjes kunnen bacteriën groeien als je ze niet reinigt. Volg het schema van de fabrikant; bij huur zit het onderhoud vaak in het abonnement.
+- Kan ik ook koud gefilterd water uit mijn keukenkraan krijgen? Een osmosesysteem onder het aanrecht levert gefilterd water op kraantemperatuur, niet gekoeld. Wie het graag ijskoud drinkt, vult een karaf en zet die in de koelkast. Zo heb je zuiver water zonder een extra apparaat op het aanrecht.
+
+## Waterontharder aansluiten: hoe gaat dat?
+URL: https://www.water-zuivering.nl/kennisbank/waterontharder-aansluiten
+Bijgewerkt: 2026-10-21
+
+Veelgestelde vragen:
+- Kan ik een waterontharder zelf aansluiten? Technisch kan het, maar een verkeerde aansluiting kan lekkage of een onjuiste werking veroorzaken — een vakkundige installatie is aan te raden.
+- Heb ik altijd een afvoer nodig om een waterontharder aan te sluiten? Voor een klassieke ionenwisselaar-ontharder wel, vanwege het periodieke doorspoelen tijdens regeneratie.
+- Hoe lang duurt het aansluiten van een waterontharder? Bij een professionele installatie meestal een dagdeel, afhankelijk van de complexiteit van je leidingwerk.
+- Waar in huis sluit je een waterontharder het best aan? Bij voorkeur direct na de watermeter, zodat het hele huis profiteert van zachter water — niet alleen één kraan.
+- Wat kost het om een waterontharder te laten aansluiten? De installatiekosten hangen af van de complexiteit van je leidingwerk en of er al een afvoer in de buurt is. Vraag dit na bij een installateur voor een prijs op maat.
+
+## Waterontharder: voor- en nadelen op een rij
+URL: https://www.water-zuivering.nl/kennisbank/waterontharder-voor-en-nadelen
+Bijgewerkt: 2026-10-27
+
+Veelgestelde vragen:
+- Wat is het belangrijkste nadeel van een waterontharder? Een waterontharder lost alleen kalk op — het heeft geen effect op chloor, PFAS, medicijnresten of microplastics in je drinkwater.
+- Is een waterontharder de moeite waard ondanks de nadelen? In gebieden met hard water wegen de voordelen (minder kalkaanslag, langere levensduur van apparaten) voor veel huishoudens op tegen het onderhoud en de zoutkosten.
+- Kan ik een waterontharder combineren met een waterzuiveraar? Ja, dat gebeurt vaak. De ontharder pakt de kalk aan, terwijl een osmosesysteem daarna nog PFAS, medicijnresten en microplastics uit je drinkwater filtert.
+- Heeft een waterontharder ook voordelen voor de gezondheid? Direct niet — het effect zit vooral in comfort (huid, haar, wasgoed) en het voorkomen van kalkschade aan apparatuur, niet in drinkwaterkwaliteit.
+- Wat kost een waterontharder op jaarbasis? Naast de eenmalige aanschaf reken je vooral op de kosten van onthardingszout — meestal enkele tientallen euro’s per jaar, afhankelijk van waterverbruik en waterhardheid.
+- Zijn er goedkopere alternatieven voor een klassieke waterontharder? Magnetische of elektronische systemen zijn goedkoper in aanschaf en onderhoud, maar verwijderen de kalk niet echt — ze veranderen alleen de kristalstructuur. Lees meer in ons artikel over waterontharders zonder afvoer.
+
+## Waterontharder of waterzuiveraar: het verschil
+URL: https://www.water-zuivering.nl/kennisbank/waterontharder-vs-waterzuiveraar
+Bijgewerkt: 2026-10-21
+
+Veelgestelde vragen:
+- Wat is het verschil tussen een waterontharder en een waterzuiveraar? Een waterontharder haalt calcium en magnesium uit al het water dat je huis binnenkomt, tegen kalkaanslag. Een waterzuiveraar werkt alleen op het water dat je drinkt, en haalt daar ook PFAS, geneesmiddelresten, kunststofdeeltjes en lood uit.
+- Haalt een waterontharder PFAS uit het water? Nee. Ionenwisseling ruilt alleen kalkdeeltjes in voor natrium. PFAS en resten van geneesmiddelen gaan er onveranderd doorheen.
+- Heeft een waterzuiveraar zout nodig? Nee, een waterzuiveraar heeft geen zout nodig: het membraan doet het werk. Alleen een klassieke ontharder vraagt om een zoutvat dat je bijvult.
+- Wanneer kies je welke? Heb je last van kalk door het hele huis, dan past een waterontharder. Wil je vooral zuiverder, lekkerder drinkwater, dan is een waterzuiveraar onder je keukenkraan de directste oplossing.
+
+## Waterontharder zonder afvoer: hoe werkt dat?
+URL: https://www.water-zuivering.nl/kennisbank/waterontharder-zonder-afvoer
+Bijgewerkt: 2026-10-27
+
+Veelgestelde vragen:
+- Bestaat een echte waterontharder zonder afvoer? Een klassieke ionenwisselaar-ontharder heeft altijd een afvoer nodig voor het spoelproces. Wat vaak "waterontharder zonder afvoer" wordt genoemd, is meestal een magneet- of elektronisch systeem, dat anders werkt.
+- Werkt een magneet- of elektronisch systeem net zo goed? Deze systemen veranderen de kalkstructuur zodat het minder aanslaat, maar verwijderen de kalk niet daadwerkelijk uit het water zoals een klassieke ontharder dat doet.
+- Is een systeem zonder afvoer goedkoper? Vaak wel in aanschaf en onderhoud (geen zout, geen afvoeraansluiting nodig), maar het effect is doorgaans minder krachtig dan een klassieke ontharder.
+- Hoe herken ik overdreven marketingclaims bij deze systemen? Wees kritisch bij claims als "100% kalkvrij zonder onderhoud" — magnetische en elektronische systemen verminderen aanslag, maar verwijderen kalk niet echt uit het water zoals een ionenwisselaar dat doet.
+- Voor wie is een systeem zonder afvoer een goede keuze? Voor huishoudens met licht tot matig hard water die geen zin hebben in zoutonderhoud en een afvoeraansluiting, en die genoegen nemen met een minder krachtig resultaat dan een klassieke ontharder.
+
+## Waterzuiveraar installeren: hoe gaat dat?
+URL: https://www.water-zuivering.nl/kennisbank/waterzuiveraar-installeren
+Bijgewerkt: 2026-10-21
+
+Veelgestelde vragen:
+- Hoe lang duurt het installeren van een waterzuiveraar? De installatie zelf duurt ongeveer 1 à 2 uur. Daarna test de monteur de waterdruk, de aansluitingen en elke filtertrap, wat ongeveer 15 minuten kost.
+- Moet ik zelf iets voorbereiden? Nee. De monteur brengt alles mee. Zorg alleen dat het kastje onder je spoelbak toegankelijk is.
+- Wat moet er onder het aanrecht aanwezig zijn? Een koudwateraansluiting, de afvoer van de gootsteen en een stopcontact.
+- Welke garantie krijg je? Je krijgt 10 jaar garantie. Onze eigen monteurs installeren elk systeem persoonlijk en testen alles voordat ze vertrekken.
+
+## Wit water uit de kraan: oorzaak, glastest en wat je doet
+URL: https://www.water-zuivering.nl/kennisbank/wit-water-uit-de-kraan
+Bijgewerkt: 2026-11-06
+
+Kort antwoord: Wit water uit de kraan komt bijna altijd door kleine luchtbelletjes, bijvoorbeeld na werkzaamheden, op warme dagen of bij heet water. Het is onschadelijk. Zet het glas even neer: wordt het water binnen een minuut van onder naar boven helder, dan was het lucht en kun je het gewoon drinken.
+
+Veelgestelde vragen:
+- Waarom komt er wit water uit de kraan? Wit water uit de kraan komt bijna altijd door kleine luchtbelletjes. Water in de leiding staat onder druk en bevat opgeloste lucht. Komt het uit de kraan, dan valt de druk weg en vormen zich belletjes die het licht weerkaatsen, waardoor het water melkwit lijkt.
+- Kun je wit water uit de kraan drinken? Ja, als het door luchtbelletjes komt. Dat herken je doordat het water in een glas binnen een minuut van onder naar boven helder wordt. Blijft het troebel, drink het dan niet en neem contact op met je waterbedrijf.
+- Waarom is warm water uit de kraan wit? Warm water kan minder lucht vasthouden dan koud water. Wordt het water in je boiler of kokendwaterkraan opgewarmd, dan komt er lucht vrij in de vorm van belletjes. Daardoor ziet heet water er vaker wit uit dan koud.
+- Wat zijn witte vlokjes in mijn kraanwater? Witte vlokjes of korreltjes die naar de bodem zakken, zijn meestal kalk. Die laat los uit een boiler, kokendwaterkraan of een perlator die vol kalk zit. Het is niet schadelijk, maar het is wel een teken dat je die onderdelen moet ontkalken.
+- Hoe lang blijft het water wit na werkzaamheden? Na werkzaamheden aan het leidingnet is het water meestal binnen een paar uur weer helder. Laat de koude kraan een paar minuten lopen. Is het daarna nog steeds wit of troebel, neem dan contact op met je waterbedrijf.
+- Is troebel water uit de kraan gevaarlijk? Troebel water dat niet binnen een paar minuten opklaart, kan zwevende deeltjes of vervuiling bevatten. Drink het niet en kijk of er een storing of kookadvies is. Bruinig troebel water komt meestal door ijzer en mangaan uit de leidingen.

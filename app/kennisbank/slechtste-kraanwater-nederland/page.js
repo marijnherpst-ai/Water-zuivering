@@ -41,6 +41,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-18"
+        dateModified="2026-11-02"
         headline="Is er 'slechtste kraanwater' in Nederland? De feiten"
         description="Verschillen regio-kraanwater in Nederland echt zo sterk in kwaliteit? We zetten de feiten op een rij, los van broodje-aap-verhalen."
         image="https://www.water-zuivering.nl/assets/img/een-kraan.jpg"
@@ -67,7 +69,7 @@ export default function Page() {
             <KortAntwoord>
               Er is geen regio in Nederland met structureel onveilig kraanwater: alle drinkwaterbedrijven moeten aan dezelfde wettelijke normen voldoen. Wel verschillen smaak en hardheid per regio, door de waterbron (grondwater of oppervlaktewater) en het mineraalgehalte. Verhalen over het slechtste kraanwater gaan dus meestal over smaak of kalk, niet over veiligheid.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

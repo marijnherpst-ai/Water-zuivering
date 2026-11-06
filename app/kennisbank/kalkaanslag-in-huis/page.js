@@ -26,6 +26,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-08-08"
+        dateModified="2026-11-02"
         headline="Kalkaanslag in huis: oorzaak en oplossing"
         description="Wat veroorzaakt kalkaanslag in huis, welke schade richt het aan, en hoe voorkom je het structureel?"
         image="https://www.water-zuivering.nl/assets/img/kennisbank/kalkaanslag-in-huis.png"
@@ -53,7 +55,7 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               Die witte aanslag op je kranen en douchekop komt niet uit het niets. Wat is de oorzaak, en wat kun je eraan doen?
             </p>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

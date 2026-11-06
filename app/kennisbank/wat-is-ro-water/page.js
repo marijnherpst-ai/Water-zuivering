@@ -42,6 +42,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-18"
+        dateModified="2026-10-27"
         headline="Wat is RO-water en hoe werkt het?"
         description="RO-water (reverse osmosis water) is water dat door een omgekeerde-osmose-membraan is gefilterd. Uitleg over hoe het werkt en wat het uit je water haalt."
         image="https://www.water-zuivering.nl/assets/img/filters-closeup.png"
@@ -68,7 +70,7 @@ export default function Page() {
             <KortAntwoord>
               RO-water is kraanwater dat is gezuiverd met omgekeerde osmose (reverse osmosis). Het water wordt door een membraan met extreem kleine poriën geperst, waardoor vrijwel alle opgeloste stoffen achterblijven, ook kalk en mineralen. Het resultaat is zeer zuiver water met een lage TDS-waarde. Wie mineralen terug wil, kiest een nafilter met mineralen.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="27 oktober 2026" />
           </div>
         </section>
 

@@ -58,6 +58,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/glas-water.webp"
         url="https://www.water-zuivering.nl/kennisbank/kraanwater-babyvoeding"
         datePublished="2026-10-27"
+        dateModified="2026-10-27"
         about={{ '@type': 'Thing', name: 'Zuigelingenvoeding', sameAs: 'https://nl.wikipedia.org/wiki/Zuigelingenvoeding' }}
         mentions={[{ '@type': 'Organization', name: 'Voedingscentrum', url: 'https://www.voedingscentrum.nl' }]}
       />
@@ -86,7 +87,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Voedingscentrum: Flesvoeding klaarmaken (2024)', url: 'https://www.voedingscentrum.nl/Assets/Uploads/voedingscentrum/Documents/Consumenten/Mijn%20kind%20en%20ik/Flesvoeding/Flesvoeding_2024.pdf' }}>
               In Nederland mag je flesvoeding maken met koud kraanwater, zonder het eerst te koken. Dat zegt het Voedingscentrum. Gebruik geen warm water uit de kraan. Heb je loden leidingen, neem dan flessenwater waarvan op het etiket staat dat het geschikt is voor babyvoeding. Bij nieuwe leidingen of kranen laat je de kraan eerst even doorstromen.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="27 oktober 2026" />
           </div>
         </section>
 

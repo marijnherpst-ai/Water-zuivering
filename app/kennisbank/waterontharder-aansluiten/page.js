@@ -39,6 +39,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-18"
+        dateModified="2026-10-21"
         headline="Waterontharder aansluiten: hoe gaat dat?"
         description="Een waterontharder aansluiten vraagt een aftakking op de hoofdleiding en een afvoer. Stap voor stap wat erbij komt kijken."
         image="https://www.water-zuivering.nl/assets/img/cabinet-install.png"
@@ -62,7 +64,7 @@ export default function Page() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Waterontharder aansluiten: hoe gaat dat?</h1>
             <p className="mt-5 text-dim text-lg">Een <strong className="text-ink">waterontharder aansluiten</strong> komt neer op vier hoofdstappen — van aftakking tot instellen.</p>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="21 oktober 2026" />
           </div>
         </section>
 

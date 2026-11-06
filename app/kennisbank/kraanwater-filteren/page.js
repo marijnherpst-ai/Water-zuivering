@@ -41,6 +41,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-18"
+        dateModified="2026-11-02"
         headline="Kraanwater filteren: welke opties heb je?"
         description="Kraanwater filteren kan op verschillende manieren, van een simpele kan tot een compleet osmosesysteem. De opties en hun effect op een rij."
         image="https://www.water-zuivering.nl/assets/img/twee-kranen.jpg"
@@ -67,7 +69,7 @@ export default function Page() {
             <KortAntwoord>
               Kraanwater filteren kan met een filterkan, een opzetstuk op de kraan of een systeem onder de gootsteen. Een kan of opzetstuk met actieve kool verbetert vooral smaak en geur en haalt chloor weg. Wil je ook PFAS, medicijnresten en microplastics verwijderen, dan heb je omgekeerde osmose nodig: de grondigste manier om kraanwater te filteren.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

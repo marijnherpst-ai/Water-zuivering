@@ -27,6 +27,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-28"
+        dateModified="2026-10-21"
         headline="PFAS-vrij water: kan dat écht uit je eigen kraan?"
         description="Volledig PFAS-vrij drinkwater: is dat realistisch, en hoe kom je er zo dicht mogelijk bij? Uitleg over wat wel en niet werkt."
         image="https://www.water-zuivering.nl/assets/img/glas-water.webp"
@@ -57,7 +59,7 @@ export default function Page() {
             <KortAntwoord>
               Letterlijk 100% PFAS-vrij water bestaat bijna niet, omdat laboratoria steeds kleinere sporen kunnen meten. Wel kun je PFAS terugbrengen tot ruim onder de meetbare grens. Omgekeerde osmose komt daar het dichtst bij: het membraan houdt PFAS fysiek tegen. Koken, een waterontharder of een eenvoudig koolfilter doen dat niet of nauwelijks.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="21 oktober 2026" />
           </div>
         </section>
 

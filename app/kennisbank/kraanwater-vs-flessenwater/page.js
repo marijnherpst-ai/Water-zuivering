@@ -25,6 +25,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-08-08"
+        dateModified="2026-11-06"
         headline="Kraanwater vs. flessenwater: wat is voordeliger?"
         description="Kraanwater vs. flessenwater vergeleken op kosten, gemak en milieu-impact — met een eerlijke conclusie."
         image="https://www.water-zuivering.nl/assets/img/kennisbank/kraanwater-vs-flessenwater.png"
@@ -52,7 +54,7 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               Een eerlijke vergelijking van <strong className="text-ink">kraanwater vs flessenwater</strong> op drie punten: kosten, gemak en milieu-impact.
             </p>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="6 november 2026" />
           </div>
         </section>
 

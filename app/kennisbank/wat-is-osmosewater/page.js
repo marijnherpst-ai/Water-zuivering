@@ -25,6 +25,8 @@ export default function WatIsOsmosewaterPage() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-08-08"
+        dateModified="2026-10-27"
         headline="Wat is osmosewater? Uitleg, gebruik & kosten"
         description="Osmosewater (RO-water) uitgelegd: wat het is, of je het kan drinken, hoe je het maakt en wat het kost — inclusief de makkelijkste optie voor thuis."
         image="https://www.water-zuivering.nl/assets/img/cabinet-install.png"
@@ -52,7 +54,7 @@ export default function WatIsOsmosewaterPage() {
             <p className="mt-5 text-dim text-lg">
               <strong className="text-ink">Osmosewater</strong>, ook wel omgekeerde-osmosewater of RO-water genoemd, hoor je steeds vaker voorbijkomen. In gewone taal leggen we uit wat het is, of je het kan drinken, hoe je het maakt — en wat het je eigenlijk kost.
             </p>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="27 oktober 2026" />
           </div>
         </section>
 

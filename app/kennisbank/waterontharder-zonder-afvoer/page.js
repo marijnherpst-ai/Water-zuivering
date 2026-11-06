@@ -34,6 +34,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-18"
+        dateModified="2026-10-27"
         headline="Waterontharder zonder afvoer: hoe werkt dat?"
         description="Een waterontharder zonder afvoer bestaat niet als volwaardig alternatief voor een klassieke ontharder — wel als magneet- of elektronisch systeem. Uitleg."
         image="https://www.water-zuivering.nl/assets/img/systeem-liggend.png"
@@ -57,7 +59,7 @@ export default function Page() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Waterontharder zonder afvoer: hoe werkt dat?</h1>
             <p className="mt-5 text-dim text-lg">Zoek je een <strong className="text-ink">waterontharder zonder afvoer</strong>? Dan is het goed om te weten dat dit niet hetzelfde is als een klassieke ontharder.</p>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="27 oktober 2026" />
           </div>
         </section>
 

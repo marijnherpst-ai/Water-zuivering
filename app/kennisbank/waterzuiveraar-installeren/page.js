@@ -26,6 +26,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-08-08"
+        dateModified="2026-10-21"
         headline="Waterzuiveraar laten installeren: hoe gaat dat?"
         description="Hoe de installatie van een waterzuiveraar in zijn werk gaat: van afspraak tot zuiver water, stap voor stap."
         image="https://www.water-zuivering.nl/assets/img/kennisbank/waterzuiveraar-installeren.png"
@@ -53,7 +55,7 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               Veel mensen stellen het <strong className="text-ink">waterzuiveraar installeren</strong> uit omdat ze denken dat het een hele klus is. In werkelijkheid valt dat erg mee.
             </p>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="21 oktober 2026" />
           </div>
         </section>
 

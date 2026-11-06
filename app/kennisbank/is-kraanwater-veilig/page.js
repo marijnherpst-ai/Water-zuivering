@@ -27,6 +27,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-08-08"
+        dateModified="2026-11-06"
         headline="Is Nederlands kraanwater veilig om te drinken?"
         description="Is kraanwater in Nederland veilig? Ja, maar met kanttekeningen. Wat erin kan zitten en hoe je dat er eenvoudig uit filtert."
         image="https://www.water-zuivering.nl/assets/img/kennisbank/is-kraanwater-veilig.png"
@@ -57,7 +59,7 @@ export default function Page() {
             <KortAntwoord>
               Ja, Nederlands <strong className="text-ink">kraanwater</strong> is veilig om te drinken. Drinkwaterbedrijven controleren continu op honderden stoffen volgens strenge Europese en nationale normen. Wel worden steeds vaker sporen gevonden van stoffen die de norm nog niet volledig dekt, zoals PFAS, medicijnresten en microplastics. Wie die ook kwijt wil, filtert thuis met omgekeerde osmose.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="6 november 2026" />
           </div>
         </section>
 

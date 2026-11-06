@@ -52,6 +52,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-11-06"
+        dateModified="2026-11-06"
         headline="Bronwater: wat is het en is het beter dan kraanwater?"
         description="Het verschil tussen bronwater en mineraalwater, wat er in flessenwater zit en wat bronwater per jaar kost."
         image="https://www.water-zuivering.nl/assets/img/glas-water.webp"
@@ -82,7 +84,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Drinkwaterplatform', url: 'https://www.drinkwaterplatform.nl' }}>
               Bronwater is water uit een onderaardse bron dat in zijn natuurlijke staat wordt verpakt. Anders dan mineraalwater hoeft de bron niet officieel erkend te zijn en is de samenstelling niet vast. Bronwater is niet gezonder dan Nederlands kraanwater, maar wel honderd tot duizend keer duurder per liter.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="6 november 2026" />
           </div>
         </section>
 

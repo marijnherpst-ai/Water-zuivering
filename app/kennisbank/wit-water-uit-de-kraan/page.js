@@ -45,6 +45,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-11-06"
+        dateModified="2026-11-06"
         headline="Wit water uit de kraan: oorzaak, glastest en wat je doet"
         description="Waarom er wit of troebel water uit de kraan komt, hoe je het herkent met de glastest en wanneer je je waterbedrijf belt."
         image="https://www.water-zuivering.nl/assets/img/twee-kranen.jpg"
@@ -75,7 +77,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Vitens, waterkwaliteit', url: 'https://www.vitens.nl/service/waterkwaliteit' }}>
               Wit water uit de kraan komt bijna altijd door kleine luchtbelletjes, bijvoorbeeld na werkzaamheden, op warme dagen of bij heet water. Het is onschadelijk. Zet het glas even neer: wordt het water binnen een minuut van onder naar boven helder, dan was het lucht en kun je het gewoon drinken.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="6 november 2026" />
           </div>
         </section>
 

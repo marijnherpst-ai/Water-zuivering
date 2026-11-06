@@ -87,6 +87,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-11-06"
+        dateModified="2026-11-06"
         headline="Kraanwater buitenland: in welke landen kun je het drinken?"
         description="Per land zien of je kraanwater in het buitenland kunt drinken, met regels voor ijsblokjes en tandenpoetsen."
         image="https://www.water-zuivering.nl/assets/img/glas-water.webp"
@@ -117,7 +119,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'TUI, overzicht kraanwater per land', url: 'https://www.tui.nl/smile/blog/kraanwater-buitenland/' }}>
               In het grootste deel van West- en Noord-Europa, Noord-Amerika, Australië, Japan en Singapore kun je kraanwater in het buitenland gewoon drinken. In grote delen van Azië, Afrika, Midden- en Zuid-Amerika en een deel van Oost-Europa niet. Neem daar verzegeld flessenwater, ook voor tandenpoetsen en ijsblokjes, of kook het water eerst.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="6 november 2026" />
           </div>
         </section>
 

@@ -57,6 +57,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/twee-kranen.jpg"
         url="https://www.water-zuivering.nl/kennisbank/quooker-waterfilter"
         datePublished="2026-10-27"
+        dateModified="2026-11-02"
         about={{ '@type': 'Brand', name: 'Quooker', sameAs: 'https://nl.wikipedia.org/wiki/Quooker' }}
         mentions={[{ '@type': 'Organization', name: 'Quooker', url: 'https://www.quooker.nl' }]}
       />
@@ -85,7 +86,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Quooker: What maintenance does a Quooker require?', url: 'https://dealerportal.quooker.co.uk/en/downloads/download/1' }}>
               Elke Quooker heeft een HiTAC-filter van actieve kool in het reservoir. Dat haalt chloor, bepaalde bestrijdingsmiddelen en organische vervuiling uit het kokende water en verbetert de smaak. Het is geen kalkfilter en het filtert je koude water niet. PFAS, medicijnresten en microplastics noemt Quooker niet; daarvoor heb je een osmosemembraan nodig.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

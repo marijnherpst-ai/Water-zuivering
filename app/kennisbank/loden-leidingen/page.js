@@ -56,6 +56,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/een-kraan.jpg"
         url="https://www.water-zuivering.nl/kennisbank/loden-leidingen"
         datePublished="2026-10-27"
+        dateModified="2026-10-27"
         about={{ '@type': 'Thing', name: 'Loden waterleidingen', sameAs: 'https://nl.wikipedia.org/wiki/Lood_(element)' }}
         mentions={[
           { '@type': 'Organization', name: 'RIVM', url: 'https://www.rivm.nl' },
@@ -87,7 +88,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'RIVM: Loden leidingen', url: 'https://www.rivm.nl/drinkwater/loden-leidingen' }}>
               Loden leidingen zitten alleen in huizen die vóór 1960 zijn gebouwd. Lood is dof grijs, klinkt dof als je erop tikt en wordt zilverkleurig als je erin krast. Het mag maximaal 5 microgram per liter in drinkwater zitten. Laat de leidingen vervangen; tot die tijd drinken zwangeren en kinderen tot en met 7 jaar beter flessenwater.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="27 oktober 2026" />
           </div>
         </section>
 

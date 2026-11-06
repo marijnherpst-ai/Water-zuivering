@@ -52,6 +52,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/glas-water.webp"
         url="https://www.water-zuivering.nl/kennisbank/ph-kraanwater"
         datePublished="2026-10-27"
+        dateModified="2026-11-02"
         about={{ '@type': 'Thing', name: 'pH', sameAs: 'https://nl.wikipedia.org/wiki/PH' }}
         mentions={[{ '@type': 'Organization', name: 'Dunea', url: 'https://www.dunea.nl' }]}
       />
@@ -80,7 +81,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Drinkwaterbesluit, bijlage A, tabel IIIa', url: 'https://wetten.overheid.nl/BWBR0030111/2026-08-15' }}>
               Nederlands kraanwater moet volgens het Drinkwaterbesluit een pH tussen 7,0 en 9,5 hebben. In de praktijk is het licht basisch, rond 8: Dunea mat in Scheveningen begin 2024 gemiddeld 8,41. Drinkwaterbedrijven doen dat bewust, zodat het water leidingen niet aantast. Voor je gezondheid maakt een pH kraanwater binnen die grenzen geen verschil.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

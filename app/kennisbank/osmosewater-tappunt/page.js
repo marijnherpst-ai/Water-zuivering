@@ -26,6 +26,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-28"
+        dateModified="2026-10-21"
         headline="Osmosewater tappunt: een apart kraantje, hoe werkt dat?"
         description="Een osmosewater tappunt is een eigen kraantje naast je gewone kraan. Wat het is, waarom je het wilt en hoe de aansluiting werkt."
         image="https://www.water-zuivering.nl/assets/img/twee-kranen.jpg"
@@ -53,7 +55,7 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               Bij een osmosesysteem hoort meestal een eigen <strong className="text-ink">tappunt</strong> naast je gewone kraan. Wat dat precies is, en waarom het handiger is dan het klinkt.
             </p>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="21 oktober 2026" />
           </div>
         </section>
 

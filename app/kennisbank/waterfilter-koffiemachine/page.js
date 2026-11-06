@@ -36,6 +36,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/mineraalfilter.jpg"
         url="https://www.water-zuivering.nl/kennisbank/waterfilter-koffiemachine"
         datePublished="2026-11-02"
+        dateModified="2026-11-02"
         about={{ '@type': 'Thing', name: 'Waterfilter voor koffiemachines' }}
       />
       <BreadcrumbSchema
@@ -63,7 +64,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Keukenloods: waterfilter koffiemachine vervangen', url: 'https://www.keukenloods.nl/advies/koffiezetapparaten/hoe-vaak-moet-je-het-waterfilter-van-je-koffiemach/' }}>
               Een waterfilter in je koffiemachine vermindert vooral kalk en verbetert de smaak van het water. Dat is het meest zinvol bij hard water. De meeste fabrikanten adviseren het filter ongeveer elke 2 maanden te vervangen, bij hard water of veel gebruik eerder. Volg altijd de handleiding van je machine.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

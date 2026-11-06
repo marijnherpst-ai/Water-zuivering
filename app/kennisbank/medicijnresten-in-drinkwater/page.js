@@ -49,6 +49,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/filters-closeup.png"
         url="https://www.water-zuivering.nl/kennisbank/medicijnresten-in-drinkwater"
         datePublished="2026-10-27"
+        dateModified="2026-10-27"
         about={{ '@type': 'Thing', name: 'Microplastics', sameAs: 'https://nl.wikipedia.org/wiki/Microplastic' }}
         mentions={[
           { '@type': 'Organization', name: 'RIVM', url: 'https://www.rivm.nl' },
@@ -80,7 +81,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'H2O: Microplastics in het vizier (KWR, Vitens, Oasen, Het Waterlaboratorium, 2025)', url: 'https://h2owaternetwerk.nl/microplastics-in-het-vizier-vorderingen-in-de-drinkwatersector/' }}>
               Medicijnresten zitten vooral in sporen in drinkwater dat van rivierwater wordt gemaakt; volgens het RIVM vormen ze geen gezondheidsrisico. In kraanwater zitten 1 à 2 microplastics per liter, minder dan 1% van wat je dagelijks binnenkrijgt. Flessenwater bevat er meer. Wil je ook die sporen kwijt, dan houdt een osmosemembraan ze grotendeels tegen.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="27 oktober 2026" />
           </div>
         </section>
 

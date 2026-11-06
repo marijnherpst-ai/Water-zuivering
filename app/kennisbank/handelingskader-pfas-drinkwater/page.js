@@ -26,6 +26,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-28"
+        dateModified="2026-10-21"
         headline="Handelingskader PFAS: wat betekent dat voor je water?"
         description="Het handelingskader PFAS bepaalt wanneer de overheid ingrijpt bij vervuiling. Wat het is, wie het gebruikt en wat het voor je drinkwater betekent."
         image="https://www.water-zuivering.nl/assets/img/kennisbank/is-kraanwater-veilig.png"
@@ -53,7 +55,7 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               Je komt de term vooral tegen in nieuwsberichten over bouwprojecten en grondverzet. Maar wat is een <strong className="text-ink">handelingskader</strong> precies, en raakt het ook je drinkwater?
             </p>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="21 oktober 2026" />
           </div>
         </section>
 

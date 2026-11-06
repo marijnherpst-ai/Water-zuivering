@@ -36,6 +36,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/glas-water.webp"
         url="https://www.water-zuivering.nl/kennisbank/wat-filtert-brita"
         datePublished="2026-11-02"
+        dateModified="2026-11-02"
         about={{ '@type': 'Brand', name: 'BRITA' }}
       />
       <BreadcrumbSchema
@@ -63,7 +64,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'BRITA: MAXTRA PRO PURE PERFORMANCE', url: 'https://www.brita.nl/products/maxtra-pro-pure-performance' }}>
               Volgens Brita vermindert het MAXTRA PRO PURE PERFORMANCE-patroon chloor, kalk, lood en koper, en ook bepaalde pesticiden, medicijnresten en PFAS. Een patroon gaat tot 4 weken of 150 liter mee. Dit zijn cijfers van de fabrikant, gemeten volgens de genoemde teststandaarden. Een onafhankelijke test hebben we niet gevonden.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

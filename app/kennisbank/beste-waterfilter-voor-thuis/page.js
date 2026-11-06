@@ -108,6 +108,8 @@ export default function BesteWaterfilterVoorThuisPage() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-18"
+        dateModified="2026-10-27"
         headline="Beste waterfilter voor thuis: vergelijking 2026"
         description="Waterfilterkan, kraanfilter of waterzuiveraar onder de gootsteen: wat is de beste waterfilter voor thuis? Vergelijking op filtratie, gemak en kosten."
         image="https://www.water-zuivering.nl/assets/img/glas-water.webp"
@@ -139,7 +141,7 @@ export default function BesteWaterfilterVoorThuisPage() {
             <KortAntwoord>
               Dat hangt af van wat je kwijt wilt. Voor een betere smaak en minder chloor is een waterfilterkan of kraanfilter genoeg. Wil je ook PFAS, medicijnresten, microplastics en kalk uit je water, dan is een omgekeerde-osmosesysteem onder de gootsteen de enige optie die dat grondig doet, met onbeperkt gefilterd water uit je eigen kraan.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="27 oktober 2026" />
           </div>
         </section>
 

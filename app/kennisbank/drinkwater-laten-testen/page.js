@@ -57,6 +57,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/cabinet-install.png"
         url="https://www.water-zuivering.nl/kennisbank/drinkwater-laten-testen"
         datePublished="2026-10-27"
+        dateModified="2026-10-27"
         about={{ '@type': 'Thing', name: 'Drinkwateranalyse', sameAs: 'https://nl.wikipedia.org/wiki/Drinkwater' }}
         mentions={[
           { '@type': 'Organization', name: 'Het Waterlaboratorium', url: 'https://www.hetwaterlaboratorium.nl' },
@@ -88,7 +89,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Rijksoverheid: loden leidingen opsporen en vervangen', url: 'https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/gezonde-en-veilige-leefomgeving/hoe-kan-ik-loden-leidingen-in-mijn-huis-opsporen-en-laten-vervangen' }}>
               Je drinkwaterbedrijf meet het water in jouw gebied zelf en publiceert de uitslagen gratis. Een eigen test is vooral zinvol bij een huis van vóór 1960 (lood, ongeveer 50 euro), bij water uit een eigen put, of als je de PFAS voor jouw adres precies wilt weten (rond 270 euro). Kies altijd een gecertificeerd laboratorium.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="27 oktober 2026" />
           </div>
         </section>
 

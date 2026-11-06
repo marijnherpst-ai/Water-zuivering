@@ -28,6 +28,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-18"
+        dateModified="2026-11-02"
         headline="Osmosewater maken: kan dat gewoon thuis?"
         description="Osmosewater maken doe je met een omgekeerde-osmose-installatie. Hoe dat thuis werkt, wat je nodig hebt en of het de moeite waard is."
         image="https://www.water-zuivering.nl/assets/img/glas-water.webp"
@@ -54,7 +56,7 @@ export default function Page() {
             <KortAntwoord>
               Osmosewater maak je thuis met een omgekeerde-osmosesysteem onder het aanrecht. Kraanwater wordt onder druk door een membraan met poriën van 0,0001 micron geperst; PFAS, zware metalen, bacteriën en microplastics blijven achter. Zonder zo'n apparaat lukt het niet. Is het systeem aangesloten, dan tap je onbeperkt osmosewater uit je eigen kraan.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

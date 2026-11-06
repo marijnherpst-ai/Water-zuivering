@@ -39,6 +39,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-18"
+        dateModified="2026-10-21"
         headline="Hoe werkt een waterontharder?"
         description="Een waterontharder ruilt harde mineralen in voor natrium via ionenwisseling. Stap voor stap uitgelegd hoe dat proces precies werkt."
         image="https://www.water-zuivering.nl/assets/img/kennisbank/kalkaanslag-in-huis.png"
@@ -62,7 +64,7 @@ export default function Page() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Hoe werkt een waterontharder?</h1>
             <p className="mt-5 text-dim text-lg"><strong className="text-ink">Hoe werkt een waterontharder</strong>? Onder de motorkap draait het allemaal om één proces: ionenwisseling. We leggen het stap voor stap uit.</p>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="21 oktober 2026" />
           </div>
         </section>
 

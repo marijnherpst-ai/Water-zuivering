@@ -55,6 +55,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-11-06"
+        dateModified="2026-11-06"
         headline="Waterkoeler thuis: met fles, op de leiding of een filterkraan?"
         description="Een waterkoeler met flessen, een leidingwaterkoeler en een filterkraan vergeleken op kosten, gemak, hygiëne en waterkwaliteit."
         image="https://www.water-zuivering.nl/assets/img/3-weg-kraan.png"
@@ -85,7 +87,7 @@ export default function Page() {
             <KortAntwoord>
               Een waterkoeler thuis met fles is makkelijk te plaatsen, maar je betaalt per fles en sjouwt flessen van ongeveer 19 kilo. Een leidingwaterkoeler is handiger, maar duurder in aanschaf of huur. Een filterkraan met osmosesysteem koelt niet, maar levert wel het zuiverste water, zonder flessen en zonder apparaat op het aanrecht.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="6 november 2026" />
           </div>
         </section>
 

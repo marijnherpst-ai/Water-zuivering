@@ -36,6 +36,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/countertop.png"
         url="https://www.water-zuivering.nl/kennisbank/berkey-waterfilter"
         datePublished="2026-11-02"
+        dateModified="2026-11-06"
         about={{ '@type': 'Brand', name: 'Berkey' }}
       />
       <BreadcrumbSchema
@@ -63,7 +64,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Berkey Filters: uitleg fabrikant', url: 'https://support.berkeywater.com/berkey-water-systems-not-going-out-of-business/' }}>
               Een Berkey-waterfilter is een zwaartekrachtfilter: je giet water in de bovenste bak en het zakt door filterelementen naar de onderste. Het werkt zonder stroom of aansluiting. De prestaties komen vooral uit opgaven van de fabrikant. In de VS loopt al sinds 2022 een conflict met de milieutoezichthouder EPA over de filters.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="6 november 2026" />
           </div>
         </section>
 

@@ -28,6 +28,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-08-08"
+        dateModified="2026-11-02"
         headline="Hoe vaak moet je een waterfilter vervangen?"
         description="Hoe vaak een waterfilter vervangen moet worden, waarom, en wat er gebeurt als je het te lang uitstelt. Kort en duidelijk uitgelegd."
         image="https://www.water-zuivering.nl/assets/img/kennisbank/waterfilter-vervangen-hoe-vaak.png"
@@ -58,7 +60,7 @@ export default function Page() {
             <KortAntwoord>
               Dat verschilt per filter. Bij een omgekeerde-osmosesysteem van Water-zuivering vervang je het PPC-voorfilter en het CTO-nafilter gemiddeld elke 12 maanden en het RO-membraan gemiddeld elke 24 maanden. Gebruik je veel water, dan eerder. Een verzadigd filter houdt minder tegen; het display op het apparaat geeft aan wanneer het tijd is.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

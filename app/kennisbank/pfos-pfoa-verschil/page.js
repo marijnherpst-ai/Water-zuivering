@@ -27,6 +27,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-28"
+        dateModified="2026-10-21"
         headline="PFAS, PFOS en PFOA: wat is het verschil?"
         description="PFAS, PFOS en PFOA worden vaak door elkaar gebruikt. Het verschil uitgelegd, en waarom het voor je drinkwater niet zoveel uitmaakt."
         image="https://www.water-zuivering.nl/assets/img/filters-closeup.png"
@@ -57,7 +59,7 @@ export default function Page() {
             <KortAntwoord>
               PFAS is de verzamelnaam voor duizenden vergelijkbare chemische stoffen. PFOS en PFOA zijn twee bekende, goed onderzochte stoffen binnen die groep. Ze zijn in de EU aan banden gelegd, maar nog altijd meetbaar omdat ze nauwelijks afbreken. Voor je drinkwater maakt het onderscheid weinig uit: omgekeerde osmose houdt alle varianten tegen.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="21 oktober 2026" />
           </div>
         </section>
 

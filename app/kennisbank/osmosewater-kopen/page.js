@@ -44,6 +44,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-10-21"
+        dateModified="2026-11-02"
         headline="Osmosewater kopen: waar haal je het en wat kost het?"
         description="Waar je osmosewater koopt, wat het per liter kost, of je het kunt drinken en wanneer zelf maken goedkoper is."
         image="https://www.water-zuivering.nl/assets/img/glas-water.webp"
@@ -74,7 +76,7 @@ export default function Page() {
             <KortAntwoord>
               Osmosewater kopen kan bij een osmose-tappunt, een groothandel voor glazenwassers of een aquariumspeciaalzaak. Je betaalt van een paar cent tot ongeveer € 0,18 per liter, plus jerrycans. Bij de drogist vind je vooral gedemineraliseerd water, en dat is iets anders. Wil je osmosewater drinken, dan is zelf maken onder het aanrecht meestal goedkoper en hygiënischer.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

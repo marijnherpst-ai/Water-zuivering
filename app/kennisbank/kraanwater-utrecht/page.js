@@ -59,6 +59,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/twee-kranen.jpg"
         url="https://www.water-zuivering.nl/kennisbank/kraanwater-utrecht"
         datePublished="2026-10-26"
+        dateModified="2026-11-02"
         about={{ '@type': 'City', name: 'Utrecht', sameAs: 'https://nl.wikipedia.org/wiki/Utrecht_(stad)' }}
         mentions={[{ '@type': 'Organization', name: 'Vitens', url: 'https://www.vitens.nl' }]}
       />
@@ -87,7 +88,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Vitens en Greenpeace (22 september 2026)', url: 'https://www.vitens.nl/over-water/projecten/utrecht' }}>
               Kraanwater Utrecht komt van Vitens en is gemaakt van grondwater uit zeven bronnen rond de stad. Het voldoet aan alle normen en werd in 2023 nog uitgeroepen tot het beste van Nederland. Volgens Greenpeace zit 84% van de Utrechters ruim onder de PFAS-richtwaarde; voor ongeveer 16% ligt de waarde erboven.
             </KortAntwoord>
-            <AuteurRegel bijgewerkt="26 oktober 2026" />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

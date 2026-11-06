@@ -26,6 +26,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-08-08"
+        dateModified="2026-10-21"
         headline="Waterfilter onder de gootsteen: alles wat je moet weten"
         description="Een waterfilter onder de gootsteen: hoe het werkt, wat het kost en waar je op moet letten voor je een keuze maakt."
         image="https://www.water-zuivering.nl/assets/img/kennisbank/waterfilter-onder-de-gootsteen.png"
@@ -53,7 +55,7 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               Een <strong className="text-ink">waterfilter onder de gootsteen</strong> is de populairste keuze in huis. Waarom eigenlijk, en waar moet je op letten?
             </p>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="21 oktober 2026" />
           </div>
         </section>
 

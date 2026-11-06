@@ -36,6 +36,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/twee-kranen.jpg"
         url="https://www.water-zuivering.nl/kennisbank/drinkwater-rotterdam"
         datePublished="2026-11-02"
+        dateModified="2026-11-02"
         about={{ '@type': 'City', name: 'Rotterdam' }}
       />
       <BreadcrumbSchema
@@ -63,7 +64,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Evides: historie van het waterbedrijf', url: 'https://www.evides.nl/over-evides/de-organisatie/historie-van-evides-waterbedrijf/het-begin/het-vervolg' }}>
               Drinkwater Rotterdam komt van Evides en wordt gemaakt van Maaswater dat eerst in de spaarbekkens in de Biesbosch staat. Het water voldoet aan de wettelijke eisen. Wel plaatste Greenpeace in september 2026 heel Rotterdam in de hoogste PFAS-categorie, boven de RIVM-richtwaarde van 4,4 ng/l. Greenpeace en het RIVM blijven kraanwater drinken adviseren.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

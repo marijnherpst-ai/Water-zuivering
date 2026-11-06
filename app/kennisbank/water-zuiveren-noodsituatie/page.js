@@ -53,6 +53,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-11-06"
+        dateModified="2026-11-06"
         headline="Water zuiveren in een noodsituatie: wat werkt echt?"
         description="Koken, filteren en tabletten vergeleken, met hoeveel water je bewaart en wat je doet bij een kookadvies."
         image="https://www.water-zuivering.nl/assets/img/een-kraan.jpg"
@@ -83,7 +85,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Denk vooruit (Rijksoverheid)', url: 'https://www.denkvooruit.nl' }}>
               Bewaar minimaal 9 liter water per persoon voor drie dagen. Moet je toch water zuiveren in een noodsituatie, laat het dan eerst bezinken en giet het door een schone doek. Kook het daarna een paar minuten goed door, of gebruik een noodfilter of zuiveringstabletten. Bij een kookadvies volg je altijd de instructies van je waterbedrijf.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="6 november 2026" />
           </div>
         </section>
 

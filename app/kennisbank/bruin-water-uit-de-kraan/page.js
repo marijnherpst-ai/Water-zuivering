@@ -53,6 +53,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-10-21"
+        dateModified="2026-11-06"
         headline="Bruin water uit de kraan: oorzaak, risico's en wat je eraan doet"
         description="Waardoor bruin water uit de kraan komt, of je het kunt drinken en wat je direct doet."
         image="https://www.water-zuivering.nl/assets/img/een-kraan.jpg"
@@ -83,7 +85,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Vitens via AVROTROS Radar', url: 'https://radar.avrotros.nl/artikel/lage-waterdruk-en-bruin-water-uit-de-kraan-22189' }}>
               Bruin water uit de kraan komt meestal door ijzer- en mangaandeeltjes die in de waterleiding loskomen, bijvoorbeeld bij werkzaamheden, een leidingbreuk of veel verbruik tegelijk. Het is niet schadelijk, wel onsmakelijk. Draai de kranen dicht, wacht een paar uur en laat dan de kraan bij de watermeter lopen tot het water helder is.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="6 november 2026" />
           </div>
         </section>
 

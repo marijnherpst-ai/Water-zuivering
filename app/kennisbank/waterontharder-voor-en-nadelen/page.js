@@ -48,6 +48,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-18"
+        dateModified="2026-10-27"
         headline="Waterontharder: voor- en nadelen op een rij"
         description="Een waterontharder heeft duidelijke voordelen tegen kalkaanslag, maar ook nadelen zoals zoutverbruik en onderhoud. Alle voor- en nadelen op een rij."
         image="https://www.water-zuivering.nl/assets/img/kennisbank/waterontharder-vs-waterzuiveraar.png"
@@ -71,7 +73,7 @@ export default function Page() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kennisbank — Vergelijking</span>
             <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">Waterontharder: voor- en nadelen op een rij</h1>
             <p className="mt-5 text-dim text-lg">De <strong className="text-ink">voordelen en nadelen van een waterontharder</strong> op een rij — kalk is opgelost, maar er komt ook onderhoud bij kijken.</p>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="27 oktober 2026" />
           </div>
         </section>
 

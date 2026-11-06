@@ -26,6 +26,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-08-08"
+        dateModified="2026-10-27"
         headline="Wat is een 3-weg kraan en heb je die nodig?"
         description="Wat een 3-weg kraan precies is, hoe hij werkt en of hij zinvol is bij jouw waterzuiveringssysteem."
         image="https://www.water-zuivering.nl/assets/img/kennisbank/3-weg-kraan-uitleg.png"
@@ -53,7 +55,7 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               Eén elegante kraan in plaats van twee. Wat doet hij precies, en wanneer is hij de moeite waard?
             </p>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="27 oktober 2026" />
           </div>
         </section>
 

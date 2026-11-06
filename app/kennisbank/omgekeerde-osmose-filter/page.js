@@ -41,6 +41,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-18"
+        dateModified="2026-10-21"
         headline="Omgekeerde osmose filter: hoe werkt het membraan?"
         description="Een omgekeerde osmose filter werkt met een membraan van 0,0001 micron. Uitleg over hoe dat membraan werkt en wat het wel en niet tegenhoudt."
         image="https://www.water-zuivering.nl/assets/img/mineraalfilter.jpg"
@@ -67,7 +69,7 @@ export default function Page() {
             <KortAntwoord>
               Een omgekeerde osmose filter perst kraanwater onder druk door een membraan met poriën van ongeveer 0,0001 micron. Vrijwel alleen watermoleculen komen erdoorheen; opgeloste stoffen zoals PFAS, medicijnresten, kalk en zware metalen blijven achter en spoelen weg naar de afvoer. Een voor- en nafilter beschermen het membraan en verbeteren de smaak.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="21 oktober 2026" />
           </div>
         </section>
 

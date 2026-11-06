@@ -26,6 +26,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-08-08"
+        dateModified="2026-10-21"
         headline="Waterontharder of waterzuiveraar: het verschil"
         description="Waterontharder of waterzuiveraar — wat is het verschil, en wat heb jij nodig? Simpel uitgelegd, met een duidelijk antwoord voor jouw situatie."
         image="https://www.water-zuivering.nl/assets/img/kennisbank/waterontharder-vs-waterzuiveraar.png"
@@ -53,7 +55,7 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               <strong className="text-ink">Waterontharder of waterzuiveraar</strong>? Deze twee worden vaak door elkaar gehaald, maar ze doen iets heel anders. Welke past bij jouw situatie?
             </p>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="21 oktober 2026" />
           </div>
         </section>
 

@@ -49,6 +49,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/een-kraan.jpg"
         url="https://www.water-zuivering.nl/kennisbank/chloor-in-kraanwater"
         datePublished="2026-10-27"
+        dateModified="2026-11-02"
         about={{ '@type': 'Thing', name: 'Chloor', sameAs: 'https://nl.wikipedia.org/wiki/Chloor' }}
         mentions={[{ '@type': 'Organization', name: 'KWR Water Research Institute', url: 'https://www.kwrwater.nl' }]}
       />
@@ -77,7 +78,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'KWR / H2O: Desinfectie van drinkwater met uv-C (2013)', url: 'https://api2.kwrwater.nl/uploads/Hofman-Caris-Baken-Harmsen-Beerendonk-Nugteren-%20Desinfectie%20van%20drinkwater%20met%20behulp%20van%20UV-C-%20een%20veilige%20methode-%20H2O-Online%20(2013)%2013%20december.pdf' }}>
               Normaal gesproken zit er geen chloor in Nederlands kraanwater. Drinkwaterbedrijven maken het water veilig met meerdere zuiveringsstappen, uv-licht en een goed leidingnet, in plaats van met chloor. Alleen bij een besmetting, een leidingbreuk of werkzaamheden wordt soms tijdelijk chloor gebruikt. Ruik je chloor, check dan of er in je buurt iets speelt.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

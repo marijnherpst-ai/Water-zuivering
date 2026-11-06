@@ -49,6 +49,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/mineraalfilter.jpg"
         url="https://www.water-zuivering.nl/kennisbank/gedestilleerd-water-drinken"
         datePublished="2026-10-27"
+        dateModified="2026-11-02"
         about={{ '@type': 'Thing', name: 'Gedestilleerd water', sameAs: 'https://nl.wikipedia.org/wiki/Gedestilleerd_water' }}
         mentions={[{ '@type': 'Organization', name: 'World Health Organization', url: 'https://www.who.int' }]}
       />
@@ -77,7 +78,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'WHO: Health risks from drinking demineralised water (Kozisek)', url: 'https://susana.org/knowledge-hub/resources?id=4295' }}>
               Je kunt gedestilleerd water drinken; een glas is niet schadelijk. Er zitten alleen geen mineralen in, waardoor het vlak smaakt en je de calcium en magnesium mist die kraanwater meegeeft. Als vast drinkwater is het daarom minder geschikt. Wil je heel zuiver drinkwater, dan is osmosewater met een mineraalfilter een betere keuze.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

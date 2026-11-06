@@ -42,6 +42,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-18"
+        dateModified="2026-10-21"
         headline="Drinkwaternormen in Nederland: wat wordt er gecontroleerd?"
         description="Nederlandse drinkwaternormen zijn wettelijk vastgelegd in de Drinkwaterwet. Wat wordt er precies gecontroleerd, en wat valt daar niet onder?"
         image="https://www.water-zuivering.nl/assets/img/kennisbank/is-kraanwater-veilig.png"
@@ -68,7 +70,7 @@ export default function Page() {
             <KortAntwoord>
               De drinkwaternormen in Nederland staan in de Drinkwaterwet en het Drinkwaterbesluit, met grenswaarden voor honderden stoffen: van bacteriën en zware metalen tot nitraat en een deel van de PFAS. Drinkwaterbedrijven testen, de Inspectie Leefomgeving en Transport (ILT) houdt toezicht. Voor veel medicijnresten en microplastics bestaan nog geen wettelijke grenswaarden.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="21 oktober 2026" />
           </div>
         </section>
 

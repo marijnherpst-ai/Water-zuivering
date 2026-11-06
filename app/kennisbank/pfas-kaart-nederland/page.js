@@ -28,6 +28,8 @@ export default function Page() {
   return (
     <>
       <ArticleSchema
+        datePublished="2026-09-28"
+        dateModified="2026-11-02"
         headline="PFAS kaart Nederland: zit het ook in jouw water?"
         description="De PFAS kaart van Nederland laat zien waar de stoffen zijn gevonden. Zo lees je hem, en zo check je zelf of het ook in jouw drinkwater zit."
         image="https://www.water-zuivering.nl/assets/img/kennisbank/pfas-in-kraanwater.png"
@@ -58,7 +60,7 @@ export default function Page() {
             <KortAntwoord>
               Een PFAS kaart van onder meer het RIVM, provincies en gemeenten toont gemeten PFAS in bodem en oppervlaktewater, vooral rond industrieterreinen en plekken waar blusschuim is gebruikt. Zo’n kaart zegt niet direct iets over je kraanwater: dat zuivert en toetst je drinkwaterbedrijf apart. Voor je eigen situatie kijk je dus naar beide bronnen.
             </KortAntwoord>
-            <AuteurRegel />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 

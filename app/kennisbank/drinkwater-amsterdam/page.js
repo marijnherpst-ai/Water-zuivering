@@ -87,6 +87,7 @@ export default function Page() {
         image="https://www.water-zuivering.nl/assets/img/glas-water.webp"
         url="https://www.water-zuivering.nl/kennisbank/drinkwater-amsterdam"
         datePublished="2026-10-26"
+        dateModified="2026-11-02"
         about={{ '@type': 'City', name: 'Amsterdam', sameAs: 'https://nl.wikipedia.org/wiki/Amsterdam' }}
         mentions={[{ '@type': 'Organization', name: 'Waternet', url: 'https://www.waternet.nl' }]}
       />
@@ -115,7 +116,7 @@ export default function Page() {
             <KortAntwoord bron={{ naam: 'Waternet en Greenpeace (22 september 2026)', url: 'https://www.waternet.nl/service-en-contact/drinkwater/waterkwaliteit/' }}>
               Drinkwater Amsterdam komt van Waternet, uit Rijnwater dat door de duinen zakt (Leiduin) en kwelwater uit de Bethunepolder (Weesperkarspel). Het water is zacht, gemiddeld 7,8 °dH, en voldoet aan de wettelijke normen. Wel valt heel Amsterdam volgens Greenpeace in de hoogste PFAS-categorie: ruim twee keer de RIVM-richtwaarde.
             </KortAntwoord>
-            <AuteurRegel bijgewerkt="26 oktober 2026" />
+            <AuteurRegel bijgewerkt="2 november 2026" />
           </div>
         </section>
 
