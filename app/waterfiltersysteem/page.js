@@ -46,7 +46,7 @@ export default function Page() {
       />
       <ProductSchema
         name="Water-zuivering osmosesysteem"
-        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie."
         image="https://www.water-zuivering.nl/assets/img/countertop.png"
         url="https://www.water-zuivering.nl/waterfiltersysteem"
         prijsVanaf={PRIJS_VANAF}
@@ -187,7 +187,7 @@ export default function Page() {
               <li><strong className="text-ink">Past het in je kastje?</strong> Ons systeem is 10,5 cm breed en kan staand of liggend. Check het met de <Link href="/maatcheck" className="underline hover:text-ink">maatcheck</Link>.</li>
               <li><strong className="text-ink">Wat kosten de filters per jaar?</strong> Bij Water-zuivering gemiddeld ongeveer €135.</li>
               <li><strong className="text-ink">Hoe lang is de garantie?</strong> Wij geven 10 jaar garantie op het systeem.</li>
-              <li><strong className="text-ink">Wie installeert het?</strong> Het systeem kost vanaf €999 exclusief montage. Onze eigen monteur sluit het in 1 à 2 uur aan, of je doet het zelf. Lees hoe dat gaat in <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>.</li>
+              <li><strong className="text-ink">Wie installeert het?</strong> Onze eigen monteur sluit het in 1 à 2 uur aan, of je doet het zelf. Je prijs krijg je in een vrijblijvende offerte. Lees hoe dat gaat in <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>.</li>
             </ul>
           </div>
         </section>

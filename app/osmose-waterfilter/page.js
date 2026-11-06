@@ -24,7 +24,7 @@ const KENMERKEN = [
 const FAQ = [
   ['Wat is een osmose waterfilter precies?', 'Een filtersysteem dat water onder lichte druk door een membraan van 0,0001 micron perst — dit verwijdert bacteriën, zware metalen, PFAS, medicijnresten en microplastics.'],
   ['Is een osmose waterfilter hetzelfde als een osmosesysteem?', 'Ja, dit zijn twee namen voor dezelfde technologie: omgekeerde osmose, ook wel RO (reverse osmosis) genoemd.'],
-  ['Wat kost een osmose waterfilter?', 'Het osmose waterfilter van Water-zuivering kost vanaf €999, exclusief montage. Je exacte prijs, met of zonder montage door onze monteur, krijg je in een vrijblijvende offerte. Reken daarnaast op ongeveer €135 per jaar aan filters.'],
+  ['Wat kost een osmose waterfilter?', 'De prijs van het osmose waterfilter van Water-zuivering hangt af van je keuken en de kraan die je kiest. Je prijs, met of zonder montage door onze monteur, krijg je in een vrijblijvende offerte. Reken daarnaast op ongeveer €135 per jaar aan filters.'],
   ['Hoeveel onderhoud vraagt een osmose waterfilter?', 'Weinig: één keer per jaar wissel je het voor- en nafilter, en om het jaar ook het membraan. Gebruik je veel water, dan iets vaker. Het apparaat geeft zelf een seintje.'],
 ];
 
@@ -39,7 +39,7 @@ export default function Page() {
       />
       <ProductSchema
         name="Water-zuivering osmosesysteem"
-        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie."
         image="https://www.water-zuivering.nl/assets/img/countertop.png"
         url="https://www.water-zuivering.nl/osmose-waterfilter"
         prijsVanaf={PRIJS_VANAF}

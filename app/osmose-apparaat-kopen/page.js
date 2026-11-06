@@ -23,7 +23,7 @@ const CHECKS = [
   ['Hoeveel water levert het per minuut?', 'Dat bepaalt of je op je gemak een pan of fles kunt vullen. Ons systeem levert 1,58 liter gefilterd water per minuut en heeft een totale capaciteit van 4.000 liter.'],
   ['Past je waterdruk bij het apparaat?', 'Elk systeem heeft een werkbereik voor de waterdruk. Het onze is ontworpen voor 0,1 tot 0,4 MPa en beïnvloedt de druk op je bestaande kraan niet merkbaar.'],
   ['Past het in je kastje?', 'Meet de ruimte onder je spoelbak. Ons systeem is 10,5 cm breed, 42 cm diep en 43 cm hoog, en kan staand of liggend. Met de maatcheck kun je dat met een foto van je eigen kastje zien.'],
-  ['Wat zit er in de prijs?', 'Vraag bij elke aanbieder of installatie, de kraan voor het gefilterde water en de eerste filters erbij zitten, en hoeveel garantie je krijgt. Bij Water-zuivering is vakkundige installatie inbegrepen en geldt 10 jaar garantie.'],
+  ['Wat zit er in de prijs?', 'Vraag bij elke aanbieder of installatie, de kraan voor het gefilterde water en de eerste filters erbij zitten, en hoeveel garantie je krijgt. Bij Water-zuivering krijg je een offerte op maat, met of zonder installatie door onze eigen monteur, en er geldt 10 jaar garantie.'],
   ['Wat kosten de filters per jaar?', 'Dit is de kostenpost die je bij het kopen het snelst vergeet, en die over tien jaar het zwaarst weegt. Onderaan deze pagina rekenen we het voor je door.'],
 ];
 
@@ -40,7 +40,7 @@ const SPECS = [
 ];
 
 const FAQ = [
-  ['Wat kost een osmose apparaat?', 'Het osmose apparaat van Water-zuivering kost vanaf €999, exclusief montage. Laat je het door onze eigen monteur installeren, dan staat de montage apart in je vrijblijvende offerte. Daarnaast reken je op gemiddeld ongeveer €135 per jaar aan filters.'],
+  ['Wat kost een osmose apparaat?', 'De prijs van het osmose apparaat van Water-zuivering hangt af van je keuken, de kraan en of je het door onze eigen monteur laat installeren. Je prijs krijg je in een vrijblijvende offerte. Daarnaast reken je op gemiddeld ongeveer €135 per jaar aan filters.'],
   ['Is een osmose apparaat voor een aquarium geschikt voor drinkwater?', 'Niet zonder meer. Die apparaten zijn voor een ander doel gemaakt. Controleer bij de fabrikant of een apparaat nadrukkelijk voor drinkwater bedoeld is voor je het gebruikt.'],
   ['Haalt een osmose apparaat PFAS uit het water?', 'Volgens de productinformatie van ons systeem zuivert het tot 99% van onzuiverheden, waaronder PFAS, medicijnresten en microplastics. Het RO-membraan is daarvoor het belangrijkste onderdeel. Meer over de werking lees je in onze uitleg over de omgekeerde osmose filter.'],
   ['Haalt osmose ook de goede mineralen eruit?', 'Ja, omgekeerde osmose is zo grondig dat ook mineralen worden meegefilterd. Wil je die terug, dan kun je een mineraalfilter laten toevoegen, dat na het RO-filter in het systeem klikt.'],
@@ -60,7 +60,7 @@ export default function Page() {
       />
       <ProductSchema
         name="Water-zuivering osmosesysteem"
-        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie."
         image="https://www.water-zuivering.nl/assets/img/countertop.png"
         url="https://www.water-zuivering.nl/osmose-apparaat-kopen"
         prijsVanaf={PRIJS_VANAF}

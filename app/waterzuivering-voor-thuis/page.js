@@ -49,7 +49,7 @@ const INSTALLATIE = [
 
 const FAQ = [
   ['Is waterzuivering voor thuis in Nederland nodig?', 'Nederlands kraanwater voldoet aan strenge wettelijke normen en is veilig om te drinken. Een waterzuiveraar voor thuis gaat een stap verder: die verwijdert ook sporen van stoffen die niet standaard worden getest of verwijderd, zoals PFAS, medicijnresten en microplastics.'],
-  ['Wat kost waterzuivering voor thuis?', 'Een osmosesysteem van Water-zuivering kost vanaf €999, exclusief montage. Je exacte prijs, met montage door onze eigen monteur of zonder als je zelf installeert, krijg je in een vrijblijvende offerte. Reken daarnaast op ongeveer €135 per jaar aan filters.'],
+  ['Wat kost waterzuivering voor thuis?', 'De prijs van een osmosesysteem van Water-zuivering hangt af van je keuken en de kraan die je kiest. Je prijs, met montage door onze eigen monteur of zonder als je zelf installeert, krijg je in een vrijblijvende offerte. Reken daarnaast op ongeveer €135 per jaar aan filters.'],
   ['Hoeveel onderhoud heeft een waterzuiveringssysteem?', 'Het voorfilter en het nafilter vervang je gemiddeld elk jaar, het membraan elke 2 jaar. Dat kost gemiddeld ongeveer € 135 per jaar. Het display laat zien wanneer het tijd is.'],
   ['Past een waterzuiveraar voor thuis onder elk aanrecht?', 'In de meeste standaardkeukens is voldoende ruimte onder de spoelbak. Ons systeem is slechts 10,5 cm breed en past staand of liggend.'],
   ['Is waterzuivering voor thuis anders dan voor onderweg?', 'Ja. Onderweg kies je meestal voor een compact, draagbaar filter zonder wateraansluiting. Thuis is een vast systeem onder de gootsteen praktischer: onbeperkt zuiver water zonder gedoe met patronen of bijvullen.'],
@@ -71,7 +71,7 @@ export default function WaterzuiveringVoorThuisPage() {
       />
       <ProductSchema
         name="Water-zuivering osmosesysteem"
-        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie."
         image="https://www.water-zuivering.nl/assets/img/countertop.png"
         url="https://www.water-zuivering.nl/waterzuivering-voor-thuis"
         prijsVanaf={PRIJS_VANAF}

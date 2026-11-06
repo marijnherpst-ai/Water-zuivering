@@ -79,7 +79,7 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">Vergeleken met flessenwater of een reisfilter is thuis osmosewater maken op termijn goedkoper en gemakkelijker: geen sjouwen, geen plastic, en onbeperkt zuiver water zodra het systeem is aangesloten. De belangrijkste afweging is de eenmalige aanschaf- en installatiekost tegenover wat je nu al uitgeeft aan flessenwater. Wil je osmose eerst vergelijken met een filterkan of een filter op de kraan, lees dan welk <Link href="/waterfilter" className="underline hover:text-ink">waterfilter</Link> bij jou past.</p>
             <p className="mt-4 text-dim leading-relaxed">Meer weten over hoe zo'n systeem er precies uitziet? Bekijk onze <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem-pagina</Link> of lees over <Link href="/waterzuivering-voor-thuis" className="underline hover:text-ink">waterzuivering voor thuis</Link>.</p>
             <TussenCta titel="Osmosewater uit je eigen kraan?">
-              Ons systeem werkt zonder opslagtank en filtert direct als je de kraan opendraait. Vanaf €999 exclusief montage. Vraag vrijblijvend een offerte aan.
+              Ons systeem werkt zonder opslagtank en filtert direct als je de kraan opendraait. Vraag vrijblijvend een offerte aan.
             </TussenCta>
           </div>
         </section>

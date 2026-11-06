@@ -38,7 +38,7 @@ const FAQ = [
   ['Wat is het verschil tussen een waterfilter kraan en een waterfilterkan?', 'Een filterkan filtert in kleine porties die je zelf bijvult. Een waterfilter kraan levert onbeperkt gefilterd water rechtstreeks uit de kraan, zonder wachten of bijvullen.'],
   ['Kan ik een waterfiltersysteem kraan zelf plaatsen?', 'Een eenvoudig opzetstuk kun je vaak zelf monteren. Een systeem met een aparte 3-weg kraan vraagt om een vakkundige aansluiting op de waterleiding — dat regelen wij binnen één dag.'],
   ['Verwijdert een waterfilter kraan ook PFAS?', 'Dat hangt volledig af van het type filter erachter. Een eenvoudig opzetstuk filtert vooral chloor; alleen een systeem met een omgekeerde-osmose-membraan verwijdert ook PFAS, medicijnresten en microplastics.'],
-  ['Wat kost een waterfilter kraan?', 'Een los opzetstuk is al voor een paar tientjes te koop. Een compleet osmosesysteem kost bij Water-zuivering vanaf €999, exclusief montage; een 3-weg kraan neem je mee in je offerte. Het betaalt zich terug doordat je nooit meer flessenwater koopt.'],
+  ['Wat kost een waterfilter kraan?', 'Een los opzetstuk is al voor een paar tientjes te koop. Een compleet osmosesysteem van Water-zuivering, eventueel met 3-weg kraan, vraag je op via een vrijblijvende offerte. Het betaalt zich terug doordat je nooit meer flessenwater koopt.'],
   ['Hoe vaak moet ik het filter van mijn kraanwatersysteem vervangen?', 'Bij een eenvoudig opzetstuk meestal elke 2-3 maanden. Bij ons systeem onder de gootsteen vervang je het voorfilter en het nafilter ieder jaar en het membraan elke 2 jaar. Het display geeft aan wanneer het zover is.'],
 ];
 
@@ -313,7 +313,7 @@ export default function Page() {
       />
       <ProductSchema
         name="Water-zuivering osmosesysteem"
-        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie."
         image="https://www.water-zuivering.nl/assets/img/countertop.png"
         url="https://www.water-zuivering.nl/waterfilter-kraan"
         prijsVanaf={PRIJS_VANAF}

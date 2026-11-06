@@ -135,7 +135,7 @@ export default function Page() {
               </table>
             </div>
             <TussenCta titel="De grondigste optie thuis?">
-              Een osmosesysteem onder het aanrecht filtert het meest uit je kraanwater en werkt zonder opslagtank. Vanaf €999 exclusief montage. Vraag vrijblijvend een offerte aan.
+              Een osmosesysteem onder het aanrecht filtert het meest uit je kraanwater en werkt zonder opslagtank. Vraag vrijblijvend een offerte aan.
             </TussenCta>
           </div>
         </section>

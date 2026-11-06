@@ -28,7 +28,7 @@ const REDENEN_VAKMAN = [
 ];
 
 const FAQ = [
-  ['Wat kost een waterzuiveringsinstallatie?', 'Een waterzuiveringsinstallatie van Water-zuivering kost vanaf €999, exclusief montage. De montage hangt af van je keuken en leidingwerk; die staat apart in je vrijblijvende offerte.'],
+  ['Wat kost een waterzuiveringsinstallatie?', 'De prijs van een waterzuiveringsinstallatie van Water-zuivering hangt af van je keuken en leidingwerk. Je prijs krijg je in een vrijblijvende offerte.'],
   ['Hoe lang duurt het installeren van een zuiveringsinstallatie?', 'De meeste installaties zijn binnen een paar uur voltooid door een vakkundige monteur, inclusief testen en instellen.'],
   ['Kan ik een waterzuiveringsinstallatie ook zelf plaatsen?', 'Technisch kan dat bij sommige systemen, maar een verkeerde aansluiting kan lekkage veroorzaken en de fabrieksgarantie laten vervallen — vakkundige installatie is daarom aan te raden.'],
   ['Welke garantie krijg ik op een waterzuiveringsinstallatie?', 'Bij Water-zuivering krijg je 10 jaar garantie op het systeem, mits vakkundig geïnstalleerd en onderhouden volgens het meegegeven schema.'],
@@ -47,7 +47,7 @@ export default function Page() {
       />
       <ProductSchema
         name="Water-zuivering osmosesysteem"
-        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie."
         image="https://www.water-zuivering.nl/assets/img/countertop.png"
         url="https://www.water-zuivering.nl/waterzuiveringsinstallatie"
         prijsVanaf={PRIJS_VANAF}

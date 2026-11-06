@@ -355,7 +355,7 @@ export default async function Page() {
               Heb je een Quooker? Die kun je gewoon houden voor kokend water. Het filter van een Quooker zit alleen in het reservoir en zuivert het koude water niet; een osmosesysteem doet dat wel. Lees het verschil in <Link href="/kennisbank/quooker-waterfilter" className="underline hover:text-ink">Quooker waterfilter</Link>. Meer over het aparte kraantje lees je in <Link href="/kennisbank/osmosewater-tappunt" className="underline hover:text-ink">osmosewater tappunt</Link>.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Onze monteur sluit de 3-weg kraan aan samen met het osmosesysteem. Het systeem kost vanaf €999 exclusief montage; de kraan in jouw afwerking neem je mee in je offerte. Je kiest uit vier afwerkingen: chroom, geborsteld staal, goud en zwart.
+              Onze monteur sluit de 3-weg kraan aan samen met het osmosesysteem. De kraan in jouw afwerking neem je mee in je vrijblijvende offerte. Je kiest uit vier afwerkingen: chroom, geborsteld staal, goud en zwart.
             </p>
           </div>
         </section>

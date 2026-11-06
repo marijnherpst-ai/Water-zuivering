@@ -33,7 +33,7 @@ const FAQ = [
   ['Is water uit een waterzuiveraar veilig voor baby\'s?', 'Water dat via osmose is gezuiverd, wordt vaak juist aanbevolen voor het bereiden van flesvoeding, omdat het vrij is van sporen van stoffen die reguliere zuivering niet volledig wegneemt. Overleg bij twijfel altijd met je consultatiebureau of huisarts.'],
   ['Verandert een drinkwaterzuiveraar de smaak van koffie of thee?', 'Ja, meestal juist ten goede — zonder chloorsmaak en met minder kalk komt de eigen smaak van koffie, thee of eten beter naar voren.'],
   ['Hoeveel onderhoud heeft een waterzuiveraar voor drinkwater?', 'Het voorfilter en het nafilter vervang je gemiddeld elk jaar, het membraan elke 2 jaar. Het display laat zien wanneer het tijd is.'],
-  ['Wat kost een waterzuiveraar voor drinkwater?', 'Een waterzuiveraar voor drinkwater van Water-zuivering kost vanaf €999, exclusief montage. Je exacte prijs, met of zonder montage door onze eigen monteur, krijg je in een vrijblijvende offerte. Reken daarnaast op ongeveer €135 per jaar aan filters.'],
+  ['Wat kost een waterzuiveraar voor drinkwater?', 'De prijs van een waterzuiveraar voor drinkwater van Water-zuivering hangt af van je keuken en de kraan die je kiest. Je prijs, met of zonder montage door onze eigen monteur, krijg je in een vrijblijvende offerte. Reken daarnaast op ongeveer €135 per jaar aan filters.'],
 ];
 
 export default function Page() {
@@ -47,7 +47,7 @@ export default function Page() {
       />
       <ProductSchema
         name="Water-zuivering osmosesysteem"
-        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie."
         image="https://www.water-zuivering.nl/assets/img/countertop.png"
         url="https://www.water-zuivering.nl/waterzuiveraar-drinkwater"
         prijsVanaf={PRIJS_VANAF}

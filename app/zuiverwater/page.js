@@ -28,7 +28,7 @@ const WAAROM_HELDER = [
 ];
 
 const FAQ = [
-  ['Wat kost zuiverwater uit je eigen kraan?', 'Een osmosesysteem van Water-zuivering kost vanaf €999, exclusief montage. Daarna betaal je alleen nog de filters, gemiddeld ongeveer €135 per jaar.'],
+  ['Wat kost zuiverwater uit je eigen kraan?', 'De prijs van een osmosesysteem van Water-zuivering krijg je in een vrijblijvende offerte. Daarna betaal je alleen nog de filters, gemiddeld ongeveer €135 per jaar.'],
   ['Wat betekent "zuiver water" precies?', 'Zuiver water is water dat is ontdaan van chloor, kalk en sporen van stoffen zoals PFAS, medicijnresten en microplastics — meer dan alleen "veilig", ook merkbaar fris en helder.'],
   ['Is Nederlands kraanwater niet al schoon water?', 'Ja, Nederlands kraanwater voldoet aan strenge normen en is veilig. Zuiver water gaat een stap verder: het verwijdert ook wat normale zuivering nog laat zitten.'],
   ['Hoe krijg ik zuiver water uit mijn eigen kraan?', 'Met een waterzuiveringssysteem onder je aanrecht, dat kraanwater filtert via een voorfilter, een fijn membraan en een nafilter — voor onbeperkt zuiver water, direct uit de kraan.'],
@@ -48,7 +48,7 @@ export default function Page() {
       />
       <ProductSchema
         name="Water-zuivering osmosesysteem"
-        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie."
         image="https://www.water-zuivering.nl/assets/img/countertop.png"
         url="https://www.water-zuivering.nl/zuiverwater"
         prijsVanaf={PRIJS_VANAF}
@@ -169,7 +169,7 @@ export default function Page() {
                   <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Microplastics</th><td className="p-4 text-dim">1 à 2 deeltjes per liter</td><td className="p-4 text-dim">Meer dan kraanwater</td><td className="p-4 text-dim">Tegengehouden door het membraan</td></tr>
                   <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Kalk</th><td className="p-4 text-dim">Afhankelijk van je regio</td><td className="p-4 text-dim">Afhankelijk van het merk</td><td className="p-4 text-dim">Vrijwel kalkvrij</td></tr>
                   <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Sjouwen en plastic afval</th><td className="p-4 text-dim">Nee</td><td className="p-4 text-dim">Ja</td><td className="p-4 text-dim">Nee</td></tr>
-                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Kosten</th><td className="p-4 text-dim">Minder dan een cent per liter</td><td className="p-4 text-dim">Vaak tientallen centen per liter</td><td className="p-4 text-dim">Vanaf €999 eenmalig, plus ±€135 per jaar aan filters</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Kosten</th><td className="p-4 text-dim">Minder dan een cent per liter</td><td className="p-4 text-dim">Vaak tientallen centen per liter</td><td className="p-4 text-dim">Eenmalige aanschaf via offerte, plus ±€135 per jaar aan filters</td></tr>
                 </tbody>
               </table>
             </div>

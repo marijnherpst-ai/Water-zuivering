@@ -97,7 +97,7 @@ export default function Page() {
               <li><strong className="text-ink">Eenvoudig filterkoffieapparaat:</strong> hier is regelmatig ontkalken vaak al genoeg.</li>
             </ul>
             <TussenCta titel="Goed water voor alles wat je drinkt?">
-              Een osmosesysteem met mineraalfilter levert gefilterd water uit je kraan, met calcium en magnesium erbij voor een voller glas water. Vanaf €999 exclusief montage.
+              Een osmosesysteem met mineraalfilter levert gefilterd water uit je kraan, met calcium en magnesium erbij voor een voller glas water.
             </TussenCta>
           </div>
         </section>
@@ -210,7 +210,7 @@ export default function Page() {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber">Volgende stap</span>
             <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Gefilterd water uit je eigen kraan</h2>
-            <p className="mt-4 text-white/70">Een osmosesysteem met mineraalfilter geeft je gefilterd water voor drinken, thee en koffie. Vanaf €999 exclusief montage. Vraag vrijblijvend een offerte aan.</p>
+            <p className="mt-4 text-white/70">Een osmosesysteem met mineraalfilter geeft je gefilterd water voor drinken, thee en koffie. Vraag vrijblijvend een offerte aan.</p>
             <Link href="/aanmelden" className="cursor-pointer mt-8 inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-xl shadow-amber/25">
               Vraag vrijblijvend een offerte aan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>

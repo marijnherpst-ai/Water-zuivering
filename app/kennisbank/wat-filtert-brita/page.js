@@ -23,7 +23,7 @@ export const metadata = {
   },
 };
 
-const TABEL = [['Hoe het werkt', 'Patroon met onder meer actieve kool, water zakt door de kan', 'Voorfilter, membraan van 0,0001 micron en nafilter'], ['Wat het opgeeft', 'Chloor, lood, koper, kalk, bepaalde PFAS (volgens Brita)', 'Tot 99% van opgeloste stoffen, ook PFAS en kalk'], ['Water tappen', 'Vullen en wachten', 'Direct uit de kraan, 1,58 liter per minuut'], ['Vervangen', 'Elke 4 weken of 150 liter', 'Voor- en nafilter elk jaar, membraan elke 2 jaar'], ['Filterkosten per jaar', 'Ongeveer €108 (13 patronen, 12-pack à €99,99)', 'Ongeveer €135'], ['Aanschaf', 'Vanaf ongeveer €21 voor een kan', 'Vanaf €999 exclusief montage'], ['Aansluiting', 'Geen', 'Afvoer, stopcontact en wateraansluiting nodig']];
+const TABEL = [['Hoe het werkt', 'Patroon met onder meer actieve kool, water zakt door de kan', 'Voorfilter, membraan van 0,0001 micron en nafilter'], ['Wat het opgeeft', 'Chloor, lood, koper, kalk, bepaalde PFAS (volgens Brita)', 'Tot 99% van opgeloste stoffen, ook PFAS en kalk'], ['Water tappen', 'Vullen en wachten', 'Direct uit de kraan, 1,58 liter per minuut'], ['Vervangen', 'Elke 4 weken of 150 liter', 'Voor- en nafilter elk jaar, membraan elke 2 jaar'], ['Filterkosten per jaar', 'Ongeveer €108 (13 patronen, 12-pack à €99,99)', 'Ongeveer €135'], ['Aanschaf', 'Vanaf ongeveer €21 voor een kan', 'Prijs op maat, via een vrijblijvende offerte'], ['Aansluiting', 'Geen', 'Afvoer, stopcontact en wateraansluiting nodig']];
 
 const FAQ = [['Wat filtert Brita uit water?', 'Volgens de fabrikant vermindert het MAXTRA PRO PURE PERFORMANCE-patroon chloor, kalk, lood en koper, en bepaalde pesticiden, medicijnresten en PFAS. Dit zijn opgaven van Brita zelf.'], ['Filtert een Brita-filter kalk?', 'Ja, voor een deel. Brita noemt kalkvermindering tot 150 liter voor zacht tot middelhard water. Bij hard water raakt dat sneller op; daarvoor heeft Brita het KALK EXPERT-patroon.'], ['Haalt Brita PFAS uit water?', 'Brita claimt tot 98% minder PFAS bij het PURE PERFORMANCE-patroon, getest volgens onder meer NSF/ANSI 53. Een onafhankelijke Nederlandse test hebben we niet gevonden, en een test meet maar een deel van alle PFAS-stoffen.'], ['Hoe vaak moet je een Brita-filter vervangen?', 'Elke 4 weken of na 150 liter, wat er het eerst komt. Dat is de opgave van Brita voor de MAXTRA PRO-patronen.'], ['Is een Brita-filter gezond?', 'Bij goed gebruik is er geen reden tot zorgen, maar Milieu Centraal vindt een filter in Nederland niet nodig en waarschuwt voor bacteriegroei op filters. Vervang het patroon op tijd, houd de kan schoon en drink het water snel op.'], ['Is Brita beter dan osmose?', 'Dat hangt af van wat je wilt. Een kan is goedkoop en werkt zonder installatie. Een osmosesysteem filtert grondiger via een membraan en levert direct uit de kraan, maar kost meer en moet worden aangesloten.'], ['Haalt Brita bacteriën uit water?', 'Reken daar niet op. Een filterkan is niet bedoeld om onveilig water veilig te maken. Volg bij een kookadvies altijd je waterbedrijf.']];
 
@@ -100,7 +100,7 @@ export default function Page() {
               <li><strong className="text-ink">Hard water kost meer patronen.</strong> Is je water hard, dan raakt de kalkwerking sneller op. Hoe je dat herkent, staat in <Link href="/kennisbank/kalkaanslag-in-huis" className="underline hover:text-ink">kalkaanslag in huis</Link>.</li>
             </ul>
             <TussenCta titel="Filteren zonder kan en patronen?">
-              Een osmosesysteem onder het aanrecht filtert direct als je de kraan opendraait. Het voor- en nafilter vervang je elk jaar, het membraan elke 2 jaar. Vanaf €999 exclusief montage.
+              Een osmosesysteem onder het aanrecht filtert direct als je de kraan opendraait. Het voor- en nafilter vervang je elk jaar, het membraan elke 2 jaar.
             </TussenCta>
           </div>
         </section>
@@ -196,7 +196,7 @@ export default function Page() {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber">Volgende stap</span>
             <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Liever filteren zonder kan?</h2>
-            <p className="mt-4 text-white/70">Een osmosesysteem levert gefilterd water direct uit je kraan, zonder opslagtank. Vanaf €999 exclusief montage. Vraag vrijblijvend een offerte aan.</p>
+            <p className="mt-4 text-white/70">Een osmosesysteem levert gefilterd water direct uit je kraan, zonder opslagtank. Vraag vrijblijvend een offerte aan.</p>
             <Link href="/aanmelden" className="cursor-pointer mt-8 inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-xl shadow-amber/25">
               Vraag vrijblijvend een offerte aan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>

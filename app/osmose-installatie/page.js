@@ -34,7 +34,7 @@ const BENODIGD = [
 
 const FAQ = [
   ['Hoe lang duurt een osmose installatie?', 'Bij ons duurt de installatie meestal 1 tot 2 uur, door een vakkundige monteur van Water-zuivering.'],
-  ['Wat kost een osmose installatie?', 'Het systeem kost vanaf €999, exclusief montage. Laat je het door onze eigen monteur installeren, dan staat de montage apart in je offerte; installeer je zelf, dan betaal je alleen het systeem. Laat je offertes van andere partijen vergelijken, controleer dan altijd of installatie, de kraan en de eerste filters in de prijs zitten.'],
+  ['Wat kost een osmose installatie?', 'De prijs hangt af van je keuken en of je het door onze eigen monteur laat installeren of zelf doet. Je prijs krijg je in een vrijblijvende offerte. Laat je offertes van andere partijen vergelijken, controleer dan altijd of installatie, de kraan en de eerste filters in de prijs zitten.'],
   ['Kan ik een osmose systeem zelf installeren?', 'Ja, dat kan. Je krijgt dan €250 korting. Het vraagt wel om het aansluiten op de waterleiding en het plaatsen van een extra kraan, dus alleen aan te raden als je daar handig in bent. Laat je het door onze monteur doen, dan valt de installatie ook onder je garantie.'],
   ['Is er een afvoer nodig?', 'Ja. Bij omgekeerde osmose hoort een afvoer voor afvalwater. Die slang wordt door de monteur aangesloten, samen met de watertoevoer en de slang voor het gefilterde water.'],
   ['Valt de installatie onder de garantie?', 'Ja. Problemen die voortkomen uit de montage door onze eigen monteurs lossen we gratis op, binnen de 10 jaar garantie die op elk systeem zit.'],
@@ -52,7 +52,7 @@ export default function Page() {
       />
       <ProductSchema
         name="Water-zuivering osmosesysteem"
-        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie, vanaf €999 exclusief montage."
+        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie."
         image="https://www.water-zuivering.nl/assets/img/countertop.png"
         url="https://www.water-zuivering.nl/osmose-installatie"
         prijsVanaf={PRIJS_VANAF}
