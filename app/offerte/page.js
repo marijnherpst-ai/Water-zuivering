@@ -83,14 +83,15 @@ export default async function OffertePage({ searchParams }) {
 
       <header className="bg-ink border-b border-white/10">
         <div className="max-w-6xl mx-auto px-5 py-3.5 flex items-center justify-between gap-4">
-          <span className="flex items-center gap-2.5 font-display font-extrabold text-lg tracking-tight text-white">
+          <Link href="/" className="flex items-center gap-2.5 font-display font-extrabold text-lg tracking-tight text-white">
             <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C12 2 5 10.5 5 15a7 7 0 0014 0c0-4.5-7-13-7-13z" fill="#EDA71B" /></svg>
             </span>
             Water-zuivering
-          </span>
-          <div className="flex items-center gap-3">
-            <a href="tel:+31626944877" className="hidden sm:inline text-sm font-semibold text-white/80 hover:text-white">06 26 94 48 77</a>
+          </Link>
+          <div className="flex items-center gap-3 sm:gap-4">
+            <Link href="/" className="text-xs sm:text-sm font-semibold text-white/70 hover:text-white">Naar website</Link>
+            <a href="tel:+31626944877" className="hidden md:inline text-sm font-semibold text-white/80 hover:text-white">06 26 94 48 77</a>
             <a href="#offerte" className="cursor-pointer rounded-full bg-amber px-4 py-2 text-xs sm:text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors">Gratis offerte</a>
           </div>
         </div>
@@ -249,7 +250,20 @@ export default async function OffertePage({ searchParams }) {
       </main>
 
       <footer className="bg-ink border-t border-white/10">
-        <div className="max-w-6xl mx-auto px-5 pt-6 pb-24 md:pb-6 flex flex-wrap items-center justify-between gap-3 text-xs text-white/50">
+        <div className="max-w-6xl mx-auto px-5 pt-8 pb-6">
+          <p className="text-sm font-semibold text-white">Eerst meer lezen?</p>
+          <nav aria-label="Website" className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm text-white/70">
+            <Link href="/" className="hover:text-white">Homepage</Link>
+            <Link href="/osmosesysteem" className="hover:text-white">Het osmosesysteem</Link>
+            <Link href="/3-weg-kraan" className="hover:text-white">3-weg kraan</Link>
+            <Link href="/uitleg" className="hover:text-white">Hoe het werkt</Link>
+            <Link href="/maatcheck" className="hover:text-white">Maatcheck</Link>
+            <Link href="/reviews" className="hover:text-white">Reviews</Link>
+            <Link href="/kennisbank" className="hover:text-white">Kennisbank</Link>
+            <Link href="/contact" className="hover:text-white">Contact</Link>
+          </nav>
+        </div>
+        <div className="max-w-6xl mx-auto px-5 pt-5 pb-24 md:pb-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs text-white/50">
           <span>&copy; 2026 Water-zuivering</span>
           <span className="flex gap-4">
             <Link href="/privacybeleid" className="hover:text-white">Privacybeleid</Link>
