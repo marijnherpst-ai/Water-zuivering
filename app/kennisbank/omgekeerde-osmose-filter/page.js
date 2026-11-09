@@ -97,7 +97,7 @@ export default function Page() {
               Een standaard koolstoffilter (zoals in een filterkan) is prima tegen chloorsmaak, maar de poriën zijn simpelweg te groot om kleinere moleculen zoals PFAS of medicijnresten tegen te houden. Een omgekeerde osmose filter is een andere orde van grootte fijner — en dat is precies waarom het de grondigste optie is als volledige filtratie je doel is.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Benieuwd hoe dit in een compleet systeem samenkomt? Lees onze uitleg over <Link href="/kennisbank/wat-is-ro-water" className="underline hover:text-ink">RO-water</Link>, of bekijk de <Link href="/uitleg" className="underline hover:text-ink">specificaties van ons systeem</Link>.
+              Benieuwd hoe dit in een compleet systeem samenkomt? Lees onze uitleg over <Link href="/kennisbank/wat-is-ro-water" className="underline hover:text-ink">RO-water</Link>, of bekijk de <Link href="/uitleg" className="underline hover:text-ink">specificaties van ons systeem</Link>. Zo&apos;n filter thuis onder de keukenkraan? Lees meer over ons <Link href="/osmose-waterfilter" className="underline hover:text-ink">osmose waterfilter</Link>.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Het prijsverschil met een simpel filter zit hem dan ook niet in willekeur — een omgekeerde osmose filter kost meer om te bouwen en installeren juist omdát het membraan zoveel fijner filtert. Voor wie alleen de smaak wil verbeteren is een koolstoffilter genoeg; voor wie ook PFAS, medicijnresten en microplastics kwijt wil, is dit tot nu toe de enige betrouwbare techniek voor thuisgebruik.

@@ -53,6 +53,9 @@ export default function Footer() {
           <li><Link href="/zuiverwater" className="hover:text-ink transition-colors">Zuiver water</Link></li>
           <li><Link href="/waterzuiveraar-drinkwater" className="hover:text-ink transition-colors">Waterzuiveraar drinkwater</Link></li>
           <li><Link href="/waterzuiveringsinstallatie" className="hover:text-ink transition-colors">Waterzuiveringsinstallatie</Link></li>
+          <li><Link href="/drinkwater-filter" className="hover:text-ink transition-colors">Drinkwater filter</Link></li>
+          <li><Link href="/osmose-installatie" className="hover:text-ink transition-colors">Osmose installatie</Link></li>
+          <li><Link href="/osmose-apparaat-kopen" className="hover:text-ink transition-colors">Osmose apparaat kopen</Link></li>
           <li><Link href="/maatcheck" className="hover:text-ink transition-colors">Maatcheck</Link></li>
           <li><Link href="/winkel" className="hover:text-ink transition-colors">Osmose filter kopen</Link></li>
           <li><Link href="/winkel/ppc-filter" className="hover:text-ink transition-colors">Sedimentfilter</Link></li>

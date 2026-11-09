@@ -194,7 +194,7 @@ export default function Page() {
               Wie zich zorgen maakt over microplastics, grijpt soms naar flessenwater. Dat is geen goed idee: volgens de onderzoekers bevat flessenwater veel meer microplastics dan kraanwater. Het kost bovendien veel meer geld en levert plastic afval op. Meer daarover in <Link href="/kennisbank/kraanwater-vs-flessenwater" className="underline hover:text-ink">kraanwater vs. flessenwater</Link>.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Ben je benieuwd naar andere stoffen in kraanwater? Lees dan <Link href="/kennisbank/pfas-in-kraanwater" className="underline hover:text-ink">PFAS in kraanwater</Link> en <Link href="/kennisbank/is-kraanwater-veilig" className="underline hover:text-ink">is kraanwater veilig?</Link>
+              Ben je benieuwd naar andere stoffen in kraanwater? Lees dan <Link href="/kennisbank/pfas-in-kraanwater" className="underline hover:text-ink">PFAS in kraanwater</Link> en <Link href="/kennisbank/is-kraanwater-veilig" className="underline hover:text-ink">is kraanwater veilig?</Link> En welk filter bij welke stof helpt, staat in <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter kiezen per probleem</Link>.
             </p>
           </div>
         </section>

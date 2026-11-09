@@ -79,7 +79,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Welke methodes komen het dichtst in de buurt?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Niet elk filter is daar even goed in. Een eenvoudige koolstoffilter (zoals in een filterkan) vangt een deel van de PFAS-moleculen, maar lang niet alles — en de werking neemt snel af naarmate het filter vol raakt. Omgekeerde osmose werkt anders: het water wordt onder druk door een membraan geperst met poriën die honderden keren dunner zijn dan een PFAS-molecuul, waardoor vrijwel niets erdoorheen komt.
+              Niet elk filter is daar even goed in. Een eenvoudige koolstoffilter (zoals in een filterkan) vangt een deel van de PFAS-moleculen, maar lang niet alles — en de werking neemt snel af naarmate het filter vol raakt. Omgekeerde osmose werkt anders: het water wordt onder druk door een membraan geperst met poriën die honderden keren dunner zijn dan een PFAS-molecuul, waardoor vrijwel niets erdoorheen komt. Zo&apos;n membraan zit in een <Link href="/osmose-waterfilter" className="underline hover:text-ink">osmose waterfilter</Link> onder de keukenkraan.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Wil je precies weten hoe dat membraan werkt? Dat leggen we stap voor stap uit in <Link href="/kennisbank/omgekeerde-osmose-filter" className="underline hover:text-ink">ons artikel over de omgekeerde osmose filter</Link>.

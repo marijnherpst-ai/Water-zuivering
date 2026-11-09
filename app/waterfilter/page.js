@@ -13,8 +13,7 @@ import FilterKiezer from '@/components/FilterKiezer';
 import WaterReis from '@/components/WaterReis';
 import FilterLagen from '@/components/FilterLagen';
 import { createClient } from '@/lib/supabase/server';
-import PrijsVanaf, { PRIJS_VANAF } from '@/components/PrijsVanaf';
-import ProductSchema from '@/components/ProductSchema';
+import PrijsVanaf from '@/components/PrijsVanaf';
 
 const mono = IBM_Plex_Mono({ subsets: ['latin'], weight: ['500', '600'], display: 'swap' });
 
@@ -672,13 +671,6 @@ export default async function Page() {
           { name: 'Home', url: 'https://www.water-zuivering.nl/' },
           { name: 'Waterfilter', url: 'https://www.water-zuivering.nl/waterfilter' },
         ]}
-      />
-      <ProductSchema
-        name="Water-zuivering osmosesysteem"
-        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie."
-        image="https://www.water-zuivering.nl/assets/img/countertop.png"
-        url="https://www.water-zuivering.nl/waterfilter"
-        prijsVanaf={PRIJS_VANAF}
       />
       <FaqSchema items={FAQ} />
       <RatingSchema rating={avgRating} count={reviewCount} />

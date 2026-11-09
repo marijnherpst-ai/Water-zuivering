@@ -158,7 +158,7 @@ export default async function HomePage() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Ons assortiment</span>
               <h2 className="mt-3 font-display text-3xl md:text-4xl font-extrabold tracking-tight">Onze producten</h2>
               <p className="mt-4 text-dim text-lg">Eén hoofdsysteem, twee slimme accessoires. Los verkrijgbaar, perfect op elkaar afgestemd.</p>
-              <p className="mt-3 text-sm text-dim">Nog aan het vergelijken? In onze gids <Link href="/waterfilter" className="underline hover:text-ink">waterfilter kopen</Link> zetten we filterkan, opzetstuk en osmose eerlijk naast elkaar.</p>
+              <p className="mt-3 text-sm text-dim">Nog aan het vergelijken? In onze gids <Link href="/waterfilter" className="underline hover:text-ink">waterfilter kopen</Link> zetten we filterkan, opzetstuk en osmose eerlijk naast elkaar. Of lees meer over <Link href="/waterzuivering-voor-thuis" className="underline hover:text-ink">waterzuivering voor thuis</Link>.</p>
             </div>
 
             <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 lg:items-stretch">
@@ -369,7 +369,7 @@ export default async function HomePage() {
             <div className="max-w-2xl mx-auto text-center">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Waterkwaliteit</span>
               <h2 className="mt-3 font-display text-3xl md:text-4xl font-extrabold tracking-tight">Waarom kiezen voor een waterzuiveraar?</h2>
-              <p className="mt-4 text-dim text-lg">Kraanwater in Nederland is veilig, maar bevat soms sporen van stoffen die u liever niet binnenkrijgt. Klik door om te zien wat een Water-zuivering systeem eruit filtert.</p>
+              <p className="mt-4 text-dim text-lg">Kraanwater in Nederland is veilig, maar bevat soms sporen van stoffen die u liever niet binnenkrijgt. Klik door om te zien wat een Water-zuivering systeem eruit filtert. Welk filter bij welke stof past, leest u bij <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter kiezen</Link>.</p>
             </div>
 
             <div className="mt-14 grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">

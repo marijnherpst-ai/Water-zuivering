@@ -135,7 +135,7 @@ export default function Page() {
               </table>
             </div>
             <p className="mt-4 text-dim leading-relaxed">
-              Meer over de keuze tussen kraan en fles lees je in <Link href="/kennisbank/kraanwater-vs-flessenwater" className="underline hover:text-ink">kraanwater vs. flessenwater</Link>.
+              Meer over de keuze tussen kraan en fles lees je in <Link href="/kennisbank/kraanwater-vs-flessenwater" className="underline hover:text-ink">kraanwater vs. flessenwater</Link>. RO-water uit je eigen kraan? Lees meer over ons <Link href="/osmose-waterfilter" className="underline hover:text-ink">osmose waterfilter</Link> voor thuis.
             </p>
           </div>
         </section>

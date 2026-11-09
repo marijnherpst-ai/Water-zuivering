@@ -169,7 +169,7 @@ export default function Page() {
               <li><strong className="text-ink">Wat het systeem tegenhoudt</strong>: vergelijk niet alleen de prijs, maar ook of PFAS en medicijnresten eruit gaan.</li>
             </ul>
             <p className="mt-4 text-dim leading-relaxed">
-              Twijfel je tussen de soorten? Lees <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">beste waterfilter voor thuis</Link>.
+              Twijfel je tussen de soorten? Lees <Link href="/kennisbank/beste-waterfilter-voor-thuis" className="underline hover:text-ink">beste waterfilter voor thuis</Link>. Hoe het aansluiten van een <Link href="/waterzuiveringsinstallatie" className="underline hover:text-ink">waterzuiveringsinstallatie</Link> verloopt en wat erbij komt kijken, lees je apart.
             </p>
           </div>
         </section>

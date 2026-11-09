@@ -191,7 +191,7 @@ export default function UitlegPage() {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber">Installatie</span>
             <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Installatie laten we niet aan het toeval over</h2>
-            <p className="mt-4 text-white/70">Een vakman sluit het systeem binnen 1 tot 2 uur professioneel aan op je bestaande kraan. Jij hoeft zelf niets te doen.</p>
+            <p className="mt-4 text-white/70">Een vakman sluit het systeem binnen 1 tot 2 uur professioneel aan op je bestaande kraan. Jij hoeft zelf niets te doen. Hoe dat stap voor stap gaat, lees je bij <Link href="/waterzuiveringsinstallatie" className="underline hover:text-white">waterzuiveringsinstallatie laten aansluiten</Link>.</p>
             <Link href="/aanmelden" className="cursor-pointer mt-8 inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-xl shadow-amber/25">
               Vraag vrijblijvend een offerte aan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>

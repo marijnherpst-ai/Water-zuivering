@@ -100,7 +100,7 @@ export default function Page() {
             <div className="order-1 lg:order-2">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">De oplossing</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Omgekeerde osmose filtert PFAS effectief</h2>
-              <p className="mt-4 text-dim">Het RO-membraan in een Water-zuivering systeem heeft gaatjes die honderden keren dunner zijn dan een haar — te klein voor PFAS-moleculen om doorheen te komen. Meer over hoe dat proces precies werkt lees je in <Link href="/kennisbank/wat-is-osmosewater" className="underline hover:text-ink">onze uitleg over osmosewater</Link>.</p>
+              <p className="mt-4 text-dim">Het RO-membraan in een Water-zuivering systeem heeft gaatjes die honderden keren dunner zijn dan een haar — te klein voor PFAS-moleculen om doorheen te komen. Meer over hoe dat proces precies werkt lees je in <Link href="/kennisbank/wat-is-osmosewater" className="underline hover:text-ink">onze uitleg over osmosewater</Link>. Welk filter bij welke stof past, lees je bij <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter kiezen</Link>.</p>
             </div>
           </div>
         </section>

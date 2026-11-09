@@ -6,8 +6,7 @@ import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import ReviewsSectie from '@/components/ReviewsSectie';
-import PrijsVanaf, { PRIJS_VANAF } from '@/components/PrijsVanaf';
-import ProductSchema from '@/components/ProductSchema';
+import PrijsVanaf from '@/components/PrijsVanaf';
 
 export const dynamic = 'force-dynamic';
 
@@ -49,13 +48,6 @@ export default function Page() {
           { name: 'Home', url: 'https://www.water-zuivering.nl/' },
           { name: 'Osmose installatie', url: 'https://www.water-zuivering.nl/osmose-installatie' },
         ]}
-      />
-      <ProductSchema
-        name="Water-zuivering osmosesysteem"
-        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie."
-        image="https://www.water-zuivering.nl/assets/img/countertop.png"
-        url="https://www.water-zuivering.nl/osmose-installatie"
-        prijsVanaf={PRIJS_VANAF}
       />
       <FaqSchema items={FAQ} />
       <RevealObserver />
@@ -261,7 +253,7 @@ export default function Page() {
           <div className="glow w-[420px] h-[420px] bg-amber/15 -top-32 -right-32" />
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber">Volgende stap</span>
-            <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Laat je osmosesysteem vakkundig installeren</h2>
+            <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Laat je osmose installatie vakkundig uitvoeren</h2>
             <p className="mt-4 text-white/70">Vraag een vrijblijvende offerte aan. We bellen je meestal binnen één werkdag.</p>
             <Link href="/aanmelden" className="cursor-pointer mt-8 inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-xl shadow-amber/25">
               Vraag vrijblijvend een offerte aan

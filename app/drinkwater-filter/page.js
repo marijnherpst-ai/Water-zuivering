@@ -6,8 +6,7 @@ import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import ReviewsSectie from '@/components/ReviewsSectie';
-import PrijsVanaf, { PRIJS_VANAF } from '@/components/PrijsVanaf';
-import ProductSchema from '@/components/ProductSchema';
+import PrijsVanaf from '@/components/PrijsVanaf';
 
 export const dynamic = 'force-dynamic';
 
@@ -66,13 +65,6 @@ export default function Page() {
           { name: 'Home', url: 'https://www.water-zuivering.nl/' },
           { name: 'Drinkwater filter', url: 'https://www.water-zuivering.nl/drinkwater-filter' },
         ]}
-      />
-      <ProductSchema
-        name="Water-zuivering osmosesysteem"
-        description="Osmosesysteem voor thuis met 3-traps filtratie (PPC, RO, CTO) en direct flow zonder tank. Verwijdert chloor, PFAS, medicijnresten en microplastics uit kraanwater. 10 jaar garantie."
-        image="https://www.water-zuivering.nl/assets/img/countertop.png"
-        url="https://www.water-zuivering.nl/drinkwater-filter"
-        prijsVanaf={PRIJS_VANAF}
       />
       <FaqSchema items={FAQ} />
       <RevealObserver />
