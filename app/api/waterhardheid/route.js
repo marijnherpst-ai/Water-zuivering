@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { bepaalHardheid } from '@/lib/waterhardheid/lookup';
+import { bepaalHardheid, vulLiveAan, vulLiveAanInBuurt } from '@/lib/waterhardheid/lookup';
 import { pfasCheck } from '@/lib/pfasData';
 
 // Public lookup for the /waterhardheid checker. The address is only used to ask
@@ -37,7 +37,9 @@ export async function GET(request) {
     }
 
     const [lon, lat] = (doc.centroide_ll.match(/-?[\d.]+/g) || []).map(Number);
-    const hardheid = bepaalHardheid({ lon, lat, woonplaats: doc.woonplaatsnaam, gemeente: doc.gemeentenaam, provincie: doc.provincienaam });
+    const basis = bepaalHardheid({ lon, lat, woonplaats: doc.woonplaatsnaam, gemeente: doc.gemeentenaam, provincie: doc.provincienaam });
+    let hardheid = await vulLiveAan(basis, doc.postcode || postcode, opAdres ? nummer[1] + (nummer[2] || '') : '1');
+    if (hardheid && hardheid.min == null) hardheid = await vulLiveAanInBuurt(hardheid, lon, lat, doc.woonplaatsnaam, doc.postcode || postcode);
     if (!hardheid) {
       return NextResponse.json({ ok: false, reden: 'Voor dit adres konden we het waterbedrijf niet bepalen.' }, { status: 404 });
     }

@@ -6,7 +6,10 @@ import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import WaterhardheidChecker from '@/components/WaterhardheidChecker';
 import { BEDRIJVEN, KLASSEN, GEPUBLICEERD } from '@/lib/waterhardheid/data';
-import { hardheidPerStad } from '@/lib/waterhardheid/lookup';
+import { hardheidPerStadLive } from '@/lib/waterhardheid/lookup';
+
+// The city table asks Vitens, Evides and WML for their current value; refresh weekly.
+export const revalidate = 604800;
 
 export const metadata = {
   alternates: { canonical: '/waterhardheid' },
@@ -69,8 +72,8 @@ function hardheidTekst(r) {
   return `${bereik(r.min, r.max)} °dH`;
 }
 
-export default function WaterhardheidPage() {
-  const steden = hardheidPerStad();
+export default async function WaterhardheidPage() {
+  const steden = await hardheidPerStadLive();
   const bedrijven = Object.entries(BEDRIJVEN);
   const datum = new Date(GEPUBLICEERD).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' });
 
@@ -270,7 +273,7 @@ export default function WaterhardheidPage() {
               </table>
             </div>
             <p className="mt-3 text-xs text-dim/80">
-              Een bandbreedte betekent dat een stad water krijgt van meer dan één pompstation. Bronnen: de drinkwaterbedrijven zelf (zie onderaan), geraadpleegd op {datum}.
+              Een bandbreedte betekent dat een stad water krijgt van meer dan één pompstation. Bij steden van Vitens, Evides en WML is de waarde opgevraagd voor een adres in het centrum; in andere wijken kan het iets anders zijn. Bronnen: de drinkwaterbedrijven zelf (zie onderaan), geraadpleegd op {datum}.
             </p>
           </div>
         </section>
@@ -346,7 +349,7 @@ export default function WaterhardheidPage() {
             <ol className="mt-5 space-y-4 text-dim leading-relaxed">
               <li><strong className="text-ink">1. Je adres wordt een locatie.</strong> Met je postcode en huisnummer vragen we bij PDOK, de adresservice van de overheid, op welke plek je woont. We slaan je adres niet op.</li>
               <li><strong className="text-ink">2. We bepalen je waterbedrijf.</strong> Die locatie leggen we op de kaart van het RIVM met de leveringsgebieden van alle tien drinkwaterbedrijven. Publiceert een waterbedrijf zelf een lijst met woonplaatsen, dan gaat die voor.</li>
-              <li><strong className="text-ink">3. We zoeken de hardheid op.</strong> We gebruiken alleen de cijfers die het waterbedrijf zelf publiceert: één waarde voor het hele gebied, of de waarde voor jouw woonplaats. Vitens, Evides en WML publiceren de hardheid alleen per postcode. Dan laten we je waterbedrijf zien en sturen we je door naar hun eigen check.</li>
+              <li><strong className="text-ink">3. We zoeken de hardheid op.</strong> We gebruiken alleen de cijfers die het waterbedrijf zelf publiceert: één waarde voor het hele gebied, of de waarde voor jouw woonplaats. Vitens, Evides en WML publiceren de hardheid alleen in hun eigen postcodecheck. Voor die adressen vragen we de waarde voor jouw postcode direct bij het waterbedrijf op.</li>
             </ol>
             <p className="mt-5 text-sm text-dim">
               Het blijft een indicatie: de hardheid kan per pompstation en per seizoen iets schommelen. We werken de cijfers regelmatig bij.

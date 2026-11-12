@@ -1,5 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk';
-import { hardheidPerStad } from '@/lib/waterhardheid/lookup';
+import { hardheidPerStadLive } from '@/lib/waterhardheid/lookup';
 
 // Website chat assistant. Answers questions about drinking water, filters and
 // the Water-zuivering osmosis system using only the site's own knowledge
@@ -54,10 +54,17 @@ const PRODUCTFEITEN = `PRODUCTFEITEN (Water-zuivering osmosesysteem):
 
 // Hardness per large city, from the same official data as /waterhardheid.
 const fmt = (n) => String(Math.round(n * 100) / 100).replace('.', ',');
-const WATERHARDHEID = `WATERHARDHEID PER STAD (officiële cijfers van de drinkwaterbedrijven; voor een exact adres verwijs je naar https://www.water-zuivering.nl/waterhardheid):
-${hardheidPerStad()
-  .map((r) => `${r.stad}: ${r.bedrijf}, ${r.min != null ? `${r.min === r.max ? fmt(r.min) : `${fmt(r.min)}-${fmt(r.max)}`} °dH (${r.klasseMin.label.toLowerCase()}${r.klasseMin.label !== r.klasseMax.label ? ` tot ${r.klasseMax.label.toLowerCase()}` : ''})` : 'publiceert de hardheid alleen per postcode'}`)
-  .join('\n')}`;
+// Vitens, Evides and WML cities get the supplier's own value for a central address.
+let hardheidCache = null;
+async function waterhardheidTekst() {
+  if (hardheidCache && Date.now() - hardheidCache.tijd < 24 * 60 * 60 * 1000) return hardheidCache.tekst;
+  const steden = await hardheidPerStadLive();
+  const tekst = `WATERHARDHEID PER STAD (officiële cijfers van de drinkwaterbedrijven; bij Vitens, Evides en WML gemeten op een adres in het centrum; voor een exact adres verwijs je naar https://www.water-zuivering.nl/waterhardheid):\n${steden
+    .map((r) => `${r.stad}: ${r.bedrijf}, ${r.min != null ? `${r.min === r.max ? fmt(r.min) : `${fmt(r.min)}-${fmt(r.max)}`} °dH (${r.klasseMin.label.toLowerCase()}${r.klasseMin.label !== r.klasseMax.label ? ` tot ${r.klasseMax.label.toLowerCase()}` : ''})` : 'verschilt per postcode'}`)
+    .join('\n')}`;
+  hardheidCache = { tekst, tijd: Date.now() };
+  return tekst;
+}
 
 const STOPWOORDEN = new Set('de het een en van in is op te dat die voor met zijn er niet aan om ook als bij of naar dan wat hoe wel kan je jij ik mijn mij me we wij ons onze jullie u uw dit deze zo nog maar al heb hebt heeft hoeveel waar wanneer welke waarom moet moeten wordt worden word kun kunnen zou mag graag even veel meer'.split(' '));
 
@@ -167,7 +174,7 @@ export async function POST(request) {
   const messages = schoon(body?.messages);
   if (!messages) return new Response('Ongeldig verzoek.', { status: 400 });
 
-  const kennis = await laadKennis(new URL(request.url).origin);
+  const [kennis, hardheid] = await Promise.all([laadKennis(new URL(request.url).origin), waterhardheidTekst()]);
   const recent = messages.filter((m) => m.role === 'user').slice(-2).map((m) => m.content).join(' ');
   const gevonden = kiesSecties(kennis, recent);
   const kennisTekst = gevonden.length
@@ -187,7 +194,7 @@ export async function POST(request) {
 
 ${PRODUCTFEITEN}
 
-${WATERHARDHEID}
+${hardheid}
 
 PAGINA-OVERZICHT (titel: link):
 ${kennis.index}`, cache_control: { type: 'ephemeral' } },

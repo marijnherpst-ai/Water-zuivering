@@ -123,6 +123,13 @@ export default function WaterhardheidChecker() {
               </div>
 
               <p className="mt-4 text-dim leading-relaxed">{UITLEG[h.klasse.label]}</p>
+              {h.live && (
+                <p className="mt-2 text-sm text-dim">
+                  {h.naburigePostcode
+                    ? `${h.bedrijf} heeft geen waarde voor jouw postcode gepubliceerd. Dit is de waarde voor de dichtstbijzijnde postcode in je woonplaats (${h.naburigePostcode.slice(0, 4)}).`
+                    : `Deze waarde heeft ${h.bedrijf} zelf opgegeven voor jouw postcode${h.productielocatie ? ` (productielocatie ${h.productielocatie})` : ''}.`}
+                </p>
+              )}
               {h.plaatsdetail && (
                 <ul className="mt-3 space-y-1 text-sm text-dim">
                   {h.plaatsdetail.map((r) => <li key={r}>• {r}</li>)}
