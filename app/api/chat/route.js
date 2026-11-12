@@ -1,4 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk';
+import { hardheidPerStad } from '@/lib/waterhardheid/lookup';
 
 // Website chat assistant. Answers questions about drinking water, filters and
 // the Water-zuivering osmosis system using only the site's own knowledge
@@ -31,7 +32,7 @@ Prijzen:
 Gezondheid:
 - Geen medische claims of adviezen. Nederlands kraanwater is veilig volgens de wettelijke normen; filteren is een persoonlijke keuze. Verwijs bij gezondheidsvragen naar de huisarts of naar bronnen zoals het RIVM.
 
-Geen vergelijkingen met merken van concurrenten. Vraagt iemand naar een ander merk, leg dan uit waar je op kunt letten in plaats van een merk af te kraken of aan te prijzen.
+Noem zelf nooit merknamen van andere bedrijven of producten (bijvoorbeeld van kokendwaterkranen, filterkannen, waterkoelers of ontharders), ook niet als tip of aanbeveling: zeg dan gewoon "een kokendwaterkraan", "een filterkan" enzovoort. Noemt de bezoeker zelf een merk, leg dan neutraal uit waar je op kunt letten, zonder het merk af te kraken of aan te prijzen.
 
 Naar een aanvraag leiden:
 - Lijkt de bezoeker geïnteresseerd (vraagt naar installatie, of het past, offerte, levertijd, prijs), bied dan aan: een gratis offerte aanvragen via https://www.water-zuivering.nl/aanmelden of teruggebeld worden. Voor terugbellen kan de bezoeker op de knop "Bel me terug" onder deze chat drukken. Doe dit hooguit één keer per paar berichten, niet bij elke vraag.
@@ -50,6 +51,13 @@ const PRODUCTFEITEN = `PRODUCTFEITEN (Water-zuivering osmosesysteem):
 - Het systeem levert geen bruisend en geen kokend water, en koelt het water niet.
 - Contact: WhatsApp of bellen via 06-26944877, of https://www.water-zuivering.nl/contact
 - Handige tools op de site: waterhardheid per postcode https://www.water-zuivering.nl/waterhardheid en PFAS-check https://www.water-zuivering.nl/pfas-check`;
+
+// Hardness per large city, from the same official data as /waterhardheid.
+const fmt = (n) => String(Math.round(n * 100) / 100).replace('.', ',');
+const WATERHARDHEID = `WATERHARDHEID PER STAD (officiële cijfers van de drinkwaterbedrijven; voor een exact adres verwijs je naar https://www.water-zuivering.nl/waterhardheid):
+${hardheidPerStad()
+  .map((r) => `${r.stad}: ${r.bedrijf}, ${r.min != null ? `${r.min === r.max ? fmt(r.min) : `${fmt(r.min)}-${fmt(r.max)}`} °dH (${r.klasseMin.label.toLowerCase()}${r.klasseMin.label !== r.klasseMax.label ? ` tot ${r.klasseMax.label.toLowerCase()}` : ''})` : 'publiceert de hardheid alleen per postcode'}`)
+  .join('\n')}`;
 
 const STOPWOORDEN = new Set('de het een en van in is op te dat die voor met zijn er niet aan om ook als bij of naar dan wat hoe wel kan je jij ik mijn mij me we wij ons onze jullie u uw dit deze zo nog maar al heb hebt heeft hoeveel waar wanneer welke waarom moet moeten wordt worden word kun kunnen zou mag graag even veel meer'.split(' '));
 
@@ -178,6 +186,8 @@ export async function POST(request) {
             { type: 'text', text: `${INSTRUCTIES}
 
 ${PRODUCTFEITEN}
+
+${WATERHARDHEID}
 
 PAGINA-OVERZICHT (titel: link):
 ${kennis.index}`, cache_control: { type: 'ephemeral' } },
