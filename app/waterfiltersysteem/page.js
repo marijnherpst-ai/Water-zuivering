@@ -9,8 +9,8 @@ import PrijsVanaf from '@/components/PrijsVanaf';
 
 export const metadata = {
   alternates: { canonical: '/waterfiltersysteem' },
-  title: 'Waterfiltersysteem voor thuis — Water-zuivering',
-  description: 'Een compleet waterfiltersysteem filtert je kraanwater in drie stappen tot 99% zuiver. Ontdek hoe zo\'n filtratiesysteem is opgebouwd en wat het kost.',
+  title: 'Waterfiltersysteem en waterzuiveringssysteem thuis — Water-zuivering',
+  description: 'Een compleet waterfiltersysteem of waterzuiveringssysteem filtert je kraanwater in drie stappen tot 99% zuiver. Zo is het opgebouwd en dit kost het.',
 };
 
 const ONDERDELEN = [
@@ -26,6 +26,7 @@ const WAAROM_SYSTEEM = [
 ];
 
 const FAQ = [
+  ['Wat is het verschil tussen een waterfiltersysteem en een waterzuiveringssysteem?', 'In de praktijk niets: beide namen worden gebruikt voor een systeem dat kraanwater in meerdere stappen zuivert. Zit er een omgekeerde-osmosemembraan in, dan gaat zo’n waterzuiveringssysteem wel veel verder dan een simpel filter: het houdt ook kalk, PFAS en medicijnresten tegen.'],
   ['Wat is een waterfiltersysteem precies?', 'Een waterfiltersysteem is een set van meerdere filters die na elkaar werken — meestal een voorfilter, een fijn membraan en een nafilter — om kraanwater in stappen steeds verder te zuiveren.'],
   ['Wat is het verschil tussen een waterfiltersysteem en een los filter?', 'Een los filter (zoals in een kan) doet één ding: chloor of grof vuil eruit halen. Een compleet filtratiesysteem combineert meerdere technieken, waardoor het ook fijnere stoffen zoals PFAS en medicijnresten verwijdert.'],
   ['Hoeveel ruimte kost een waterfiltersysteem?', 'Ons systeem is slechts 10,5 cm breed en past staand of liggend in vrijwel elk keukenkastje, naast je andere spullen.'],
@@ -59,7 +60,7 @@ export default function Page() {
                 Een waterfiltersysteem is meer dan één filter — het is een team
               </h1>
               <p className="mt-5 text-dim text-lg">
-                Een goed <strong className="text-ink">waterfiltersysteem</strong> bestaat niet uit één slim onderdeel, maar uit drie die elkaar aanvullen. Samen filteren ze kraanwater tot 99% zuiver, zonder dat je er iets voor hoeft te doen.
+                Een goed <strong className="text-ink">waterfiltersysteem</strong> bestaat niet uit één slim onderdeel, maar uit drie die elkaar aanvullen. Samen filteren ze kraanwater tot 99% zuiver, zonder dat je er iets voor hoeft te doen. Je hoort het ook wel een <strong className="text-ink">waterzuiveringssysteem</strong> noemen: dat is hetzelfde, een compleet systeem onder je aanrecht met een eigen kraan.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-3.5 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">

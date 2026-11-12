@@ -57,7 +57,7 @@ export default function Page() {
               Een eerlijk overzicht van waar de kosten vandaan komen — en waarom het op termijn vaak voordeliger is dan je zou denken.
             </p>
             <KortAntwoord>
-              De aanschafprijs van een <strong className="text-ink">waterzuiveringssysteem</strong> met omgekeerde osmose hangt af van je situatie en vraag je op via een offerte, inclusief plaatsing. Daarnaast betaal je voor vervangende filters: bij het systeem van Water-zuivering gemiddeld ongeveer €135 per jaar. Daar staat tegenover dat je geen flessenwater meer hoeft te kopen.
+              De aanschafprijs van een <Link href="/waterfiltersysteem" className="underline hover:text-ink"><strong className="text-ink">waterzuiveringssysteem</strong></Link> met omgekeerde osmose hangt af van je situatie en vraag je op via een offerte, inclusief plaatsing. Daarnaast betaal je voor vervangende filters: bij het systeem van Water-zuivering gemiddeld ongeveer €135 per jaar. Daar staat tegenover dat je geen flessenwater meer hoeft te kopen.
             </KortAntwoord>
             <AuteurRegel bijgewerkt="21 oktober 2026" />
           </div>
