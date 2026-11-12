@@ -47,7 +47,7 @@ const PRODUCTFEITEN = `PRODUCTFEITEN (Water-zuivering osmosesysteem):
 - Afmetingen 10,5 x 42 x 43 cm, staand of liggend te plaatsen onder het aanrecht. Of het past, check je met https://www.water-zuivering.nl/maatcheck
 - Werkdruk 0,1 tot 0,4 MPa, stroom 100-240 V, 96 W, minder dan 48 dB, CE en RoHS. Foutcodes op het display: E1 (30 minuten onafgebroken in bedrijf), E2 (lekkage), E3 (te lage waterdruk).
 - 10 jaar garantie. Installatie door eigen monteurs, duurt meestal 1 tot 2 uur. Nodig: een stopcontact, een wateraansluiting en een afvoer in het keukenkastje.
-- Kraanopties: de 3-wegkraan vervangt je huidige kraan (gewone hendel voor warm en koud water, tweede bediening voor gefilterd water), in vier afwerkingen: chroom, geborsteld staal, goud en zwart. Of een apart tappunt, of koppeling op de koudwaterleiding van je bestaande kraan.
+- Kraanopties: de 3-wegkraan vervangt je huidige kraan (gewone hendel voor ongefilterd warm en koud kraanwater, tweede bediening voor gefilterd water; gefilterd water komt alleen koud, op kraantemperatuur), in vier afwerkingen: chroom, geborsteld staal, goud en zwart. Of een apart tappunt, of koppeling op de koudwaterleiding van je bestaande kraan.
 - Het systeem levert geen bruisend en geen kokend water, en koelt het water niet.
 - Contact: WhatsApp of bellen via 06-26944877, of https://www.water-zuivering.nl/contact
 - Handige tools op de site: waterhardheid per postcode https://www.water-zuivering.nl/waterhardheid en PFAS-check https://www.water-zuivering.nl/pfas-check`;
