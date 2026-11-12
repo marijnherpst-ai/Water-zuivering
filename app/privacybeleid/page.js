@@ -63,6 +63,11 @@ export default function PrivacybeleidPage() {
               </div>
 
               <div>
+                <h2>Chatassistent</h2>
+                <p>Op onze website kunt u vragen stellen aan een chatassistent. Uw vraag en het gesprek worden doorgestuurd naar Anthropic, de leverancier van het AI-model dat het antwoord maakt. Anthropic verwerkt deze gegevens volgens haar zakelijke voorwaarden en gebruikt ze niet om AI-modellen te trainen. Wij slaan de gesprekken zelf niet op. Laat u via de chat uw naam en telefoonnummer achter voor een terugbelverzoek, dan bewaren wij die samen met uw laatste vraag om u terug te bellen. Deel in de chat geen gevoelige persoonsgegevens.</p>
+              </div>
+
+              <div>
                 <h2>Beveiliging</h2>
                 <p>Wij nemen passende technische en organisatorische maatregelen om uw persoonsgegevens te beschermen tegen verlies, misbruik en onbevoegde toegang.</p>
               </div>

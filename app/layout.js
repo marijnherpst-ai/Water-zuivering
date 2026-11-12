@@ -2,6 +2,7 @@ import Script from 'next/script';
 import { Inter, Outfit } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import ChatAssistent from '@/components/ChatAssistent';
 import TrackingScripts from '@/components/TrackingScripts';
 import AttributionCapture from '@/components/AttributionCapture';
 import OrganizationSchema from '@/components/OrganizationSchema';
@@ -104,6 +105,7 @@ export default function RootLayout({ children }) {
         <OrganizationSchema />
         {children}
         <WhatsAppButton />
+        <ChatAssistent />
         <AttributionCapture />
         <Analytics />
         <TrackingScripts />

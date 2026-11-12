@@ -35,7 +35,7 @@ export async function submitContactForm(formData) {
   return { success: true };
 }
 
-const LEAD_TYPES = ['aanmelden', 'contact', 'besparing', 'giveaway', 'pfas_check'];
+const LEAD_TYPES = ['aanmelden', 'contact', 'besparing', 'giveaway', 'pfas_check', 'chat_terugbellen'];
 
 function kort(waarde) {
   return typeof waarde === 'string' && waarde ? waarde.slice(0, 200) : null;
@@ -193,5 +193,27 @@ export async function submitGiveawayEntry(formData) {
     velden: [['Huisnummer', huisnummer]],
   });
 
+  return { success: true };
+}
+
+// Callback request from the website chat assistant: name, phone and the
+// question that was asked. Stored in chat_terugbelverzoeken and mailed to the owner.
+export async function submitTerugbelVerzoek({ naam, telefoon, vraag, pagina }) {
+  naam = String(naam || '').trim().slice(0, 100);
+  telefoon = String(telefoon || '').trim().slice(0, 30);
+  vraag = String(vraag || '').trim().slice(0, 1000) || null;
+  pagina = String(pagina || '').trim().slice(0, 200) || null;
+
+  if (!naam || telefoon.replace(/\D/g, '').length < 9) {
+    return { success: false, error: 'Vul je naam en een geldig telefoonnummer in.' };
+  }
+
+  const supabase = await createClient();
+  const { error } = await supabase.from('chat_terugbelverzoeken').insert({ naam, telefoon, vraag, pagina });
+  if (error) {
+    return { success: false, error: 'Er ging iets mis. Probeer het opnieuw of stuur ons een WhatsApp.' };
+  }
+
+  await stuurLeadMelding({ formulier: 'terugbellen', naam, telefoon, velden: [['Vraag in de chat', vraag], ['Pagina', pagina]] });
   return { success: true };
 }

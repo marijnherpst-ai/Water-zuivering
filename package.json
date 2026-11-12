@@ -10,6 +10,7 @@
     "dashboard": "node ads-dashboard/server.mjs"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
     "@gltf-transform/core": "^4.4.2",
     "@gltf-transform/functions": "^4.4.2",
     "@google/model-viewer": "^4.3.1",
