@@ -1,6 +1,10 @@
+import dates from '@/lib/sitemapDates.json';
+
+// <lastmod> is the real date a page last changed (lib/sitemapDates.json, written by
+// `npm run sitemap-dates` from git). Search engines such as Bing use it to decide what to
+// re-crawl, so it must not say "now" for every page.
 export default function sitemap() {
   const baseUrl = 'https://www.water-zuivering.nl';
-  const now = new Date();
 
   const routes = [
     { path: '', priority: 1.0, changeFrequency: 'weekly' },
@@ -97,10 +101,13 @@ export default function sitemap() {
     { path: '/cookiebeleid', priority: 0.3, changeFrequency: 'yearly' },
   ];
 
-  return routes.map((route) => ({
-    url: `${baseUrl}${route.path}`,
-    lastModified: now,
-    changeFrequency: route.changeFrequency,
-    priority: route.priority,
-  }));
+  return routes.map((route) => {
+    const date = dates[route.path || '/'];
+    return {
+      url: `${baseUrl}${route.path}`,
+      ...(date ? { lastModified: new Date(date) } : {}),
+      changeFrequency: route.changeFrequency,
+      priority: route.priority,
+    };
+  });
 }

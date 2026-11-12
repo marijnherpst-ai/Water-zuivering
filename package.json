@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "dashboard": "node ads-dashboard/server.mjs"
+    "dashboard": "node ads-dashboard/server.mjs",
+    "sitemap-dates": "node scripts/sitemap-dates.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.8.0",
