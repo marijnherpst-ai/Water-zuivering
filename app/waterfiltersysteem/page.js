@@ -12,7 +12,7 @@ export const dynamic = 'force-dynamic';
 
 export const metadata = {
   alternates: { canonical: '/waterfiltersysteem' },
-  title: 'Waterfiltersysteem en waterzuiveringssysteem thuis — Water-zuivering',
+  title: 'Waterfiltersysteem & waterzuiveringssysteem — Water-zuivering',
   description: 'Een compleet waterfiltersysteem of waterzuiveringssysteem filtert je kraanwater in drie stappen tot 99% zuiver. Zo is het opgebouwd en dit kost het.',
 };
 
