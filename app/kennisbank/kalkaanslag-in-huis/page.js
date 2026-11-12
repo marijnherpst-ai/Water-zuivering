@@ -146,7 +146,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoeveel kalkaanslag krijg je in jouw regio?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Woon je in een regio met hard water, dan zie je kalkaanslag binnen een paar dagen terug op een net gepoetste kraan. In een regio met zacht water duurt dat weken. Zoek op de site van je waterbedrijf je postcode op: staat er een hoge hardheid, dan weet je waar al die kalkaanslag vandaan komt en loont het om er structureel iets aan te doen. Meer over hardheid en ontharders lees je in <Link href="/kennisbank/hoe-werkt-een-waterontharder" className="underline hover:text-ink">hoe werkt een waterontharder?</Link>.
+              Woon je in een regio met hard water, dan zie je kalkaanslag binnen een paar dagen terug op een net gepoetste kraan. In een regio met zacht water duurt dat weken. Check de <Link href="/waterhardheid" className="underline hover:text-ink">waterhardheid op je adres</Link> met je postcode en huisnummer: staat er een hoge hardheid, dan weet je waar al die kalkaanslag vandaan komt en loont het om er structureel iets aan te doen. Meer over hardheid en ontharders lees je in <Link href="/kennisbank/hoe-werkt-een-waterontharder" className="underline hover:text-ink">hoe werkt een waterontharder?</Link>.
             </p>
           </div>
         </section>

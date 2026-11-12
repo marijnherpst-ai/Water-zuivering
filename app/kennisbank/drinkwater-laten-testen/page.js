@@ -207,7 +207,7 @@ export default function Page() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Thuistests</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Zelf meten met teststrips of een meter</h2>
               <p className="mt-4 text-dim leading-relaxed">
-                Voor hardheid en zuurgraad kun je goedkoop zelf meten met teststrips of een digitale meter. Handig om te weten hoeveel kalk er in je water zit of om te checken of je filter werkt. Het blijft een indicatie: water dat even in een glas staat, verandert al iets van samenstelling. Meer daarover lees je in <Link href="/kennisbank/ph-kraanwater" className="underline hover:text-ink">pH van kraanwater</Link>.
+                Voor hardheid en zuurgraad kun je goedkoop zelf meten met teststrips of een digitale meter. Handig om te weten hoeveel kalk er in je water zit of om te checken of je filter werkt. Wat je waterbedrijf zelf opgeeft, zie je in onze <Link href="/waterhardheid" className="underline hover:text-ink">waterhardheid check per postcode</Link>. Het blijft een indicatie: water dat even in een glas staat, verandert al iets van samenstelling. Meer daarover lees je in <Link href="/kennisbank/ph-kraanwater" className="underline hover:text-ink">pH van kraanwater</Link>.
               </p>
               <p className="mt-4 text-dim leading-relaxed">
                 Stoffen als lood, PFAS, medicijnresten en bacteriën kun je niet betrouwbaar thuis meten. Een apparaatje dat belooft &lsquo;alles&rsquo; te meten, meet meestal alleen het totaal aan opgeloste zouten. Dat zegt iets over mineralen, niet over schadelijke stoffen.

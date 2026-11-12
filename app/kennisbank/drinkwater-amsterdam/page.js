@@ -169,7 +169,7 @@ export default function Page() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Kalk</span>
             <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Hoe hard is het drinkwater in Amsterdam?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Waternet meet een gemiddelde hardheid van <strong className="text-ink">7,8 °dH</strong>. Dat is zacht water. In de praktijk betekent dit weinig kalkaanslag op je kranen, minder snel een verkalkte waterkoker en geen noodzaak voor een waterontharder.
+              Waternet meet een gemiddelde hardheid van <strong className="text-ink">7,8 °dH</strong>. Dat is zacht water. In de praktijk betekent dit weinig kalkaanslag op je kranen, minder snel een verkalkte waterkoker en geen noodzaak voor een waterontharder. Benieuwd hoe Amsterdam zich verhoudt tot andere steden? Bekijk de <Link href="/waterhardheid" className="underline hover:text-ink">waterhardheid per stad en per postcode</Link>.
             </p>
             <div className="mt-6 overflow-x-auto rounded-2xl border border-edge bg-white max-w-xl">
               <table className="w-full text-sm text-left">
