@@ -13,6 +13,27 @@ export const metadata = {
 
 const ARTICLES = [
   {
+    href: '/kennisbank/waterfilter-douche',
+    image: '/assets/img/twee-kranen.jpg',
+    category: 'Waterfilters',
+    title: 'Waterfilter douche: werkt het tegen kalk en chloor?',
+    excerpt: 'Wat een douchefilter doet met kalk, chloor en je huid in Nederland, en wanneer een ontharder beter is.',
+  },
+  {
+    href: '/kennisbank/bruisend-water',
+    image: '/assets/img/glas-water.webp',
+    category: 'Drinkwater',
+    title: 'Bruisend water: wat is het en is het gezond?',
+    excerpt: 'Spuitwater, sodawater of mineraalwater met bubbels: het verschil, je tanden en zelf maken van kraanwater.',
+  },
+  {
+    href: '/kennisbank/waterfles-met-filter',
+    image: '/assets/img/filters-closeup.png',
+    category: 'Waterfilters',
+    title: 'Waterfles met filter: wat haalt hij uit je water?',
+    excerpt: 'Koolfilter of membraan: wat een filterfles wel en niet tegenhoudt en hoe lang het filter meegaat.',
+  },
+  {
     href: '/kennisbank/bronwater',
     image: '/assets/img/glas-water.webp',
     category: 'Vergelijking',

@@ -115,7 +115,7 @@ export default function Page() {
               Dat geldt voor elk filter dat je thuis gebruikt, ook voor dat van ons: <strong className="text-ink">vervang het op tijd</strong>. Bij een filterkan helpt het om de kan schoon te houden, gefilterd water in de koelkast te zetten en het binnen een dag op te drinken. Lang bewaren is geen goed idee.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Waarom filteren mensen dan toch? Meestal om de smaak, of omdat ze minder PFAS of medicijnresten willen binnenkrijgen dan de wet toestaat. Dat is een persoonlijke keuze. Wil je eerst weten hoe het bij jou zit, doe dan de <Link href="/pfas-check" className="underline hover:text-ink">PFAS-check</Link> of lees <Link href="/kennisbank/is-kraanwater-veilig" className="underline hover:text-ink">is kraanwater veilig?</Link>.
+              Voor onderweg is er ook de <Link href="/kennisbank/waterfles-met-filter" className="underline hover:text-ink">waterfles met filter</Link>, met dezelfde beperkingen. Waarom filteren mensen dan toch? Meestal om de smaak, of omdat ze minder PFAS of medicijnresten willen binnenkrijgen dan de wet toestaat. Dat is een persoonlijke keuze. Wil je eerst weten hoe het bij jou zit, doe dan de <Link href="/pfas-check" className="underline hover:text-ink">PFAS-check</Link> of lees <Link href="/kennisbank/is-kraanwater-veilig" className="underline hover:text-ink">is kraanwater veilig?</Link>.
             </p>
           </div>
         </section>

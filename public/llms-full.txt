@@ -650,3 +650,35 @@ Veelgestelde vragen:
 - Wat zijn witte vlokjes in mijn kraanwater? Witte vlokjes of korreltjes die naar de bodem zakken, zijn meestal kalk. Die laat los uit een boiler, kokendwaterkraan of een perlator die vol kalk zit. Het is niet schadelijk, maar het is wel een teken dat je die onderdelen moet ontkalken.
 - Hoe lang blijft het water wit na werkzaamheden? Na werkzaamheden aan het leidingnet is het water meestal binnen een paar uur weer helder. Laat de koude kraan een paar minuten lopen. Is het daarna nog steeds wit of troebel, neem dan contact op met je waterbedrijf.
 - Is troebel water uit de kraan gevaarlijk? Troebel water dat niet binnen een paar minuten opklaart, kan zwevende deeltjes of vervuiling bevatten. Drink het niet en kijk of er een storing of kookadvies is. Bruinig troebel water komt meestal door ijzer en mangaan uit de leidingen.
+
+## Waterfilter douche: werkt het tegen kalk en chloor?
+URL: https://www.water-zuivering.nl/kennisbank/waterfilter-douche
+Bijgewerkt: 2026-11-12
+
+Kort antwoord: Een douchefilter haalt vooral chloor weg, en dat zit niet in Nederlands kraanwater. Tegen kalk helpt een klein filter op de douchekop maar een beetje en kort. Voor minder kalk in de hele badkamer werkt een waterontharder op de hoofdleiding. Voor een betere huid is geen bewijs gevonden.
+
+Veelgestelde vragen:
+- Zit er chloor in het Nederlandse kraanwater? Nee. Nederlandse drinkwaterbedrijven maken het water veilig zonder chloor. Alleen bij een storing of na werkzaamheden wordt soms tijdelijk gechloord.
+- Helpt een douchefilter tegen een droge huid of eczeem? Daar is geen goed bewijs voor. In de Engelse SWET-studie (2011) gaf onthard water kinderen met eczeem geen duidelijk betere huid dan de gewone behandeling.
+- Waterontharder of douchefilter tegen kalk? Een waterontharder op de hoofdleiding haalt kalk uit al het water in huis. Een douchefilter heeft een klein patroon dat snel verzadigd raakt.
+
+## Bruisend water: wat is het en is het gezond?
+URL: https://www.water-zuivering.nl/kennisbank/bruisend-water
+Bijgewerkt: 2026-11-12
+
+Kort antwoord: Bruisend water is water met opgelost koolzuurgas (CO2). Het is net zo gezond als plat water: het Voedingscentrum rekent water met en zonder prik tot de Schijf van Vijf. Het is iets zuurder, maar niet slecht voor je tanden. Pas op met smaakjes waar citroenzuur in zit.
+
+Veelgestelde vragen:
+- Wat is het verschil tussen bruisend water en spuitwater? Er is geen verschil; het zijn twee namen voor water met koolzuur.
+- Is mineraalwater met bubbels gezonder dan bruisend kraanwater? Nee. Volgens het Voedingscentrum is mineraal- of bronwater niet gezonder dan kraanwater.
+- Hoe maak je zelf bruisend water? Met een sodamachine met koolzuurcilinder of een kraan die bruisend water geeft. Koud water bruist langer.
+
+## Waterfles met filter: wat haalt hij uit je water?
+URL: https://www.water-zuivering.nl/kennisbank/waterfles-met-filter
+Bijgewerkt: 2026-11-12
+
+Kort antwoord: Een waterfles met koolfilter verbetert vooral smaak en geur. Een fles met membraanfilter houdt bacteriën en parasieten tegen, voor water uit de natuur. Kalk en de kleinste PFAS gaan er grotendeels doorheen. Voor Nederlands kraanwater is een filterfles niet nodig; op reis of buiten kan hij handig zijn.
+
+Veelgestelde vragen:
+- Haalt een filterfles PFAS uit water? Hooguit een deel. Actieve kool houdt de kleinste PFAS zoals TFA niet tegen, en een te lang gebruikt filter kan opgenomen PFAS weer afgeven.
+- Hoe lang gaat het filter mee? Dat verschilt per merk; Water-to-Go noemt ongeveer 200 liter, Berkey 640 vullingen voor de Sport Berkey.

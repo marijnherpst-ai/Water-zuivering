@@ -146,7 +146,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">En de smaak?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Kraanwater smaakt niet overal hetzelfde. Dat komt door de bron, grondwater of oppervlaktewater, en door de hoeveelheid mineralen. Lees daarover <Link href="/kennisbank/slechtste-kraanwater-nederland" className="underline hover:text-ink">het slechtste kraanwater van Nederland: de feiten</Link>. Flessenwater smaakt per merk anders om dezelfde reden. Gefilterd kraanwater smaakt neutraal en zacht; met een mineraalfilter voeg je weer wat smaak toe.
+              Kraanwater smaakt niet overal hetzelfde. Dat komt door de bron, grondwater of oppervlaktewater, en door de hoeveelheid mineralen. Lees daarover <Link href="/kennisbank/slechtste-kraanwater-nederland" className="underline hover:text-ink">het slechtste kraanwater van Nederland: de feiten</Link>. Flessenwater smaakt per merk anders om dezelfde reden. Gefilterd kraanwater smaakt neutraal en zacht; met een mineraalfilter voeg je weer wat smaak toe. Drink je liever water met prik? Lees dan hoe je <Link href="/kennisbank/bruisend-water" className="underline hover:text-ink">bruisend water</Link> zelf maakt van kraanwater.
             </p>
           </div>
         </section>

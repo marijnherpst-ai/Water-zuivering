@@ -213,7 +213,7 @@ export default function Page() {
                 <li><strong className="text-ink">Zuiveringstabletten.</strong> Tabletten op basis van chloor of chloordioxide doden bacteriën en virussen. Houd je aan de wachttijd op de verpakking; tegen sommige parasieten werken ze trager.</li>
               </ol>
               <p className="mt-4 text-dim leading-relaxed">
-                Voor de beste zekerheid combineer je filteren met koken of tabletten. Ga je echt off-grid, lees dan ook hoe je <Link href="/kennisbank/water-zuiveren-noodsituatie" className="underline hover:text-ink">water zuivert in een noodsituatie</Link>. Twijfel je welk type filter waarvoor bedoeld is, bekijk dan de <Link href="/waterfilter" className="underline hover:text-ink">soorten waterfilters</Link> naast elkaar.
+                Voor de beste zekerheid combineer je filteren met koken of tabletten. Twijfel je welke fles je meeneemt? Lees wat een <Link href="/kennisbank/waterfles-met-filter" className="underline hover:text-ink">waterfles met filter</Link> wel en niet tegenhoudt. Ga je echt off-grid, lees dan ook hoe je <Link href="/kennisbank/water-zuiveren-noodsituatie" className="underline hover:text-ink">water zuivert in een noodsituatie</Link>. Twijfel je welk type filter waarvoor bedoeld is, bekijk dan de <Link href="/waterfilter" className="underline hover:text-ink">soorten waterfilters</Link> naast elkaar.
               </p>
             </div>
           </div>

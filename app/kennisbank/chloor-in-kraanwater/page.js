@@ -101,7 +101,7 @@ export default function Page() {
               ))}
             </ol>
             <p className="mt-6 text-dim leading-relaxed">
-              Ook Vewin, de koepel van de drinkwaterbedrijven, benadrukt dat Nederlands kraanwater geen chloor bevat. Het water wordt bovendien strenger gecontroleerd dan voedsel. Meer daarover lees je in <Link href="/kennisbank/drinkwaternormen-nederland" className="underline hover:text-ink">drinkwaternormen in Nederland</Link>.
+              Ook Vewin, de koepel van de drinkwaterbedrijven, benadrukt dat Nederlands kraanwater geen chloor bevat. Het water wordt bovendien strenger gecontroleerd dan voedsel. Meer daarover lees je in <Link href="/kennisbank/drinkwaternormen-nederland" className="underline hover:text-ink">drinkwaternormen in Nederland</Link>. Daarom heeft ook een <Link href="/kennisbank/waterfilter-douche" className="underline hover:text-ink">waterfilter voor de douche</Link> hier weinig zin.
             </p>
           </div>
         </section>
