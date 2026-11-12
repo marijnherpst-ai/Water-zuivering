@@ -228,12 +228,12 @@ export default async function PfasCheckPage() {
                     Het filter zelf staat onder uw aanrecht, meestal in het kastje onder de spoelbak, naast het sifon. Het is maar 10,5 cm breed, dus het past ook in een kleine keuken tussen de leidingen door.
                   </p>
                   <p className="mt-3 text-sm text-dim leading-relaxed">
-                    Voor de kraan heeft u de keuze uit twee opties. De meeste mensen kiezen voor een <strong className="text-ink">3-wegkraan</strong>: naast uw gewone mengkraan komt een tweede, kleinere kraan die alleen gezuiverd water geeft. Uw oude kraan blijft gewoon warm en koud water geven, en uit de nieuwe tapt u schoon drinkwater, koud of desgewenst ook bruisend of heet.
+                    Voor de kraan heeft u de keuze uit twee opties. De meeste mensen kiezen voor een <strong className="text-ink">3-wegkraan</strong>: die vervangt uw huidige kraan, dus er hoeft geen extra gat in het aanrecht. Met de gewone hendel tapt u warm en koud kraanwater, met de tweede bediening schoon, gefilterd drinkwater uit het osmosesysteem.
                   </p>
                 </div>
                 <div>
                   <p className="text-sm text-dim leading-relaxed">
-                    Liever geen extra gat in het aanrecht? Dan koppelen we het systeem aan een tussenstuk in de koudwaterleiding van uw bestaande kraan. Geen zichtbare aanpassing, alleen komt er dan altijd gezuiverd water uit die ene kraan, niet naast elkaar.
+                    Liever uw huidige kraan houden? Dan koppelen we het systeem aan een tussenstuk in de koudwaterleiding van uw bestaande kraan. Geen zichtbare aanpassing, alleen komt er dan altijd gezuiverd water uit die ene kraan, niet naast elkaar.
                   </p>
                   <p className="mt-3 text-sm text-dim leading-relaxed">
                     Onze monteur kijkt bij u thuis welke optie het beste past bij uw keuken en leidingen. De installatie duurt meestal 1 tot 2 uur, en bij een standaardkeuken hoeft er niets verbouwd te worden.
