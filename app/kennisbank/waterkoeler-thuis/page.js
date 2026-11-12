@@ -108,7 +108,7 @@ export default function Page() {
             </p>
             <h3 className="mt-8 font-display text-xl font-bold text-ink">3. Filterkraan met osmosesysteem</h3>
             <p className="mt-3 text-dim leading-relaxed">
-              Dit is wat wij verkopen, dus we zeggen het er eerlijk bij. Een <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> zit onder het aanrecht en levert gefilterd water via een extra kraan of een <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link> die normaal, gefilterd en mineraalwater geeft. Het water komt niet gekoeld uit de kraan, maar op kraantemperatuur. Wel is het het zuiverste van de drie: het osmosemembraan houdt PFAS, medicijnresten, microplastics en kalk tegen, wat een gewone waterkoeler niet doet.
+              Dit is wat wij verkopen, dus we zeggen het er eerlijk bij. Een <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> zit onder het aanrecht en levert gefilterd water via een extra kraan of een <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link> die normaal, gefilterd en mineraalwater geeft. Het water komt niet gekoeld uit de kraan, maar op kraantemperatuur. Hoe koud dat is, lees je in <Link href="/kennisbank/kraanwater-temperatuur" className="underline hover:text-ink">kraanwater temperatuur</Link>. Wel is het het zuiverste van de drie: het osmosemembraan houdt PFAS, medicijnresten, microplastics en kalk tegen, wat een gewone waterkoeler niet doet.
             </p>
           </div>
         </section>

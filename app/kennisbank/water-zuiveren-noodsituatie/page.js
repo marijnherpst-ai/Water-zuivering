@@ -44,7 +44,8 @@ const FAQ = [
   ['Hoe lang moet je water koken om het drinkbaar te maken?', 'Bij een kookadvies in Nederland adviseert een waterbedrijf als Vitens het water drie minuten te laten koken. Volg altijd de tijd die je eigen waterbedrijf noemt.'],
   ['Hoeveel water heb je nodig in een noodsituatie?', 'De overheid adviseert via Denk vooruit minimaal 9 liter water per persoon voor de eerste 72 uur: ongeveer 3 liter per dag om te drinken en eten te maken. Denk ook aan water voor huisdieren.'],
   ['Werken waterzuiveringstabletten tegen alles?', 'Nee. Tabletten op basis van chloor of chloordioxide doden bacteriën en virussen, maar werken trager tegen sommige parasieten. Chemische stoffen zoals pesticiden of zware metalen halen ze niet weg.'],
-  ['Hoe lang kun je kraanwater bewaren voor je noodpakket?', 'Kraanwater in een schone, goed afgesloten fles blijft koel en donker bewaard een aantal dagen goed. Ververs zelf getapt water daarom regelmatig. Verzegeld flessenwater uit de winkel kun je tot de houdbaarheidsdatum bewaren.'],
+  ['Hoe lang kun je kraanwater bewaren voor je noodpakket?', 'Kraanwater dat je schoon aftapt in goed afsluitbare flessen, tot de rand gevuld en koel en donker bewaard, kun je volgens de drinkwaterbedrijven een halfjaar laten staan. Ververs het daarna. Verzegeld flessenwater uit de winkel kun je tot de houdbaarheidsdatum bewaren.'],
+  ['Kun je regenwater filteren tot drinkwater?', 'In een noodgeval kan het, als je het eerst filtert en daarna goed doorkookt. Koken doodt bacteriën, maar haalt chemische stoffen zoals PFAS niet weg. Voor dagelijks gebruik is regenwater daarom geen drinkwater. Gebruik het voor de tuin of het toilet.'],
   ['Werkt een osmosesysteem als de waterleiding uitvalt?', 'Nee. Een osmosesysteem onder het aanrecht heeft waterdruk uit de leiding en stroom nodig. Valt de watervoorziening uit, dan heb je een voorraad, een noodfilter of tabletten nodig.'],
   ['Wat moet ik doen bij een kookadvies?', 'Gebruik geen kraanwater zonder het eerst te koken om te drinken, tanden te poetsen, eten klaar te maken of ijsblokjes te maken. Volg de instructies en de kooktijd van je waterbedrijf, ook als je een waterfilter hebt.'],
 ];
@@ -83,7 +84,7 @@ export default function Page() {
               Een leidingbreuk, een kookadvies of een langdurige stroomstoring: dan is <strong className="text-ink">water zuiveren in een noodsituatie</strong> ineens geen theorie meer. Hier lees je welke methode wat doet, hoeveel water je in huis haalt en wat je bij een kookadvies doet.
             </p>
             <KortAntwoord bron={{ naam: 'Denk vooruit (Rijksoverheid)', url: 'https://www.denkvooruit.nl' }}>
-              Bewaar minimaal 9 liter water per persoon voor drie dagen. Moet je toch water zuiveren in een noodsituatie, laat het dan eerst bezinken en giet het door een schone doek. Kook het daarna een paar minuten goed door, of gebruik een noodfilter of zuiveringstabletten. Bij een kookadvies volg je altijd de instructies van je waterbedrijf.
+              Bewaar minimaal 9 liter water per persoon voor drie dagen. Hoe je dat schoon aftapt en hoe lang het goed blijft, lees je in <Link href="/kennisbank/kraanwater-bewaren" className="underline hover:text-ink">kraanwater bewaren</Link>. Moet je toch water zuiveren in een noodsituatie, laat het dan eerst bezinken en giet het door een schone doek. Kook het daarna een paar minuten goed door, of gebruik een noodfilter of zuiveringstabletten. Bij een kookadvies volg je altijd de instructies van je waterbedrijf.
             </KortAntwoord>
             <AuteurRegel bijgewerkt="6 november 2026" />
           </div>
@@ -214,7 +215,17 @@ export default function Page() {
 
         <section className="relative">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
-            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Werkt een waterfilter thuis in een noodsituatie?</h2>
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Regenwater filteren tot drinkwater: kan dat?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Regenwater lijkt schoon, maar is het niet. Onderweg naar je regenton spoelt het over het dak en door de goot. Daar neemt het vogelpoep, bladresten, mos en stof mee. In de ton zelf groeien bacteriën en algen, zeker als het warm is. Zo uit de ton drinken is dus geen goed idee.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              In een noodsituatie kun je <strong className="text-ink">regenwater filteren tot drinkwater</strong> als er niets beters is. Laat het bezinken, giet het door een schone doek of een noodfilter en kook het daarna een paar minuten goed door. Vang het water bij voorkeur op uit de lucht in een schone bak, niet via het dak.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Eén ding lost koken niet op: chemische stoffen. Onderzoekers van de Universiteit van Stockholm lieten in 2022 zien dat regenwater overal ter wereld PFAS bevat, vaak meer dan de strengste advieswaarden voor drinkwater toestaan. Die stoffen blijven in het water, hoe lang je ook kookt. Voor een paar dagen in een noodgeval is dat geen ramp. Voor elke dag wel. Daarom is regenwater prima voor de tuin, de auto en het toilet, maar geen vervanging van kraanwater. Hoe dat in de waterleiding zit, lees je in <Link href="/kennisbank/pfas-in-kraanwater" className="underline hover:text-ink">PFAS in kraanwater</Link>.
+            </p>
+            <h2 className="mt-12 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Werkt een waterfilter thuis in een noodsituatie?</h2>
             <p className="mt-4 text-dim leading-relaxed">
               Eerlijk antwoord: meestal niet. Een <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> onder het aanrecht heeft waterdruk uit de leiding en stroom nodig. Valt de watervoorziening of de stroom uit, dan doet het niets. Voor een noodsituatie heb je daarom een voorraad, een noodfilter of tabletten nodig.
             </p>

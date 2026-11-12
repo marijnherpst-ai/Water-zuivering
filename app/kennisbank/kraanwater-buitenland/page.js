@@ -74,6 +74,7 @@ const REGELS = [
 ];
 
 const FAQ = [
+  ['Kun je kraanwater drinken in Portugal en Italië?', 'Ja. Beide landen horen bij de Europese Unie en moeten aan dezelfde Europese drinkwaterregels voldoen als Nederland. Het water kan wel anders smaken, vaak door chloor. Staat er bij een kraan of fontein "água não potável" (Portugal) of "acqua non potabile" (Italië), dan is dat water niet om te drinken.'],
   ['In welke landen kun je kraanwater drinken?', 'In het grootste deel van West- en Noord-Europa, in Canada, de Verenigde Staten, Australië, Nieuw-Zeeland, Singapore, Japan en op Aruba en Curaçao kun je het kraanwater in steden gewoon drinken. In grote delen van Azië, Afrika, Midden- en Zuid-Amerika en in een deel van Oost-Europa neem je beter verzegeld flessenwater.'],
   ['Kun je kraanwater drinken in Spanje?', 'Op de meeste plekken is kraanwater in Spanje veilig. Op de eilanden en langs de kust is het water vaak hard of ontzilt en smaakt het minder lekker. Daarom kopen veel mensen daar toch flessen.'],
   ['Kun je kraanwater drinken in Turkije?', 'In grote steden en toeristische gebieden is het kraanwater vaak behandeld, maar de leidingen in gebouwen zijn niet altijd goed. Het advies is daarom verzegeld flessenwater te drinken.'],
@@ -160,7 +161,17 @@ export default function Page() {
 
         <section className="relative">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
-            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waarom is kraanwater in het ene land veilig en in het andere niet?</h2>
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kraanwater in Portugal en Italië: kun je het drinken?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              Portugal en Italië zijn twee landen waar veel Nederlanders op vakantie gaan. Het korte antwoord is ja: <strong className="text-ink">kraanwater in Portugal en kraanwater in Italië</strong> kun je drinken. Beide landen zijn lid van de Europese Unie en moeten voldoen aan de Europese Drinkwaterrichtlijn, dezelfde regels die ook voor Nederland de ondergrens vormen.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Toch drinken veel mensen daar flessenwater. Dat heeft vooral met smaak te maken. Anders dan in Nederland wordt het water er vaak gechloord, en dat proef en ruik je. Ook is het water in veel streken harder, dus met meer kalk. Laat de kraan even lopen en zet het water een uurtje in een open kan in de koelkast: dan verdwijnt de chloorsmaak grotendeels.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Let op bordjes. In Italië staan overal openbare drinkfonteinen, zoals de bekende kraantjes in Rome. Dat water is drinkbaar, tenzij er <em>acqua non potabile</em> bij staat. In Portugal heet dat <em>água não potável</em>. In een oud vakantiehuis of op een camping met een eigen bron of tank is het verstandig om de eigenaar te vragen of het water uit het leidingnet komt.
+            </p>
+            <h2 className="mt-12 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waarom is kraanwater in het ene land veilig en in het andere niet?</h2>
             <p className="mt-4 text-dim leading-relaxed">
               Of je kraanwater in het buitenland kunt drinken, hangt niet alleen af van de zuivering bij de bron. Minstens zo belangrijk is wat er onderweg gebeurt. In veel landen zijn drie dingen het probleem:
             </p>

@@ -206,7 +206,7 @@ export default function WaterzuiveringVoorThuisPage() {
         <section className="relative bg-surface border-y border-edge">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waarom niet koken, UV of een zwaartekrachtfilter?</h2>
-            <p className="mt-4 text-dim leading-relaxed">Er bestaan meerdere manieren om water te zuiveren. Voor permanent gebruik thuis is een vast systeem meestal het praktischst — dit is waarom:</p>
+            <p className="mt-4 text-dim leading-relaxed">Er bestaan meerdere manieren om water te zuiveren. Voor permanent gebruik thuis is een vast systeem meestal het praktischst — dit is waarom. Hoe het waterbedrijf en het waterschap het water zuiveren voordat het bij jou komt, lees je in <Link href="/kennisbank/waterzuivering-nederland" className="underline hover:text-ink">waterzuivering in Nederland</Link>.</p>
             <div className="mt-6 space-y-4">
               {METHODEN.map(([titel, uitleg]) => (
                 <div key={titel} className="reveal rounded-2xl card p-5">

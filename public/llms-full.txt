@@ -651,6 +651,65 @@ Veelgestelde vragen:
 - Hoe lang blijft het water wit na werkzaamheden? Na werkzaamheden aan het leidingnet is het water meestal binnen een paar uur weer helder. Laat de koude kraan een paar minuten lopen. Is het daarna nog steeds wit of troebel, neem dan contact op met je waterbedrijf.
 - Is troebel water uit de kraan gevaarlijk? Troebel water dat niet binnen een paar minuten opklaart, kan zwevende deeltjes of vervuiling bevatten. Drink het niet en kijk of er een storing of kookadvies is. Bruinig troebel water komt meestal door ijzer en mangaan uit de leidingen.
 
+## PFAS-vrije pannen: welke pan is echt zonder PFAS?
+URL: https://www.water-zuivering.nl/kennisbank/pfas-vrije-pannen
+Bijgewerkt: 2026-11-12
+
+Kort antwoord: Pannen van gietijzer, plaatstaal, rvs en pannen met een keramische laag zijn PFAS-vrij. In een antiaanbaklaag van PTFE (teflon) zit wel PFAS. Zo’n pan is volgens de Rijksoverheid bij normaal gebruik veilig; is de laag beschadigd, gooi de pan dan weg. "PFOA-vrij" betekent niet dat een pan PFAS-vrij is.
+
+Veelgestelde vragen:
+- Is "PFOA-vrij" hetzelfde als PFAS-vrij? Nee. PFOA is één stof uit de groep PFAS en is in de EU al jaren verboden. In een antiaanbaklaag van PTFE zit nog steeds een andere PFAS.
+- Moet ik mijn pan met antiaanbaklaag weggooien? Niet als de laag heel is. Bij normaal gebruik is de pan veilig. Een pan met een beschadigde laag lever je in of gooi je weg.
+- Zit er PFAS in bakpapier? Dat kan, het RIVM noemt bakpapier als product waarin PFAS kan zitten. Er is ook bakpapier zonder PFAS. Een leverancier moet binnen 45 dagen gratis antwoord geven op de vraag of er PFAS in zit.
+- Waar krijg je de meeste PFAS van binnen? Via voedsel en drinkwater, volgens het RIVM. Uit pannen en kleding komt bij normaal gebruik weinig PFAS vrij.
+
+## Legionella voorkomen thuis: douche, boiler en leidingwater
+URL: https://www.water-zuivering.nl/kennisbank/legionella-voorkomen
+Bijgewerkt: 2026-11-12
+
+Kort antwoord: De kans dat je thuis ziek wordt door legionella is volgens het RIVM erg klein. Je beperkt de groei door je boiler of combiketel op minstens 60 °C te zetten, de douchekop te ontkalken en slangen en sproeiers te laten leeglopen. Van water drinken word je niet ziek: je raakt alleen besmet door nevel in te ademen.
+
+Veelgestelde vragen:
+- Bij welke temperatuur groeit legionella? Tussen 25 en 45 °C, vooral in stilstaand water. Boven 60 °C gaat de bacterie dood.
+- Kun je legionella krijgen van water drinken? Nee, alleen door kleine druppeltjes (nevel) met de bacterie in te ademen. Legionella is ook niet besmettelijk van mens op mens.
+- Moet je doorspoelen na vakantie? De GGD adviseert 2 minuten koud en 2 minuten warm water na meer dan een week afwezigheid. Het RIVM zegt dat doorspoelen het water ververst, maar geen echte legionellapreventie is.
+- Helpt een waterzuiveraar onder het aanrecht tegen legionella? Nee. Legionella is een probleem van warm water en nevel, zoals onder de douche. Een filter voor koud drinkwater in de keuken lost dat niet op.
+
+## Kraanwater bewaren: hoe lang blijft het goed?
+URL: https://www.water-zuivering.nl/kennisbank/kraanwater-bewaren
+Bijgewerkt: 2026-11-12
+
+Kort antwoord: Kraanwater in een glas of drinkfles ververs je elke dag. In een afgedekte kan in de koelkast blijft het 3 dagen tot een week goed. In schone, tot de rand gevulde en goed gesloten flessen op een koele, donkere plek kun je kraanwater een halfjaar bewaren als noodvoorraad.
+
+Veelgestelde vragen:
+- Kan kraanwater bederven? Water zelf bederft niet, maar er kunnen bacteriën in groeien uit de lucht, je mond of een vuile fles. In Nederlands kraanwater zit geen chloor dat die groei remt.
+- Hoeveel water bewaar je voor noodgevallen? De overheid adviseert 3 liter per persoon per dag voor minimaal drie dagen: 9 liter per persoon.
+- Hoe bewaar je kraanwater voor een noodpakket? In schone, goed afsluitbare flessen (liefst glas), tot de rand gevuld, met de datum erop, koel en donker. Ververs elk halfjaar. Bij twijfel drie minuten koken.
+- Blijft gefilterd water langer goed? Nee, daarvoor gelden dezelfde regels. Vers getapt water is het beste; het osmosesysteem van Water-zuivering filtert direct tijdens het tappen, zonder opslagtank.
+
+## Kraanwater temperatuur: hoe koud is water uit de kraan?
+URL: https://www.water-zuivering.nl/kennisbank/kraanwater-temperatuur
+Bijgewerkt: 2026-11-12
+
+Kort antwoord: Koud kraanwater is in Nederland meestal 10 tot 15 graden. In de winter is het kouder, in de zomer warmer, omdat het water de temperatuur aanneemt van de bodem rond de leiding. Volgens de wet mag drinkwater aan de kraan niet warmer zijn dan 25 graden.
+
+Veelgestelde vragen:
+- Waarom is het eerste water uit de kraan lauw? Dat water heeft stilgestaan in de leidingen in huis en is op kamertemperatuur gekomen. Laat de kraan even lopen.
+- Wordt kraanwater warmer door het klimaat? Ja. Volgens KWR is te warm drinkwater nu hooguit een incident, maar kan dat rond 2050 een aantal weken per jaar worden zonder maatregelen.
+- Koelt een waterfilter het water? Nee. Ook het osmosesysteem van Water-zuivering levert gefilterd water op kraantemperatuur; het koelt niet en maakt geen warm of kokend water.
+
+## Waterzuivering: hoe werkt het in Nederland, stap voor stap
+URL: https://www.water-zuivering.nl/kennisbank/waterzuivering-nederland
+Bijgewerkt: 2026-11-12
+
+Kort antwoord: Nederland kent twee soorten waterzuivering. In een rioolwaterzuivering (rwzi) halen roosters, bezinktanks en bacteriën het vuil uit afvalwater, waarna het schoon genoeg is voor rivier of kanaal. Drinkwaterbedrijven maken van grondwater (ongeveer 60%) en oppervlaktewater (ongeveer 40%) kraanwater met beluchting, zandfilters, actieve kool en UV-licht, zonder chloor.
+
+Veelgestelde vragen:
+- Hoeveel rioolwaterzuiveringen zijn er in Nederland? 313 in 2024 volgens het CBS, allemaal beheerd door de waterschappen.
+- Wat zijn de stappen van een rioolwaterzuivering? Roosters, zandvanger, voorbezinking, beluchting met bacteriën (actief slib), nabezinking en lozing op oppervlaktewater. Het slib wordt ingedikt, soms vergist tot biogas en daarna verbrand.
+- Haalt een rioolwaterzuivering medicijnresten en PFAS uit het water? Maar voor een deel. Daarom worden op een aantal zuiveringen extra stappen gebouwd en getest.
+- Wat is het verschil met waterzuivering thuis? Het drinkwaterbedrijf zuivert tot de wettelijke norm. Een waterzuiveraar thuis haalt ook stoffen weg die binnen de norm nog in het water zitten, zoals kalk en sporen van PFAS.
+
 ## Waterfilter douche: werkt het tegen kalk en chloor?
 URL: https://www.water-zuivering.nl/kennisbank/waterfilter-douche
 Bijgewerkt: 2026-11-12

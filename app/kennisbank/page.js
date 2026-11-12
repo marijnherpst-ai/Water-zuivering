@@ -13,6 +13,41 @@ export const metadata = {
 
 const ARTICLES = [
   {
+    href: '/kennisbank/pfas-vrije-pannen',
+    image: '/assets/img/kennisbank/pfas-in-kraanwater.png',
+    category: 'PFAS',
+    title: 'PFAS-vrije pannen: welke pan is echt zonder PFAS?',
+    excerpt: 'Keramisch, gietijzer of rvs: welke pannen geen PFAS bevatten, wat PFOA-vrij betekent en hoe het zit met bakpapier.',
+  },
+  {
+    href: '/kennisbank/legionella-voorkomen',
+    image: '/assets/img/twee-kranen.jpg',
+    category: 'Veiligheid',
+    title: 'Legionella voorkomen thuis: douche, boiler en leidingwater',
+    excerpt: 'Boiler op 60 graden, doorspoelen na vakantie en wat een legionella filter wel en niet doet.',
+  },
+  {
+    href: '/kennisbank/kraanwater-bewaren',
+    image: '/assets/img/glas-water.webp',
+    category: 'Drinkwater',
+    title: 'Kraanwater bewaren: hoe lang blijft het goed?',
+    excerpt: 'In een glas, drinkfles, kan in de koelkast of als noodvoorraad: zo lang is kraanwater houdbaar.',
+  },
+  {
+    href: '/kennisbank/kraanwater-temperatuur',
+    image: '/assets/img/een-kraan.jpg',
+    category: 'Drinkwater',
+    title: 'Kraanwater temperatuur: hoe koud is water uit de kraan?',
+    excerpt: 'Meestal 10 tot 15 graden: waarom het in de zomer warmer is en wat de grens van 25 graden betekent.',
+  },
+  {
+    href: '/kennisbank/waterzuivering-nederland',
+    image: '/assets/img/kennisbank/is-kraanwater-veilig.png',
+    category: 'Waterkwaliteit',
+    title: 'Waterzuivering: hoe werkt het in Nederland, stap voor stap',
+    excerpt: 'Hoe een rioolwaterzuivering werkt en hoe van grond- en rivierwater kraanwater wordt gemaakt.',
+  },
+  {
     href: '/kennisbank/waterfilter-douche',
     image: '/assets/img/twee-kranen.jpg',
     category: 'Waterfilters',

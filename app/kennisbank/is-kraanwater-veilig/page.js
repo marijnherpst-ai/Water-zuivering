@@ -139,10 +139,10 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Is kraanwater veilig als het warm uit de kraan komt?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Drink en kook bij voorkeur met koud kraanwater. Warm water komt uit je boiler, geiser of cv-ketel en heeft daar soms lang gestaan. Het is bedoeld om mee te wassen en te douchen, niet om te drinken. Wil je warm water voor thee of om te koken, verwarm dan koud kraanwater in de waterkoker of pan.
+              Drink en kook bij voorkeur met koud kraanwater. Warm water komt uit je boiler, geiser of cv-ketel en heeft daar soms lang gestaan. Het is bedoeld om mee te wassen en te douchen, niet om te drinken. Wil je warm water voor thee of om te koken, verwarm dan koud kraanwater in de waterkoker of pan. Op welke temperatuur je de boiler zet, lees je in <Link href="/kennisbank/legionella-voorkomen" className="underline hover:text-ink">legionella voorkomen</Link>.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Heeft het koude water lang stilgestaan, bijvoorbeeld na een vakantie of als je een paar dagen weg was? Laat de koude kraan dan eerst even lopen tot het water fris en koel is.
+              Heeft het koude water lang stilgestaan, bijvoorbeeld na een vakantie of als je een paar dagen weg was? Laat de koude kraan dan eerst even lopen tot het water fris en koel is. Hoe koud dat hoort te zijn, staat in <Link href="/kennisbank/kraanwater-temperatuur" className="underline hover:text-ink">kraanwater temperatuur</Link>.
             </p>
           </div>
         </section>

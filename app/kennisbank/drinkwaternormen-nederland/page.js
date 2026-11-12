@@ -29,7 +29,14 @@ const NORMEN = [
   ['Radioactiviteit', 'Beperkte, zeer lage grenswaarden voor van nature voorkomende radioactieve stoffen in grondwater.'],
 ];
 
+const WETTEN = [
+  ['Drinkwaterwet', 'De wet zelf, aangenomen door het parlement', 'De grote lijnen: wie drinkwater mag leveren, dat het deugdelijk moet zijn en wie toezicht houdt.'],
+  ['Drinkwaterbesluit', 'Een besluit van de regering bij de wet', 'De kwaliteitseisen zelf: de lijst met stoffen en bacteriën en hun grenswaarden, zoals maximaal 25 °C aan de kraan.'],
+  ['Drinkwaterregeling', 'Een regeling van de minister', 'De uitvoering: hoe vaak en hoe er gemeten wordt, regels voor materialen die met drinkwater in contact komen en voor legionellapreventie.'],
+];
+
 const FAQ = [
+  ['Wat is het verschil tussen de Drinkwaterwet en het Drinkwaterbesluit?', 'De Drinkwaterwet legt de grote lijnen vast: wie drinkwater mag leveren en wie toezicht houdt. In het Drinkwaterbesluit staan de concrete kwaliteitseisen, zoals de grenswaarden per stof. De Drinkwaterregeling werkt de uitvoering uit, bijvoorbeeld hoe vaak er gemeten wordt. Alle drie gelden sinds 2011.'],
   ['Wie controleert de drinkwaternormen in Nederland?', 'Drinkwaterbedrijven zijn wettelijk verplicht regelmatig te testen op honderden parameters, onder toezicht van de Inspectie Leefomgeving en Transport (ILT).'],
   ['Vallen PFAS onder de drinkwaternormen?', 'Er gelden voor een deel van de PFAS-stoffen inmiddels grenswaarden, maar niet voor alle varianten — en de norm ligt hoger dan wat sommige mensen wenselijk vinden voor langdurige blootstelling.'],
   ['Zijn medicijnresten opgenomen in de normen?', 'Nee, voor de meeste medicijnresten en microplastics bestaan (nog) geen wettelijke grenswaarden in drinkwater, ook al worden ze soms wel in sporen aangetroffen.'],
@@ -93,7 +100,34 @@ export default function Page() {
 
         <section className="relative">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
-            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat valt er buiten de normen?</h2>
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Drinkwaterwet, Drinkwaterbesluit en Drinkwaterregeling: wat is het verschil?</h2>
+            <p className="mt-4 text-dim leading-relaxed">
+              De regels voor drinkwater staan niet in één document, maar in drie lagen. Ze gelden alle drie sinds 2011 en horen bij elkaar. Hoe lager de laag, hoe gedetailleerder de regels en hoe makkelijker ze aan te passen zijn als er nieuwe kennis is:
+            </p>
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-edge bg-white">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-surface text-ink">
+                  <tr>
+                    <th scope="col" className="px-4 py-3 font-semibold">Naam</th>
+                    <th scope="col" className="px-4 py-3 font-semibold">Wat is het?</th>
+                    <th scope="col" className="px-4 py-3 font-semibold">Wat staat erin?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {WETTEN.map((rij) => (
+                    <tr key={rij[0]} className="border-t border-edge">
+                      {rij.map((cel, i) => (
+                        <td key={i} className={`px-4 py-3 align-top ${i === 0 ? 'font-semibold text-ink' : 'text-dim'}`}>{cel}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 text-dim leading-relaxed">
+              Boven deze drie staat nog de Europese Drinkwaterrichtlijn, die voor alle landen van de EU een ondergrens vastlegt. Wordt die richtlijn aangepast, dan past Nederland het Drinkwaterbesluit en de Drinkwaterregeling aan. De actuele teksten staan op <a href="https://wetten.overheid.nl/BWBR0030111" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">wetten.overheid.nl</a>, en het RIVM legt de <a href="https://www.rivm.nl/drinkwater/drinkwater-en-regelgeving" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">regelgeving voor drinkwater</a> uit. Hoe drinkwaterbedrijven het water zuiveren om aan die eisen te voldoen, lees je in <Link href="/kennisbank/waterzuivering-nederland" className="underline hover:text-ink">waterzuivering in Nederland</Link>.
+            </p>
+            <h2 className="mt-12 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat valt er buiten de normen?</h2>
             <p className="mt-4 text-dim leading-relaxed">
               Niet alles wordt (nog) even streng gereguleerd. Voor sommige PFAS-varianten, veel medicijnresten en microplastics bestaan geen of nog geen wettelijke grenswaarden, ook al worden ze soms wel in sporen aangetroffen. Dat betekent niet dat het water onveilig is — het betekent dat de wetgeving nog niet overal is bijgebeend met opkomende stoffen.
             </p>
