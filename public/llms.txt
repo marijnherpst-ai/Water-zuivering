@@ -29,6 +29,7 @@
 - [Osmose installatie](https://www.water-zuivering.nl/osmose-installatie): hoe de plaatsing verloopt
 - [Drinkwater filter kiezen per probleem](https://www.water-zuivering.nl/drinkwater-filter): welk filter helpt tegen chloor, kalk, PFAS of medicijnresten
 - [PFAS-check per postcode](https://www.water-zuivering.nl/pfas-check): PFAS-niveau in het kraanwater per regio, vergeleken met de RIVM-advieswaarde
+- [Waterhardheid check per postcode en huisnummer](https://www.water-zuivering.nl/waterhardheid): waterbedrijf en waterhardheid (°dH, mmol/l, °fH) op je adres, met officiële cijfers van de tien drinkwaterbedrijven en een tabel per stad
 - [Winkel](https://www.water-zuivering.nl/winkel): vervangende filters
 - [Reviews](https://www.water-zuivering.nl/reviews): ervaringen van klanten
 - [Offerte aanvragen](https://www.water-zuivering.nl/aanmelden): gratis en vrijblijvend

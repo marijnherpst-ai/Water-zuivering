@@ -682,3 +682,15 @@ Kort antwoord: Een waterfles met koolfilter verbetert vooral smaak en geur. Een 
 Veelgestelde vragen:
 - Haalt een filterfles PFAS uit water? Hooguit een deel. Actieve kool houdt de kleinste PFAS zoals TFA niet tegen, en een te lang gebruikt filter kan opgenomen PFAS weer afgeven.
 - Hoe lang gaat het filter mee? Dat verschilt per merk; Water-to-Go noemt ongeveer 200 liter, Berkey 640 vullingen voor de Sport Berkey.
+
+## Waterhardheid check per postcode en huisnummer
+URL: https://www.water-zuivering.nl/waterhardheid
+Bijgewerkt: 2026-11-12
+
+Kort antwoord: Het meeste Nederlandse kraanwater is zacht tot gemiddeld: tussen ongeveer 5,5 en 12,5 °dH, en in veel plaatsen rond de 7 à 8 °dH. Waternet (Amsterdam e.o.) levert 7,8 °dH, PWN (Noord-Holland) gemiddeld 7,9 °dH, Dunea ongeveer 7,4 tot 8 °dH en WMD (Drenthe) ongeveer 8 °dH. In Groningen varieert het van 6 tot 12,5 °dH; Brabant Water en Oasen publiceren de hardheid per woonplaats. Met de check op https://www.water-zuivering.nl/waterhardheid zie je op postcode en huisnummer welk waterbedrijf bij jou levert en hoe hard je water is.
+
+Veelgestelde vragen:
+- Wanneer is water hard? Indeling (°dH): 0-4 zeer zacht, 4-8 zacht, 8-12 gemiddeld, 12-18 vrij hard, 18 en hoger hard. 1 mmol/l = 5,6 °dH = 10 °fH.
+- Is hard water ongezond? Nee. Kalk bestaat uit calcium en magnesium en is niet schadelijk; het is vooral vervelend voor apparaten, de douche en de smaak van thee en koffie.
+- Mag kraanwater te zacht zijn? Als een waterbedrijf onthardt, moet de hardheid volgens het Drinkwaterbesluit minimaal 1 mmol/l (ongeveer 5,6 °dH) blijven.
+- Wat kun je doen tegen hard water? Een waterontharder op de hoofdleiding voor het hele huis, of een osmosesysteem voor kalkarm drinkwater uit de keukenkraan.
