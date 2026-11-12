@@ -103,6 +103,29 @@ const KOSTEN = [
   ['Osmosesysteem', 'Prijs op maat, via een vrijblijvende offerte', 'Ongeveer €135 per jaar aan filters'],
 ];
 
+const SITUATIES = [
+  {
+    titel: 'Waterfilter voor onderweg',
+    tekst: 'Een drinkfles of rietje met een holle-vezelfilter haalt bacteriën en troebelheid uit beek- of meerwater. Handig bij wandelen, kamperen en op reis. Virussen en chemische stoffen houdt zo’n filter meestal niet tegen.',
+    link: ['/kennisbank/waterfles-met-filter', 'Waterfles met filter: wat werkt echt?'],
+  },
+  {
+    titel: 'Waterfilter voor de douche',
+    tekst: 'Een douchefilter haalt vooral chloor weg, en dat zit in Nederland nauwelijks in het kraanwater. Tegen kalk helpt zo’n klein filter maar een beetje en kort. Voor minder kalk in de hele badkamer werkt een waterontharder op de hoofdleiding beter.',
+    link: ['/kennisbank/waterfilter-douche', 'Waterfilter voor de douche'],
+  },
+  {
+    titel: 'Waterfilter voor noodgevallen',
+    tekst: 'Valt het kraanwater uit of krijg je een kookadvies, dan heb je iets nodig dat ook zonder stroom en waterdruk werkt: een noodfilter, koken of tabletten. Een osmosesysteem onder de gootsteen werkt alleen op waterdruk.',
+    link: ['/kennisbank/water-zuiveren-noodsituatie', 'Water zuiveren in een noodsituatie'],
+  },
+  {
+    titel: 'Waterfilter voor het hele huis',
+    tekst: 'Een centraal filter of vuilvanger achter de watermeter houdt zand en roestdeeltjes tegen en beschermt kranen en apparaten. Het maakt je drinkwater niet schoner van opgeloste stoffen zoals PFAS of medicijnresten.',
+    link: ['/kennisbank/beste-waterfilter-voor-thuis', 'Welke waterfilter past bij jouw huis?'],
+  },
+];
+
 const USPS = ['10 jaar garantie', 'Geplaatst in 1 à 2 uur', 'Filtert tot 99% van onzuiverheden', 'Eigen kraan op je aanrecht'];
 
 const CIJFERS = [
@@ -118,6 +141,7 @@ const INHOUD = [
   ['vergelijking', 'Wat haalt elk filter eruit?'],
   ['proces', 'Het filterproces, laag voor laag'],
   ['kosten', 'Wat kost een waterfilter?'],
+  ['situaties', 'Onderweg, douche, nood of hele huis'],
   ['inbegrepen', 'Wat je bij ons krijgt'],
   ['kraan', 'De 3-weg kraan'],
   ['kritiek', 'Kritiek op waterfilters'],
@@ -158,6 +182,7 @@ const STAPPEN = [
 ];
 
 const FAQ = [
+  ['Welke waterfilter heb je nodig voor onderweg?', 'Voor wandelen, kamperen of reizen kies je een drinkfles of rietje met een holle-vezelfilter. Dat haalt bacteriën en troebelheid uit beek- of meerwater. Tegen virussen en chemische stoffen helpt het meestal niet, dus kook het water of gebruik tabletten waar dat nodig is.'],
   ['Welke waterfilter is het beste?', 'Dat hangt af van wat je wilt oplossen. Voor alleen een betere smaak volstaat een filterkan of opzetstuk. Wil je ook kalk, PFAS en medicijnresten kwijt, dan is een omgekeerde-osmosesysteem de enige optie die dat daadwerkelijk verwijdert.'],
   ['Is een waterfilter nodig in Nederland?', 'Nederlands kraanwater voldoet aan strenge wettelijke normen en is veilig om te drinken. Een waterfilter is dus geen noodzaak, maar wel een manier om verder te gaan dan het wettelijk minimum — vooral relevant voor smaak en voor sporen van stoffen die onder de norm blijven maar niet op nul staan.'],
   ['Wat kost een waterfilter?', 'Een filterkan begin je al voor een paar tientjes, een opzetstuk vergelijkbaar. Een compleet osmosesysteem met eigen kraan vraag je bij Water-zuivering op via een vrijblijvende offerte. Dat is een grotere investering, maar filtert grondiger en heeft geen maandelijkse aanschaf van losse kannen of filters nodig.'],
@@ -248,7 +273,7 @@ export default async function Page() {
               </div>
               <PrijsVanaf className="mt-5" />
               <p className={`${mono.className} mt-6 text-xs text-dim`}>
-                Door het team van Water-zuivering · bijgewerkt oktober 2026
+                Door het team van Water-zuivering · bijgewerkt november 2026
               </p>
             </div>
             <div className="relative">
@@ -467,6 +492,31 @@ export default async function Page() {
                 Reken je het helemaal door inclusief wat je bespaart op flessenwater, dan lees je dat in <Link href="/kennisbank/wat-kost-een-waterzuiveringssysteem" className="underline hover:text-ink">wat kost een waterzuiveringssysteem</Link>.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* SITUATIES */}
+        <section id="situaties" className="relative bg-bg scroll-mt-24">
+          <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+            <Kop
+              label="Andere situaties"
+              titel="Waterfilter voor onderweg, de douche, noodgevallen of het hele huis"
+              intro="Niet elke waterfilter is bedoeld voor drinkwater uit je keukenkraan. Zoek je een filter voor een andere situatie, dan heb je een ander type nodig. Dit zijn de vier die het vaakst voorbijkomen."
+            />
+            <div className="mt-10 grid md:grid-cols-2 gap-5">
+              {SITUATIES.map(({ titel, tekst, link }) => (
+                <div key={titel} className="reveal card rounded-3xl p-7">
+                  <h3 className="font-display text-xl font-extrabold text-ink">{titel}</h3>
+                  <p className="mt-3 text-dim leading-relaxed">{tekst}</p>
+                  <Link href={link[0]} className="cursor-pointer mt-4 inline-flex items-center gap-2 text-sm font-bold text-ink underline decoration-amber decoration-2 underline-offset-4 hover:text-amber-dark">
+                    {link[1]} <Pijl />
+                  </Link>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 max-w-3xl text-dim leading-relaxed">
+              Wil je juist <strong className="text-ink">drinkwater uit je eigen kraan</strong> filteren, inclusief kalk, PFAS en medicijnresten? Dan blijft een <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem onder de gootsteen</Link> de meest grondige keuze.
+            </p>
           </div>
         </section>
 
