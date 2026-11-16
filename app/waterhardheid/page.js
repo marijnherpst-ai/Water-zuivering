@@ -229,7 +229,12 @@ export default async function WaterhardheidPage() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Per stad</span>
               <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waterhardheid per stad</h2>
               <p className="mt-4 text-dim leading-relaxed">
-                De waterhardheid in de grootste steden van Nederland, met het waterbedrijf dat er levert. Waar het waterbedrijf de hardheid alleen per postcode publiceert, check je jouw adres het snelst bovenaan deze pagina. Meer over het drinkwater in je stad lees je op onze pagina&apos;s over{' '}
+                De waterhardheid in de grootste steden van Nederland, met het waterbedrijf dat er levert. Waar het waterbedrijf de hardheid alleen per postcode publiceert, check je jouw adres het snelst bovenaan deze pagina. Uitgebreide pagina&apos;s met cijfers en uitleg heb je voor{' '}
+                <Link href="/waterhardheid/amsterdam" className="underline hover:text-ink">waterhardheid Amsterdam</Link>,{' '}
+                <Link href="/waterhardheid/rotterdam" className="underline hover:text-ink">Rotterdam</Link>,{' '}
+                <Link href="/waterhardheid/utrecht" className="underline hover:text-ink">Utrecht</Link>,{' '}
+                <Link href="/waterhardheid/eindhoven" className="underline hover:text-ink">Eindhoven</Link> en{' '}
+                <Link href="/waterhardheid/den-haag" className="underline hover:text-ink">Den Haag</Link>. Meer over het drinkwater in je stad lees je op onze pagina&apos;s over{' '}
                 <Link href="/kennisbank/drinkwater-amsterdam" className="underline hover:text-ink">Amsterdam</Link>,{' '}
                 <Link href="/kennisbank/drinkwater-rotterdam" className="underline hover:text-ink">Rotterdam</Link>,{' '}
                 <Link href="/kennisbank/kraanwater-utrecht" className="underline hover:text-ink">Utrecht</Link> en{' '}
