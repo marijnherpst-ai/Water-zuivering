@@ -153,7 +153,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Wat kost een waterfilter onder de gootsteen?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Een simpel koolstoffilter onder de gootsteen is goedkoper in aanschaf, maar houdt ook minder tegen. Een osmosesysteem kost meer, maar daarna betaal je alleen de filters: bij Water-zuivering gemiddeld ongeveer € 135 per jaar. Een overzicht van alle kosten vind je in <Link href="/kennisbank/wat-kost-een-waterzuiveringssysteem" className="underline hover:text-ink">wat kost een waterzuiveringssysteem?</Link>.
+              Een simpel koolstoffilter onder de gootsteen is goedkoper in aanschaf, maar houdt ook minder tegen. Een osmosesysteem kost meer, maar daarna betaal je alleen de filters: bij Water-zuivering gemiddeld ongeveer € 135 per jaar. Hoe de plaatsing verloopt lees je bij <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>. Een overzicht van alle kosten vind je in <Link href="/kennisbank/wat-kost-een-waterzuiveringssysteem" className="underline hover:text-ink">wat kost een waterzuiveringssysteem?</Link>.
             </p>
           </div>
         </section>

@@ -37,6 +37,8 @@ const FAQ = [
   ['Kan ik een osmose systeem zelf installeren?', 'Ja, dat kan. Je krijgt dan €250 korting. Het vraagt wel om het aansluiten op de waterleiding en het plaatsen van een extra kraan, dus alleen aan te raden als je daar handig in bent. Laat je het door onze monteur doen, dan valt de installatie ook onder je garantie.'],
   ['Is er een afvoer nodig?', 'Ja. Bij omgekeerde osmose hoort een afvoer voor afvalwater. Die slang wordt door de monteur aangesloten, samen met de watertoevoer en de slang voor het gefilterde water.'],
   ['Valt de installatie onder de garantie?', 'Ja. Problemen die voortkomen uit de montage door onze eigen monteurs lossen we gratis op, binnen de 10 jaar garantie die op elk systeem zit.'],
+  ['Moet er iets gesloopt of gebroken worden voor een osmose installatie?', 'Nee. Het systeem staat onder het aanrecht en wordt op de bestaande koudwaterleiding aangesloten. De koudwaterkraan gaat kort dicht, meer niet.'],
+  ['Kan ik een osmose installatie in een huurwoning laten doen?', 'Ja, maar overleg vooraf met je verhuurder. Verhuis je, dan kun je het systeem laten afkoppelen en meenemen.'],
   ['Past het systeem in mijn keukenkast?', 'In de meeste standaardkeukens wel. Met onze maatcheck kun je met een foto van je eigen kastje zien of het past.'],
 ];
 
@@ -99,7 +101,7 @@ export default function Page() {
               De meeste mensen die een osmosesysteem overwegen, haken niet af op het filteren zelf, maar op de vraag: <em>wat komt er eigenlijk bij kijken?</em> Moet er iets gesloopt worden? Is er een afvoer of een elektricien nodig? Hoe lang is de keuken onbruikbaar?
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Die onzekerheid is begrijpelijk, want bij de meeste aanbieders staat nergens beschreven hoe een installatiedag er echt uitziet. Op deze pagina doen we dat wel: wat je vooraf nodig hebt, wat de monteur doet, en wat je zelf kunt doen als je liever zelf aan de slag gaat. Wil je eerst weten hoe het systeem zelf werkt? Lees dan onze uitleg over het <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link>.
+              Die onzekerheid is begrijpelijk, want bij de meeste aanbieders staat nergens beschreven hoe een installatiedag er echt uitziet. Op deze pagina doen we dat wel: wat je vooraf nodig hebt, wat de monteur doet, en wat je zelf kunt doen als je liever zelf aan de slag gaat. Wil je eerst weten hoe het systeem zelf werkt? Lees dan onze uitleg over het <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link>. Wil je weten hoe het hele traject van advies tot garantie werkt, bekijk dan de <Link href="/waterzuiveringsinstallatie" className="underline hover:text-ink">waterzuiveringsinstallatie</Link>, of ga direct naar <Link href="/osmose-apparaat-kopen" className="underline hover:text-ink">osmose apparaat kopen</Link>.
             </p>
           </div>
         </section>

@@ -122,7 +122,7 @@ export default function Page() {
               </table>
             </div>
             <p className="mt-4 text-dim leading-relaxed">
-              Gemiddeld kost het vervangen van de filters zo ongeveer € 135 per jaar. Je bestelt ze in de <Link href="/winkel" className="underline hover:text-ink">winkel</Link>.
+              Gemiddeld kost het vervangen van de filters zo ongeveer € 135 per jaar. Je bestelt ze in de <Link href="/winkel" className="underline hover:text-ink">winkel</Link>. Het systeem zelf wordt geplaatst door een monteur, zie <Link href="/waterzuiveringsinstallatie" className="underline hover:text-ink">waterzuiveringsinstallatie</Link>.
             </p>
           </div>
         </section>

@@ -6,6 +6,9 @@ import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import PrijsVanaf from '@/components/PrijsVanaf';
+import ReviewsSectie from '@/components/ReviewsSectie';
+
+export const dynamic = 'force-dynamic';
 
 export const metadata = {
   alternates: { canonical: '/waterfilter-kraan' },
@@ -38,6 +41,8 @@ const FAQ = [
   ['Kan ik een waterfiltersysteem kraan zelf plaatsen?', 'Een eenvoudig opzetstuk kun je vaak zelf monteren. Een systeem met een aparte 3-weg kraan vraagt om een vakkundige aansluiting op de waterleiding — dat regelen wij binnen één dag.'],
   ['Verwijdert een waterfilter kraan ook PFAS?', 'Dat hangt volledig af van het type filter erachter. Een eenvoudig opzetstuk filtert vooral chloor; alleen een systeem met een omgekeerde-osmose-membraan verwijdert ook PFAS, medicijnresten en microplastics.'],
   ['Wat kost een waterfilter kraan?', 'Een los opzetstuk is al voor een paar tientjes te koop. Een compleet osmosesysteem van Water-zuivering, eventueel met 3-weg kraan, vraag je op via een vrijblijvende offerte. Het betaalt zich terug doordat je nooit meer flessenwater koopt.'],
+  ['Kan ik een waterfilter kraan in een huurwoning plaatsen?', 'Ja. Ons systeem staat onder het aanrecht en wordt op de bestaande leidingen aangesloten, er hoeft niet gebroken te worden. Overleg in een huurwoning wel vooraf met je verhuurder. Verhuis je, dan kun je het systeem laten afkoppelen en meenemen.'],
+  ['Hoeveel gefilterd water levert een waterfilter kraan per minuut?', 'Ons systeem levert 1,58 liter per minuut en werkt direct flow: er is geen opslagtank, het water wordt gemaakt op het moment dat je de kraan opendraait.'],
   ['Hoe vaak moet ik het filter van mijn kraanwatersysteem vervangen?', 'Bij een eenvoudig opzetstuk meestal elke 2-3 maanden. Bij ons systeem onder de gootsteen vervang je het voorfilter en het nafilter ieder jaar en het membraan elke 2 jaar. Het display geeft aan wanneer het zover is.'],
 ];
 
@@ -92,6 +97,31 @@ export default function Page() {
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Twijfel je nog tussen alle mogelijke <Link href="/waterfilter" className="underline hover:text-ink">soorten waterfilters</Link> die er zijn? We zetten ze daar allemaal naast elkaar, van filterkan tot compleet osmosesysteem.
+            </p>
+          </div>
+        </section>
+
+        {/* KEUZEHULP */}
+        <section className="relative">
+          <div className="max-w-5xl mx-auto px-6 pt-16 md:pt-20">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-center">Welke waterfilter kraan past bij jou?</h2>
+            <p className="mt-3 text-dim text-center max-w-xl mx-auto">Kies op wat je uit je water wilt halen en hoe je woont.</p>
+            <div className="mt-8 grid md:grid-cols-3 gap-5">
+              <div className="reveal rounded-2xl card p-6">
+                <p className="font-display font-bold text-ink">Alleen minder chloorsmaak</p>
+                <p className="mt-2 text-sm text-dim leading-relaxed">Een eenvoudig opzetstuk met koolstoffilter is dan genoeg. Het pakt vooral smaak en geur aan, zie de tabel hieronder.</p>
+              </div>
+              <div className="reveal rounded-2xl card p-6">
+                <p className="font-display font-bold text-ink">Ook PFAS, medicijnresten en kalk eruit</p>
+                <p className="mt-2 text-sm text-dim leading-relaxed">Dan heb je omgekeerde osmose nodig, met een aparte <Link href="/3-weg-kraan" className="underline hover:text-ink">3-weg kraan</Link>. Zie het <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link>.</p>
+              </div>
+              <div className="reveal rounded-2xl card p-6">
+                <p className="font-display font-bold text-ink">Je woont in een huurwoning</p>
+                <p className="mt-2 text-sm text-dim leading-relaxed">Het systeem staat onder het aanrecht en er hoeft niet gebroken te worden. Overleg vooraf met je verhuurder. Je kunt het later meenemen.</p>
+              </div>
+            </div>
+            <p className="mt-6 text-center">
+              <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-6 py-3 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors">Vraag vrijblijvend een offerte aan</Link>
             </p>
           </div>
         </section>
@@ -248,7 +278,7 @@ export default function Page() {
                 Een opzetstuk lijkt goedkoop, tot je de vervangpatroontjes optelt die elke paar maanden op moeten. Bij een systeem onder de gootsteen ligt dat ritme veel lager: het voorfilter en het nafilter gaan een jaar mee, het membraan zelfs twee jaar.
               </p>
               <p className="mt-4 text-dim leading-relaxed">
-                Reken bij ons op ongeveer <strong className="text-ink">€135 per jaar</strong>, ruwweg €11 per maand, voor onbeperkt gefilterd water uit je eigen kraan. Geen abonnement: je bestelt een filter pas als het display aangeeft dat het tijd is, en wisselt hem zelf, zonder gereedschap. De losse prijzen per filter staan in de <Link href="/winkel" className="underline hover:text-ink">winkel</Link>.
+                Reken bij ons op ongeveer <strong className="text-ink">€135 per jaar</strong>, ruwweg €11 per maand, voor onbeperkt gefilterd water uit je eigen kraan. Geen abonnement: je bestelt een filter pas als het display aangeeft dat het tijd is, en wisselt hem zelf, zonder gereedschap. De losse prijzen per filter staan in de <Link href="/winkel" className="underline hover:text-ink">winkel</Link>. Wil je het systeem eerst vergelijken met andere opties? Lees dan over een <Link href="/waterfiltersysteem" className="underline hover:text-ink">waterfiltersysteem</Link> of ga direct naar <Link href="/osmose-apparaat-kopen" className="underline hover:text-ink">osmose apparaat kopen</Link>.
               </p>
               <p className="mt-4 text-dim leading-relaxed">
                 Wil je weten wat er bij de plaatsing in je keukenkastje gebeurt? Dat lees je stap voor stap bij <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>.
@@ -265,6 +295,8 @@ export default function Page() {
             </div>
           </div>
         </section>
+
+        <ReviewsSectie />
 
         {/* FAQ */}
         <section className="relative">

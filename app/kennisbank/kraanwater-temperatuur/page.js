@@ -205,7 +205,7 @@ export default function Page() {
               ))}
             </div>
             <p className="mt-6 text-dim leading-relaxed">
-              Hoe lang je water in de koelkast kunt laten staan, lees je in <Link href="/kennisbank/kraanwater-bewaren" className="underline hover:text-ink">kraanwater bewaren</Link>. De verschillende manieren om thuis gekoeld water te tappen staan naast elkaar in <Link href="/kennisbank/waterkoeler-thuis" className="underline hover:text-ink">waterkoeler thuis</Link>.
+              Wil je altijd direct gefilterd water uit een eigen kraan, bekijk dan de <Link href="/waterfilter-kraan" className="underline hover:text-ink">waterfilter kraan</Link>. Hoe lang je water in de koelkast kunt laten staan, lees je in <Link href="/kennisbank/kraanwater-bewaren" className="underline hover:text-ink">kraanwater bewaren</Link>. De verschillende manieren om thuis gekoeld water te tappen staan naast elkaar in <Link href="/kennisbank/waterkoeler-thuis" className="underline hover:text-ink">waterkoeler thuis</Link>.
             </p>
             <h3 className="mt-8 font-display text-xl font-bold">Koelt een waterfilter het water?</h3>
             <p className="mt-3 text-dim leading-relaxed">

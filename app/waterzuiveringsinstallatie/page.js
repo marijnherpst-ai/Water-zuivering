@@ -32,6 +32,8 @@ const FAQ = [
   ['Kan ik een waterzuiveringsinstallatie ook zelf plaatsen?', 'Technisch kan dat bij sommige systemen, maar een verkeerde aansluiting kan lekkage veroorzaken en de fabrieksgarantie laten vervallen — vakkundige installatie is daarom aan te raden.'],
   ['Welke garantie krijg ik op een waterzuiveringsinstallatie?', 'Bij Water-zuivering krijg je 10 jaar garantie op het systeem, mits vakkundig geïnstalleerd en onderhouden volgens het meegegeven schema.'],
   ['Is er onderhoud nodig na de installatie?', 'Ja. Het voorfilter en het nafilter vervang je gemiddeld elk jaar, het membraan elke 2 jaar. Dat kun je zelf doen, zonder gereedschap.'],
+  ['Kan ik een waterzuiveringsinstallatie in een huurwoning laten plaatsen?', 'Ja, het systeem wordt onder het aanrecht op de bestaande leidingen aangesloten en er hoeft niet gebroken te worden. Overleg vooraf met je verhuurder. Verhuis je, dan kun je het systeem laten afkoppelen en meenemen.'],
+  ['Wat is het verschil tussen een waterzuiveringsinstallatie en een waterontharder?', 'Een waterontharder haalt alleen kalk uit je water, bedoeld om kalkaanslag in huis te beperken. Een waterzuiveringsinstallatie met omgekeerde osmose filtert drinkwater ook op onder meer PFAS, medicijnresten en microplastics.'],
   ['Werkt een waterzuiveringsinstallatie in elke keuken?', 'In de meeste standaardkeukens is voldoende ruimte onder de spoelbak. Tijdens het adviesgesprek kijken we naar jouw specifieke situatie.'],
 ];
 
@@ -94,6 +96,9 @@ export default function Page() {
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Daarom pakken we dit bij Water-zuivering aan als een traject, niet als een verkoop. Van het eerste adviesgesprek tot de laatste test na aansluiting — alles is erop gericht dat je installatie in één keer goed staat, en dat ook blijft.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Het systeem zelf is een <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> onder het aanrecht, met een eigen <Link href="/waterfilter-kraan" className="underline hover:text-ink">waterfilter kraan</Link> op je aanrecht. Hoe de installatiedag er precies uitziet, lees je bij de <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>. Wil je weten hoe waterzuivering in Nederland op grote schaal werkt? Lees dan <Link href="/kennisbank/waterzuivering-nederland" className="underline hover:text-ink">hoe drinkwater wordt gezuiverd</Link>.
             </p>
           </div>
         </section>
