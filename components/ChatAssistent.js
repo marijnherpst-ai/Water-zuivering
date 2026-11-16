@@ -171,9 +171,10 @@ export default function ChatAssistent() {
           type="button"
           onClick={openen}
           aria-label="Open de waterassistent"
-          className="cursor-pointer fixed bottom-[10.25rem] md:bottom-[5.75rem] right-5 md:right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-ink text-white shadow-xl shadow-black/25 hover:scale-105 transition-transform"
+          className="cursor-pointer fixed bottom-[10.25rem] md:bottom-[5.75rem] right-5 md:right-6 z-50 flex items-center justify-center gap-2 w-14 h-14 md:w-auto md:px-5 rounded-full bg-amber text-ink font-bold text-sm shadow-xl shadow-black/25 hover:scale-105 hover:bg-amber-dark hover:text-white transition-transform"
         >
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 016.5 3h11A2.5 2.5 0 0120 5.5v8a2.5 2.5 0 01-2.5 2.5H10l-4.5 4v-4h0A2.5 2.5 0 014 13.5v-8z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /><circle cx="9" cy="9.5" r="1.1" fill="currentColor" /><circle cx="12" cy="9.5" r="1.1" fill="currentColor" /><circle cx="15" cy="9.5" r="1.1" fill="currentColor" /></svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 3c-3 4.2-5.5 7-5.5 10.2a5.5 5.5 0 0011 0C15.5 10 13 7.200 10 3z" fill="currentColor" /><path d="M10 15.500a2.200 2.200 0 01-2.200-2.200" stroke="#fff" strokeWidth="1.400" strokeLinecap="round" opacity=".7" /><path d="M18.500 3.500l.7 1.800 1.800.7-1.800.7-.7 1.800-.7-1.800-1.800-.7 1.800-.7z" fill="currentColor" /></svg>
+          <span className="hidden md:inline">Vraag het ons</span>
         </button>
       )}
 
