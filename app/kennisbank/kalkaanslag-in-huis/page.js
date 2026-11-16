@@ -27,7 +27,7 @@ export default function Page() {
     <>
       <ArticleSchema
         datePublished="2026-08-08"
-        dateModified="2026-11-02"
+        dateModified="2026-11-16"
         headline="Kalkaanslag in huis: oorzaak en oplossing"
         description="Wat veroorzaakt kalkaanslag in huis, welke schade richt het aan, en hoe voorkom je het structureel?"
         image="https://www.water-zuivering.nl/assets/img/kennisbank/kalkaanslag-in-huis.png"
@@ -55,7 +55,7 @@ export default function Page() {
             <p className="mt-5 text-dim text-lg">
               Die witte aanslag op je kranen en douchekop komt niet uit het niets. Wat is de oorzaak, en wat kun je eraan doen?
             </p>
-            <AuteurRegel bijgewerkt="2 november 2026" />
+            <AuteurRegel bijgewerkt="16 november 2026" />
           </div>
         </section>
 
@@ -103,10 +103,10 @@ export default function Page() {
               <table className="w-full text-sm text-left">
                 <thead className="bg-amber/10 text-ink"><tr><th scope="col" className="p-4 font-display font-bold">Waar</th><th scope="col" className="p-4 font-display font-bold">Zo pak je het aan</th></tr></thead>
                 <tbody>
-                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Kranen en douchekop</th><td className="p-4 text-dim">Laat een doekje met schoonmaakazijn een uur op de kraan zitten, of leg de douchekop in een bakje azijn. Daarna afspoelen. Of een filter op de douchekop helpt, lees je in <Link href="/kennisbank/waterfilter-douche" className="underline hover:text-ink">waterfilter voor de douche</Link>.</td></tr>
-                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Waterkoker</th><td className="p-4 text-dim">Kook water met een scheut azijn of citroenzuur, laat het even staan en spoel goed na.</td></tr>
-                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Douchewand en tegels</th><td className="p-4 text-dim">Een kalkreiniger of azijn, daarna goed naspoelen en droogvegen.</td></tr>
-                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Wasmachine en koffiezetapparaat</th><td className="p-4 text-dim">Gebruik de ontkalker die de fabrikant aanraadt, volgens de handleiding.</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Kranen en douchekop</th><td className="p-4 text-dim">Laat een doekje met schoonmaakazijn een uur op de kraan zitten, of leg de douchekop in een bakje azijn. Daarna afspoelen. Of een filter op de douchekop helpt, lees je in <Link href="/kennisbank/waterfilter-douche" className="underline hover:text-ink">waterfilter voor de douche</Link>. Het volledige stappenplan staat bij <Link href="/kennisbank/kranen-en-douchekop-ontkalken" className="underline hover:text-ink">kranen en douchekop ontkalken</Link>.</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Waterkoker</th><td className="p-4 text-dim">Kook water met een scheut azijn of citroenzuur, laat het even staan en spoel goed na. Het hele stappenplan lees je bij <Link href="/kennisbank/waterkoker-ontkalken" className="underline hover:text-ink">waterkoker ontkalken</Link>.</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Douchewand en tegels</th><td className="p-4 text-dim">Een kalkreiniger of azijn, daarna goed naspoelen en droogvegen. Per ondergrond lees je het bij <Link href="/kennisbank/kalk-verwijderen-glas-tegels" className="underline hover:text-ink">kalk verwijderen van glas en tegels</Link>.</td></tr>
+                  <tr className="border-t border-edge align-top"><th scope="row" className="p-4 font-semibold text-ink">Wasmachine en koffiezetapparaat</th><td className="p-4 text-dim">Gebruik de ontkalker die de fabrikant aanraadt, volgens de handleiding. Meer bij <Link href="/kennisbank/koffiezetapparaat-ontkalken" className="underline hover:text-ink">koffiezetapparaat ontkalken</Link> en <Link href="/kennisbank/antikalk-ontkalker-kiezen" className="underline hover:text-ink">antikalk en ontkalker kiezen</Link>.</td></tr>
                 </tbody>
               </table>
             </div>
