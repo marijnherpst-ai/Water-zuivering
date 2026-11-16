@@ -211,7 +211,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-20">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight">Helpt een waterfilter tegen wit water?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Tegen luchtbelletjes hoeft niets te helpen: die verdwijnen vanzelf. Tegen kalk wel. Een <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> haalt het grootste deel van de kalk uit je drinkwater, zodat je kokendwaterkraan en waterkoker minder snel aanslaan. Het voorfilter vangt daarnaast zand, roest en slib op. Wil je weten welk type filter welk probleem oplost, bekijk dan de <Link href="/waterfilter" className="underline hover:text-ink">soorten waterfilters</Link> naast elkaar.
+              Tegen luchtbelletjes hoeft niets te helpen: die verdwijnen vanzelf. Tegen kalk wel. Een <Link href="/osmosesysteem" className="underline hover:text-ink">osmosesysteem</Link> haalt het grootste deel van de kalk uit je drinkwater, zodat je kokendwaterkraan en waterkoker minder snel aanslaan. Het voorfilter vangt daarnaast zand, roest en slib op. Wil je weten welk type filter welk probleem oplost, bekijk dan de <Link href="/waterfilter" className="underline hover:text-ink">soorten waterfilters</Link> naast elkaar, of lees over <Link href="/waterzuivering-voor-thuis" className="underline hover:text-ink">waterzuivering voor thuis</Link>.
             </p>
           </div>
         </section>

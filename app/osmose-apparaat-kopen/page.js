@@ -45,6 +45,8 @@ const FAQ = [
   ['Haalt osmose ook de goede mineralen eruit?', 'Ja, omgekeerde osmose is zo grondig dat ook mineralen worden meegefilterd. Wil je die terug, dan kun je een mineraalfilter laten toevoegen, dat na het RO-filter in het systeem klikt.'],
   ['Hoe vaak moet ik de filters vervangen?', 'Het PPC- en CTO-filter gaan ongeveer 12 maanden mee, het RO-filter 24 maanden. Het display laat zien wanneer het tijd is.'],
   ['Hoe lang gaat een osmose apparaat mee?', 'Op elk systeem van Water-zuivering zit 10 jaar garantie. De filters vervang je daarbinnen volgens het schema hierboven.'],
+  ['Is er een afvoer nodig voor een osmose apparaat?', 'Ja. Bij omgekeerde osmose hoort een afvoer voor het afvalwater waarmee het membraan zichzelf schoonspoelt. Die slang wordt bij de installatie aangesloten.'],
+  ['Kan ik een osmose apparaat in een huurwoning gebruiken?', 'Ja. Het systeem staat onder het aanrecht en er hoeft niet gebroken te worden. Overleg vooraf met je verhuurder. Verhuis je, dan kun je het systeem laten afkoppelen en meenemen.'],
   ['Kan ik een osmose apparaat zelf installeren?', 'Ja, dan krijg je €250 korting. Laat je het door onze monteur doen, dan is het binnen 1 tot 2 uur geregeld. Alles daarover lees je op onze pagina over de osmose installatie.'],
 ];
 
@@ -204,6 +206,14 @@ export default function Page() {
             </div>
             <p className="mt-6 text-dim leading-relaxed">
               Een kleine kanttekening die bij elk osmose apparaat hoort: omgekeerde osmose is zo grondig dat ook goede mineralen worden meegefilterd. Wil je die terug, dan kan een <Link href="/winkel/cto-filter-met-mineralen" className="underline hover:text-ink">mineraalfilter</Link> worden toegevoegd. En wil je weten hoe de filtering precies werkt, lees dan onze uitleg over de <Link href="/kennisbank/omgekeerde-osmose-filter" className="underline hover:text-ink">omgekeerde osmose filter</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="relative">
+          <div className="max-w-4xl mx-auto px-6 py-10">
+            <p className="text-dim leading-relaxed">
+              Wil je weten hoe de plaatsing verloopt? Lees dan hoe een <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link> gaat. Liever eerst de opties vergelijken? Bekijk de <Link href="/waterfilter-kraan" className="underline hover:text-ink">waterfilter kraan</Link>, het <Link href="/waterfiltersysteem" className="underline hover:text-ink">waterfiltersysteem</Link> of de complete <Link href="/waterzuiveringsinstallatie" className="underline hover:text-ink">waterzuiveringsinstallatie</Link>.
             </p>
           </div>
         </section>

@@ -6,6 +6,9 @@ import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import PrijsVanaf from '@/components/PrijsVanaf';
+import ReviewsSectie from '@/components/ReviewsSectie';
+
+export const dynamic = 'force-dynamic';
 
 export const metadata = {
   alternates: { canonical: '/waterzuivering-voor-thuis' },
@@ -55,6 +58,7 @@ const FAQ = [
   ['Kan waterzuivering voor thuis ook zonder installatie?', 'Er bestaan alternatieven zoals filterkannen of kraanfilters die geen vaste installatie vereisen, maar die filteren minder grondig dan een systeem onder de gootsteen. Lees de vergelijking in ons artikel over de beste waterfilter voor thuis.'],
   ['Waarom niet gewoon een waterfilterkan gebruiken?', 'Een kan is prima tegen chloorsmaak, maar houdt PFAS, medicijnresten en microplastics niet of nauwelijks tegen — en moet je steeds bijvullen. Een systeem onder de gootsteen filtert grondiger en werkt op de achtergrond mee.'],
   ['Hoe lang duurt de installatie van waterzuivering voor thuis?', 'De meeste installaties zijn binnen een paar uur voltooid door een vakkundige monteur, inclusief testen en instellen.'],
+  ['Kan ik waterzuivering voor thuis in een huurwoning laten plaatsen?', 'Ja. Het systeem staat onder het aanrecht en wordt op de bestaande leidingen aangesloten, er hoeft niet gebroken te worden. Overleg vooraf met je verhuurder. Verhuis je, dan kun je het systeem laten afkoppelen en meenemen.'],
   ['Heeft waterzuivering voor thuis invloed op de waterdruk?', 'Nee, het apparaat is ontworpen om de druk op je bestaande kraan niet merkbaar te beïnvloeden.'],
   ['Wat gebeurt er als ik verhuis met waterzuivering voor thuis?', 'Het systeem kan in de meeste gevallen worden meegenomen en op je nieuwe adres opnieuw geïnstalleerd worden — vraag dit na bij je aanbieder.'],
 ];
@@ -304,8 +308,13 @@ export default function WaterzuiveringVoorThuisPage() {
             <p className="mt-4 text-dim leading-relaxed">
               Herken je jezelf in geen van deze punten en vind je kraanwater prima zoals het is? Dan is waterzuivering voor thuis een luxe, geen noodzaak. Dat zeggen we liever eerlijk.
             </p>
+            <p className="mt-4 text-dim leading-relaxed">
+              Overtuigd? Bekijk dan de <Link href="/waterfilter-kraan" className="underline hover:text-ink">waterfilter kraan</Link> voor het tappunt, de complete <Link href="/waterzuiveringsinstallatie" className="underline hover:text-ink">waterzuiveringsinstallatie</Link> voor het hele traject, of lees waar je op moet letten bij <Link href="/osmose-apparaat-kopen" className="underline hover:text-ink">osmose apparaat kopen</Link>.
+            </p>
           </div>
         </section>
+
+        <ReviewsSectie />
 
         <section className="relative">
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">

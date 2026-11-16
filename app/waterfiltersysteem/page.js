@@ -6,6 +6,9 @@ import RevealObserver from '@/components/RevealObserver';
 import FaqSchema from '@/components/FaqSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import PrijsVanaf from '@/components/PrijsVanaf';
+import ReviewsSectie from '@/components/ReviewsSectie';
+
+export const dynamic = 'force-dynamic';
 
 export const metadata = {
   alternates: { canonical: '/waterfiltersysteem' },
@@ -32,6 +35,8 @@ const FAQ = [
   ['Hoeveel ruimte kost een waterfiltersysteem?', 'Ons systeem is slechts 10,5 cm breed en past staand of liggend in vrijwel elk keukenkastje, naast je andere spullen.'],
   ['Hoe lang gaat een waterfiltersysteem mee?', 'Het frame en de behuizing gaan jarenlang mee (10 jaar garantie). De filters zelf worden periodiek vervangen: het voor- en nafilter ieder jaar, het membraan elke 2 jaar. Het display geeft aan wanneer het zover is.'],
   ['Is een waterfiltersysteem moeilijk te onderhouden?', 'Nee — elk onderdeel heeft een vast vervangingsschema dat je bij installatie meekrijgt. Het is meer een kwestie van agenda bijhouden dan technische kennis.'],
+  ['Haalt een waterfiltersysteem PFAS uit het water?', 'Dat hangt af van het type. Een systeem met alleen actieve kool pakt vooral smaak en chloor aan. Voor PFAS, medicijnresten en microplastics heb je een omgekeerde-osmose-membraan nodig, zoals in ons systeem.'],
+  ['Kan ik een waterfiltersysteem in een huurwoning plaatsen?', 'Ja. Het systeem staat onder het aanrecht en wordt op de bestaande leidingen aangesloten, er hoeft niet gebroken te worden. Overleg vooraf met je verhuurder. Verhuis je, dan kun je het systeem laten afkoppelen en meenemen.'],
   ['Kan een waterfiltersysteem ook water voor koken en koffie leveren?', 'Ja, het systeem levert onbeperkt zuiver water via een aparte kraan of aansluiting — perfect voor koken, koffie, thee of gewoon een glas water.'],
 ];
 
@@ -182,8 +187,13 @@ export default function Page() {
               <li><strong className="text-ink">Hoe lang is de garantie?</strong> Wij geven 10 jaar garantie op het systeem.</li>
               <li><strong className="text-ink">Wie installeert het?</strong> Onze eigen monteur sluit het in 1 à 2 uur aan, of je doet het zelf. Je prijs krijg je in een vrijblijvende offerte. Lees hoe dat gaat in <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>.</li>
             </ul>
+            <p className="mt-6 text-dim leading-relaxed">
+              Wil je het systeem als aparte kraan op je aanrecht? Lees dan over de <Link href="/waterfilter-kraan" className="underline hover:text-ink">waterfilter kraan</Link>. Het hele traject van advies tot garantie staat bij de <Link href="/waterzuiveringsinstallatie" className="underline hover:text-ink">waterzuiveringsinstallatie</Link>, en wil je direct een apparaat vergelijken, ga dan naar <Link href="/osmose-apparaat-kopen" className="underline hover:text-ink">osmose apparaat kopen</Link>.
+            </p>
           </div>
         </section>
+
+        <ReviewsSectie />
 
         {/* FAQ */}
         <section className="relative bg-surface border-y border-edge">
