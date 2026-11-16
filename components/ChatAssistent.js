@@ -133,10 +133,11 @@ export default function ChatAssistent() {
     }
   }
 
+  const laatsteVraag = [...berichten].reverse().find((b) => b.role === 'user')?.content || '';
+
   function terugbellen(e) {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
-    const laatsteVraag = [...berichten].reverse().find((b) => b.role === 'user')?.content || '';
     startTransition(async () => {
       const res = await submitTerugbelVerzoek({ naam: fd.get('naam'), telefoon: fd.get('telefoon'), vraag: laatsteVraag, pagina: pathname });
       if (!res.success) {
@@ -215,10 +216,22 @@ export default function ChatAssistent() {
 
           <div className="border-t border-edge bg-white px-4 pt-3 pb-4">
             {terugbel === 'dicht' && (
-              <button type="button" onClick={() => setTerugbel('form')} className="cursor-pointer mb-3 w-full inline-flex items-center justify-center gap-2 rounded-full border border-amber bg-amber/10 px-4 py-2 text-xs font-bold text-ink hover:bg-amber/20">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /></svg>
-                Bel me terug
-              </button>
+              <div className="mb-3 flex gap-2">
+                <button type="button" onClick={() => setTerugbel('form')} className="cursor-pointer flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-amber bg-amber/10 px-3 py-2 text-xs font-bold text-ink hover:bg-amber/20">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /></svg>
+                  Bel me terug
+                </button>
+                <a
+                  href={`https://api.whatsapp.com/send/?phone=31626944877&text=${encodeURIComponent(laatsteVraag ? `Hoi, ik chatte op jullie site en heb nog een vraag: ${laatsteVraag}` : 'Hoi, ik heb een vraag over jullie waterzuiveraar')}&type=phone_number&app_absent=0`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackLead('chat_whatsapp')}
+                  className="cursor-pointer flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-edge bg-white px-3 py-2 text-xs font-bold text-ink hover:bg-surface"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20l1.2-4.1A8 8 0 1112 20a8 8 0 01-3.9-1L4 20z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /></svg>
+                  Praat met een collega
+                </a>
+              </div>
             )}
             {terugbel === 'form' && (
               <form onSubmit={terugbellen} className="mb-3 rounded-xl border border-edge p-3 space-y-2">
