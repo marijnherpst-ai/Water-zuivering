@@ -137,7 +137,7 @@ export default function Page() {
             <p className="mt-3 text-dim text-center max-w-xl mx-auto">Loop ze af met elke aanbieder die je overweegt, ons inbegrepen.</p>
             <div className="mt-10 space-y-5">
               {CHECKS.map(([titel, uitleg], i) => (
-                <div key={titel} className="reveal rounded-2xl card p-6 flex gap-4">
+                <div key={titel} className="reveal rounded-2xl card p-5 sm:p-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <span className="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-amber text-ink text-sm font-bold">{i + 1}</span>
                   <div>
                     <p className="font-display font-bold text-ink">{titel}</p>

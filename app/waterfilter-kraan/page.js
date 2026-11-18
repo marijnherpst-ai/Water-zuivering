@@ -57,16 +57,16 @@ export default function Page() {
         <section className="relative overflow-hidden">
           <div className="glow w-[480px] h-[480px] bg-amber/15 -top-40 -left-40" />
           <div className="glow drift2 w-[360px] h-[360px] bg-amber/10 top-10 -right-24" />
-          <div className="relative max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
+          <div className="relative max-w-6xl mx-auto px-6 py-6 sm:py-16 md:py-24 grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Waterfilter kraan</span>
-              <h1 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
+              <h1 className="mt-3 font-display text-[1.75rem] sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
                 Een waterfilter kraan die je elke dag gebruikt zonder erover na te denken
               </h1>
-              <p className="mt-5 text-dim text-lg">
+              <p className="mt-4 sm:mt-5 text-dim text-lg">
                 Er zijn ochtenden dat je gewoon een glas water wilt, geen gedoe met filterkannen of flessen. Een <strong className="text-ink">waterfilter kraan</strong> (veel mensen zoeken het als <strong className="text-ink">water filter kraan</strong>) — een kraangemonteerd waterfiltersysteem dat vast op je keukenkraan is aangesloten — levert precies dat: zuiver water, direct, onbeperkt.
               </p>
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="mt-6 sm:mt-8 flex flex-wrap gap-3">
                 <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-3.5 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-lg shadow-amber/25">
                   Vraag vrijblijvend een offerte aan
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
@@ -133,7 +133,7 @@ export default function Page() {
             <p className="mt-3 text-dim text-center max-w-xl mx-auto">Niet elk waterfiltersysteem aan de kraan is hetzelfde. De uitvoering bepaalt vooral het gemak — de filtratie zit 'm in wat eronder hangt.</p>
             <div className="mt-10 space-y-5">
               {TYPES.map(([titel, uitleg], i) => (
-                <div key={titel} className="reveal rounded-2xl card p-6 flex gap-4">
+                <div key={titel} className="reveal rounded-2xl card p-5 sm:p-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <span className="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-amber text-ink text-sm font-bold">{i + 1}</span>
                   <div>
                     <p className="font-display font-bold text-ink">{titel}</p>

@@ -167,7 +167,7 @@ export default function Page() {
             </p>
             <ol className="mt-6 space-y-4">
               {MAATREGELEN.map(([titel, tekst], i) => (
-                <li key={titel} className="reveal rounded-2xl card p-5 flex gap-4">
+                <li key={titel} className="reveal rounded-2xl card p-5 flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <span className="shrink-0 w-8 h-8 rounded-full bg-amber text-ink font-display font-bold flex items-center justify-center">{i + 1}</span>
                   <div>
                     <h3 className="font-display font-bold text-ink">{titel}</h3>

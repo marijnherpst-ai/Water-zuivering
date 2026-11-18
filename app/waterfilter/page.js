@@ -230,8 +230,8 @@ export default async function Page() {
         <section className="relative overflow-hidden">
           <div className="glow w-[480px] h-[480px] bg-amber/15 -top-40 -left-40" />
           <div className="glow drift2 w-[360px] h-[360px] bg-amber/10 top-10 -right-24" />
-          <div className="relative max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="relative max-w-6xl mx-auto px-6 py-8 sm:py-16 md:py-24 grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+            <div className="max-sm:flex max-sm:flex-col">
               <p className={`${mono.className} text-[11px] uppercase tracking-[0.2em] text-amber-dark`}>Waterfilter · koopgids 2026</p>
               <h1 className="mt-4 font-display text-4xl md:text-5xl lg:text-[3.4rem] font-extrabold tracking-tight leading-[1.05]">
                 <span className="relative inline-block">
@@ -240,10 +240,10 @@ export default async function Page() {
                 </span>{' '}
                 kopen? Zo kies je het type dat écht bij je past
               </h1>
-              <p className="mt-6 text-dim text-lg leading-relaxed">
+              <p className="mt-4 sm:mt-6 text-dim text-lg leading-relaxed">
                 Van een simpele filterkan tot een compleet omgekeerde-osmosesysteem: niet elke <strong className="text-ink">waterfilter</strong> doet hetzelfde. Deze gids zet de opties eerlijk naast elkaar, zodat je weet waar je precies voor betaalt.
               </p>
-              <ul className="mt-6 grid grid-cols-2 gap-x-4 gap-y-2.5 text-sm font-semibold text-ink">
+              <ul className="mt-6 max-sm:order-2 grid grid-cols-2 gap-x-4 gap-y-2.5 text-sm font-semibold text-ink">
                 {USPS.map((usp) => (
                   <li key={usp} className="flex items-center gap-2">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="shrink-0 text-amber-dark"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" /></svg>
@@ -252,7 +252,7 @@ export default async function Page() {
                 ))}
               </ul>
               {ratingTekst && (
-                <Link href="/reviews" className="cursor-pointer mt-7 inline-flex items-center gap-3 rounded-full border border-edge bg-white/80 py-1.5 pl-2 pr-4 shadow-sm hover:border-amber transition-colors">
+                <Link href="/reviews" className="cursor-pointer mt-7 max-sm:order-2 max-sm:self-start inline-flex items-center gap-3 rounded-full border border-edge bg-white/80 py-1.5 pl-2 pr-4 shadow-sm hover:border-amber transition-colors">
                   <span className="flex items-center gap-0.5 rounded-full bg-ink px-2.5 py-1">
                     <Stars rating={Math.round(Number(avgRating))} />
                   </span>
@@ -262,7 +262,7 @@ export default async function Page() {
                   </span>
                 </Link>
               )}
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="mt-6 sm:mt-8 max-sm:order-1 flex flex-wrap gap-3">
                 <Link href="/aanmelden" className={btnPrimair}>
                   Vraag vrijblijvend een offerte aan
                   <Pijl />
@@ -271,8 +271,8 @@ export default async function Page() {
                   Bekijk onze waterfilter kraan
                 </Link>
               </div>
-              <PrijsVanaf className="mt-5" />
-              <p className={`${mono.className} mt-6 text-xs text-dim`}>
+              <PrijsVanaf className="mt-5 max-sm:order-1" />
+              <p className={`${mono.className} mt-6 max-sm:order-3 text-xs text-dim`}>
                 Door het team van Water-zuivering · bijgewerkt november 2026
               </p>
             </div>

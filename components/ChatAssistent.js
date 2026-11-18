@@ -85,7 +85,20 @@ export default function ChatAssistent() {
 
   useEffect(() => {
     if (open) setTimeout(() => invoerRef.current?.focus(), 50);
+    // laat de mobiele actiebalk weten of de chat open staat
+    window.dispatchEvent(new CustomEvent('wz-chat-state', { detail: open }));
   }, [open]);
+
+  // De mobiele actiebalk opent de chat via dit event
+  useEffect(() => {
+    const openVanBuiten = () => {
+      setOpen(true);
+      setTeaser(false);
+      if (typeof window.gtag === 'function') window.gtag('event', 'chat_geopend');
+    };
+    window.addEventListener('wz-open-chat', openVanBuiten);
+    return () => window.removeEventListener('wz-open-chat', openVanBuiten);
+  }, []);
 
   if (verborgen) return null;
 
@@ -155,7 +168,7 @@ export default function ChatAssistent() {
     <>
       {/* Teaser */}
       {teaser && !open && (
-        <div className="fixed bottom-[14.5rem] md:bottom-[10rem] right-5 md:right-6 z-50 max-w-[16rem] rounded-2xl bg-white text-ink shadow-xl shadow-black/15 border border-edge p-4 pr-8 text-sm">
+        <div className="hidden lg:block fixed bottom-[14.5rem] lg:bottom-[10rem] right-5 lg:right-6 z-50 max-w-[16rem] rounded-2xl bg-white text-ink shadow-xl shadow-black/15 border border-edge p-4 pr-8 text-sm">
           <button type="button" onClick={sluitTeaser} aria-label="Melding sluiten" className="cursor-pointer absolute top-2 right-2 w-6 h-6 flex items-center justify-center rounded-full text-dim hover:text-ink">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" /></svg>
           </button>
@@ -172,10 +185,10 @@ export default function ChatAssistent() {
           type="button"
           onClick={openen}
           aria-label="Open de waterassistent"
-          className="cursor-pointer fixed bottom-[10.25rem] md:bottom-[5.75rem] right-5 md:right-6 z-50 flex items-center justify-center gap-2 w-14 h-14 md:w-auto md:px-5 rounded-full bg-amber text-ink font-bold text-sm shadow-xl shadow-black/25 hover:scale-105 hover:bg-amber-dark hover:text-white transition-transform"
+          className="cursor-pointer hidden md:flex fixed md:bottom-[5.25rem] md:right-6 z-50 items-center justify-center gap-2 md:w-12 md:h-12 lg:bottom-[5.75rem] lg:w-auto lg:h-14 lg:px-5 rounded-full bg-amber text-ink font-bold text-sm shadow-xl shadow-black/25 hover:scale-105 hover:bg-amber-dark hover:text-white transition-transform"
         >
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 3c-3 4.2-5.5 7-5.5 10.2a5.5 5.5 0 0011 0C15.5 10 13 7.200 10 3z" fill="currentColor" /><path d="M10 15.500a2.200 2.200 0 01-2.200-2.200" stroke="#fff" strokeWidth="1.400" strokeLinecap="round" opacity=".7" /><path d="M18.500 3.500l.7 1.800 1.800.7-1.800.7-.7 1.800-.7-1.800-1.800-.7 1.800-.7z" fill="currentColor" /></svg>
-          <span className="hidden md:inline">Vraag het ons</span>
+          <span className="hidden lg:inline">Vraag het ons</span>
         </button>
       )}
 

@@ -131,7 +131,7 @@ export default function StoringenPage() {
             <p className="mt-3 text-dim text-center max-w-xl mx-auto">Waterbedrijven gebruiken verschillende termen — hier lees je in gewone taal wat ze betekenen.</p>
             <div className="mt-10 grid sm:grid-cols-2 gap-5">
               {TYPES.map((t) => (
-                <div key={t.naam} className="reveal rounded-2xl card p-6 flex gap-4">
+                <div key={t.naam} className="reveal rounded-2xl card p-5 sm:p-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-xl" style={{ background: `${t.kleur}1A`, color: t.kleur }}>
                     {t.icoon}
                   </span>

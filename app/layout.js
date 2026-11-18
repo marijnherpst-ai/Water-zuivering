@@ -2,6 +2,8 @@ import Script from 'next/script';
 import { Inter, Outfit } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import MobileActionBar from '@/components/MobileActionBar';
+import ResponsiveTables from '@/components/ResponsiveTables';
 import ChatAssistent from '@/components/ChatAssistent';
 import TrackingScripts from '@/components/TrackingScripts';
 import AttributionCapture from '@/components/AttributionCapture';
@@ -66,6 +68,9 @@ export const metadata = {
   },
 };
 
+// Geen automatische donkere weergave (Samsung Internet/Chrome force-dark) en gewoon schaalbaar voor wie wil inzoomen.
+export const viewport = { width: 'device-width', initialScale: 1, colorScheme: 'light' };
+
 export default function RootLayout({ children }) {
   return (
     <html lang="nl" className={`${inter.variable} ${outfit.variable}`}>
@@ -105,6 +110,8 @@ export default function RootLayout({ children }) {
         <OrganizationSchema />
         {children}
         <WhatsAppButton />
+        <MobileActionBar />
+        <ResponsiveTables />
         <ChatAssistent />
         <AttributionCapture />
         <Analytics />

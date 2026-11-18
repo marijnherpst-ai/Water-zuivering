@@ -31,10 +31,10 @@ export default function StickyOfferte({ ratingTekst, reviewCount, monoClass = ''
 
   return (
     <>
-      {/* mobiel */}
+      {/* mobiel: de globale MobileActionBar neemt dit over */}
       <div
-        aria-hidden={!zichtbaar}
-        className={`md:hidden fixed bottom-0 inset-x-0 z-40 border-t border-white/10 bg-ink/95 backdrop-blur px-4 py-3 transition-transform duration-300 ${zichtbaar ? 'translate-y-0' : 'translate-y-full'}`}
+        aria-hidden
+        className={`hidden fixed bottom-0 inset-x-0 z-40 border-t border-white/10 bg-ink/95 backdrop-blur px-4 py-3 transition-transform duration-300 ${zichtbaar ? 'translate-y-0' : 'translate-y-full'}`}
       >
         <div className="flex items-center gap-3">
           <div className="flex-1 min-w-0">

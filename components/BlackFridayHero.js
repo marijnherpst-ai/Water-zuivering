@@ -22,38 +22,38 @@ export default function BlackFridayHero() {
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40" />
       <div className="absolute -left-32 top-1/3 h-96 w-96 rounded-full bg-amber/20 blur-[120px]" aria-hidden="true" />
 
-      <div className="relative max-w-7xl mx-auto px-6 py-20 w-full grid lg:grid-cols-[1fr_auto] gap-12 items-center">
-        <div className="max-w-2xl">
-          <span className="inline-flex items-center gap-2 rounded-full border border-amber/40 bg-amber/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-widest text-amber">
+      <div className="relative max-w-7xl mx-auto px-6 py-8 sm:py-20 w-full grid lg:grid-cols-[1fr_auto] gap-12 items-center">
+        <div className="max-w-2xl max-sm:flex max-sm:flex-col">
+          <span className="inline-flex max-sm:self-start items-center gap-2 rounded-full border border-amber/40 bg-amber/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-widest text-amber">
             <span className="w-1.5 h-1.5 rounded-full bg-amber pulse" />
             Alleen in november
           </span>
-          <h1 className="mt-6 font-display font-extrabold tracking-tight text-white">
-            <span className="block text-6xl sm:text-7xl lg:text-8xl leading-[0.9] uppercase">
+          <h1 className="mt-5 sm:mt-6 font-display font-extrabold tracking-tight text-white">
+            <span className="block text-[2.9rem] sm:text-7xl lg:text-8xl leading-[0.92] sm:leading-[0.9] uppercase">
               Black<br /><span className="text-amber">Friday</span>
             </span>
-            <span className="mt-6 block text-2xl sm:text-3xl leading-tight">
+            <span className="mt-4 sm:mt-6 block text-[1.375rem] sm:text-3xl leading-tight">
               €250 korting op zuiver drinkwater uit uw eigen kraan<span className="text-amber">.</span>
             </span>
           </h1>
-          <p className="mt-5 text-lg text-white/75 max-w-lg">
+          <p className="mt-4 sm:mt-5 text-lg text-white/75 max-w-lg">
             Vraag deze maand een offerte aan en ontvang €250 korting. Gefilterd water zonder flessen of plastic afval, compact geïnstalleerd in uw keukenkastje.
           </p>
 
-          <div className="mt-8">
+          <div className="mt-8 max-sm:order-1">
             <BlackFridayCountdown />
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4">
-            <Link href="/aanmelden" className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-xl shadow-amber/30">
+          <div className="mt-6 sm:mt-8 flex flex-wrap items-center gap-3 sm:gap-4">
+            <Link href="/aanmelden" className="cursor-pointer inline-flex max-sm:w-full max-sm:justify-center items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-xl shadow-amber/30">
               Claim €250 korting
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </Link>
-            <a href="#hoe-het-werkt" className="cursor-pointer inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-4 text-sm font-bold text-white hover:bg-white/10 transition-colors">
+            <a href="#hoe-het-werkt" className="cursor-pointer inline-flex max-sm:w-full max-sm:justify-center items-center gap-2 rounded-full border border-white/20 px-7 py-4 text-sm font-bold text-white hover:bg-white/10 transition-colors">
               Bekijk hoe het werkt
             </a>
           </div>
-          <div className="mt-10 flex flex-wrap gap-x-8 gap-y-2 text-sm text-white/75">
+          <div className="mt-8 sm:mt-10 max-sm:order-2 flex flex-wrap gap-x-8 gap-y-2 text-sm text-white/75">
             <span className="inline-flex items-center gap-2"><Vink />Vakkundige installatie</span>
             <span className="inline-flex items-center gap-2"><Vink />Nederlandse service</span>
             <span className="inline-flex items-center gap-2"><Vink />10 jaar garantie</span>

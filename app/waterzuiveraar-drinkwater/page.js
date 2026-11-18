@@ -101,7 +101,7 @@ export default function Page() {
             <p className="mt-3 text-dim text-center max-w-xl mx-auto">Vier categorieën stoffen die het omgekeerde-osmose-membraan tegenhoudt.</p>
             <div className="mt-10 grid sm:grid-cols-2 gap-5">
               {STOFFEN.map(([titel, uitleg]) => (
-                <div key={titel} className="reveal rounded-2xl card p-6 flex gap-4">
+                <div key={titel} className="reveal rounded-2xl card p-5 sm:p-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-xl bg-amber/15 text-amber-dark">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   </span>

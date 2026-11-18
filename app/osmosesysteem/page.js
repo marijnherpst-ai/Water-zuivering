@@ -157,35 +157,35 @@ export default async function Page() {
         <section id="hero" className="relative overflow-hidden">
           <div className="glow w-[520px] h-[520px] bg-amber/15 -top-44 -left-44 drift" />
           <div className="glow w-72 h-72 bg-amber/10 top-1/3 -right-24 drift2" />
-          <div className="relative max-w-6xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-14 items-center">
-            <div>
+          <div className="relative max-w-6xl mx-auto px-6 py-8 sm:py-16 md:py-24 grid lg:grid-cols-2 gap-8 sm:gap-14 items-center">
+            <div className="max-sm:flex max-sm:flex-col">
               <p className={`${mono.className} text-[11px] uppercase tracking-[0.2em] text-amber-dark`}>Osmosesysteem · direct flow · 3-traps filtratie</p>
               <h1 className="mt-4 font-display text-4xl md:text-5xl lg:text-[3.4rem] font-extrabold tracking-tight leading-[1.05]">
                 Het osmosesysteem voor thuis. Zuiver drinkwater, direct uit je kraan<span className="text-amber-dark">.</span>
               </h1>
-              <p className="mt-6 text-lg text-dim leading-relaxed">
+              <p className="mt-4 sm:mt-6 text-lg text-dim leading-relaxed">
                 Dit <strong className="text-ink">osmosesysteem</strong> filtert je kraanwater in drie stappen en houdt PFAS, medicijnresten, microplastics en kalk tegen. Compact onder je aanrecht, zonder tank, en geplaatst door onze eigen monteur.
               </p>
-              <ul className="mt-6 grid grid-cols-2 gap-x-4 gap-y-2.5 text-sm font-semibold text-ink">
+              <ul className="mt-6 max-sm:order-2 grid grid-cols-2 gap-x-4 gap-y-2.5 text-sm font-semibold text-ink">
                 {['Filtert tot 99% van onzuiverheden', 'Direct flow, geen tank', 'Geplaatst in 1 à 2 uur', '10 jaar garantie'].map((usp) => (
                   <li key={usp} className="flex items-center gap-2"><Vinkje />{usp}</li>
                 ))}
               </ul>
               {ratingTekst && (
-                <Link href="/reviews" className="cursor-pointer mt-7 inline-flex items-center gap-3 rounded-full border border-edge bg-white/80 py-1.5 pl-2 pr-4 shadow-sm hover:border-amber transition-colors">
+                <Link href="/reviews" className="cursor-pointer mt-7 max-sm:order-2 max-sm:self-start inline-flex items-center gap-3 rounded-full border border-edge bg-white/80 py-1.5 pl-2 pr-4 shadow-sm hover:border-amber transition-colors">
                   <span className="flex items-center gap-0.5 rounded-full bg-ink px-2.5 py-1"><Sterren rating={avgRating} /></span>
                   <span className="text-sm text-ink"><strong className="font-bold">{ratingTekst}</strong><span className="text-dim"> uit 5 · {reviewCount} reviews</span></span>
                 </Link>
               )}
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="mt-6 sm:mt-8 max-sm:order-1 flex flex-wrap gap-3">
                 <Link href="/aanmelden" className={btnPrimair}>
                   Vraag vrijblijvend een offerte aan
                   <Pijl />
                 </Link>
                 <a href="#binnenkant" className={btnLicht}>Bekijk het osmosesysteem van binnen</a>
               </div>
-              <PrijsVanaf className="mt-5" />
-              <p className={`${mono.className} mt-6 text-xs text-dim`}>Gratis en vrijblijvend · klaar in minder dan een minuut · prijs inclusief plaatsing</p>
+              <PrijsVanaf className="mt-5 max-sm:order-1" />
+              <p className={`${mono.className} mt-6 max-sm:order-3 text-xs text-dim`}>Gratis en vrijblijvend · klaar in minder dan een minuut · prijs inclusief plaatsing</p>
             </div>
             <div className="relative">
               <div className="absolute -inset-5 rounded-[2.75rem] bg-gradient-to-br from-amber/25 via-amber/5 to-transparent -rotate-2" />
