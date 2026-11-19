@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CookieInstellingen from './CookieInstellingen';
 
 export default function Footer() {
   return (
@@ -43,6 +44,7 @@ export default function Footer() {
           <ul className="mt-3 space-y-2 text-sm text-dim">
             <li><Link href="/privacybeleid" className="hover:text-ink transition-colors">Privacybeleid</Link></li>
             <li><Link href="/cookiebeleid" className="hover:text-ink transition-colors">Cookiebeleid</Link></li>
+            <li><CookieInstellingen /></li>
             <li><Link href="/algemene-voorwaarden" className="hover:text-ink transition-colors">Algemene voorwaarden</Link></li>
           </ul>
         </div>

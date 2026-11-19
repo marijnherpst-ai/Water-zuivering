@@ -393,3 +393,35 @@ html { scroll-padding-top: 5.5rem; }
   summary { min-height: 2.75rem; }
   a[href="/reviews"] { min-height: 2.75rem; }
 }
+
+/* Cookiemelding (Cookiebot) op telefoon: een compacte lade onderaan in plaats van een scherm vol tekst,
+   zodat alle knoppen altijd in beeld blijven en de pagina erachter zichtbaar blijft. */
+@media (max-width: 639px) {
+  #CybotCookiebotDialog {
+    top: auto !important;
+    bottom: max(8px, env(safe-area-inset-bottom)) !important;
+    left: 8px !important;
+    right: 8px !important;
+    width: auto !important;
+    max-width: none !important;
+    transform: none !important;
+    max-height: min(78vh, 600px) !important;
+  }
+  @supports (height: 1dvh) {
+    #CybotCookiebotDialog { max-height: min(78dvh, 600px) !important; }
+  }
+}
+
+/* Het zwevende cookie-rondje lag op telefoon en tablet over de tekst; de link "Cookie-instellingen" in de footer vervangt het */
+@media (max-width: 1023px) {
+  #CookiebotWidget { display: none !important; }
+}
+
+/* Telefoon: de hoofdknoppen staan direct onder de kop, de lange introtekst komt eronder.
+   Alleen visueel (flex-volgorde); de volgorde in de HTML blijft gelijk, dus de pagina leest voor Google hetzelfde.
+   Zo valt bij geen enkele pagina de tweede knop onder de vouw van een iPhone. */
+@media (max-width: 639px) {
+  div:has(> h1):has(> div.flex-wrap > a.bg-amber) { display: flex; flex-direction: column; }
+  div:has(> h1):has(> div.flex-wrap > a.bg-amber) > div.flex-wrap { order: 1; margin-top: 1.25rem; }
+  div:has(> h1):has(> div.flex-wrap > a.bg-amber) > :not(span):not(h1):not(div.flex-wrap) { order: 2; }
+}
