@@ -64,9 +64,9 @@ export default function MobileActionBar() {
   return (
     <div
       aria-hidden={!toon}
-      className={`md:hidden fixed bottom-0 inset-x-0 z-40 border-t border-edge bg-white/95 backdrop-blur px-3 pt-2.5 pb-[max(0.875rem,env(safe-area-inset-bottom))] shadow-[0_-8px_24px_rgba(11,13,16,0.08)] transition-transform duration-300 ${toon ? 'translate-y-0' : 'translate-y-full'}`}
+      className={`lg:hidden fixed bottom-0 inset-x-0 z-40 border-t border-edge bg-white/95 backdrop-blur px-3 pt-2.5 pb-[max(0.875rem,env(safe-area-inset-bottom))] shadow-[0_-8px_24px_rgba(11,13,16,0.08)] transition-transform duration-300 ${toon ? 'translate-y-0' : 'translate-y-full'}`}
     >
-      <div className="flex items-center gap-2.5">
+      <div className="flex items-center gap-2.5 md:max-w-xl md:mx-auto">
         <Link
           href="/aanmelden"
           tabIndex={toon ? 0 : -1}

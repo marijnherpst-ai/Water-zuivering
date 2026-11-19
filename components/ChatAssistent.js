@@ -185,7 +185,7 @@ export default function ChatAssistent() {
           type="button"
           onClick={openen}
           aria-label="Open de waterassistent"
-          className="cursor-pointer hidden md:flex fixed md:bottom-[5.25rem] md:right-6 z-50 items-center justify-center gap-2 md:w-12 md:h-12 lg:bottom-[5.75rem] lg:w-auto lg:h-14 lg:px-5 rounded-full bg-amber text-ink font-bold text-sm shadow-xl shadow-black/25 hover:scale-105 hover:bg-amber-dark hover:text-white transition-transform"
+          className="cursor-pointer hidden lg:flex fixed md:bottom-[5.25rem] md:right-6 z-50 items-center justify-center gap-2 md:w-12 md:h-12 lg:bottom-[5.75rem] lg:w-auto lg:h-14 lg:px-5 rounded-full bg-amber text-ink font-bold text-sm shadow-xl shadow-black/25 hover:scale-105 hover:bg-amber-dark hover:text-white transition-transform"
         >
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 3c-3 4.2-5.5 7-5.5 10.2a5.5 5.5 0 0011 0C15.5 10 13 7.200 10 3z" fill="currentColor" /><path d="M10 15.500a2.200 2.200 0 01-2.200-2.200" stroke="#fff" strokeWidth="1.400" strokeLinecap="round" opacity=".7" /><path d="M18.500 3.500l.7 1.800 1.800.7-1.800.7-.7 1.800-.7-1.800-1.800-.7 1.800-.7z" fill="currentColor" /></svg>
           <span className="hidden lg:inline">Vraag het ons</span>

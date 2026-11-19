@@ -50,7 +50,7 @@ export default function StickyOfferte({ ratingTekst, reviewCount, monoClass = ''
       {/* tablet en desktop */}
       <div
         aria-hidden={!zichtbaar}
-        className={`hidden md:flex fixed bottom-6 left-6 z-40 items-center gap-5 rounded-full border border-white/10 bg-ink/95 backdrop-blur py-2 pl-6 pr-2 shadow-2xl shadow-black/30 transition-all duration-300 ${zichtbaar ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0 pointer-events-none'}`}
+        className={`hidden lg:flex fixed bottom-6 left-6 z-40 items-center gap-5 rounded-full border border-white/10 bg-ink/95 backdrop-blur py-2 pl-6 pr-2 shadow-2xl shadow-black/30 transition-all duration-300 ${zichtbaar ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0 pointer-events-none'}`}
       >
         <div>
           <p className="text-sm font-bold text-white leading-tight">Zuiver water uit je eigen kraan</p>

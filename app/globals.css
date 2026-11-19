@@ -336,4 +336,60 @@ body {
   .text-sm { font-size: 0.9375rem; line-height: 1.65; }
   .text-xs { font-size: 0.8125rem; line-height: 1.5; }
   .leading-snug { line-height: 1.5; }
+  [class*="text-[10px]"], [class*="text-[11px]"], [class*="text-[12px]"] { font-size: 0.8125rem; line-height: 1.5; }
+}
+
+/* ==========================================================================
+   Typografie, contrast en overzicht voor alle apparaten
+   (alleen opmaak: tekst, koppen en structuur van de pagina's blijven gelijk)
+   ========================================================================== */
+
+/* Contrast: het gouden tekstaccent haalde maar 2,8:1 op wit. Dit is ruim 5:1 (WCAG AA = 4,5:1).
+   Alleen voor tekst; knoppen en achtergronden met amber-dark behouden hun kleur. */
+.text-amber-dark { color: #8F5F00; }
+
+/* Koppen: evenwichtige regelbreedtes op elk scherm, nette afbreking van lange woorden */
+h1, h2, h3 { text-wrap: balance; }
+p, li, blockquote { text-wrap: pretty; }
+
+/* Aantikken: geen vertraging van 300ms op iPhone en Samsung, rustige aantik-markering */
+a, button, summary, [role="button"], input, select, textarea, label { touch-action: manipulation; }
+html { -webkit-tap-highlight-color: rgba(237, 167, 27, 0.18); }
+
+/* Anker-links (#hoe-het-werkt) komen niet meer onder de vaste kop terecht */
+html { scroll-padding-top: 5.5rem; }
+
+/* Toetsenbord en schermlezers: overal een zichtbare focusrand (alleen bij toetsenbordgebruik) */
+:where(a, button, summary, input, select, textarea, [role="button"]):focus-visible {
+  outline: 2px solid #0B0D10;
+  outline-offset: 2px;
+  border-radius: 0.375rem;
+}
+
+/* Telefoon: rustiger verticaal ritme, zodat de pagina overzichtelijk blijft ondanks grotere tekst */
+@media (max-width: 639px) {
+  .py-16 { padding-top: 3rem; padding-bottom: 3rem; }
+  .py-20 { padding-top: 3.25rem; padding-bottom: 3.25rem; }
+  .py-24 { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+  .pt-16 { padding-top: 3rem; }
+  .pb-16 { padding-bottom: 3rem; }
+  .pt-20 { padding-top: 3.25rem; }
+  .pb-20 { padding-bottom: 3.25rem; }
+  .gap-12, .gap-14 { gap: 2rem; }
+  /* kaarten: iets minder binnenwerk, zodat de tekst meer breedte krijgt */
+  .card.p-6, .card.p-7, .card.p-8 { padding: 1.25rem; }
+}
+
+/* Telefoon en tablet: voldoende aantikbare logo's en links in kop en voet */
+@media (max-width: 1023px) {
+  header nav a[href="/"], footer a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+  footer a { padding-block: 0.3rem; min-width: 2.75rem; }
+}
+
+/* Tikvlakken op telefoon en tablet: kruimelpad, uitklapvragen en "Alle reviews" minimaal 44 px hoog */
+@media (max-width: 1023px) {
+  nav[aria-label="Kruimelpad"] { display: flex; flex-wrap: wrap; align-items: center; column-gap: 0.4rem; }
+  nav[aria-label="Kruimelpad"] a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+  summary { min-height: 2.75rem; }
+  a[href="/reviews"] { min-height: 2.75rem; }
 }
