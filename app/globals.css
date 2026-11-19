@@ -425,3 +425,10 @@ html { scroll-padding-top: 5.5rem; }
   div:has(> h1):has(> div.flex-wrap > a.bg-amber) > div.flex-wrap { order: 1; margin-top: 1.25rem; }
   div:has(> h1):has(> div.flex-wrap > a.bg-amber) > :not(span):not(h1):not(div.flex-wrap) { order: 2; }
 }
+
+/* Footer op telefoon: lange linklijsten in twee kolommen (tikvlakken blijven 44 px), zodat de footer niet meer drie schermen vult */
+@media (max-width: 639px) {
+  footer ul.footer-2kol { display: grid; grid-template-columns: 1fr 1fr; column-gap: 1rem; row-gap: 0; }
+  footer ul.footer-2kol > li { margin-top: 0; }
+  footer ul.footer-2kol a { font-size: 0.875rem; line-height: 1.3; }
+}

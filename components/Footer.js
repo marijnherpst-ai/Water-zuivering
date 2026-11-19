@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
         <div>
           <p className="font-display font-bold text-sm">Navigatie</p>
-          <ul className="mt-3 space-y-2 text-sm text-dim">
+          <ul className="footer-2kol mt-3 space-y-2 text-sm text-dim">
             <li><Link href="/#product" className="hover:text-ink transition-colors">Producten</Link></li>
             <li><Link href="/waterzuivering-voor-thuis" className="hover:text-ink transition-colors">Waterzuivering voor thuis</Link></li>
             <li><Link href="/osmose-waterfilter" className="hover:text-ink transition-colors">Osmose waterfilter</Link></li>
@@ -51,7 +51,7 @@ export default function Footer() {
       </div>
       <div className="max-w-7xl mx-auto px-6 pb-10">
         <p className="font-display font-bold text-sm">Populaire onderwerpen</p>
-        <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm text-dim">
+        <ul className="footer-2kol mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm text-dim">
           <li><Link href="/zuiverwater" className="hover:text-ink transition-colors">Zuiver water</Link></li>
           <li><Link href="/waterzuiveraar-drinkwater" className="hover:text-ink transition-colors">Waterzuiveraar drinkwater</Link></li>
           <li><Link href="/waterzuiveringsinstallatie" className="hover:text-ink transition-colors">Waterzuiveringsinstallatie</Link></li>
