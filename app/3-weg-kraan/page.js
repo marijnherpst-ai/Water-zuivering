@@ -11,7 +11,7 @@ export const dynamic = 'force-dynamic';
 
 export const metadata = {
   alternates: { canonical: '/3-weg-kraan' },
-  title: '3-weg kraan — in 4 kleuren | Water-zuivering',
+  title: '3-weg kraan voor gefilterd water | Water-zuivering',
   description:
     'De 3-weg kraan van Water-zuivering: gefilterd, gewoon en gemineraliseerd water uit één kraan. In 4 afwerkingen, past bij elk systeem.',
 };

@@ -309,7 +309,7 @@ export default function WaterzuiveringVoorThuisPage() {
               Herken je jezelf in geen van deze punten en vind je kraanwater prima zoals het is? Dan is waterzuivering voor thuis een luxe, geen noodzaak. Dat zeggen we liever eerlijk.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Overtuigd? Bekijk dan de <Link href="/waterfilter-kraan" className="underline hover:text-ink">waterfilter kraan</Link> voor het tappunt, de complete <Link href="/waterzuiveringsinstallatie" className="underline hover:text-ink">waterzuiveringsinstallatie</Link> voor het hele traject, of lees waar je op moet letten bij <Link href="/osmose-apparaat-kopen" className="underline hover:text-ink">osmose apparaat kopen</Link>.
+              Overtuigd? Bekijk dan de <Link href="/waterfilter-kraan" className="underline hover:text-ink">waterfilter kraan</Link> voor het tappunt, de complete <Link href="/waterzuiveringsinstallatie" className="underline hover:text-ink">waterzuiveringsinstallatie</Link> voor het hele traject, of lees waar je op moet letten bij <Link href="/osmose-apparaat-kopen" className="underline hover:text-ink">osmose apparaat kopen</Link>. Wat je dagelijks merkt van zuiver water lees je bij <Link href="/zuiverwater" className="underline hover:text-ink">zuiverwater</Link>, welke stoffen eruit gaan bij <Link href="/waterzuiveraar-drinkwater" className="underline hover:text-ink">waterzuiveraar drinkwater</Link>, en hoe het is opgebouwd bij het <Link href="/waterfiltersysteem" className="underline hover:text-ink">waterfiltersysteem</Link>.
             </p>
           </div>
         </section>

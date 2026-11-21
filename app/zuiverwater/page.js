@@ -140,7 +140,7 @@ export default function Page() {
               Zuiver water ontstaat niet vanzelf — het is het resultaat van drie filterstappen die elkaar aanvullen. Een voorfilter vangt grof vuil, een omgekeerde-osmose-membraan van 0,0001 micron filtert vrijwel alles wat kleiner is dan een watermolecuul, en een nafilter poetst de laatste smaakjes weg. Samen zetten ze gewoon kraanwater om in water dat tot 99% zuiver is.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Benieuwd hoe dat er in de praktijk uitziet? Lees onze uitleg over <Link href="/waterzuivering-voor-thuis" className="underline hover:text-ink">waterzuivering voor thuis</Link>, of bekijk direct <Link href="/uitleg" className="underline hover:text-ink">de specificaties van ons systeem</Link>.
+              Benieuwd hoe dat er in de praktijk uitziet? Lees onze uitleg over <Link href="/waterzuivering-voor-thuis" className="underline hover:text-ink">waterzuivering voor thuis</Link>, of bekijk direct <Link href="/uitleg" className="underline hover:text-ink">de specificaties van ons systeem</Link>. Welk toestel dit zuiverwater maakt, lees je bij <Link href="/waterzuiveraar-drinkwater" className="underline hover:text-ink">waterzuiveraar drinkwater</Link>, en de techniek erachter vind je bij de <Link href="/osmose-waterfilter" className="underline hover:text-ink">osmose waterfilter</Link>.
             </p>
           </div>
         </section>

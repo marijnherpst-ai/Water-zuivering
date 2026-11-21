@@ -231,7 +231,7 @@ export default function Page() {
               <li><strong className="text-ink">Garantie</strong>: bij zelfbouw ben je zelf verantwoordelijk als er iets misgaat.</li>
             </ul>
             <p className="mt-4 text-dim leading-relaxed">
-              Wil je zeker weten dat het goed zit, laat het dan plaatsen. Bij Water-zuivering duurt dat 1 à 2 uur, en je krijgt 10 jaar garantie. Hoe dat verloopt, lees je bij de <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>.
+              Wil je zeker weten dat het goed zit, laat het dan plaatsen. Bij Water-zuivering duurt dat 1 à 2 uur, en je krijgt 10 jaar garantie. Hoe dat verloopt, lees je bij de <Link href="/osmose-installatie" className="underline hover:text-ink">osmose installatie</Link>. Het bredere verhaal van water zuiveren in huis lees je bij <Link href="/waterzuivering-voor-thuis" className="underline hover:text-ink">waterzuivering voor thuis</Link>, en de opbouw van het systeem bij het <Link href="/waterfiltersysteem" className="underline hover:text-ink">waterfiltersysteem</Link>.
             </p>
           </div>
         </section>

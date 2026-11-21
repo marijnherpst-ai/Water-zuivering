@@ -12,8 +12,8 @@ export const dynamic = 'force-dynamic';
 
 export const metadata = {
   alternates: { canonical: '/waterfilter-kraan' },
-  title: 'Waterfilter kraan — Water-zuivering',
-  description: 'Een waterfilter kraan levert zuiver water direct uit je keukenkraan. Ontdek hoe een kraangemonteerd waterfiltersysteem werkt en wat het kost.',
+  title: 'Waterfilter kraan kopen: zuiver water uit je kraan',
+  description: 'Waterfilter kraan kopen? Zuiver water direct uit je keukenkraan, zonder chloor, PFAS of microplastics. Zo werkt het en dit kost het.',
 };
 
 const TYPES = [

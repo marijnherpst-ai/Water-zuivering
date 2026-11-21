@@ -142,7 +142,7 @@ export default function Page() {
               Niet door beloftes, maar door het membraan zelf: een poriegrootte van 0,0001 micron, ongeveer 500.000 keer fijner dan een mensenhaar. Bij die schaal is er simpelweg geen ruimte meer voor bacteriën, zware metalen of de moleculen die PFAS en medicijnresten vormen — alleen watermoleculen passeren nog. Dat is geen marketingtaal, dat is natuurkunde.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
-              Benieuwd naar de techniek erachter? Lees onze uitleg over <Link href="/kennisbank/omgekeerde-osmose-filter" className="underline hover:text-ink">het omgekeerde-osmose-membraan</Link>, of bekijk de <Link href="/uitleg" className="underline hover:text-ink">volledige specificaties</Link> van ons systeem.
+              Benieuwd naar de techniek erachter? Lees onze uitleg over <Link href="/kennisbank/omgekeerde-osmose-filter" className="underline hover:text-ink">het omgekeerde-osmose-membraan</Link>, of bekijk de <Link href="/uitleg" className="underline hover:text-ink">volledige specificaties</Link> van ons systeem. Wat je dagelijks merkt van schoon drinkwater lees je bij <Link href="/zuiverwater" className="underline hover:text-ink">zuiverwater</Link>, voor de techniek achter het filter ga je naar de <Link href="/osmose-waterfilter" className="underline hover:text-ink">osmose waterfilter</Link>, en per probleem (chloor, kalk, PFAS) helpt de keuzehulp <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter</Link>.
             </p>
           </div>
         </section>

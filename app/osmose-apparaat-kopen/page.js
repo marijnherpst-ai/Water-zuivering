@@ -239,7 +239,7 @@ export default function Page() {
               ))}
             </div>
             <p className="mt-6 text-sm text-dim text-center">
-              Meer weten over de installatie? Bekijk <Link href="/osmose-installatie" className="underline hover:text-ink">hoe een osmose installatie verloopt</Link>.
+              Meer weten over de installatie? Bekijk <Link href="/osmose-installatie" className="underline hover:text-ink">hoe een osmose installatie verloopt</Link>. Hoe zo’n systeem als geheel in elkaar zit, lees je bij het <Link href="/waterfiltersysteem" className="underline hover:text-ink">waterfiltersysteem</Link>, en de technische kern bij de <Link href="/osmose-waterfilter" className="underline hover:text-ink">osmose waterfilter</Link>.
             </p>
           </div>
         </section>

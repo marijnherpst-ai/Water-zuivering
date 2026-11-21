@@ -184,7 +184,7 @@ export default function Page() {
               Veel osmose waterfilters werken met een opslagtank die langzaam volloopt. Het systeem van Water-zuivering niet: het filtert direct wanneer je de kraan opendraait, met 1,58 liter per minuut. Daardoor staat er geen water stil en past het kastje van 10,5 cm breed in vrijwel elk keukenkastje. Het draait stil, onder de 48 dB, en het display waarschuwt bij een lek of te lage waterdruk.
             </p>
             <p className="mt-3 text-dim leading-relaxed">
-              Hoe het membraan precies werkt, lees je in <Link href="/kennisbank/omgekeerde-osmose-filter" className="underline hover:text-ink">omgekeerde osmose filter</Link>. Alle filtertypes naast elkaar vind je bij <Link href="/waterfilter" className="underline hover:text-ink">waterfilter kopen</Link>.
+              Hoe het membraan precies werkt, lees je in <Link href="/kennisbank/omgekeerde-osmose-filter" className="underline hover:text-ink">omgekeerde osmose filter</Link>. Alle filtertypes naast elkaar vind je bij <Link href="/waterfilter" className="underline hover:text-ink">waterfilter kopen</Link>. Voor het drinkwater van je gezin lees je meer bij <Link href="/waterzuiveraar-drinkwater" className="underline hover:text-ink">waterzuiveraar drinkwater</Link> en <Link href="/zuiverwater" className="underline hover:text-ink">zuiverwater</Link>, en welk filter bij welk probleem past, zie je bij <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter</Link>.
             </p>
           </div>
         </section>

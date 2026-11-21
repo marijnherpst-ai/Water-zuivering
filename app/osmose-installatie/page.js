@@ -192,7 +192,7 @@ export default function Page() {
               </div>
             </div>
             <p className="mt-6 text-dim leading-relaxed">
-              Twijfel je? Dan is de monteur de rustigste keuze: het aansluiten op de waterleiding en het plaatsen van een kraan kan lekkages geven als het niet goed gebeurt. Wil je eerst weten wat er in het dagelijks gebruik van je verwacht wordt, bekijk dan de <Link href="/handleiding" className="underline hover:text-ink">handleiding</Link>.
+              Twijfel je? Dan is de monteur de rustigste keuze: het aansluiten op de waterleiding en het plaatsen van een kraan kan lekkages geven als het niet goed gebeurt. Wil je eerst weten wat er in het dagelijks gebruik van je verwacht wordt, bekijk dan de <Link href="/handleiding" className="underline hover:text-ink">handleiding</Link>. Wat er precies in het systeem zit, lees je bij de <Link href="/osmose-waterfilter" className="underline hover:text-ink">osmose waterfilter</Link>.
             </p>
           </div>
         </section>
