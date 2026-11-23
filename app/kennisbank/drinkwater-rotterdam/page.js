@@ -101,6 +101,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               De oorzaak ligt grotendeels stroomopwaarts: PFAS komen via de rivieren in het water terecht en zijn lastig te verwijderen. Meer uitleg lees je in <Link href="/kennisbank/pfas-in-kraanwater" className="underline hover:text-ink">PFAS in kraanwater</Link> en op de <Link href="/kennisbank/pfas-kaart-nederland" className="underline hover:text-ink">PFAS-kaart van Nederland</Link>.
             </p>
+            <p className="mt-6 text-dim leading-relaxed">
+              Wil je thuis nog zuiverder water dan wat de leiding levert? Lees over <Link href="/waterzuiveraar-drinkwater" className="underline hover:text-ink">waterzuiveraar voor drinkwater</Link>.
+            </p>
             <TussenCta titel="Hoe zit het op jouw adres in Rotterdam?" pfasEerst>
               Check met je postcode in welke PFAS-categorie jouw adres valt. Wil je daarna zelf filteren, dan haalt een osmosesysteem het overgrote deel van de PFAS eruit.
             </TussenCta>

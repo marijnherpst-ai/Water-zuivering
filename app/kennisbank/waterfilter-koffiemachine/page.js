@@ -96,6 +96,9 @@ export default function Page() {
               <li><strong className="text-ink">Volautomaat of espressomachine:</strong> deze apparaten zijn duurder en gevoeliger, dus goed water loont eerder.</li>
               <li><strong className="text-ink">Eenvoudig filterkoffieapparaat:</strong> hier is regelmatig ontkalken vaak al genoeg.</li>
             </ul>
+            <p className="mt-6 text-dim leading-relaxed">
+              Zoek je een filter voor al het water dat je drinkt en kookt, en niet alleen voor je koffiemachine? Kijk dan welk <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter</Link> bij jouw kraanwater past.
+            </p>
             <TussenCta titel="Goed water voor alles wat je drinkt?">
               Een osmosesysteem met mineraalfilter levert gefilterd water uit je kraan, met calcium en magnesium erbij voor een voller glas water.
             </TussenCta>

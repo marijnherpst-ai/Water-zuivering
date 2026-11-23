@@ -164,6 +164,9 @@ export default function Page() {
               <li><strong className="text-ink">Begin met water dat lekker smaakt.</strong> Bubbels versterken de smaak van het water. Smaakt je kraanwater naar de leiding of naar kalk, dan proef je dat in bruisend water nog meer.</li>
               <li><strong className="text-ink">Maak smaakjes zelf.</strong> Een schijfje komkommer, munt of een paar bessen geeft smaak zonder citroenzuur of suiker.</li>
             </ul>
+            <p className="mt-6 text-dim leading-relaxed">
+              Begin je met zuiver kraanwater, dan smaakt ook je eigen bruisend water beter. Lees hoe een <Link href="/waterzuiveraar-drinkwater" className="underline hover:text-ink">waterzuiveraar voor drinkwater</Link> dat voor je regelt.
+            </p>
             <TussenCta titel="Een frisse basis voor je bruisend water">
               Met een osmosesysteem onder het aanrecht tap je gefilterd water direct uit de kraan: zonder kalk, PFAS en medicijnresten. Een neutrale basis voor plat én bruisend water.
             </TussenCta>

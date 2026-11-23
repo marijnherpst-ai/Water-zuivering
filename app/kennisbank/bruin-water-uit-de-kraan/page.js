@@ -175,6 +175,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Ons advies: drink het niet zolang je het kunt zien. Wacht tot het water weer helder is, ook voor de fles van de baby en voor koffie en thee. Hoe je de fles verder veilig klaarmaakt, lees je in <Link href="/kennisbank/kraanwater-babyvoeding" className="underline hover:text-ink">kraanwater voor babyvoeding</Link>. Ruikt of smaakt het water ook daarna nog vreemd, of blijft het troebel, neem dan contact op met je waterbedrijf. Is het water niet bruin maar melkwit, lees dan wat <Link href="/kennisbank/wit-water-uit-de-kraan" className="underline hover:text-ink">wit water uit de kraan</Link> betekent. Meer over de veiligheid van ons drinkwater lees je in <Link href="/kennisbank/is-kraanwater-veilig" className="underline hover:text-ink">is kraanwater veilig?</Link>
             </p>
+            <p className="mt-6 text-dim leading-relaxed">
+              Wil je het water dat je drinkt extra beschermen tegen roest en vuil uit de leidingen? Lees hoe een <Link href="/waterzuiveraar-drinkwater" className="underline hover:text-ink">waterzuiveraar voor drinkwater</Link> werkt.
+            </p>
             <TussenCta titel="Vaker last van roest of slib in je water?">
               Een osmosesysteem met voorfilter vangt roest, zand en slib op voordat ze bij je drinkwater komen. Bij een kookadvies of storing volg je altijd eerst het advies van je waterbedrijf.
             </TussenCta>

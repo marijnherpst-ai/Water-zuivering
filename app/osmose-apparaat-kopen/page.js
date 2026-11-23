@@ -48,6 +48,8 @@ const FAQ = [
   ['Is er een afvoer nodig voor een osmose apparaat?', 'Ja. Bij omgekeerde osmose hoort een afvoer voor het afvalwater waarmee het membraan zichzelf schoonspoelt. Die slang wordt bij de installatie aangesloten.'],
   ['Kan ik een osmose apparaat in een huurwoning gebruiken?', 'Ja. Het systeem staat onder het aanrecht en er hoeft niet gebroken te worden. Overleg vooraf met je verhuurder. Verhuis je, dan kun je het systeem laten afkoppelen en meenemen.'],
   ['Kan ik een osmose apparaat zelf installeren?', 'Ja, dan krijg je €250 korting. Laat je het door onze monteur doen, dan is het binnen 1 tot 2 uur geregeld. Alles daarover lees je op onze pagina over de osmose installatie.'],
+  ['Waar moet ik op letten bij het kopen van een osmose apparaat?', 'Let op hoe fijn het membraan filtert, of het apparaat een opslagtank nodig heeft, hoeveel ruimte het onder je aanrecht kost, wat de filters per jaar kosten, hoe lang de garantie loopt en of er installatie en service bij zit. De zeven punten hierboven werken dit verder uit.'],
+  ['Heeft een osmose apparaat een opslagtank nodig?', 'Niet altijd. Veel osmose apparaten werken met een opslagtank die langzaam volloopt. Het systeem van Water-zuivering werkt direct flow: het filtert op het moment dat je de kraan opendraait en levert 1,58 liter per minuut, zonder tank.'],
 ];
 
 export default function Page() {

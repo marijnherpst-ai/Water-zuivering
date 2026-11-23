@@ -38,6 +38,8 @@ const FAQ = [
   ['Haalt een waterfiltersysteem PFAS uit het water?', 'Dat hangt af van het type. Een systeem met alleen actieve kool pakt vooral smaak en chloor aan. Voor PFAS, medicijnresten en microplastics heb je een omgekeerde-osmose-membraan nodig, zoals in ons systeem.'],
   ['Kan ik een waterfiltersysteem in een huurwoning plaatsen?', 'Ja. Het systeem staat onder het aanrecht en wordt op de bestaande leidingen aangesloten, er hoeft niet gebroken te worden. Overleg vooraf met je verhuurder. Verhuis je, dan kun je het systeem laten afkoppelen en meenemen.'],
   ['Kan een waterfiltersysteem ook water voor koken en koffie leveren?', 'Ja, het systeem levert onbeperkt zuiver water via een aparte kraan of aansluiting — perfect voor koken, koffie, thee of gewoon een glas water.'],
+  ['Welk waterfiltersysteem is het beste voor thuis?', 'Dat hangt af van wat je eruit wilt halen. Voor alleen chloor en smaak volstaat een actief-koolfilter. Wil je ook PFAS, medicijnresten, microplastics en kalk tegenhouden, kies dan een systeem met meerdere stappen en een omgekeerde-osmosemembraan, zoals het systeem van Water-zuivering. Kijk daarnaast naar het onderhoud, de ruimte onder je aanrecht en of het werkt zonder opslagtank.'],
+  ['Wat kost het onderhoud van een waterfiltersysteem per jaar?', 'Bij het systeem van Water-zuivering reken je op ongeveer €135 per jaar aan filters: het voorfilter en het nafilter elk €49,99 per jaar, en het membraan €69,99 om de 2 jaar. Het display laat zien wanneer een filter aan vervanging toe is.'],
 ];
 
 export default function Page() {

@@ -134,6 +134,9 @@ export default function Page() {
                 </tbody>
               </table>
             </div>
+            <p className="mt-6 text-dim leading-relaxed">
+              Wil je het grondigst filteren? Een <Link href="/osmose-waterfilter" className="underline hover:text-ink">osmose waterfilter</Link> filtert fijner dan een kan of kraanfilter, direct onder je aanrecht.
+            </p>
             <TussenCta titel="De grondigste optie thuis?">
               Een osmosesysteem onder het aanrecht filtert het meest uit je kraanwater en werkt zonder opslagtank. Vraag vrijblijvend een offerte aan.
             </TussenCta>

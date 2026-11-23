@@ -99,6 +99,9 @@ export default function Page() {
               <li><strong className="text-ink">Water uit je kraan blijft ongefilterd.</strong> Je filtert alleen wat in de kan past, en dat water staat daarna buiten de leiding te wachten.</li>
               <li><strong className="text-ink">Hard water kost meer patronen.</strong> Is je water hard, dan raakt de kalkwerking sneller op. Hoe je dat herkent, staat in <Link href="/kennisbank/kalkaanslag-in-huis" className="underline hover:text-ink">kalkaanslag in huis</Link>.</li>
             </ul>
+            <p className="mt-6 text-dim leading-relaxed">
+              Wil je meer tegenhouden dan een kan of kraanfilter doet? Een <Link href="/osmose-waterfilter" className="underline hover:text-ink">osmose waterfilter</Link> haalt ook PFAS, medicijnresten en microplastics eruit. Welk <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter</Link> bij welk probleem past, zie je in de keuzehulp.
+            </p>
             <TussenCta titel="Filteren zonder kan en patronen?">
               Een osmosesysteem onder het aanrecht filtert direct als je de kraan opendraait. Het voor- en nafilter vervang je elk jaar, het membraan elke 2 jaar.
             </TussenCta>

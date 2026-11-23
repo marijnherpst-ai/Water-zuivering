@@ -25,6 +25,8 @@ const FAQ = [
   ['Is een osmose waterfilter hetzelfde als een osmosesysteem?', 'Ja, dit zijn twee namen voor dezelfde technologie: omgekeerde osmose, ook wel RO (reverse osmosis) genoemd.'],
   ['Wat kost een osmose waterfilter?', 'De prijs van het osmose waterfilter van Water-zuivering hangt af van je keuken en de kraan die je kiest. Je prijs, met of zonder montage door onze monteur, krijg je in een vrijblijvende offerte. Reken daarnaast op ongeveer €135 per jaar aan filters.'],
   ['Hoeveel onderhoud vraagt een osmose waterfilter?', 'Weinig: één keer per jaar wissel je het voor- en nafilter, en om het jaar ook het membraan. Gebruik je veel water, dan iets vaker. Het apparaat geeft zelf een seintje.'],
+  ['Hoe werkt een osmose waterfilter?', 'Het water gaat door een voorfilter, daarna door een membraan van 0,0001 micron en tot slot door een nafilter met actieve koolstof. Het membraan houdt stoffen zoals PFAS, medicijnresten en microplastics tegen, de rest van het systeem beschermt het membraan en zorgt voor de smaak.'],
+  ['Haalt een osmose waterfilter kalk uit het water?', 'Ja, het membraan houdt kalk grotendeels tegen. Daardoor krijg je minder aanslag in je waterkoker en koffiezetapparaat. Wil je calcium en magnesium terug in je water, dan kan er een nafilter met mineralen worden gebruikt.'],
 ];
 
 export default function Page() {

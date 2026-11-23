@@ -213,6 +213,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Dat Amsterdam zo hoog scoort, komt door de bron: de Rijn neemt onderweg vervuiling op van industrie in Duitsland en Nederland. Hoe het in de rest van het land zit, lees je in <Link href="/kennisbank/pfas-in-kraanwater" className="underline hover:text-ink">PFAS in kraanwater</Link>. Wil je de waarde voor jouw postcode weten, doe dan de <Link href="/pfas-check" className="underline hover:text-ink">PFAS-check</Link>.
             </p>
+            <p className="mt-6 text-dim leading-relaxed">
+              Wil je thuis nog zuiverder water dan wat de leiding levert? Lees over <Link href="/zuiverwater" className="underline hover:text-ink">zuiverwater</Link> voor je eigen keuken.
+            </p>
             <TussenCta titel="Zelf onder de RIVM-richtwaarde zitten in Amsterdam?">
               Een osmosesysteem onder het aanrecht houdt het overgrote deel van de PFAS tegen. Ons systeem werkt zonder opslagtank en past ook in een kleine Amsterdamse keuken. Je ontvangt vrijblijvend een prijs voor jouw situatie.
             </TussenCta>

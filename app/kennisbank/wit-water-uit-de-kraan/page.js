@@ -201,6 +201,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Nederlands kraanwater wordt streng gecontroleerd. Echte vervuiling is zeldzaam, en komt die toch voor, dan geeft het waterbedrijf een kookadvies. Wat je dan doet, lees je in <Link href="/kennisbank/water-zuiveren-noodsituatie" className="underline hover:text-ink">water zuiveren in een noodsituatie</Link>.
             </p>
+            <p className="mt-6 text-dim leading-relaxed">
+              Wil je zeker weten dat je water altijd helder en vrij van losse deeltjes is? Bekijk welk <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter</Link> daarbij past.
+            </p>
             <TussenCta titel="Helder én zuiver water uit je eigen kraan?">
               Een osmosesysteem onder het aanrecht filtert kalk, roest en slib uit je drinkwater, en ook PFAS en medicijnresten. Bij een kookadvies of storing volg je altijd eerst het advies van je waterbedrijf.
             </TussenCta>

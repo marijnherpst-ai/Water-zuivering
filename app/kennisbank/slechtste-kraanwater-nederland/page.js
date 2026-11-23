@@ -102,6 +102,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Kortom: het "slechtste kraanwater van Nederland" is geen erkend fenomeen bij drinkwaterbedrijven of toezichthouders — het is vooral een label dat mensen plakken op een sterke smaak die ze niet gewend zijn. Verhuis je naar een andere regio, dan proef je soms verschil, maar dat zegt niets over hoe veilig het water is. Stoort de smaak je, dan kan een <Link href="/waterfilter" className="underline hover:text-ink">waterfilter</Link> al helpen; daar lees je welk type wat tegenhoudt.
             </p>
+            <p className="mt-6 text-dim leading-relaxed">
+              Woon je in een regio met harder of minder lekker water? Lees hoe je thuis aan <Link href="/zuiverwater" className="underline hover:text-ink">zuiverwater</Link> komt, of wat een <Link href="/waterzuiveraar-drinkwater" className="underline hover:text-ink">waterzuiveraar voor drinkwater</Link> voor je doet.
+            </p>
             <TussenCta titel="Wil je weten wat er in jouw water zit?" pfasEerst>
               Met de PFAS-check zie je hoe het in jouw regio zit. Wil je daarna zelf filteren, dan kan dat met een osmosesysteem onder het aanrecht.
             </TussenCta>

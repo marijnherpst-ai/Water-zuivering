@@ -140,6 +140,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Hetzelfde geldt voor veel &lsquo;osmosewater&rsquo; dat je bij tankstations en bouwmarkten kunt kopen voor aquarium of glasbewassing. Waar je het wel voor drinkwater kunt halen en wat het kost, lees je in <Link href="/kennisbank/osmosewater-kopen" className="underline hover:text-ink">osmosewater kopen</Link>.
             </p>
+            <p className="mt-6 text-dim leading-relaxed">
+              Zuiver water zonder het te destilleren? Een <Link href="/osmose-waterfilter" className="underline hover:text-ink">osmose waterfilter</Link> filtert je kraanwater direct onder je aanrecht, en je hoeft er niets voor te koken of op te slaan.
+            </p>
             <TussenCta titel="Zuiver drinkwater, maar wel met mineralen?">
               Een osmosesysteem met mineraalfilter geeft je heel zuiver water uit je eigen kraan, met calcium en magnesium erbij voor de smaak. Vraag vrijblijvend een offerte aan.
             </TussenCta>

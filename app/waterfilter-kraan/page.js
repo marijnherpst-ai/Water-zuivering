@@ -44,6 +44,8 @@ const FAQ = [
   ['Kan ik een waterfilter kraan in een huurwoning plaatsen?', 'Ja. Ons systeem staat onder het aanrecht en wordt op de bestaande leidingen aangesloten, er hoeft niet gebroken te worden. Overleg in een huurwoning wel vooraf met je verhuurder. Verhuis je, dan kun je het systeem laten afkoppelen en meenemen.'],
   ['Hoeveel gefilterd water levert een waterfilter kraan per minuut?', 'Ons systeem levert 1,58 liter per minuut en werkt direct flow: er is geen opslagtank, het water wordt gemaakt op het moment dat je de kraan opendraait.'],
   ['Hoe vaak moet ik het filter van mijn kraanwatersysteem vervangen?', 'Bij een eenvoudig opzetstuk meestal elke 2-3 maanden. Bij ons systeem onder de gootsteen vervang je het voorfilter en het nafilter ieder jaar en het membraan elke 2 jaar. Het display geeft aan wanneer het zover is.'],
+  ['Kan een waterfilter kraan ook warm water filteren?', 'Nee. Een waterfilter kraan met osmose filtert koud water. Voor warm of kokend water verwarm je het gefilterde water zelf, bijvoorbeeld in je waterkoker of in een pan.'],
+  ['In welke afwerkingen is de kraan verkrijgbaar?', 'De 3-weg kraan is er in vier afwerkingen: chroom, geborsteld staal, goud en zwart. Uit de kraan komt gewoon kraanwater, gefilterd water en, met de mineralenvariant, gemineraliseerd water.'],
 ];
 
 export default function Page() {

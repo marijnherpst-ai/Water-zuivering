@@ -147,6 +147,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               In welke categorie jouw adres valt, zie je met de <Link href="/pfas-check" className="underline hover:text-ink">PFAS-check</Link>. Hoe Utrecht zich verhoudt tot de rest van het land, staat op de <Link href="/kennisbank/pfas-kaart-nederland" className="underline hover:text-ink">PFAS kaart van Nederland</Link>.
             </p>
+            <p className="mt-6 text-dim leading-relaxed">
+              Wil je thuis nog zuiverder water dan wat de leiding levert? Lees over <Link href="/waterzuiveraar-drinkwater" className="underline hover:text-ink">waterzuiveraar voor drinkwater</Link>.
+            </p>
             <TussenCta titel="Woon je in een rode zone in Utrecht?" pfasEerst>
               Check eerst met je postcode in welke PFAS-categorie jouw adres valt. Zit je boven de RIVM-richtwaarde, dan kun je met een osmosesysteem onder het aanrecht het overgrote deel van de PFAS zelf uit je drinkwater halen.
             </TussenCta>

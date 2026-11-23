@@ -173,6 +173,9 @@ export default function Page() {
             <p className="mt-6 text-dim leading-relaxed">
               Twijfel je tussen een ontharder en een waterzuiveraar? Het verschil lees je in <Link href="/kennisbank/waterontharder-vs-waterzuiveraar" className="underline hover:text-ink">waterontharder of waterzuiveraar</Link>.
             </p>
+            <p className="mt-6 text-dim leading-relaxed">
+              Wil je vooral het water dat je drinkt en kookt zuiveren? Lees dan over <Link href="/zuiverwater" className="underline hover:text-ink">zuiverwater</Link> uit je eigen kraan.
+            </p>
             <TussenCta titel="Schoon drinkwater, niet onder de douche maar uit de keukenkraan">
               Ons osmosesysteem onder het aanrecht houdt kalk, PFAS, medicijnresten en microplastics tegen in het water dat je drinkt en waarmee je kookt.
             </TussenCta>

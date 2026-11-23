@@ -212,6 +212,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Vers getapt water is altijd het beste water. Daarom werkt ons osmosesysteem zonder opslagtank: het water wordt gefilterd op het moment dat je de kraan opendraait. Er staat dus geen gefilterd water dagenlang te wachten in een vat onder je aanrecht.
             </p>
+            <p className="mt-6 text-dim leading-relaxed">
+              Staat je water langer in de kan, begin dan met zuiver water. Lees hoe je thuis aan <Link href="/zuiverwater" className="underline hover:text-ink">zuiverwater</Link> komt.
+            </p>
             <TussenCta titel="Altijd vers gefilterd water, zonder tank">
               Ons osmosesysteem filtert direct terwijl je tapt: 1,58 liter per minuut, recht uit de kraan. Het membraan houdt kalk, PFAS, medicijnresten en microplastics tegen.
             </TussenCta>

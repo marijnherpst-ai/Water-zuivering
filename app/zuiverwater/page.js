@@ -34,6 +34,7 @@ const FAQ = [
   ['Proef je echt verschil met puur water?', 'De meeste mensen merken het meteen: geen chloorsmaak, minder kalk, en een frissere afdronk — vooral zichtbaar in koffie, thee en gekookt eten.'],
   ['Is zuiver water hetzelfde als osmosewater?', 'In de praktijk vaak wel — osmose is de techniek die het meest grondig chloor, PFAS en microplastics uit kraanwater filtert, met zuiver water als resultaat.'],
   ['Kost het onderhouden van zuiver water veel moeite?', 'Nee. De voor- en nafilter vervang je eens per jaar, het membraan eens per 2 jaar. Het display laat zien wanneer het zover is, en je vervangt ze zelf zonder gereedschap.'],
+  ['Wat is het verschil tussen zuiver water en gedestilleerd water?', 'Gedestilleerd water wordt verdampt en weer gecondenseerd. Zuiver water uit een osmosesysteem wordt gefilterd door een membraan, direct uit je eigen kraan, zonder dat je het hoeft te koken of te kopen.'],
 ];
 
 export default function Page() {

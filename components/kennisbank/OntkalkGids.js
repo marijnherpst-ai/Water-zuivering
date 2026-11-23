@@ -205,7 +205,7 @@ export default function OntkalkGids({ g }) {
           <div className="relative max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-amber">Minder kalk in je drinkwater</span>
             <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Zuiverder water uit je eigen kraan?</h2>
-            <p className="mt-4 text-white/70">Een osmosesysteem onder het aanrecht haalt kalk, PFAS en medicijnresten uit het water dat je drinkt. Vraag vrijblijvend een offerte aan.</p>
+            <p className="mt-4 text-white/70">Een <Link href="/osmose-waterfilter" className="underline text-white hover:text-amber">osmose waterfilter</Link> onder het aanrecht haalt kalk, PFAS en medicijnresten uit het water dat je drinkt. Vraag vrijblijvend een offerte aan.</p>
             <Link href="/aanmelden" className="cursor-pointer mt-8 inline-flex items-center gap-2 rounded-full bg-amber px-7 py-4 text-sm font-bold text-ink hover:bg-amber-dark hover:text-white transition-colors shadow-xl shadow-amber/25">
               Vraag vrijblijvend een offerte aan
             </Link>

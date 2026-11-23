@@ -211,6 +211,9 @@ export default function Page() {
             <p className="mt-3 text-dim leading-relaxed">
               Nee. Een waterfilter verandert de temperatuur niet. Ook ons osmosesysteem levert gefilterd water op de temperatuur waarmee het uit de leiding komt. Het is geen koeler en het maakt ook geen warm of kokend water. Wat het wel doet: kalk, PFAS, medicijnresten en microplastics tegenhouden in het water dat je drinkt.
             </p>
+            <p className="mt-6 text-dim leading-relaxed">
+              Wil je thuis ook echt zuiver water uit de kraan? Lees over <Link href="/zuiverwater" className="underline hover:text-ink">zuiverwater</Link> voor thuis, of bekijk welk <Link href="/drinkwater-filter" className="underline hover:text-ink">drinkwater filter</Link> bij welk probleem past.
+            </p>
             <TussenCta titel="Koud en gefilterd water uit je eigen kraan">
               Ons osmosesysteem filtert koud kraanwater direct terwijl je tapt, zonder opslagtank. Je krijgt het dus altijd vers, op kraantemperatuur.
             </TussenCta>

@@ -159,6 +159,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Je kunt zelf ook iets doen: gooi oude medicijnen nooit door de wc of de gootsteen, maar lever ze in bij de apotheek of de milieustraat.
             </p>
+            <p className="mt-6 text-dim leading-relaxed">
+              Een <Link href="/osmose-waterfilter" className="underline hover:text-ink">osmose waterfilter</Link> houdt het grootste deel van deze stoffen tegen. Voor je hele drinkwater lees je meer bij <Link href="/waterzuiveringsinstallatie" className="underline hover:text-ink">waterzuiveringsinstallatie</Link>.
+            </p>
             <TussenCta titel="Wil je ook de laatste sporen uit je drinkwater halen?">
               Een osmosesysteem onder het aanrecht houdt medicijnresten, microplastics en PFAS grotendeels tegen. Vraag vrijblijvend een offerte aan, of check eerst hoe het met PFAS in jouw regio zit.
             </TussenCta>

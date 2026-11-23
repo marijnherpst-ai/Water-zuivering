@@ -178,6 +178,9 @@ export default function Page() {
               <li><strong className="text-ink">Een onderhoudsbeurt laten doen</strong> door een Quooker-monteur. Quooker adviseert dat minstens eens per twee jaar.</li>
               <li><strong className="text-ink">Een ontkalkingssysteem vóór de Quooker plaatsen</strong>, zoals de Quooker Scale Control.</li>
             </ol>
+            <p className="mt-6 text-dim leading-relaxed">
+              Meer weten over een systeem dat los van je kraan werkt? Lees over de <Link href="/osmose-waterfilter" className="underline hover:text-ink">osmose waterfilter</Link> onder je aanrecht.
+            </p>
             <TussenCta titel="Wil je ook PFAS en medicijnresten uit je drinkwater?">
               Een Quooker maakt water heet, een osmosesysteem maakt het schoon. Met een 3-weg kraan of een apart kraantje heb je allebei. Vraag een vrijblijvende offerte aan of check eerst hoeveel PFAS er in jouw regio in het kraanwater zit.
             </TussenCta>

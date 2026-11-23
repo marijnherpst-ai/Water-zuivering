@@ -147,6 +147,9 @@ export default function Page() {
             <p className="mt-4 text-dim leading-relaxed">
               Vervang het filter op tijd. Een te oud filter werkt niet meer goed, en <strong className="text-ink">op een filter dat te lang blijft zitten kunnen bacteriën groeien</strong>. Dat schrijft ook het Voedingscentrum. Spoel de fles na gebruik om, laat hem open drogen en laat er geen water dagenlang in staan.
             </p>
+            <p className="mt-6 text-dim leading-relaxed">
+              Wil je onderweg en thuis zuiver water? Thuis regelt een <Link href="/osmose-waterfilter" className="underline hover:text-ink">osmose waterfilter</Link> dat direct uit je kraan, zodat je fles altijd met zuiver water gevuld is.
+            </p>
             <TussenCta titel="Thuis zonder flesjes en patronen?">
               Een osmosesysteem onder het aanrecht filtert direct als je de kraan opendraait, en houdt ook kalk en PFAS tegen. Vul daarna gewoon je eigen fles.
             </TussenCta>
