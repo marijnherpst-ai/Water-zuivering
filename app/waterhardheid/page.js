@@ -310,7 +310,7 @@ export default async function WaterhardheidPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-dark">Zelf controleren</span>
             <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Kun je de waterhardheid ook zelf meten?</h2>
             <p className="mt-4 text-dim leading-relaxed">
-              Ja. Met teststrips of een druppeltest van de bouwmarkt of drogist meet je in een paar minuten de hardheid van het water uit je eigen kraan. Teststrips geven een indicatie in stappen; een druppeltest is nauwkeuriger. Soms krijg je een teststrip gratis bij een nieuwe vaatwasser.
+              Ja. Met teststrips of een druppeltest van de bouwmarkt of drogist meet je in een paar minuten de hardheid van het water uit je eigen kraan. Teststrips geven een indicatie in stappen; een druppeltest is nauwkeuriger. Soms krijg je een teststrip gratis bij een nieuwe vaatwasser. Alle methodes stap voor stap staan bij <Link href="/kennisbank/waterhardheid-testen" className="underline hover:text-ink">waterhardheid testen</Link>.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
               Wil je weten wat er verder in je water zit, zoals lood of PFAS? Dan heb je een laboratoriumtest nodig. Hoe dat werkt, lees je in{' '}

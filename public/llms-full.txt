@@ -687,6 +687,48 @@ Veelgestelde vragen:
 - Hoe bewaar je kraanwater voor een noodpakket? In schone, goed afsluitbare flessen (liefst glas), tot de rand gevuld, met de datum erop, koel en donker. Ververs elk halfjaar. Bij twijfel drie minuten koken.
 - Blijft gefilterd water langer goed? Nee, daarvoor gelden dezelfde regels. Vers getapt water is het beste; het osmosesysteem van Water-zuivering filtert direct tijdens het tappen, zonder opslagtank.
 
+## Waterhardheid testen: 4 manieren om het zelf te doen
+URL: https://www.water-zuivering.nl/kennisbank/waterhardheid-testen
+Bijgewerkt: 2026-11-23
+
+Kort antwoord: Je test de waterhardheid met een teststrip of druppeltest uit de bouwmarkt, met een zeeptest als grove indicatie, of je zoekt de waarde van je postcode op bij je waterbedrijf. Een strip geeft in een minuut een schatting, een druppeltest is nauwkeuriger. In Nederland meet je in °dH: tot 8 is zacht, vanaf 12 vrij hard.
+
+Veelgestelde vragen:
+- Hoe test je waterhardheid thuis? Met een teststrip of druppeltest, een zeeptest als grove indicatie, of via je waterbedrijf met je postcode.
+- Wat is het verschil tussen °dH en °fH? Twee schalen voor dezelfde meting. 1 mmol/l is 5,6 °dH en 10 °fH.
+- Meet een TDS-meter de waterhardheid? Nee, een TDS-meter meet alle opgeloste stoffen samen.
+
+## Kraanwater Frankrijk: kun je het drinken?
+URL: https://www.water-zuivering.nl/kennisbank/kraanwater-frankrijk
+Bijgewerkt: 2026-11-23
+
+Kort antwoord: Ja, in vrijwel heel Frankrijk kun je water uit de kraan drinken. Drink niet uit een kraan met het bordje eau non potable en let op een drinkadvies van de gemeente. Het water kan naar chloor smaken. Zet een afgesloten karaf een paar uur in de koelkast, of laat het een half uur open staan.
+
+Veelgestelde vragen:
+- Wat betekent eau non potable? Geen drinkwater. Drink er niet van en vul er geen fles of watertank mee.
+- Krijg je gratis water in een Frans restaurant? Ja, vraag om une carafe d'eau.
+- Waarom smaakt Frans kraanwater naar chloor? Franse waterbedrijven voegen chloor toe, zodat het water onderweg schoon blijft. Het is veilig.
+
+## Ramen wassen met osmosewater: zo werkt het
+URL: https://www.water-zuivering.nl/kennisbank/ramen-wassen-met-osmosewater
+Bijgewerkt: 2026-11-23
+
+Kort antwoord: Osmosewater bevat vrijwel geen opgeloste stoffen. Als het opdrogt, blijft er daarom niets achter: geen kalkvlekken en geen strepen. Je maakt het raam nat met een zachte borstel, spoelt van boven naar beneden en laat het vanzelf opdrogen. De eerste keer kan een tweede wasbeurt nodig zijn.
+
+Veelgestelde vragen:
+- Moet je ramen afdrogen na osmosewater? Nee, het water droogt vanzelf op zonder vlekken.
+- Kun je het osmosesysteem uit de keuken gebruiken? Het is gemaakt voor drinkwater onder het aanrecht en levert 1,58 liter per minuut. Voor een paar ramen kan het, voor een heel huis is een apart apparaat praktischer.
+
+## Waterfilter zelf maken: stappenplan en wat het niet kan
+URL: https://www.water-zuivering.nl/kennisbank/waterfilter-zelf-maken
+Bijgewerkt: 2026-11-23
+
+Kort antwoord: Een zelfgemaakt waterfilter van een petfles, grind, zand en actieve kool haalt grof vuil en troebelheid weg. Het verwijdert geen bacteriën, virussen, PFAS of medicijnresten en haalt geen kalk uit het water. Water uit zo'n filter moet je dus altijd nog koken voordat je het drinkt.
+
+Veelgestelde vragen:
+- Is water uit een zelfgemaakt filter veilig? Niet zonder het te koken.
+- Haalt een zelfgemaakt filter PFAS uit het water? Nauwelijks. Daarvoor is een omgekeerde-osmosemembraan nodig.
+
 ## Kraanwater temperatuur: hoe koud is water uit de kraan?
 URL: https://www.water-zuivering.nl/kennisbank/kraanwater-temperatuur
 Bijgewerkt: 2026-11-12

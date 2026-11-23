@@ -71,7 +71,7 @@ export default function Page() {
               Osmosewater kopen: waar haal je het en wat kost het?
             </h1>
             <p className="mt-5 text-dim text-lg">
-              Wil je <strong className="text-ink">osmosewater kopen</strong>, voor je ramen, je aquarium of om te drinken? Hier lees je waar je het haalt, wat het kost, waar je op let en wanneer zelf maken slimmer is.
+              Wil je <strong className="text-ink">osmosewater kopen</strong>, voor je ramen, je aquarium of om te drinken? Hier lees je waar je het haalt, wat het kost, waar je op let en wanneer zelf maken slimmer is. Wil je weten hoe je ramen met osmosewater wast? Lees <Link href="/kennisbank/ramen-wassen-met-osmosewater" className="underline hover:text-ink">ramen wassen met osmosewater</Link>.
             </p>
             <KortAntwoord>
               Osmosewater kopen kan bij een osmose-tappunt, een groothandel voor glazenwassers of een aquariumspeciaalzaak. Je betaalt van een paar cent tot ongeveer € 0,18 per liter, plus jerrycans. Bij de drogist vind je vooral gedemineraliseerd water, en dat is iets anders. Wil je osmosewater drinken, dan is zelf maken onder het aanrecht meestal goedkoper en hygiënischer.

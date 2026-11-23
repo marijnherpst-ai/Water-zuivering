@@ -169,6 +169,9 @@ export default function Page() {
               Toch drinken veel mensen daar flessenwater. Dat heeft vooral met smaak te maken. Anders dan in Nederland wordt het water er vaak gechloord, en dat proef en ruik je. Ook is het water in veel streken harder, dus met meer kalk. Laat de kraan even lopen en zet het water een uurtje in een open kan in de koelkast: dan verdwijnt de chloorsmaak grotendeels.
             </p>
             <p className="mt-4 text-dim leading-relaxed">
+              Ga je naar Frankrijk? Daar gelden eigen regels, zoals het bordje <em>eau non potable</em>, gratis kraanwater in restaurants en lokale drinkadviezen. Dat staat uitgebreid in <Link href="/kennisbank/kraanwater-frankrijk" className="underline hover:text-ink">kraanwater in Frankrijk</Link>.
+            </p>
+            <p className="mt-4 text-dim leading-relaxed">
               Let op bordjes. In Italië staan overal openbare drinkfonteinen, zoals de bekende kraantjes in Rome. Dat water is drinkbaar, tenzij er <em>acqua non potabile</em> bij staat. In Portugal heet dat <em>água não potável</em>. In een oud vakantiehuis of op een camping met een eigen bron of tank is het verstandig om de eigenaar te vragen of het water uit het leidingnet komt.
             </p>
             <h2 className="mt-12 font-display text-2xl md:text-3xl font-extrabold tracking-tight">Waarom is kraanwater in het ene land veilig en in het andere niet?</h2>

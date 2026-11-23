@@ -13,6 +13,34 @@ export const metadata = {
 
 const ARTICLES = [
   {
+    href: '/kennisbank/waterhardheid-testen',
+    image: '/assets/img/een-kraan.jpg',
+    category: 'Drinkwater',
+    title: 'Waterhardheid testen: 4 manieren om het zelf te doen',
+    excerpt: 'Teststrips, druppeltest, zeeptest of via je waterbedrijf, en zo lees je de uitslag in °dH.',
+  },
+  {
+    href: '/kennisbank/kraanwater-frankrijk',
+    image: '/assets/img/een-kraan.jpg',
+    category: 'Drinkwater',
+    title: 'Kraanwater Frankrijk: kun je het drinken?',
+    excerpt: 'Wanneer het veilig is, wat eau non potable betekent en hoe je de chloorsmaak kwijtraakt.',
+  },
+  {
+    href: '/kennisbank/ramen-wassen-met-osmosewater',
+    image: '/assets/img/een-kraan.jpg',
+    category: 'Osmose',
+    title: 'Ramen wassen met osmosewater: zo werkt het',
+    excerpt: 'Waarom osmosewater geen strepen geeft, wat je nodig hebt en wat het kost.',
+  },
+  {
+    href: '/kennisbank/waterfilter-zelf-maken',
+    image: '/assets/img/een-kraan.jpg',
+    category: 'Drinkwater',
+    title: 'Waterfilter zelf maken: stappenplan en wat het niet kan',
+    excerpt: 'Een filter van een petfles, zand en kool: wat het wel en niet doet en waarom je moet koken.',
+  },
+  {
     href: '/kennisbank/pfas-vrije-pannen',
     image: '/assets/img/kennisbank/pfas-in-kraanwater.png',
     category: 'PFAS',
